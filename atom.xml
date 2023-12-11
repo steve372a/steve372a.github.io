@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>？、アイドル宣言个人小站</title>
+  <icon>http://example.com/icon.png</icon>
+  <subtitle>话说你是怎么知道这里的？</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2023-12-11T19:07:25.316Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>？、アイドル宣言</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>本站已经迁移啦！</title>
+    <link href="http://example.com/20231212/022653/"/>
+    <id>http://example.com/20231212/022653/</id>
+    <published>2023-12-11T18:26:53.000Z</published>
+    <updated>2023-12-11T19:07:25.316Z</updated>
+    
+    
+    <summary type="html">本站已经迁移至 steve372a.github.io，欢迎继续访问！原 URL 指向的本站将永久封存。</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>iOS 的发展历史</title>
+    <link href="http://example.com/20230818/205837/"/>
+    <id>http://example.com/20230818/205837/</id>
+    <published>2023-08-18T12:58:37.000Z</published>
+    <updated>2023-08-23T05:29:30.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;苹果 iOS 系统已经走过了自己的第 16 个年头，各位新入局的 iOS 玩家可能对 iOS 的历史比较感兴趣，经过整理后，我撰写了这篇文章。&lt;/p&gt;
+&lt;h1 id=&quot;iphone-1-软件&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Reimu 主题去除东方 PROJECT 元素</title>
+    <link href="http://example.com/20230817/154130/"/>
+    <id>http://example.com/20230817/154130/</id>
+    <published>2023-08-17T07:41:30.000Z</published>
+    <updated>2023-08-16T17:30:02.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;如果你安装了 Reimu 主题后又不想要东方的元素了，可以看看这篇文章。&lt;/p&gt;
+&lt;h1 id=&quot;目录&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#目录&quot;&gt;&lt;/a&gt; 目录&lt;/h1&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="复现" scheme="http://example.com/tags/%E5%A4%8D%E7%8E%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PlayCover 适用的《原神》iPA 文件</title>
+    <link href="http://example.com/20230816/114759/"/>
+    <id>http://example.com/20230816/114759/</id>
+    <published>2023-08-16T03:47:59.000Z</published>
+    <updated>2023-08-16T19:13:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;原神&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#原神&quot;&gt;&lt;/a&gt; 《原神》&lt;/h1&gt;
+&lt;h2 id=&quot;版本400-天空岛&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#版本400-天空岛&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="资源分享" scheme="http://example.com/tags/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>历史锁那(Sana)专辑</title>
+    <link href="http://example.com/20230725/221318/"/>
+    <id>http://example.com/20230725/221318/</id>
+    <published>2023-07-25T14:13:18.000Z</published>
+    <updated>2023-08-15T02:58:13.000Z</updated>
+    
+    
+    <summary type="html">Sanapri 的专辑汇总，价格、歌曲列表一应俱全。</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Windows NT4.0 安装教程</title>
+    <link href="http://example.com/20230119/063535/"/>
+    <id>http://example.com/20230119/063535/</id>
+    <published>2023-01-18T22:35:35.000Z</published>
+    <updated>2023-08-15T15:26:26.000Z</updated>
+    
+    
+    <summary type="html">安装 Windows NT4.0 工作站版本的教程</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>无需 U 盘给 MacBook 电脑安装 Arch Linux</title>
+    <link href="http://example.com/20230108/134420/"/>
+    <id>http://example.com/20230108/134420/</id>
+    <published>2023-01-08T05:44:20.000Z</published>
+    <updated>2023-08-15T15:28:47.000Z</updated>
+    
+    
+    <summary type="html">想装Arch Linux却没有带U盘，心急如焚该咋办呢？</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>珊瑚宫心海养成指南</title>
+    <link href="http://example.com/20220915/233651/"/>
+    <id>http://example.com/20220915/233651/</id>
+    <published>2022-09-15T15:36:51.000Z</published>
+    <updated>2023-08-15T04:16:27.000Z</updated>
+    
+    
+    <summary type="html">《原神》心海简单养成指南！</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>计算机基础操作</title>
+    <link href="http://example.com/20220910/083627/"/>
+    <id>http://example.com/20220910/083627/</id>
+    <published>2022-09-10T00:36:27.000Z</published>
+    <updated>2023-08-15T15:31:39.000Z</updated>
+    
+    
+    <summary type="html">使用 Windows 的基础操作。</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>QEMU 基础命令学习</title>
+    <link href="http://example.com/20220826/022653/"/>
+    <id>http://example.com/20220826/022653/</id>
+    <published>2022-08-25T18:26:53.000Z</published>
+    <updated>2023-08-15T15:48:03.000Z</updated>
+    
+    
+    <summary type="html">本文章是为了让各位更好的学习 QEMU 命令。</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>QEMU 基础命令学习</title>
+    <link href="http://example.com/20220826/022653/"/>
+    <id>http://example.com/20220826/022653/</id>
+    <published>2022-08-25T18:26:53.000Z</published>
+    <updated>2022-10-17T01:59:32.000Z</updated>
+    
+    
+    <summary type="html">本文章是为了让各位更好的学习 QEMU 命令。</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Sanapri bilibili 新视频</title>
+    <link href="http://example.com/20220823/164646/"/>
+    <id>http://example.com/20220823/164646/</id>
+    <published>2022-08-23T08:46:46.000Z</published>
+    <updated>2022-08-23T08:52:50.000Z</updated>
+    
+    
+    <summary type="html">きゅうくらりん (cover) / 鎖那</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>白洋淀公交乘坐体验</title>
+    <link href="http://example.com/20220821/011817/"/>
+    <id>http://example.com/20220821/011817/</id>
+    <published>2022-08-20T17:18:17.000Z</published>
+    <updated>2022-08-23T09:10:04.000Z</updated>
+    
+    
+    <summary type="html">任丘市跨村公交新开到雄县李广村的车，今日乘坐体验了一番。</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>黑翼猫 Extended Kernel Project 中国网络环境下载</title>
+    <link href="http://example.com/20220818/010924/"/>
+    <id>http://example.com/20220818/010924/</id>
+    <published>2022-08-17T17:09:24.000Z</published>
+    <updated>2022-08-18T03:44:12.000Z</updated>
+    
+    
+    <summary type="html">关于黑翼猫大佬的 Windows 2000 Extended Kernel Project 国内网络地址整合。</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Apple A7 设备降级到 10.3.3 系统</title>
+    <link href="http://example.com/20220815/013515/"/>
+    <id>http://example.com/20220815/013515/</id>
+    <published>2022-08-14T17:35:15.000Z</published>
+    <updated>2022-08-25T05:29:02.000Z</updated>
+    
+    
+    <summary type="html">A7 的机器性能放到今天可以说是完全不合格了。最新系统非常卡，今天我们来降级！让他流畅一些。</summary>
+    
+    
+    
+    
+  </entry>
+  
+</feed>
