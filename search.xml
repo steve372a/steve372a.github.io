@@ -125,64 +125,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Reimu 主题去除东方 PROJECT 元素</title>
-    <url>/20230817/154130/</url>
-    <content><![CDATA[<p>如果你安装了 Reimu 主题后又不想要东方的元素了，可以看看这篇文章。</p>
-<h1 id="目录"><a class="markdownIt-Anchor" href="#目录"></a> 目录</h1>
-<p><a href="/20230817/154130/#%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E4%BF%AE%E6%94%B9">  <strong>1. 背景图片修改</strong></a><br />
-<a href="/20230817/154130/#%E5%A4%B4%E5%9B%BE%E4%BF%AE%E6%94%B9">      ———— 1.1 头图修改</a><br />
-<a href="/20230817/154130/#%E7%BB%99%E5%8D%95%E7%8B%AC%E7%9A%84%E6%96%87%E7%AB%A0%E9%85%8D%E5%9B%BE">      ———— 1.2 给单独的文章配图</a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%A4%AA%E6%9E%81%E5%9B%BE%E5%9B%BE%E6%A0%87">  <strong>2. 更改太极图图标 (重点)</strong></a><br />
-<a href="/20230817/154130/#%E8%BE%B9%E6%A0%8F%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.1 边栏图标更改</a><br />
-<a href="/20230817/154130/#%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.2 加载界面图标更改</a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E6%96%87%E5%AD%97">  <strong>3. 更改文字</strong></a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2_%E5%B0%91%E5%A5%B3%E7%A5%88%E7%A5%B7%E4%B8%AD">      ———— 3.1 更改加载界面 “少女祈祷中”</a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9_404_%E7%95%8C%E9%9D%A2">      ———— 3.2 更改 “404” 界面</a></p>
-<h1 id="背景图片修改"><a class="markdownIt-Anchor" href="#背景图片修改"></a> 背景图片修改</h1>
-<h2 id="头图修改"><a class="markdownIt-Anchor" href="#头图修改"></a> 头图修改</h2>
-<p>头图的位置在</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
-<p>您找到合适的图片之后直接更换即可。<br />
-如果您的网站速度很慢，不适合在本地存放头图，您可以更改主题目录的 _config.yml 中的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;/images/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
-<p>部分，将内容更改为：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;https://xxx.url.org/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
-<p><img src="https://img.gejiba.com/images/3b7b1a3e290b1db6151d0961726ce8eb.png" alt="" /></p>
-<h2 id="给单独的文章配图"><a class="markdownIt-Anchor" href="#给单独的文章配图"></a> 给单独的文章配图</h2>
-<p>只需您在文章的页眉添加</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cover: 指向图片的 URL</span><br><span class="line"></span><br><span class="line">// 示例：</span><br><span class="line">---</span><br><span class="line">title: 123456</span><br><span class="line">date: 1999-12-31 06:01:13</span><br><span class="line">tags: XX</span><br><span class="line">cover: https://xxx.url.org/bd3.png</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>就可以给文章配上图片了。</p>
-<h1 id="更改太极图图标"><a class="markdownIt-Anchor" href="#更改太极图图标"></a> 更改太极图图标</h1>
-<h2 id="边栏图标更改"><a class="markdownIt-Anchor" href="#边栏图标更改"></a> 边栏图标更改</h2>
-<p>请您进入 <strong>/themes/reimu/source/images/</strong> 目录，使用矢量图绘画工具打开 <strong>taichi.svg</strong> 文件。<br />
-然后在上面进行绘画操作即可。<br />
-<img src="https://img.gejiba.com/images/10f06ff8e388d28136b494546c99bd5b.png" alt="" /><br />
-画完之后保存，Hexo 刷新一遍就可以了。</p>
-<h2 id="加载界面图标更改"><a class="markdownIt-Anchor" href="#加载界面图标更改"></a> 加载界面图标更改</h2>
-<p>在执行上面的操作之后，您会发现，加载界面仍然是太极图。<br />
-莫慌。您先复制一份 <strong>taichi.svg</strong> 文件的副本，使用矢量图绘画工具打开它并进行绘画。绘画完成后不要删除，右键通过 <strong>Microsoft Visual Studio Code</strong> 或其他文本软件打开。<br />
-记住这些路径名称：<br />
-<img src="https://img.gejiba.com/images/c5943bcc8fc6ae8beabe7d337afe9480.png" alt="" /><br />
-如果发现 ellipse 和 path 开头的一段，请复制它们。<br />
-然后打开 <strong>/themes/reimu/layout/_partial/loader.ejs</strong> 文件<br />
-将这一段删除：<br />
-<img src="https://img.gejiba.com/images/a67d82f9cd84d1e7f816a547c0a175a4.png" alt="" /><br />
-然后将您刚才复制的 SVG 代码粘贴到此处。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 示例：小星星（和本站一样）</span><br><span class="line"></span><br><span class="line">&lt;path</span><br><span class="line">    sodipodi:type=&quot;star&quot;</span><br><span class="line">    style=&quot;opacity:0.967273;fill:#ffbec0;fill-opacity:0.94581282;stroke:#000000;stroke-width:13.65542089;stroke-dasharray:none&quot;</span><br><span class="line">    id=&quot;path1&quot;</span><br><span class="line">    inkscape:flatsided=&quot;false&quot;</span><br><span class="line">    sodipodi:sides=&quot;5&quot;</span><br><span class="line">    sodipodi:cx=&quot;117.15254&quot;</span><br><span class="line">    sodipodi:cy=&quot;121.49152&quot;</span><br><span class="line">    sodipodi:r1=&quot;281.59967&quot;</span><br><span class="line">    sodipodi:r2=&quot;140.79984&quot;</span><br><span class="line">    sodipodi:arg1=&quot;0.98279372&quot;</span><br><span class="line">    sodipodi:arg2=&quot;1.6111123&quot;</span><br><span class="line">    inkscape:rounded=&quot;0&quot;</span><br><span class="line">    inkscape:randomized=&quot;0&quot;</span><br><span class="line">    d=&quot;M 273.35594,355.79661 111.4776,262.17695 -57.415336,342.45403 -18.400902,159.56852 -146.93973,23.748776 39.050851,4.3389758 128.50242,-159.87933 204.43649,11.010274 388.25943,45.337523 249.19868,170.3629 Z&quot;</span><br><span class="line">    inkscape:transform-center-x=&quot;-5.2622667&quot;</span><br><span class="line">    inkscape:transform-center-y=&quot;-35.297319&quot;</span><br><span class="line">    transform=&quot;matrix(1.5003757,0,0,1.4999156,340.69227,376.01307)&quot; /&gt;</span><br></pre></td></tr></table></figure>
-<p>效果：<br />
-<img src="https://img.gejiba.com/images/ba4cf7aeb1cfb237289943c881beb7ea.png" alt="" /></p>
-<h1 id="更改文字"><a class="markdownIt-Anchor" href="#更改文字"></a> 更改文字</h1>
-<h2 id="更改加载界面_少女祈祷中"><a class="markdownIt-Anchor" href="#更改加载界面_少女祈祷中"></a> 更改加载界面_少女祈祷中</h2>
-<p>打开主题目录的 _config.yml 文件，滑动到下面，找到 preloader 字符：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">preloader:</span><br><span class="line">  enable: true</span><br><span class="line">  text: 正在载入中...</span><br><span class="line">  # text: Loading...</span><br></pre></td></tr></table></figure>
-<h2 id="更改_404_界面"><a class="markdownIt-Anchor" href="#更改_404_界面"></a> 更改_404_界面</h2>
-<p>打开 <strong>/themes/reimu/languages/zh-CN.yml</strong> 文件，找到 not_found 字符:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">not_found:</span><br><span class="line">  title: 4 0 4 (ﾟ⊿ﾟ)ﾂ</span><br><span class="line">  subtitle: 満 身 創 痍</span><br></pre></td></tr></table></figure><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>复现</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>QEMU 基础命令学习</title>
     <url>/20220826/022653/</url>
     <content><![CDATA[<center>
@@ -451,6 +393,123 @@ Windows 11      std / VMware
 </font><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
+    <title>Windows NT4.0 安装教程</title>
+    <url>/20230119/063535/</url>
+    <content><![CDATA[<h1 id="镜像链接"><a class="markdownIt-Anchor" href="#镜像链接"></a> 镜像链接</h1>
+<p><a href="https://pan.huang1111.cn/s/lyBgTL">Click me to download ISO image [FREE!!]</a><br />
+<img src="https://img.gejiba.com/images/27da4e034df0231a2bb7ec09508d6137.png" alt="" /></p>
+<h1 id="安装教程"><a class="markdownIt-Anchor" href="#安装教程"></a> 安装教程</h1>
+<p>1.我们通过虚拟机成功引导系统后，可以看到下面界面：<br />
+<img src="https://img.gejiba.com/images/13407dbc2626460c9a71238d7e9add43.jpg" alt="" /><br />
+2.按 ENTER 继续，创建分区。<br />
+要记住，Windows NT 4.0 Service Pack 1 是不支持大硬盘的，所以我们这里只能给系统分 4096 MB 的分区。<br />
+这里我们随便选择，根据你的需求选择是否 FAT16 还是 NTFS。(不支持 FAT32)<br />
+<img src="https://img.gejiba.com/images/eac95cb4fdc249de0e22c466a8b36c4c.png" alt="" /><br />
+静等第一阶段安装完毕后，重启即可。<br />
+注意！重启一直到安装完成之前，都不可以动任何虚拟机硬件，否则开机会蓝屏。<br />
+就比如我在第一阶段安装完毕后，添加了一个 Cirrus 显示卡，结果开机蓝屏 0x0000007B<br />
+3.重启后，开始第二阶段安装<br />
+<img src="https://img.gejiba.com/images/3ccb7f2b8cdfe50abe4ed8bcb0040c1e.png" alt="" /><br />
+4.点击“下一步”，选择安装类型，这里我们选择典型。<br />
+<img src="https://img.gejiba.com/images/b6ebcb7ac6c1c161fcdad7d5257f29dd.png" alt="" /><br />
+5.输入自己的名字和组织，皆为选填。<br />
+<img src="https://img.gejiba.com/images/7e58b624f0b674e7bb79473b752418fc.png" alt="" /><br />
+6.输入 Windows NT 4.0 Workstation 的 [ CD-Key ]。<br />
+<img src="https://img.gejiba.com/images/664496dbed01c7222e6cd7205191470d.jpg" alt="" /><br />
+7.输入自己的计算机名称，随便输入。这个名称用于给您电脑命名，供别人在局域网上识别。<br />
+<img src="https://img.gejiba.com/images/320b4cc1d869b9ae53ec921d0e9b318b.png" alt="" /><br />
+8.设置管理员账户的密码，酌情而定，我这里不填。<br />
+<img src="https://img.gejiba.com/images/b1aee64d28853da06f1c4f266f063bfa.png" alt="" /><br />
+9.这里选择“否”，然后点击“下一步”。<br />
+<img src="https://img.gejiba.com/images/df453d8f0c90b757c6568899e86e2c09.png" alt="" /><br />
+10.根据您的需求来挑选，选完之后点击“下一步”。<br />
+<img src="https://img.gejiba.com/images/acf185c6f2093204bc904b30b358946e.png" alt="" /><br />
+11.如果您想稍后再设置网络，那就选择“此时不要将计算机连接到网络”。因为我要上网，所以这里会详细讲解如何设置网络。<br />
+<img src="https://img.gejiba.com/images/9932dabfbbb1b2832fd78d83a8662cd6.png" alt="" /><br />
+12.点击“开始搜索”，搜寻网卡，搜到了你需要的网卡之后，点击“下一步”。<br />
+<img src="https://img.gejiba.com/images/9b6782f707f703733eec3e05466832f8.jpg" alt="" /><br />
+13.这里我们直接“下一步”。<br />
+<img src="https://img.gejiba.com/images/b9b1e73bd8b0ce8e3ce7e479319d00e9.jpg" alt="" /><br />
+如果出现一个要设置“网卡 ID”的东西，直接点击“Skip”。<br />
+14.这里一定要选择“是”，否则系统就不会使用 DHCP，需要你自己配置网络，很麻烦。<br />
+<img src="https://img.gejiba.com/images/632444ae356f000c14cd4ccf84340fc9.jpg" alt="" /><br />
+15.点击“下一步”。<br />
+<img src="https://img.gejiba.com/images/796666538ef1ffcaa4d51675da92e3b0.jpg" alt="" /><br />
+启用网络后，就开始安装 Windows NT Workstation 了。<br />
+16.出现显示器设置后，我们点击“65536 色”，然后点击“测试”。<br />
+<img src="https://img.gejiba.com/images/6ecde8d8ac3b2576ab5700a4d45429ac.jpg" alt="" /><br />
+如果点击“测试”之后，显示器没有出现异常，那么就可以点击“确定”继续下一步安装了。<br />
+<img src="https://img.gejiba.com/images/f33fae8c67e750c81dcd9b20bd649c7e.jpg" alt="" /><br />
+等会系统就安装完成了。<br />
+后续安装：<br />
+因为 Windows NT4.0 Service Pack 1 和所附带的 Internet Explorer 3.0 十分古老，我推荐安装 Service Pack 6 之后再安装 Internet Explorer 5.0。<br />
+17.在安装盘中找到 SP6I386_CN.EXE，打开它，等待复制文件之后点击“安装”。<br />
+<img src="https://img.gejiba.com/images/c38d244a6be2a67afa8663ab97980c16.jpg" alt="" /><br />
+18.重启后，再次打开安装盘，找到 “Internet Explorer 5.0” 文件夹。<br />
+找到“IE5SETUP.EXE”，打开它。<br />
+<img src="https://img.gejiba.com/images/c74b6d6e80737d95f4620993ee2210b5.jpg" alt="" /><br />
+等待安装即可。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>Reimu 主题去除东方 PROJECT 元素</title>
+    <url>/20230817/154130/</url>
+    <content><![CDATA[<p>如果你安装了 Reimu 主题后又不想要东方的元素了，可以看看这篇文章。</p>
+<h1 id="目录"><a class="markdownIt-Anchor" href="#目录"></a> 目录</h1>
+<p><a href="/20230817/154130/#%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E4%BF%AE%E6%94%B9">  <strong>1. 背景图片修改</strong></a><br />
+<a href="/20230817/154130/#%E5%A4%B4%E5%9B%BE%E4%BF%AE%E6%94%B9">      ———— 1.1 头图修改</a><br />
+<a href="/20230817/154130/#%E7%BB%99%E5%8D%95%E7%8B%AC%E7%9A%84%E6%96%87%E7%AB%A0%E9%85%8D%E5%9B%BE">      ———— 1.2 给单独的文章配图</a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%A4%AA%E6%9E%81%E5%9B%BE%E5%9B%BE%E6%A0%87">  <strong>2. 更改太极图图标 (重点)</strong></a><br />
+<a href="/20230817/154130/#%E8%BE%B9%E6%A0%8F%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.1 边栏图标更改</a><br />
+<a href="/20230817/154130/#%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.2 加载界面图标更改</a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E6%96%87%E5%AD%97">  <strong>3. 更改文字</strong></a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2_%E5%B0%91%E5%A5%B3%E7%A5%88%E7%A5%B7%E4%B8%AD">      ———— 3.1 更改加载界面 “少女祈祷中”</a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9_404_%E7%95%8C%E9%9D%A2">      ———— 3.2 更改 “404” 界面</a></p>
+<h1 id="背景图片修改"><a class="markdownIt-Anchor" href="#背景图片修改"></a> 背景图片修改</h1>
+<h2 id="头图修改"><a class="markdownIt-Anchor" href="#头图修改"></a> 头图修改</h2>
+<p>头图的位置在</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
+<p>您找到合适的图片之后直接更换即可。<br />
+如果您的网站速度很慢，不适合在本地存放头图，您可以更改主题目录的 _config.yml 中的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;/images/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
+<p>部分，将内容更改为：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;https://xxx.url.org/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
+<p><img src="https://img.gejiba.com/images/3b7b1a3e290b1db6151d0961726ce8eb.png" alt="" /></p>
+<h2 id="给单独的文章配图"><a class="markdownIt-Anchor" href="#给单独的文章配图"></a> 给单独的文章配图</h2>
+<p>只需您在文章的页眉添加</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cover: 指向图片的 URL</span><br><span class="line"></span><br><span class="line">// 示例：</span><br><span class="line">---</span><br><span class="line">title: 123456</span><br><span class="line">date: 1999-12-31 06:01:13</span><br><span class="line">tags: XX</span><br><span class="line">cover: https://xxx.url.org/bd3.png</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>就可以给文章配上图片了。</p>
+<h1 id="更改太极图图标"><a class="markdownIt-Anchor" href="#更改太极图图标"></a> 更改太极图图标</h1>
+<h2 id="边栏图标更改"><a class="markdownIt-Anchor" href="#边栏图标更改"></a> 边栏图标更改</h2>
+<p>请您进入 <strong>/themes/reimu/source/images/</strong> 目录，使用矢量图绘画工具打开 <strong>taichi.svg</strong> 文件。<br />
+然后在上面进行绘画操作即可。<br />
+<img src="https://img.gejiba.com/images/10f06ff8e388d28136b494546c99bd5b.png" alt="" /><br />
+画完之后保存，Hexo 刷新一遍就可以了。</p>
+<h2 id="加载界面图标更改"><a class="markdownIt-Anchor" href="#加载界面图标更改"></a> 加载界面图标更改</h2>
+<p>在执行上面的操作之后，您会发现，加载界面仍然是太极图。<br />
+莫慌。您先复制一份 <strong>taichi.svg</strong> 文件的副本，使用矢量图绘画工具打开它并进行绘画。绘画完成后不要删除，右键通过 <strong>Microsoft Visual Studio Code</strong> 或其他文本软件打开。<br />
+记住这些路径名称：<br />
+<img src="https://img.gejiba.com/images/c5943bcc8fc6ae8beabe7d337afe9480.png" alt="" /><br />
+如果发现 ellipse 和 path 开头的一段，请复制它们。<br />
+然后打开 <strong>/themes/reimu/layout/_partial/loader.ejs</strong> 文件<br />
+将这一段删除：<br />
+<img src="https://img.gejiba.com/images/a67d82f9cd84d1e7f816a547c0a175a4.png" alt="" /><br />
+然后将您刚才复制的 SVG 代码粘贴到此处。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 示例：小星星（和本站一样）</span><br><span class="line"></span><br><span class="line">&lt;path</span><br><span class="line">    sodipodi:type=&quot;star&quot;</span><br><span class="line">    style=&quot;opacity:0.967273;fill:#ffbec0;fill-opacity:0.94581282;stroke:#000000;stroke-width:13.65542089;stroke-dasharray:none&quot;</span><br><span class="line">    id=&quot;path1&quot;</span><br><span class="line">    inkscape:flatsided=&quot;false&quot;</span><br><span class="line">    sodipodi:sides=&quot;5&quot;</span><br><span class="line">    sodipodi:cx=&quot;117.15254&quot;</span><br><span class="line">    sodipodi:cy=&quot;121.49152&quot;</span><br><span class="line">    sodipodi:r1=&quot;281.59967&quot;</span><br><span class="line">    sodipodi:r2=&quot;140.79984&quot;</span><br><span class="line">    sodipodi:arg1=&quot;0.98279372&quot;</span><br><span class="line">    sodipodi:arg2=&quot;1.6111123&quot;</span><br><span class="line">    inkscape:rounded=&quot;0&quot;</span><br><span class="line">    inkscape:randomized=&quot;0&quot;</span><br><span class="line">    d=&quot;M 273.35594,355.79661 111.4776,262.17695 -57.415336,342.45403 -18.400902,159.56852 -146.93973,23.748776 39.050851,4.3389758 128.50242,-159.87933 204.43649,11.010274 388.25943,45.337523 249.19868,170.3629 Z&quot;</span><br><span class="line">    inkscape:transform-center-x=&quot;-5.2622667&quot;</span><br><span class="line">    inkscape:transform-center-y=&quot;-35.297319&quot;</span><br><span class="line">    transform=&quot;matrix(1.5003757,0,0,1.4999156,340.69227,376.01307)&quot; /&gt;</span><br></pre></td></tr></table></figure>
+<p>效果：<br />
+<img src="https://img.gejiba.com/images/ba4cf7aeb1cfb237289943c881beb7ea.png" alt="" /></p>
+<h1 id="更改文字"><a class="markdownIt-Anchor" href="#更改文字"></a> 更改文字</h1>
+<h2 id="更改加载界面_少女祈祷中"><a class="markdownIt-Anchor" href="#更改加载界面_少女祈祷中"></a> 更改加载界面_少女祈祷中</h2>
+<p>打开主题目录的 _config.yml 文件，滑动到下面，找到 preloader 字符：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">preloader:</span><br><span class="line">  enable: true</span><br><span class="line">  text: 正在载入中...</span><br><span class="line">  # text: Loading...</span><br></pre></td></tr></table></figure>
+<h2 id="更改_404_界面"><a class="markdownIt-Anchor" href="#更改_404_界面"></a> 更改_404_界面</h2>
+<p>打开 <strong>/themes/reimu/languages/zh-CN.yml</strong> 文件，找到 not_found 字符:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">not_found:</span><br><span class="line">  title: 4 0 4 (ﾟ⊿ﾟ)ﾂ</span><br><span class="line">  subtitle: 満 身 創 痍</span><br></pre></td></tr></table></figure><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>复现</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>iOS 的发展历史</title>
     <url>/20230818/205837/</url>
     <content><![CDATA[<p>苹果 iOS 系统已经走过了自己的第 16 个年头，各位新入局的 iOS 玩家可能对 iOS 的历史比较感兴趣，经过整理后，我撰写了这篇文章。</p>
@@ -560,65 +619,6 @@ Windows 11      std / VMware
 </tr>
 </tbody>
 </table>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>Windows NT4.0 安装教程</title>
-    <url>/20230119/063535/</url>
-    <content><![CDATA[<h1 id="镜像链接"><a class="markdownIt-Anchor" href="#镜像链接"></a> 镜像链接</h1>
-<p><a href="https://pan.huang1111.cn/s/lyBgTL">Click me to download ISO image [FREE!!]</a><br />
-<img src="https://img.gejiba.com/images/27da4e034df0231a2bb7ec09508d6137.png" alt="" /></p>
-<h1 id="安装教程"><a class="markdownIt-Anchor" href="#安装教程"></a> 安装教程</h1>
-<p>1.我们通过虚拟机成功引导系统后，可以看到下面界面：<br />
-<img src="https://img.gejiba.com/images/13407dbc2626460c9a71238d7e9add43.jpg" alt="" /><br />
-2.按 ENTER 继续，创建分区。<br />
-要记住，Windows NT 4.0 Service Pack 1 是不支持大硬盘的，所以我们这里只能给系统分 4096 MB 的分区。<br />
-这里我们随便选择，根据你的需求选择是否 FAT16 还是 NTFS。(不支持 FAT32)<br />
-<img src="https://img.gejiba.com/images/eac95cb4fdc249de0e22c466a8b36c4c.png" alt="" /><br />
-静等第一阶段安装完毕后，重启即可。<br />
-注意！重启一直到安装完成之前，都不可以动任何虚拟机硬件，否则开机会蓝屏。<br />
-就比如我在第一阶段安装完毕后，添加了一个 Cirrus 显示卡，结果开机蓝屏 0x0000007B<br />
-3.重启后，开始第二阶段安装<br />
-<img src="https://img.gejiba.com/images/3ccb7f2b8cdfe50abe4ed8bcb0040c1e.png" alt="" /><br />
-4.点击“下一步”，选择安装类型，这里我们选择典型。<br />
-<img src="https://img.gejiba.com/images/b6ebcb7ac6c1c161fcdad7d5257f29dd.png" alt="" /><br />
-5.输入自己的名字和组织，皆为选填。<br />
-<img src="https://img.gejiba.com/images/7e58b624f0b674e7bb79473b752418fc.png" alt="" /><br />
-6.输入 Windows NT 4.0 Workstation 的 [ CD-Key ]。<br />
-<img src="https://img.gejiba.com/images/664496dbed01c7222e6cd7205191470d.jpg" alt="" /><br />
-7.输入自己的计算机名称，随便输入。这个名称用于给您电脑命名，供别人在局域网上识别。<br />
-<img src="https://img.gejiba.com/images/320b4cc1d869b9ae53ec921d0e9b318b.png" alt="" /><br />
-8.设置管理员账户的密码，酌情而定，我这里不填。<br />
-<img src="https://img.gejiba.com/images/b1aee64d28853da06f1c4f266f063bfa.png" alt="" /><br />
-9.这里选择“否”，然后点击“下一步”。<br />
-<img src="https://img.gejiba.com/images/df453d8f0c90b757c6568899e86e2c09.png" alt="" /><br />
-10.根据您的需求来挑选，选完之后点击“下一步”。<br />
-<img src="https://img.gejiba.com/images/acf185c6f2093204bc904b30b358946e.png" alt="" /><br />
-11.如果您想稍后再设置网络，那就选择“此时不要将计算机连接到网络”。因为我要上网，所以这里会详细讲解如何设置网络。<br />
-<img src="https://img.gejiba.com/images/9932dabfbbb1b2832fd78d83a8662cd6.png" alt="" /><br />
-12.点击“开始搜索”，搜寻网卡，搜到了你需要的网卡之后，点击“下一步”。<br />
-<img src="https://img.gejiba.com/images/9b6782f707f703733eec3e05466832f8.jpg" alt="" /><br />
-13.这里我们直接“下一步”。<br />
-<img src="https://img.gejiba.com/images/b9b1e73bd8b0ce8e3ce7e479319d00e9.jpg" alt="" /><br />
-如果出现一个要设置“网卡 ID”的东西，直接点击“Skip”。<br />
-14.这里一定要选择“是”，否则系统就不会使用 DHCP，需要你自己配置网络，很麻烦。<br />
-<img src="https://img.gejiba.com/images/632444ae356f000c14cd4ccf84340fc9.jpg" alt="" /><br />
-15.点击“下一步”。<br />
-<img src="https://img.gejiba.com/images/796666538ef1ffcaa4d51675da92e3b0.jpg" alt="" /><br />
-启用网络后，就开始安装 Windows NT Workstation 了。<br />
-16.出现显示器设置后，我们点击“65536 色”，然后点击“测试”。<br />
-<img src="https://img.gejiba.com/images/6ecde8d8ac3b2576ab5700a4d45429ac.jpg" alt="" /><br />
-如果点击“测试”之后，显示器没有出现异常，那么就可以点击“确定”继续下一步安装了。<br />
-<img src="https://img.gejiba.com/images/f33fae8c67e750c81dcd9b20bd649c7e.jpg" alt="" /><br />
-等会系统就安装完成了。<br />
-后续安装：<br />
-因为 Windows NT4.0 Service Pack 1 和所附带的 Internet Explorer 3.0 十分古老，我推荐安装 Service Pack 6 之后再安装 Internet Explorer 5.0。<br />
-17.在安装盘中找到 SP6I386_CN.EXE，打开它，等待复制文件之后点击“安装”。<br />
-<img src="https://img.gejiba.com/images/c38d244a6be2a67afa8663ab97980c16.jpg" alt="" /><br />
-18.重启后，再次打开安装盘，找到 “Internet Explorer 5.0” 文件夹。<br />
-找到“IE5SETUP.EXE”，打开它。<br />
-<img src="https://img.gejiba.com/images/c74b6d6e80737d95f4620993ee2210b5.jpg" alt="" /><br />
-等待安装即可。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -890,12 +890,6 @@ Windows 11      std / VMware
 </font><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>本站已经迁移啦！</title>
-    <url>/20231212/022653/</url>
-    <content><![CDATA[<p>本站已经迁移至 <a href="http://steve372a.github.io">steve372a.github.io</a>，欢迎继续访问！原 URL 指向的本站将永久封存。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>历史锁那(Sana)专辑</title>
     <url>/20230725/221318/</url>
     <content><![CDATA[<center>
@@ -915,6 +909,12 @@ Windows 11      std / VMware
 <font color=red><strong>09</strong></font> ロリババアに恋をした<br />
 <font color=red><strong>10</strong></font> ラズベリー*モンスター</p>
 </center><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>本站已经迁移啦！</title>
+    <url>/20231212/022653/</url>
+    <content><![CDATA[<p>本站已经迁移至 <a href="http://steve372a.github.io">steve372a.github.io</a>，欢迎继续访问！原 URL 指向的本站将永久封存。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>无需 U 盘给 MacBook 电脑安装 Arch Linux</title>
@@ -994,41 +994,6 @@ VMware Fusion 虚拟机破解密钥：</li>
 <p>连接好网络后，输入 exit 退出 iwd。再输入 ping <a href="http://www.baidu.com">www.baidu.com</a> 看看网络是不是正确连接。</p>
 <h3 id="为磁盘分区"><a class="markdownIt-Anchor" href="#为磁盘分区"></a> 为磁盘分区</h3>
 <p>未完待续。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>珊瑚宫心海养成指南</title>
-    <url>/20220915/233651/</url>
-    <content><![CDATA[<p><font  face="宋体">献给各位抽到心海的同学们~</font><br />
-<font  face="宋体"><br />
-<img src="https://img.gejiba.com/images/9b0eb764a0ac82311a641c0c879ec1ec.jpg" alt="" /><br />
-<img src="https://img.gejiba.com/images/32d21d0e305c9d5a21a56fb8dc992737.gif" alt="" /></p>
-<h2 id="圣遗物"><a class="markdownIt-Anchor" href="#圣遗物"></a> 圣遗物</h2>
-<p>建议使用<font face="宋体" color=#9393FF><strong>海</font><font  face="宋体" color=#FF60AF>染</font><font face="宋体" color=#46A3FF>四件套</strong></font>。<br />
-双爆<font face="宋体" color=red><strong>越少越好，不要堆双爆</strong></font>。</p>
-<h3 id="词条"><a class="markdownIt-Anchor" href="#词条"></a> 词条</h3>
-<p><font  face="宋体">生之花：<font face="宋体" color=red><strong>生命值</strong></font><br />
-<img src="https://img.gejiba.com/images/07ad11abca89d87bd1ae38612e54cbe4.jpg" alt="" /><br />
-死之羽：<font face="宋体" color=red><strong>攻击力</strong></font><br />
-<img src="https://img.gejiba.com/images/ea4acec0d7fd5b0ff0bb789fb965d28e.jpg" alt="" /><br />
-理之冠：<font color=red><strong>治疗加成</strong></font>（可以使用生命）<br />
-<img src="https://img.gejiba.com/images/6865e4d0d785f80d26c9b51409787372.jpg" alt="" /><br />
-时之沙：<font color=red><strong>生命值</strong></font><br />
-<img src="https://img.gejiba.com/images/d7763d67dab5e0bc3a78c0f63c197824.jpg" alt="" /><br />
-空之杯：<font color=red><strong>水元素伤害加成</strong></font><br />
-<img src="https://img.gejiba.com/images/989b021bb7fa09b6cfa7cf591337f2dd.jpg" alt="" /><br />
-</font></p>
-<h2 id="武器"><a class="markdownIt-Anchor" href="#武器"></a> 武器</h2>
-<p>使用<font face="宋体" color=#CA8EC2><strong>试作金铂</strong></font>即可。如果追求更高可以抽取<font color=#FFD306><strong>不灭月华</strong></font>。</p>
-<h2 id="命座"><a class="markdownIt-Anchor" href="#命座"></a> 命座</h2>
-<p>零命即可，一般没必要抽取命座。</p>
-<h2 id="组队"><a class="markdownIt-Anchor" href="#组队"></a> 组队</h2>
-<p>可以放进<b>“神鹤万心”</b>配合打永冻流：<br />
-<font color=#FFD306><strong>神里绫华</strong></font>、<font color=#FFD306><strong>珊瑚宫心海</strong></font>、<font color=#FFD306><strong>申鹤</strong></font>、<font color=#FFD306><strong>枫原万叶</strong></font>。</p>
-<p><font face="宋体">还有心海武装队：</font><br />
-<font face="宋体" color=#FFD306><strong>珊瑚宫心海</strong></font>、<font face="宋体" color=#CA8EC2><strong>菲谢尔</strong></font>、<font face="宋体" color=#CA8EC2><strong>北斗</strong></font>、<font face="宋体" color=#CA8EC2><strong>行秋</strong></font>。<br />
-<font face="宋体" color=red>心海武装队和砂糖武装队不一样的是，心海武装队可以随意搭配后三位角色。</font><br />
-</font></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -1160,6 +1125,41 @@ Windows 中的终端叫做命令提示符，我们可以利用终端做很多事
 然后会打开一个黑色命令窗口，我们在此输入命令即可。比如我要查看系统版本，输入：<br />
 <img src="https://img.gejiba.com/images/19587c4ac59a01e5359fb3584f29e211.png" alt="" /><br />
 就可以查看了。要清屏可以输入 cls。<br />
+</font></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>珊瑚宫心海养成指南</title>
+    <url>/20220915/233651/</url>
+    <content><![CDATA[<p><font  face="宋体">献给各位抽到心海的同学们~</font><br />
+<font  face="宋体"><br />
+<img src="https://img.gejiba.com/images/9b0eb764a0ac82311a641c0c879ec1ec.jpg" alt="" /><br />
+<img src="https://img.gejiba.com/images/32d21d0e305c9d5a21a56fb8dc992737.gif" alt="" /></p>
+<h2 id="圣遗物"><a class="markdownIt-Anchor" href="#圣遗物"></a> 圣遗物</h2>
+<p>建议使用<font face="宋体" color=#9393FF><strong>海</font><font  face="宋体" color=#FF60AF>染</font><font face="宋体" color=#46A3FF>四件套</strong></font>。<br />
+双爆<font face="宋体" color=red><strong>越少越好，不要堆双爆</strong></font>。</p>
+<h3 id="词条"><a class="markdownIt-Anchor" href="#词条"></a> 词条</h3>
+<p><font  face="宋体">生之花：<font face="宋体" color=red><strong>生命值</strong></font><br />
+<img src="https://img.gejiba.com/images/07ad11abca89d87bd1ae38612e54cbe4.jpg" alt="" /><br />
+死之羽：<font face="宋体" color=red><strong>攻击力</strong></font><br />
+<img src="https://img.gejiba.com/images/ea4acec0d7fd5b0ff0bb789fb965d28e.jpg" alt="" /><br />
+理之冠：<font color=red><strong>治疗加成</strong></font>（可以使用生命）<br />
+<img src="https://img.gejiba.com/images/6865e4d0d785f80d26c9b51409787372.jpg" alt="" /><br />
+时之沙：<font color=red><strong>生命值</strong></font><br />
+<img src="https://img.gejiba.com/images/d7763d67dab5e0bc3a78c0f63c197824.jpg" alt="" /><br />
+空之杯：<font color=red><strong>水元素伤害加成</strong></font><br />
+<img src="https://img.gejiba.com/images/989b021bb7fa09b6cfa7cf591337f2dd.jpg" alt="" /><br />
+</font></p>
+<h2 id="武器"><a class="markdownIt-Anchor" href="#武器"></a> 武器</h2>
+<p>使用<font face="宋体" color=#CA8EC2><strong>试作金铂</strong></font>即可。如果追求更高可以抽取<font color=#FFD306><strong>不灭月华</strong></font>。</p>
+<h2 id="命座"><a class="markdownIt-Anchor" href="#命座"></a> 命座</h2>
+<p>零命即可，一般没必要抽取命座。</p>
+<h2 id="组队"><a class="markdownIt-Anchor" href="#组队"></a> 组队</h2>
+<p>可以放进<b>“神鹤万心”</b>配合打永冻流：<br />
+<font color=#FFD306><strong>神里绫华</strong></font>、<font color=#FFD306><strong>珊瑚宫心海</strong></font>、<font color=#FFD306><strong>申鹤</strong></font>、<font color=#FFD306><strong>枫原万叶</strong></font>。</p>
+<p><font face="宋体">还有心海武装队：</font><br />
+<font face="宋体" color=#FFD306><strong>珊瑚宫心海</strong></font>、<font face="宋体" color=#CA8EC2><strong>菲谢尔</strong></font>、<font face="宋体" color=#CA8EC2><strong>北斗</strong></font>、<font face="宋体" color=#CA8EC2><strong>行秋</strong></font>。<br />
+<font face="宋体" color=red>心海武装队和砂糖武装队不一样的是，心海武装队可以随意搭配后三位角色。</font><br />
 </font></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
