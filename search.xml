@@ -1,62 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>PlayCover 适用的《原神》iPA 文件</title>
-    <url>/20230816/114759/</url>
-    <content><![CDATA[<h1 id="原神"><a class="markdownIt-Anchor" href="#原神"></a> 《原神》</h1>
-<h2 id="版本400-天空岛"><a class="markdownIt-Anchor" href="#版本400-天空岛"></a> 版本：4.0.0 (天空岛)</h2>
-<p>您可以单击下面地址下载：<br />
-<a href="https://pan.huang1111.cn/s/vlYgSE?path=%2F">下载原神 iPA 到设备</a></p>
-<h1 id="更新方法"><a class="markdownIt-Anchor" href="#更新方法"></a> 更新方法</h1>
-<p><strong>设备要求：Apple Silicon 的 Mac 电脑</strong></p>
-<p>如果您不知道您的 Mac 电脑能否安装，请您点击“”图标，找到“关于本机”。<br />
-如果显示的是“<em>芯片：Apple M1</em>”等，就说明您的电脑基于 Apple Silicon，<br />
-如果显示的是“<em>处理器：2.3 GHz 八核 Intel Core i9</em>“等，就说明您的电脑基于 Intel，不能安装 PlayCover 和原神。<br />
-<img src="https://img.gejiba.com/images/48597f6116725b33eb76bd09ca846ec7.png" alt="" /><br />
-请您下载好 PlayCover 软件至您的 Mac：<br />
-<a href="https://github.com/PlayCover/PlayCover/releases">下载 PlayCover</a><br />
-<img src="https://img.gejiba.com/images/19a67305b6f5527d59230696115bbe7c.png" alt="" /><br />
-然后将您下载的《原神》包体，移动至 PlayCover，等待安装就可以了。<br />
-<img src="https://img.gejiba.com/images/64a6c685500968133486ccae710afe41.png" alt="" /><br />
-进度条消失后，启动原神即可。<br />
-<img src="https://img.gejiba.com/images/0f8e0e0f09980925c1f85a94d9110685.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/1fef0f6d03000f75c9c2d730a0ab0bba.png" alt="" /></p>
-<h1 id="操作方式"><a class="markdownIt-Anchor" href="#操作方式"></a> 操作方式</h1>
-<h2 id="键盘映射"><a class="markdownIt-Anchor" href="#键盘映射"></a> 键盘映射</h2>
-<h3 id="下载"><a class="markdownIt-Anchor" href="#下载"></a> 下载</h3>
-<p><a href="https://github.com/PlayCover/keymaps/tree/master/keymapping/com.miHoYo.GenshinImpact">下载键盘映射</a><br />
-如果您不能访问 Github，点击以下链接下载:<br />
-<a href="/download/Genshin_Impact_fixed_16by9.playmap">Genshin_Impact_fixed_16by9.playmap</a><br />
-<a href="/download/Genshin_Impact_fixed_16by10.playmap">Genshin_Impact_fixed_16by10.playmap</a><br />
-一般 Mac 的屏幕分辨率比例是 16 : 10。</p>
-<h3 id="导入"><a class="markdownIt-Anchor" href="#导入"></a> 导入</h3>
-<p>下载完成后，打开 PlayCover，在“原神”图标点击右键，找到“导入键盘映射布局”<br />
-<img src="https://img.gejiba.com/images/efc6855c13376b0b0a0379b07be383e4.png" alt="" /><br />
-然后找到您的键盘映射布局就可以了。<br />
-<img src="https://img.gejiba.com/images/6a44f60b24115af46d5be02b446a68bf.png" alt="" /></p>
-<h3 id="应用"><a class="markdownIt-Anchor" href="#应用"></a> 应用</h3>
-<p>随后打开原神，您可以按下 Option⌥ 键，让“原神”捕获鼠标，再次按下 Option⌥ 键，可以释放鼠标。<br />
-您可以点击状态栏的“按键映射”-“打开/关闭按键映射编辑模式”，编辑您的键盘映射。<br />
-<img src="https://img.gejiba.com/images/0caf11441df218503b6006a32166dd67.png" alt="" /></p>
-<h2 id="手柄连接"><a class="markdownIt-Anchor" href="#手柄连接"></a> 手柄连接</h2>
-<p>请您先连接手柄至 Mac。<br />
-<img src="https://img.gejiba.com/images/cee062dae17e16cd0b9a97d6ad4651ae.png" alt="" /><br />
-然后打开原神，打开“设置”<br />
-<img src="https://img.gejiba.com/images/91a9e660af575671d4739c2587cc88d4.png" alt="" /><br />
-将“触屏”改为“手柄”<br />
-<img src="https://img.gejiba.com/images/fded33a413746b6e4a4463a0726c2afc.png" alt="" /><br />
-然后就完成啦！<br />
-<img src="https://img.gejiba.com/images/7f47f18a1f5d592143ab1540f8d466d2.png" alt="" /></p>
-<h1 id="推荐观看"><a class="markdownIt-Anchor" href="#推荐观看"></a> 推荐观看</h1>
-<p>本文章没有列出一些会存在的普遍问题，推荐观看下面的视频：</p>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?bvid=BV1Xx4y1F7um&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
-</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>资源分享</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Apple A7 设备降级到 10.3.3 系统</title>
     <url>/20220815/013515/</url>
     <content><![CDATA[<h2 id="准备开始"><a class="markdownIt-Anchor" href="#准备开始"></a> 准备开始</h2>
@@ -123,6 +67,62 @@
 <img src="https://img.gejiba.com/images/f0df81048ef6666b6c4a3ced0e7302e4.jpg" alt="" /><br />
 希望此教程能对你有帮助！感谢你看到这里！</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>PlayCover 适用的《原神》iPA 文件</title>
+    <url>/20230816/114759/</url>
+    <content><![CDATA[<h1 id="原神"><a class="markdownIt-Anchor" href="#原神"></a> 《原神》</h1>
+<h2 id="版本400-天空岛"><a class="markdownIt-Anchor" href="#版本400-天空岛"></a> 版本：4.0.0 (天空岛)</h2>
+<p>您可以单击下面地址下载：<br />
+<a href="https://pan.huang1111.cn/s/vlYgSE?path=%2F">下载原神 iPA 到设备</a></p>
+<h1 id="更新方法"><a class="markdownIt-Anchor" href="#更新方法"></a> 更新方法</h1>
+<p><strong>设备要求：Apple Silicon 的 Mac 电脑</strong></p>
+<p>如果您不知道您的 Mac 电脑能否安装，请您点击“”图标，找到“关于本机”。<br />
+如果显示的是“<em>芯片：Apple M1</em>”等，就说明您的电脑基于 Apple Silicon，<br />
+如果显示的是“<em>处理器：2.3 GHz 八核 Intel Core i9</em>“等，就说明您的电脑基于 Intel，不能安装 PlayCover 和原神。<br />
+<img src="https://img.gejiba.com/images/48597f6116725b33eb76bd09ca846ec7.png" alt="" /><br />
+请您下载好 PlayCover 软件至您的 Mac：<br />
+<a href="https://github.com/PlayCover/PlayCover/releases">下载 PlayCover</a><br />
+<img src="https://img.gejiba.com/images/19a67305b6f5527d59230696115bbe7c.png" alt="" /><br />
+然后将您下载的《原神》包体，移动至 PlayCover，等待安装就可以了。<br />
+<img src="https://img.gejiba.com/images/64a6c685500968133486ccae710afe41.png" alt="" /><br />
+进度条消失后，启动原神即可。<br />
+<img src="https://img.gejiba.com/images/0f8e0e0f09980925c1f85a94d9110685.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/1fef0f6d03000f75c9c2d730a0ab0bba.png" alt="" /></p>
+<h1 id="操作方式"><a class="markdownIt-Anchor" href="#操作方式"></a> 操作方式</h1>
+<h2 id="键盘映射"><a class="markdownIt-Anchor" href="#键盘映射"></a> 键盘映射</h2>
+<h3 id="下载"><a class="markdownIt-Anchor" href="#下载"></a> 下载</h3>
+<p><a href="https://github.com/PlayCover/keymaps/tree/master/keymapping/com.miHoYo.GenshinImpact">下载键盘映射</a><br />
+如果您不能访问 Github，点击以下链接下载:<br />
+<a href="/download/Genshin_Impact_fixed_16by9.playmap">Genshin_Impact_fixed_16by9.playmap</a><br />
+<a href="/download/Genshin_Impact_fixed_16by10.playmap">Genshin_Impact_fixed_16by10.playmap</a><br />
+一般 Mac 的屏幕分辨率比例是 16 : 10。</p>
+<h3 id="导入"><a class="markdownIt-Anchor" href="#导入"></a> 导入</h3>
+<p>下载完成后，打开 PlayCover，在“原神”图标点击右键，找到“导入键盘映射布局”<br />
+<img src="https://img.gejiba.com/images/efc6855c13376b0b0a0379b07be383e4.png" alt="" /><br />
+然后找到您的键盘映射布局就可以了。<br />
+<img src="https://img.gejiba.com/images/6a44f60b24115af46d5be02b446a68bf.png" alt="" /></p>
+<h3 id="应用"><a class="markdownIt-Anchor" href="#应用"></a> 应用</h3>
+<p>随后打开原神，您可以按下 Option⌥ 键，让“原神”捕获鼠标，再次按下 Option⌥ 键，可以释放鼠标。<br />
+您可以点击状态栏的“按键映射”-“打开/关闭按键映射编辑模式”，编辑您的键盘映射。<br />
+<img src="https://img.gejiba.com/images/0caf11441df218503b6006a32166dd67.png" alt="" /></p>
+<h2 id="手柄连接"><a class="markdownIt-Anchor" href="#手柄连接"></a> 手柄连接</h2>
+<p>请您先连接手柄至 Mac。<br />
+<img src="https://img.gejiba.com/images/cee062dae17e16cd0b9a97d6ad4651ae.png" alt="" /><br />
+然后打开原神，打开“设置”<br />
+<img src="https://img.gejiba.com/images/91a9e660af575671d4739c2587cc88d4.png" alt="" /><br />
+将“触屏”改为“手柄”<br />
+<img src="https://img.gejiba.com/images/fded33a413746b6e4a4463a0726c2afc.png" alt="" /><br />
+然后就完成啦！<br />
+<img src="https://img.gejiba.com/images/7f47f18a1f5d592143ab1540f8d466d2.png" alt="" /></p>
+<h1 id="推荐观看"><a class="markdownIt-Anchor" href="#推荐观看"></a> 推荐观看</h1>
+<p>本文章没有列出一些会存在的普遍问题，推荐观看下面的视频：</p>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?bvid=BV1Xx4y1F7um&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
+</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>资源分享</tag>
+      </tags>
   </entry>
   <entry>
     <title>QEMU 基础命令学习</title>
@@ -393,86 +393,6 @@ Windows 11      std / VMware
 </font><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>Windows NT4.0 安装教程</title>
-    <url>/20230119/063535/</url>
-    <content><![CDATA[<h1 id="镜像链接"><a class="markdownIt-Anchor" href="#镜像链接"></a> 镜像链接</h1>
-<p><a href="https://pan.huang1111.cn/s/lyBgTL">Click me to download ISO image [FREE!!]</a><br />
-<img src="https://img.gejiba.com/images/27da4e034df0231a2bb7ec09508d6137.png" alt="" /></p>
-<h1 id="安装教程"><a class="markdownIt-Anchor" href="#安装教程"></a> 安装教程</h1>
-<p>1.我们通过虚拟机成功引导系统后，可以看到下面界面：<br />
-<img src="https://img.gejiba.com/images/13407dbc2626460c9a71238d7e9add43.jpg" alt="" /><br />
-2.按 ENTER 继续，创建分区。<br />
-要记住，Windows NT 4.0 Service Pack 1 是不支持大硬盘的，所以我们这里只能给系统分 4096 MB 的分区。<br />
-这里我们随便选择，根据你的需求选择是否 FAT16 还是 NTFS。(不支持 FAT32)<br />
-<img src="https://img.gejiba.com/images/eac95cb4fdc249de0e22c466a8b36c4c.png" alt="" /><br />
-静等第一阶段安装完毕后，重启即可。<br />
-注意！重启一直到安装完成之前，都不可以动任何虚拟机硬件，否则开机会蓝屏。<br />
-就比如我在第一阶段安装完毕后，添加了一个 Cirrus 显示卡，结果开机蓝屏 0x0000007B<br />
-3.重启后，开始第二阶段安装<br />
-<img src="https://img.gejiba.com/images/3ccb7f2b8cdfe50abe4ed8bcb0040c1e.png" alt="" /><br />
-4.点击“下一步”，选择安装类型，这里我们选择典型。<br />
-<img src="https://img.gejiba.com/images/b6ebcb7ac6c1c161fcdad7d5257f29dd.png" alt="" /><br />
-5.输入自己的名字和组织，皆为选填。<br />
-<img src="https://img.gejiba.com/images/7e58b624f0b674e7bb79473b752418fc.png" alt="" /><br />
-6.输入 Windows NT 4.0 Workstation 的 [ CD-Key ]。<br />
-<img src="https://img.gejiba.com/images/664496dbed01c7222e6cd7205191470d.jpg" alt="" /><br />
-7.输入自己的计算机名称，随便输入。这个名称用于给您电脑命名，供别人在局域网上识别。<br />
-<img src="https://img.gejiba.com/images/320b4cc1d869b9ae53ec921d0e9b318b.png" alt="" /><br />
-8.设置管理员账户的密码，酌情而定，我这里不填。<br />
-<img src="https://img.gejiba.com/images/b1aee64d28853da06f1c4f266f063bfa.png" alt="" /><br />
-9.这里选择“否”，然后点击“下一步”。<br />
-<img src="https://img.gejiba.com/images/df453d8f0c90b757c6568899e86e2c09.png" alt="" /><br />
-10.根据您的需求来挑选，选完之后点击“下一步”。<br />
-<img src="https://img.gejiba.com/images/acf185c6f2093204bc904b30b358946e.png" alt="" /><br />
-11.如果您想稍后再设置网络，那就选择“此时不要将计算机连接到网络”。因为我要上网，所以这里会详细讲解如何设置网络。<br />
-<img src="https://img.gejiba.com/images/9932dabfbbb1b2832fd78d83a8662cd6.png" alt="" /><br />
-12.点击“开始搜索”，搜寻网卡，搜到了你需要的网卡之后，点击“下一步”。<br />
-<img src="https://img.gejiba.com/images/9b6782f707f703733eec3e05466832f8.jpg" alt="" /><br />
-13.这里我们直接“下一步”。<br />
-<img src="https://img.gejiba.com/images/b9b1e73bd8b0ce8e3ce7e479319d00e9.jpg" alt="" /><br />
-如果出现一个要设置“网卡 ID”的东西，直接点击“Skip”。<br />
-14.这里一定要选择“是”，否则系统就不会使用 DHCP，需要你自己配置网络，很麻烦。<br />
-<img src="https://img.gejiba.com/images/632444ae356f000c14cd4ccf84340fc9.jpg" alt="" /><br />
-15.点击“下一步”。<br />
-<img src="https://img.gejiba.com/images/796666538ef1ffcaa4d51675da92e3b0.jpg" alt="" /><br />
-启用网络后，就开始安装 Windows NT Workstation 了。<br />
-16.出现显示器设置后，我们点击“65536 色”，然后点击“测试”。<br />
-<img src="https://img.gejiba.com/images/6ecde8d8ac3b2576ab5700a4d45429ac.jpg" alt="" /><br />
-如果点击“测试”之后，显示器没有出现异常，那么就可以点击“确定”继续下一步安装了。<br />
-<img src="https://img.gejiba.com/images/f33fae8c67e750c81dcd9b20bd649c7e.jpg" alt="" /><br />
-等会系统就安装完成了。<br />
-后续安装：<br />
-因为 Windows NT4.0 Service Pack 1 和所附带的 Internet Explorer 3.0 十分古老，我推荐安装 Service Pack 6 之后再安装 Internet Explorer 5.0。<br />
-17.在安装盘中找到 SP6I386_CN.EXE，打开它，等待复制文件之后点击“安装”。<br />
-<img src="https://img.gejiba.com/images/c38d244a6be2a67afa8663ab97980c16.jpg" alt="" /><br />
-18.重启后，再次打开安装盘，找到 “Internet Explorer 5.0” 文件夹。<br />
-找到“IE5SETUP.EXE”，打开它。<br />
-<img src="https://img.gejiba.com/images/c74b6d6e80737d95f4620993ee2210b5.jpg" alt="" /><br />
-等待安装即可。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>历史锁那(Sana)专辑</title>
-    <url>/20230725/221318/</url>
-    <content><![CDATA[<center>
-<p><img src="https://img.gejiba.com/images/167d065688a66751b4bea8bdf4bae325.jpg" alt="" /></p>
-<h1 id="好きなひと"><a class="markdownIt-Anchor" href="#好きなひと"></a> 好きなひと。</h1>
-<h2 id="鎖那-honeyworks-20140817"><a class="markdownIt-Anchor" href="#鎖那-honeyworks-20140817"></a> 鎖那 × HoneyWorks [2014.08.17]</h2>
-<p>价格：120 元（带侧封）<br />
-<img src="https://img.gejiba.com/images/e65d8b14bf54ac8cd181d9343f9d61b0.png" alt="歌曲列表" /><br />
-<font color=red><strong>01</strong></font> 未来図<br />
-<font color=red><strong>02</strong></font> 告白予行練習<br />
-<font color=red><strong>03</strong></font> テレカクシ思春期<br />
-<font color=red><strong>04</strong></font> 初恋の絵本<br />
-<font color=red><strong>05</strong></font> 告白ライバル宣言<br />
-<font color=red><strong>06</strong></font> ヤキモチの答え<br />
-<font color=red><strong>07</strong></font> 病名恋ワズライ<br />
-<font color=red><strong>08</strong></font> イノコリ先生<br />
-<font color=red><strong>09</strong></font> ロリババアに恋をした<br />
-<font color=red><strong>10</strong></font> ラズベリー*モンスター</p>
-</center><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>Reimu 主题去除东方 PROJECT 元素</title>
     <url>/20230817/154130/</url>
     <content><![CDATA[<p>如果你安装了 Reimu 主题后又不想要东方的元素了，可以看看这篇文章。</p>
@@ -531,89 +451,62 @@ Windows 11      std / VMware
       </tags>
   </entry>
   <entry>
-    <title>本站已经迁移啦！</title>
-    <url>/20231212/022653/</url>
-    <content><![CDATA[<p>本站已经迁移至 <a href="http://steve372a.github.io">steve372a.github.io</a>，欢迎继续访问！原 URL 指向的本站将永久封存。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>无需 U 盘给 MacBook 电脑安装 Arch Linux</title>
-    <url>/20230108/134420/</url>
-    <content><![CDATA[<p>想装Arch Linux却没有带U盘，心急如焚的话，就看看我这个教程吧！保有效。</p>
-<h1 id="安装要求"><a class="markdownIt-Anchor" href="#安装要求"></a> 安装要求</h1>
-<ul>
-<li>一双手</li>
-<li>灵慧的大脑</li>
-<li>一台 (Intel 芯片) 的 MacBook Air 或者 MacBook Pro。 (不知道带安全芯片的可不可以)</li>
-</ul>
-<h1 id="开始安装"><a class="markdownIt-Anchor" href="#开始安装"></a> 开始安装</h1>
-<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
-<p>首先你需要有 Linux 基础，不然我之后跟你讲的，你都听不懂。<br />
-其次需要备份数据，因为我们要全盘格式化。</p>
-<h2 id="下载-arch-linux"><a class="markdownIt-Anchor" href="#下载-arch-linux"></a> 下载 Arch Linux</h2>
-<p>您可以通过以下链接来下载：<a href="https://mirrors.bfsu.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso">点击下载</a></p>
-<h2 id="macos-下的操作"><a class="markdownIt-Anchor" href="#macos-下的操作"></a> macOS 下的操作</h2>
-<h3 id="分区"><a class="markdownIt-Anchor" href="#分区"></a> 分区</h3>
-<ul>
-<li>在确定好已经备份好了文件之后，我们打开“磁盘工具”<br />
-<img src="https://img.gejiba.com/images/307403f27e39b88ad31f7034e3e6f3ca.png" alt="" /></li>
-<li>然后在上面的“显示”选项中，选择：“显示所有设备”<br />
-<img src="https://img.gejiba.com/images/10a4685ab86b81d9dfa2b4c032f1c707.png" alt="" /></li>
-<li>然后点击整块盘，找到“分区”选项。<br />
-<img src="https://img.gejiba.com/images/80d7dc7a41780488c98874460b234c5d.png" alt="" /></li>
-<li>添加一块 4 GB 的分区，分区格式 FAT 即可，名称先随意改一下，后面还需要改名字。<br />
-<img src="https://img.gejiba.com/images/265334b0ee5aad473c7de1f498b0f723.png" alt="" /></li>
-</ul>
-<h3 id="安装虚拟机"><a class="markdownIt-Anchor" href="#安装虚拟机"></a> 安装虚拟机</h3>
-<ul>
-<li>添加好之后，我们安装 VMware Fusion 虚拟机，安装一个 Windows 系统。<br />
-(如果你有 Parallels Desktop 虚拟机，可以跳过这一步)<br />
-VMware Fusion 虚拟机下载链接：<a href="https://download3.vmware.com/software/fusion/file/VMware-Fusion-12.0.0-16880131.dmg">点我下载</a><br />
-VMware Fusion 虚拟机破解密钥：</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ZF3R0-FHED2-M80TY-8QYGC-NPKYF</span><br></pre></td></tr></table></figure>
-<p>如果找不到 Windows 镜像的话，可以用我这个 Windows XP：<a href="https://pan.huang1111.cn/s/KBgZsY">点我下载</a></p>
-<ul>
-<li>安装好虚拟机和虚拟机扩展套件(例如：VMware Tools)之后，共享你那个 4 GB 的分区到虚拟机上。</li>
-</ul>
-<h4 id="vmware-fusion"><a class="markdownIt-Anchor" href="#vmware-fusion"></a> VMware Fusion</h4>
-<p>在菜单栏中找到“虚拟机”选项，然后拉到最后有一个“共享”，点那个共享设置。<br />
-<img src="https://img.gejiba.com/images/6ea78bdea57adb61727bc59cc2fb97fe.png" alt="" /><br />
-点击启用共享文件夹，然后点击那个”+“号。<br />
-<img src="https://img.gejiba.com/images/632ccbf19ea918679c36351e75d324d0.png" alt="" /><br />
-找到那个 4 GB 的分区，点击“添加”<br />
-<img src="https://img.gejiba.com/images/b397da48952fba48c994214f4e12b6e0.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/3cb6087a20bce76a8bc4a793218eb333.png" alt="" /></p>
-<h4 id="parallels-desktop"><a class="markdownIt-Anchor" href="#parallels-desktop"></a> Parallels Desktop</h4>
-<p>在菜单栏中找到“设备”选项，找到“共享”，点：添加文件夹。<br />
-<img src="https://img.gejiba.com/images/bd405cf58579076c9fa6508614cc58bc.png" alt="" /><br />
-找到那个 4 GB 的分区，点击“打开”<br />
-<img src="https://img.gejiba.com/images/d39aed7bf6269001f2dfcfe784a018c0.png" alt="" /></p>
-<h3 id="拷贝镜像到分区"><a class="markdownIt-Anchor" href="#拷贝镜像到分区"></a> 拷贝镜像到分区</h3>
-<ul>
-<li>这一步就非常简单了，只需要将ARCH Linux光盘文件拷贝到分区即可，这也就是为什么要装一个 Windows 虚拟机的原因，因为 macOS 不能识别 Arch Linux 的文件。</li>
-<li>虚拟机插入Arch Linux光盘，然后将光盘所有文件全部复制到那个分区。<br />
-<img src="https://img.gejiba.com/images/3853d5b817845a45de0a1daf8acf9cc9.png" alt="" /></li>
-</ul>
-<h3 id="再次更改名字"><a class="markdownIt-Anchor" href="#再次更改名字"></a> 再次更改名字</h3>
-<ul>
-<li>记住虚拟机中显示的 Arch Linux 光盘名称，我这里是<b><font color=red>「ARCH_202301」</font></b>，再次进入“磁盘工具”。<br />
-然后点击 4 GB 的分区，再点击一下他的名字：<br />
-<img src="https://img.gejiba.com/images/dc5319ee01c52ced07a08a2d49b3f9c5.png" alt="" /><br />
-将这个分区名称改成ARCH_202301之后，macOS的所有操作就都完成了。</li>
-</ul>
-<h2 id="开始安装-arch-linux"><a class="markdownIt-Anchor" href="#开始安装-arch-linux"></a> 开始安装 Arch Linux</h2>
-<p>重新启动你的 Mac 电脑，按下 Option 键，等看到启动选项出现 EFI Boot 之后，引导它。如果顺利的话，你应该可以看到 GRUB 界面，开始引导即可。<br />
-<img src="https://img.gejiba.com/images/d5d322d4fb129852c7d8365791828811.jpg" alt="" /></p>
-<h3 id="连接互联网"><a class="markdownIt-Anchor" href="#连接互联网"></a> 连接互联网</h3>
-<p>输入 iwctl 进入 iwd。<br />
-然后查看网卡号是什么，以 wlan0 为例子：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">device list</span><br></pre></td></tr></table></figure>
-<p>然后联网，输入以下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">station wlan0 scan</span><br><span class="line">station wlan0 get-networks</span><br><span class="line">station wlan0 connect TestWiFi_5G</span><br></pre></td></tr></table></figure>
-<p>连接好网络后，输入 exit 退出 iwd。再输入 ping <a href="http://www.baidu.com">www.baidu.com</a> 看看网络是不是正确连接。</p>
-<h3 id="为磁盘分区"><a class="markdownIt-Anchor" href="#为磁盘分区"></a> 为磁盘分区</h3>
-<p>未完待续。</p>
+    <title>Windows NT4.0 安装教程</title>
+    <url>/20230119/063535/</url>
+    <content><![CDATA[<h1 id="镜像链接"><a class="markdownIt-Anchor" href="#镜像链接"></a> 镜像链接</h1>
+<p><a href="https://pan.huang1111.cn/s/lyBgTL">Click me to download ISO image [FREE!!]</a><br />
+<img src="https://img.gejiba.com/images/27da4e034df0231a2bb7ec09508d6137.png" alt="" /></p>
+<h1 id="安装教程"><a class="markdownIt-Anchor" href="#安装教程"></a> 安装教程</h1>
+<p>1.我们通过虚拟机成功引导系统后，可以看到下面界面：<br />
+<img src="https://img.gejiba.com/images/13407dbc2626460c9a71238d7e9add43.jpg" alt="" /><br />
+2.按 ENTER 继续，创建分区。<br />
+要记住，Windows NT 4.0 Service Pack 1 是不支持大硬盘的，所以我们这里只能给系统分 4096 MB 的分区。<br />
+这里我们随便选择，根据你的需求选择是否 FAT16 还是 NTFS。(不支持 FAT32)<br />
+<img src="https://img.gejiba.com/images/eac95cb4fdc249de0e22c466a8b36c4c.png" alt="" /><br />
+静等第一阶段安装完毕后，重启即可。<br />
+注意！重启一直到安装完成之前，都不可以动任何虚拟机硬件，否则开机会蓝屏。<br />
+就比如我在第一阶段安装完毕后，添加了一个 Cirrus 显示卡，结果开机蓝屏 0x0000007B<br />
+3.重启后，开始第二阶段安装<br />
+<img src="https://img.gejiba.com/images/3ccb7f2b8cdfe50abe4ed8bcb0040c1e.png" alt="" /><br />
+4.点击“下一步”，选择安装类型，这里我们选择典型。<br />
+<img src="https://img.gejiba.com/images/b6ebcb7ac6c1c161fcdad7d5257f29dd.png" alt="" /><br />
+5.输入自己的名字和组织，皆为选填。<br />
+<img src="https://img.gejiba.com/images/7e58b624f0b674e7bb79473b752418fc.png" alt="" /><br />
+6.输入 Windows NT 4.0 Workstation 的 [ CD-Key ]。<br />
+<img src="https://img.gejiba.com/images/664496dbed01c7222e6cd7205191470d.jpg" alt="" /><br />
+7.输入自己的计算机名称，随便输入。这个名称用于给您电脑命名，供别人在局域网上识别。<br />
+<img src="https://img.gejiba.com/images/320b4cc1d869b9ae53ec921d0e9b318b.png" alt="" /><br />
+8.设置管理员账户的密码，酌情而定，我这里不填。<br />
+<img src="https://img.gejiba.com/images/b1aee64d28853da06f1c4f266f063bfa.png" alt="" /><br />
+9.这里选择“否”，然后点击“下一步”。<br />
+<img src="https://img.gejiba.com/images/df453d8f0c90b757c6568899e86e2c09.png" alt="" /><br />
+10.根据您的需求来挑选，选完之后点击“下一步”。<br />
+<img src="https://img.gejiba.com/images/acf185c6f2093204bc904b30b358946e.png" alt="" /><br />
+11.如果您想稍后再设置网络，那就选择“此时不要将计算机连接到网络”。因为我要上网，所以这里会详细讲解如何设置网络。<br />
+<img src="https://img.gejiba.com/images/9932dabfbbb1b2832fd78d83a8662cd6.png" alt="" /><br />
+12.点击“开始搜索”，搜寻网卡，搜到了你需要的网卡之后，点击“下一步”。<br />
+<img src="https://img.gejiba.com/images/9b6782f707f703733eec3e05466832f8.jpg" alt="" /><br />
+13.这里我们直接“下一步”。<br />
+<img src="https://img.gejiba.com/images/b9b1e73bd8b0ce8e3ce7e479319d00e9.jpg" alt="" /><br />
+如果出现一个要设置“网卡 ID”的东西，直接点击“Skip”。<br />
+14.这里一定要选择“是”，否则系统就不会使用 DHCP，需要你自己配置网络，很麻烦。<br />
+<img src="https://img.gejiba.com/images/632444ae356f000c14cd4ccf84340fc9.jpg" alt="" /><br />
+15.点击“下一步”。<br />
+<img src="https://img.gejiba.com/images/796666538ef1ffcaa4d51675da92e3b0.jpg" alt="" /><br />
+启用网络后，就开始安装 Windows NT Workstation 了。<br />
+16.出现显示器设置后，我们点击“65536 色”，然后点击“测试”。<br />
+<img src="https://img.gejiba.com/images/6ecde8d8ac3b2576ab5700a4d45429ac.jpg" alt="" /><br />
+如果点击“测试”之后，显示器没有出现异常，那么就可以点击“确定”继续下一步安装了。<br />
+<img src="https://img.gejiba.com/images/f33fae8c67e750c81dcd9b20bd649c7e.jpg" alt="" /><br />
+等会系统就安装完成了。<br />
+后续安装：<br />
+因为 Windows NT4.0 Service Pack 1 和所附带的 Internet Explorer 3.0 十分古老，我推荐安装 Service Pack 6 之后再安装 Internet Explorer 5.0。<br />
+17.在安装盘中找到 SP6I386_CN.EXE，打开它，等待复制文件之后点击“安装”。<br />
+<img src="https://img.gejiba.com/images/c38d244a6be2a67afa8663ab97980c16.jpg" alt="" /><br />
+18.重启后，再次打开安装盘，找到 “Internet Explorer 5.0” 文件夹。<br />
+找到“IE5SETUP.EXE”，打开它。<br />
+<img src="https://img.gejiba.com/images/c74b6d6e80737d95f4620993ee2210b5.jpg" alt="" /><br />
+等待安装即可。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -726,210 +619,6 @@ VMware Fusion 虚拟机破解密钥：</li>
 </tr>
 </tbody>
 </table>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>珊瑚宫心海养成指南</title>
-    <url>/20220915/233651/</url>
-    <content><![CDATA[<p><font  face="宋体">献给各位抽到心海的同学们~</font><br />
-<font  face="宋体"><br />
-<img src="https://img.gejiba.com/images/9b0eb764a0ac82311a641c0c879ec1ec.jpg" alt="" /><br />
-<img src="https://img.gejiba.com/images/32d21d0e305c9d5a21a56fb8dc992737.gif" alt="" /></p>
-<h2 id="圣遗物"><a class="markdownIt-Anchor" href="#圣遗物"></a> 圣遗物</h2>
-<p>建议使用<font face="宋体" color=#9393FF><strong>海</font><font  face="宋体" color=#FF60AF>染</font><font face="宋体" color=#46A3FF>四件套</strong></font>。<br />
-双爆<font face="宋体" color=red><strong>越少越好，不要堆双爆</strong></font>。</p>
-<h3 id="词条"><a class="markdownIt-Anchor" href="#词条"></a> 词条</h3>
-<p><font  face="宋体">生之花：<font face="宋体" color=red><strong>生命值</strong></font><br />
-<img src="https://img.gejiba.com/images/07ad11abca89d87bd1ae38612e54cbe4.jpg" alt="" /><br />
-死之羽：<font face="宋体" color=red><strong>攻击力</strong></font><br />
-<img src="https://img.gejiba.com/images/ea4acec0d7fd5b0ff0bb789fb965d28e.jpg" alt="" /><br />
-理之冠：<font color=red><strong>治疗加成</strong></font>（可以使用生命）<br />
-<img src="https://img.gejiba.com/images/6865e4d0d785f80d26c9b51409787372.jpg" alt="" /><br />
-时之沙：<font color=red><strong>生命值</strong></font><br />
-<img src="https://img.gejiba.com/images/d7763d67dab5e0bc3a78c0f63c197824.jpg" alt="" /><br />
-空之杯：<font color=red><strong>水元素伤害加成</strong></font><br />
-<img src="https://img.gejiba.com/images/989b021bb7fa09b6cfa7cf591337f2dd.jpg" alt="" /><br />
-</font></p>
-<h2 id="武器"><a class="markdownIt-Anchor" href="#武器"></a> 武器</h2>
-<p>使用<font face="宋体" color=#CA8EC2><strong>试作金铂</strong></font>即可。如果追求更高可以抽取<font color=#FFD306><strong>不灭月华</strong></font>。</p>
-<h2 id="命座"><a class="markdownIt-Anchor" href="#命座"></a> 命座</h2>
-<p>零命即可，一般没必要抽取命座。</p>
-<h2 id="组队"><a class="markdownIt-Anchor" href="#组队"></a> 组队</h2>
-<p>可以放进<b>“神鹤万心”</b>配合打永冻流：<br />
-<font color=#FFD306><strong>神里绫华</strong></font>、<font color=#FFD306><strong>珊瑚宫心海</strong></font>、<font color=#FFD306><strong>申鹤</strong></font>、<font color=#FFD306><strong>枫原万叶</strong></font>。</p>
-<p><font face="宋体">还有心海武装队：</font><br />
-<font face="宋体" color=#FFD306><strong>珊瑚宫心海</strong></font>、<font face="宋体" color=#CA8EC2><strong>菲谢尔</strong></font>、<font face="宋体" color=#CA8EC2><strong>北斗</strong></font>、<font face="宋体" color=#CA8EC2><strong>行秋</strong></font>。<br />
-<font face="宋体" color=red>心海武装队和砂糖武装队不一样的是，心海武装队可以随意搭配后三位角色。</font><br />
-</font></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>白洋淀公交乘坐体验</title>
-    <url>/20220821/011817/</url>
-    <content><![CDATA[<h1 id="线路走向"><a class="markdownIt-Anchor" href="#线路走向"></a> 线路走向</h1>
-<p>2022 年 8 月 20 日，沧州市任丘市新开到白洋淀李广村<font color=red>（现归雄安新区保定市雄县管辖）</font>的公交：308 路。以下是线路走向。</p>
-<h3 id="308-路-代河枢纽站-李广村"><a class="markdownIt-Anchor" href="#308-路-代河枢纽站-李广村"></a> 308 路 代河枢纽站 - 李广村</h3>
-<p><font color=green>代河枢纽站-西黄垒村西-于村路口<font color=red>(106国道)</font>-杜家营村-前塔村-后塔村-鄚州镇政府-鄚州镇中心卫生院-南阁村-东七里庄-中七里庄-西七里庄-生紫码头-大口子码头-李广村南-李广村</font><br />
-<img src="https://img.gejiba.com/images/03eb9f97595c40fdcc4b32a1dd089d9b.png" alt="" /></p>
-<h1 id="乘车日志"><a class="markdownIt-Anchor" href="#乘车日志"></a> 乘车日志</h1>
-<p>20号下午一点半从市区乘坐202路公交（任丘市客运西站-代河枢纽站）到达北代河。<br />
-<img src="https://img.gejiba.com/images/0b4afc34f40d79694614063114824073.jpg" alt="" /><br />
-小歇息后。一点四十308路开始行走。车内座子还是很新的，支持刷卡和刷码。<br />
-<img src="https://img.gejiba.com/images/caabb0a863887deefa35a70dcdfde4b2.jpg" alt="" /><br />
-今天天空很好看啊…<br />
-车子运行还是很快的，最高速度大概 40 km/h。噪音蛮大的。<br />
-过了于村路口就基本出了任丘界了，驶入鄚州镇。<br />
-<img src="https://img.gejiba.com/images/4c294fd8d37c149493ac12bb8e4efb89.jpg" alt="" /><br />
-驾驶到千里堤路的时候，就可以看到白洋淀的河流了。<br />
-这里有几个旅游码头，308路基本都设置了站点。<br />
-人还挺多的，比较热闹。<br />
-然后就到了李广村，本车的终点站。<br />
-<img src="https://img.gejiba.com/images/38e1a10c805be98b163dad05b4c93ab9.jpg" alt="" /><br />
-李广村离白洋淀河流还算是挺近的，我在这里拍了一些照片。<br />
-<img src="https://img.gejiba.com/images/3fc817b205738ced7dd3ce1e378a5447.jpg" alt="" /><br />
-<img src="https://img.gejiba.com/images/bd0f431dfabddf5fd30d250932523d59.jpg" alt="" /><br />
-<img src="https://img.gejiba.com/images/b1b5d6fb64e809b6c4b3acc160c97807.png" alt="李广村在白洋淀的位置" /><br />
-在近距离观察时，录了一小段视频。<font color=red>【因为 iOS 录制默认格式就是 QuickTime 格式，所以仅限 Apple 设备 (iPhone、Mac、iPod) 可播放此视频】</font><br />
-<a href="https://steve372yeyeye.github.io/20220821/011817/480p.mov">点击播放 QuickTime 视频</a></p>
-<h1 id=""><a class="markdownIt-Anchor" href="#"></a> </h1>
-<p>白洋淀环境很好，即使是在不是景区的乡村小河，也是很美丽的。<br />
-有一种很自然很清新的感觉。如果是清晨应该会更有感觉。</p>
-<h1 id="经过码头"><a class="markdownIt-Anchor" href="#经过码头"></a> 经过码头</h1>
-<p>308 路在路途中会经过<font color=green>生紫码头</font>和<font color=green>大口子码头</font>。</p>
-<h1 id="停止运行"><a class="markdownIt-Anchor" href="#停止运行"></a> 停止运行</h1>
-<p>302 路已于 8 月 23 日停止运行。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>计算机基础操作</title>
-    <url>/20220910/083627/</url>
-    <content><![CDATA[<p>为了让各位用户都能会用 Windows，特此写下该教程。<br />
-Windows 是微软公司于 1985 年发布的电脑操作系统，最新版是 Windows 11(2021 年发布)。<br />
-这里我们都以<font color=#66CCF> Windows 8.1 With Update</font> 版本为例子。<br />
-<font face="宋体"></p>
-<h1 id="认识界面"><a class="markdownIt-Anchor" href="#认识界面"></a> 认识界面</h1>
-<p>Windows 8.1 的主界面长这样：<br />
-<img src="https://img.gejiba.com/images/1652f5ddeefb13492b6f1f4ed881a635.png" alt="" /><br />
-点击“开始按钮”后，出现以下界面：<br />
-<img src="https://img.gejiba.com/images/2caaee3f09a6e7e296efa2521203587e.png" alt="" /><br />
-可以看到很多功能。这就是 Windows 8 新增的磁贴界面。<br />
-我们点击网络图标，可以列出电脑下的所有网络。<br />
-<img src="https://img.gejiba.com/images/70c8e2328d4c6b79ed980dd38b6fe285.png" alt="" /><br />
-台式机我们都用有线网络，也就是插上网线后使用网络。如果需要连接 Wi-Fi，请加装无线网卡。然后点击网络图标，输入您家网络密码即可。<br />
-点击声音图标，可以调节计算机的声音。<br />
-<img src="https://img.gejiba.com/images/c1d3edde8d66572bd8e3119b58d2885e.png" alt="" /><br />
-也可以识别到计算机使用什么输出的声音。我这里是有线耳机所以识别到耳机。<br />
-打开“这台电脑”可以查阅到电脑的所有文件夹。<br />
-<img src="https://img.gejiba.com/images/ea386a6e79ccfdcf2e6904ded66596b7.png" alt="" /><br />
-如果要添加 FTP 或者 SAMBA 连接，请右键点击“添加一个网络位置”。<br />
-<img src="https://img.gejiba.com/images/e5e354b6eb7d798c69375f878a0c0ad8.png" alt="" /><br />
-您也可以通过“这台电脑”为磁盘加密、格式化、和复制整块盘。<br />
-<img src="https://img.gejiba.com/images/f2b3507bb9fdad1a945c9b7ff7cf5292.png" alt="" /><br />
-如果是移动硬盘、U 盘等设备，也可以手动打开“自动播放”，如图：<br />
-<img src="https://img.gejiba.com/images/5d5310518f51aa984ea5a1bc74a9f487.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/ef3f92b34135e76276dea95e5416d3a6.png" alt="" /></p>
-<h1 id="鼠标操作"><a class="markdownIt-Anchor" href="#鼠标操作"></a> 鼠标操作</h1>
-<p>鼠标分为左键、中键和右键。您需要根据软件的操作控制鼠标。<br />
-<img src="https://img.gejiba.com/images/24ae58dad5ca57dd325db98300f18090.png" alt="" /></p>
-<h1 id="键盘操作"><a class="markdownIt-Anchor" href="#键盘操作"></a> 键盘操作</h1>
-<h2 id="普通-pc"><a class="markdownIt-Anchor" href="#普通-pc"></a> 普通 PC</h2>
-<p>Windows 也十分依赖键盘。键盘长这样：<br />
-<img src="https://img.gejiba.com/images/e94205463ae97810d7fdaf409a93fd61.png" alt="" /></p>
-<h3 id="ctrl-键"><a class="markdownIt-Anchor" href="#ctrl-键"></a> Ctrl 键</h3>
-<p>Ctrl 键就是控制键(Control)，用于控制 Windows 及程序的各种操作。</p>
-<h3 id="alt-键"><a class="markdownIt-Anchor" href="#alt-键"></a> Alt 键</h3>
-<p>Alt 键是更换(Alternate)的意思，点击 Alt + Tab 键后可以在打开的项目之间切换。</p>
-<h3 id="shift-键"><a class="markdownIt-Anchor" href="#shift-键"></a> Shift 键</h3>
-<p>而 Shift 键是上档转换键。常用于输入法中英文转换。</p>
-<h3 id="enter-键"><a class="markdownIt-Anchor" href="#enter-键"></a> Enter 键</h3>
-<p>Enter 键是回车键。在各个软件的功能都不一样，例如，在 Microsoft Word 中会换行，而在腾讯 QQ 中会发送消息。</p>
-<h3 id="windows-键"><a class="markdownIt-Anchor" href="#windows-键"></a> Windows 键</h3>
-<p>那个 Windows 徽标按键就是 Windows 键。在 Windows Vista 之前的系统（例如 Windows XP）中，Windows 键的功能不多。直到 Windows Vista 之后才开始增加新的内容。比如</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Windows+数字1、2、3、4、5、6、7、8、9、0 分别打开你的任务栏上面的快捷启动栏上面的第一个到第十个图标所对应的快捷方式。</span><br><span class="line">Windows+D 最小化所有窗口，再按一次恢复所有窗口</span><br><span class="line">Windows+E 开启资源管理器(频繁按会资源占尽而死机)</span><br><span class="line">Windows+F 打开搜索窗口</span><br><span class="line">Windows+G 多次按下就会依次切换侧边栏上面的小工具(Gadgets)</span><br><span class="line">Windows+L 锁定当前计算机用户</span><br><span class="line">Windows+R 开启运行对话框 (非常常用)</span><br><span class="line">Windows+T 激活当前任务栏上面的窗口，多次按下会依次定位到下一个窗体</span><br><span class="line">Windows+T Shift 反方向定位</span><br><span class="line">Windows+U 开启辅助工具管理器</span><br><span class="line">Windows+X 开启Windows移动中心</span><br><span class="line">Windows+TAB 开启 Flip 3D窗口切换</span><br><span class="line">Windows+TAB Ctrl 用键盘控制 Flip 3D窗口切换</span><br><span class="line">Windows+Break(就是Pause——Break键) 开启Windows Vista系统属性窗口</span><br></pre></td></tr></table></figure>
-<h3 id="backspace-键"><a class="markdownIt-Anchor" href="#backspace-键"></a> Backspace 键</h3>
-<p>Backspace 键即退格键，相当于您手机的这个按钮：<br />
-<img src="https://img.gejiba.com/images/c8f0d055e9dfc465b17d0ce2ee45bc36.png" alt="" /></p>
-<h2 id="苹果电脑mac"><a class="markdownIt-Anchor" href="#苹果电脑mac"></a> 苹果电脑（Mac）</h2>
-<p>因为 Mac 机生来就是为了 macOS 服务，所以键位略有不同。<br />
-<img src="https://img.gejiba.com/images/740924cf74818fe307c4021b64d92673.png" alt="" /><br />
-以下是 Mac 键盘映射到 Windows 的位置。</p>
-<h3 id="option-键"><a class="markdownIt-Anchor" href="#option-键"></a> Option 键</h3>
-<p>映射在 Windows 下的 Alt 键</p>
-<h3 id="control-键"><a class="markdownIt-Anchor" href="#control-键"></a> Control 键</h3>
-<p>映射在 Windows 下的 Ctrl 键</p>
-<h3 id="command-键"><a class="markdownIt-Anchor" href="#command-键"></a> Command 键</h3>
-<p>映射在 Windows 下的 Windows 键</p>
-<h3 id="注意"><a class="markdownIt-Anchor" href="#注意"></a> 注意</h3>
-<p>因为 Mac 部分操作由 Command 键来完成，如果你用 macOS 习惯了，重装 Windows 后会很不适应。</p>
-<h1 id="上网"><a class="markdownIt-Anchor" href="#上网"></a> 上网</h1>
-<h2 id="连接到网络"><a class="markdownIt-Anchor" href="#连接到网络"></a> 连接到网络。</h2>
-<p>由上面的消息可得知，我们点击“网络”图标即可查看电脑是否联网。<br />
-但是，我们如果没有安装 Wi-Fi 网卡，那么该如何上网？</p>
-<h3 id="有线上网方法"><a class="markdownIt-Anchor" href="#有线上网方法"></a> 有线上网方法</h3>
-<p>首先，请自备一个<font color=#66CCF>网线</font>，将网线的一个端插入电脑设备。然后打开电脑控制面板。打开“网络与共享中心”<br />
-<img src="https://img.gejiba.com/images/61f075931cb8ac26067cbfd567ad7f85.png" alt="" /><br />
-然后点击“设置新的连接或网络”<br />
-<img src="https://img.gejiba.com/images/a61d6294782fe99c3738d669ac0877ca.png" alt="" /><br />
-然后在新弹出的网络窗口中，直接下一步。<br />
-<img src="https://img.gejiba.com/images/67ea71e690e2aae356299499cacc4733.png" alt="" /><br />
-这里因为我连接上 互联网 了，所以提示这个，请点击设置新连接。<br />
-<img src="https://img.gejiba.com/images/fe1bda33d3929b53bbf7952a0c981385.png" alt="" /><br />
-然后点击宽带上网(PPPoE)<br />
-<img src="https://img.gejiba.com/images/23bb454358d7a97eb544ca86fa3165c3.png" alt="" /><br />
-然后输入你<font color=#66CCF> ISP </font>提供给你的用户名和密码，点击“连接”。<br />
-<img src="https://img.gejiba.com/images/70131c1f06e051214b7959d817184584.png" alt="" /><br />
-待等连接完成即可。<br />
-也可以稍后输入用户名和密码。<br />
-<img src="https://img.gejiba.com/images/8fc4e5f052bbe3a16fdd76b144b2685c.png" alt="" /><br />
-<font color=red>注意：如果是新安装的 Windows 8.1 或 Windows 7 ，他一般不会配备某些设备的以太网卡，所以有线网也无法使用。这时需要安装驱动软件。</font><br />
-如果需要查看您设备是否存在以太网卡，请查阅任务管理器。<br />
-<img src="https://img.gejiba.com/images/04429d53596fb0e3743180f48887993d.png" alt="" /></p>
-<h3 id="连接无线网"><a class="markdownIt-Anchor" href="#连接无线网"></a> 连接无线网。</h3>
-<p>如果您电脑已经有无线网卡了，请确保安装好驱动软件，然后直接点击网络按钮，找到您家 Wi-Fi 网络即可。<br />
-<img src="https://img.gejiba.com/images/9f62ae7d15014e89b9e38146d2e332f9.png" alt="" /></p>
-<h2 id="上网浏览器更换"><a class="markdownIt-Anchor" href="#上网浏览器更换"></a> 上网浏览器更换</h2>
-<p>Windows 10 之前的系统只自带一个上网浏览器，名叫 Internet Explorer，这个浏览器已经淘汰了，需要更换。<br />
-请确保连接好网络后，打开 Internet Explorer，输入 Firefox，来更换浏览器。当然您更换其他浏览器也是可以的，我推荐换成 Edge。<br />
-<img src="https://img.gejiba.com/images/9fc535345f9c88ded9db35eb3ab9f122.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/57c44802582c9ffdfa7a3b363eba1fef.png" alt="" /><br />
-点击下载 Firefox 来安装 Firefox。<br />
-<img src="https://img.gejiba.com/images/363e5121033dbfc948671cd6c01697c0.png" alt="" /></p>
-<h1 id="安装软件"><a class="markdownIt-Anchor" href="#安装软件"></a> 安装软件</h1>
-<h2 id="上网查找软件"><a class="markdownIt-Anchor" href="#上网查找软件"></a> 上网查找软件</h2>
-<p>直接使用上网浏览器搜索你要安装的软件即可。<br />
-<img src="https://img.gejiba.com/images/43f8eeb19effa9d2f91add83168c7c86.png" alt="" /><br />
-<font color=red>注意！在网上下载的软件鱼龙混杂，非常容易被捆绑，中病毒。</font><br />
-如果要下载微软 Office 软件，建议使用 MSDN I Tell You 网站。<a href="https://msdn.itellyou.cn">点击进入网站</a><br />
-<img src="https://img.gejiba.com/images/a6ed168084e06062d4a263d87a7b39ab.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/06a5200304903229bb2b38a2c96ee140.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/e83b3760a52fd32e20896c4808c0bb03.png" alt="" /></p>
-<h2 id="软件管家安装软件"><a class="markdownIt-Anchor" href="#软件管家安装软件"></a> 软件管家安装软件</h2>
-<p>使用上网浏览器先安装<font color=#66CCF> 360 软件管家</font>，然后在软件管家搜索你要安装的软件。</p>
-<h1 id="管理您计算机上的文件"><a class="markdownIt-Anchor" href="#管理您计算机上的文件"></a> 管理您计算机上的文件</h1>
-<p>如果需要管理器您计算机上的软件，请点击“这台电脑”。随便点进一个盘。<br />
-<img src="https://img.gejiba.com/images/ad0a02ed187c07c21ea51d40eb14b5fc.png" alt="" /><br />
-这里列出了这盘上面的所有内容。<br />
-如果要复制一个文件，请在要复制的文件旁点击鼠标右键，然后点击“复制©”。<br />
-<img src="https://img.gejiba.com/images/4f205db2d4061a45f27c59dd28a4027c.png" alt="" /><br />
-然后前往要复制到的文件夹，然后右键点击“粘贴(P)”。<br />
-<img src="https://img.gejiba.com/images/ea444b06cac589002a3da8bebde66591.png" alt="" /><br />
-这样，文件就复制好了。<br />
-我们只需要移动文件的时候点击“剪切(T)”即可。</p>
-<h1 id="卸载软件"><a class="markdownIt-Anchor" href="#卸载软件"></a> 卸载软件</h1>
-<p>有时候我们不想要一些软件，这时可以卸载软件。<br />
-打开 控制面板，然后找到 <font color=#66CCF>程序与功能</font><br />
-<img src="https://img.gejiba.com/images/403509da174a2c1c63628db60d205ad3.png" alt="" /><br />
-然后，双击要卸载的软件，跟着软件走即可。<br />
-<img src="https://img.gejiba.com/images/2f06c1f1ee32d3752ed1876222740794.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/20196f123882172b4f12a00d39411252.png" alt="" /></p>
-<h1 id="命令提示符"><a class="markdownIt-Anchor" href="#命令提示符"></a> 命令提示符</h1>
-<p><font color=red>注意！专业人士使用。</font><br />
-Windows 中的终端叫做命令提示符，我们可以利用终端做很多事情。请先按下 Windows+R 键然后输入 cmd。<br />
-<img src="https://img.gejiba.com/images/8ec9d0d197ae975dc233a799032b0a5a.png" alt="" /><br />
-然后会打开一个黑色命令窗口，我们在此输入命令即可。比如我要查看系统版本，输入：<br />
-<img src="https://img.gejiba.com/images/19587c4ac59a01e5359fb3584f29e211.png" alt="" /><br />
-就可以查看了。要清屏可以输入 cls。<br />
-</font></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -1201,17 +890,315 @@ Windows 11      std / VMware
 </font><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>Sanapri bilibili 新视频</title>
-    <url>/20220823/164646/</url>
-    <content><![CDATA[<p>鎖那小天使终于发新视频啦，这里给你们看看～</p>
-<pre><code>Kyu-kurarin (cover) / sana 
-original: きゅうくらりん / いよわ feat.可不 
-vocal: 鎖那  mix: n.k 
-▷https://space.bilibili.com/543245410
-</code></pre>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?bvid=BV1M14y1t7LK&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
-</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <title>珊瑚宫心海养成指南</title>
+    <url>/20220915/233651/</url>
+    <content><![CDATA[<p><font  face="宋体">献给各位抽到心海的同学们~</font><br />
+<font  face="宋体"><br />
+<img src="https://img.gejiba.com/images/9b0eb764a0ac82311a641c0c879ec1ec.jpg" alt="" /><br />
+<img src="https://img.gejiba.com/images/32d21d0e305c9d5a21a56fb8dc992737.gif" alt="" /></p>
+<h2 id="圣遗物"><a class="markdownIt-Anchor" href="#圣遗物"></a> 圣遗物</h2>
+<p>建议使用<font face="宋体" color=#9393FF><strong>海</font><font  face="宋体" color=#FF60AF>染</font><font face="宋体" color=#46A3FF>四件套</strong></font>。<br />
+双爆<font face="宋体" color=red><strong>越少越好，不要堆双爆</strong></font>。</p>
+<h3 id="词条"><a class="markdownIt-Anchor" href="#词条"></a> 词条</h3>
+<p><font  face="宋体">生之花：<font face="宋体" color=red><strong>生命值</strong></font><br />
+<img src="https://img.gejiba.com/images/07ad11abca89d87bd1ae38612e54cbe4.jpg" alt="" /><br />
+死之羽：<font face="宋体" color=red><strong>攻击力</strong></font><br />
+<img src="https://img.gejiba.com/images/ea4acec0d7fd5b0ff0bb789fb965d28e.jpg" alt="" /><br />
+理之冠：<font color=red><strong>治疗加成</strong></font>（可以使用生命）<br />
+<img src="https://img.gejiba.com/images/6865e4d0d785f80d26c9b51409787372.jpg" alt="" /><br />
+时之沙：<font color=red><strong>生命值</strong></font><br />
+<img src="https://img.gejiba.com/images/d7763d67dab5e0bc3a78c0f63c197824.jpg" alt="" /><br />
+空之杯：<font color=red><strong>水元素伤害加成</strong></font><br />
+<img src="https://img.gejiba.com/images/989b021bb7fa09b6cfa7cf591337f2dd.jpg" alt="" /><br />
+</font></p>
+<h2 id="武器"><a class="markdownIt-Anchor" href="#武器"></a> 武器</h2>
+<p>使用<font face="宋体" color=#CA8EC2><strong>试作金铂</strong></font>即可。如果追求更高可以抽取<font color=#FFD306><strong>不灭月华</strong></font>。</p>
+<h2 id="命座"><a class="markdownIt-Anchor" href="#命座"></a> 命座</h2>
+<p>零命即可，一般没必要抽取命座。</p>
+<h2 id="组队"><a class="markdownIt-Anchor" href="#组队"></a> 组队</h2>
+<p>可以放进<b>“神鹤万心”</b>配合打永冻流：<br />
+<font color=#FFD306><strong>神里绫华</strong></font>、<font color=#FFD306><strong>珊瑚宫心海</strong></font>、<font color=#FFD306><strong>申鹤</strong></font>、<font color=#FFD306><strong>枫原万叶</strong></font>。</p>
+<p><font face="宋体">还有心海武装队：</font><br />
+<font face="宋体" color=#FFD306><strong>珊瑚宫心海</strong></font>、<font face="宋体" color=#CA8EC2><strong>菲谢尔</strong></font>、<font face="宋体" color=#CA8EC2><strong>北斗</strong></font>、<font face="宋体" color=#CA8EC2><strong>行秋</strong></font>。<br />
+<font face="宋体" color=red>心海武装队和砂糖武装队不一样的是，心海武装队可以随意搭配后三位角色。</font><br />
+</font></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>本站已经迁移啦！</title>
+    <url>/20231212/022653/</url>
+    <content><![CDATA[<p>本站已经迁移至 <a href="http://steve372a.github.io">steve372a.github.io</a>，欢迎继续访问！原 URL 指向的本站将永久封存。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>无需 U 盘给 MacBook 电脑安装 Arch Linux</title>
+    <url>/20230108/134420/</url>
+    <content><![CDATA[<p>想装Arch Linux却没有带U盘，心急如焚的话，就看看我这个教程吧！保有效。</p>
+<h1 id="安装要求"><a class="markdownIt-Anchor" href="#安装要求"></a> 安装要求</h1>
+<ul>
+<li>一双手</li>
+<li>灵慧的大脑</li>
+<li>一台 (Intel 芯片) 的 MacBook Air 或者 MacBook Pro。 (不知道带安全芯片的可不可以)</li>
+</ul>
+<h1 id="开始安装"><a class="markdownIt-Anchor" href="#开始安装"></a> 开始安装</h1>
+<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
+<p>首先你需要有 Linux 基础，不然我之后跟你讲的，你都听不懂。<br />
+其次需要备份数据，因为我们要全盘格式化。</p>
+<h2 id="下载-arch-linux"><a class="markdownIt-Anchor" href="#下载-arch-linux"></a> 下载 Arch Linux</h2>
+<p>您可以通过以下链接来下载：<a href="https://mirrors.bfsu.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso">点击下载</a></p>
+<h2 id="macos-下的操作"><a class="markdownIt-Anchor" href="#macos-下的操作"></a> macOS 下的操作</h2>
+<h3 id="分区"><a class="markdownIt-Anchor" href="#分区"></a> 分区</h3>
+<ul>
+<li>在确定好已经备份好了文件之后，我们打开“磁盘工具”<br />
+<img src="https://img.gejiba.com/images/307403f27e39b88ad31f7034e3e6f3ca.png" alt="" /></li>
+<li>然后在上面的“显示”选项中，选择：“显示所有设备”<br />
+<img src="https://img.gejiba.com/images/10a4685ab86b81d9dfa2b4c032f1c707.png" alt="" /></li>
+<li>然后点击整块盘，找到“分区”选项。<br />
+<img src="https://img.gejiba.com/images/80d7dc7a41780488c98874460b234c5d.png" alt="" /></li>
+<li>添加一块 4 GB 的分区，分区格式 FAT 即可，名称先随意改一下，后面还需要改名字。<br />
+<img src="https://img.gejiba.com/images/265334b0ee5aad473c7de1f498b0f723.png" alt="" /></li>
+</ul>
+<h3 id="安装虚拟机"><a class="markdownIt-Anchor" href="#安装虚拟机"></a> 安装虚拟机</h3>
+<ul>
+<li>添加好之后，我们安装 VMware Fusion 虚拟机，安装一个 Windows 系统。<br />
+(如果你有 Parallels Desktop 虚拟机，可以跳过这一步)<br />
+VMware Fusion 虚拟机下载链接：<a href="https://download3.vmware.com/software/fusion/file/VMware-Fusion-12.0.0-16880131.dmg">点我下载</a><br />
+VMware Fusion 虚拟机破解密钥：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ZF3R0-FHED2-M80TY-8QYGC-NPKYF</span><br></pre></td></tr></table></figure>
+<p>如果找不到 Windows 镜像的话，可以用我这个 Windows XP：<a href="https://pan.huang1111.cn/s/KBgZsY">点我下载</a></p>
+<ul>
+<li>安装好虚拟机和虚拟机扩展套件(例如：VMware Tools)之后，共享你那个 4 GB 的分区到虚拟机上。</li>
+</ul>
+<h4 id="vmware-fusion"><a class="markdownIt-Anchor" href="#vmware-fusion"></a> VMware Fusion</h4>
+<p>在菜单栏中找到“虚拟机”选项，然后拉到最后有一个“共享”，点那个共享设置。<br />
+<img src="https://img.gejiba.com/images/6ea78bdea57adb61727bc59cc2fb97fe.png" alt="" /><br />
+点击启用共享文件夹，然后点击那个”+“号。<br />
+<img src="https://img.gejiba.com/images/632ccbf19ea918679c36351e75d324d0.png" alt="" /><br />
+找到那个 4 GB 的分区，点击“添加”<br />
+<img src="https://img.gejiba.com/images/b397da48952fba48c994214f4e12b6e0.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/3cb6087a20bce76a8bc4a793218eb333.png" alt="" /></p>
+<h4 id="parallels-desktop"><a class="markdownIt-Anchor" href="#parallels-desktop"></a> Parallels Desktop</h4>
+<p>在菜单栏中找到“设备”选项，找到“共享”，点：添加文件夹。<br />
+<img src="https://img.gejiba.com/images/bd405cf58579076c9fa6508614cc58bc.png" alt="" /><br />
+找到那个 4 GB 的分区，点击“打开”<br />
+<img src="https://img.gejiba.com/images/d39aed7bf6269001f2dfcfe784a018c0.png" alt="" /></p>
+<h3 id="拷贝镜像到分区"><a class="markdownIt-Anchor" href="#拷贝镜像到分区"></a> 拷贝镜像到分区</h3>
+<ul>
+<li>这一步就非常简单了，只需要将ARCH Linux光盘文件拷贝到分区即可，这也就是为什么要装一个 Windows 虚拟机的原因，因为 macOS 不能识别 Arch Linux 的文件。</li>
+<li>虚拟机插入Arch Linux光盘，然后将光盘所有文件全部复制到那个分区。<br />
+<img src="https://img.gejiba.com/images/3853d5b817845a45de0a1daf8acf9cc9.png" alt="" /></li>
+</ul>
+<h3 id="再次更改名字"><a class="markdownIt-Anchor" href="#再次更改名字"></a> 再次更改名字</h3>
+<ul>
+<li>记住虚拟机中显示的 Arch Linux 光盘名称，我这里是<b><font color=red>「ARCH_202301」</font></b>，再次进入“磁盘工具”。<br />
+然后点击 4 GB 的分区，再点击一下他的名字：<br />
+<img src="https://img.gejiba.com/images/dc5319ee01c52ced07a08a2d49b3f9c5.png" alt="" /><br />
+将这个分区名称改成ARCH_202301之后，macOS的所有操作就都完成了。</li>
+</ul>
+<h2 id="开始安装-arch-linux"><a class="markdownIt-Anchor" href="#开始安装-arch-linux"></a> 开始安装 Arch Linux</h2>
+<p>重新启动你的 Mac 电脑，按下 Option 键，等看到启动选项出现 EFI Boot 之后，引导它。如果顺利的话，你应该可以看到 GRUB 界面，开始引导即可。<br />
+<img src="https://img.gejiba.com/images/d5d322d4fb129852c7d8365791828811.jpg" alt="" /></p>
+<h3 id="连接互联网"><a class="markdownIt-Anchor" href="#连接互联网"></a> 连接互联网</h3>
+<p>输入 iwctl 进入 iwd。<br />
+然后查看网卡号是什么，以 wlan0 为例子：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">device list</span><br></pre></td></tr></table></figure>
+<p>然后联网，输入以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">station wlan0 scan</span><br><span class="line">station wlan0 get-networks</span><br><span class="line">station wlan0 connect TestWiFi_5G</span><br></pre></td></tr></table></figure>
+<p>连接好网络后，输入 exit 退出 iwd。再输入 ping <a href="http://www.baidu.com">www.baidu.com</a> 看看网络是不是正确连接。</p>
+<h3 id="为磁盘分区"><a class="markdownIt-Anchor" href="#为磁盘分区"></a> 为磁盘分区</h3>
+<p>未完待续。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>历史锁那(Sana)专辑</title>
+    <url>/20230725/221318/</url>
+    <content><![CDATA[<center>
+<p><img src="https://img.gejiba.com/images/167d065688a66751b4bea8bdf4bae325.jpg" alt="" /></p>
+<h1 id="好きなひと"><a class="markdownIt-Anchor" href="#好きなひと"></a> 好きなひと。</h1>
+<h2 id="鎖那-honeyworks-20140817"><a class="markdownIt-Anchor" href="#鎖那-honeyworks-20140817"></a> 鎖那 × HoneyWorks [2014.08.17]</h2>
+<p>价格：120 元（带侧封）<br />
+<img src="https://img.gejiba.com/images/e65d8b14bf54ac8cd181d9343f9d61b0.png" alt="歌曲列表" /><br />
+<font color=red><strong>01</strong></font> 未来図<br />
+<font color=red><strong>02</strong></font> 告白予行練習<br />
+<font color=red><strong>03</strong></font> テレカクシ思春期<br />
+<font color=red><strong>04</strong></font> 初恋の絵本<br />
+<font color=red><strong>05</strong></font> 告白ライバル宣言<br />
+<font color=red><strong>06</strong></font> ヤキモチの答え<br />
+<font color=red><strong>07</strong></font> 病名恋ワズライ<br />
+<font color=red><strong>08</strong></font> イノコリ先生<br />
+<font color=red><strong>09</strong></font> ロリババアに恋をした<br />
+<font color=red><strong>10</strong></font> ラズベリー*モンスター</p>
+</center><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>计算机基础操作</title>
+    <url>/20220910/083627/</url>
+    <content><![CDATA[<p>为了让各位用户都能会用 Windows，特此写下该教程。<br />
+Windows 是微软公司于 1985 年发布的电脑操作系统，最新版是 Windows 11(2021 年发布)。<br />
+这里我们都以<font color=#66CCF> Windows 8.1 With Update</font> 版本为例子。<br />
+<font face="宋体"></p>
+<h1 id="认识界面"><a class="markdownIt-Anchor" href="#认识界面"></a> 认识界面</h1>
+<p>Windows 8.1 的主界面长这样：<br />
+<img src="https://img.gejiba.com/images/1652f5ddeefb13492b6f1f4ed881a635.png" alt="" /><br />
+点击“开始按钮”后，出现以下界面：<br />
+<img src="https://img.gejiba.com/images/2caaee3f09a6e7e296efa2521203587e.png" alt="" /><br />
+可以看到很多功能。这就是 Windows 8 新增的磁贴界面。<br />
+我们点击网络图标，可以列出电脑下的所有网络。<br />
+<img src="https://img.gejiba.com/images/70c8e2328d4c6b79ed980dd38b6fe285.png" alt="" /><br />
+台式机我们都用有线网络，也就是插上网线后使用网络。如果需要连接 Wi-Fi，请加装无线网卡。然后点击网络图标，输入您家网络密码即可。<br />
+点击声音图标，可以调节计算机的声音。<br />
+<img src="https://img.gejiba.com/images/c1d3edde8d66572bd8e3119b58d2885e.png" alt="" /><br />
+也可以识别到计算机使用什么输出的声音。我这里是有线耳机所以识别到耳机。<br />
+打开“这台电脑”可以查阅到电脑的所有文件夹。<br />
+<img src="https://img.gejiba.com/images/ea386a6e79ccfdcf2e6904ded66596b7.png" alt="" /><br />
+如果要添加 FTP 或者 SAMBA 连接，请右键点击“添加一个网络位置”。<br />
+<img src="https://img.gejiba.com/images/e5e354b6eb7d798c69375f878a0c0ad8.png" alt="" /><br />
+您也可以通过“这台电脑”为磁盘加密、格式化、和复制整块盘。<br />
+<img src="https://img.gejiba.com/images/f2b3507bb9fdad1a945c9b7ff7cf5292.png" alt="" /><br />
+如果是移动硬盘、U 盘等设备，也可以手动打开“自动播放”，如图：<br />
+<img src="https://img.gejiba.com/images/5d5310518f51aa984ea5a1bc74a9f487.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/ef3f92b34135e76276dea95e5416d3a6.png" alt="" /></p>
+<h1 id="鼠标操作"><a class="markdownIt-Anchor" href="#鼠标操作"></a> 鼠标操作</h1>
+<p>鼠标分为左键、中键和右键。您需要根据软件的操作控制鼠标。<br />
+<img src="https://img.gejiba.com/images/24ae58dad5ca57dd325db98300f18090.png" alt="" /></p>
+<h1 id="键盘操作"><a class="markdownIt-Anchor" href="#键盘操作"></a> 键盘操作</h1>
+<h2 id="普通-pc"><a class="markdownIt-Anchor" href="#普通-pc"></a> 普通 PC</h2>
+<p>Windows 也十分依赖键盘。键盘长这样：<br />
+<img src="https://img.gejiba.com/images/e94205463ae97810d7fdaf409a93fd61.png" alt="" /></p>
+<h3 id="ctrl-键"><a class="markdownIt-Anchor" href="#ctrl-键"></a> Ctrl 键</h3>
+<p>Ctrl 键就是控制键(Control)，用于控制 Windows 及程序的各种操作。</p>
+<h3 id="alt-键"><a class="markdownIt-Anchor" href="#alt-键"></a> Alt 键</h3>
+<p>Alt 键是更换(Alternate)的意思，点击 Alt + Tab 键后可以在打开的项目之间切换。</p>
+<h3 id="shift-键"><a class="markdownIt-Anchor" href="#shift-键"></a> Shift 键</h3>
+<p>而 Shift 键是上档转换键。常用于输入法中英文转换。</p>
+<h3 id="enter-键"><a class="markdownIt-Anchor" href="#enter-键"></a> Enter 键</h3>
+<p>Enter 键是回车键。在各个软件的功能都不一样，例如，在 Microsoft Word 中会换行，而在腾讯 QQ 中会发送消息。</p>
+<h3 id="windows-键"><a class="markdownIt-Anchor" href="#windows-键"></a> Windows 键</h3>
+<p>那个 Windows 徽标按键就是 Windows 键。在 Windows Vista 之前的系统（例如 Windows XP）中，Windows 键的功能不多。直到 Windows Vista 之后才开始增加新的内容。比如</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Windows+数字1、2、3、4、5、6、7、8、9、0 分别打开你的任务栏上面的快捷启动栏上面的第一个到第十个图标所对应的快捷方式。</span><br><span class="line">Windows+D 最小化所有窗口，再按一次恢复所有窗口</span><br><span class="line">Windows+E 开启资源管理器(频繁按会资源占尽而死机)</span><br><span class="line">Windows+F 打开搜索窗口</span><br><span class="line">Windows+G 多次按下就会依次切换侧边栏上面的小工具(Gadgets)</span><br><span class="line">Windows+L 锁定当前计算机用户</span><br><span class="line">Windows+R 开启运行对话框 (非常常用)</span><br><span class="line">Windows+T 激活当前任务栏上面的窗口，多次按下会依次定位到下一个窗体</span><br><span class="line">Windows+T Shift 反方向定位</span><br><span class="line">Windows+U 开启辅助工具管理器</span><br><span class="line">Windows+X 开启Windows移动中心</span><br><span class="line">Windows+TAB 开启 Flip 3D窗口切换</span><br><span class="line">Windows+TAB Ctrl 用键盘控制 Flip 3D窗口切换</span><br><span class="line">Windows+Break(就是Pause——Break键) 开启Windows Vista系统属性窗口</span><br></pre></td></tr></table></figure>
+<h3 id="backspace-键"><a class="markdownIt-Anchor" href="#backspace-键"></a> Backspace 键</h3>
+<p>Backspace 键即退格键，相当于您手机的这个按钮：<br />
+<img src="https://img.gejiba.com/images/c8f0d055e9dfc465b17d0ce2ee45bc36.png" alt="" /></p>
+<h2 id="苹果电脑mac"><a class="markdownIt-Anchor" href="#苹果电脑mac"></a> 苹果电脑（Mac）</h2>
+<p>因为 Mac 机生来就是为了 macOS 服务，所以键位略有不同。<br />
+<img src="https://img.gejiba.com/images/740924cf74818fe307c4021b64d92673.png" alt="" /><br />
+以下是 Mac 键盘映射到 Windows 的位置。</p>
+<h3 id="option-键"><a class="markdownIt-Anchor" href="#option-键"></a> Option 键</h3>
+<p>映射在 Windows 下的 Alt 键</p>
+<h3 id="control-键"><a class="markdownIt-Anchor" href="#control-键"></a> Control 键</h3>
+<p>映射在 Windows 下的 Ctrl 键</p>
+<h3 id="command-键"><a class="markdownIt-Anchor" href="#command-键"></a> Command 键</h3>
+<p>映射在 Windows 下的 Windows 键</p>
+<h3 id="注意"><a class="markdownIt-Anchor" href="#注意"></a> 注意</h3>
+<p>因为 Mac 部分操作由 Command 键来完成，如果你用 macOS 习惯了，重装 Windows 后会很不适应。</p>
+<h1 id="上网"><a class="markdownIt-Anchor" href="#上网"></a> 上网</h1>
+<h2 id="连接到网络"><a class="markdownIt-Anchor" href="#连接到网络"></a> 连接到网络。</h2>
+<p>由上面的消息可得知，我们点击“网络”图标即可查看电脑是否联网。<br />
+但是，我们如果没有安装 Wi-Fi 网卡，那么该如何上网？</p>
+<h3 id="有线上网方法"><a class="markdownIt-Anchor" href="#有线上网方法"></a> 有线上网方法</h3>
+<p>首先，请自备一个<font color=#66CCF>网线</font>，将网线的一个端插入电脑设备。然后打开电脑控制面板。打开“网络与共享中心”<br />
+<img src="https://img.gejiba.com/images/61f075931cb8ac26067cbfd567ad7f85.png" alt="" /><br />
+然后点击“设置新的连接或网络”<br />
+<img src="https://img.gejiba.com/images/a61d6294782fe99c3738d669ac0877ca.png" alt="" /><br />
+然后在新弹出的网络窗口中，直接下一步。<br />
+<img src="https://img.gejiba.com/images/67ea71e690e2aae356299499cacc4733.png" alt="" /><br />
+这里因为我连接上 互联网 了，所以提示这个，请点击设置新连接。<br />
+<img src="https://img.gejiba.com/images/fe1bda33d3929b53bbf7952a0c981385.png" alt="" /><br />
+然后点击宽带上网(PPPoE)<br />
+<img src="https://img.gejiba.com/images/23bb454358d7a97eb544ca86fa3165c3.png" alt="" /><br />
+然后输入你<font color=#66CCF> ISP </font>提供给你的用户名和密码，点击“连接”。<br />
+<img src="https://img.gejiba.com/images/70131c1f06e051214b7959d817184584.png" alt="" /><br />
+待等连接完成即可。<br />
+也可以稍后输入用户名和密码。<br />
+<img src="https://img.gejiba.com/images/8fc4e5f052bbe3a16fdd76b144b2685c.png" alt="" /><br />
+<font color=red>注意：如果是新安装的 Windows 8.1 或 Windows 7 ，他一般不会配备某些设备的以太网卡，所以有线网也无法使用。这时需要安装驱动软件。</font><br />
+如果需要查看您设备是否存在以太网卡，请查阅任务管理器。<br />
+<img src="https://img.gejiba.com/images/04429d53596fb0e3743180f48887993d.png" alt="" /></p>
+<h3 id="连接无线网"><a class="markdownIt-Anchor" href="#连接无线网"></a> 连接无线网。</h3>
+<p>如果您电脑已经有无线网卡了，请确保安装好驱动软件，然后直接点击网络按钮，找到您家 Wi-Fi 网络即可。<br />
+<img src="https://img.gejiba.com/images/9f62ae7d15014e89b9e38146d2e332f9.png" alt="" /></p>
+<h2 id="上网浏览器更换"><a class="markdownIt-Anchor" href="#上网浏览器更换"></a> 上网浏览器更换</h2>
+<p>Windows 10 之前的系统只自带一个上网浏览器，名叫 Internet Explorer，这个浏览器已经淘汰了，需要更换。<br />
+请确保连接好网络后，打开 Internet Explorer，输入 Firefox，来更换浏览器。当然您更换其他浏览器也是可以的，我推荐换成 Edge。<br />
+<img src="https://img.gejiba.com/images/9fc535345f9c88ded9db35eb3ab9f122.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/57c44802582c9ffdfa7a3b363eba1fef.png" alt="" /><br />
+点击下载 Firefox 来安装 Firefox。<br />
+<img src="https://img.gejiba.com/images/363e5121033dbfc948671cd6c01697c0.png" alt="" /></p>
+<h1 id="安装软件"><a class="markdownIt-Anchor" href="#安装软件"></a> 安装软件</h1>
+<h2 id="上网查找软件"><a class="markdownIt-Anchor" href="#上网查找软件"></a> 上网查找软件</h2>
+<p>直接使用上网浏览器搜索你要安装的软件即可。<br />
+<img src="https://img.gejiba.com/images/43f8eeb19effa9d2f91add83168c7c86.png" alt="" /><br />
+<font color=red>注意！在网上下载的软件鱼龙混杂，非常容易被捆绑，中病毒。</font><br />
+如果要下载微软 Office 软件，建议使用 MSDN I Tell You 网站。<a href="https://msdn.itellyou.cn">点击进入网站</a><br />
+<img src="https://img.gejiba.com/images/a6ed168084e06062d4a263d87a7b39ab.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/06a5200304903229bb2b38a2c96ee140.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/e83b3760a52fd32e20896c4808c0bb03.png" alt="" /></p>
+<h2 id="软件管家安装软件"><a class="markdownIt-Anchor" href="#软件管家安装软件"></a> 软件管家安装软件</h2>
+<p>使用上网浏览器先安装<font color=#66CCF> 360 软件管家</font>，然后在软件管家搜索你要安装的软件。</p>
+<h1 id="管理您计算机上的文件"><a class="markdownIt-Anchor" href="#管理您计算机上的文件"></a> 管理您计算机上的文件</h1>
+<p>如果需要管理器您计算机上的软件，请点击“这台电脑”。随便点进一个盘。<br />
+<img src="https://img.gejiba.com/images/ad0a02ed187c07c21ea51d40eb14b5fc.png" alt="" /><br />
+这里列出了这盘上面的所有内容。<br />
+如果要复制一个文件，请在要复制的文件旁点击鼠标右键，然后点击“复制©”。<br />
+<img src="https://img.gejiba.com/images/4f205db2d4061a45f27c59dd28a4027c.png" alt="" /><br />
+然后前往要复制到的文件夹，然后右键点击“粘贴(P)”。<br />
+<img src="https://img.gejiba.com/images/ea444b06cac589002a3da8bebde66591.png" alt="" /><br />
+这样，文件就复制好了。<br />
+我们只需要移动文件的时候点击“剪切(T)”即可。</p>
+<h1 id="卸载软件"><a class="markdownIt-Anchor" href="#卸载软件"></a> 卸载软件</h1>
+<p>有时候我们不想要一些软件，这时可以卸载软件。<br />
+打开 控制面板，然后找到 <font color=#66CCF>程序与功能</font><br />
+<img src="https://img.gejiba.com/images/403509da174a2c1c63628db60d205ad3.png" alt="" /><br />
+然后，双击要卸载的软件，跟着软件走即可。<br />
+<img src="https://img.gejiba.com/images/2f06c1f1ee32d3752ed1876222740794.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/20196f123882172b4f12a00d39411252.png" alt="" /></p>
+<h1 id="命令提示符"><a class="markdownIt-Anchor" href="#命令提示符"></a> 命令提示符</h1>
+<p><font color=red>注意！专业人士使用。</font><br />
+Windows 中的终端叫做命令提示符，我们可以利用终端做很多事情。请先按下 Windows+R 键然后输入 cmd。<br />
+<img src="https://img.gejiba.com/images/8ec9d0d197ae975dc233a799032b0a5a.png" alt="" /><br />
+然后会打开一个黑色命令窗口，我们在此输入命令即可。比如我要查看系统版本，输入：<br />
+<img src="https://img.gejiba.com/images/19587c4ac59a01e5359fb3584f29e211.png" alt="" /><br />
+就可以查看了。要清屏可以输入 cls。<br />
+</font></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>白洋淀公交乘坐体验</title>
+    <url>/20220821/011817/</url>
+    <content><![CDATA[<h1 id="线路走向"><a class="markdownIt-Anchor" href="#线路走向"></a> 线路走向</h1>
+<p>2022 年 8 月 20 日，沧州市任丘市新开到白洋淀李广村<font color=red>（现归雄安新区保定市雄县管辖）</font>的公交：308 路。以下是线路走向。</p>
+<h3 id="308-路-代河枢纽站-李广村"><a class="markdownIt-Anchor" href="#308-路-代河枢纽站-李广村"></a> 308 路 代河枢纽站 - 李广村</h3>
+<p><font color=green>代河枢纽站-西黄垒村西-于村路口<font color=red>(106国道)</font>-杜家营村-前塔村-后塔村-鄚州镇政府-鄚州镇中心卫生院-南阁村-东七里庄-中七里庄-西七里庄-生紫码头-大口子码头-李广村南-李广村</font><br />
+<img src="https://img.gejiba.com/images/03eb9f97595c40fdcc4b32a1dd089d9b.png" alt="" /></p>
+<h1 id="乘车日志"><a class="markdownIt-Anchor" href="#乘车日志"></a> 乘车日志</h1>
+<p>20号下午一点半从市区乘坐202路公交（任丘市客运西站-代河枢纽站）到达北代河。<br />
+<img src="https://img.gejiba.com/images/0b4afc34f40d79694614063114824073.jpg" alt="" /><br />
+小歇息后。一点四十308路开始行走。车内座子还是很新的，支持刷卡和刷码。<br />
+<img src="https://img.gejiba.com/images/caabb0a863887deefa35a70dcdfde4b2.jpg" alt="" /><br />
+今天天空很好看啊…<br />
+车子运行还是很快的，最高速度大概 40 km/h。噪音蛮大的。<br />
+过了于村路口就基本出了任丘界了，驶入鄚州镇。<br />
+<img src="https://img.gejiba.com/images/4c294fd8d37c149493ac12bb8e4efb89.jpg" alt="" /><br />
+驾驶到千里堤路的时候，就可以看到白洋淀的河流了。<br />
+这里有几个旅游码头，308路基本都设置了站点。<br />
+人还挺多的，比较热闹。<br />
+然后就到了李广村，本车的终点站。<br />
+<img src="https://img.gejiba.com/images/38e1a10c805be98b163dad05b4c93ab9.jpg" alt="" /><br />
+李广村离白洋淀河流还算是挺近的，我在这里拍了一些照片。<br />
+<img src="https://img.gejiba.com/images/3fc817b205738ced7dd3ce1e378a5447.jpg" alt="" /><br />
+<img src="https://img.gejiba.com/images/bd0f431dfabddf5fd30d250932523d59.jpg" alt="" /><br />
+<img src="https://img.gejiba.com/images/b1b5d6fb64e809b6c4b3acc160c97807.png" alt="李广村在白洋淀的位置" /><br />
+在近距离观察时，录了一小段视频。<font color=red>【因为 iOS 录制默认格式就是 QuickTime 格式，所以仅限 Apple 设备 (iPhone、Mac、iPod) 可播放此视频】</font><br />
+<a href="https://steve372yeyeye.github.io/20220821/011817/480p.mov">点击播放 QuickTime 视频</a></p>
+<h1 id=""><a class="markdownIt-Anchor" href="#"></a> </h1>
+<p>白洋淀环境很好，即使是在不是景区的乡村小河，也是很美丽的。<br />
+有一种很自然很清新的感觉。如果是清晨应该会更有感觉。</p>
+<h1 id="经过码头"><a class="markdownIt-Anchor" href="#经过码头"></a> 经过码头</h1>
+<p>308 路在路途中会经过<font color=green>生紫码头</font>和<font color=green>大口子码头</font>。</p>
+<h1 id="停止运行"><a class="markdownIt-Anchor" href="#停止运行"></a> 停止运行</h1>
+<p>302 路已于 8 月 23 日停止运行。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>黑翼猫 Extended Kernel Project 中国网络环境下载</title>
@@ -1233,5 +1220,18 @@ vocal: 鎖那  mix: n.k
 <h2 id="伪装系统版本用的软件"><a class="markdownIt-Anchor" href="#伪装系统版本用的软件"></a> 伪装系统版本用的软件</h2>
 <p><img src="https://img.gejiba.com/images/b269d479dbb9aab60c0bfcbac371d2ed.png" alt="" /></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>Sanapri bilibili 新视频</title>
+    <url>/20220823/164646/</url>
+    <content><![CDATA[<p>鎖那小天使终于发新视频啦，这里给你们看看～</p>
+<pre><code>Kyu-kurarin (cover) / sana 
+original: きゅうくらりん / いよわ feat.可不 
+vocal: 鎖那  mix: n.k 
+▷https://space.bilibili.com/543245410
+</code></pre>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?bvid=BV1M14y1t7LK&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
+</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
 </search>
