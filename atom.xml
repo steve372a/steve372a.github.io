@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-12-11T19:07:25.316Z</updated>
+  <updated>2025-01-15T00:49:28.473Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,17 +17,26 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>本站已经迁移啦！</title>
-    <link href="http://example.com/20231212/022653/"/>
-    <id>http://example.com/20231212/022653/</id>
-    <published>2023-12-11T18:26:53.000Z</published>
-    <updated>2023-12-11T19:07:25.316Z</updated>
+    <title>让 Mac 电脑也玩上光遇！</title>
+    <link href="http://example.com/20250114/222842/"/>
+    <id>http://example.com/20250114/222842/</id>
+    <published>2025-01-14T14:28:42.000Z</published>
+    <updated>2025-01-15T00:49:28.473Z</updated>
     
     
-    <summary type="html">本站已经迁移至 steve372a.github.io，欢迎继续访问！原 URL 指向的本站将永久封存。</summary>
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;安装光-遇国服&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#安装光-遇国服&quot;&gt;&lt;/a&gt; 安装光 · 遇国服&lt;/h1&gt;
+&lt;h2 id=&quot;处理器是-apple-m1-及以后的设备&quot;&gt;&lt;a</summary>
+        
+      
     
     
     
+    
+    <category term="光！遇！" scheme="http://example.com/tags/%E5%85%89%EF%BC%81%E9%81%87%EF%BC%81/"/>
     
   </entry>
   
