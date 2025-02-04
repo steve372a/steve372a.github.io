@@ -1,6 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>PlayCover 适用的《原神》iPA 文件</title>
+    <url>/20230816/114759/</url>
+    <content><![CDATA[<h1 id="原神"><a class="markdownIt-Anchor" href="#原神"></a> 《原神》</h1>
+<h2 id="版本400-天空岛"><a class="markdownIt-Anchor" href="#版本400-天空岛"></a> 版本：4.0.0 (天空岛)</h2>
+<p>您可以单击下面地址下载：<br />
+<a href="https://pan.huang1111.cn/s/vlYgSE?path=%2F">下载原神 iPA 到设备</a></p>
+<h1 id="更新方法"><a class="markdownIt-Anchor" href="#更新方法"></a> 更新方法</h1>
+<p><strong>设备要求：Apple Silicon 的 Mac 电脑</strong></p>
+<p>如果您不知道您的 Mac 电脑能否安装，请您点击“”图标，找到“关于本机”。<br />
+如果显示的是“<em>芯片：Apple M1</em>”等，就说明您的电脑基于 Apple Silicon，<br />
+如果显示的是“<em>处理器：2.3 GHz 八核 Intel Core i9</em>“等，就说明您的电脑基于 Intel，不能安装 PlayCover 和原神。<br />
+<img src="https://img.gejiba.com/images/48597f6116725b33eb76bd09ca846ec7.png" alt="" /><br />
+请您下载好 PlayCover 软件至您的 Mac：<br />
+<a href="https://github.com/PlayCover/PlayCover/releases">下载 PlayCover</a><br />
+<img src="https://img.gejiba.com/images/19a67305b6f5527d59230696115bbe7c.png" alt="" /><br />
+然后将您下载的《原神》包体，移动至 PlayCover，等待安装就可以了。<br />
+<img src="https://img.gejiba.com/images/64a6c685500968133486ccae710afe41.png" alt="" /><br />
+进度条消失后，启动原神即可。<br />
+<img src="https://img.gejiba.com/images/0f8e0e0f09980925c1f85a94d9110685.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/1fef0f6d03000f75c9c2d730a0ab0bba.png" alt="" /></p>
+<h1 id="操作方式"><a class="markdownIt-Anchor" href="#操作方式"></a> 操作方式</h1>
+<h2 id="键盘映射"><a class="markdownIt-Anchor" href="#键盘映射"></a> 键盘映射</h2>
+<h3 id="下载"><a class="markdownIt-Anchor" href="#下载"></a> 下载</h3>
+<p><a href="https://github.com/PlayCover/keymaps/tree/master/keymapping/com.miHoYo.GenshinImpact">下载键盘映射</a><br />
+如果您不能访问 Github，点击以下链接下载:<br />
+<a href="/download/Genshin_Impact_fixed_16by9.playmap">Genshin_Impact_fixed_16by9.playmap</a><br />
+<a href="/download/Genshin_Impact_fixed_16by10.playmap">Genshin_Impact_fixed_16by10.playmap</a><br />
+一般 Mac 的屏幕分辨率比例是 16 : 10。</p>
+<h3 id="导入"><a class="markdownIt-Anchor" href="#导入"></a> 导入</h3>
+<p>下载完成后，打开 PlayCover，在“原神”图标点击右键，找到“导入键盘映射布局”<br />
+<img src="https://img.gejiba.com/images/efc6855c13376b0b0a0379b07be383e4.png" alt="" /><br />
+然后找到您的键盘映射布局就可以了。<br />
+<img src="https://img.gejiba.com/images/6a44f60b24115af46d5be02b446a68bf.png" alt="" /></p>
+<h3 id="应用"><a class="markdownIt-Anchor" href="#应用"></a> 应用</h3>
+<p>随后打开原神，您可以按下 Option⌥ 键，让“原神”捕获鼠标，再次按下 Option⌥ 键，可以释放鼠标。<br />
+您可以点击状态栏的“按键映射”-“打开/关闭按键映射编辑模式”，编辑您的键盘映射。<br />
+<img src="https://img.gejiba.com/images/0caf11441df218503b6006a32166dd67.png" alt="" /></p>
+<h2 id="手柄连接"><a class="markdownIt-Anchor" href="#手柄连接"></a> 手柄连接</h2>
+<p>请您先连接手柄至 Mac。<br />
+<img src="https://img.gejiba.com/images/cee062dae17e16cd0b9a97d6ad4651ae.png" alt="" /><br />
+然后打开原神，打开“设置”<br />
+<img src="https://img.gejiba.com/images/91a9e660af575671d4739c2587cc88d4.png" alt="" /><br />
+将“触屏”改为“手柄”<br />
+<img src="https://img.gejiba.com/images/fded33a413746b6e4a4463a0726c2afc.png" alt="" /><br />
+然后就完成啦！<br />
+<img src="https://img.gejiba.com/images/7f47f18a1f5d592143ab1540f8d466d2.png" alt="" /></p>
+<h1 id="推荐观看"><a class="markdownIt-Anchor" href="#推荐观看"></a> 推荐观看</h1>
+<p>本文章没有列出一些会存在的普遍问题，推荐观看下面的视频：</p>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?bvid=BV1Xx4y1F7um&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
+</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>资源分享</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Apple A7 设备降级到 10.3.3 系统</title>
     <url>/20220815/013515/</url>
     <content><![CDATA[<h2 id="准备开始"><a class="markdownIt-Anchor" href="#准备开始"></a> 准备开始</h2>
@@ -69,59 +125,61 @@
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>PlayCover 适用的《原神》iPA 文件</title>
-    <url>/20230816/114759/</url>
-    <content><![CDATA[<h1 id="原神"><a class="markdownIt-Anchor" href="#原神"></a> 《原神》</h1>
-<h2 id="版本400-天空岛"><a class="markdownIt-Anchor" href="#版本400-天空岛"></a> 版本：4.0.0 (天空岛)</h2>
-<p>您可以单击下面地址下载：<br />
-<a href="https://pan.huang1111.cn/s/vlYgSE?path=%2F">下载原神 iPA 到设备</a></p>
-<h1 id="更新方法"><a class="markdownIt-Anchor" href="#更新方法"></a> 更新方法</h1>
-<p><strong>设备要求：Apple Silicon 的 Mac 电脑</strong></p>
-<p>如果您不知道您的 Mac 电脑能否安装，请您点击“”图标，找到“关于本机”。<br />
-如果显示的是“<em>芯片：Apple M1</em>”等，就说明您的电脑基于 Apple Silicon，<br />
-如果显示的是“<em>处理器：2.3 GHz 八核 Intel Core i9</em>“等，就说明您的电脑基于 Intel，不能安装 PlayCover 和原神。<br />
-<img src="https://img.gejiba.com/images/48597f6116725b33eb76bd09ca846ec7.png" alt="" /><br />
-请您下载好 PlayCover 软件至您的 Mac：<br />
-<a href="https://github.com/PlayCover/PlayCover/releases">下载 PlayCover</a><br />
-<img src="https://img.gejiba.com/images/19a67305b6f5527d59230696115bbe7c.png" alt="" /><br />
-然后将您下载的《原神》包体，移动至 PlayCover，等待安装就可以了。<br />
-<img src="https://img.gejiba.com/images/64a6c685500968133486ccae710afe41.png" alt="" /><br />
-进度条消失后，启动原神即可。<br />
-<img src="https://img.gejiba.com/images/0f8e0e0f09980925c1f85a94d9110685.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/1fef0f6d03000f75c9c2d730a0ab0bba.png" alt="" /></p>
-<h1 id="操作方式"><a class="markdownIt-Anchor" href="#操作方式"></a> 操作方式</h1>
-<h2 id="键盘映射"><a class="markdownIt-Anchor" href="#键盘映射"></a> 键盘映射</h2>
-<h3 id="下载"><a class="markdownIt-Anchor" href="#下载"></a> 下载</h3>
-<p><a href="https://github.com/PlayCover/keymaps/tree/master/keymapping/com.miHoYo.GenshinImpact">下载键盘映射</a><br />
-如果您不能访问 Github，点击以下链接下载:<br />
-<a href="/download/Genshin_Impact_fixed_16by9.playmap">Genshin_Impact_fixed_16by9.playmap</a><br />
-<a href="/download/Genshin_Impact_fixed_16by10.playmap">Genshin_Impact_fixed_16by10.playmap</a><br />
-一般 Mac 的屏幕分辨率比例是 16 : 10。</p>
-<h3 id="导入"><a class="markdownIt-Anchor" href="#导入"></a> 导入</h3>
-<p>下载完成后，打开 PlayCover，在“原神”图标点击右键，找到“导入键盘映射布局”<br />
-<img src="https://img.gejiba.com/images/efc6855c13376b0b0a0379b07be383e4.png" alt="" /><br />
-然后找到您的键盘映射布局就可以了。<br />
-<img src="https://img.gejiba.com/images/6a44f60b24115af46d5be02b446a68bf.png" alt="" /></p>
-<h3 id="应用"><a class="markdownIt-Anchor" href="#应用"></a> 应用</h3>
-<p>随后打开原神，您可以按下 Option⌥ 键，让“原神”捕获鼠标，再次按下 Option⌥ 键，可以释放鼠标。<br />
-您可以点击状态栏的“按键映射”-“打开/关闭按键映射编辑模式”，编辑您的键盘映射。<br />
-<img src="https://img.gejiba.com/images/0caf11441df218503b6006a32166dd67.png" alt="" /></p>
-<h2 id="手柄连接"><a class="markdownIt-Anchor" href="#手柄连接"></a> 手柄连接</h2>
-<p>请您先连接手柄至 Mac。<br />
-<img src="https://img.gejiba.com/images/cee062dae17e16cd0b9a97d6ad4651ae.png" alt="" /><br />
-然后打开原神，打开“设置”<br />
-<img src="https://img.gejiba.com/images/91a9e660af575671d4739c2587cc88d4.png" alt="" /><br />
-将“触屏”改为“手柄”<br />
-<img src="https://img.gejiba.com/images/fded33a413746b6e4a4463a0726c2afc.png" alt="" /><br />
-然后就完成啦！<br />
-<img src="https://img.gejiba.com/images/7f47f18a1f5d592143ab1540f8d466d2.png" alt="" /></p>
-<h1 id="推荐观看"><a class="markdownIt-Anchor" href="#推荐观看"></a> 推荐观看</h1>
-<p>本文章没有列出一些会存在的普遍问题，推荐观看下面的视频：</p>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?bvid=BV1Xx4y1F7um&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
-</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <title>Reimu 主题去除东方 PROJECT 元素</title>
+    <url>/20230817/154130/</url>
+    <content><![CDATA[<p>如果你安装了 Reimu 主题后又不想要东方的元素了，可以看看这篇文章。</p>
+<h1 id="目录"><a class="markdownIt-Anchor" href="#目录"></a> 目录</h1>
+<p><a href="/20230817/154130/#%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E4%BF%AE%E6%94%B9">  <strong>1. 背景图片修改</strong></a><br />
+<a href="/20230817/154130/#%E5%A4%B4%E5%9B%BE%E4%BF%AE%E6%94%B9">      ———— 1.1 头图修改</a><br />
+<a href="/20230817/154130/#%E7%BB%99%E5%8D%95%E7%8B%AC%E7%9A%84%E6%96%87%E7%AB%A0%E9%85%8D%E5%9B%BE">      ———— 1.2 给单独的文章配图</a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%A4%AA%E6%9E%81%E5%9B%BE%E5%9B%BE%E6%A0%87">  <strong>2. 更改太极图图标 (重点)</strong></a><br />
+<a href="/20230817/154130/#%E8%BE%B9%E6%A0%8F%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.1 边栏图标更改</a><br />
+<a href="/20230817/154130/#%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.2 加载界面图标更改</a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E6%96%87%E5%AD%97">  <strong>3. 更改文字</strong></a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2_%E5%B0%91%E5%A5%B3%E7%A5%88%E7%A5%B7%E4%B8%AD">      ———— 3.1 更改加载界面 “少女祈祷中”</a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9_404_%E7%95%8C%E9%9D%A2">      ———— 3.2 更改 “404” 界面</a></p>
+<h1 id="背景图片修改"><a class="markdownIt-Anchor" href="#背景图片修改"></a> 背景图片修改</h1>
+<h2 id="头图修改"><a class="markdownIt-Anchor" href="#头图修改"></a> 头图修改</h2>
+<p>头图的位置在</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
+<p>您找到合适的图片之后直接更换即可。<br />
+如果您的网站速度很慢，不适合在本地存放头图，您可以更改主题目录的 _config.yml 中的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;/images/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
+<p>部分，将内容更改为：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;https://xxx.url.org/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
+<p><img src="https://img.gejiba.com/images/3b7b1a3e290b1db6151d0961726ce8eb.png" alt="" /></p>
+<h2 id="给单独的文章配图"><a class="markdownIt-Anchor" href="#给单独的文章配图"></a> 给单独的文章配图</h2>
+<p>只需您在文章的页眉添加</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cover: 指向图片的 URL</span><br><span class="line"></span><br><span class="line">// 示例：</span><br><span class="line">---</span><br><span class="line">title: 123456</span><br><span class="line">date: 1999-12-31 06:01:13</span><br><span class="line">tags: XX</span><br><span class="line">cover: https://xxx.url.org/bd3.png</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>就可以给文章配上图片了。</p>
+<h1 id="更改太极图图标"><a class="markdownIt-Anchor" href="#更改太极图图标"></a> 更改太极图图标</h1>
+<h2 id="边栏图标更改"><a class="markdownIt-Anchor" href="#边栏图标更改"></a> 边栏图标更改</h2>
+<p>请您进入 <strong>/themes/reimu/source/images/</strong> 目录，使用矢量图绘画工具打开 <strong>taichi.svg</strong> 文件。<br />
+然后在上面进行绘画操作即可。<br />
+<img src="https://img.gejiba.com/images/10f06ff8e388d28136b494546c99bd5b.png" alt="" /><br />
+画完之后保存，Hexo 刷新一遍就可以了。</p>
+<h2 id="加载界面图标更改"><a class="markdownIt-Anchor" href="#加载界面图标更改"></a> 加载界面图标更改</h2>
+<p>在执行上面的操作之后，您会发现，加载界面仍然是太极图。<br />
+莫慌。您先复制一份 <strong>taichi.svg</strong> 文件的副本，使用矢量图绘画工具打开它并进行绘画。绘画完成后不要删除，右键通过 <strong>Microsoft Visual Studio Code</strong> 或其他文本软件打开。<br />
+记住这些路径名称：<br />
+<img src="https://img.gejiba.com/images/c5943bcc8fc6ae8beabe7d337afe9480.png" alt="" /><br />
+如果发现 ellipse 和 path 开头的一段，请复制它们。<br />
+然后打开 <strong>/themes/reimu/layout/_partial/loader.ejs</strong> 文件<br />
+将这一段删除：<br />
+<img src="https://img.gejiba.com/images/a67d82f9cd84d1e7f816a547c0a175a4.png" alt="" /><br />
+然后将您刚才复制的 SVG 代码粘贴到此处。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 示例：小星星（和本站一样）</span><br><span class="line"></span><br><span class="line">&lt;path</span><br><span class="line">    sodipodi:type=&quot;star&quot;</span><br><span class="line">    style=&quot;opacity:0.967273;fill:#ffbec0;fill-opacity:0.94581282;stroke:#000000;stroke-width:13.65542089;stroke-dasharray:none&quot;</span><br><span class="line">    id=&quot;path1&quot;</span><br><span class="line">    inkscape:flatsided=&quot;false&quot;</span><br><span class="line">    sodipodi:sides=&quot;5&quot;</span><br><span class="line">    sodipodi:cx=&quot;117.15254&quot;</span><br><span class="line">    sodipodi:cy=&quot;121.49152&quot;</span><br><span class="line">    sodipodi:r1=&quot;281.59967&quot;</span><br><span class="line">    sodipodi:r2=&quot;140.79984&quot;</span><br><span class="line">    sodipodi:arg1=&quot;0.98279372&quot;</span><br><span class="line">    sodipodi:arg2=&quot;1.6111123&quot;</span><br><span class="line">    inkscape:rounded=&quot;0&quot;</span><br><span class="line">    inkscape:randomized=&quot;0&quot;</span><br><span class="line">    d=&quot;M 273.35594,355.79661 111.4776,262.17695 -57.415336,342.45403 -18.400902,159.56852 -146.93973,23.748776 39.050851,4.3389758 128.50242,-159.87933 204.43649,11.010274 388.25943,45.337523 249.19868,170.3629 Z&quot;</span><br><span class="line">    inkscape:transform-center-x=&quot;-5.2622667&quot;</span><br><span class="line">    inkscape:transform-center-y=&quot;-35.297319&quot;</span><br><span class="line">    transform=&quot;matrix(1.5003757,0,0,1.4999156,340.69227,376.01307)&quot; /&gt;</span><br></pre></td></tr></table></figure>
+<p>效果：<br />
+<img src="https://img.gejiba.com/images/ba4cf7aeb1cfb237289943c881beb7ea.png" alt="" /></p>
+<h1 id="更改文字"><a class="markdownIt-Anchor" href="#更改文字"></a> 更改文字</h1>
+<h2 id="更改加载界面_少女祈祷中"><a class="markdownIt-Anchor" href="#更改加载界面_少女祈祷中"></a> 更改加载界面_少女祈祷中</h2>
+<p>打开主题目录的 _config.yml 文件，滑动到下面，找到 preloader 字符：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">preloader:</span><br><span class="line">  enable: true</span><br><span class="line">  text: 正在载入中...</span><br><span class="line">  # text: Loading...</span><br></pre></td></tr></table></figure>
+<h2 id="更改_404_界面"><a class="markdownIt-Anchor" href="#更改_404_界面"></a> 更改_404_界面</h2>
+<p>打开 <strong>/themes/reimu/languages/zh-CN.yml</strong> 文件，找到 not_found 字符:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">not_found:</span><br><span class="line">  title: 4 0 4 (ﾟ⊿ﾟ)ﾂ</span><br><span class="line">  subtitle: 満 身 創 痍</span><br></pre></td></tr></table></figure><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>资源分享</tag>
+        <tag>复现</tag>
       </tags>
   </entry>
   <entry>
@@ -393,64 +451,6 @@ Windows 11      std / VMware
 </font><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>Reimu 主题去除东方 PROJECT 元素</title>
-    <url>/20230817/154130/</url>
-    <content><![CDATA[<p>如果你安装了 Reimu 主题后又不想要东方的元素了，可以看看这篇文章。</p>
-<h1 id="目录"><a class="markdownIt-Anchor" href="#目录"></a> 目录</h1>
-<p><a href="/20230817/154130/#%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E4%BF%AE%E6%94%B9">  <strong>1. 背景图片修改</strong></a><br />
-<a href="/20230817/154130/#%E5%A4%B4%E5%9B%BE%E4%BF%AE%E6%94%B9">      ———— 1.1 头图修改</a><br />
-<a href="/20230817/154130/#%E7%BB%99%E5%8D%95%E7%8B%AC%E7%9A%84%E6%96%87%E7%AB%A0%E9%85%8D%E5%9B%BE">      ———— 1.2 给单独的文章配图</a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%A4%AA%E6%9E%81%E5%9B%BE%E5%9B%BE%E6%A0%87">  <strong>2. 更改太极图图标 (重点)</strong></a><br />
-<a href="/20230817/154130/#%E8%BE%B9%E6%A0%8F%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.1 边栏图标更改</a><br />
-<a href="/20230817/154130/#%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.2 加载界面图标更改</a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E6%96%87%E5%AD%97">  <strong>3. 更改文字</strong></a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2_%E5%B0%91%E5%A5%B3%E7%A5%88%E7%A5%B7%E4%B8%AD">      ———— 3.1 更改加载界面 “少女祈祷中”</a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9_404_%E7%95%8C%E9%9D%A2">      ———— 3.2 更改 “404” 界面</a></p>
-<h1 id="背景图片修改"><a class="markdownIt-Anchor" href="#背景图片修改"></a> 背景图片修改</h1>
-<h2 id="头图修改"><a class="markdownIt-Anchor" href="#头图修改"></a> 头图修改</h2>
-<p>头图的位置在</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
-<p>您找到合适的图片之后直接更换即可。<br />
-如果您的网站速度很慢，不适合在本地存放头图，您可以更改主题目录的 _config.yml 中的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;/images/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
-<p>部分，将内容更改为：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;https://xxx.url.org/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
-<p><img src="https://img.gejiba.com/images/3b7b1a3e290b1db6151d0961726ce8eb.png" alt="" /></p>
-<h2 id="给单独的文章配图"><a class="markdownIt-Anchor" href="#给单独的文章配图"></a> 给单独的文章配图</h2>
-<p>只需您在文章的页眉添加</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cover: 指向图片的 URL</span><br><span class="line"></span><br><span class="line">// 示例：</span><br><span class="line">---</span><br><span class="line">title: 123456</span><br><span class="line">date: 1999-12-31 06:01:13</span><br><span class="line">tags: XX</span><br><span class="line">cover: https://xxx.url.org/bd3.png</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>就可以给文章配上图片了。</p>
-<h1 id="更改太极图图标"><a class="markdownIt-Anchor" href="#更改太极图图标"></a> 更改太极图图标</h1>
-<h2 id="边栏图标更改"><a class="markdownIt-Anchor" href="#边栏图标更改"></a> 边栏图标更改</h2>
-<p>请您进入 <strong>/themes/reimu/source/images/</strong> 目录，使用矢量图绘画工具打开 <strong>taichi.svg</strong> 文件。<br />
-然后在上面进行绘画操作即可。<br />
-<img src="https://img.gejiba.com/images/10f06ff8e388d28136b494546c99bd5b.png" alt="" /><br />
-画完之后保存，Hexo 刷新一遍就可以了。</p>
-<h2 id="加载界面图标更改"><a class="markdownIt-Anchor" href="#加载界面图标更改"></a> 加载界面图标更改</h2>
-<p>在执行上面的操作之后，您会发现，加载界面仍然是太极图。<br />
-莫慌。您先复制一份 <strong>taichi.svg</strong> 文件的副本，使用矢量图绘画工具打开它并进行绘画。绘画完成后不要删除，右键通过 <strong>Microsoft Visual Studio Code</strong> 或其他文本软件打开。<br />
-记住这些路径名称：<br />
-<img src="https://img.gejiba.com/images/c5943bcc8fc6ae8beabe7d337afe9480.png" alt="" /><br />
-如果发现 ellipse 和 path 开头的一段，请复制它们。<br />
-然后打开 <strong>/themes/reimu/layout/_partial/loader.ejs</strong> 文件<br />
-将这一段删除：<br />
-<img src="https://img.gejiba.com/images/a67d82f9cd84d1e7f816a547c0a175a4.png" alt="" /><br />
-然后将您刚才复制的 SVG 代码粘贴到此处。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 示例：小星星（和本站一样）</span><br><span class="line"></span><br><span class="line">&lt;path</span><br><span class="line">    sodipodi:type=&quot;star&quot;</span><br><span class="line">    style=&quot;opacity:0.967273;fill:#ffbec0;fill-opacity:0.94581282;stroke:#000000;stroke-width:13.65542089;stroke-dasharray:none&quot;</span><br><span class="line">    id=&quot;path1&quot;</span><br><span class="line">    inkscape:flatsided=&quot;false&quot;</span><br><span class="line">    sodipodi:sides=&quot;5&quot;</span><br><span class="line">    sodipodi:cx=&quot;117.15254&quot;</span><br><span class="line">    sodipodi:cy=&quot;121.49152&quot;</span><br><span class="line">    sodipodi:r1=&quot;281.59967&quot;</span><br><span class="line">    sodipodi:r2=&quot;140.79984&quot;</span><br><span class="line">    sodipodi:arg1=&quot;0.98279372&quot;</span><br><span class="line">    sodipodi:arg2=&quot;1.6111123&quot;</span><br><span class="line">    inkscape:rounded=&quot;0&quot;</span><br><span class="line">    inkscape:randomized=&quot;0&quot;</span><br><span class="line">    d=&quot;M 273.35594,355.79661 111.4776,262.17695 -57.415336,342.45403 -18.400902,159.56852 -146.93973,23.748776 39.050851,4.3389758 128.50242,-159.87933 204.43649,11.010274 388.25943,45.337523 249.19868,170.3629 Z&quot;</span><br><span class="line">    inkscape:transform-center-x=&quot;-5.2622667&quot;</span><br><span class="line">    inkscape:transform-center-y=&quot;-35.297319&quot;</span><br><span class="line">    transform=&quot;matrix(1.5003757,0,0,1.4999156,340.69227,376.01307)&quot; /&gt;</span><br></pre></td></tr></table></figure>
-<p>效果：<br />
-<img src="https://img.gejiba.com/images/ba4cf7aeb1cfb237289943c881beb7ea.png" alt="" /></p>
-<h1 id="更改文字"><a class="markdownIt-Anchor" href="#更改文字"></a> 更改文字</h1>
-<h2 id="更改加载界面_少女祈祷中"><a class="markdownIt-Anchor" href="#更改加载界面_少女祈祷中"></a> 更改加载界面_少女祈祷中</h2>
-<p>打开主题目录的 _config.yml 文件，滑动到下面，找到 preloader 字符：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">preloader:</span><br><span class="line">  enable: true</span><br><span class="line">  text: 正在载入中...</span><br><span class="line">  # text: Loading...</span><br></pre></td></tr></table></figure>
-<h2 id="更改_404_界面"><a class="markdownIt-Anchor" href="#更改_404_界面"></a> 更改_404_界面</h2>
-<p>打开 <strong>/themes/reimu/languages/zh-CN.yml</strong> 文件，找到 not_found 字符:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">not_found:</span><br><span class="line">  title: 4 0 4 (ﾟ⊿ﾟ)ﾂ</span><br><span class="line">  subtitle: 満 身 創 痍</span><br></pre></td></tr></table></figure><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>复现</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Windows NT4.0 安装教程</title>
     <url>/20230119/063535/</url>
     <content><![CDATA[<h1 id="镜像链接"><a class="markdownIt-Anchor" href="#镜像链接"></a> 镜像链接</h1>
@@ -619,6 +619,86 @@ Windows 11      std / VMware
 </tr>
 </tbody>
 </table>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>无需 U 盘给 MacBook 电脑安装 Arch Linux</title>
+    <url>/20230108/134420/</url>
+    <content><![CDATA[<p>想装Arch Linux却没有带U盘，心急如焚的话，就看看我这个教程吧！保有效。</p>
+<h1 id="安装要求"><a class="markdownIt-Anchor" href="#安装要求"></a> 安装要求</h1>
+<ul>
+<li>一双手</li>
+<li>灵慧的大脑</li>
+<li>一台 (Intel 芯片) 的 MacBook Air 或者 MacBook Pro。 (不知道带安全芯片的可不可以)</li>
+</ul>
+<h1 id="开始安装"><a class="markdownIt-Anchor" href="#开始安装"></a> 开始安装</h1>
+<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
+<p>首先你需要有 Linux 基础，不然我之后跟你讲的，你都听不懂。<br />
+其次需要备份数据，因为我们要全盘格式化。</p>
+<h2 id="下载-arch-linux"><a class="markdownIt-Anchor" href="#下载-arch-linux"></a> 下载 Arch Linux</h2>
+<p>您可以通过以下链接来下载：<a href="https://mirrors.bfsu.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso">点击下载</a></p>
+<h2 id="macos-下的操作"><a class="markdownIt-Anchor" href="#macos-下的操作"></a> macOS 下的操作</h2>
+<h3 id="分区"><a class="markdownIt-Anchor" href="#分区"></a> 分区</h3>
+<ul>
+<li>在确定好已经备份好了文件之后，我们打开“磁盘工具”<br />
+<img src="https://img.gejiba.com/images/307403f27e39b88ad31f7034e3e6f3ca.png" alt="" /></li>
+<li>然后在上面的“显示”选项中，选择：“显示所有设备”<br />
+<img src="https://img.gejiba.com/images/10a4685ab86b81d9dfa2b4c032f1c707.png" alt="" /></li>
+<li>然后点击整块盘，找到“分区”选项。<br />
+<img src="https://img.gejiba.com/images/80d7dc7a41780488c98874460b234c5d.png" alt="" /></li>
+<li>添加一块 4 GB 的分区，分区格式 FAT 即可，名称先随意改一下，后面还需要改名字。<br />
+<img src="https://img.gejiba.com/images/265334b0ee5aad473c7de1f498b0f723.png" alt="" /></li>
+</ul>
+<h3 id="安装虚拟机"><a class="markdownIt-Anchor" href="#安装虚拟机"></a> 安装虚拟机</h3>
+<ul>
+<li>添加好之后，我们安装 VMware Fusion 虚拟机，安装一个 Windows 系统。<br />
+(如果你有 Parallels Desktop 虚拟机，可以跳过这一步)<br />
+VMware Fusion 虚拟机下载链接：<a href="https://download3.vmware.com/software/fusion/file/VMware-Fusion-12.0.0-16880131.dmg">点我下载</a><br />
+VMware Fusion 虚拟机破解密钥：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ZF3R0-FHED2-M80TY-8QYGC-NPKYF</span><br></pre></td></tr></table></figure>
+<p>如果找不到 Windows 镜像的话，可以用我这个 Windows XP：<a href="https://pan.huang1111.cn/s/KBgZsY">点我下载</a></p>
+<ul>
+<li>安装好虚拟机和虚拟机扩展套件(例如：VMware Tools)之后，共享你那个 4 GB 的分区到虚拟机上。</li>
+</ul>
+<h4 id="vmware-fusion"><a class="markdownIt-Anchor" href="#vmware-fusion"></a> VMware Fusion</h4>
+<p>在菜单栏中找到“虚拟机”选项，然后拉到最后有一个“共享”，点那个共享设置。<br />
+<img src="https://img.gejiba.com/images/6ea78bdea57adb61727bc59cc2fb97fe.png" alt="" /><br />
+点击启用共享文件夹，然后点击那个”+“号。<br />
+<img src="https://img.gejiba.com/images/632ccbf19ea918679c36351e75d324d0.png" alt="" /><br />
+找到那个 4 GB 的分区，点击“添加”<br />
+<img src="https://img.gejiba.com/images/b397da48952fba48c994214f4e12b6e0.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/3cb6087a20bce76a8bc4a793218eb333.png" alt="" /></p>
+<h4 id="parallels-desktop"><a class="markdownIt-Anchor" href="#parallels-desktop"></a> Parallels Desktop</h4>
+<p>在菜单栏中找到“设备”选项，找到“共享”，点：添加文件夹。<br />
+<img src="https://img.gejiba.com/images/bd405cf58579076c9fa6508614cc58bc.png" alt="" /><br />
+找到那个 4 GB 的分区，点击“打开”<br />
+<img src="https://img.gejiba.com/images/d39aed7bf6269001f2dfcfe784a018c0.png" alt="" /></p>
+<h3 id="拷贝镜像到分区"><a class="markdownIt-Anchor" href="#拷贝镜像到分区"></a> 拷贝镜像到分区</h3>
+<ul>
+<li>这一步就非常简单了，只需要将ARCH Linux光盘文件拷贝到分区即可，这也就是为什么要装一个 Windows 虚拟机的原因，因为 macOS 不能识别 Arch Linux 的文件。</li>
+<li>虚拟机插入Arch Linux光盘，然后将光盘所有文件全部复制到那个分区。<br />
+<img src="https://img.gejiba.com/images/3853d5b817845a45de0a1daf8acf9cc9.png" alt="" /></li>
+</ul>
+<h3 id="再次更改名字"><a class="markdownIt-Anchor" href="#再次更改名字"></a> 再次更改名字</h3>
+<ul>
+<li>记住虚拟机中显示的 Arch Linux 光盘名称，我这里是<b><font color=red>「ARCH_202301」</font></b>，再次进入“磁盘工具”。<br />
+然后点击 4 GB 的分区，再点击一下他的名字：<br />
+<img src="https://img.gejiba.com/images/dc5319ee01c52ced07a08a2d49b3f9c5.png" alt="" /><br />
+将这个分区名称改成ARCH_202301之后，macOS的所有操作就都完成了。</li>
+</ul>
+<h2 id="开始安装-arch-linux"><a class="markdownIt-Anchor" href="#开始安装-arch-linux"></a> 开始安装 Arch Linux</h2>
+<p>重新启动你的 Mac 电脑，按下 Option 键，等看到启动选项出现 EFI Boot 之后，引导它。如果顺利的话，你应该可以看到 GRUB 界面，开始引导即可。<br />
+<img src="https://img.gejiba.com/images/d5d322d4fb129852c7d8365791828811.jpg" alt="" /></p>
+<h3 id="连接互联网"><a class="markdownIt-Anchor" href="#连接互联网"></a> 连接互联网</h3>
+<p>输入 iwctl 进入 iwd。<br />
+然后查看网卡号是什么，以 wlan0 为例子：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">device list</span><br></pre></td></tr></table></figure>
+<p>然后联网，输入以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">station wlan0 scan</span><br><span class="line">station wlan0 get-networks</span><br><span class="line">station wlan0 connect TestWiFi_5G</span><br></pre></td></tr></table></figure>
+<p>连接好网络后，输入 exit 退出 iwd。再输入 ping <a href="http://www.baidu.com">www.baidu.com</a> 看看网络是不是正确连接。</p>
+<h3 id="为磁盘分区"><a class="markdownIt-Anchor" href="#为磁盘分区"></a> 为磁盘分区</h3>
+<p>未完待续。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -890,6 +970,41 @@ Windows 11      std / VMware
 </font><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
+    <title>白洋淀公交乘坐体验</title>
+    <url>/20220821/011817/</url>
+    <content><![CDATA[<h1 id="线路走向"><a class="markdownIt-Anchor" href="#线路走向"></a> 线路走向</h1>
+<p>2022 年 8 月 20 日，沧州市任丘市新开到白洋淀李广村<font color=red>（现归雄安新区保定市雄县管辖）</font>的公交：308 路。以下是线路走向。</p>
+<h3 id="308-路-代河枢纽站-李广村"><a class="markdownIt-Anchor" href="#308-路-代河枢纽站-李广村"></a> 308 路 代河枢纽站 - 李广村</h3>
+<p><font color=green>代河枢纽站-西黄垒村西-于村路口<font color=red>(106国道)</font>-杜家营村-前塔村-后塔村-鄚州镇政府-鄚州镇中心卫生院-南阁村-东七里庄-中七里庄-西七里庄-生紫码头-大口子码头-李广村南-李广村</font><br />
+<img src="https://img.gejiba.com/images/03eb9f97595c40fdcc4b32a1dd089d9b.png" alt="" /></p>
+<h1 id="乘车日志"><a class="markdownIt-Anchor" href="#乘车日志"></a> 乘车日志</h1>
+<p>20号下午一点半从市区乘坐202路公交（任丘市客运西站-代河枢纽站）到达北代河。<br />
+<img src="https://img.gejiba.com/images/0b4afc34f40d79694614063114824073.jpg" alt="" /><br />
+小歇息后。一点四十308路开始行走。车内座子还是很新的，支持刷卡和刷码。<br />
+<img src="https://img.gejiba.com/images/caabb0a863887deefa35a70dcdfde4b2.jpg" alt="" /><br />
+今天天空很好看啊…<br />
+车子运行还是很快的，最高速度大概 40 km/h。噪音蛮大的。<br />
+过了于村路口就基本出了任丘界了，驶入鄚州镇。<br />
+<img src="https://img.gejiba.com/images/4c294fd8d37c149493ac12bb8e4efb89.jpg" alt="" /><br />
+驾驶到千里堤路的时候，就可以看到白洋淀的河流了。<br />
+这里有几个旅游码头，308路基本都设置了站点。<br />
+人还挺多的，比较热闹。<br />
+然后就到了李广村，本车的终点站。<br />
+<img src="https://img.gejiba.com/images/38e1a10c805be98b163dad05b4c93ab9.jpg" alt="" /><br />
+李广村离白洋淀河流还算是挺近的，我在这里拍了一些照片。<br />
+<img src="https://img.gejiba.com/images/3fc817b205738ced7dd3ce1e378a5447.jpg" alt="" /><br />
+<img src="https://img.gejiba.com/images/bd0f431dfabddf5fd30d250932523d59.jpg" alt="" /><br />
+<img src="https://img.gejiba.com/images/b1b5d6fb64e809b6c4b3acc160c97807.png" alt="李广村在白洋淀的位置" /><br />
+在近距离观察时，录了一小段视频。<font color=red></font><br />
+<a href="https://steve372yeyeye.github.io/20220821/011817/480p.mov">点击播放 QuickTime 视频</a></p>
+<h1 id=""><a class="markdownIt-Anchor" href="#"></a> </h1>
+<p>白洋淀环境很好，即使是在不是景区的乡村小河，也是很美丽的。<br />
+有一种很自然很清新的感觉。如果是清晨应该会更有感觉。</p>
+<h1 id="经过码头"><a class="markdownIt-Anchor" href="#经过码头"></a> 经过码头</h1>
+<p>308 路在路途中会经过<font color=green>生紫码头</font>和<font color=green>大口子码头</font>。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
     <title>历史锁那(Sana)专辑</title>
     <url>/20230725/221318/</url>
     <content><![CDATA[<center>
@@ -911,83 +1026,38 @@ Windows 11      std / VMware
 </center><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>无需 U 盘给 MacBook 电脑安装 Arch Linux</title>
-    <url>/20230108/134420/</url>
-    <content><![CDATA[<p>想装Arch Linux却没有带U盘，心急如焚的话，就看看我这个教程吧！保有效。</p>
-<h1 id="安装要求"><a class="markdownIt-Anchor" href="#安装要求"></a> 安装要求</h1>
-<ul>
-<li>一双手</li>
-<li>灵慧的大脑</li>
-<li>一台 (Intel 芯片) 的 MacBook Air 或者 MacBook Pro。 (不知道带安全芯片的可不可以)</li>
-</ul>
-<h1 id="开始安装"><a class="markdownIt-Anchor" href="#开始安装"></a> 开始安装</h1>
-<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
-<p>首先你需要有 Linux 基础，不然我之后跟你讲的，你都听不懂。<br />
-其次需要备份数据，因为我们要全盘格式化。</p>
-<h2 id="下载-arch-linux"><a class="markdownIt-Anchor" href="#下载-arch-linux"></a> 下载 Arch Linux</h2>
-<p>您可以通过以下链接来下载：<a href="https://mirrors.bfsu.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso">点击下载</a></p>
-<h2 id="macos-下的操作"><a class="markdownIt-Anchor" href="#macos-下的操作"></a> macOS 下的操作</h2>
-<h3 id="分区"><a class="markdownIt-Anchor" href="#分区"></a> 分区</h3>
-<ul>
-<li>在确定好已经备份好了文件之后，我们打开“磁盘工具”<br />
-<img src="https://img.gejiba.com/images/307403f27e39b88ad31f7034e3e6f3ca.png" alt="" /></li>
-<li>然后在上面的“显示”选项中，选择：“显示所有设备”<br />
-<img src="https://img.gejiba.com/images/10a4685ab86b81d9dfa2b4c032f1c707.png" alt="" /></li>
-<li>然后点击整块盘，找到“分区”选项。<br />
-<img src="https://img.gejiba.com/images/80d7dc7a41780488c98874460b234c5d.png" alt="" /></li>
-<li>添加一块 4 GB 的分区，分区格式 FAT 即可，名称先随意改一下，后面还需要改名字。<br />
-<img src="https://img.gejiba.com/images/265334b0ee5aad473c7de1f498b0f723.png" alt="" /></li>
-</ul>
-<h3 id="安装虚拟机"><a class="markdownIt-Anchor" href="#安装虚拟机"></a> 安装虚拟机</h3>
-<ul>
-<li>添加好之后，我们安装 VMware Fusion 虚拟机，安装一个 Windows 系统。<br />
-(如果你有 Parallels Desktop 虚拟机，可以跳过这一步)<br />
-VMware Fusion 虚拟机下载链接：<a href="https://download3.vmware.com/software/fusion/file/VMware-Fusion-12.0.0-16880131.dmg">点我下载</a><br />
-VMware Fusion 虚拟机破解密钥：</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ZF3R0-FHED2-M80TY-8QYGC-NPKYF</span><br></pre></td></tr></table></figure>
-<p>如果找不到 Windows 镜像的话，可以用我这个 Windows XP：<a href="https://pan.huang1111.cn/s/KBgZsY">点我下载</a></p>
-<ul>
-<li>安装好虚拟机和虚拟机扩展套件(例如：VMware Tools)之后，共享你那个 4 GB 的分区到虚拟机上。</li>
-</ul>
-<h4 id="vmware-fusion"><a class="markdownIt-Anchor" href="#vmware-fusion"></a> VMware Fusion</h4>
-<p>在菜单栏中找到“虚拟机”选项，然后拉到最后有一个“共享”，点那个共享设置。<br />
-<img src="https://img.gejiba.com/images/6ea78bdea57adb61727bc59cc2fb97fe.png" alt="" /><br />
-点击启用共享文件夹，然后点击那个”+“号。<br />
-<img src="https://img.gejiba.com/images/632ccbf19ea918679c36351e75d324d0.png" alt="" /><br />
-找到那个 4 GB 的分区，点击“添加”<br />
-<img src="https://img.gejiba.com/images/b397da48952fba48c994214f4e12b6e0.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/3cb6087a20bce76a8bc4a793218eb333.png" alt="" /></p>
-<h4 id="parallels-desktop"><a class="markdownIt-Anchor" href="#parallels-desktop"></a> Parallels Desktop</h4>
-<p>在菜单栏中找到“设备”选项，找到“共享”，点：添加文件夹。<br />
-<img src="https://img.gejiba.com/images/bd405cf58579076c9fa6508614cc58bc.png" alt="" /><br />
-找到那个 4 GB 的分区，点击“打开”<br />
-<img src="https://img.gejiba.com/images/d39aed7bf6269001f2dfcfe784a018c0.png" alt="" /></p>
-<h3 id="拷贝镜像到分区"><a class="markdownIt-Anchor" href="#拷贝镜像到分区"></a> 拷贝镜像到分区</h3>
-<ul>
-<li>这一步就非常简单了，只需要将ARCH Linux光盘文件拷贝到分区即可，这也就是为什么要装一个 Windows 虚拟机的原因，因为 macOS 不能识别 Arch Linux 的文件。</li>
-<li>虚拟机插入Arch Linux光盘，然后将光盘所有文件全部复制到那个分区。<br />
-<img src="https://img.gejiba.com/images/3853d5b817845a45de0a1daf8acf9cc9.png" alt="" /></li>
-</ul>
-<h3 id="再次更改名字"><a class="markdownIt-Anchor" href="#再次更改名字"></a> 再次更改名字</h3>
-<ul>
-<li>记住虚拟机中显示的 Arch Linux 光盘名称，我这里是<b><font color=red>「ARCH_202301」</font></b>，再次进入“磁盘工具”。<br />
-然后点击 4 GB 的分区，再点击一下他的名字：<br />
-<img src="https://img.gejiba.com/images/dc5319ee01c52ced07a08a2d49b3f9c5.png" alt="" /><br />
-将这个分区名称改成ARCH_202301之后，macOS的所有操作就都完成了。</li>
-</ul>
-<h2 id="开始安装-arch-linux"><a class="markdownIt-Anchor" href="#开始安装-arch-linux"></a> 开始安装 Arch Linux</h2>
-<p>重新启动你的 Mac 电脑，按下 Option 键，等看到启动选项出现 EFI Boot 之后，引导它。如果顺利的话，你应该可以看到 GRUB 界面，开始引导即可。<br />
-<img src="https://img.gejiba.com/images/d5d322d4fb129852c7d8365791828811.jpg" alt="" /></p>
-<h3 id="连接互联网"><a class="markdownIt-Anchor" href="#连接互联网"></a> 连接互联网</h3>
-<p>输入 iwctl 进入 iwd。<br />
-然后查看网卡号是什么，以 wlan0 为例子：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">device list</span><br></pre></td></tr></table></figure>
-<p>然后联网，输入以下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">station wlan0 scan</span><br><span class="line">station wlan0 get-networks</span><br><span class="line">station wlan0 connect TestWiFi_5G</span><br></pre></td></tr></table></figure>
-<p>连接好网络后，输入 exit 退出 iwd。再输入 ping <a href="http://www.baidu.com">www.baidu.com</a> 看看网络是不是正确连接。</p>
-<h3 id="为磁盘分区"><a class="markdownIt-Anchor" href="#为磁盘分区"></a> 为磁盘分区</h3>
-<p>未完待续。</p>
+    <title>珊瑚宫心海养成指南</title>
+    <url>/20220915/233651/</url>
+    <content><![CDATA[<p><font  face="宋体">献给各位抽到心海的同学们~</font><br />
+<font  face="宋体"><br />
+<img src="https://img.gejiba.com/images/9b0eb764a0ac82311a641c0c879ec1ec.jpg" alt="" /><br />
+<img src="https://img.gejiba.com/images/32d21d0e305c9d5a21a56fb8dc992737.gif" alt="" /></p>
+<h2 id="圣遗物"><a class="markdownIt-Anchor" href="#圣遗物"></a> 圣遗物</h2>
+<p>建议使用<font face="宋体" color=#9393FF><strong>海</font><font  face="宋体" color=#FF60AF>染</font><font face="宋体" color=#46A3FF>四件套</strong></font>。<br />
+双爆<font face="宋体" color=red><strong>越少越好，不要堆双爆</strong></font>。</p>
+<h3 id="词条"><a class="markdownIt-Anchor" href="#词条"></a> 词条</h3>
+<p><font  face="宋体">生之花：<font face="宋体" color=red><strong>生命值</strong></font><br />
+<img src="https://img.gejiba.com/images/07ad11abca89d87bd1ae38612e54cbe4.jpg" alt="" /><br />
+死之羽：<font face="宋体" color=red><strong>攻击力</strong></font><br />
+<img src="https://img.gejiba.com/images/ea4acec0d7fd5b0ff0bb789fb965d28e.jpg" alt="" /><br />
+理之冠：<font color=red><strong>治疗加成</strong></font>（可以使用生命）<br />
+<img src="https://img.gejiba.com/images/6865e4d0d785f80d26c9b51409787372.jpg" alt="" /><br />
+时之沙：<font color=red><strong>生命值</strong></font><br />
+<img src="https://img.gejiba.com/images/d7763d67dab5e0bc3a78c0f63c197824.jpg" alt="" /><br />
+空之杯：<font color=red><strong>水元素伤害加成</strong></font><br />
+<img src="https://img.gejiba.com/images/989b021bb7fa09b6cfa7cf591337f2dd.jpg" alt="" /><br />
+</font></p>
+<h2 id="武器"><a class="markdownIt-Anchor" href="#武器"></a> 武器</h2>
+<p>使用<font face="宋体" color=#CA8EC2><strong>试作金铂</strong></font>即可。如果追求更高可以抽取<font color=#FFD306><strong>不灭月华</strong></font>。</p>
+<h2 id="命座"><a class="markdownIt-Anchor" href="#命座"></a> 命座</h2>
+<p>零命即可，一般没必要抽取命座。</p>
+<h2 id="组队"><a class="markdownIt-Anchor" href="#组队"></a> 组队</h2>
+<p>可以放进<b>“神鹤万心”</b>配合打永冻流：<br />
+<font color=#FFD306><strong>神里绫华</strong></font>、<font color=#FFD306><strong>珊瑚宫心海</strong></font>、<font color=#FFD306><strong>申鹤</strong></font>、<font color=#FFD306><strong>枫原万叶</strong></font>。</p>
+<p><font face="宋体">还有心海武装队：</font><br />
+<font face="宋体" color=#FFD306><strong>珊瑚宫心海</strong></font>、<font face="宋体" color=#CA8EC2><strong>菲谢尔</strong></font>、<font face="宋体" color=#CA8EC2><strong>北斗</strong></font>、<font face="宋体" color=#CA8EC2><strong>行秋</strong></font>。<br />
+<font face="宋体" color=red>心海武装队和砂糖武装队不一样的是，心海武装队可以随意搭配后三位角色。</font><br />
+</font></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -1046,74 +1116,74 @@ VMware Fusion 虚拟机破解密钥：</li>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>珊瑚宫心海养成指南</title>
-    <url>/20220915/233651/</url>
-    <content><![CDATA[<p><font  face="宋体">献给各位抽到心海的同学们~</font><br />
-<font  face="宋体"><br />
-<img src="https://img.gejiba.com/images/9b0eb764a0ac82311a641c0c879ec1ec.jpg" alt="" /><br />
-<img src="https://img.gejiba.com/images/32d21d0e305c9d5a21a56fb8dc992737.gif" alt="" /></p>
-<h2 id="圣遗物"><a class="markdownIt-Anchor" href="#圣遗物"></a> 圣遗物</h2>
-<p>建议使用<font face="宋体" color=#9393FF><strong>海</font><font  face="宋体" color=#FF60AF>染</font><font face="宋体" color=#46A3FF>四件套</strong></font>。<br />
-双爆<font face="宋体" color=red><strong>越少越好，不要堆双爆</strong></font>。</p>
-<h3 id="词条"><a class="markdownIt-Anchor" href="#词条"></a> 词条</h3>
-<p><font  face="宋体">生之花：<font face="宋体" color=red><strong>生命值</strong></font><br />
-<img src="https://img.gejiba.com/images/07ad11abca89d87bd1ae38612e54cbe4.jpg" alt="" /><br />
-死之羽：<font face="宋体" color=red><strong>攻击力</strong></font><br />
-<img src="https://img.gejiba.com/images/ea4acec0d7fd5b0ff0bb789fb965d28e.jpg" alt="" /><br />
-理之冠：<font color=red><strong>治疗加成</strong></font>（可以使用生命）<br />
-<img src="https://img.gejiba.com/images/6865e4d0d785f80d26c9b51409787372.jpg" alt="" /><br />
-时之沙：<font color=red><strong>生命值</strong></font><br />
-<img src="https://img.gejiba.com/images/d7763d67dab5e0bc3a78c0f63c197824.jpg" alt="" /><br />
-空之杯：<font color=red><strong>水元素伤害加成</strong></font><br />
-<img src="https://img.gejiba.com/images/989b021bb7fa09b6cfa7cf591337f2dd.jpg" alt="" /><br />
-</font></p>
-<h2 id="武器"><a class="markdownIt-Anchor" href="#武器"></a> 武器</h2>
-<p>使用<font face="宋体" color=#CA8EC2><strong>试作金铂</strong></font>即可。如果追求更高可以抽取<font color=#FFD306><strong>不灭月华</strong></font>。</p>
-<h2 id="命座"><a class="markdownIt-Anchor" href="#命座"></a> 命座</h2>
-<p>零命即可，一般没必要抽取命座。</p>
-<h2 id="组队"><a class="markdownIt-Anchor" href="#组队"></a> 组队</h2>
-<p>可以放进<b>“神鹤万心”</b>配合打永冻流：<br />
-<font color=#FFD306><strong>神里绫华</strong></font>、<font color=#FFD306><strong>珊瑚宫心海</strong></font>、<font color=#FFD306><strong>申鹤</strong></font>、<font color=#FFD306><strong>枫原万叶</strong></font>。</p>
-<p><font face="宋体">还有心海武装队：</font><br />
-<font face="宋体" color=#FFD306><strong>珊瑚宫心海</strong></font>、<font face="宋体" color=#CA8EC2><strong>菲谢尔</strong></font>、<font face="宋体" color=#CA8EC2><strong>北斗</strong></font>、<font face="宋体" color=#CA8EC2><strong>行秋</strong></font>。<br />
-<font face="宋体" color=red>心海武装队和砂糖武装队不一样的是，心海武装队可以随意搭配后三位角色。</font><br />
-</font></p>
+    <title>让 Mac 电脑也玩上光遇！</title>
+    <url>/20250114/222842/</url>
+    <content><![CDATA[<h1 id="安装光-遇国服"><a class="markdownIt-Anchor" href="#安装光-遇国服"></a> 安装光 · 遇国服</h1>
+<p>by Sanakaprix  2025-01-15</p>
+<h2 id="处理器是-apple-m1-及以后的设备"><a class="markdownIt-Anchor" href="#处理器是-apple-m1-及以后的设备"></a> 处理器是 Apple M1 及以后的设备</h2>
+<h3 id="下载-ipa"><a class="markdownIt-Anchor" href="#下载-ipa"></a> 下载 iPA</h3>
+<p>在下载之前，请先在设置-“隐私与安全性”-“允许以下位置的应用程序”单选框改成 App Store 和被认可的开发者：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/9d5b41323a439c1502256f7de10db681.png" alt="" /><br />
+设置完成后在浏览器打开 <a href="https://decrypt.day">https://decrypt.day</a> 这个网站：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/de2ef63f5bd4e3cdd79a3f7293c9a232.png" alt="" /><br />
+搜索“光·遇”：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/abf2c34dd4763f78cedcb30a61a4485e.png" alt="" /><br />
+点击下载：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/b952b53dac09245f881459db710c0ee3.jpg" alt="" /><br />
+点击第二个链接（OneDrive 下载）：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/6ce7063a25f4cd3e9da30225057c14a0.png" alt="" /><br />
+获取下载链接后下载，等待下载完成：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/545ebabe4d167a12de63a32c4236a733.png" alt="" /></p>
+<h3 id="安装光-遇"><a class="markdownIt-Anchor" href="#安装光-遇"></a> 安装《光 · 遇》</h3>
+<p>下载完成后，前往 <a href="http://playcover.io">playcover.io</a> 网站，点击下载按钮：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/b1bfce3f81bbc7311ad3fb615e32c300.png" alt="" /><br />
+选择 Latest 版本，然后安装 PlayCover 程序：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/94cd8e9506f3d74f90fe0195a7e92bc2.png" alt="" /><br />
+第一次打开软件应该是空空如也的状态（我这里已经安装了）：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/a767dbe45b2bf5d59438e93e67953cb0.png" alt="" /><br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/a2bdd984ff903a125f2dad32e328fed5.jpg" alt="" /><br />
+右键打开光遇设置，然后一定要完全按照我这样设置，不然可能闪退：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/fa1e53cf02b1aeb12f4b63b8e4c68a65.jpg" alt="" /><br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/172eaddd8b6fd55deeba06b1546c8fbf.png" alt="" /><br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/ba86111ffa85ba0c2ae1c6e7c3c80c39.jpg" alt="" /><br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/e024e949577b5e91c0c95534bcd08425.png" alt="" /><br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/aba5f5da790f25394b3ab865aa460e49.jpg" alt="" /><br />
+改好了之后，点击“好”，双击图标启动游戏试一下。<br />
+如果还闪退的话，可以试试以下方法：<br />
+按下 ⌘ Command + 空格键，输入 Terminal 打开终端：<br />
+输入以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo codesign --force --deep --sign - </span><br></pre></td></tr></table></figure>
+<p>然后在 PlayCover 里右键选择“在 Finder 里查看”：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/82973f85fa93751e7259d00b8157c9e7.jpg" alt="" /><br />
+然后将光遇的包体拖到终端里，就像这样：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/d1397b3de877b044752b45d3804733a6.jpg" alt="" /><br />
+按下回车键执行，输入你电脑用户的密码（密码不显示盲敲就行）：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/d01879b77daaeb0e6b797f695f89b881.png" alt="" /><br />
+等待执行完成后，再打开光遇试试应该就能进了。<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/58bf5575642c95df3cd4ba66931fb091.png" alt="" /><br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/0c0ea645b488ca4310724b42d55330cb.png" alt="" /><br />
+<strong>感觉用鼠标玩的话特别难受，建议用手柄玩</strong></p>
+<h2 id="处理器是-intel-的设备"><a class="markdownIt-Anchor" href="#处理器是-intel-的设备"></a> 处理器是 Intel 的设备</h2>
+<p>请使用 Boot Camp 安装 Windows，安装前请先备份你的东西。<br />
+然后在 <a href="https://sky.163.com/index.html">光遇官网</a> <a href="https://sky.163.com/index.html">https://sky.163.com/index.html</a> 下载光遇电脑版就可以了<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/ef2e8a6ce4ecf5d1389c3a7d359f605d.png" alt="" /></p>
+<h1 id="安装光-遇国际服tgc"><a class="markdownIt-Anchor" href="#安装光-遇国际服tgc"></a> 安装光 · 遇国际服（TGC）</h1>
+<h2 id="处理器是-apple-m1-及以后的设备-2"><a class="markdownIt-Anchor" href="#处理器是-apple-m1-及以后的设备-2"></a> 处理器是 Apple M1 及以后的设备</h2>
+<p>打开 App Store，退出登录国区账号（如果你现在登入的是外区账号请忽略）<br />
+<img src="https://pic1.imgdb.cn/item/6787042bd0e0a243d4f45676.png" alt="" /><br />
+登录外区账号<br />
+<img src="https://pic1.imgdb.cn/item/6787049cd0e0a243d4f4567b.png" alt="" /><br />
+在搜索框搜索“Sky”或光遇都可以，直接下载：<br />
+<img src="https://pic1.imgdb.cn/item/678704e1d0e0a243d4f4567c.png" alt="" /></p>
+<h2 id="处理器是-intel-的设备-2"><a class="markdownIt-Anchor" href="#处理器是-intel-的设备-2"></a> 处理器是 Intel 的设备</h2>
+<p>请使用 Boot Camp 安装 Windows，安装前请先备份你的东西。<br />
+然后安装 Steam，在 Steam 里安装光遇（请自行查找光遇 Steam 入库教程）：<br />
+<img src="https://pic1.imgdb.cn/item/67870581d0e0a243d4f45681.png" alt="" /><br />
+<strong>祝你在光 · 遇的世界里玩的开心！</strong></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>白洋淀公交乘坐体验</title>
-    <url>/20220821/011817/</url>
-    <content><![CDATA[<h1 id="线路走向"><a class="markdownIt-Anchor" href="#线路走向"></a> 线路走向</h1>
-<p>2022 年 8 月 20 日，沧州市任丘市新开到白洋淀李广村<font color=red>（现归雄安新区保定市雄县管辖）</font>的公交：308 路。以下是线路走向。</p>
-<h3 id="308-路-代河枢纽站-李广村"><a class="markdownIt-Anchor" href="#308-路-代河枢纽站-李广村"></a> 308 路 代河枢纽站 - 李广村</h3>
-<p><font color=green>代河枢纽站-西黄垒村西-于村路口<font color=red>(106国道)</font>-杜家营村-前塔村-后塔村-鄚州镇政府-鄚州镇中心卫生院-南阁村-东七里庄-中七里庄-西七里庄-生紫码头-大口子码头-李广村南-李广村</font><br />
-<img src="https://img.gejiba.com/images/03eb9f97595c40fdcc4b32a1dd089d9b.png" alt="" /></p>
-<h1 id="乘车日志"><a class="markdownIt-Anchor" href="#乘车日志"></a> 乘车日志</h1>
-<p>20号下午一点半从市区乘坐202路公交（任丘市客运西站-代河枢纽站）到达北代河。<br />
-<img src="https://img.gejiba.com/images/0b4afc34f40d79694614063114824073.jpg" alt="" /><br />
-小歇息后。一点四十308路开始行走。车内座子还是很新的，支持刷卡和刷码。<br />
-<img src="https://img.gejiba.com/images/caabb0a863887deefa35a70dcdfde4b2.jpg" alt="" /><br />
-今天天空很好看啊…<br />
-车子运行还是很快的，最高速度大概 40 km/h。噪音蛮大的。<br />
-过了于村路口就基本出了任丘界了，驶入鄚州镇。<br />
-<img src="https://img.gejiba.com/images/4c294fd8d37c149493ac12bb8e4efb89.jpg" alt="" /><br />
-驾驶到千里堤路的时候，就可以看到白洋淀的河流了。<br />
-这里有几个旅游码头，308路基本都设置了站点。<br />
-人还挺多的，比较热闹。<br />
-然后就到了李广村，本车的终点站。<br />
-<img src="https://img.gejiba.com/images/38e1a10c805be98b163dad05b4c93ab9.jpg" alt="" /><br />
-李广村离白洋淀河流还算是挺近的，我在这里拍了一些照片。<br />
-<img src="https://img.gejiba.com/images/3fc817b205738ced7dd3ce1e378a5447.jpg" alt="" /><br />
-<img src="https://img.gejiba.com/images/bd0f431dfabddf5fd30d250932523d59.jpg" alt="" /><br />
-<img src="https://img.gejiba.com/images/b1b5d6fb64e809b6c4b3acc160c97807.png" alt="李广村在白洋淀的位置" /><br />
-在近距离观察时，录了一小段视频。<font color=red></font><br />
-<a href="https://steve372yeyeye.github.io/20220821/011817/480p.mov">点击播放 QuickTime 视频</a></p>
-<h1 id=""><a class="markdownIt-Anchor" href="#"></a> </h1>
-<p>白洋淀环境很好，即使是在不是景区的乡村小河，也是很美丽的。<br />
-有一种很自然很清新的感觉。如果是清晨应该会更有感觉。</p>
-<h1 id="经过码头"><a class="markdownIt-Anchor" href="#经过码头"></a> 经过码头</h1>
-<p>308 路在路途中会经过<font color=green>生紫码头</font>和<font color=green>大口子码头</font>。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>光！遇！</tag>
+      </tags>
   </entry>
   <entry>
     <title>计算机基础操作</title>
@@ -1248,89 +1318,6 @@ Windows 中的终端叫做命令提示符，我们可以利用终端做很多事
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>让 Mac 电脑也玩上光遇！</title>
-    <url>/20250114/222842/</url>
-    <content><![CDATA[<h1 id="安装光-遇国服"><a class="markdownIt-Anchor" href="#安装光-遇国服"></a> 安装光 · 遇国服</h1>
-<p>by Sanakaprix  2025-01-15</p>
-<h2 id="处理器是-apple-m1-及以后的设备"><a class="markdownIt-Anchor" href="#处理器是-apple-m1-及以后的设备"></a> 处理器是 Apple M1 及以后的设备</h2>
-<h3 id="下载-ipa"><a class="markdownIt-Anchor" href="#下载-ipa"></a> 下载 iPA</h3>
-<p>在下载之前，请先在设置-“隐私与安全性”-“允许以下位置的应用程序”单选框改成 App Store 和被认可的开发者：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/9d5b41323a439c1502256f7de10db681.png" alt="" /><br />
-设置完成后在浏览器打开 <a href="https://decrypt.day">https://decrypt.day</a> 这个网站：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/de2ef63f5bd4e3cdd79a3f7293c9a232.png" alt="" /><br />
-搜索“光·遇”：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/abf2c34dd4763f78cedcb30a61a4485e.png" alt="" /><br />
-点击下载：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/b952b53dac09245f881459db710c0ee3.jpg" alt="" /><br />
-点击第二个链接（OneDrive 下载）：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/6ce7063a25f4cd3e9da30225057c14a0.png" alt="" /><br />
-获取下载链接后下载，等待下载完成：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/545ebabe4d167a12de63a32c4236a733.png" alt="" /></p>
-<h3 id="安装光-遇"><a class="markdownIt-Anchor" href="#安装光-遇"></a> 安装《光 · 遇》</h3>
-<p>下载完成后，前往 <a href="http://playcover.io">playcover.io</a> 网站，点击下载按钮：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/b1bfce3f81bbc7311ad3fb615e32c300.png" alt="" /><br />
-选择 Latest 版本，然后安装 PlayCover 程序：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/94cd8e9506f3d74f90fe0195a7e92bc2.png" alt="" /><br />
-第一次打开软件应该是空空如也的状态（我这里已经安装了）：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/a767dbe45b2bf5d59438e93e67953cb0.png" alt="" /><br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/a2bdd984ff903a125f2dad32e328fed5.jpg" alt="" /><br />
-右键打开光遇设置，然后一定要完全按照我这样设置，不然可能闪退：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/fa1e53cf02b1aeb12f4b63b8e4c68a65.jpg" alt="" /><br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/172eaddd8b6fd55deeba06b1546c8fbf.png" alt="" /><br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/ba86111ffa85ba0c2ae1c6e7c3c80c39.jpg" alt="" /><br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/e024e949577b5e91c0c95534bcd08425.png" alt="" /><br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/aba5f5da790f25394b3ab865aa460e49.jpg" alt="" /><br />
-改好了之后，点击“好”，双击图标启动游戏试一下。<br />
-如果还闪退的话，可以试试以下方法：<br />
-按下 ⌘ Command + 空格键，输入 Terminal 打开终端：<br />
-输入以下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo codesign --force --deep --sign - </span><br></pre></td></tr></table></figure>
-<p>然后在 PlayCover 里右键选择“在 Finder 里查看”：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/82973f85fa93751e7259d00b8157c9e7.jpg" alt="" /><br />
-然后将光遇的包体拖到终端里，就像这样：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/d1397b3de877b044752b45d3804733a6.jpg" alt="" /><br />
-按下回车键执行，输入你电脑用户的密码（密码不显示盲敲就行）：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/d01879b77daaeb0e6b797f695f89b881.png" alt="" /><br />
-等待执行完成后，再打开光遇试试应该就能进了。<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/58bf5575642c95df3cd4ba66931fb091.png" alt="" /><br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/0c0ea645b488ca4310724b42d55330cb.png" alt="" /><br />
-<strong>感觉用鼠标玩的话特别难受，建议用手柄玩</strong></p>
-<h2 id="处理器是-intel-的设备"><a class="markdownIt-Anchor" href="#处理器是-intel-的设备"></a> 处理器是 Intel 的设备</h2>
-<p>请使用 Boot Camp 安装 Windows，安装前请先备份你的东西。<br />
-然后在 <a href="https://sky.163.com/index.html">光遇官网</a> <a href="https://sky.163.com/index.html">https://sky.163.com/index.html</a> 下载光遇电脑版就可以了<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/ef2e8a6ce4ecf5d1389c3a7d359f605d.png" alt="" /></p>
-<h1 id="安装光-遇国际服tgc"><a class="markdownIt-Anchor" href="#安装光-遇国际服tgc"></a> 安装光 · 遇国际服（TGC）</h1>
-<h2 id="处理器是-apple-m1-及以后的设备-2"><a class="markdownIt-Anchor" href="#处理器是-apple-m1-及以后的设备-2"></a> 处理器是 Apple M1 及以后的设备</h2>
-<p>打开 App Store，退出登录国区账号（如果你现在登入的是外区账号请忽略）<br />
-<img src="https://pic1.imgdb.cn/item/6787042bd0e0a243d4f45676.png" alt="" /><br />
-登录外区账号<br />
-<img src="https://pic1.imgdb.cn/item/6787049cd0e0a243d4f4567b.png" alt="" /><br />
-在搜索框搜索“Sky”或光遇都可以，直接下载：<br />
-<img src="https://pic1.imgdb.cn/item/678704e1d0e0a243d4f4567c.png" alt="" /></p>
-<h2 id="处理器是-intel-的设备-2"><a class="markdownIt-Anchor" href="#处理器是-intel-的设备-2"></a> 处理器是 Intel 的设备</h2>
-<p>请使用 Boot Camp 安装 Windows，安装前请先备份你的东西。<br />
-然后安装 Steam，在 Steam 里安装光遇（请自行查找光遇 Steam 入库教程）：<br />
-<img src="https://pic1.imgdb.cn/item/67870581d0e0a243d4f45681.png" alt="" /><br />
-<strong>祝你在光 · 遇的世界里玩的开心！</strong></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>光！遇！</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Sanapri bilibili 新视频</title>
-    <url>/20220823/164646/</url>
-    <content><![CDATA[<p>鎖那小天使终于发新视频啦，这里给你们看看～</p>
-<pre><code>Kyu-kurarin (cover) / sana 
-original: きゅうくらりん / いよわ feat.可不 
-vocal: 鎖那  mix: n.k 
-▷https://space.bilibili.com/543245410
-</code></pre>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?bvid=BV1M14y1t7LK&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
-</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>黑翼猫 Extended Kernel Project 中国网络环境下载</title>
     <url>/20220818/010924/</url>
     <content><![CDATA[<h2 id="介绍"><a class="markdownIt-Anchor" href="#介绍"></a> 介绍</h2>
@@ -1350,5 +1337,18 @@ vocal: 鎖那  mix: n.k
 <h2 id="伪装系统版本用的软件"><a class="markdownIt-Anchor" href="#伪装系统版本用的软件"></a> 伪装系统版本用的软件</h2>
 <p><img src="https://img.gejiba.com/images/b269d479dbb9aab60c0bfcbac371d2ed.png" alt="" /></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>Sanapri bilibili 新视频</title>
+    <url>/20220823/164646/</url>
+    <content><![CDATA[<p>鎖那小天使终于发新视频啦，这里给你们看看～</p>
+<pre><code>Kyu-kurarin (cover) / sana 
+original: きゅうくらりん / いよわ feat.可不 
+vocal: 鎖那  mix: n.k 
+▷https://space.bilibili.com/543245410
+</code></pre>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?bvid=BV1M14y1t7LK&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
+</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
 </search>
