@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-05-17T15:23:49.107Z</updated>
+  <updated>2025-05-19T04:49:41.481Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>图床已废</title>
+    <link href="http://example.com/20250519/124903/"/>
+    <id>http://example.com/20250519/124903/</id>
+    <published>2025-05-19T04:49:03.000Z</published>
+    <updated>2025-05-19T04:49:41.481Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;本网站原来的图床已经无法使用，而且我也没做备份。&lt;/p&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/spoiler.css&quot; type=&quot;text/css&quot;&gt;&lt;script src=&quot;/js/spoiler.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>小米HyperOS Bootloader解锁技术能力认证考试试卷</title>
