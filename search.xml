@@ -462,274 +462,6 @@ D. 二进制代码</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>QEMU 基础命令学习</title>
-    <url>/20220826/022653/</url>
-    <content><![CDATA[<center>
-<div style="width:100px; height:100px; border-radius:100%; overflow:hidden;">
-    <img src="https://steve372yeyeye.github.io/images/avatar.gif" alt>
-</div>
-<br>
-<font size="6"><center>？、アイドル宣言</center></font>
-<font size="3"><center>的博客小站</center></font>
-<br>
-<p><a href="/">返回到首页</a></p>
-<br>
-<font color=#66ccff>作者：？、アイドル宣言</font>
-</center>
-<h1 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h1>
-<font face="宋体">
-<p>本文章是为了让各位更好的学习 QEMU 命令。<br />
-<font color=red>这里只学习 qemu-system，没有 qemu-user 的内容。</font></p>
-<h2 id="qemu-是什么"><a class="markdownIt-Anchor" href="#qemu-是什么"></a> QEMU 是什么</h2>
-<p>QEMU是一套由<font color=green>法布里斯·贝拉(Fabrice Bellard)</font>所编写的以GPL许可证分发源码的模拟处理器软件，在<font color=green>GNU/Linux</font>平台上使用广泛。<font color=green>Bochs，PearPC</font>等与其类似，但不具备其许多特性，比如高速度及跨平台的特性，通过KVM，QEMU能虚拟化至真实电脑的速度。</p>
-<h2 id="qemu-有什么用"><a class="markdownIt-Anchor" href="#qemu-有什么用"></a> QEMU 有什么用？</h2>
-<p>简单来说就是能跨平台高速模拟各种系统。不恰当的比喻：就是能在手机上运行 Windows 系统，而且速度很快。</p>
-<h1 id="开始学习"><a class="markdownIt-Anchor" href="#开始学习"></a> 开始学习</h1>
-<h2 id="安装-qemu"><a class="markdownIt-Anchor" href="#安装-qemu"></a> 安装 QEMU</h2>
-<h3 id="编译安装"><a class="markdownIt-Anchor" href="#编译安装"></a> 编译安装</h3>
-<blockquote>
-<p>安装依赖</p>
-</blockquote>
-<p>QEMU 可以通过编译的方式安装。<br />
-需要先根据你系统的情况，安装 QEMU 必需的依赖(一般是这些)：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git libglib2.0-dev libfdt-dev libpixman-1-dev zlib1g-dev libsdl1.2-dev libsnappy-dev liblzo2-dev zlib1g-dbg automake gcc python wget &amp;&amp; apt-get install build-essential</span><br></pre></td></tr></table></figure>
-<p><a href="https://git-scm.com">Git</a> <a href="https://github.com/GNOME/glib">Glib</a> <a href="https://baike.baidu.com/item/FDT/1691090?fr=aladdin">fdt</a> <a href="http://www.pixman.org">pixman</a> <a href="http://www.zlib.net">zlib</a> <a href="http://www.libsdl.org">libsdl</a> <a href="https://github.com/google/snappy">snappy</a> <a href="https://launchpad.net/ubuntu/+source/lzo2/">lzo2</a> <a href="https://www.solvusoft.com/zh-cn/file-extensions/software/gnu-operating-system/automake/">automake</a> <a href="https://www.gnu.org/software/gcc/">gcc</a> <a href="https://www.python.org">python</a><br />
-安装完成后，需要下载 QEMU 的源码包或者是克隆。</p>
-<blockquote>
-<p>克隆 QEMU</p>
-</blockquote>
-<p>请输入以下命令<font color=green>(北京外国语大学开源软件镜像站)</font>：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://mirrors.bfsu.edu.cn/git/qemu.git</span><br></pre></td></tr></table></figure>
-<p>然后你应该会在主目录看到一个叫“qemu”的文件夹，这就是最新的源码包。</p>
-<blockquote>
-<p>下载 QEMU 源码<font color=green>(tar.xz)</font>：</p>
-</blockquote>
-<p>在此网站下载源码包：<br />
-<a href="https://download.qemu.org">https://download.qemu.org</a><br />
-然后通过 tar 命令解压：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">tar -xvf ./qemu-7.1.0-rc3.tar.xz</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>开始编译</p>
-</blockquote>
-<p>如果你前面的操作完成了的话，就可以开始编译了。<br />
-首先我们要 cd 到目录</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/qemu-7.1.0-rc3</span><br></pre></td></tr></table></figure>
-<p>然后开始配置编译内容，输入 ./configure 即可。但是这样的话没用的东西会很多，所以我们在 configure 里面加参数。参数可以查阅 <font color=green>./configure --help</font>。比如我们只需要编译一个架构而不是全局编译，那么我们输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">./configure --target-list=x86_64-softmmu</span><br></pre></td></tr></table></figure>
-<p>其中，<font color=green>x86_64-softmmu</font> 是你要编译的架构。<br />
-那我们想编译多个架构怎么办呢？<br />
-只需要在架构后加上其他架构即可，用小写的逗号分隔。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">./configure --target-list=x86_64-softmmu,aarch64-softmmu,ppc-softmmu</span><br></pre></td></tr></table></figure>
-<p>还有其他的编译选项。这里就不说了。<br />
-等待配置完成后，就可以开始编译 qemu 了。<br />
-输入 make 可以开始，也可以加参数。比如我要是想开 8 核编译那么输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">make -j8</span><br></pre></td></tr></table></figure>
-<p>具体几核看你设备的 CPU 核心数。不加参数只会开一核编译，速度很慢。</p>
-<blockquote>
-<p>编译后安装</p>
-</blockquote>
-<p>编译完成后，你直接运行 qemu 是没有反应的，提示命令不存在。我们需要再安装一下 qemu 才能使用。<br />
-输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">make install</span><br></pre></td></tr></table></figure>
-<p>就安装完成了。</p>
-<h3 id="brew-安装-qemu"><a class="markdownIt-Anchor" href="#brew-安装-qemu"></a> brew 安装 QEMU</h3>
-<p>Mac 电脑不需要必须通过编译安装，也可以通过软件包管理器安装 QEMU。<br />
-首先给你的 Mac 电脑安装 <font color=green>HomeBrew</font>。这里推荐使用国内安装脚本：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/bin/zsh -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure>
-<p>跟着安装脚本走。安装完成 Homebrew 之后，输入以下命令安装 QEMU：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew install qemu</span><br></pre></td></tr></table></figure>
-<p>等待安装完成即可享用 QEMU。<br />
-<img src="https://img.gejiba.com/images/2c362227e66bba6a2db161e2bc5c8052.png" alt="" /></p>
-<h3 id="apt-安装-qemu"><a class="markdownIt-Anchor" href="#apt-安装-qemu"></a> APT 安装 QEMU</h3>
-<p><font color=green>apt</font> 是 <font color=green>Debian GNU/Linux</font> 以及基于 Debian 的其他发行版中默认的软件包管理器。我们使用它安装 QEMU。同样也不用必须编译安装。<br />
-输入以下命令，安装 qemu 的命令行。以 x86_64/i386 架构为例，输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt install qemu-system-x86</span><br></pre></td></tr></table></figure>
-<p>等待安装完成即可。<br />
-如果你的 Linux 系统有图形界面，那么可以直接安装 <font color=green>qemu 的图形前端</font>。输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt install aqemu</span><br></pre></td></tr></table></figure>
-<p>安装完成后，可以在程序菜单里看到 aqemu，直接运行即可。</p>
-<h2 id="qemu-的使用"><a class="markdownIt-Anchor" href="#qemu-的使用"></a> QEMU 的使用</h2>
-<h3 id="运行-qemu"><a class="markdownIt-Anchor" href="#运行-qemu"></a> 运行 QEMU</h3>
-<p>我们按照上面的步骤安装完成 QEMU 之后，可以查看一下安装完 QEMU 的版本，输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">qemu-system-&lt;架构&gt; --version</span><br></pre></td></tr></table></figure>
-<p><img src="https://img.gejiba.com/images/7085de537a84b3fd450482148b6b8d2c.png" alt="" /><br />
-可以看到 QEMU 已经正确安装，我们现在就可以试试水，看看如何启动。</p>
-<blockquote>
-<p>熟悉命令</p>
-</blockquote>
-<p>QEMU 基本命令如下(x86_64)：</p>
-<pre><code>-accel 加速类型，一般为(kvm,hax,hvf,tcg)
--machine 机器类型，一般为pc和q35。具体可查看help
--net nic,model=&lt;网卡名称&gt; 设置虚拟机网卡。
--net user 设置虚拟机网络模式，有user和tap可选。
--hda,-hdb,-hdc,-hdd 磁盘位，放入磁盘镜像。
--m 256 设置的内存(RAM)，单位是MB。1GB=1024MB
--vga vmware 设置的显示卡
--device 添加各种硬件设备。
--soundhw sb16 启用声音支持。
--cdrom 光盘位，放入 ISO 镜像。
--fda,-fdb 软盘位，放入磁盘镜像。
--cpu 设置虚拟的 CPU
--smp &lt;核心数&gt; 设置虚拟cpu核心数。默认单核
--vnc :&lt;端口号&gt; 开启后使用 VNC Viewer 连接。
--pflash &lt;固件&gt; 并行闪存镜像，一般用于 EFI 启动。
--nographic 无图形启动，一般用于 Linux。
--win2k-hack （i386）在安装 Windows 2000 时使用它以避免磁盘已满错误，但会降低磁盘性能，安装完成后可以删掉该命令。
--usb 启用 USB 控制器，其他 USB 设置需要使用 -device 命令。
--sdl 开启后使用 XSDL Server 连接。 
--k &lt;language&gt; 键盘的语言，一般是为了适配不同语种的键盘。一般不用填。
--boot c 引导顺序，c是硬盘、n是网络、d是光盘、s是软盘。
--name 虚拟机名称，如果你是 VNC 连接，该名称将显示到你 VNC 远程桌面信息。
-</code></pre>
-<p>这些命令组合起来可以运行虚拟机。</p>
-<blockquote>
-<p>一个实例</p>
-</blockquote>
-<p>下面是包含了上面的部分命令的<font color=green>一个实例</font>，不知道你能不能看懂。</p>
-<font color=red>
-qemu-system-x86_64 -hda /home/steve372/win10.qcow2 -cdrom /home/steve372/win10.iso -m 768 -machine q35 -accel kvm -smp 2 -vga std -soundhw ac97 -usb -device usb-tablet -boot d -pflash /home/steve372/QEMU_EFI.fd -net nic,model=rtl8139 -net user -vnc :0 -name "Windows 10"
-</font>
-<p>如果不能看懂，可以看下面的<font color=green>“命令详解“</font>。来更加了解这些命令。</p>
-<h3 id="命令详解"><a class="markdownIt-Anchor" href="#命令详解"></a> 命令详解</h3>
-<h4 id="-accel-命令"><a class="markdownIt-Anchor" href="#-accel-命令"></a> -accel 命令</h4>
-<p>-accel 命令可以为<font color=green>虚拟机提供加速</font>，有以下加速类型：<strong>kvm,hax,hvf,tcg</strong>。当然，这些命令要运行起来都有一定的要求，如下：</p>
-<pre><code>kvm 只能在 Linux 环境运行，并且需要内核支持（手机可以洗洗睡了）
-hvf 只能在 macOS 环境运行。
-hax 只能在 Windows 或 macOS 环境运行，似乎不太稳定。
-tcg 通用。手机只能用 tcg 了
-</code></pre>
-<p>请根据你自己的系统进行搭配。<br />
-这些加速类型之中，<strong>kvm是最快的，hvf和hax差不多，最后是tcg。</strong><br />
-稳定性中，<strong>kvm、hvf、tcg都挺稳定的，hax一般。</strong></p>
-<h4 id="-machine-命令"><a class="markdownIt-Anchor" href="#-machine-命令"></a> -machine 命令</h4>
-<p>-machine 命令可以设置机器类型。有以下机器类型：</p>
-<div class='spoiler collapsed'>
-    <div class='spoiler-title'>
-        机器类型列表
-    </div>
-    <div class='spoiler-content'>
-        <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">microvm              microvm (i386)</span><br><span class="line">pc                   Standard PC (i440FX + PIIX, 1996) (alias of pc-i440fx-7.0)</span><br><span class="line">pc-i440fx-7.0        Standard PC (i440FX + PIIX, 1996) (default)</span><br><span class="line">pc-i440fx-6.2        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-6.1        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-6.0        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-5.2        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-5.1        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-5.0        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-4.2        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-4.1        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-4.0        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-3.1        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-3.0        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.9        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.8        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.7        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.6        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.5        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.4        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.3        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.2        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.12       Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.11       Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.10       Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.1        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.0        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-1.7        Standard PC (i440FX + PIIX, 1996) (deprecated)</span><br><span class="line">pc-i440fx-1.6        Standard PC (i440FX + PIIX, 1996) (deprecated)</span><br><span class="line">pc-i440fx-1.5        Standard PC (i440FX + PIIX, 1996) (deprecated)</span><br><span class="line">pc-i440fx-1.4        Standard PC (i440FX + PIIX, 1996) (deprecated)</span><br><span class="line">q35                  Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-7.0)</span><br><span class="line">pc-q35-7.0           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-6.2           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-6.1           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-6.0           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-5.2           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-5.1           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-5.0           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-4.2           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-4.1           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-4.0.1         Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-4.0           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-3.1           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-3.0           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.9           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.8           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.7           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.6           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.5           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.4           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.12          Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.11          Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.10          Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">isapc                ISA-only PC</span><br><span class="line">none                 empty machine</span><br></pre></td></tr></table></figure>
-    </div>
-</div>
-<p>一般来说，我们最常用的就是 pc 和 q35。如果你使用的是别人的镜像，<font color=#66ccff>那么务必跟随镜像主的安排。</font></p>
-<h4 id="-net-命令"><a class="markdownIt-Anchor" href="#-net-命令"></a> -net 命令</h4>
-<p>QEMU 的 -net 命令是提供跟网络相关的功能，这里只介绍最基本的两种方式。<br />
--net 的用法是：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-net user -net nic,model=&lt;网卡名称&gt;</span><br></pre></td></tr></table></figure>
-<p>首先，前面的 -net 有五种选择：user, tap, bridge, vde, socket<br />
-如果你没有特殊需求，<font color=green>直接使用 User 网络即可。</font><br />
-然后，后面的 -net 是选择虚拟的网卡。QEMU 这里有以下网卡可选：</p>
-<div class='spoiler collapsed'>
-    <div class='spoiler-title'>
-        虚拟网卡类型列表
-    </div>
-    <div class='spoiler-content'>
-        <figure class="highlight plaintext"><figcaption><span>NIC list</span></figcaption><table><tr><td class="code"><pre><span class="line">e1000</span><br><span class="line">e1000-82544gc</span><br><span class="line">e1000-82545em</span><br><span class="line">e1000e</span><br><span class="line">i82550</span><br><span class="line">i82551</span><br><span class="line">i82557a</span><br><span class="line">i82557b</span><br><span class="line">i82557c</span><br><span class="line">i82558a</span><br><span class="line">i82558b</span><br><span class="line">i82559a</span><br><span class="line">i82559b</span><br><span class="line">i82559c</span><br><span class="line">i82559er</span><br><span class="line">i82562</span><br><span class="line">i82801</span><br><span class="line">ne2k_pci</span><br><span class="line">pcnet</span><br><span class="line">rtl8139</span><br><span class="line">tulip</span><br><span class="line">virtio-net-pci</span><br><span class="line">virtio-net-pci-non-transitional</span><br><span class="line">virtio-net-pci-transitional</span><br><span class="line">vmxnet3</span><br></pre></td></tr></table></figure>
-    </div>
-</div>
-<p>我们常用的是 <strong>e1000,ne2k_pci,rtl8139,virtio</strong> 网卡。<br />
-<font color=#66ccff>还是要看镜像主的安排。</font>比如你的镜像支持 rtl8139 网卡，那么输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-net user -net nic,model=rtl8139</span><br></pre></td></tr></table></figure>
-<p>就可以了。</p>
-<h4 id="-hda-命令"><a class="markdownIt-Anchor" href="#-hda-命令"></a> -hda 命令</h4>
-<p>-hda,-hdb,-hdc,-hdd 是磁盘镜像位，需将下载到的镜像放到这里。用法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-hda &lt;文件路径&gt;</span><br></pre></td></tr></table></figure>
-<p>其中，文件支持所有可用的镜像文件。<br />
-<font color=red>不推荐使用 -hdc 参数，可能会出问题。</font><br />
-<font color=green>如果需要使用 virtio 磁盘，那么需要使用 -drive 命令。</font></p>
-<h4 id="-m-命令"><a class="markdownIt-Anchor" href="#-m-命令"></a> -m 命令</h4>
-<p>-m 命令是设置你虚拟机的内存用的。<font color=green>M 是 Memory(内存) 的首字母。</font>用法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-m &lt;数字&gt;</span><br></pre></td></tr></table></figure>
-<p>数字单位是 MB。1 GB=1024 MB、3 GB=3072 MB</p>
-<h4 id="-vga-命令"><a class="markdownIt-Anchor" href="#-vga-命令"></a> -vga 命令</h4>
-<p>-vga 命令可以<font color=green>模拟虚拟机的显卡</font>，用法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-vga &lt;显卡名称&gt;</span><br></pre></td></tr></table></figure>
-<p>目前支持的显卡有：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">std                  standard VGA (default)</span><br><span class="line">cirrus               Cirrus VGA</span><br><span class="line">vmware               VMWare SVGA</span><br><span class="line">xenfb                Xen paravirtualized framebuffer</span><br><span class="line">virtio               Virtio VGA</span><br><span class="line">QXL</span><br></pre></td></tr></table></figure>
-<p>如果你模拟的是 Windows 的话，那么可能需要<font color=red>根据你的 Windows 系统选择显卡。</font>如下：</p>
-<pre><code>Windows 3.1     需要手动安装 cirrus 驱动。
-Windows 95      cirrus
-Windows 98      cirrus
-Windows 2000    cirrus
-Windows XP      std / VMware
-Windows Vista   std / VMware
-Windows 7       std / VMware
-Windows 8       std / VMware
-Windows 8.1     std / VMware
-Windows 10      std / VMware
-Windows 11      std / VMware
-</code></pre>
-<p>Linux 应该可以选择 <font color=green>virtio</font> 显卡。</p>
-<h4 id="-device-命令"><a class="markdownIt-Anchor" href="#-device-命令"></a> -device 命令</h4>
-<p>-device 命令是 QEMU 处理硬件的一个媒介，他也可以取代部分命令。比如<font color=green> -soundhw 和 -usbdevice</font>。如果需要将 VNC 和鼠标对齐的话，输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-usb // 启用 USB 控制器</span><br><span class="line">-device usb-tablet // 添加虚拟的 USB 触控板 </span><br></pre></td></tr></table></figure>
-<p>就可以了。更深层次的 USB 命令到后面会讲。</p>
-<h4 id="-soundhw-命令"><a class="markdownIt-Anchor" href="#-soundhw-命令"></a> -soundhw 命令</h4>
-<p>-soundhw 命令是启用声音支持，直白了说就是能让虚拟机出声音。用法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-soundhw &lt;声卡名称&gt;</span><br></pre></td></tr></table></figure>
-<p>我们只需要<font color=green>填入声卡名称</font>就可以了，声卡名如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ac97        Intel 82801AA AC97 Audio</span><br><span class="line">adlib       雅马哈 YM3812 (OPL2)</span><br><span class="line">cs4231a     CS4231A</span><br><span class="line">es1370      ENSONIQ AudioPCI ES1370</span><br><span class="line">gus         Gravis Ultrasound GF1</span><br><span class="line">hda         Intel HD Audio</span><br><span class="line">pcspk       PC speaker</span><br><span class="line">sb16        创新科技声霸卡 16</span><br></pre></td></tr></table></figure>
-<p>我们常用的是 sb16 和 ac97 还有 hda。</p>
-<h4 id="-cdrom-命令"><a class="markdownIt-Anchor" href="#-cdrom-命令"></a> -cdrom 命令</h4>
-<p>该命令是光驱位，放入光盘镜像（*.ISO）用法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-cdrom &lt;文件路径&gt;</span><br></pre></td></tr></table></figure>
-<p>直接将光盘文件路径写下即可。<br />
-<font color=red>光盘是有code显示的，可以通过这个代码定位问题。</font><br />
-<img src="https://img.gejiba.com/images/b4599dcccf66d9f30b7020f4932a617e.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/25ba59fbd94a92295fcb09e2981cc2bb.png" alt="" /></p>
-<h4 id="-cpu-命令"><a class="markdownIt-Anchor" href="#-cpu-命令"></a> -cpu 命令</h4>
-<p>模拟你要模拟的 CPU，可选 CPU 有：</p>
-<div class='spoiler collapsed'>
-    <div class='spoiler-title'>
-        CPU 列表
-    </div>
-    <div class='spoiler-content'>
-        <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x86 486                   (alias configured by machine type)</span><br><span class="line">x86 486-v1                </span><br><span class="line">x86 Broadwell             (alias configured by machine type)</span><br><span class="line">x86 Broadwell-IBRS        (alias of Broadwell-v3)</span><br><span class="line">x86 Broadwell-noTSX       (alias of Broadwell-v2)</span><br><span class="line">x86 Broadwell-noTSX-IBRS  (alias of Broadwell-v4)</span><br><span class="line">x86 Broadwell-v1          Intel Core Processor (Broadwell)</span><br><span class="line">x86 Broadwell-v2          Intel Core Processor (Broadwell, no TSX)</span><br><span class="line">x86 Broadwell-v3          Intel Core Processor (Broadwell, IBRS)</span><br><span class="line">x86 Broadwell-v4          Intel Core Processor (Broadwell, no TSX, IBRS)</span><br><span class="line">x86 Cascadelake-Server    (alias configured by machine type)</span><br><span class="line">x86 Cascadelake-Server-noTSX  (alias of Cascadelake-Server-v3)</span><br><span class="line">x86 Cascadelake-Server-v1  Intel Xeon Processor (Cascadelake)</span><br><span class="line">x86 Cascadelake-Server-v2  Intel Xeon Processor (Cascadelake) [ARCH_CAPABILITIES]</span><br><span class="line">x86 Cascadelake-Server-v3  Intel Xeon Processor (Cascadelake) [ARCH_CAPABILITIES, no TSX]</span><br><span class="line">x86 Cascadelake-Server-v4  Intel Xeon Processor (Cascadelake) [ARCH_CAPABILITIES, no TSX]</span><br><span class="line">x86 Cascadelake-Server-v5  Intel Xeon Processor (Cascadelake) [ARCH_CAPABILITIES, EPT switching, XSAVES, no TSX]</span><br><span class="line">x86 Conroe                (alias configured by machine type)</span><br><span class="line">x86 Conroe-v1             Intel Celeron_4x0 (Conroe/Merom Class Core 2)</span><br><span class="line">x86 Cooperlake            (alias configured by machine type)</span><br><span class="line">x86 Cooperlake-v1         Intel Xeon Processor (Cooperlake)</span><br><span class="line">x86 Cooperlake-v2         Intel Xeon Processor (Cooperlake) [XSAVES]</span><br><span class="line">x86 Denverton             (alias configured by machine type)</span><br><span class="line">x86 Denverton-v1          Intel Atom Processor (Denverton)</span><br><span class="line">x86 Denverton-v2          Intel Atom Processor (Denverton) [no MPX, no MONITOR]</span><br><span class="line">x86 Denverton-v3          Intel Atom Processor (Denverton) [XSAVES, no MPX, no MONITOR]</span><br><span class="line">x86 Dhyana                (alias configured by machine type)</span><br><span class="line">x86 Dhyana-v1             Hygon Dhyana Processor</span><br><span class="line">x86 Dhyana-v2             Hygon Dhyana Processor [XSAVES]</span><br><span class="line">x86 EPYC                  (alias configured by machine type)</span><br><span class="line">x86 EPYC-IBPB             (alias of EPYC-v2)</span><br><span class="line">x86 EPYC-Milan            (alias configured by machine type)</span><br><span class="line">x86 EPYC-Milan-v1         AMD EPYC-Milan Processor</span><br><span class="line">x86 EPYC-Rome             (alias configured by machine type)</span><br><span class="line">x86 EPYC-Rome-v1          AMD EPYC-Rome Processor</span><br><span class="line">x86 EPYC-Rome-v2          AMD EPYC-Rome Processor</span><br><span class="line">x86 EPYC-v1               AMD EPYC Processor</span><br><span class="line">x86 EPYC-v2               AMD EPYC Processor (with IBPB)</span><br><span class="line">x86 EPYC-v3               AMD EPYC Processor</span><br><span class="line">x86 Haswell               (alias configured by machine type)</span><br><span class="line">x86 Haswell-IBRS          (alias of Haswell-v3)</span><br><span class="line">x86 Haswell-noTSX         (alias of Haswell-v2)</span><br><span class="line">x86 Haswell-noTSX-IBRS    (alias of Haswell-v4)</span><br><span class="line">x86 Haswell-v1            Intel Core Processor (Haswell)</span><br><span class="line">x86 Haswell-v2            Intel Core Processor (Haswell, no TSX)</span><br><span class="line">x86 Haswell-v3            Intel Core Processor (Haswell, IBRS)</span><br><span class="line">x86 Haswell-v4            Intel Core Processor (Haswell, no TSX, IBRS)</span><br><span class="line">x86 Icelake-Client        (alias configured by machine type)</span><br><span class="line">x86 Icelake-Client-noTSX  (alias of Icelake-Client-v2)</span><br><span class="line">x86 Icelake-Client-v1     Intel Core Processor (Icelake) [deprecated]</span><br><span class="line">x86 Icelake-Client-v2     Intel Core Processor (Icelake) [no TSX, deprecated]</span><br><span class="line">x86 Icelake-Client-v3     Intel Core Processor (Icelake) [no TSX, XSAVES, deprecated]</span><br><span class="line">x86 Icelake-Server        (alias configured by machine type)</span><br><span class="line">x86 Icelake-Server-noTSX  (alias of Icelake-Server-v2)</span><br><span class="line">x86 Icelake-Server-v1     Intel Xeon Processor (Icelake)</span><br><span class="line">x86 Icelake-Server-v2     Intel Xeon Processor (Icelake) [no TSX]</span><br><span class="line">x86 Icelake-Server-v3     Intel Xeon Processor (Icelake)</span><br><span class="line">x86 Icelake-Server-v4     Intel Xeon Processor (Icelake)</span><br><span class="line">x86 Icelake-Server-v5     Intel Xeon Processor (Icelake) [XSAVES]</span><br><span class="line">x86 Icelake-Server-v6     Intel Xeon Processor (Icelake) [5-level EPT]</span><br><span class="line">x86 IvyBridge             (alias configured by machine type)</span><br><span class="line">x86 IvyBridge-IBRS        (alias of IvyBridge-v2)</span><br><span class="line">x86 IvyBridge-v1          Intel Xeon E3-12xx v2 (Ivy Bridge)</span><br><span class="line">x86 IvyBridge-v2          Intel Xeon E3-12xx v2 (Ivy Bridge, IBRS)</span><br><span class="line">x86 KnightsMill           (alias configured by machine type)</span><br><span class="line">x86 KnightsMill-v1        Intel Xeon Phi Processor (Knights Mill)</span><br><span class="line">x86 Nehalem               (alias configured by machine type)</span><br><span class="line">x86 Nehalem-IBRS          (alias of Nehalem-v2)</span><br><span class="line">x86 Nehalem-v1            Intel Core i7 9xx (Nehalem Class Core i7)</span><br><span class="line">x86 Nehalem-v2            Intel Core i7 9xx (Nehalem Core i7, IBRS update)</span><br><span class="line">x86 Opteron_G1            (alias configured by machine type)</span><br><span class="line">x86 Opteron_G1-v1         AMD Opteron 240 (Gen 1 Class Opteron)</span><br><span class="line">x86 Opteron_G2            (alias configured by machine type)</span><br><span class="line">x86 Opteron_G2-v1         AMD Opteron 22xx (Gen 2 Class Opteron)</span><br><span class="line">x86 Opteron_G3            (alias configured by machine type)</span><br><span class="line">x86 Opteron_G3-v1         AMD Opteron 23xx (Gen 3 Class Opteron)</span><br><span class="line">x86 Opteron_G4            (alias configured by machine type)</span><br><span class="line">x86 Opteron_G4-v1         AMD Opteron 62xx class CPU</span><br><span class="line">x86 Opteron_G5            (alias configured by machine type)</span><br><span class="line">x86 Opteron_G5-v1         AMD Opteron 63xx class CPU</span><br><span class="line">x86 Penryn                (alias configured by machine type)</span><br><span class="line">x86 Penryn-v1             Intel Core 2 Duo P9xxx (Penryn Class Core 2)</span><br><span class="line">x86 SandyBridge           (alias configured by machine type)</span><br><span class="line">x86 SandyBridge-IBRS      (alias of SandyBridge-v2)</span><br><span class="line">x86 SandyBridge-v1        Intel Xeon E312xx (Sandy Bridge)</span><br><span class="line">x86 SandyBridge-v2        Intel Xeon E312xx (Sandy Bridge, IBRS update)</span><br><span class="line">x86 Skylake-Client        (alias configured by machine type)</span><br><span class="line">x86 Skylake-Client-IBRS   (alias of Skylake-Client-v2)</span><br><span class="line">x86 Skylake-Client-noTSX-IBRS  (alias of Skylake-Client-v3)</span><br><span class="line">x86 Skylake-Client-v1     Intel Core Processor (Skylake)</span><br><span class="line">x86 Skylake-Client-v2     Intel Core Processor (Skylake, IBRS)</span><br><span class="line">x86 Skylake-Client-v3     Intel Core Processor (Skylake, IBRS, no TSX)</span><br><span class="line">x86 Skylake-Client-v4     Intel Core Processor (Skylake, IBRS, no TSX) [IBRS, XSAVES, no TSX]</span><br><span class="line">x86 Skylake-Server        (alias configured by machine type)</span><br><span class="line">x86 Skylake-Server-IBRS   (alias of Skylake-Server-v2)</span><br><span class="line">x86 Skylake-Server-noTSX-IBRS  (alias of Skylake-Server-v3)</span><br><span class="line">x86 Skylake-Server-v1     Intel Xeon Processor (Skylake)</span><br><span class="line">x86 Skylake-Server-v2     Intel Xeon Processor (Skylake, IBRS)</span><br><span class="line">x86 Skylake-Server-v3     Intel Xeon Processor (Skylake, IBRS, no TSX)</span><br><span class="line">x86 Skylake-Server-v4     Intel Xeon Processor (Skylake, IBRS, no TSX)</span><br><span class="line">x86 Skylake-Server-v5     Intel Xeon Processor (Skylake, IBRS, no TSX) [IBRS, XSAVES, EPT switching, no TSX]</span><br><span class="line">x86 Snowridge             (alias configured by machine type)</span><br><span class="line">x86 Snowridge-v1          Intel Atom Processor (SnowRidge)</span><br><span class="line">x86 Snowridge-v2          Intel Atom Processor (Snowridge, no MPX)</span><br><span class="line">x86 Snowridge-v3          Intel Atom Processor (Snowridge, no MPX) [XSAVES, no MPX]</span><br><span class="line">x86 Snowridge-v4          Intel Atom Processor (Snowridge, no MPX) [no split lock detect, no core-capability]</span><br><span class="line">x86 Westmere              (alias configured by machine type)</span><br><span class="line">x86 Westmere-IBRS         (alias of Westmere-v2)</span><br><span class="line">x86 Westmere-v1           Westmere E56xx/L56xx/X56xx (Nehalem-C)</span><br><span class="line">x86 Westmere-v2           Westmere E56xx/L56xx/X56xx (IBRS update)</span><br><span class="line">x86 athlon                (alias configured by machine type)</span><br><span class="line">x86 athlon-v1             QEMU Virtual CPU version 2.5+</span><br><span class="line">x86 core2duo              (alias configured by machine type)</span><br><span class="line">x86 core2duo-v1           Intel(R) Core(TM)2 Duo CPU     T7700  @ 2.40GHz</span><br><span class="line">x86 coreduo               (alias configured by machine type)</span><br><span class="line">x86 coreduo-v1            Genuine Intel(R) CPU           T2600  @ 2.16GHz</span><br><span class="line">x86 kvm32                 (alias configured by machine type)</span><br><span class="line">x86 kvm32-v1              Common 32-bit KVM processor</span><br><span class="line">x86 kvm64                 (alias configured by machine type)</span><br><span class="line">x86 kvm64-v1              Common KVM processor</span><br><span class="line">x86 n270                  (alias configured by machine type)</span><br><span class="line">x86 n270-v1               Intel(R) Atom(TM) CPU N270   @ 1.60GHz</span><br><span class="line">x86 pentium               (alias configured by machine type)</span><br><span class="line">x86 pentium-v1            </span><br><span class="line">x86 pentium2              (alias configured by machine type)</span><br><span class="line">x86 pentium2-v1           </span><br><span class="line">x86 pentium3              (alias configured by machine type)</span><br><span class="line">x86 pentium3-v1           </span><br><span class="line">x86 phenom                (alias configured by machine type)</span><br><span class="line">x86 phenom-v1             AMD Phenom(tm) 9550 Quad-Core Processor</span><br><span class="line">x86 qemu32                (alias configured by machine type)</span><br><span class="line">x86 qemu32-v1             QEMU Virtual CPU version 2.5+</span><br><span class="line">x86 qemu64                (alias configured by machine type)</span><br><span class="line">x86 qemu64-v1             QEMU Virtual CPU version 2.5+</span><br><span class="line">x86 base                  base CPU model type with no features enabled</span><br><span class="line">x86 max                   Enables all features supported by the accelerator in the current host</span><br></pre></td></tr></table></figure>
-    </div>
-</div>
-<p>具体根据自己需求选择。</p>
-<h4 id="-smp-命令"><a class="markdownIt-Anchor" href="#-smp-命令"></a> -smp 命令</h4>
-<p>该命令可以指定虚拟 CPU 的数量，核心数，线程数等。用法：<br />
-<font color=red><br />
-只指定 CPU 数量：<br />
-</font></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-smp 2</span><br></pre></td></tr></table></figure>
-<p>即代表 QEMU 会模拟两个 CPU 出来（不是核心）。<br />
-当然，你也可以加参数，命令如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-smp cores=2,threads=4,sockets=1</span><br></pre></td></tr></table></figure>
-<p>这条命令的意思是：<font color=green>一个 CPU 插槽，双核四线程。</font></p>
-<h4 id="-vnc-命令"><a class="markdownIt-Anchor" href="#-vnc-命令"></a> -vnc 命令</h4>
-<p>这条命令可以让你的虚拟机通过 VNC Viewer 连接。用法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-vnc :&lt;端口号&gt;</span><br></pre></td></tr></table></figure>
-<p>输入后直接使用 VNC Viewer 连接。如果 -vnc :0 那么在 VNC Viewer 的连接中就设置为 &lt;ip地址&gt;:0。如果你是手机开的模拟器，输入<font color=green> 127.0.0.1:0 </font></p>
-<h4 id="-pflash-命令"><a class="markdownIt-Anchor" href="#-pflash-命令"></a> -pflash 命令</h4>
-<p>一般用于 EFI 引导启动，用法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-pflash &lt;EFI 固件&gt;</span><br></pre></td></tr></table></figure>
-<p>需要你有 EFI 固件，一般是 fd 格式。</p>
-<h3 id="其他-qemu-模拟器的操作"><a class="markdownIt-Anchor" href="#其他-qemu-模拟器的操作"></a> 其他 QEMU 模拟器的操作</h3>
-<h4 id="连接-usb-设备"><a class="markdownIt-Anchor" href="#连接-usb-设备"></a> 连接 USB 设备</h4>
-<p><font color=green>可以通过 -device 命令将 U 盘连接到模拟器</font>。<br />
-如果要连接 <font color=green>USB 设备到 QEMU</font>，那么需要先查询 USB 设备的位置。我们输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">lsusb -t</span><br></pre></td></tr></table></figure>
-<p>来查询 USB 设备的位置。看他的输出：<br />
-<img src="https://img.gejiba.com/images/ab3efd6bffb37db1375536c2a68b8af8.png" alt="" /><br />
-找到你要连接的 USB 的位置。我这里以<font color=green> 我的 U 盘(Disk 2.0)</font> 为例子。<br />
-输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-device usb-ehci,<span class="built_in">id</span>=ehci</span><br><span class="line">-device usb-host,bus=ehci.0,hostbus=20,hostport=1</span><br></pre></td></tr></table></figure>
-<p>其中，第一行的命令是指定虚拟的 USB 版本，我这里是 2.0。如果要虚拟 USB 3.0，请输入 <font color=green>xhci</font>。<br />
-第二行的命令是<font color=green>定位 USB 设备的位置</font>，我的设备在 Bus 020，Port 1 的位置上，所以输入的bus=20 port=1。而 port 的位置就是<font color=green>指树根下的位置</font>。我是树根下的第 1 个位置，所以填 1。一定要根据自己实际情况填写。</p>
-<h4 id="efi-固件的使用"><a class="markdownIt-Anchor" href="#efi-固件的使用"></a> EFI 固件的使用</h4>
-<p>QEMU 是可以使用 UEFI 启动的，需要 EFI 固件。<br />
-<font color=red>启动命令请查看 -pflash 命令。</font><br />
-这里提供下载：<br />
-<a href="/download/QEMU_EFI.fd">下载 QEMU_EFI.fd</a></p>
-<h4 id="无界面引导"><a class="markdownIt-Anchor" href="#无界面引导"></a> 无界面引导</h4>
-<p>有时候我们在模拟虚拟系统的时候需要直接将终端变成 QEMU 的控制台，那么我们加上 -nographic 命令即可。</p>
-<h2 id="qemu-镜像下载"><a class="markdownIt-Anchor" href="#qemu-镜像下载"></a> QEMU 镜像下载</h2>
-<p><a href="/images/">点击进入下载站</a></p>
-</font><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>Windows NT4.0 安装教程</title>
     <url>/20230119/063535/</url>
     <content><![CDATA[<h1 id="镜像链接"><a class="markdownIt-Anchor" href="#镜像链接"></a> 镜像链接</h1>
@@ -922,6 +654,12 @@ Windows 11      std / VMware
 </center><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
+    <title>图床已废</title>
+    <url>/20250519/124903/</url>
+    <content><![CDATA[<p>本网站原来的图床已经无法使用，而且我也没做备份。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
     <title>无需 U 盘给 MacBook 电脑安装 Arch Linux</title>
     <url>/20230108/134420/</url>
     <content><![CDATA[<p>想装Arch Linux却没有带U盘，心急如焚的话，就看看我这个教程吧！保有效。</p>
@@ -999,12 +737,6 @@ VMware Fusion 虚拟机破解密钥：</li>
 <p>连接好网络后，输入 exit 退出 iwd。再输入 ping <a href="http://www.baidu.com">www.baidu.com</a> 看看网络是不是正确连接。</p>
 <h3 id="为磁盘分区"><a class="markdownIt-Anchor" href="#为磁盘分区"></a> 为磁盘分区</h3>
 <p>未完待续。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>图床已废</title>
-    <url>/20250519/124903/</url>
-    <content><![CDATA[<p>本网站原来的图床已经无法使用，而且我也没做备份。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -1095,277 +827,6 @@ VMware Fusion 虚拟机破解密钥：</li>
 <font face="宋体" color=#FFD306><strong>珊瑚宫心海</strong></font>、<font face="宋体" color=#CA8EC2><strong>菲谢尔</strong></font>、<font face="宋体" color=#CA8EC2><strong>北斗</strong></font>、<font face="宋体" color=#CA8EC2><strong>行秋</strong></font>。<br />
 <font face="宋体" color=red>心海武装队和砂糖武装队不一样的是，心海武装队可以随意搭配后三位角色。</font><br />
 </font></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>白洋淀公交乘坐体验</title>
-    <url>/20220821/011817/</url>
-    <content><![CDATA[<h1 id="线路走向"><a class="markdownIt-Anchor" href="#线路走向"></a> 线路走向</h1>
-<p>2022 年 8 月 20 日，沧州市任丘市新开到白洋淀李广村<font color=red>（现归雄安新区保定市雄县管辖）</font>的公交：308 路。以下是线路走向。</p>
-<h3 id="308-路-代河枢纽站-李广村"><a class="markdownIt-Anchor" href="#308-路-代河枢纽站-李广村"></a> 308 路 代河枢纽站 - 李广村</h3>
-<p><font color=green>代河枢纽站-西黄垒村西-于村路口<font color=red>(106国道)</font>-杜家营村-前塔村-后塔村-鄚州镇政府-鄚州镇中心卫生院-南阁村-东七里庄-中七里庄-西七里庄-生紫码头-大口子码头-李广村南-李广村</font><br />
-<img src="https://img.gejiba.com/images/03eb9f97595c40fdcc4b32a1dd089d9b.png" alt="" /></p>
-<h1 id="乘车日志"><a class="markdownIt-Anchor" href="#乘车日志"></a> 乘车日志</h1>
-<p>20号下午一点半从市区乘坐202路公交（任丘市客运西站-代河枢纽站）到达北代河。<br />
-<img src="https://img.gejiba.com/images/0b4afc34f40d79694614063114824073.jpg" alt="" /><br />
-小歇息后。一点四十308路开始行走。车内座子还是很新的，支持刷卡和刷码。<br />
-<img src="https://img.gejiba.com/images/caabb0a863887deefa35a70dcdfde4b2.jpg" alt="" /><br />
-今天天空很好看啊…<br />
-车子运行还是很快的，最高速度大概 40 km/h。噪音蛮大的。<br />
-过了于村路口就基本出了任丘界了，驶入鄚州镇。<br />
-<img src="https://img.gejiba.com/images/4c294fd8d37c149493ac12bb8e4efb89.jpg" alt="" /><br />
-驾驶到千里堤路的时候，就可以看到白洋淀的河流了。<br />
-这里有几个旅游码头，308路基本都设置了站点。<br />
-人还挺多的，比较热闹。<br />
-然后就到了李广村，本车的终点站。<br />
-<img src="https://img.gejiba.com/images/38e1a10c805be98b163dad05b4c93ab9.jpg" alt="" /><br />
-李广村离白洋淀河流还算是挺近的，我在这里拍了一些照片。<br />
-<img src="https://img.gejiba.com/images/3fc817b205738ced7dd3ce1e378a5447.jpg" alt="" /><br />
-<img src="https://img.gejiba.com/images/bd0f431dfabddf5fd30d250932523d59.jpg" alt="" /><br />
-<img src="https://img.gejiba.com/images/b1b5d6fb64e809b6c4b3acc160c97807.png" alt="李广村在白洋淀的位置" /><br />
-在近距离观察时，录了一小段视频。<font color=red></font><br />
-<a href="https://steve372yeyeye.github.io/20220821/011817/480p.mov">点击播放 QuickTime 视频</a></p>
-<h1 id=""><a class="markdownIt-Anchor" href="#"></a> </h1>
-<p>白洋淀环境很好，即使是在不是景区的乡村小河，也是很美丽的。<br />
-有一种很自然很清新的感觉。如果是清晨应该会更有感觉。</p>
-<h1 id="经过码头"><a class="markdownIt-Anchor" href="#经过码头"></a> 经过码头</h1>
-<p>308 路在路途中会经过<font color=green>生紫码头</font>和<font color=green>大口子码头</font>。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>计算机基础操作</title>
-    <url>/20220910/083627/</url>
-    <content><![CDATA[<p>为了让各位用户都能会用 Windows，特此写下该教程。<br />
-Windows 是微软公司于 1985 年发布的电脑操作系统，最新版是 Windows 11(2021 年发布)。<br />
-这里我们都以<font color=#66CCF> Windows 8.1 With Update</font> 版本为例子。<br />
-<font face="宋体"></p>
-<h1 id="认识界面"><a class="markdownIt-Anchor" href="#认识界面"></a> 认识界面</h1>
-<p>Windows 8.1 的主界面长这样：<br />
-<img src="https://img.gejiba.com/images/1652f5ddeefb13492b6f1f4ed881a635.png" alt="" /><br />
-点击“开始按钮”后，出现以下界面：<br />
-<img src="https://img.gejiba.com/images/2caaee3f09a6e7e296efa2521203587e.png" alt="" /><br />
-可以看到很多功能。这就是 Windows 8 新增的磁贴界面。<br />
-我们点击网络图标，可以列出电脑下的所有网络。<br />
-<img src="https://img.gejiba.com/images/70c8e2328d4c6b79ed980dd38b6fe285.png" alt="" /><br />
-台式机我们都用有线网络，也就是插上网线后使用网络。如果需要连接 Wi-Fi，请加装无线网卡。然后点击网络图标，输入您家网络密码即可。<br />
-点击声音图标，可以调节计算机的声音。<br />
-<img src="https://img.gejiba.com/images/c1d3edde8d66572bd8e3119b58d2885e.png" alt="" /><br />
-也可以识别到计算机使用什么输出的声音。我这里是有线耳机所以识别到耳机。<br />
-打开“这台电脑”可以查阅到电脑的所有文件夹。<br />
-<img src="https://img.gejiba.com/images/ea386a6e79ccfdcf2e6904ded66596b7.png" alt="" /><br />
-如果要添加 FTP 或者 SAMBA 连接，请右键点击“添加一个网络位置”。<br />
-<img src="https://img.gejiba.com/images/e5e354b6eb7d798c69375f878a0c0ad8.png" alt="" /><br />
-您也可以通过“这台电脑”为磁盘加密、格式化、和复制整块盘。<br />
-<img src="https://img.gejiba.com/images/f2b3507bb9fdad1a945c9b7ff7cf5292.png" alt="" /><br />
-如果是移动硬盘、U 盘等设备，也可以手动打开“自动播放”，如图：<br />
-<img src="https://img.gejiba.com/images/5d5310518f51aa984ea5a1bc74a9f487.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/ef3f92b34135e76276dea95e5416d3a6.png" alt="" /></p>
-<h1 id="鼠标操作"><a class="markdownIt-Anchor" href="#鼠标操作"></a> 鼠标操作</h1>
-<p>鼠标分为左键、中键和右键。您需要根据软件的操作控制鼠标。<br />
-<img src="https://img.gejiba.com/images/24ae58dad5ca57dd325db98300f18090.png" alt="" /></p>
-<h1 id="键盘操作"><a class="markdownIt-Anchor" href="#键盘操作"></a> 键盘操作</h1>
-<h2 id="普通-pc"><a class="markdownIt-Anchor" href="#普通-pc"></a> 普通 PC</h2>
-<p>Windows 也十分依赖键盘。键盘长这样：<br />
-<img src="https://img.gejiba.com/images/e94205463ae97810d7fdaf409a93fd61.png" alt="" /></p>
-<h3 id="ctrl-键"><a class="markdownIt-Anchor" href="#ctrl-键"></a> Ctrl 键</h3>
-<p>Ctrl 键就是控制键(Control)，用于控制 Windows 及程序的各种操作。</p>
-<h3 id="alt-键"><a class="markdownIt-Anchor" href="#alt-键"></a> Alt 键</h3>
-<p>Alt 键是更换(Alternate)的意思，点击 Alt + Tab 键后可以在打开的项目之间切换。</p>
-<h3 id="shift-键"><a class="markdownIt-Anchor" href="#shift-键"></a> Shift 键</h3>
-<p>而 Shift 键是上档转换键。常用于输入法中英文转换。</p>
-<h3 id="enter-键"><a class="markdownIt-Anchor" href="#enter-键"></a> Enter 键</h3>
-<p>Enter 键是回车键。在各个软件的功能都不一样，例如，在 Microsoft Word 中会换行，而在腾讯 QQ 中会发送消息。</p>
-<h3 id="windows-键"><a class="markdownIt-Anchor" href="#windows-键"></a> Windows 键</h3>
-<p>那个 Windows 徽标按键就是 Windows 键。在 Windows Vista 之前的系统（例如 Windows XP）中，Windows 键的功能不多。直到 Windows Vista 之后才开始增加新的内容。比如</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Windows+数字1、2、3、4、5、6、7、8、9、0 分别打开你的任务栏上面的快捷启动栏上面的第一个到第十个图标所对应的快捷方式。</span><br><span class="line">Windows+D 最小化所有窗口，再按一次恢复所有窗口</span><br><span class="line">Windows+E 开启资源管理器(频繁按会资源占尽而死机)</span><br><span class="line">Windows+F 打开搜索窗口</span><br><span class="line">Windows+G 多次按下就会依次切换侧边栏上面的小工具(Gadgets)</span><br><span class="line">Windows+L 锁定当前计算机用户</span><br><span class="line">Windows+R 开启运行对话框 (非常常用)</span><br><span class="line">Windows+T 激活当前任务栏上面的窗口，多次按下会依次定位到下一个窗体</span><br><span class="line">Windows+T Shift 反方向定位</span><br><span class="line">Windows+U 开启辅助工具管理器</span><br><span class="line">Windows+X 开启Windows移动中心</span><br><span class="line">Windows+TAB 开启 Flip 3D窗口切换</span><br><span class="line">Windows+TAB Ctrl 用键盘控制 Flip 3D窗口切换</span><br><span class="line">Windows+Break(就是Pause——Break键) 开启Windows Vista系统属性窗口</span><br></pre></td></tr></table></figure>
-<h3 id="backspace-键"><a class="markdownIt-Anchor" href="#backspace-键"></a> Backspace 键</h3>
-<p>Backspace 键即退格键，相当于您手机的这个按钮：<br />
-<img src="https://img.gejiba.com/images/c8f0d055e9dfc465b17d0ce2ee45bc36.png" alt="" /></p>
-<h2 id="苹果电脑mac"><a class="markdownIt-Anchor" href="#苹果电脑mac"></a> 苹果电脑（Mac）</h2>
-<p>因为 Mac 机生来就是为了 macOS 服务，所以键位略有不同。<br />
-<img src="https://img.gejiba.com/images/740924cf74818fe307c4021b64d92673.png" alt="" /><br />
-以下是 Mac 键盘映射到 Windows 的位置。</p>
-<h3 id="option-键"><a class="markdownIt-Anchor" href="#option-键"></a> Option 键</h3>
-<p>映射在 Windows 下的 Alt 键</p>
-<h3 id="control-键"><a class="markdownIt-Anchor" href="#control-键"></a> Control 键</h3>
-<p>映射在 Windows 下的 Ctrl 键</p>
-<h3 id="command-键"><a class="markdownIt-Anchor" href="#command-键"></a> Command 键</h3>
-<p>映射在 Windows 下的 Windows 键</p>
-<h3 id="注意"><a class="markdownIt-Anchor" href="#注意"></a> 注意</h3>
-<p>因为 Mac 部分操作由 Command 键来完成，如果你用 macOS 习惯了，重装 Windows 后会很不适应。</p>
-<h1 id="上网"><a class="markdownIt-Anchor" href="#上网"></a> 上网</h1>
-<h2 id="连接到网络"><a class="markdownIt-Anchor" href="#连接到网络"></a> 连接到网络。</h2>
-<p>由上面的消息可得知，我们点击“网络”图标即可查看电脑是否联网。<br />
-但是，我们如果没有安装 Wi-Fi 网卡，那么该如何上网？</p>
-<h3 id="有线上网方法"><a class="markdownIt-Anchor" href="#有线上网方法"></a> 有线上网方法</h3>
-<p>首先，请自备一个<font color=#66CCF>网线</font>，将网线的一个端插入电脑设备。然后打开电脑控制面板。打开“网络与共享中心”<br />
-<img src="https://img.gejiba.com/images/61f075931cb8ac26067cbfd567ad7f85.png" alt="" /><br />
-然后点击“设置新的连接或网络”<br />
-<img src="https://img.gejiba.com/images/a61d6294782fe99c3738d669ac0877ca.png" alt="" /><br />
-然后在新弹出的网络窗口中，直接下一步。<br />
-<img src="https://img.gejiba.com/images/67ea71e690e2aae356299499cacc4733.png" alt="" /><br />
-这里因为我连接上 互联网 了，所以提示这个，请点击设置新连接。<br />
-<img src="https://img.gejiba.com/images/fe1bda33d3929b53bbf7952a0c981385.png" alt="" /><br />
-然后点击宽带上网(PPPoE)<br />
-<img src="https://img.gejiba.com/images/23bb454358d7a97eb544ca86fa3165c3.png" alt="" /><br />
-然后输入你<font color=#66CCF> ISP </font>提供给你的用户名和密码，点击“连接”。<br />
-<img src="https://img.gejiba.com/images/70131c1f06e051214b7959d817184584.png" alt="" /><br />
-待等连接完成即可。<br />
-也可以稍后输入用户名和密码。<br />
-<img src="https://img.gejiba.com/images/8fc4e5f052bbe3a16fdd76b144b2685c.png" alt="" /><br />
-<font color=red>注意：如果是新安装的 Windows 8.1 或 Windows 7 ，他一般不会配备某些设备的以太网卡，所以有线网也无法使用。这时需要安装驱动软件。</font><br />
-如果需要查看您设备是否存在以太网卡，请查阅任务管理器。<br />
-<img src="https://img.gejiba.com/images/04429d53596fb0e3743180f48887993d.png" alt="" /></p>
-<h3 id="连接无线网"><a class="markdownIt-Anchor" href="#连接无线网"></a> 连接无线网。</h3>
-<p>如果您电脑已经有无线网卡了，请确保安装好驱动软件，然后直接点击网络按钮，找到您家 Wi-Fi 网络即可。<br />
-<img src="https://img.gejiba.com/images/9f62ae7d15014e89b9e38146d2e332f9.png" alt="" /></p>
-<h2 id="上网浏览器更换"><a class="markdownIt-Anchor" href="#上网浏览器更换"></a> 上网浏览器更换</h2>
-<p>Windows 10 之前的系统只自带一个上网浏览器，名叫 Internet Explorer，这个浏览器已经淘汰了，需要更换。<br />
-请确保连接好网络后，打开 Internet Explorer，输入 Firefox，来更换浏览器。当然您更换其他浏览器也是可以的，我推荐换成 Edge。<br />
-<img src="https://img.gejiba.com/images/9fc535345f9c88ded9db35eb3ab9f122.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/57c44802582c9ffdfa7a3b363eba1fef.png" alt="" /><br />
-点击下载 Firefox 来安装 Firefox。<br />
-<img src="https://img.gejiba.com/images/363e5121033dbfc948671cd6c01697c0.png" alt="" /></p>
-<h1 id="安装软件"><a class="markdownIt-Anchor" href="#安装软件"></a> 安装软件</h1>
-<h2 id="上网查找软件"><a class="markdownIt-Anchor" href="#上网查找软件"></a> 上网查找软件</h2>
-<p>直接使用上网浏览器搜索你要安装的软件即可。<br />
-<img src="https://img.gejiba.com/images/43f8eeb19effa9d2f91add83168c7c86.png" alt="" /><br />
-<font color=red>注意！在网上下载的软件鱼龙混杂，非常容易被捆绑，中病毒。</font><br />
-如果要下载微软 Office 软件，建议使用 MSDN I Tell You 网站。<a href="https://msdn.itellyou.cn">点击进入网站</a><br />
-<img src="https://img.gejiba.com/images/a6ed168084e06062d4a263d87a7b39ab.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/06a5200304903229bb2b38a2c96ee140.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/e83b3760a52fd32e20896c4808c0bb03.png" alt="" /></p>
-<h2 id="软件管家安装软件"><a class="markdownIt-Anchor" href="#软件管家安装软件"></a> 软件管家安装软件</h2>
-<p>使用上网浏览器先安装<font color=#66CCF> 360 软件管家</font>，然后在软件管家搜索你要安装的软件。</p>
-<h1 id="管理您计算机上的文件"><a class="markdownIt-Anchor" href="#管理您计算机上的文件"></a> 管理您计算机上的文件</h1>
-<p>如果需要管理器您计算机上的软件，请点击“这台电脑”。随便点进一个盘。<br />
-<img src="https://img.gejiba.com/images/ad0a02ed187c07c21ea51d40eb14b5fc.png" alt="" /><br />
-这里列出了这盘上面的所有内容。<br />
-如果要复制一个文件，请在要复制的文件旁点击鼠标右键，然后点击“复制©”。<br />
-<img src="https://img.gejiba.com/images/4f205db2d4061a45f27c59dd28a4027c.png" alt="" /><br />
-然后前往要复制到的文件夹，然后右键点击“粘贴(P)”。<br />
-<img src="https://img.gejiba.com/images/ea444b06cac589002a3da8bebde66591.png" alt="" /><br />
-这样，文件就复制好了。<br />
-我们只需要移动文件的时候点击“剪切(T)”即可。</p>
-<h1 id="卸载软件"><a class="markdownIt-Anchor" href="#卸载软件"></a> 卸载软件</h1>
-<p>有时候我们不想要一些软件，这时可以卸载软件。<br />
-打开 控制面板，然后找到 <font color=#66CCF>程序与功能</font><br />
-<img src="https://img.gejiba.com/images/403509da174a2c1c63628db60d205ad3.png" alt="" /><br />
-然后，双击要卸载的软件，跟着软件走即可。<br />
-<img src="https://img.gejiba.com/images/2f06c1f1ee32d3752ed1876222740794.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/20196f123882172b4f12a00d39411252.png" alt="" /></p>
-<h1 id="命令提示符"><a class="markdownIt-Anchor" href="#命令提示符"></a> 命令提示符</h1>
-<p><font color=red>注意！专业人士使用。</font><br />
-Windows 中的终端叫做命令提示符，我们可以利用终端做很多事情。请先按下 Windows+R 键然后输入 cmd。<br />
-<img src="https://img.gejiba.com/images/8ec9d0d197ae975dc233a799032b0a5a.png" alt="" /><br />
-然后会打开一个黑色命令窗口，我们在此输入命令即可。比如我要查看系统版本，输入：<br />
-<img src="https://img.gejiba.com/images/19587c4ac59a01e5359fb3584f29e211.png" alt="" /><br />
-就可以查看了。要清屏可以输入 cls。<br />
-</font></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>让 Mac 电脑也玩上光遇！</title>
-    <url>/20250114/222842/</url>
-    <content><![CDATA[<h1 id="安装光-遇国服"><a class="markdownIt-Anchor" href="#安装光-遇国服"></a> 安装光 · 遇国服</h1>
-<p>by Sanakaprix  2025-01-15</p>
-<h2 id="处理器是-apple-m1-及以后的设备"><a class="markdownIt-Anchor" href="#处理器是-apple-m1-及以后的设备"></a> 处理器是 Apple M1 及以后的设备</h2>
-<h3 id="下载-ipa"><a class="markdownIt-Anchor" href="#下载-ipa"></a> 下载 iPA</h3>
-<p>在下载之前，请先在设置-“隐私与安全性”-“允许以下位置的应用程序”单选框改成 App Store 和被认可的开发者：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/9d5b41323a439c1502256f7de10db681.png" alt="" /><br />
-设置完成后在浏览器打开 <a href="https://decrypt.day">https://decrypt.day</a> 这个网站：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/de2ef63f5bd4e3cdd79a3f7293c9a232.png" alt="" /><br />
-搜索“光·遇”：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/abf2c34dd4763f78cedcb30a61a4485e.png" alt="" /><br />
-点击下载：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/b952b53dac09245f881459db710c0ee3.jpg" alt="" /><br />
-点击第二个链接（OneDrive 下载）：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/6ce7063a25f4cd3e9da30225057c14a0.png" alt="" /><br />
-获取下载链接后下载，等待下载完成：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/545ebabe4d167a12de63a32c4236a733.png" alt="" /></p>
-<h3 id="安装光-遇"><a class="markdownIt-Anchor" href="#安装光-遇"></a> 安装《光 · 遇》</h3>
-<p>下载完成后，前往 <a href="http://playcover.io">playcover.io</a> 网站，点击下载按钮：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/b1bfce3f81bbc7311ad3fb615e32c300.png" alt="" /><br />
-选择 Latest 版本，然后安装 PlayCover 程序：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/94cd8e9506f3d74f90fe0195a7e92bc2.png" alt="" /><br />
-第一次打开软件应该是空空如也的状态（我这里已经安装了）：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/a767dbe45b2bf5d59438e93e67953cb0.png" alt="" /><br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/a2bdd984ff903a125f2dad32e328fed5.jpg" alt="" /><br />
-右键打开光遇设置，然后一定要完全按照我这样设置，不然可能闪退：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/fa1e53cf02b1aeb12f4b63b8e4c68a65.jpg" alt="" /><br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/172eaddd8b6fd55deeba06b1546c8fbf.png" alt="" /><br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/ba86111ffa85ba0c2ae1c6e7c3c80c39.jpg" alt="" /><br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/e024e949577b5e91c0c95534bcd08425.png" alt="" /><br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/aba5f5da790f25394b3ab865aa460e49.jpg" alt="" /><br />
-改好了之后，点击“好”，双击图标启动游戏试一下。<br />
-如果还闪退的话，可以试试以下方法：<br />
-按下 ⌘ Command + 空格键，输入 Terminal 打开终端：<br />
-输入以下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo codesign --force --deep --sign - </span><br></pre></td></tr></table></figure>
-<p>然后在 PlayCover 里右键选择“在 Finder 里查看”：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/82973f85fa93751e7259d00b8157c9e7.jpg" alt="" /><br />
-然后将光遇的包体拖到终端里，就像这样：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/d1397b3de877b044752b45d3804733a6.jpg" alt="" /><br />
-按下回车键执行，输入你电脑用户的密码（密码不显示盲敲就行）：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/d01879b77daaeb0e6b797f695f89b881.png" alt="" /><br />
-等待执行完成后，再打开光遇试试应该就能进了。<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/58bf5575642c95df3cd4ba66931fb091.png" alt="" /><br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/0c0ea645b488ca4310724b42d55330cb.png" alt="" /><br />
-<strong>感觉用鼠标玩的话特别难受，建议用手柄玩</strong></p>
-<h2 id="处理器是-intel-的设备"><a class="markdownIt-Anchor" href="#处理器是-intel-的设备"></a> 处理器是 Intel 的设备</h2>
-<p>请使用 Boot Camp 安装 Windows，安装前请先备份你的东西。<br />
-然后在 <a href="https://sky.163.com/index.html">光遇官网</a> <a href="https://sky.163.com/index.html">https://sky.163.com/index.html</a> 下载光遇电脑版就可以了<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/ef2e8a6ce4ecf5d1389c3a7d359f605d.png" alt="" /></p>
-<h1 id="安装光-遇国际服tgc"><a class="markdownIt-Anchor" href="#安装光-遇国际服tgc"></a> 安装光 · 遇国际服（TGC）</h1>
-<h2 id="处理器是-apple-m1-及以后的设备-2"><a class="markdownIt-Anchor" href="#处理器是-apple-m1-及以后的设备-2"></a> 处理器是 Apple M1 及以后的设备</h2>
-<p>打开 App Store，退出登录国区账号（如果你现在登入的是外区账号请忽略）<br />
-<img src="https://pic1.imgdb.cn/item/6787042bd0e0a243d4f45676.png" alt="" /><br />
-登录外区账号<br />
-<img src="https://pic1.imgdb.cn/item/6787049cd0e0a243d4f4567b.png" alt="" /><br />
-在搜索框搜索“Sky”或光遇都可以，直接下载：<br />
-<img src="https://pic1.imgdb.cn/item/678704e1d0e0a243d4f4567c.png" alt="" /></p>
-<h2 id="处理器是-intel-的设备-2"><a class="markdownIt-Anchor" href="#处理器是-intel-的设备-2"></a> 处理器是 Intel 的设备</h2>
-<p>请使用 Boot Camp 安装 Windows，安装前请先备份你的东西。<br />
-然后安装 Steam，在 Steam 里安装光遇（请自行查找光遇 Steam 入库教程）：<br />
-<img src="https://pic1.imgdb.cn/item/67870581d0e0a243d4f45681.png" alt="" /><br />
-<strong>祝你在光 · 遇的世界里玩的开心！</strong></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>光！遇！</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Sanapri bilibili 新视频</title>
-    <url>/20220823/164646/</url>
-    <content><![CDATA[<p>鎖那小天使终于发新视频啦，这里给你们看看～</p>
-<pre><code>Kyu-kurarin (cover) / sana 
-original: きゅうくらりん / いよわ feat.可不 
-vocal: 鎖那  mix: n.k 
-▷https://space.bilibili.com/543245410
-</code></pre>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?bvid=BV1M14y1t7LK&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
-</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>黑翼猫 Extended Kernel Project 中国网络环境下载</title>
-    <url>/20220818/010924/</url>
-    <content><![CDATA[<h2 id="介绍"><a class="markdownIt-Anchor" href="#介绍"></a> 介绍</h2>
-<p>众所周知，因为<font color=green>国内网络环境的特殊</font>，好多网站不能访问。黑翼猫大佬的博客也是如此，在国内访问会提示连接被重置。所以我翻墙后下载了黑翼猫 Windows 2000 Extended Kernel Project 和依赖的补丁集。(包括 wlupdate)</p>
-<h2 id="教程"><a class="markdownIt-Anchor" href="#教程"></a> 教程</h2>
-<p>关于黑翼猫的 Windows 2000 拓展补丁安装，可以参考这个文章…<a href="https://zhuanlan.zhihu.com/p/484014315">传送点！</a></p>
-<h2 id="下载"><a class="markdownIt-Anchor" href="#下载"></a> 下载</h2>
-<p>下载链接：<a href="https://pan.huang1111.cn/s/4d34hg">点我下载</a></p>
-<h2 id="产品密钥"><a class="markdownIt-Anchor" href="#产品密钥"></a> 产品密钥</h2>
-<p><font color=red>PQHKR-G4JFW-VTY3P-G4WQ2-88CTW</font><br />
-<img src="https://img.gejiba.com/images/179c2f93582f6652f270c41e07636539.png" alt="" /></p>
-<h2 id="安装中"><a class="markdownIt-Anchor" href="#安装中"></a> 安装中…</h2>
-<p><img src="https://img.gejiba.com/images/20975efcd5f8834d9a0f81dc7047c5e8.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/eb69053f5eab4d6b2cd8000e2c985296.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/ea1fa06f63547b60ecc660645cc5240e.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/1ecefcd2e46809e7174800d584b53e20.png" alt="" /></p>
-<h2 id="伪装系统版本用的软件"><a class="markdownIt-Anchor" href="#伪装系统版本用的软件"></a> 伪装系统版本用的软件</h2>
-<p><img src="https://img.gejiba.com/images/b269d479dbb9aab60c0bfcbac371d2ed.png" alt="" /></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -1637,6 +1098,243 @@ Windows 11      std / VMware
 </font><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
+    <title>计算机基础操作</title>
+    <url>/20220910/083627/</url>
+    <content><![CDATA[<p>为了让各位用户都能会用 Windows，特此写下该教程。<br />
+Windows 是微软公司于 1985 年发布的电脑操作系统，最新版是 Windows 11(2021 年发布)。<br />
+这里我们都以<font color=#66CCF> Windows 8.1 With Update</font> 版本为例子。<br />
+<font face="宋体"></p>
+<h1 id="认识界面"><a class="markdownIt-Anchor" href="#认识界面"></a> 认识界面</h1>
+<p>Windows 8.1 的主界面长这样：<br />
+<img src="https://img.gejiba.com/images/1652f5ddeefb13492b6f1f4ed881a635.png" alt="" /><br />
+点击“开始按钮”后，出现以下界面：<br />
+<img src="https://img.gejiba.com/images/2caaee3f09a6e7e296efa2521203587e.png" alt="" /><br />
+可以看到很多功能。这就是 Windows 8 新增的磁贴界面。<br />
+我们点击网络图标，可以列出电脑下的所有网络。<br />
+<img src="https://img.gejiba.com/images/70c8e2328d4c6b79ed980dd38b6fe285.png" alt="" /><br />
+台式机我们都用有线网络，也就是插上网线后使用网络。如果需要连接 Wi-Fi，请加装无线网卡。然后点击网络图标，输入您家网络密码即可。<br />
+点击声音图标，可以调节计算机的声音。<br />
+<img src="https://img.gejiba.com/images/c1d3edde8d66572bd8e3119b58d2885e.png" alt="" /><br />
+也可以识别到计算机使用什么输出的声音。我这里是有线耳机所以识别到耳机。<br />
+打开“这台电脑”可以查阅到电脑的所有文件夹。<br />
+<img src="https://img.gejiba.com/images/ea386a6e79ccfdcf2e6904ded66596b7.png" alt="" /><br />
+如果要添加 FTP 或者 SAMBA 连接，请右键点击“添加一个网络位置”。<br />
+<img src="https://img.gejiba.com/images/e5e354b6eb7d798c69375f878a0c0ad8.png" alt="" /><br />
+您也可以通过“这台电脑”为磁盘加密、格式化、和复制整块盘。<br />
+<img src="https://img.gejiba.com/images/f2b3507bb9fdad1a945c9b7ff7cf5292.png" alt="" /><br />
+如果是移动硬盘、U 盘等设备，也可以手动打开“自动播放”，如图：<br />
+<img src="https://img.gejiba.com/images/5d5310518f51aa984ea5a1bc74a9f487.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/ef3f92b34135e76276dea95e5416d3a6.png" alt="" /></p>
+<h1 id="鼠标操作"><a class="markdownIt-Anchor" href="#鼠标操作"></a> 鼠标操作</h1>
+<p>鼠标分为左键、中键和右键。您需要根据软件的操作控制鼠标。<br />
+<img src="https://img.gejiba.com/images/24ae58dad5ca57dd325db98300f18090.png" alt="" /></p>
+<h1 id="键盘操作"><a class="markdownIt-Anchor" href="#键盘操作"></a> 键盘操作</h1>
+<h2 id="普通-pc"><a class="markdownIt-Anchor" href="#普通-pc"></a> 普通 PC</h2>
+<p>Windows 也十分依赖键盘。键盘长这样：<br />
+<img src="https://img.gejiba.com/images/e94205463ae97810d7fdaf409a93fd61.png" alt="" /></p>
+<h3 id="ctrl-键"><a class="markdownIt-Anchor" href="#ctrl-键"></a> Ctrl 键</h3>
+<p>Ctrl 键就是控制键(Control)，用于控制 Windows 及程序的各种操作。</p>
+<h3 id="alt-键"><a class="markdownIt-Anchor" href="#alt-键"></a> Alt 键</h3>
+<p>Alt 键是更换(Alternate)的意思，点击 Alt + Tab 键后可以在打开的项目之间切换。</p>
+<h3 id="shift-键"><a class="markdownIt-Anchor" href="#shift-键"></a> Shift 键</h3>
+<p>而 Shift 键是上档转换键。常用于输入法中英文转换。</p>
+<h3 id="enter-键"><a class="markdownIt-Anchor" href="#enter-键"></a> Enter 键</h3>
+<p>Enter 键是回车键。在各个软件的功能都不一样，例如，在 Microsoft Word 中会换行，而在腾讯 QQ 中会发送消息。</p>
+<h3 id="windows-键"><a class="markdownIt-Anchor" href="#windows-键"></a> Windows 键</h3>
+<p>那个 Windows 徽标按键就是 Windows 键。在 Windows Vista 之前的系统（例如 Windows XP）中，Windows 键的功能不多。直到 Windows Vista 之后才开始增加新的内容。比如</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Windows+数字1、2、3、4、5、6、7、8、9、0 分别打开你的任务栏上面的快捷启动栏上面的第一个到第十个图标所对应的快捷方式。</span><br><span class="line">Windows+D 最小化所有窗口，再按一次恢复所有窗口</span><br><span class="line">Windows+E 开启资源管理器(频繁按会资源占尽而死机)</span><br><span class="line">Windows+F 打开搜索窗口</span><br><span class="line">Windows+G 多次按下就会依次切换侧边栏上面的小工具(Gadgets)</span><br><span class="line">Windows+L 锁定当前计算机用户</span><br><span class="line">Windows+R 开启运行对话框 (非常常用)</span><br><span class="line">Windows+T 激活当前任务栏上面的窗口，多次按下会依次定位到下一个窗体</span><br><span class="line">Windows+T Shift 反方向定位</span><br><span class="line">Windows+U 开启辅助工具管理器</span><br><span class="line">Windows+X 开启Windows移动中心</span><br><span class="line">Windows+TAB 开启 Flip 3D窗口切换</span><br><span class="line">Windows+TAB Ctrl 用键盘控制 Flip 3D窗口切换</span><br><span class="line">Windows+Break(就是Pause——Break键) 开启Windows Vista系统属性窗口</span><br></pre></td></tr></table></figure>
+<h3 id="backspace-键"><a class="markdownIt-Anchor" href="#backspace-键"></a> Backspace 键</h3>
+<p>Backspace 键即退格键，相当于您手机的这个按钮：<br />
+<img src="https://img.gejiba.com/images/c8f0d055e9dfc465b17d0ce2ee45bc36.png" alt="" /></p>
+<h2 id="苹果电脑mac"><a class="markdownIt-Anchor" href="#苹果电脑mac"></a> 苹果电脑（Mac）</h2>
+<p>因为 Mac 机生来就是为了 macOS 服务，所以键位略有不同。<br />
+<img src="https://img.gejiba.com/images/740924cf74818fe307c4021b64d92673.png" alt="" /><br />
+以下是 Mac 键盘映射到 Windows 的位置。</p>
+<h3 id="option-键"><a class="markdownIt-Anchor" href="#option-键"></a> Option 键</h3>
+<p>映射在 Windows 下的 Alt 键</p>
+<h3 id="control-键"><a class="markdownIt-Anchor" href="#control-键"></a> Control 键</h3>
+<p>映射在 Windows 下的 Ctrl 键</p>
+<h3 id="command-键"><a class="markdownIt-Anchor" href="#command-键"></a> Command 键</h3>
+<p>映射在 Windows 下的 Windows 键</p>
+<h3 id="注意"><a class="markdownIt-Anchor" href="#注意"></a> 注意</h3>
+<p>因为 Mac 部分操作由 Command 键来完成，如果你用 macOS 习惯了，重装 Windows 后会很不适应。</p>
+<h1 id="上网"><a class="markdownIt-Anchor" href="#上网"></a> 上网</h1>
+<h2 id="连接到网络"><a class="markdownIt-Anchor" href="#连接到网络"></a> 连接到网络。</h2>
+<p>由上面的消息可得知，我们点击“网络”图标即可查看电脑是否联网。<br />
+但是，我们如果没有安装 Wi-Fi 网卡，那么该如何上网？</p>
+<h3 id="有线上网方法"><a class="markdownIt-Anchor" href="#有线上网方法"></a> 有线上网方法</h3>
+<p>首先，请自备一个<font color=#66CCF>网线</font>，将网线的一个端插入电脑设备。然后打开电脑控制面板。打开“网络与共享中心”<br />
+<img src="https://img.gejiba.com/images/61f075931cb8ac26067cbfd567ad7f85.png" alt="" /><br />
+然后点击“设置新的连接或网络”<br />
+<img src="https://img.gejiba.com/images/a61d6294782fe99c3738d669ac0877ca.png" alt="" /><br />
+然后在新弹出的网络窗口中，直接下一步。<br />
+<img src="https://img.gejiba.com/images/67ea71e690e2aae356299499cacc4733.png" alt="" /><br />
+这里因为我连接上 互联网 了，所以提示这个，请点击设置新连接。<br />
+<img src="https://img.gejiba.com/images/fe1bda33d3929b53bbf7952a0c981385.png" alt="" /><br />
+然后点击宽带上网(PPPoE)<br />
+<img src="https://img.gejiba.com/images/23bb454358d7a97eb544ca86fa3165c3.png" alt="" /><br />
+然后输入你<font color=#66CCF> ISP </font>提供给你的用户名和密码，点击“连接”。<br />
+<img src="https://img.gejiba.com/images/70131c1f06e051214b7959d817184584.png" alt="" /><br />
+待等连接完成即可。<br />
+也可以稍后输入用户名和密码。<br />
+<img src="https://img.gejiba.com/images/8fc4e5f052bbe3a16fdd76b144b2685c.png" alt="" /><br />
+<font color=red>注意：如果是新安装的 Windows 8.1 或 Windows 7 ，他一般不会配备某些设备的以太网卡，所以有线网也无法使用。这时需要安装驱动软件。</font><br />
+如果需要查看您设备是否存在以太网卡，请查阅任务管理器。<br />
+<img src="https://img.gejiba.com/images/04429d53596fb0e3743180f48887993d.png" alt="" /></p>
+<h3 id="连接无线网"><a class="markdownIt-Anchor" href="#连接无线网"></a> 连接无线网。</h3>
+<p>如果您电脑已经有无线网卡了，请确保安装好驱动软件，然后直接点击网络按钮，找到您家 Wi-Fi 网络即可。<br />
+<img src="https://img.gejiba.com/images/9f62ae7d15014e89b9e38146d2e332f9.png" alt="" /></p>
+<h2 id="上网浏览器更换"><a class="markdownIt-Anchor" href="#上网浏览器更换"></a> 上网浏览器更换</h2>
+<p>Windows 10 之前的系统只自带一个上网浏览器，名叫 Internet Explorer，这个浏览器已经淘汰了，需要更换。<br />
+请确保连接好网络后，打开 Internet Explorer，输入 Firefox，来更换浏览器。当然您更换其他浏览器也是可以的，我推荐换成 Edge。<br />
+<img src="https://img.gejiba.com/images/9fc535345f9c88ded9db35eb3ab9f122.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/57c44802582c9ffdfa7a3b363eba1fef.png" alt="" /><br />
+点击下载 Firefox 来安装 Firefox。<br />
+<img src="https://img.gejiba.com/images/363e5121033dbfc948671cd6c01697c0.png" alt="" /></p>
+<h1 id="安装软件"><a class="markdownIt-Anchor" href="#安装软件"></a> 安装软件</h1>
+<h2 id="上网查找软件"><a class="markdownIt-Anchor" href="#上网查找软件"></a> 上网查找软件</h2>
+<p>直接使用上网浏览器搜索你要安装的软件即可。<br />
+<img src="https://img.gejiba.com/images/43f8eeb19effa9d2f91add83168c7c86.png" alt="" /><br />
+<font color=red>注意！在网上下载的软件鱼龙混杂，非常容易被捆绑，中病毒。</font><br />
+如果要下载微软 Office 软件，建议使用 MSDN I Tell You 网站。<a href="https://msdn.itellyou.cn">点击进入网站</a><br />
+<img src="https://img.gejiba.com/images/a6ed168084e06062d4a263d87a7b39ab.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/06a5200304903229bb2b38a2c96ee140.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/e83b3760a52fd32e20896c4808c0bb03.png" alt="" /></p>
+<h2 id="软件管家安装软件"><a class="markdownIt-Anchor" href="#软件管家安装软件"></a> 软件管家安装软件</h2>
+<p>使用上网浏览器先安装<font color=#66CCF> 360 软件管家</font>，然后在软件管家搜索你要安装的软件。</p>
+<h1 id="管理您计算机上的文件"><a class="markdownIt-Anchor" href="#管理您计算机上的文件"></a> 管理您计算机上的文件</h1>
+<p>如果需要管理器您计算机上的软件，请点击“这台电脑”。随便点进一个盘。<br />
+<img src="https://img.gejiba.com/images/ad0a02ed187c07c21ea51d40eb14b5fc.png" alt="" /><br />
+这里列出了这盘上面的所有内容。<br />
+如果要复制一个文件，请在要复制的文件旁点击鼠标右键，然后点击“复制©”。<br />
+<img src="https://img.gejiba.com/images/4f205db2d4061a45f27c59dd28a4027c.png" alt="" /><br />
+然后前往要复制到的文件夹，然后右键点击“粘贴(P)”。<br />
+<img src="https://img.gejiba.com/images/ea444b06cac589002a3da8bebde66591.png" alt="" /><br />
+这样，文件就复制好了。<br />
+我们只需要移动文件的时候点击“剪切(T)”即可。</p>
+<h1 id="卸载软件"><a class="markdownIt-Anchor" href="#卸载软件"></a> 卸载软件</h1>
+<p>有时候我们不想要一些软件，这时可以卸载软件。<br />
+打开 控制面板，然后找到 <font color=#66CCF>程序与功能</font><br />
+<img src="https://img.gejiba.com/images/403509da174a2c1c63628db60d205ad3.png" alt="" /><br />
+然后，双击要卸载的软件，跟着软件走即可。<br />
+<img src="https://img.gejiba.com/images/2f06c1f1ee32d3752ed1876222740794.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/20196f123882172b4f12a00d39411252.png" alt="" /></p>
+<h1 id="命令提示符"><a class="markdownIt-Anchor" href="#命令提示符"></a> 命令提示符</h1>
+<p><font color=red>注意！专业人士使用。</font><br />
+Windows 中的终端叫做命令提示符，我们可以利用终端做很多事情。请先按下 Windows+R 键然后输入 cmd。<br />
+<img src="https://img.gejiba.com/images/8ec9d0d197ae975dc233a799032b0a5a.png" alt="" /><br />
+然后会打开一个黑色命令窗口，我们在此输入命令即可。比如我要查看系统版本，输入：<br />
+<img src="https://img.gejiba.com/images/19587c4ac59a01e5359fb3584f29e211.png" alt="" /><br />
+就可以查看了。要清屏可以输入 cls。<br />
+</font></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>白洋淀公交乘坐体验</title>
+    <url>/20220821/011817/</url>
+    <content><![CDATA[<h1 id="线路走向"><a class="markdownIt-Anchor" href="#线路走向"></a> 线路走向</h1>
+<p>2022 年 8 月 20 日，沧州市任丘市新开到白洋淀李广村<font color=red>（现归雄安新区保定市雄县管辖）</font>的公交：308 路。以下是线路走向。</p>
+<h3 id="308-路-代河枢纽站-李广村"><a class="markdownIt-Anchor" href="#308-路-代河枢纽站-李广村"></a> 308 路 代河枢纽站 - 李广村</h3>
+<p><font color=green>代河枢纽站-西黄垒村西-于村路口<font color=red>(106国道)</font>-杜家营村-前塔村-后塔村-鄚州镇政府-鄚州镇中心卫生院-南阁村-东七里庄-中七里庄-西七里庄-生紫码头-大口子码头-李广村南-李广村</font><br />
+<img src="https://img.gejiba.com/images/03eb9f97595c40fdcc4b32a1dd089d9b.png" alt="" /></p>
+<h1 id="乘车日志"><a class="markdownIt-Anchor" href="#乘车日志"></a> 乘车日志</h1>
+<p>20号下午一点半从市区乘坐202路公交（任丘市客运西站-代河枢纽站）到达北代河。<br />
+<img src="https://img.gejiba.com/images/0b4afc34f40d79694614063114824073.jpg" alt="" /><br />
+小歇息后。一点四十308路开始行走。车内座子还是很新的，支持刷卡和刷码。<br />
+<img src="https://img.gejiba.com/images/caabb0a863887deefa35a70dcdfde4b2.jpg" alt="" /><br />
+今天天空很好看啊…<br />
+车子运行还是很快的，最高速度大概 40 km/h。噪音蛮大的。<br />
+过了于村路口就基本出了任丘界了，驶入鄚州镇。<br />
+<img src="https://img.gejiba.com/images/4c294fd8d37c149493ac12bb8e4efb89.jpg" alt="" /><br />
+驾驶到千里堤路的时候，就可以看到白洋淀的河流了。<br />
+这里有几个旅游码头，308路基本都设置了站点。<br />
+人还挺多的，比较热闹。<br />
+然后就到了李广村，本车的终点站。<br />
+<img src="https://img.gejiba.com/images/38e1a10c805be98b163dad05b4c93ab9.jpg" alt="" /><br />
+李广村离白洋淀河流还算是挺近的，我在这里拍了一些照片。<br />
+<img src="https://img.gejiba.com/images/3fc817b205738ced7dd3ce1e378a5447.jpg" alt="" /><br />
+<img src="https://img.gejiba.com/images/bd0f431dfabddf5fd30d250932523d59.jpg" alt="" /><br />
+<img src="https://img.gejiba.com/images/b1b5d6fb64e809b6c4b3acc160c97807.png" alt="李广村在白洋淀的位置" /><br />
+在近距离观察时，录了一小段视频。<font color=red></font><br />
+<a href="https://steve372yeyeye.github.io/20220821/011817/480p.mov">点击播放 QuickTime 视频</a></p>
+<h1 id=""><a class="markdownIt-Anchor" href="#"></a> </h1>
+<p>白洋淀环境很好，即使是在不是景区的乡村小河，也是很美丽的。<br />
+有一种很自然很清新的感觉。如果是清晨应该会更有感觉。</p>
+<h1 id="经过码头"><a class="markdownIt-Anchor" href="#经过码头"></a> 经过码头</h1>
+<p>308 路在路途中会经过<font color=green>生紫码头</font>和<font color=green>大口子码头</font>。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>让 Mac 电脑也玩上光遇！</title>
+    <url>/20250114/222842/</url>
+    <content><![CDATA[<h1 id="安装光-遇国服"><a class="markdownIt-Anchor" href="#安装光-遇国服"></a> 安装光 · 遇国服</h1>
+<p>by Sanakaprix  2025-01-15</p>
+<h2 id="处理器是-apple-m1-及以后的设备"><a class="markdownIt-Anchor" href="#处理器是-apple-m1-及以后的设备"></a> 处理器是 Apple M1 及以后的设备</h2>
+<h3 id="下载-ipa"><a class="markdownIt-Anchor" href="#下载-ipa"></a> 下载 iPA</h3>
+<p>在下载之前，请先在设置-“隐私与安全性”-“允许以下位置的应用程序”单选框改成 App Store 和被认可的开发者：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/9d5b41323a439c1502256f7de10db681.png" alt="" /><br />
+设置完成后在浏览器打开 <a href="https://decrypt.day">https://decrypt.day</a> 这个网站：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/de2ef63f5bd4e3cdd79a3f7293c9a232.png" alt="" /><br />
+搜索“光·遇”：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/abf2c34dd4763f78cedcb30a61a4485e.png" alt="" /><br />
+点击下载：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/b952b53dac09245f881459db710c0ee3.jpg" alt="" /><br />
+点击第二个链接（OneDrive 下载）：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/6ce7063a25f4cd3e9da30225057c14a0.png" alt="" /><br />
+获取下载链接后下载，等待下载完成：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/545ebabe4d167a12de63a32c4236a733.png" alt="" /></p>
+<h3 id="安装光-遇"><a class="markdownIt-Anchor" href="#安装光-遇"></a> 安装《光 · 遇》</h3>
+<p>下载完成后，前往 <a href="http://playcover.io">playcover.io</a> 网站，点击下载按钮：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/b1bfce3f81bbc7311ad3fb615e32c300.png" alt="" /><br />
+选择 Latest 版本，然后安装 PlayCover 程序：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/94cd8e9506f3d74f90fe0195a7e92bc2.png" alt="" /><br />
+第一次打开软件应该是空空如也的状态（我这里已经安装了）：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/a767dbe45b2bf5d59438e93e67953cb0.png" alt="" /><br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/a2bdd984ff903a125f2dad32e328fed5.jpg" alt="" /><br />
+右键打开光遇设置，然后一定要完全按照我这样设置，不然可能闪退：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/fa1e53cf02b1aeb12f4b63b8e4c68a65.jpg" alt="" /><br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/172eaddd8b6fd55deeba06b1546c8fbf.png" alt="" /><br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/ba86111ffa85ba0c2ae1c6e7c3c80c39.jpg" alt="" /><br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/e024e949577b5e91c0c95534bcd08425.png" alt="" /><br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/aba5f5da790f25394b3ab865aa460e49.jpg" alt="" /><br />
+改好了之后，点击“好”，双击图标启动游戏试一下。<br />
+如果还闪退的话，可以试试以下方法：<br />
+按下 ⌘ Command + 空格键，输入 Terminal 打开终端：<br />
+输入以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo codesign --force --deep --sign - </span><br></pre></td></tr></table></figure>
+<p>然后在 PlayCover 里右键选择“在 Finder 里查看”：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/82973f85fa93751e7259d00b8157c9e7.jpg" alt="" /><br />
+然后将光遇的包体拖到终端里，就像这样：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/d1397b3de877b044752b45d3804733a6.jpg" alt="" /><br />
+按下回车键执行，输入你电脑用户的密码（密码不显示盲敲就行）：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/d01879b77daaeb0e6b797f695f89b881.png" alt="" /><br />
+等待执行完成后，再打开光遇试试应该就能进了。<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/58bf5575642c95df3cd4ba66931fb091.png" alt="" /><br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/0c0ea645b488ca4310724b42d55330cb.png" alt="" /><br />
+<strong>感觉用鼠标玩的话特别难受，建议用手柄玩</strong></p>
+<h2 id="处理器是-intel-的设备"><a class="markdownIt-Anchor" href="#处理器是-intel-的设备"></a> 处理器是 Intel 的设备</h2>
+<p>请使用 Boot Camp 安装 Windows，安装前请先备份你的东西。<br />
+然后在 <a href="https://sky.163.com/index.html">光遇官网</a> <a href="https://sky.163.com/index.html">https://sky.163.com/index.html</a> 下载光遇电脑版就可以了<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/ef2e8a6ce4ecf5d1389c3a7d359f605d.png" alt="" /></p>
+<h1 id="安装光-遇国际服tgc"><a class="markdownIt-Anchor" href="#安装光-遇国际服tgc"></a> 安装光 · 遇国际服（TGC）</h1>
+<h2 id="处理器是-apple-m1-及以后的设备-2"><a class="markdownIt-Anchor" href="#处理器是-apple-m1-及以后的设备-2"></a> 处理器是 Apple M1 及以后的设备</h2>
+<p>打开 App Store，退出登录国区账号（如果你现在登入的是外区账号请忽略）<br />
+<img src="https://pic1.imgdb.cn/item/6787042bd0e0a243d4f45676.png" alt="" /><br />
+登录外区账号<br />
+<img src="https://pic1.imgdb.cn/item/6787049cd0e0a243d4f4567b.png" alt="" /><br />
+在搜索框搜索“Sky”或光遇都可以，直接下载：<br />
+<img src="https://pic1.imgdb.cn/item/678704e1d0e0a243d4f4567c.png" alt="" /></p>
+<h2 id="处理器是-intel-的设备-2"><a class="markdownIt-Anchor" href="#处理器是-intel-的设备-2"></a> 处理器是 Intel 的设备</h2>
+<p>请使用 Boot Camp 安装 Windows，安装前请先备份你的东西。<br />
+然后安装 Steam，在 Steam 里安装光遇（请自行查找光遇 Steam 入库教程）：<br />
+<img src="https://pic1.imgdb.cn/item/67870581d0e0a243d4f45681.png" alt="" /><br />
+<strong>祝你在光 · 遇的世界里玩的开心！</strong></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>光！遇！</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Reimu 主题去除东方 PROJECT 元素</title>
     <url>/20230817/154130/</url>
     <content><![CDATA[<p>如果你安装了 Reimu 主题后又不想要东方的元素了，可以看看这篇文章。</p>
@@ -1693,5 +1391,307 @@ Windows 11      std / VMware
       <tags>
         <tag>复现</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Sanapri bilibili 新视频</title>
+    <url>/20220823/164646/</url>
+    <content><![CDATA[<p>鎖那小天使终于发新视频啦，这里给你们看看～</p>
+<pre><code>Kyu-kurarin (cover) / sana 
+original: きゅうくらりん / いよわ feat.可不 
+vocal: 鎖那  mix: n.k 
+▷https://space.bilibili.com/543245410
+</code></pre>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?bvid=BV1M14y1t7LK&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
+</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>QEMU 基础命令学习</title>
+    <url>/20220826/022653/</url>
+    <content><![CDATA[<center>
+<div style="width:100px; height:100px; border-radius:100%; overflow:hidden;">
+    <img src="https://steve372yeyeye.github.io/images/avatar.gif" alt>
+</div>
+<br>
+<font size="6"><center>？、アイドル宣言</center></font>
+<font size="3"><center>的博客小站</center></font>
+<br>
+<p><a href="/">返回到首页</a></p>
+<br>
+<font color=#66ccff>作者：？、アイドル宣言</font>
+</center>
+<h1 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h1>
+<font face="宋体">
+<p>本文章是为了让各位更好的学习 QEMU 命令。<br />
+<font color=red>这里只学习 qemu-system，没有 qemu-user 的内容。</font></p>
+<h2 id="qemu-是什么"><a class="markdownIt-Anchor" href="#qemu-是什么"></a> QEMU 是什么</h2>
+<p>QEMU是一套由<font color=green>法布里斯·贝拉(Fabrice Bellard)</font>所编写的以GPL许可证分发源码的模拟处理器软件，在<font color=green>GNU/Linux</font>平台上使用广泛。<font color=green>Bochs，PearPC</font>等与其类似，但不具备其许多特性，比如高速度及跨平台的特性，通过KVM，QEMU能虚拟化至真实电脑的速度。</p>
+<h2 id="qemu-有什么用"><a class="markdownIt-Anchor" href="#qemu-有什么用"></a> QEMU 有什么用？</h2>
+<p>简单来说就是能跨平台高速模拟各种系统。不恰当的比喻：就是能在手机上运行 Windows 系统，而且速度很快。</p>
+<h1 id="开始学习"><a class="markdownIt-Anchor" href="#开始学习"></a> 开始学习</h1>
+<h2 id="安装-qemu"><a class="markdownIt-Anchor" href="#安装-qemu"></a> 安装 QEMU</h2>
+<h3 id="编译安装"><a class="markdownIt-Anchor" href="#编译安装"></a> 编译安装</h3>
+<blockquote>
+<p>安装依赖</p>
+</blockquote>
+<p>QEMU 可以通过编译的方式安装。<br />
+需要先根据你系统的情况，安装 QEMU 必需的依赖(一般是这些)：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git libglib2.0-dev libfdt-dev libpixman-1-dev zlib1g-dev libsdl1.2-dev libsnappy-dev liblzo2-dev zlib1g-dbg automake gcc python wget &amp;&amp; apt-get install build-essential</span><br></pre></td></tr></table></figure>
+<p><a href="https://git-scm.com">Git</a> <a href="https://github.com/GNOME/glib">Glib</a> <a href="https://baike.baidu.com/item/FDT/1691090?fr=aladdin">fdt</a> <a href="http://www.pixman.org">pixman</a> <a href="http://www.zlib.net">zlib</a> <a href="http://www.libsdl.org">libsdl</a> <a href="https://github.com/google/snappy">snappy</a> <a href="https://launchpad.net/ubuntu/+source/lzo2/">lzo2</a> <a href="https://www.solvusoft.com/zh-cn/file-extensions/software/gnu-operating-system/automake/">automake</a> <a href="https://www.gnu.org/software/gcc/">gcc</a> <a href="https://www.python.org">python</a><br />
+安装完成后，需要下载 QEMU 的源码包或者是克隆。</p>
+<blockquote>
+<p>克隆 QEMU</p>
+</blockquote>
+<p>请输入以下命令<font color=green>(北京外国语大学开源软件镜像站)</font>：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://mirrors.bfsu.edu.cn/git/qemu.git</span><br></pre></td></tr></table></figure>
+<p>然后你应该会在主目录看到一个叫“qemu”的文件夹，这就是最新的源码包。</p>
+<blockquote>
+<p>下载 QEMU 源码<font color=green>(tar.xz)</font>：</p>
+</blockquote>
+<p>在此网站下载源码包：<br />
+<a href="https://download.qemu.org">https://download.qemu.org</a><br />
+然后通过 tar 命令解压：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">tar -xvf ./qemu-7.1.0-rc3.tar.xz</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>开始编译</p>
+</blockquote>
+<p>如果你前面的操作完成了的话，就可以开始编译了。<br />
+首先我们要 cd 到目录</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/qemu-7.1.0-rc3</span><br></pre></td></tr></table></figure>
+<p>然后开始配置编译内容，输入 ./configure 即可。但是这样的话没用的东西会很多，所以我们在 configure 里面加参数。参数可以查阅 <font color=green>./configure --help</font>。比如我们只需要编译一个架构而不是全局编译，那么我们输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">./configure --target-list=x86_64-softmmu</span><br></pre></td></tr></table></figure>
+<p>其中，<font color=green>x86_64-softmmu</font> 是你要编译的架构。<br />
+那我们想编译多个架构怎么办呢？<br />
+只需要在架构后加上其他架构即可，用小写的逗号分隔。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">./configure --target-list=x86_64-softmmu,aarch64-softmmu,ppc-softmmu</span><br></pre></td></tr></table></figure>
+<p>还有其他的编译选项。这里就不说了。<br />
+等待配置完成后，就可以开始编译 qemu 了。<br />
+输入 make 可以开始，也可以加参数。比如我要是想开 8 核编译那么输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">make -j8</span><br></pre></td></tr></table></figure>
+<p>具体几核看你设备的 CPU 核心数。不加参数只会开一核编译，速度很慢。</p>
+<blockquote>
+<p>编译后安装</p>
+</blockquote>
+<p>编译完成后，你直接运行 qemu 是没有反应的，提示命令不存在。我们需要再安装一下 qemu 才能使用。<br />
+输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">make install</span><br></pre></td></tr></table></figure>
+<p>就安装完成了。</p>
+<h3 id="brew-安装-qemu"><a class="markdownIt-Anchor" href="#brew-安装-qemu"></a> brew 安装 QEMU</h3>
+<p>Mac 电脑不需要必须通过编译安装，也可以通过软件包管理器安装 QEMU。<br />
+首先给你的 Mac 电脑安装 <font color=green>HomeBrew</font>。这里推荐使用国内安装脚本：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/bin/zsh -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure>
+<p>跟着安装脚本走。安装完成 Homebrew 之后，输入以下命令安装 QEMU：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew install qemu</span><br></pre></td></tr></table></figure>
+<p>等待安装完成即可享用 QEMU。<br />
+<img src="https://img.gejiba.com/images/2c362227e66bba6a2db161e2bc5c8052.png" alt="" /></p>
+<h3 id="apt-安装-qemu"><a class="markdownIt-Anchor" href="#apt-安装-qemu"></a> APT 安装 QEMU</h3>
+<p><font color=green>apt</font> 是 <font color=green>Debian GNU/Linux</font> 以及基于 Debian 的其他发行版中默认的软件包管理器。我们使用它安装 QEMU。同样也不用必须编译安装。<br />
+输入以下命令，安装 qemu 的命令行。以 x86_64/i386 架构为例，输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt install qemu-system-x86</span><br></pre></td></tr></table></figure>
+<p>等待安装完成即可。<br />
+如果你的 Linux 系统有图形界面，那么可以直接安装 <font color=green>qemu 的图形前端</font>。输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt install aqemu</span><br></pre></td></tr></table></figure>
+<p>安装完成后，可以在程序菜单里看到 aqemu，直接运行即可。</p>
+<h2 id="qemu-的使用"><a class="markdownIt-Anchor" href="#qemu-的使用"></a> QEMU 的使用</h2>
+<h3 id="运行-qemu"><a class="markdownIt-Anchor" href="#运行-qemu"></a> 运行 QEMU</h3>
+<p>我们按照上面的步骤安装完成 QEMU 之后，可以查看一下安装完 QEMU 的版本，输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">qemu-system-&lt;架构&gt; --version</span><br></pre></td></tr></table></figure>
+<p><img src="https://img.gejiba.com/images/7085de537a84b3fd450482148b6b8d2c.png" alt="" /><br />
+可以看到 QEMU 已经正确安装，我们现在就可以试试水，看看如何启动。</p>
+<blockquote>
+<p>熟悉命令</p>
+</blockquote>
+<p>QEMU 基本命令如下(x86_64)：</p>
+<pre><code>-accel 加速类型，一般为(kvm,hax,hvf,tcg)
+-machine 机器类型，一般为pc和q35。具体可查看help
+-net nic,model=&lt;网卡名称&gt; 设置虚拟机网卡。
+-net user 设置虚拟机网络模式，有user和tap可选。
+-hda,-hdb,-hdc,-hdd 磁盘位，放入磁盘镜像。
+-m 256 设置的内存(RAM)，单位是MB。1GB=1024MB
+-vga vmware 设置的显示卡
+-device 添加各种硬件设备。
+-soundhw sb16 启用声音支持。
+-cdrom 光盘位，放入 ISO 镜像。
+-fda,-fdb 软盘位，放入磁盘镜像。
+-cpu 设置虚拟的 CPU
+-smp &lt;核心数&gt; 设置虚拟cpu核心数。默认单核
+-vnc :&lt;端口号&gt; 开启后使用 VNC Viewer 连接。
+-pflash &lt;固件&gt; 并行闪存镜像，一般用于 EFI 启动。
+-nographic 无图形启动，一般用于 Linux。
+-win2k-hack （i386）在安装 Windows 2000 时使用它以避免磁盘已满错误，但会降低磁盘性能，安装完成后可以删掉该命令。
+-usb 启用 USB 控制器，其他 USB 设置需要使用 -device 命令。
+-sdl 开启后使用 XSDL Server 连接。 
+-k &lt;language&gt; 键盘的语言，一般是为了适配不同语种的键盘。一般不用填。
+-boot c 引导顺序，c是硬盘、n是网络、d是光盘、s是软盘。
+-name 虚拟机名称，如果你是 VNC 连接，该名称将显示到你 VNC 远程桌面信息。
+</code></pre>
+<p>这些命令组合起来可以运行虚拟机。</p>
+<blockquote>
+<p>一个实例</p>
+</blockquote>
+<p>下面是包含了上面的部分命令的<font color=green>一个实例</font>，不知道你能不能看懂。</p>
+<font color=red>
+qemu-system-x86_64 -hda /home/steve372/win10.qcow2 -cdrom /home/steve372/win10.iso -m 768 -machine q35 -accel kvm -smp 2 -vga std -soundhw ac97 -usb -device usb-tablet -boot d -pflash /home/steve372/QEMU_EFI.fd -net nic,model=rtl8139 -net user -vnc :0 -name "Windows 10"
+</font>
+<p>如果不能看懂，可以看下面的<font color=green>“命令详解“</font>。来更加了解这些命令。</p>
+<h3 id="命令详解"><a class="markdownIt-Anchor" href="#命令详解"></a> 命令详解</h3>
+<h4 id="-accel-命令"><a class="markdownIt-Anchor" href="#-accel-命令"></a> -accel 命令</h4>
+<p>-accel 命令可以为<font color=green>虚拟机提供加速</font>，有以下加速类型：<strong>kvm,hax,hvf,tcg</strong>。当然，这些命令要运行起来都有一定的要求，如下：</p>
+<pre><code>kvm 只能在 Linux 环境运行，并且需要内核支持（手机可以洗洗睡了）
+hvf 只能在 macOS 环境运行。
+hax 只能在 Windows 或 macOS 环境运行，似乎不太稳定。
+tcg 通用。手机只能用 tcg 了
+</code></pre>
+<p>请根据你自己的系统进行搭配。<br />
+这些加速类型之中，<strong>kvm是最快的，hvf和hax差不多，最后是tcg。</strong><br />
+稳定性中，<strong>kvm、hvf、tcg都挺稳定的，hax一般。</strong></p>
+<h4 id="-machine-命令"><a class="markdownIt-Anchor" href="#-machine-命令"></a> -machine 命令</h4>
+<p>-machine 命令可以设置机器类型。有以下机器类型：</p>
+<div class='spoiler collapsed'>
+    <div class='spoiler-title'>
+        机器类型列表
+    </div>
+    <div class='spoiler-content'>
+        <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">microvm              microvm (i386)</span><br><span class="line">pc                   Standard PC (i440FX + PIIX, 1996) (alias of pc-i440fx-7.0)</span><br><span class="line">pc-i440fx-7.0        Standard PC (i440FX + PIIX, 1996) (default)</span><br><span class="line">pc-i440fx-6.2        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-6.1        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-6.0        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-5.2        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-5.1        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-5.0        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-4.2        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-4.1        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-4.0        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-3.1        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-3.0        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.9        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.8        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.7        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.6        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.5        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.4        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.3        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.2        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.12       Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.11       Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.10       Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.1        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.0        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-1.7        Standard PC (i440FX + PIIX, 1996) (deprecated)</span><br><span class="line">pc-i440fx-1.6        Standard PC (i440FX + PIIX, 1996) (deprecated)</span><br><span class="line">pc-i440fx-1.5        Standard PC (i440FX + PIIX, 1996) (deprecated)</span><br><span class="line">pc-i440fx-1.4        Standard PC (i440FX + PIIX, 1996) (deprecated)</span><br><span class="line">q35                  Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-7.0)</span><br><span class="line">pc-q35-7.0           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-6.2           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-6.1           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-6.0           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-5.2           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-5.1           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-5.0           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-4.2           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-4.1           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-4.0.1         Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-4.0           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-3.1           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-3.0           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.9           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.8           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.7           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.6           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.5           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.4           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.12          Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.11          Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.10          Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">isapc                ISA-only PC</span><br><span class="line">none                 empty machine</span><br></pre></td></tr></table></figure>
+    </div>
+</div>
+<p>一般来说，我们最常用的就是 pc 和 q35。如果你使用的是别人的镜像，<font color=#66ccff>那么务必跟随镜像主的安排。</font></p>
+<h4 id="-net-命令"><a class="markdownIt-Anchor" href="#-net-命令"></a> -net 命令</h4>
+<p>QEMU 的 -net 命令是提供跟网络相关的功能，这里只介绍最基本的两种方式。<br />
+-net 的用法是：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-net user -net nic,model=&lt;网卡名称&gt;</span><br></pre></td></tr></table></figure>
+<p>首先，前面的 -net 有五种选择：user, tap, bridge, vde, socket<br />
+如果你没有特殊需求，<font color=green>直接使用 User 网络即可。</font><br />
+然后，后面的 -net 是选择虚拟的网卡。QEMU 这里有以下网卡可选：</p>
+<div class='spoiler collapsed'>
+    <div class='spoiler-title'>
+        虚拟网卡类型列表
+    </div>
+    <div class='spoiler-content'>
+        <figure class="highlight plaintext"><figcaption><span>NIC list</span></figcaption><table><tr><td class="code"><pre><span class="line">e1000</span><br><span class="line">e1000-82544gc</span><br><span class="line">e1000-82545em</span><br><span class="line">e1000e</span><br><span class="line">i82550</span><br><span class="line">i82551</span><br><span class="line">i82557a</span><br><span class="line">i82557b</span><br><span class="line">i82557c</span><br><span class="line">i82558a</span><br><span class="line">i82558b</span><br><span class="line">i82559a</span><br><span class="line">i82559b</span><br><span class="line">i82559c</span><br><span class="line">i82559er</span><br><span class="line">i82562</span><br><span class="line">i82801</span><br><span class="line">ne2k_pci</span><br><span class="line">pcnet</span><br><span class="line">rtl8139</span><br><span class="line">tulip</span><br><span class="line">virtio-net-pci</span><br><span class="line">virtio-net-pci-non-transitional</span><br><span class="line">virtio-net-pci-transitional</span><br><span class="line">vmxnet3</span><br></pre></td></tr></table></figure>
+    </div>
+</div>
+<p>我们常用的是 <strong>e1000,ne2k_pci,rtl8139,virtio</strong> 网卡。<br />
+<font color=#66ccff>还是要看镜像主的安排。</font>比如你的镜像支持 rtl8139 网卡，那么输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-net user -net nic,model=rtl8139</span><br></pre></td></tr></table></figure>
+<p>就可以了。</p>
+<h4 id="-hda-命令"><a class="markdownIt-Anchor" href="#-hda-命令"></a> -hda 命令</h4>
+<p>-hda,-hdb,-hdc,-hdd 是磁盘镜像位，需将下载到的镜像放到这里。用法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-hda &lt;文件路径&gt;</span><br></pre></td></tr></table></figure>
+<p>其中，文件支持所有可用的镜像文件。<br />
+<font color=red>不推荐使用 -hdc 参数，可能会出问题。</font><br />
+<font color=green>如果需要使用 virtio 磁盘，那么需要使用 -drive 命令。</font></p>
+<h4 id="-m-命令"><a class="markdownIt-Anchor" href="#-m-命令"></a> -m 命令</h4>
+<p>-m 命令是设置你虚拟机的内存用的。<font color=green>M 是 Memory(内存) 的首字母。</font>用法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-m &lt;数字&gt;</span><br></pre></td></tr></table></figure>
+<p>数字单位是 MB。1 GB=1024 MB、3 GB=3072 MB</p>
+<h4 id="-vga-命令"><a class="markdownIt-Anchor" href="#-vga-命令"></a> -vga 命令</h4>
+<p>-vga 命令可以<font color=green>模拟虚拟机的显卡</font>，用法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-vga &lt;显卡名称&gt;</span><br></pre></td></tr></table></figure>
+<p>目前支持的显卡有：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">std                  standard VGA (default)</span><br><span class="line">cirrus               Cirrus VGA</span><br><span class="line">vmware               VMWare SVGA</span><br><span class="line">xenfb                Xen paravirtualized framebuffer</span><br><span class="line">virtio               Virtio VGA</span><br><span class="line">QXL</span><br></pre></td></tr></table></figure>
+<p>如果你模拟的是 Windows 的话，那么可能需要<font color=red>根据你的 Windows 系统选择显卡。</font>如下：</p>
+<pre><code>Windows 3.1     需要手动安装 cirrus 驱动。
+Windows 95      cirrus
+Windows 98      cirrus
+Windows 2000    cirrus
+Windows XP      std / VMware
+Windows Vista   std / VMware
+Windows 7       std / VMware
+Windows 8       std / VMware
+Windows 8.1     std / VMware
+Windows 10      std / VMware
+Windows 11      std / VMware
+</code></pre>
+<p>Linux 应该可以选择 <font color=green>virtio</font> 显卡。</p>
+<h4 id="-device-命令"><a class="markdownIt-Anchor" href="#-device-命令"></a> -device 命令</h4>
+<p>-device 命令是 QEMU 处理硬件的一个媒介，他也可以取代部分命令。比如<font color=green> -soundhw 和 -usbdevice</font>。如果需要将 VNC 和鼠标对齐的话，输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-usb // 启用 USB 控制器</span><br><span class="line">-device usb-tablet // 添加虚拟的 USB 触控板 </span><br></pre></td></tr></table></figure>
+<p>就可以了。更深层次的 USB 命令到后面会讲。</p>
+<h4 id="-soundhw-命令"><a class="markdownIt-Anchor" href="#-soundhw-命令"></a> -soundhw 命令</h4>
+<p>-soundhw 命令是启用声音支持，直白了说就是能让虚拟机出声音。用法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-soundhw &lt;声卡名称&gt;</span><br></pre></td></tr></table></figure>
+<p>我们只需要<font color=green>填入声卡名称</font>就可以了，声卡名如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ac97        Intel 82801AA AC97 Audio</span><br><span class="line">adlib       雅马哈 YM3812 (OPL2)</span><br><span class="line">cs4231a     CS4231A</span><br><span class="line">es1370      ENSONIQ AudioPCI ES1370</span><br><span class="line">gus         Gravis Ultrasound GF1</span><br><span class="line">hda         Intel HD Audio</span><br><span class="line">pcspk       PC speaker</span><br><span class="line">sb16        创新科技声霸卡 16</span><br></pre></td></tr></table></figure>
+<p>我们常用的是 sb16 和 ac97 还有 hda。</p>
+<h4 id="-cdrom-命令"><a class="markdownIt-Anchor" href="#-cdrom-命令"></a> -cdrom 命令</h4>
+<p>该命令是光驱位，放入光盘镜像（*.ISO）用法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-cdrom &lt;文件路径&gt;</span><br></pre></td></tr></table></figure>
+<p>直接将光盘文件路径写下即可。<br />
+<font color=red>光盘是有code显示的，可以通过这个代码定位问题。</font><br />
+<img src="https://img.gejiba.com/images/b4599dcccf66d9f30b7020f4932a617e.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/25ba59fbd94a92295fcb09e2981cc2bb.png" alt="" /></p>
+<h4 id="-cpu-命令"><a class="markdownIt-Anchor" href="#-cpu-命令"></a> -cpu 命令</h4>
+<p>模拟你要模拟的 CPU，可选 CPU 有：</p>
+<div class='spoiler collapsed'>
+    <div class='spoiler-title'>
+        CPU 列表
+    </div>
+    <div class='spoiler-content'>
+        <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x86 486                   (alias configured by machine type)</span><br><span class="line">x86 486-v1                </span><br><span class="line">x86 Broadwell             (alias configured by machine type)</span><br><span class="line">x86 Broadwell-IBRS        (alias of Broadwell-v3)</span><br><span class="line">x86 Broadwell-noTSX       (alias of Broadwell-v2)</span><br><span class="line">x86 Broadwell-noTSX-IBRS  (alias of Broadwell-v4)</span><br><span class="line">x86 Broadwell-v1          Intel Core Processor (Broadwell)</span><br><span class="line">x86 Broadwell-v2          Intel Core Processor (Broadwell, no TSX)</span><br><span class="line">x86 Broadwell-v3          Intel Core Processor (Broadwell, IBRS)</span><br><span class="line">x86 Broadwell-v4          Intel Core Processor (Broadwell, no TSX, IBRS)</span><br><span class="line">x86 Cascadelake-Server    (alias configured by machine type)</span><br><span class="line">x86 Cascadelake-Server-noTSX  (alias of Cascadelake-Server-v3)</span><br><span class="line">x86 Cascadelake-Server-v1  Intel Xeon Processor (Cascadelake)</span><br><span class="line">x86 Cascadelake-Server-v2  Intel Xeon Processor (Cascadelake) [ARCH_CAPABILITIES]</span><br><span class="line">x86 Cascadelake-Server-v3  Intel Xeon Processor (Cascadelake) [ARCH_CAPABILITIES, no TSX]</span><br><span class="line">x86 Cascadelake-Server-v4  Intel Xeon Processor (Cascadelake) [ARCH_CAPABILITIES, no TSX]</span><br><span class="line">x86 Cascadelake-Server-v5  Intel Xeon Processor (Cascadelake) [ARCH_CAPABILITIES, EPT switching, XSAVES, no TSX]</span><br><span class="line">x86 Conroe                (alias configured by machine type)</span><br><span class="line">x86 Conroe-v1             Intel Celeron_4x0 (Conroe/Merom Class Core 2)</span><br><span class="line">x86 Cooperlake            (alias configured by machine type)</span><br><span class="line">x86 Cooperlake-v1         Intel Xeon Processor (Cooperlake)</span><br><span class="line">x86 Cooperlake-v2         Intel Xeon Processor (Cooperlake) [XSAVES]</span><br><span class="line">x86 Denverton             (alias configured by machine type)</span><br><span class="line">x86 Denverton-v1          Intel Atom Processor (Denverton)</span><br><span class="line">x86 Denverton-v2          Intel Atom Processor (Denverton) [no MPX, no MONITOR]</span><br><span class="line">x86 Denverton-v3          Intel Atom Processor (Denverton) [XSAVES, no MPX, no MONITOR]</span><br><span class="line">x86 Dhyana                (alias configured by machine type)</span><br><span class="line">x86 Dhyana-v1             Hygon Dhyana Processor</span><br><span class="line">x86 Dhyana-v2             Hygon Dhyana Processor [XSAVES]</span><br><span class="line">x86 EPYC                  (alias configured by machine type)</span><br><span class="line">x86 EPYC-IBPB             (alias of EPYC-v2)</span><br><span class="line">x86 EPYC-Milan            (alias configured by machine type)</span><br><span class="line">x86 EPYC-Milan-v1         AMD EPYC-Milan Processor</span><br><span class="line">x86 EPYC-Rome             (alias configured by machine type)</span><br><span class="line">x86 EPYC-Rome-v1          AMD EPYC-Rome Processor</span><br><span class="line">x86 EPYC-Rome-v2          AMD EPYC-Rome Processor</span><br><span class="line">x86 EPYC-v1               AMD EPYC Processor</span><br><span class="line">x86 EPYC-v2               AMD EPYC Processor (with IBPB)</span><br><span class="line">x86 EPYC-v3               AMD EPYC Processor</span><br><span class="line">x86 Haswell               (alias configured by machine type)</span><br><span class="line">x86 Haswell-IBRS          (alias of Haswell-v3)</span><br><span class="line">x86 Haswell-noTSX         (alias of Haswell-v2)</span><br><span class="line">x86 Haswell-noTSX-IBRS    (alias of Haswell-v4)</span><br><span class="line">x86 Haswell-v1            Intel Core Processor (Haswell)</span><br><span class="line">x86 Haswell-v2            Intel Core Processor (Haswell, no TSX)</span><br><span class="line">x86 Haswell-v3            Intel Core Processor (Haswell, IBRS)</span><br><span class="line">x86 Haswell-v4            Intel Core Processor (Haswell, no TSX, IBRS)</span><br><span class="line">x86 Icelake-Client        (alias configured by machine type)</span><br><span class="line">x86 Icelake-Client-noTSX  (alias of Icelake-Client-v2)</span><br><span class="line">x86 Icelake-Client-v1     Intel Core Processor (Icelake) [deprecated]</span><br><span class="line">x86 Icelake-Client-v2     Intel Core Processor (Icelake) [no TSX, deprecated]</span><br><span class="line">x86 Icelake-Client-v3     Intel Core Processor (Icelake) [no TSX, XSAVES, deprecated]</span><br><span class="line">x86 Icelake-Server        (alias configured by machine type)</span><br><span class="line">x86 Icelake-Server-noTSX  (alias of Icelake-Server-v2)</span><br><span class="line">x86 Icelake-Server-v1     Intel Xeon Processor (Icelake)</span><br><span class="line">x86 Icelake-Server-v2     Intel Xeon Processor (Icelake) [no TSX]</span><br><span class="line">x86 Icelake-Server-v3     Intel Xeon Processor (Icelake)</span><br><span class="line">x86 Icelake-Server-v4     Intel Xeon Processor (Icelake)</span><br><span class="line">x86 Icelake-Server-v5     Intel Xeon Processor (Icelake) [XSAVES]</span><br><span class="line">x86 Icelake-Server-v6     Intel Xeon Processor (Icelake) [5-level EPT]</span><br><span class="line">x86 IvyBridge             (alias configured by machine type)</span><br><span class="line">x86 IvyBridge-IBRS        (alias of IvyBridge-v2)</span><br><span class="line">x86 IvyBridge-v1          Intel Xeon E3-12xx v2 (Ivy Bridge)</span><br><span class="line">x86 IvyBridge-v2          Intel Xeon E3-12xx v2 (Ivy Bridge, IBRS)</span><br><span class="line">x86 KnightsMill           (alias configured by machine type)</span><br><span class="line">x86 KnightsMill-v1        Intel Xeon Phi Processor (Knights Mill)</span><br><span class="line">x86 Nehalem               (alias configured by machine type)</span><br><span class="line">x86 Nehalem-IBRS          (alias of Nehalem-v2)</span><br><span class="line">x86 Nehalem-v1            Intel Core i7 9xx (Nehalem Class Core i7)</span><br><span class="line">x86 Nehalem-v2            Intel Core i7 9xx (Nehalem Core i7, IBRS update)</span><br><span class="line">x86 Opteron_G1            (alias configured by machine type)</span><br><span class="line">x86 Opteron_G1-v1         AMD Opteron 240 (Gen 1 Class Opteron)</span><br><span class="line">x86 Opteron_G2            (alias configured by machine type)</span><br><span class="line">x86 Opteron_G2-v1         AMD Opteron 22xx (Gen 2 Class Opteron)</span><br><span class="line">x86 Opteron_G3            (alias configured by machine type)</span><br><span class="line">x86 Opteron_G3-v1         AMD Opteron 23xx (Gen 3 Class Opteron)</span><br><span class="line">x86 Opteron_G4            (alias configured by machine type)</span><br><span class="line">x86 Opteron_G4-v1         AMD Opteron 62xx class CPU</span><br><span class="line">x86 Opteron_G5            (alias configured by machine type)</span><br><span class="line">x86 Opteron_G5-v1         AMD Opteron 63xx class CPU</span><br><span class="line">x86 Penryn                (alias configured by machine type)</span><br><span class="line">x86 Penryn-v1             Intel Core 2 Duo P9xxx (Penryn Class Core 2)</span><br><span class="line">x86 SandyBridge           (alias configured by machine type)</span><br><span class="line">x86 SandyBridge-IBRS      (alias of SandyBridge-v2)</span><br><span class="line">x86 SandyBridge-v1        Intel Xeon E312xx (Sandy Bridge)</span><br><span class="line">x86 SandyBridge-v2        Intel Xeon E312xx (Sandy Bridge, IBRS update)</span><br><span class="line">x86 Skylake-Client        (alias configured by machine type)</span><br><span class="line">x86 Skylake-Client-IBRS   (alias of Skylake-Client-v2)</span><br><span class="line">x86 Skylake-Client-noTSX-IBRS  (alias of Skylake-Client-v3)</span><br><span class="line">x86 Skylake-Client-v1     Intel Core Processor (Skylake)</span><br><span class="line">x86 Skylake-Client-v2     Intel Core Processor (Skylake, IBRS)</span><br><span class="line">x86 Skylake-Client-v3     Intel Core Processor (Skylake, IBRS, no TSX)</span><br><span class="line">x86 Skylake-Client-v4     Intel Core Processor (Skylake, IBRS, no TSX) [IBRS, XSAVES, no TSX]</span><br><span class="line">x86 Skylake-Server        (alias configured by machine type)</span><br><span class="line">x86 Skylake-Server-IBRS   (alias of Skylake-Server-v2)</span><br><span class="line">x86 Skylake-Server-noTSX-IBRS  (alias of Skylake-Server-v3)</span><br><span class="line">x86 Skylake-Server-v1     Intel Xeon Processor (Skylake)</span><br><span class="line">x86 Skylake-Server-v2     Intel Xeon Processor (Skylake, IBRS)</span><br><span class="line">x86 Skylake-Server-v3     Intel Xeon Processor (Skylake, IBRS, no TSX)</span><br><span class="line">x86 Skylake-Server-v4     Intel Xeon Processor (Skylake, IBRS, no TSX)</span><br><span class="line">x86 Skylake-Server-v5     Intel Xeon Processor (Skylake, IBRS, no TSX) [IBRS, XSAVES, EPT switching, no TSX]</span><br><span class="line">x86 Snowridge             (alias configured by machine type)</span><br><span class="line">x86 Snowridge-v1          Intel Atom Processor (SnowRidge)</span><br><span class="line">x86 Snowridge-v2          Intel Atom Processor (Snowridge, no MPX)</span><br><span class="line">x86 Snowridge-v3          Intel Atom Processor (Snowridge, no MPX) [XSAVES, no MPX]</span><br><span class="line">x86 Snowridge-v4          Intel Atom Processor (Snowridge, no MPX) [no split lock detect, no core-capability]</span><br><span class="line">x86 Westmere              (alias configured by machine type)</span><br><span class="line">x86 Westmere-IBRS         (alias of Westmere-v2)</span><br><span class="line">x86 Westmere-v1           Westmere E56xx/L56xx/X56xx (Nehalem-C)</span><br><span class="line">x86 Westmere-v2           Westmere E56xx/L56xx/X56xx (IBRS update)</span><br><span class="line">x86 athlon                (alias configured by machine type)</span><br><span class="line">x86 athlon-v1             QEMU Virtual CPU version 2.5+</span><br><span class="line">x86 core2duo              (alias configured by machine type)</span><br><span class="line">x86 core2duo-v1           Intel(R) Core(TM)2 Duo CPU     T7700  @ 2.40GHz</span><br><span class="line">x86 coreduo               (alias configured by machine type)</span><br><span class="line">x86 coreduo-v1            Genuine Intel(R) CPU           T2600  @ 2.16GHz</span><br><span class="line">x86 kvm32                 (alias configured by machine type)</span><br><span class="line">x86 kvm32-v1              Common 32-bit KVM processor</span><br><span class="line">x86 kvm64                 (alias configured by machine type)</span><br><span class="line">x86 kvm64-v1              Common KVM processor</span><br><span class="line">x86 n270                  (alias configured by machine type)</span><br><span class="line">x86 n270-v1               Intel(R) Atom(TM) CPU N270   @ 1.60GHz</span><br><span class="line">x86 pentium               (alias configured by machine type)</span><br><span class="line">x86 pentium-v1            </span><br><span class="line">x86 pentium2              (alias configured by machine type)</span><br><span class="line">x86 pentium2-v1           </span><br><span class="line">x86 pentium3              (alias configured by machine type)</span><br><span class="line">x86 pentium3-v1           </span><br><span class="line">x86 phenom                (alias configured by machine type)</span><br><span class="line">x86 phenom-v1             AMD Phenom(tm) 9550 Quad-Core Processor</span><br><span class="line">x86 qemu32                (alias configured by machine type)</span><br><span class="line">x86 qemu32-v1             QEMU Virtual CPU version 2.5+</span><br><span class="line">x86 qemu64                (alias configured by machine type)</span><br><span class="line">x86 qemu64-v1             QEMU Virtual CPU version 2.5+</span><br><span class="line">x86 base                  base CPU model type with no features enabled</span><br><span class="line">x86 max                   Enables all features supported by the accelerator in the current host</span><br></pre></td></tr></table></figure>
+    </div>
+</div>
+<p>具体根据自己需求选择。</p>
+<h4 id="-smp-命令"><a class="markdownIt-Anchor" href="#-smp-命令"></a> -smp 命令</h4>
+<p>该命令可以指定虚拟 CPU 的数量，核心数，线程数等。用法：<br />
+<font color=red><br />
+只指定 CPU 数量：<br />
+</font></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-smp 2</span><br></pre></td></tr></table></figure>
+<p>即代表 QEMU 会模拟两个 CPU 出来（不是核心）。<br />
+当然，你也可以加参数，命令如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-smp cores=2,threads=4,sockets=1</span><br></pre></td></tr></table></figure>
+<p>这条命令的意思是：<font color=green>一个 CPU 插槽，双核四线程。</font></p>
+<h4 id="-vnc-命令"><a class="markdownIt-Anchor" href="#-vnc-命令"></a> -vnc 命令</h4>
+<p>这条命令可以让你的虚拟机通过 VNC Viewer 连接。用法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-vnc :&lt;端口号&gt;</span><br></pre></td></tr></table></figure>
+<p>输入后直接使用 VNC Viewer 连接。如果 -vnc :0 那么在 VNC Viewer 的连接中就设置为 &lt;ip地址&gt;:0。如果你是手机开的模拟器，输入<font color=green> 127.0.0.1:0 </font></p>
+<h4 id="-pflash-命令"><a class="markdownIt-Anchor" href="#-pflash-命令"></a> -pflash 命令</h4>
+<p>一般用于 EFI 引导启动，用法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-pflash &lt;EFI 固件&gt;</span><br></pre></td></tr></table></figure>
+<p>需要你有 EFI 固件，一般是 fd 格式。</p>
+<h3 id="其他-qemu-模拟器的操作"><a class="markdownIt-Anchor" href="#其他-qemu-模拟器的操作"></a> 其他 QEMU 模拟器的操作</h3>
+<h4 id="连接-usb-设备"><a class="markdownIt-Anchor" href="#连接-usb-设备"></a> 连接 USB 设备</h4>
+<p><font color=green>可以通过 -device 命令将 U 盘连接到模拟器</font>。<br />
+如果要连接 <font color=green>USB 设备到 QEMU</font>，那么需要先查询 USB 设备的位置。我们输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">lsusb -t</span><br></pre></td></tr></table></figure>
+<p>来查询 USB 设备的位置。看他的输出：<br />
+<img src="https://img.gejiba.com/images/ab3efd6bffb37db1375536c2a68b8af8.png" alt="" /><br />
+找到你要连接的 USB 的位置。我这里以<font color=green> 我的 U 盘(Disk 2.0)</font> 为例子。<br />
+输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-device usb-ehci,<span class="built_in">id</span>=ehci</span><br><span class="line">-device usb-host,bus=ehci.0,hostbus=20,hostport=1</span><br></pre></td></tr></table></figure>
+<p>其中，第一行的命令是指定虚拟的 USB 版本，我这里是 2.0。如果要虚拟 USB 3.0，请输入 <font color=green>xhci</font>。<br />
+第二行的命令是<font color=green>定位 USB 设备的位置</font>，我的设备在 Bus 020，Port 1 的位置上，所以输入的bus=20 port=1。而 port 的位置就是<font color=green>指树根下的位置</font>。我是树根下的第 1 个位置，所以填 1。一定要根据自己实际情况填写。</p>
+<h4 id="efi-固件的使用"><a class="markdownIt-Anchor" href="#efi-固件的使用"></a> EFI 固件的使用</h4>
+<p>QEMU 是可以使用 UEFI 启动的，需要 EFI 固件。<br />
+<font color=red>启动命令请查看 -pflash 命令。</font><br />
+这里提供下载：<br />
+<a href="/download/QEMU_EFI.fd">下载 QEMU_EFI.fd</a></p>
+<h4 id="无界面引导"><a class="markdownIt-Anchor" href="#无界面引导"></a> 无界面引导</h4>
+<p>有时候我们在模拟虚拟系统的时候需要直接将终端变成 QEMU 的控制台，那么我们加上 -nographic 命令即可。</p>
+<h2 id="qemu-镜像下载"><a class="markdownIt-Anchor" href="#qemu-镜像下载"></a> QEMU 镜像下载</h2>
+<p><a href="/images/">点击进入下载站</a></p>
+</font><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>黑翼猫 Extended Kernel Project 中国网络环境下载</title>
+    <url>/20220818/010924/</url>
+    <content><![CDATA[<h2 id="介绍"><a class="markdownIt-Anchor" href="#介绍"></a> 介绍</h2>
+<p>众所周知，因为<font color=green>国内网络环境的特殊</font>，好多网站不能访问。黑翼猫大佬的博客也是如此，在国内访问会提示连接被重置。所以我翻墙后下载了黑翼猫 Windows 2000 Extended Kernel Project 和依赖的补丁集。(包括 wlupdate)</p>
+<h2 id="教程"><a class="markdownIt-Anchor" href="#教程"></a> 教程</h2>
+<p>关于黑翼猫的 Windows 2000 拓展补丁安装，可以参考这个文章…<a href="https://zhuanlan.zhihu.com/p/484014315">传送点！</a></p>
+<h2 id="下载"><a class="markdownIt-Anchor" href="#下载"></a> 下载</h2>
+<p>下载链接：<a href="https://pan.huang1111.cn/s/4d34hg">点我下载</a></p>
+<h2 id="产品密钥"><a class="markdownIt-Anchor" href="#产品密钥"></a> 产品密钥</h2>
+<p><font color=red>PQHKR-G4JFW-VTY3P-G4WQ2-88CTW</font><br />
+<img src="https://img.gejiba.com/images/179c2f93582f6652f270c41e07636539.png" alt="" /></p>
+<h2 id="安装中"><a class="markdownIt-Anchor" href="#安装中"></a> 安装中…</h2>
+<p><img src="https://img.gejiba.com/images/20975efcd5f8834d9a0f81dc7047c5e8.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/eb69053f5eab4d6b2cd8000e2c985296.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/ea1fa06f63547b60ecc660645cc5240e.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/1ecefcd2e46809e7174800d584b53e20.png" alt="" /></p>
+<h2 id="伪装系统版本用的软件"><a class="markdownIt-Anchor" href="#伪装系统版本用的软件"></a> 伪装系统版本用的软件</h2>
+<p><img src="https://img.gejiba.com/images/b269d479dbb9aab60c0bfcbac371d2ed.png" alt="" /></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
 </search>
