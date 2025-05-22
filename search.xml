@@ -69,6 +69,120 @@
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
+    <title>PlayCover 适用的《原神》iPA 文件</title>
+    <url>/20230816/114759/</url>
+    <content><![CDATA[<h1 id="原神"><a class="markdownIt-Anchor" href="#原神"></a> 《原神》</h1>
+<h2 id="版本400-天空岛"><a class="markdownIt-Anchor" href="#版本400-天空岛"></a> 版本：4.0.0 (天空岛)</h2>
+<p>您可以单击下面地址下载：<br />
+<a href="https://pan.huang1111.cn/s/vlYgSE?path=%2F">下载原神 iPA 到设备</a></p>
+<h1 id="更新方法"><a class="markdownIt-Anchor" href="#更新方法"></a> 更新方法</h1>
+<p><strong>设备要求：Apple Silicon 的 Mac 电脑</strong></p>
+<p>如果您不知道您的 Mac 电脑能否安装，请您点击“”图标，找到“关于本机”。<br />
+如果显示的是“<em>芯片：Apple M1</em>”等，就说明您的电脑基于 Apple Silicon，<br />
+如果显示的是“<em>处理器：2.3 GHz 八核 Intel Core i9</em>“等，就说明您的电脑基于 Intel，不能安装 PlayCover 和原神。<br />
+<img src="https://img.gejiba.com/images/48597f6116725b33eb76bd09ca846ec7.png" alt="" /><br />
+请您下载好 PlayCover 软件至您的 Mac：<br />
+<a href="https://github.com/PlayCover/PlayCover/releases">下载 PlayCover</a><br />
+<img src="https://img.gejiba.com/images/19a67305b6f5527d59230696115bbe7c.png" alt="" /><br />
+然后将您下载的《原神》包体，移动至 PlayCover，等待安装就可以了。<br />
+<img src="https://img.gejiba.com/images/64a6c685500968133486ccae710afe41.png" alt="" /><br />
+进度条消失后，启动原神即可。<br />
+<img src="https://img.gejiba.com/images/0f8e0e0f09980925c1f85a94d9110685.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/1fef0f6d03000f75c9c2d730a0ab0bba.png" alt="" /></p>
+<h1 id="操作方式"><a class="markdownIt-Anchor" href="#操作方式"></a> 操作方式</h1>
+<h2 id="键盘映射"><a class="markdownIt-Anchor" href="#键盘映射"></a> 键盘映射</h2>
+<h3 id="下载"><a class="markdownIt-Anchor" href="#下载"></a> 下载</h3>
+<p><a href="https://github.com/PlayCover/keymaps/tree/master/keymapping/com.miHoYo.GenshinImpact">下载键盘映射</a><br />
+如果您不能访问 Github，点击以下链接下载:<br />
+<a href="/download/Genshin_Impact_fixed_16by9.playmap">Genshin_Impact_fixed_16by9.playmap</a><br />
+<a href="/download/Genshin_Impact_fixed_16by10.playmap">Genshin_Impact_fixed_16by10.playmap</a><br />
+一般 Mac 的屏幕分辨率比例是 16 : 10。</p>
+<h3 id="导入"><a class="markdownIt-Anchor" href="#导入"></a> 导入</h3>
+<p>下载完成后，打开 PlayCover，在“原神”图标点击右键，找到“导入键盘映射布局”<br />
+<img src="https://img.gejiba.com/images/efc6855c13376b0b0a0379b07be383e4.png" alt="" /><br />
+然后找到您的键盘映射布局就可以了。<br />
+<img src="https://img.gejiba.com/images/6a44f60b24115af46d5be02b446a68bf.png" alt="" /></p>
+<h3 id="应用"><a class="markdownIt-Anchor" href="#应用"></a> 应用</h3>
+<p>随后打开原神，您可以按下 Option⌥ 键，让“原神”捕获鼠标，再次按下 Option⌥ 键，可以释放鼠标。<br />
+您可以点击状态栏的“按键映射”-“打开/关闭按键映射编辑模式”，编辑您的键盘映射。<br />
+<img src="https://img.gejiba.com/images/0caf11441df218503b6006a32166dd67.png" alt="" /></p>
+<h2 id="手柄连接"><a class="markdownIt-Anchor" href="#手柄连接"></a> 手柄连接</h2>
+<p>请您先连接手柄至 Mac。<br />
+<img src="https://img.gejiba.com/images/cee062dae17e16cd0b9a97d6ad4651ae.png" alt="" /><br />
+然后打开原神，打开“设置”<br />
+<img src="https://img.gejiba.com/images/91a9e660af575671d4739c2587cc88d4.png" alt="" /><br />
+将“触屏”改为“手柄”<br />
+<img src="https://img.gejiba.com/images/fded33a413746b6e4a4463a0726c2afc.png" alt="" /><br />
+然后就完成啦！<br />
+<img src="https://img.gejiba.com/images/7f47f18a1f5d592143ab1540f8d466d2.png" alt="" /></p>
+<h1 id="推荐观看"><a class="markdownIt-Anchor" href="#推荐观看"></a> 推荐观看</h1>
+<p>本文章没有列出一些会存在的普遍问题，推荐观看下面的视频：</p>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?bvid=BV1Xx4y1F7um&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
+</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>资源分享</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Reimu 主题去除东方 PROJECT 元素</title>
+    <url>/20230817/154130/</url>
+    <content><![CDATA[<p>如果你安装了 Reimu 主题后又不想要东方的元素了，可以看看这篇文章。</p>
+<h1 id="目录"><a class="markdownIt-Anchor" href="#目录"></a> 目录</h1>
+<p><a href="/20230817/154130/#%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E4%BF%AE%E6%94%B9">  <strong>1. 背景图片修改</strong></a><br />
+<a href="/20230817/154130/#%E5%A4%B4%E5%9B%BE%E4%BF%AE%E6%94%B9">      ———— 1.1 头图修改</a><br />
+<a href="/20230817/154130/#%E7%BB%99%E5%8D%95%E7%8B%AC%E7%9A%84%E6%96%87%E7%AB%A0%E9%85%8D%E5%9B%BE">      ———— 1.2 给单独的文章配图</a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%A4%AA%E6%9E%81%E5%9B%BE%E5%9B%BE%E6%A0%87">  <strong>2. 更改太极图图标 (重点)</strong></a><br />
+<a href="/20230817/154130/#%E8%BE%B9%E6%A0%8F%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.1 边栏图标更改</a><br />
+<a href="/20230817/154130/#%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.2 加载界面图标更改</a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E6%96%87%E5%AD%97">  <strong>3. 更改文字</strong></a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2_%E5%B0%91%E5%A5%B3%E7%A5%88%E7%A5%B7%E4%B8%AD">      ———— 3.1 更改加载界面 “少女祈祷中”</a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9_404_%E7%95%8C%E9%9D%A2">      ———— 3.2 更改 “404” 界面</a></p>
+<h1 id="背景图片修改"><a class="markdownIt-Anchor" href="#背景图片修改"></a> 背景图片修改</h1>
+<h2 id="头图修改"><a class="markdownIt-Anchor" href="#头图修改"></a> 头图修改</h2>
+<p>头图的位置在</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
+<p>您找到合适的图片之后直接更换即可。<br />
+如果您的网站速度很慢，不适合在本地存放头图，您可以更改主题目录的 _config.yml 中的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;/images/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
+<p>部分，将内容更改为：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;https://xxx.url.org/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
+<p><img src="https://img.gejiba.com/images/3b7b1a3e290b1db6151d0961726ce8eb.png" alt="" /></p>
+<h2 id="给单独的文章配图"><a class="markdownIt-Anchor" href="#给单独的文章配图"></a> 给单独的文章配图</h2>
+<p>只需您在文章的页眉添加</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cover: 指向图片的 URL</span><br><span class="line"></span><br><span class="line">// 示例：</span><br><span class="line">---</span><br><span class="line">title: 123456</span><br><span class="line">date: 1999-12-31 06:01:13</span><br><span class="line">tags: XX</span><br><span class="line">cover: https://xxx.url.org/bd3.png</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>就可以给文章配上图片了。</p>
+<h1 id="更改太极图图标"><a class="markdownIt-Anchor" href="#更改太极图图标"></a> 更改太极图图标</h1>
+<h2 id="边栏图标更改"><a class="markdownIt-Anchor" href="#边栏图标更改"></a> 边栏图标更改</h2>
+<p>请您进入 <strong>/themes/reimu/source/images/</strong> 目录，使用矢量图绘画工具打开 <strong>taichi.svg</strong> 文件。<br />
+然后在上面进行绘画操作即可。<br />
+<img src="https://img.gejiba.com/images/10f06ff8e388d28136b494546c99bd5b.png" alt="" /><br />
+画完之后保存，Hexo 刷新一遍就可以了。</p>
+<h2 id="加载界面图标更改"><a class="markdownIt-Anchor" href="#加载界面图标更改"></a> 加载界面图标更改</h2>
+<p>在执行上面的操作之后，您会发现，加载界面仍然是太极图。<br />
+莫慌。您先复制一份 <strong>taichi.svg</strong> 文件的副本，使用矢量图绘画工具打开它并进行绘画。绘画完成后不要删除，右键通过 <strong>Microsoft Visual Studio Code</strong> 或其他文本软件打开。<br />
+记住这些路径名称：<br />
+<img src="https://img.gejiba.com/images/c5943bcc8fc6ae8beabe7d337afe9480.png" alt="" /><br />
+如果发现 ellipse 和 path 开头的一段，请复制它们。<br />
+然后打开 <strong>/themes/reimu/layout/_partial/loader.ejs</strong> 文件<br />
+将这一段删除：<br />
+<img src="https://img.gejiba.com/images/a67d82f9cd84d1e7f816a547c0a175a4.png" alt="" /><br />
+然后将您刚才复制的 SVG 代码粘贴到此处。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 示例：小星星（和本站一样）</span><br><span class="line"></span><br><span class="line">&lt;path</span><br><span class="line">    sodipodi:type=&quot;star&quot;</span><br><span class="line">    style=&quot;opacity:0.967273;fill:#ffbec0;fill-opacity:0.94581282;stroke:#000000;stroke-width:13.65542089;stroke-dasharray:none&quot;</span><br><span class="line">    id=&quot;path1&quot;</span><br><span class="line">    inkscape:flatsided=&quot;false&quot;</span><br><span class="line">    sodipodi:sides=&quot;5&quot;</span><br><span class="line">    sodipodi:cx=&quot;117.15254&quot;</span><br><span class="line">    sodipodi:cy=&quot;121.49152&quot;</span><br><span class="line">    sodipodi:r1=&quot;281.59967&quot;</span><br><span class="line">    sodipodi:r2=&quot;140.79984&quot;</span><br><span class="line">    sodipodi:arg1=&quot;0.98279372&quot;</span><br><span class="line">    sodipodi:arg2=&quot;1.6111123&quot;</span><br><span class="line">    inkscape:rounded=&quot;0&quot;</span><br><span class="line">    inkscape:randomized=&quot;0&quot;</span><br><span class="line">    d=&quot;M 273.35594,355.79661 111.4776,262.17695 -57.415336,342.45403 -18.400902,159.56852 -146.93973,23.748776 39.050851,4.3389758 128.50242,-159.87933 204.43649,11.010274 388.25943,45.337523 249.19868,170.3629 Z&quot;</span><br><span class="line">    inkscape:transform-center-x=&quot;-5.2622667&quot;</span><br><span class="line">    inkscape:transform-center-y=&quot;-35.297319&quot;</span><br><span class="line">    transform=&quot;matrix(1.5003757,0,0,1.4999156,340.69227,376.01307)&quot; /&gt;</span><br></pre></td></tr></table></figure>
+<p>效果：<br />
+<img src="https://img.gejiba.com/images/ba4cf7aeb1cfb237289943c881beb7ea.png" alt="" /></p>
+<h1 id="更改文字"><a class="markdownIt-Anchor" href="#更改文字"></a> 更改文字</h1>
+<h2 id="更改加载界面_少女祈祷中"><a class="markdownIt-Anchor" href="#更改加载界面_少女祈祷中"></a> 更改加载界面_少女祈祷中</h2>
+<p>打开主题目录的 _config.yml 文件，滑动到下面，找到 preloader 字符：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">preloader:</span><br><span class="line">  enable: true</span><br><span class="line">  text: 正在载入中...</span><br><span class="line">  # text: Loading...</span><br></pre></td></tr></table></figure>
+<h2 id="更改_404_界面"><a class="markdownIt-Anchor" href="#更改_404_界面"></a> 更改_404_界面</h2>
+<p>打开 <strong>/themes/reimu/languages/zh-CN.yml</strong> 文件，找到 not_found 字符:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">not_found:</span><br><span class="line">  title: 4 0 4 (ﾟ⊿ﾟ)ﾂ</span><br><span class="line">  subtitle: 満 身 創 痍</span><br></pre></td></tr></table></figure><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>复现</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>小米HyperOS Bootloader解锁技术能力认证考试试卷</title>
     <url>/20250517/122526/</url>
     <content><![CDATA[<p><font color=red> <strong>【绝密★启用前】</strong> </font></p>
@@ -406,62 +520,6 @@ D. 二进制代码</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>PlayCover 适用的《原神》iPA 文件</title>
-    <url>/20230816/114759/</url>
-    <content><![CDATA[<h1 id="原神"><a class="markdownIt-Anchor" href="#原神"></a> 《原神》</h1>
-<h2 id="版本400-天空岛"><a class="markdownIt-Anchor" href="#版本400-天空岛"></a> 版本：4.0.0 (天空岛)</h2>
-<p>您可以单击下面地址下载：<br />
-<a href="https://pan.huang1111.cn/s/vlYgSE?path=%2F">下载原神 iPA 到设备</a></p>
-<h1 id="更新方法"><a class="markdownIt-Anchor" href="#更新方法"></a> 更新方法</h1>
-<p><strong>设备要求：Apple Silicon 的 Mac 电脑</strong></p>
-<p>如果您不知道您的 Mac 电脑能否安装，请您点击“”图标，找到“关于本机”。<br />
-如果显示的是“<em>芯片：Apple M1</em>”等，就说明您的电脑基于 Apple Silicon，<br />
-如果显示的是“<em>处理器：2.3 GHz 八核 Intel Core i9</em>“等，就说明您的电脑基于 Intel，不能安装 PlayCover 和原神。<br />
-<img src="https://img.gejiba.com/images/48597f6116725b33eb76bd09ca846ec7.png" alt="" /><br />
-请您下载好 PlayCover 软件至您的 Mac：<br />
-<a href="https://github.com/PlayCover/PlayCover/releases">下载 PlayCover</a><br />
-<img src="https://img.gejiba.com/images/19a67305b6f5527d59230696115bbe7c.png" alt="" /><br />
-然后将您下载的《原神》包体，移动至 PlayCover，等待安装就可以了。<br />
-<img src="https://img.gejiba.com/images/64a6c685500968133486ccae710afe41.png" alt="" /><br />
-进度条消失后，启动原神即可。<br />
-<img src="https://img.gejiba.com/images/0f8e0e0f09980925c1f85a94d9110685.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/1fef0f6d03000f75c9c2d730a0ab0bba.png" alt="" /></p>
-<h1 id="操作方式"><a class="markdownIt-Anchor" href="#操作方式"></a> 操作方式</h1>
-<h2 id="键盘映射"><a class="markdownIt-Anchor" href="#键盘映射"></a> 键盘映射</h2>
-<h3 id="下载"><a class="markdownIt-Anchor" href="#下载"></a> 下载</h3>
-<p><a href="https://github.com/PlayCover/keymaps/tree/master/keymapping/com.miHoYo.GenshinImpact">下载键盘映射</a><br />
-如果您不能访问 Github，点击以下链接下载:<br />
-<a href="/download/Genshin_Impact_fixed_16by9.playmap">Genshin_Impact_fixed_16by9.playmap</a><br />
-<a href="/download/Genshin_Impact_fixed_16by10.playmap">Genshin_Impact_fixed_16by10.playmap</a><br />
-一般 Mac 的屏幕分辨率比例是 16 : 10。</p>
-<h3 id="导入"><a class="markdownIt-Anchor" href="#导入"></a> 导入</h3>
-<p>下载完成后，打开 PlayCover，在“原神”图标点击右键，找到“导入键盘映射布局”<br />
-<img src="https://img.gejiba.com/images/efc6855c13376b0b0a0379b07be383e4.png" alt="" /><br />
-然后找到您的键盘映射布局就可以了。<br />
-<img src="https://img.gejiba.com/images/6a44f60b24115af46d5be02b446a68bf.png" alt="" /></p>
-<h3 id="应用"><a class="markdownIt-Anchor" href="#应用"></a> 应用</h3>
-<p>随后打开原神，您可以按下 Option⌥ 键，让“原神”捕获鼠标，再次按下 Option⌥ 键，可以释放鼠标。<br />
-您可以点击状态栏的“按键映射”-“打开/关闭按键映射编辑模式”，编辑您的键盘映射。<br />
-<img src="https://img.gejiba.com/images/0caf11441df218503b6006a32166dd67.png" alt="" /></p>
-<h2 id="手柄连接"><a class="markdownIt-Anchor" href="#手柄连接"></a> 手柄连接</h2>
-<p>请您先连接手柄至 Mac。<br />
-<img src="https://img.gejiba.com/images/cee062dae17e16cd0b9a97d6ad4651ae.png" alt="" /><br />
-然后打开原神，打开“设置”<br />
-<img src="https://img.gejiba.com/images/91a9e660af575671d4739c2587cc88d4.png" alt="" /><br />
-将“触屏”改为“手柄”<br />
-<img src="https://img.gejiba.com/images/fded33a413746b6e4a4463a0726c2afc.png" alt="" /><br />
-然后就完成啦！<br />
-<img src="https://img.gejiba.com/images/7f47f18a1f5d592143ab1540f8d466d2.png" alt="" /></p>
-<h1 id="推荐观看"><a class="markdownIt-Anchor" href="#推荐观看"></a> 推荐观看</h1>
-<p>本文章没有列出一些会存在的普遍问题，推荐观看下面的视频：</p>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?bvid=BV1Xx4y1F7um&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
-</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>资源分享</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>QEMU 基础命令学习</title>
     <url>/20220826/022653/</url>
     <content><![CDATA[<center>
@@ -730,64 +788,6 @@ Windows 11      std / VMware
 </font><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>Reimu 主题去除东方 PROJECT 元素</title>
-    <url>/20230817/154130/</url>
-    <content><![CDATA[<p>如果你安装了 Reimu 主题后又不想要东方的元素了，可以看看这篇文章。</p>
-<h1 id="目录"><a class="markdownIt-Anchor" href="#目录"></a> 目录</h1>
-<p><a href="/20230817/154130/#%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E4%BF%AE%E6%94%B9">  <strong>1. 背景图片修改</strong></a><br />
-<a href="/20230817/154130/#%E5%A4%B4%E5%9B%BE%E4%BF%AE%E6%94%B9">      ———— 1.1 头图修改</a><br />
-<a href="/20230817/154130/#%E7%BB%99%E5%8D%95%E7%8B%AC%E7%9A%84%E6%96%87%E7%AB%A0%E9%85%8D%E5%9B%BE">      ———— 1.2 给单独的文章配图</a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%A4%AA%E6%9E%81%E5%9B%BE%E5%9B%BE%E6%A0%87">  <strong>2. 更改太极图图标 (重点)</strong></a><br />
-<a href="/20230817/154130/#%E8%BE%B9%E6%A0%8F%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.1 边栏图标更改</a><br />
-<a href="/20230817/154130/#%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.2 加载界面图标更改</a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E6%96%87%E5%AD%97">  <strong>3. 更改文字</strong></a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2_%E5%B0%91%E5%A5%B3%E7%A5%88%E7%A5%B7%E4%B8%AD">      ———— 3.1 更改加载界面 “少女祈祷中”</a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9_404_%E7%95%8C%E9%9D%A2">      ———— 3.2 更改 “404” 界面</a></p>
-<h1 id="背景图片修改"><a class="markdownIt-Anchor" href="#背景图片修改"></a> 背景图片修改</h1>
-<h2 id="头图修改"><a class="markdownIt-Anchor" href="#头图修改"></a> 头图修改</h2>
-<p>头图的位置在</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
-<p>您找到合适的图片之后直接更换即可。<br />
-如果您的网站速度很慢，不适合在本地存放头图，您可以更改主题目录的 _config.yml 中的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;/images/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
-<p>部分，将内容更改为：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;https://xxx.url.org/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
-<p><img src="https://img.gejiba.com/images/3b7b1a3e290b1db6151d0961726ce8eb.png" alt="" /></p>
-<h2 id="给单独的文章配图"><a class="markdownIt-Anchor" href="#给单独的文章配图"></a> 给单独的文章配图</h2>
-<p>只需您在文章的页眉添加</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cover: 指向图片的 URL</span><br><span class="line"></span><br><span class="line">// 示例：</span><br><span class="line">---</span><br><span class="line">title: 123456</span><br><span class="line">date: 1999-12-31 06:01:13</span><br><span class="line">tags: XX</span><br><span class="line">cover: https://xxx.url.org/bd3.png</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>就可以给文章配上图片了。</p>
-<h1 id="更改太极图图标"><a class="markdownIt-Anchor" href="#更改太极图图标"></a> 更改太极图图标</h1>
-<h2 id="边栏图标更改"><a class="markdownIt-Anchor" href="#边栏图标更改"></a> 边栏图标更改</h2>
-<p>请您进入 <strong>/themes/reimu/source/images/</strong> 目录，使用矢量图绘画工具打开 <strong>taichi.svg</strong> 文件。<br />
-然后在上面进行绘画操作即可。<br />
-<img src="https://img.gejiba.com/images/10f06ff8e388d28136b494546c99bd5b.png" alt="" /><br />
-画完之后保存，Hexo 刷新一遍就可以了。</p>
-<h2 id="加载界面图标更改"><a class="markdownIt-Anchor" href="#加载界面图标更改"></a> 加载界面图标更改</h2>
-<p>在执行上面的操作之后，您会发现，加载界面仍然是太极图。<br />
-莫慌。您先复制一份 <strong>taichi.svg</strong> 文件的副本，使用矢量图绘画工具打开它并进行绘画。绘画完成后不要删除，右键通过 <strong>Microsoft Visual Studio Code</strong> 或其他文本软件打开。<br />
-记住这些路径名称：<br />
-<img src="https://img.gejiba.com/images/c5943bcc8fc6ae8beabe7d337afe9480.png" alt="" /><br />
-如果发现 ellipse 和 path 开头的一段，请复制它们。<br />
-然后打开 <strong>/themes/reimu/layout/_partial/loader.ejs</strong> 文件<br />
-将这一段删除：<br />
-<img src="https://img.gejiba.com/images/a67d82f9cd84d1e7f816a547c0a175a4.png" alt="" /><br />
-然后将您刚才复制的 SVG 代码粘贴到此处。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 示例：小星星（和本站一样）</span><br><span class="line"></span><br><span class="line">&lt;path</span><br><span class="line">    sodipodi:type=&quot;star&quot;</span><br><span class="line">    style=&quot;opacity:0.967273;fill:#ffbec0;fill-opacity:0.94581282;stroke:#000000;stroke-width:13.65542089;stroke-dasharray:none&quot;</span><br><span class="line">    id=&quot;path1&quot;</span><br><span class="line">    inkscape:flatsided=&quot;false&quot;</span><br><span class="line">    sodipodi:sides=&quot;5&quot;</span><br><span class="line">    sodipodi:cx=&quot;117.15254&quot;</span><br><span class="line">    sodipodi:cy=&quot;121.49152&quot;</span><br><span class="line">    sodipodi:r1=&quot;281.59967&quot;</span><br><span class="line">    sodipodi:r2=&quot;140.79984&quot;</span><br><span class="line">    sodipodi:arg1=&quot;0.98279372&quot;</span><br><span class="line">    sodipodi:arg2=&quot;1.6111123&quot;</span><br><span class="line">    inkscape:rounded=&quot;0&quot;</span><br><span class="line">    inkscape:randomized=&quot;0&quot;</span><br><span class="line">    d=&quot;M 273.35594,355.79661 111.4776,262.17695 -57.415336,342.45403 -18.400902,159.56852 -146.93973,23.748776 39.050851,4.3389758 128.50242,-159.87933 204.43649,11.010274 388.25943,45.337523 249.19868,170.3629 Z&quot;</span><br><span class="line">    inkscape:transform-center-x=&quot;-5.2622667&quot;</span><br><span class="line">    inkscape:transform-center-y=&quot;-35.297319&quot;</span><br><span class="line">    transform=&quot;matrix(1.5003757,0,0,1.4999156,340.69227,376.01307)&quot; /&gt;</span><br></pre></td></tr></table></figure>
-<p>效果：<br />
-<img src="https://img.gejiba.com/images/ba4cf7aeb1cfb237289943c881beb7ea.png" alt="" /></p>
-<h1 id="更改文字"><a class="markdownIt-Anchor" href="#更改文字"></a> 更改文字</h1>
-<h2 id="更改加载界面_少女祈祷中"><a class="markdownIt-Anchor" href="#更改加载界面_少女祈祷中"></a> 更改加载界面_少女祈祷中</h2>
-<p>打开主题目录的 _config.yml 文件，滑动到下面，找到 preloader 字符：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">preloader:</span><br><span class="line">  enable: true</span><br><span class="line">  text: 正在载入中...</span><br><span class="line">  # text: Loading...</span><br></pre></td></tr></table></figure>
-<h2 id="更改_404_界面"><a class="markdownIt-Anchor" href="#更改_404_界面"></a> 更改_404_界面</h2>
-<p>打开 <strong>/themes/reimu/languages/zh-CN.yml</strong> 文件，找到 not_found 字符:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">not_found:</span><br><span class="line">  title: 4 0 4 (ﾟ⊿ﾟ)ﾂ</span><br><span class="line">  subtitle: 満 身 創 痍</span><br></pre></td></tr></table></figure><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>复现</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Windows NT4.0 安装教程</title>
     <url>/20230119/063535/</url>
     <content><![CDATA[<h1 id="镜像链接"><a class="markdownIt-Anchor" href="#镜像链接"></a> 镜像链接</h1>
@@ -956,6 +956,33 @@ Windows 11      std / VMware
 </tr>
 </tbody>
 </table>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>历史锁那(Sana)专辑</title>
+    <url>/20230725/221318/</url>
+    <content><![CDATA[<center>
+<p><img src="https://img.gejiba.com/images/167d065688a66751b4bea8bdf4bae325.jpg" alt="" /></p>
+<h1 id="好きなひと"><a class="markdownIt-Anchor" href="#好きなひと"></a> 好きなひと。</h1>
+<h2 id="鎖那-honeyworks-20140817"><a class="markdownIt-Anchor" href="#鎖那-honeyworks-20140817"></a> 鎖那 × HoneyWorks [2014.08.17]</h2>
+<p>价格：120 元（带侧封）<br />
+<img src="https://img.gejiba.com/images/e65d8b14bf54ac8cd181d9343f9d61b0.png" alt="歌曲列表" /><br />
+<font color=red><strong>01</strong></font> 未来図<br />
+<font color=red><strong>02</strong></font> 告白予行練習<br />
+<font color=red><strong>03</strong></font> テレカクシ思春期<br />
+<font color=red><strong>04</strong></font> 初恋の絵本<br />
+<font color=red><strong>05</strong></font> 告白ライバル宣言<br />
+<font color=red><strong>06</strong></font> ヤキモチの答え<br />
+<font color=red><strong>07</strong></font> 病名恋ワズライ<br />
+<font color=red><strong>08</strong></font> イノコリ先生<br />
+<font color=red><strong>09</strong></font> ロリババアに恋をした<br />
+<font color=red><strong>10</strong></font> ラズベリー*モンスター</p>
+</center><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>图床已废</title>
+    <url>/20250519/124903/</url>
+    <content><![CDATA[<p>本网站原来的图床已经无法使用，而且我也没做备份。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -1227,33 +1254,6 @@ Windows 11      std / VMware
 </font><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>图床已废</title>
-    <url>/20250519/124903/</url>
-    <content><![CDATA[<p>本网站原来的图床已经无法使用，而且我也没做备份。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>历史锁那(Sana)专辑</title>
-    <url>/20230725/221318/</url>
-    <content><![CDATA[<center>
-<p><img src="https://img.gejiba.com/images/167d065688a66751b4bea8bdf4bae325.jpg" alt="" /></p>
-<h1 id="好きなひと"><a class="markdownIt-Anchor" href="#好きなひと"></a> 好きなひと。</h1>
-<h2 id="鎖那-honeyworks-20140817"><a class="markdownIt-Anchor" href="#鎖那-honeyworks-20140817"></a> 鎖那 × HoneyWorks [2014.08.17]</h2>
-<p>价格：120 元（带侧封）<br />
-<img src="https://img.gejiba.com/images/e65d8b14bf54ac8cd181d9343f9d61b0.png" alt="歌曲列表" /><br />
-<font color=red><strong>01</strong></font> 未来図<br />
-<font color=red><strong>02</strong></font> 告白予行練習<br />
-<font color=red><strong>03</strong></font> テレカクシ思春期<br />
-<font color=red><strong>04</strong></font> 初恋の絵本<br />
-<font color=red><strong>05</strong></font> 告白ライバル宣言<br />
-<font color=red><strong>06</strong></font> ヤキモチの答え<br />
-<font color=red><strong>07</strong></font> 病名恋ワズライ<br />
-<font color=red><strong>08</strong></font> イノコリ先生<br />
-<font color=red><strong>09</strong></font> ロリババアに恋をした<br />
-<font color=red><strong>10</strong></font> ラズベリー*モンスター</p>
-</center><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>无需 U 盘给 MacBook 电脑安装 Arch Linux</title>
     <url>/20230108/134420/</url>
     <content><![CDATA[<p>想装Arch Linux却没有带U盘，心急如焚的话，就看看我这个教程吧！保有效。</p>
@@ -1386,6 +1386,41 @@ VMware Fusion 虚拟机破解密钥：</li>
 <p>在餐厅忙碌的厨房里，李言成时常望着窗外熙熙攘攘的街景，喃喃自语：“这三年，已经是我命运中最好的恩赐了。”他坚信，即便命运无情，但只要有一丝光亮，就值得他去追逐与珍惜。</p>
 <p>标题：李言成的脱北之路后续<br />
 在韩国呆了四五年后，朝鲜方面把他的家人都逮捕了起来，并且使用各种手段想要把他绑架回朝鲜。在2013年5月5日中午，李言成感到阵阵不安。突然有个人来找他，说：你家里人被朝鲜绑架了，你不回去朝鲜他们就杀你全家。李言成哭了，他来之不易的美好生活就要结束了？他的家人那么惨。为什么自己逃脱别人要受罚。他实在受不了自己的家人被如此欺负，为了家人的安全，他辞掉了韩国的工作还是回到了朝鲜。回到朝鲜后，他的世界变成灰白色了。心情低落的接受朝鲜的采访和审判。他在朝鲜的电视里出镜了。他的精神十分空虚，他被迫说“我在韩国过得一点也不好！每天都想死的感觉”。朝鲜方面觉得他还是比较忠诚的，劳改了几个月就把它放了。李言成不知道的是，他这一回来，就再也出不去了。2019年6月7日，李言成的朋友跟他说“喂！你知道吗？中国现在买火车票得用身份证护照了。不能用票了”“什么？！！”，李言成再一次痛哭。虽然内心早就麻木了但是听见这种事还是很伤心，这下应该是再也出不去朝鲜了。他很难过。他在朝鲜的生活很痛苦，每天只有3个小时电力支持。水也是得去江边打水，而且房间也没有暖气，每年冬天都差点被冻死。他跪下了。他这么多年来一直很后悔当年为什么要回来。但是后悔也没有用了，他回不去向往的世界了。2020年，因为疫情，朝鲜封了海关。出去的希望更加渺茫。但是，就是这么巧。因为他在外面表现的很好，将军奖励他出国学习去朝鲜餐厅，他灰色的世界突然有了颜色！他开心的蹦了起来。这次，他回到了中国。在丹东的一家朝鲜餐厅里当厨师。“这么多年没去中国了，中国变化很大嘛。而我们的朝鲜。。。也算是一年比一年好了吧！起码没倒退唉”他感叹道。虽然这次他在中国的时间只有3年，但是这3年就是上帝给他的又一次希望，现在他在朝鲜餐厅里每天都快乐的活着。因为在中国，他起码饿不死了。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>珊瑚宫心海养成指南</title>
+    <url>/20220915/233651/</url>
+    <content><![CDATA[<p><font  face="宋体">献给各位抽到心海的同学们~</font><br />
+<font  face="宋体"><br />
+<img src="https://img.gejiba.com/images/9b0eb764a0ac82311a641c0c879ec1ec.jpg" alt="" /><br />
+<img src="https://img.gejiba.com/images/32d21d0e305c9d5a21a56fb8dc992737.gif" alt="" /></p>
+<h2 id="圣遗物"><a class="markdownIt-Anchor" href="#圣遗物"></a> 圣遗物</h2>
+<p>建议使用<font face="宋体" color=#9393FF><strong>海</font><font  face="宋体" color=#FF60AF>染</font><font face="宋体" color=#46A3FF>四件套</strong></font>。<br />
+双爆<font face="宋体" color=red><strong>越少越好，不要堆双爆</strong></font>。</p>
+<h3 id="词条"><a class="markdownIt-Anchor" href="#词条"></a> 词条</h3>
+<p><font  face="宋体">生之花：<font face="宋体" color=red><strong>生命值</strong></font><br />
+<img src="https://img.gejiba.com/images/07ad11abca89d87bd1ae38612e54cbe4.jpg" alt="" /><br />
+死之羽：<font face="宋体" color=red><strong>攻击力</strong></font><br />
+<img src="https://img.gejiba.com/images/ea4acec0d7fd5b0ff0bb789fb965d28e.jpg" alt="" /><br />
+理之冠：<font color=red><strong>治疗加成</strong></font>（可以使用生命）<br />
+<img src="https://img.gejiba.com/images/6865e4d0d785f80d26c9b51409787372.jpg" alt="" /><br />
+时之沙：<font color=red><strong>生命值</strong></font><br />
+<img src="https://img.gejiba.com/images/d7763d67dab5e0bc3a78c0f63c197824.jpg" alt="" /><br />
+空之杯：<font color=red><strong>水元素伤害加成</strong></font><br />
+<img src="https://img.gejiba.com/images/989b021bb7fa09b6cfa7cf591337f2dd.jpg" alt="" /><br />
+</font></p>
+<h2 id="武器"><a class="markdownIt-Anchor" href="#武器"></a> 武器</h2>
+<p>使用<font face="宋体" color=#CA8EC2><strong>试作金铂</strong></font>即可。如果追求更高可以抽取<font color=#FFD306><strong>不灭月华</strong></font>。</p>
+<h2 id="命座"><a class="markdownIt-Anchor" href="#命座"></a> 命座</h2>
+<p>零命即可，一般没必要抽取命座。</p>
+<h2 id="组队"><a class="markdownIt-Anchor" href="#组队"></a> 组队</h2>
+<p>可以放进<b>“神鹤万心”</b>配合打永冻流：<br />
+<font color=#FFD306><strong>神里绫华</strong></font>、<font color=#FFD306><strong>珊瑚宫心海</strong></font>、<font color=#FFD306><strong>申鹤</strong></font>、<font color=#FFD306><strong>枫原万叶</strong></font>。</p>
+<p><font face="宋体">还有心海武装队：</font><br />
+<font face="宋体" color=#FFD306><strong>珊瑚宫心海</strong></font>、<font face="宋体" color=#CA8EC2><strong>菲谢尔</strong></font>、<font face="宋体" color=#CA8EC2><strong>北斗</strong></font>、<font face="宋体" color=#CA8EC2><strong>行秋</strong></font>。<br />
+<font face="宋体" color=red>心海武装队和砂糖武装队不一样的是，心海武装队可以随意搭配后三位角色。</font><br />
+</font></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -1637,41 +1672,6 @@ vocal: 鎖那  mix: n.k
 <div style="position:relative; padding-bottom:75%; width:100%; height:0">
     <iframe src="//player.bilibili.com/player.html?bvid=BV1M14y1t7LK&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
 </div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>珊瑚宫心海养成指南</title>
-    <url>/20220915/233651/</url>
-    <content><![CDATA[<p><font  face="宋体">献给各位抽到心海的同学们~</font><br />
-<font  face="宋体"><br />
-<img src="https://img.gejiba.com/images/9b0eb764a0ac82311a641c0c879ec1ec.jpg" alt="" /><br />
-<img src="https://img.gejiba.com/images/32d21d0e305c9d5a21a56fb8dc992737.gif" alt="" /></p>
-<h2 id="圣遗物"><a class="markdownIt-Anchor" href="#圣遗物"></a> 圣遗物</h2>
-<p>建议使用<font face="宋体" color=#9393FF><strong>海</font><font  face="宋体" color=#FF60AF>染</font><font face="宋体" color=#46A3FF>四件套</strong></font>。<br />
-双爆<font face="宋体" color=red><strong>越少越好，不要堆双爆</strong></font>。</p>
-<h3 id="词条"><a class="markdownIt-Anchor" href="#词条"></a> 词条</h3>
-<p><font  face="宋体">生之花：<font face="宋体" color=red><strong>生命值</strong></font><br />
-<img src="https://img.gejiba.com/images/07ad11abca89d87bd1ae38612e54cbe4.jpg" alt="" /><br />
-死之羽：<font face="宋体" color=red><strong>攻击力</strong></font><br />
-<img src="https://img.gejiba.com/images/ea4acec0d7fd5b0ff0bb789fb965d28e.jpg" alt="" /><br />
-理之冠：<font color=red><strong>治疗加成</strong></font>（可以使用生命）<br />
-<img src="https://img.gejiba.com/images/6865e4d0d785f80d26c9b51409787372.jpg" alt="" /><br />
-时之沙：<font color=red><strong>生命值</strong></font><br />
-<img src="https://img.gejiba.com/images/d7763d67dab5e0bc3a78c0f63c197824.jpg" alt="" /><br />
-空之杯：<font color=red><strong>水元素伤害加成</strong></font><br />
-<img src="https://img.gejiba.com/images/989b021bb7fa09b6cfa7cf591337f2dd.jpg" alt="" /><br />
-</font></p>
-<h2 id="武器"><a class="markdownIt-Anchor" href="#武器"></a> 武器</h2>
-<p>使用<font face="宋体" color=#CA8EC2><strong>试作金铂</strong></font>即可。如果追求更高可以抽取<font color=#FFD306><strong>不灭月华</strong></font>。</p>
-<h2 id="命座"><a class="markdownIt-Anchor" href="#命座"></a> 命座</h2>
-<p>零命即可，一般没必要抽取命座。</p>
-<h2 id="组队"><a class="markdownIt-Anchor" href="#组队"></a> 组队</h2>
-<p>可以放进<b>“神鹤万心”</b>配合打永冻流：<br />
-<font color=#FFD306><strong>神里绫华</strong></font>、<font color=#FFD306><strong>珊瑚宫心海</strong></font>、<font color=#FFD306><strong>申鹤</strong></font>、<font color=#FFD306><strong>枫原万叶</strong></font>。</p>
-<p><font face="宋体">还有心海武装队：</font><br />
-<font face="宋体" color=#FFD306><strong>珊瑚宫心海</strong></font>、<font face="宋体" color=#CA8EC2><strong>菲谢尔</strong></font>、<font face="宋体" color=#CA8EC2><strong>北斗</strong></font>、<font face="宋体" color=#CA8EC2><strong>行秋</strong></font>。<br />
-<font face="宋体" color=red>心海武装队和砂糖武装队不一样的是，心海武装队可以随意搭配后三位角色。</font><br />
-</font></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>黑翼猫 Extended Kernel Project 中国网络环境下载</title>
