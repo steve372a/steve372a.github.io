@@ -1,0 +1,584 @@
+
+    <!DOCTYPE html>
+    <html lang="zh-CN"
+            
+          
+    >
+    <head>
+    <meta charset="utf-8">
+    
+
+    
+
+    
+    <title>
+        Apple A7 设备降级到 10.3.3 系统 |
+        
+        Sanakaprix 的个人小站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CUbuntu%20Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+    
+<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free/css/v4-font-face.min.css">
+
+    
+<link rel="stylesheet" href="/css/loader.css">
+
+    <meta name="description" content="A7 的机器性能放到今天可以说是完全不合格了。最新系统非常卡，今天我们来降级！让他流畅一些。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Apple A7 设备降级到 10.3.3 系统">
+<meta property="og:url" content="http://example.com/20220815/013515/index.html">
+<meta property="og:site_name" content="Sanakaprix 的个人小站">
+<meta property="og:description" content="A7 的机器性能放到今天可以说是完全不合格了。最新系统非常卡，今天我们来降级！让他流畅一些。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img.gejiba.com/images/9ea7514ba09b7128226ba5231a40ba9d.png">
+<meta property="og:image" content="https://img.gejiba.com/images/c5e9175306a6226e49fad54cbf722bda.png">
+<meta property="og:image" content="https://img.gejiba.com/images/c74987f4b630b46df57fac969aca8ef3.png">
+<meta property="og:image" content="https://img.gejiba.com/images/5194621142f936b4ff57a28328d69211.png">
+<meta property="og:image" content="https://img.gejiba.com/images/75fa330ca2a8541f26187dc603b894be.jpg">
+<meta property="og:image" content="https://img.gejiba.com/images/f0df81048ef6666b6c4a3ced0e7302e4.jpg">
+<meta property="article:published_time" content="2022-08-14T17:35:15.000Z">
+<meta property="article:modified_time" content="2022-08-25T05:29:02.000Z">
+<meta property="article:author" content="Sanakaprix">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img.gejiba.com/images/9ea7514ba09b7128226ba5231a40ba9d.png">
+    
+        <link rel="alternate" href="/atom.xml" title="Sanakaprix 的个人小站" type="application/atom+xml">
+    
+    
+        <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    
+        
+<link rel="stylesheet" href="https://unpkg.com/typeface-source-code-pro@1.1.13/index.css">
+
+    
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        
+<link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+    
+    
+    
+    
+    
+<script src="https://unpkg.com/pace-js@1.2.4/pace.min.js"></script>
+
+    
+        
+<link rel="stylesheet" href="https://unpkg.com/wowjs@1.1.3/css/libs/animate.css">
+
+        
+<script src="https://unpkg.com/wowjs@1.1.3/dist/wow.min.js"></script>
+
+        <script>
+          new WOW({
+            offset: 0,
+            mobile: true,
+            live: false
+          }).init();
+        </script>
+    
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+    <body>
+    
+
+    <div id="container">
+        <div id="wrap">
+            <header id="header">
+    
+        <img data-src="/images/banner.jpg" data-sizes="auto" alt="Apple A7 设备降级到 10.3.3 系统" class="lazyload">
+    
+    <div id="header-outer" class="outer">
+        <div id="header-title" class="inner">
+            <div id="logo-wrap">
+                
+                    
+                    
+                        <a href="/" id="logo"><h1>Apple A7 设备降级到 10.3.3 系统</h1></a>
+                    
+                
+            </div>
+            
+                
+                
+            
+        </div>
+        <div id="header-inner">
+            <nav id="main-nav">
+                <a id="main-nav-toggle" class="nav-icon"></a>
+                
+                    <span class="main-nav-link-wrap">
+                        <span class="main-nav-icon"></span>
+                        <a class="main-nav-link" href="/">首页</a>
+                    </span>
+                
+                    <span class="main-nav-link-wrap">
+                        <span class="main-nav-icon"></span>
+                        <a class="main-nav-link" href="/archives">归档</a>
+                    </span>
+                
+                    <span class="main-nav-link-wrap">
+                        <span class="main-nav-icon"></span>
+                        <a class="main-nav-link" href="/about">关于</a>
+                    </span>
+                
+                    <span class="main-nav-link-wrap">
+                        <span class="main-nav-icon"></span>
+                        <a class="main-nav-link" href="/images">镜像站</a>
+                    </span>
+                
+                    <span class="main-nav-link-wrap">
+                        <span class="main-nav-icon"></span>
+                        <a class="main-nav-link" href="/rqbus-pedia">任丘公交档案</a>
+                    </span>
+                
+            </nav>
+            <nav id="sub-nav">
+                
+                    <a id="nav-rss-link" class="nav-icon" href="/atom.xml"
+                       title="RSS 订阅"></a>
+                
+                
+            </nav>
+            <div id="search-form-wrap">
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <div id="content" class="outer">
+                <section id="main"><article id="post-Apple-A7-设备降级到-10-3-3-系统" class="h-entry article article-type-post"
+         itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <div class="article-inner">
+        <div class="article-meta">
+            <div class="article-date wow slideInLeft">
+    <a href="/20220815/013515/" class="article-date-link">
+        <time datetime="2022-08-14T17:35:15.000Z"
+              itemprop="datePublished">2022-08-15</time>
+    </a>
+</div>
+
+            
+
+        </div>
+        <div class="hr-line"></div>
+        
+
+        <div class="e-content article-entry" itemprop="articleBody">
+            
+                <h2 id="准备开始"><a class="markdownIt-Anchor" href="#准备开始"></a> 准备开始</h2>
+<h3 id="设备"><a class="markdownIt-Anchor" href="#设备"></a> 设备</h3>
+<p>这里我列出了 A7 设备的降级情况，你们可以参考一下。</p>
+<table>
+<thead>
+<tr>
+<th>设备</th>
+<th>是否可以降级</th>
+<th>发布年期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iPhone 5s</td>
+<td>可以</td>
+<td>2013年</td>
+</tr>
+<tr>
+<td>iPad mini 2</td>
+<td>可以(iPad4,6不能降级)</td>
+<td>2013年</td>
+</tr>
+<tr>
+<td>iPad Air</td>
+<td>可以</td>
+<td>2013年</td>
+</tr>
+<tr>
+<td>iPad mini 3</td>
+<td>不能降级</td>
+<td>2014年</td>
+</tr>
+</tbody>
+</table>
+<p>部分机器是不能降级的，一定要看清楚！<br />
+依赖</p>
+<p>1.macOS系统，不要用虚拟机，黑苹果白苹果皆可。推荐白苹果。<br />
+<font color=red>Windows 和 Linux 也可以降级，比较麻烦。不能使用此教程。这里我贴上项目地址，你们可以去看看：</font><a target="_blank" rel="noopener" href="https://github.com/LukeZGD/iOS-OTA-Downgrader">Github 项目跳转</a><br />
+2.当然是你的固件啦！</p>
+<h2 id="开始咯~"><a class="markdownIt-Anchor" href="#开始咯~"></a> 开始咯～</h2>
+<p>首先我们需要安装 Homebrew。这里我推荐使用国内网路地址：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/zsh -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure>
+<p>等待片刻，然后输入下面的命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install libusb</span><br></pre></td></tr></table></figure>
+<p>然后我们下载 LeetDown 降级工具。鉴于国内复杂的网络环境，我专门准备了下载地址供你们下载，版本1.0.5：点我下载<br />
+安装完成后，可能会提示“意外退出”的提示，不用担心。<br />
+<img src="https://img.gejiba.com/images/9ea7514ba09b7128226ba5231a40ba9d.png" alt="" /><br />
+可以直接使用以下方法修复。输入命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo codesign --force --deep --sign - /Applications/LeetDown.app</span><br></pre></td></tr></table></figure>
+<p><img src="https://img.gejiba.com/images/c5e9175306a6226e49fad54cbf722bda.png" alt="" /><br />
+上方的 xcode 开头的命令在安装 Homebrew 的时候就要求你运行了，无需再次运行。”<br />
+运行完成此命令后，重新启动 LeetDown 软件。<br />
+<img src="https://img.gejiba.com/images/c74987f4b630b46df57fac969aca8ef3.png" alt="" /><br />
+点击第一个按钮，选择你设备的固件。如果你还没下载固件，推荐你在爱思助手网站下载：<a target="_blank" rel="noopener" href="https://www.i4.cn/firmware.html">点击进入下载页面</a><br />
+<font color=red>稍等一会，然后将你的设备进入 DFU 模式。进入方法是：先是长按电源键+HOME键 15 秒，然后松开电源键(但切记一定不要松开 HOME 键)再按十秒即可。</font><br />
+然后点击第二个按钮即可。<br />
+点击后会让我们选择使用 ipwndfu 还是 pwnedDFU，我们这里选择 pwnedDFU。<br />
+<img src="https://img.gejiba.com/images/5194621142f936b4ff57a28328d69211.png" alt="" /><br />
+如果一切顺利的话，等待一会后设备会红屏然后绿屏然后出现 Apple Logo。<br />
+<img src="https://img.gejiba.com/images/75fa330ca2a8541f26187dc603b894be.jpg" alt="" /><br />
+然后一台崭新的 iOS 10.3.3 系统就安装完成啦～<br />
+<img src="https://img.gejiba.com/images/f0df81048ef6666b6c4a3ced0e7302e4.jpg" alt="" /><br />
+希望此教程能对你有帮助！感谢你看到这里！</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+            
+        </div>
+        <footer class="article-footer">
+            <a data-url="http://example.com/20220815/013515/" data-id="cmb1712lt0001lig47dn5dn9h" data-title="Apple A7 设备降级到 10.3.3 系统"
+               class="article-share-link">分享</a>
+            
+                <a href="/20220815/013515/#comments" class="article-comment-link">
+                    <span class="post-comments-count valine-comment-count" data-xid="/20220815/013515/"
+                          itemprop="commentCount"></span>
+                    留言
+                </a>
+            
+            
+            
+            
+
+        </footer>
+    </div>
+    
+        
+    <nav id="article-nav" class="wow fadeInUp">
+        
+            <div class="article-nav-link-wrap article-nav-link-left">
+                
+                    
+                    
+                        <img data-src="/images/banner.jpg" data-sizes="auto" alt="黑翼猫 Extended Kernel Project 中国网络环境下载"
+                             class="lazyload">
+                    
+                
+                <a href="/20220818/010924/"></a>
+                <div class="article-nav-caption">前一篇</div>
+                <h3 class="article-nav-title">
+                    
+                        黑翼猫 Extended Kernel Project 中国网络环境下载
+                    
+                </h3>
+            </div>
+        
+        
+    </nav>
+
+
+    
+</article>
+
+
+    <section id="comments" class="vcomment">
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+</section>
+                
+                    <aside id="sidebar">
+    <div class="sidebar-wrap wow fadeInRight">
+        <div class="sidebar-author">
+            <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="Sanakaprix" class="lazyload">
+            <div class="sidebar-author-name">Sanakaprix</div>
+            <div class="sidebar-description"></div>
+        </div>
+        <div class="sidebar-state">
+            <div class="sidebar-state-article">
+                <div>文章</div>
+                <div class="sidebar-state-number">18</div>
+            </div>
+            <div class="sidebar-state-category">
+                <div>分类</div>
+                <div class="sidebar-state-number">0</div>
+            </div>
+            <div class="sidebar-state-tag">
+                <div>标签</div>
+                <div class="sidebar-state-number">3</div>
+            </div>
+        </div>
+        <div class="sidebar-social">
+            
+                <div class=icon-github>
+                    <a href=https://github.com/Steve372yeyeye itemprop="url" target="_blank"></a>
+                </div>
+            
+        </div>
+        <div class="sidebar-menu">
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">首页</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/archives"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">归档</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/about"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">关于</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/images"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">镜像站</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/rqbus-pedia"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">任丘公交档案</div>
+                </div>
+            
+        </div>
+        <font color=red><a href="/music/">想听其他歌曲</a></font>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=260 height=86 src="//music.163.com/outchain/player?type=2&id=31245630&auto=1&height=66"></iframe>
+    </div>
+    
+        
+
+    
+        
+    <div class="widget-wrap wow fadeInRight">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/%E5%85%89%EF%BC%81%E9%81%87%EF%BC%81/" style="font-size: 10px;">光！遇！</a> <a href="/tags/%E5%A4%8D%E7%8E%B0/" style="font-size: 10px;">复现</a> <a href="/tags/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/" style="font-size: 10px;">资源分享</a>
+        </div>
+    </div>
+
+
+    
+        
+    <div class="widget-wrap wow fadeInRight">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/05/">五月 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/01/">一月 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">八月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">七月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">一月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">九月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a></li></ul>
+        </div>
+    </div>
+
+
+    
+</aside>
+                
+            </div>
+            <footer id="footer" class="wow fadeInUp">
+    <div style="width: 100%; overflow: hidden"><div class="footer-line"></div></div>
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            
+            <div>
+                <span class="icon-copyright"></span>
+                2022-2025
+                <span class="footer-info-sep"></span>
+                Sanakaprix
+            </div>
+            
+                <div>
+                    基于&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>&nbsp;
+                    Theme.<a href="https://github.com/D-Sketon/hexo-theme-reimu" target="_blank">Reimu</a>
+                </div>
+            
+            
+                <div>
+                    <span class="icon-brush"></span>
+                    22k
+                    &nbsp;|&nbsp;
+                    <span class="icon-coffee"></span>
+                    01:29
+                </div>
+            
+            
+                <div>
+                    <span class="icon-eye"></span>
+                    <span id="busuanzi_container_site_pv">总访问量&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+                    &nbsp;|&nbsp;
+                    <span class="icon-user"></span>
+                    <span id="busuanzi_container_site_uv">总访客量&nbsp;<span id="busuanzi_value_site_uv"></span></span>
+                </div>
+            
+        </div>
+    </div>
+</footer>
+
+        </div>
+        <nav id="mobile-nav">
+    <div class="sidebar-wrap">
+        <div class="sidebar-author">
+            <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="Sanakaprix" class="lazyload">
+            <div class="sidebar-author-name">Sanakaprix</div>
+            <div class="sidebar-description"></div>
+        </div>
+        <div class="sidebar-state">
+            <div class="sidebar-state-article">
+                <div>文章</div>
+                <div class="sidebar-state-number">18</div>
+            </div>
+            <div class="sidebar-state-category">
+                <div>分类</div>
+                <div class="sidebar-state-number">0</div>
+            </div>
+            <div class="sidebar-state-tag">
+                <div>标签</div>
+                <div class="sidebar-state-number">3</div>
+            </div>
+        </div>
+        <div class="sidebar-social">
+            
+                <div class=icon-github>
+                    <a href=https://github.com/Steve372yeyeye itemprop="url" target="_blank"></a>
+                </div>
+            
+        </div>
+        <div class="sidebar-menu">
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">首页</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/archives"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">归档</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/about"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">关于</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/images"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">镜像站</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/rqbus-pedia"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">任丘公交档案</div>
+                </div>
+            
+        </div>
+    </div>
+</nav>
+
+        
+<script src="https://unpkg.com/jquery@3.7.0/dist/jquery.min.js"></script>
+
+
+<script src="https://unpkg.com/lazysizes@5.3.2/lazysizes.min.js"></script>
+
+
+<script src="https://unpkg.com/clipboard@2.0.11/dist/clipboard.min.js"></script>
+
+
+
+    
+<script src="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+
+    
+<script src="https://unpkg.com/busuanzi@2.3.0/bsz.pure.mini.js"></script>
+
+
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+    
+<script src="https://unpkg.com/valine@1.5.1/dist/Valine.min.js"></script>
+
+    <script>
+        var GUEST_INFO = ['nick', 'mail', 'link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function (item) {
+            return GUEST_INFO.indexOf(item) > -1
+        });
+        var recordIP = JSON.parse('true');
+        var highlight = JSON.parse('true');
+
+        new Valine({
+            el: '.vcomment',
+            appId: "BDmerTFfCbwfAcBjrBsJ5ey2-MdYXbMMI",
+            appKey: "6JPPpqFYseWCOQ53iaAAvTn4",
+            placeholder: "Just go go",
+            pageSize: '10',
+            avatar: 'mp',
+            lang: 'zh-cn',
+            recordIP: recordIP,
+            highlight: highlight
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="site-search">
+        <div class="algolia-popup popup">
+            <div class="algolia-search">
+                <span class="algolia-search-input-icon"></span>
+                <div class="algolia-search-input" id="algolia-search-input"></div>
+            </div>
+
+            <div class="algolia-results">
+                <div id="algolia-stats"></div>
+                <div id="algolia-hits"></div>
+                <div id="algolia-pagination" class="algolia-pagination"></div>
+            </div>
+
+            <span class="popup-btn-close"></span>
+        </div>
+    </div>
+    <!-- hexo injector body_end start -->
+<script src="/js/insertHighlight.js"></script>
+<!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":false},"log":false});</script></body>
+    </html>
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+    <script type="text/javascript" src="/js/fireworks.js"></script>
+
