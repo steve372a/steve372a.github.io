@@ -1,0 +1,29 @@
+[DesktopShortcut]
+\Desktop\ADBTOOLS.lnk
+
+[InstallerName]
+czadb
+
+[OS]
+8.1
+
+[PackageName]
+czawa ADB 工具包
+
+[ProFile]
+简单好用的 adb 管理工具，作者：czawa
+
+[ProFile_En]
+Easy-to-Use ADB Management Tool – Developed by czawa
+
+[URL]
+/pies/czadb.pie
+
+[Version]
+4.2.2
+
+[InstallDir]
+\8.1\czadb
+
+[AutorunFile]
+null
