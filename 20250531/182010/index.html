@@ -1,0 +1,597 @@
+
+    <!DOCTYPE html>
+    <html lang="zh-CN"
+            
+          
+    >
+    <head>
+    <meta charset="utf-8">
+    
+
+    
+
+    
+    <title>
+        逐行解析 Package Installer 源码 |
+        
+        Sanakaprix 的个人小站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CUbuntu%20Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+    
+<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free/css/v4-font-face.min.css">
+
+    
+<link rel="stylesheet" href="/css/loader.css">
+
+    <meta name="description" content="北京花园桥地铁站2025-4-28（今日）发生杀人事件，杀人犯泄露是任丘市市委书记王少杰的亲戚，王少杰精心设下的舆论、网络高墙被推翻，2025-05-01上午9:00，王少杰精心策划的任丘市马拉松开赛，中央也在这里，开赛32分钟后会战道3公里处到12公里处段全部坍塌，导致1628人死亡，另有1473人受伤，885人重伤后离世。王少杰立马变成阶下囚，被带走。2025-05-02宣布王少杰被调查，20">
+<meta property="og:type" content="article">
+<meta property="og:title" content="逐行解析 Package Installer 源码">
+<meta property="og:url" content="http://example.com/20250531/182010/index.html">
+<meta property="og:site_name" content="Sanakaprix 的个人小站">
+<meta property="og:description" content="北京花园桥地铁站2025-4-28（今日）发生杀人事件，杀人犯泄露是任丘市市委书记王少杰的亲戚，王少杰精心设下的舆论、网络高墙被推翻，2025-05-01上午9:00，王少杰精心策划的任丘市马拉松开赛，中央也在这里，开赛32分钟后会战道3公里处到12公里处段全部坍塌，导致1628人死亡，另有1473人受伤，885人重伤后离世。王少杰立马变成阶下囚，被带走。2025-05-02宣布王少杰被调查，20">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-05-31T10:20:10.000Z">
+<meta property="article:modified_time" content="2025-06-09T12:13:20.750Z">
+<meta property="article:author" content="Sanakaprix">
+<meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" href="/atom.xml" title="Sanakaprix 的个人小站" type="application/atom+xml">
+    
+    
+        <link rel="shortcut icon" href="/images/favicon.ico">
+    
+    
+        
+<link rel="stylesheet" href="https://unpkg.com/typeface-source-code-pro@1.1.13/index.css">
+
+    
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        
+<link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+    
+    
+    
+    
+    
+<script src="https://unpkg.com/pace-js@1.2.4/pace.min.js"></script>
+
+    
+        
+<link rel="stylesheet" href="https://unpkg.com/wowjs@1.1.3/css/libs/animate.css">
+
+        
+<script src="https://unpkg.com/wowjs@1.1.3/dist/wow.min.js"></script>
+
+        <script>
+          new WOW({
+            offset: 0,
+            mobile: true,
+            live: false
+          }).init();
+        </script>
+    
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+    <body>
+    
+
+    <div id="container">
+        <div id="wrap">
+            <header id="header">
+    
+        <img data-src="/images/banner.jpg" data-sizes="auto" alt="逐行解析 Package Installer 源码" class="lazyload">
+    
+    <div id="header-outer" class="outer">
+        <div id="header-title" class="inner">
+            <div id="logo-wrap">
+                
+                    
+                    
+                        <a href="/" id="logo"><h1>逐行解析 Package Installer 源码</h1></a>
+                    
+                
+            </div>
+            
+                
+                
+            
+        </div>
+        <div id="header-inner">
+            <nav id="main-nav">
+                <a id="main-nav-toggle" class="nav-icon"></a>
+                
+                    <span class="main-nav-link-wrap">
+                        <span class="main-nav-icon"></span>
+                        <a class="main-nav-link" href="/">首页</a>
+                    </span>
+                
+                    <span class="main-nav-link-wrap">
+                        <span class="main-nav-icon"></span>
+                        <a class="main-nav-link" href="/archives">归档</a>
+                    </span>
+                
+                    <span class="main-nav-link-wrap">
+                        <span class="main-nav-icon"></span>
+                        <a class="main-nav-link" href="/about">关于</a>
+                    </span>
+                
+                    <span class="main-nav-link-wrap">
+                        <span class="main-nav-icon"></span>
+                        <a class="main-nav-link" href="/images">镜像站</a>
+                    </span>
+                
+                    <span class="main-nav-link-wrap">
+                        <span class="main-nav-icon"></span>
+                        <a class="main-nav-link" href="/rqbus-pedia">任丘公交档案</a>
+                    </span>
+                
+            </nav>
+            <nav id="sub-nav">
+                
+                    <a id="nav-rss-link" class="nav-icon" href="/atom.xml"
+                       title="RSS 订阅"></a>
+                
+                
+            </nav>
+            <div id="search-form-wrap">
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <div id="content" class="outer">
+                <section id="main"><article id="post-在写批处理时遇到的一些问题" class="h-entry article article-type-post"
+         itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <div class="article-inner">
+        <div class="article-meta">
+            <div class="article-date wow slideInLeft">
+    <a href="/20250531/182010/" class="article-date-link">
+        <time datetime="2025-05-31T10:20:10.000Z"
+              itemprop="datePublished">2025-05-31</time>
+    </a>
+</div>
+
+            
+
+        </div>
+        <div class="hr-line"></div>
+        
+
+        <div class="e-content article-entry" itemprop="articleBody">
+            
+                <p>北京花园桥地铁站2025-4-28（今日）发生杀人事件，杀人犯泄露是任丘市市委书记王少杰的亲戚，王少杰精心设下的舆论、网络高墙被推翻，2025-05-01上午9:00，王少杰精心策划的任丘市马拉松开赛，中央也在这里，开赛32分钟后会战道3公里处到12公里处段全部坍塌，导致1628人死亡，另有1473人受伤，885人重伤后离世。王少杰立马变成阶下囚，被带走。2025-05-02宣布王少杰被调查，2025-05-03王少杰和沧州市的一些人，总共318人被判处死刑。（不是死缓，随便编几个罪行），就死在了北京市大兴区某刑场（编一个地址）<br />
+王少杰，1989年生人，沧州市新华区人，曾任沧州市沧县县委书记、现任任丘市委书记<br />
+假设直辖市的乡镇街道是正处级，北京的区是正厅级，全市是正部级。其他城市要降一级<br />
+写出两人每一段履历分析<br />
+履历：<br />
+2007.4-2011.3：沧州市任丘市吕公堡镇南头村科员（重点讲述，吕公堡镇再后来也被划出去）<br />
+2011.3-2014.6：沧州市沧县旧州镇镇委书记、镇长<br />
+2014.6-2016.3：北京市地铁金台夕照站安检员<br />
+2016.03-2020.09：沧州市沧县县委书记<br />
+2020.09-2025.05：任丘市市长，市委书记。<br />
+刘孔丰，1964年生人，北京市丰台区人，曾任北京市委书记、中央政治局常委、任丘市新的市委书记。<br />
+履历：<br />
+1975.06-1978.04：北京市丰台区知青干部<br />
+1978.04-1981.02：山西省忻州市原平县班村干部<br />
+1981.02-1985.05：在北京大学学习<br />
+1985.05-1989.09：山西省忻州市原平县常委<br />
+1989.09-1992.04：山西省忻州市原平县县委书记（正处级）<br />
+1992.04-1995.07：北京市通县永乐店乡乡长（正处级）<br />
+1995.07-1996.03：北京市通县副县长（副厅级）<br />
+1996.03-1999.04：北京市通州区区长（正厅级）<br />
+1999.04-2001.03：北京市通州区区委书记，（正厅级）<br />
+2001.03-2003.12：北京市通州区区委书记、区长，（正厅级）<br />
+2003.12-2008.04：北京市副市长，北京市委常委（副部级）<br />
+2008.12-2012.08：北京市副市长，北京市委常委，中央政治局委员（正部级）<br />
+2012.12-2017.03：北京市市长、北京市委书记，北京市委常委，中央政治局委员（副国级）<br />
+2017.12-2025.05：北京市市长、北京市委书记，北京市委常委，中央政治局常委（正国级）<br />
+2025.05-：北京市委书记、任丘市市长、任丘市委书记，北京市委常委，中央政治局常委（正国级）</p>
+<p>罪行：<br />
+1.2021年4月把任丘市开发区北区的行政区划租界给日本海老名市，成立海老名租界（中国人进入需要办理，租期100年（永久），GDP归海老名市。<br />
+2.任丘市高铁西站3台6线被变成高阳高铁站2台4线。任丘不再有高铁<br />
+3.努力把任丘站搞的停止办理客运业务！任丘汽车站也停止营业！（上任前曾经有72趟车停靠，属于二等站）<br />
+4.2020年12月，7条烂尾路拨款后就不建设了。不是烂尾，是根本没建设。<br />
+5.任丘各种路坏了也不修，导致2人因为大坑死亡，还有马拉松事件。<br />
+6.2022年开始，任丘城西鸟不拉屎地方大力发展房地产，而连接这几个小区和大道的路却一直烂尾！<br />
+7.2023年9月勾结沧州市，把任丘市开发区南区划归沧州市新华区。GDP归新华区。<br />
+8.2023年9月把任丘市华油地区划归沧州市新华区，任丘市市区只占有一半的土地，任丘全域只占有原来3%的土地，进入总部桥头（交界），新华区的管界，实行了与北京市一样的政策，任何车辆、人都需要通过检查站。原因：王少杰不想管。<br />
+9.2021年10月要求任丘市市区的蕾莎、悦都汇、燕春楼等老牌商场全部永久停业，随后于2022年2月19日，全部爆破拆除。任丘人要去大型一点的商场，必须去华油地区，同时从这天开始，任丘人进入华油地区需要收取30元通行费！2月23日，任丘人开始游行示威，被王少杰暴力镇压（重点），导致17人死亡。王少杰：这几个商场都有二次元文化，应该拆除。实际上，王少杰是为了自己的少杰商厦垄断任丘市商场做准备。<br />
+10.2021年任丘GDP为721.5亿元，2022年下降了33.8%、2023年下降了22.9%、2024年下降了73.7%，给任丘经济造成严重影响。（请算出具体GDP）<br />
+11.王少杰规定个体户开店必须缴纳10万元准备费，导致任丘89%的个体户关门，牌匾背景必须是绿色，字体必须是思源黑体。<br />
+12.2023年9月华北油田和华北石化被王少杰赶出任丘，禁止在任丘炼油和办公，炼油厂关闭。<br />
+13.开始对自己不满的人进行寒蝉效应，见到人就杀。<br />
+15.2023年9月将任丘市的大部分乡镇和街道（永丰路街道、出岸镇、石门桥镇、吕公堡镇、长丰镇、鄚州镇、苟各庄镇、梁召镇、辛中驿镇、麻家坞镇、北辛庄镇、议论堡镇、于村镇、青塔乡、七间房乡、北汉乡）全部划归沧州市新华区。<br />
+渤海路街道、会战道街道、油建路街道属于华油地区，已经之前划入。<br />
+16.勾结某些媒体，大肆制造这些地区的划出都是任丘人自己造成的原因，是任丘人不争气，跟王少杰毫无关系。<br />
+17.勾结某些平台，在中央调查前，大肆要求平台删除与自己相关的所有不好的作品。</p>
+<p>王少杰死刑后，国家希望能要回来海老名租界，中国不承认这个租界，日本顶不住压力，还给了中国，不过希望中国在这里搞中日示范区，中国政府同意，表示：“任丘市的毁灭性打击，中国很惋惜，日本方面建立中日示范区，对中国和任丘都是非常大的好机会“。<br />
+2026年，因为任丘直辖，任丘将建立地铁。任丘人可能还有点还想感谢王少杰<br />
+现在任丘市市委书记为刘孔丰，任丘市因为王少杰破坏严重，从县级市变为直辖市，沧州市不再管理任丘市。新华区管理的雁翎工业园区（任丘开发区南区）、华北油田地区全部收回任丘市。王少杰影响的所有事全部要恢复，严重警告沧州市委！2025年GDP上升至875.9亿元，2027年GDP上升至4966.9亿元（因为各地回归任丘）</p>
+<p>在开头也写出来任丘历年GDP，不写算式。<br />
+任丘市原来就有的所有街道乡镇包括：新华路街道、西环路街道、永丰路街道、中华路街道、渤海路街道、会战道街道、油建路街道、出岸镇、石门桥镇、吕公堡镇、长丰镇、鄚州镇、苟各庄镇、梁召镇、辛中驿镇、麻家坞镇、北辛庄镇、议论堡镇、于村镇、青塔乡、七间房乡、北汉乡。请你比对。<br />
+都要算出来具体GDP。<br />
+不要省略。写出纪录文章。然后写出Wikipedia，写出节目分析（写出沧州人看见任丘直辖的不甘和讨厌6条评论，写出沧州人理解任丘的6条评论，写出沧县人表示王少杰事迹的6条评论。再写出任丘人对这些沧州人表示生气10条评论，任丘人其他评论10条。注意这些所有的东西全部都本来属于任丘。），虚构。<br />
+不要给我概括，就说全文。第一人称<br />
+过程详细写，10000字以上，说中文，要在开头写两人的信息和等级，重点分析他们的等级（例如正处级什么的），和每一段履历分析，开头写出群众10条评论。刘孔丰写出北京市委书记（重点北京）和中央政治局常委。在开头写出王少杰动机长篇：他偶然离开党居然去当北京地铁安检员，这是他第一次去北京，在沧县，他就是发表讲话的时候出来一会，说什么明年又稳抓经济文化啥啥的，都是放屁，来到任丘就当土皇帝，他憎恨任丘是沧州断崖式第一名GDP（沧州市区GDP 337亿元，任丘725亿元），他的家乡沧州市区都不如任丘市，决心搞垮任丘。<br />
+在开头写出刘孔丰动机长篇：北京人，对沧州和任丘没有私心，并且因为等级高，来到任丘就是为了救任丘，狠抓经济，严打腐败犯罪。2027年任丘GDP（写出增速）。<br />
+任丘市为县级市<br />
+不显示Thinking Process。</p>
+<p>赖清德简历。2025-04-21被习近平</p>
+<p>不要省略。虚构。只写出采访<br />
+不要给我概括。写一篇记录文章，再写一篇Wikipedia<br />
+过程详细写，10000字以上，说中文，简体字</p>
+<p>赖清德政府2023年12月26日就宣布戒严，宣布变成朝鲜那样，宣传也不再说一般的民主自由，而是说色情就是民主自由，晚上，其他台都说再见，电视节目只有当天新开播的台湾中央电视台（TCTV）了，该频道从7:30播送至1:00，里面的内容只有赖清德的日常、赖清德的一天、赖清德和谁干嘛干嘛去了《赖清德外交手段》、赖清德吃的什么《赖清德的月光餐》、赖清德拉屎实录《赖清德厕所奇闻》，这个节目是类似于广告那样的，每天24小时播出赖清德拉屎的无码录像和粑粑的形状。每天播出。同时居然最民主最自由的节目，居然是每天凌晨0:20播出的《赖主席严选》里面几乎都是18禁无码的色情A片！妈的，这不是害小孩吗？台湾的家长现在都不敢开电视，生怕开了电视就是主席拉屎或者色情片！甚至台湾在24年7月5日开播了TCTV-2（色情频道），专门无码播出！而TCTV-1则由综合频道改为拉屎频道，《赖清德的日常》、《赖清德的一天》、《赖清德外交手段》和《赖清德的月光餐》全部停播，只留下《赖清德厕所奇闻》和《赖主席严选》。而7月6日，台湾要求每个人必须观看1小时的TCTV-1（拉屎频道），眼睛不能离开电视，电视必须安装监控，不看判1年劳改。<br />
+TCTV-2来历，是曾经台湾的香蕉台，2023年12月26日停播，2024年7月5日收编为TCTV-2。<br />
+TCTV-3是赖清德频道，播出《赖清德的日常》、《赖清德的一天》、《赖清德外交手段》和《赖清德的月光餐》节目，预计2024年12月1日开始播出<br />
+2024年7月5日《赖清德厕所奇闻》改版，改为赖清德和报名市民的粑粑比拼，由粑粑评委（蒋万安）进行粑粑形状、颜色、邀请其他人试吃两人粑粑，最后打分，最后选出胜者，胜者获得3万新台币奖励，赖清德不会每次都赢。</p>
+<p>2024年1月1日，台湾开始禁用部分词语：例如捷运要改叫地下铁道，高铁要改叫高速铁道，地下铁道站全部改为复兴、光明、月神、统一、战争、战友等类似于朝鲜地铁的车站，赖清德越吃越胖，已经变成金正恩二代了，2024年3月12日，赖清德，开始宣扬他是月亮的儿子，是台湾的月亮。同日，媒体宣传的群众见到赖清德变成了朝鲜那样，跳起来摆手，眼睛流着个人崇拜的泪水，类似于\o/这样的动作。2024年6月7日，台湾中央电视台发布文章《慈父赖清德有遁地术》和《慈爱赖清德飞起来在天上视察复兴特别市旁边的辉煌昌盛之永恒都会中心建成区域外围生态和谐之绿色动脉环绕型新生代智慧科技枢纽城区宏伟的超凡繁星之光璀璨未来之全球典范市新地下铁道的建成》，《慈父赖清德有遁地术》内容是这样的：台湾赖清德主席，我们慈爱的父亲，他站在阿里山，视察着群众，突然，他的头转向地下，遁地。赖主席去哪了？随后才知道，他有遁地术，现在已经到达位于台北市的台湾民主主义人民共和国中央政府的办公室前！开始了一天慈爱的工作（请改编成2000字，加很多形容词那种的），台湾已经彻底变成北朝鲜。而这些视频和图像传向中国大陆，大陆人都要笑死了！本来金正恩的朝鲜就够好笑的了，后来台湾也出现了赖清德！哈哈哈，随后大陆人给赖清德改名成了癞蛤蟆酱！经常跟大陆网红门酱（男，380斤，很丑，爱玩原神）比。这下台湾人再也不能说自己比大陆更民主了！</p>
+<p>复兴特别市：原台北市<br />
+新北市：复兴特别市旁边的辉煌昌盛之永恒都会中心建成区域外围生态和谐之绿色动脉环绕型新生代智慧科技枢纽城区宏伟的超凡繁星之光璀璨未来之全球典范市（必须说全名，否则劳改3年）<br />
+桃园市：军主市<br />
+台中市：先军市<br />
+台南市：团结市<br />
+高雄市：斗争市<br />
+2024年1月1日起，改名，谁说原名判劳改65年，新北市必须说：复兴特别市旁边的辉煌昌盛之永恒都会中心建成区域外围生态和谐之绿色动脉环绕型新生代智慧科技枢纽城区宏伟的超凡繁星之光璀璨未来之全球典范都市，不得简写，缩写。</p>
+<p>重点写出新北市改名<br />
+重点加粗。要求不要带宗教元素，只带有类似朝鲜的政治元素，月亮类比于朝鲜的太阳。<br />
+不要省略。虚构。写出台湾人采访3名大陆人采访3名，写出台湾TVBS电视台逃窜至北京市（写出北京更民主）（北京市朝阳区劲松三区甲302号(劲松地铁站D西南口步行70米)）时，在Youtube和抖音的电视节目对话（2名评论员，笑死，偏蓝，嘲讽民进党，重点讲出拉屎和色情），和5名网络评论<br />
+不要给我概括。再写3篇Wikipedia（台湾、TCTV-1、TCTV-2、TCTV-3），写一篇TVBS迁址的分析，写出台湾官方文章：色情就是民主自由，其他国家都没有民主、没有自由！（1000字以上，形容词非常非常多），然后TVBS分析这个文章。<br />
+过程详细写，10000字以上，说中文，简体字<br />
+不要展示Thinking Process</p>
+<p>不要省略。虚构。写出台湾人采访3名大陆人采访3名，写出采访3名爱看里番的大陆人感谢TCTV-4提供无码清晰里番，并且表示以前的一言不合就开始做爱的里番太俗、太老套，这种质量垃圾的番还很多，而现在台湾开始生产软色情里番了！我们猎奇的人心里也很爽了，比日本的里番强多了！感谢台湾，写出台湾TVBS电视台逃窜至北京市（写出北京更民主）（北京市朝阳区劲松三区甲302号(劲松地铁站D西南口步行70米)）时，在Youtube和抖音的电视节目对话（2名评论员，笑死，偏蓝，嘲讽民进党，重点讲出拉屎和色情、还有国际新闻消失），和5名网络评论<br />
+不要给我概括。再写3篇Wikipedia（北京、台湾、TCTV-1、TCTV-2、TCTV-3、TCTV-4），写一篇TVBS迁址的分析，写出台湾官方文章：色情就是民主自由，其他国家都没有民主、没有自由！（1000字以上，形容词非常非常多），然后TVBS分析这个文章。<br />
+过程详细写，10000字以上，说中文，简体字</p>
+<p>重点加粗。要求不要带宗教元素，只带有类似朝鲜的政治元素，月亮类比于朝鲜的太阳。<br />
+写出2024-07-08《赖清德厕所奇闻》节目内容，写出对话等，再写出TVBS电视台（24小时播出，但是台湾人不翻墙看不到）评论内容（2名评论员），写出台湾人基本上0:27开始睡觉，2:00之后，其他频道开始播出，观众会醒来继续看TCTV-4。然后写出Youtube 10条评论+每条评论有2个回帖。<br />
+大纲：节目第62分钟前，赖清德和陈华市民的屎被展现出来，首先，两名市民和蒋万安闻闻粑粑，市民蒋万安都不敢去，主持人要求他们去，闻闻谁的更臭，结果是陈华的粑粑更臭，陈华得10分。<br />
+节目第90分钟前，评测环节开始，两名市民和蒋万安开始评测谁的粑粑更美丽，赖清德的粑粑是香蕉形状的，陈华的粑粑是羊粑粑点似的，赖清德的粑粑更好看，赖清德得20分。<br />
+赖清德的粑粑是黄色的，陈华的粑粑绿色的，陈华的粑粑更稀有，陈华得20分。<br />
+专家评价：赖清德的粑粑虽然美丽，但是黄色的缺少稀有度，所以分数低。<br />
+节目第130分钟前，开启试吃环节，蒋万安先行试吃，他吃了赖清德的粑粑一半，只是吐了出来。然后是市民吃了赖清德的粑粑，只是吐了出来。然后蒋万安试吃陈华的粑粑，臭到晕倒！市民吃了陈华的粑粑，也臭到晕倒，陈华得了50分。<br />
+最终，陈华获得90分，赖清德得了20分钟，陈华获胜！3万元新台币给了陈华。<br />
+节目第247分钟前，正片结束，开始花絮：陈华、赖清德拉粑粑的样子、新鲜粑粑的样子、<br />
+最终，节目第384分钟，终于全片结束。，电视台结束播放，但是观众必须要看剩下时间会发出各种尖锐测试音的测试卡，这时候才能关电视，大部分观众2:00之后会准时起床看色情片，看到五六点要么到学校睡要么上班睡觉，所以每到停止节目之后这个时候，全台湾的电视都会爆发剧烈响声。算出来节目播出经过的具体时间！（18:00开始）</p>
+<p>2024-05-01，每年大陆这个时候都会把孙中山的画像摆到人民英雄纪念碑前，有一名台北人居然拿着染料，污染了画像，然后用蹩脚的英文说：“台湾中国1边3国！西藏台湾香港都分裂，孙中山蒋光头都是可恶的在野党政权人士，我们台湾民主党不需要这样的叛徒！“然后该人被抓，台湾赖清德居然说这是应该的！并表示：台湾和中国独裁文化没关系，和大和民族才有关系。随后</p>
+<p>2025-6-1，这些绿蛙（284名）突然跑到北京市，在石景山高井（中国人民解放军北京军区的位置）地区说：“台湾中国一边一国，中共应该灭亡！青虫！”，然后开始强进军区大院打砸抢，导致解放军38人死亡，然后被抓。（重点讲高井的位置）<br />
+6月2日，赖清德自己前往北京，要求放人，结果自己被抓。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+            
+        </div>
+        <footer class="article-footer">
+            <a data-url="http://example.com/20250531/182010/" data-id="cmcmtmdur001tnig47lnk7b04" data-title="逐行解析 Package Installer 源码"
+               class="article-share-link">分享</a>
+            
+                <a href="/20250531/182010/#comments" class="article-comment-link">
+                    <span class="post-comments-count valine-comment-count" data-xid="/20250531/182010/"
+                          itemprop="commentCount"></span>
+                    留言
+                </a>
+            
+            
+            
+            
+
+        </footer>
+    </div>
+    
+        
+    <nav id="article-nav" class="wow fadeInUp">
+        
+        
+            <div class="article-nav-link-wrap article-nav-link-right">
+                
+                    
+                    
+                        <img data-src="/images/banner.jpg" data-sizes="auto" alt="小米HyperOS Bootloader解锁技术能力认证考试试卷"
+                             class="lazyload">
+                    
+                
+                <a href="/20250517/122526/"></a>
+                <div class="article-nav-caption">后一篇</div>
+                <h3 class="article-nav-title">
+                    
+                        小米HyperOS Bootloader解锁技术能力认证考试试卷
+                    
+                </h3>
+            </div>
+        
+    </nav>
+
+
+    
+</article>
+
+
+    <section id="comments" class="vcomment">
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+</section>
+                
+                    <aside id="sidebar">
+    <div class="sidebar-wrap wow fadeInRight">
+        <div class="sidebar-author">
+            <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="Sanakaprix" class="lazyload">
+            <div class="sidebar-author-name">Sanakaprix</div>
+            <div class="sidebar-description"></div>
+        </div>
+        <div class="sidebar-state">
+            <div class="sidebar-state-article">
+                <div>文章</div>
+                <div class="sidebar-state-number">18</div>
+            </div>
+            <div class="sidebar-state-category">
+                <div>分类</div>
+                <div class="sidebar-state-number">0</div>
+            </div>
+            <div class="sidebar-state-tag">
+                <div>标签</div>
+                <div class="sidebar-state-number">3</div>
+            </div>
+        </div>
+        <div class="sidebar-social">
+            
+                <div class=icon-github>
+                    <a href=https://github.com/steve372a itemprop="url" target="_blank"></a>
+                </div>
+            
+        </div>
+        <div class="sidebar-menu">
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">首页</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/archives"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">归档</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/about"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">关于</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/images"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">镜像站</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/rqbus-pedia"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">任丘公交档案</div>
+                </div>
+            
+        </div>
+        <font color=red><a href="/music/">想听其他歌曲</a></font>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=260 height=86 src="//music.163.com/outchain/player?type=2&id=31245630&auto=1&height=66"></iframe>
+    </div>
+    
+        
+
+    
+        
+    <div class="widget-wrap wow fadeInRight">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/%E5%85%89%EF%BC%81%E9%81%87%EF%BC%81/" style="font-size: 10px;">光！遇！</a> <a href="/tags/%E5%A4%8D%E7%8E%B0/" style="font-size: 10px;">复现</a> <a href="/tags/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/" style="font-size: 10px;">资源分享</a>
+        </div>
+    </div>
+
+
+    
+        
+    <div class="widget-wrap wow fadeInRight">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/05/">五月 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/01/">一月 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">八月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">七月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">一月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">九月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a></li></ul>
+        </div>
+    </div>
+
+
+    
+</aside>
+                
+            </div>
+            <footer id="footer" class="wow fadeInUp">
+    <div style="width: 100%; overflow: hidden"><div class="footer-line"></div></div>
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            
+            <div>
+                <span class="icon-copyright"></span>
+                2022-2025
+                <span class="footer-info-sep"></span>
+                Sanakaprix
+            </div>
+            
+                <div>
+                    基于&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>&nbsp;
+                    Theme.<a href="https://github.com/D-Sketon/hexo-theme-reimu" target="_blank">Reimu</a>
+                </div>
+            
+            
+                <div>
+                    <span class="icon-brush"></span>
+                    27.2k
+                    &nbsp;|&nbsp;
+                    <span class="icon-coffee"></span>
+                    01:46
+                </div>
+            
+            
+        </div>
+    </div>
+</footer>
+
+        </div>
+        <nav id="mobile-nav">
+    <div class="sidebar-wrap">
+        <div class="sidebar-author">
+            <img data-src="/avatar/avatar.jpg" data-sizes="auto" alt="Sanakaprix" class="lazyload">
+            <div class="sidebar-author-name">Sanakaprix</div>
+            <div class="sidebar-description"></div>
+        </div>
+        <div class="sidebar-state">
+            <div class="sidebar-state-article">
+                <div>文章</div>
+                <div class="sidebar-state-number">18</div>
+            </div>
+            <div class="sidebar-state-category">
+                <div>分类</div>
+                <div class="sidebar-state-number">0</div>
+            </div>
+            <div class="sidebar-state-tag">
+                <div>标签</div>
+                <div class="sidebar-state-number">3</div>
+            </div>
+        </div>
+        <div class="sidebar-social">
+            
+                <div class=icon-github>
+                    <a href=https://github.com/steve372a itemprop="url" target="_blank"></a>
+                </div>
+            
+        </div>
+        <div class="sidebar-menu">
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">首页</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/archives"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">归档</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/about"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">关于</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/images"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">镜像站</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/rqbus-pedia"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">任丘公交档案</div>
+                </div>
+            
+        </div>
+    </div>
+</nav>
+
+        
+<script src="https://unpkg.com/jquery@3.7.0/dist/jquery.min.js"></script>
+
+
+<script src="https://unpkg.com/lazysizes@5.3.2/lazysizes.min.js"></script>
+
+
+<script src="https://unpkg.com/clipboard@2.0.11/dist/clipboard.min.js"></script>
+
+
+
+    
+<script src="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+    
+<script src="https://unpkg.com/valine@1.5.1/dist/Valine.min.js"></script>
+
+    <script>
+        var GUEST_INFO = ['nick', 'mail', 'link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function (item) {
+            return GUEST_INFO.indexOf(item) > -1
+        });
+        var recordIP = JSON.parse('true');
+        var highlight = JSON.parse('true');
+
+        new Valine({
+            el: '.vcomment',
+            appId: "BDmerTFfCbwfAcBjrBsJ5ey2-MdYXbMMI",
+            appKey: "6JPPpqFYseWCOQ53iaAAvTn4",
+            placeholder: "Just go go",
+            pageSize: '10',
+            avatar: 'mp',
+            lang: 'zh-cn',
+            recordIP: recordIP,
+            highlight: highlight
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="site-search">
+        <div class="algolia-popup popup">
+            <div class="algolia-search">
+                <span class="algolia-search-input-icon"></span>
+                <div class="algolia-search-input" id="algolia-search-input"></div>
+            </div>
+
+            <div class="algolia-results">
+                <div id="algolia-stats"></div>
+                <div id="algolia-hits"></div>
+                <div id="algolia-pagination" class="algolia-pagination"></div>
+            </div>
+
+            <span class="popup-btn-close"></span>
+        </div>
+    </div>
+    <!-- hexo injector body_end start -->
+<script src="/js/insertHighlight.js"></script>
+<!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":false},"log":false});</script></body>
+    </html>
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+    <script type="text/javascript" src="/js/fireworks.js"></script>
+
