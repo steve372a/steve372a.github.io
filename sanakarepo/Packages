@@ -7,7 +7,7 @@ Depends: firmware (>= 5.0), mobilesubstrate (>= 0.9.5100), firmware (<= 18.2)
 Conflicts: us.hackulo.appsync50, us.hackulo.appsync50plus, com.hackyouriphone.appsync7, com.teiron.ppsync, appsync50plus2.25pp, com.linusyang.appsync, com.sull.appsyncunified, com.sull.appsyncunifiedbeta, com.xsellize.appsync50, com.xsellize.appsync50plus, appsync50plus.178, appsync50plus2.178, cydia.net.angelxwind.appsyncunified, com.ifucker.appsync, com.sexyphonetech.appsyncunified, appsyncunifiedofficial, org.digbick.asufixed, cn.mingmei.asu623517234615234813, technology.goated.appsync, technology.goated.appsyncunified, vaginalfisting.appsynctool, science.xnu.substitute, akemi.appsink, akemi.appsyncunifed, akemi.appsyncunifed2, akemi.appsyncunifedpatched, appsyncpatched, appsyncrootless, weaponized.autism.technology.appsyncunified, ellekit (< 1.1)
 Replaces: us.hackulo.appsync50, net.angelxwind.appsyncunified
 Provides: appsync, net.angelxwind.appsyncunified
-Filename: debs/ai.akemi.appsyncunified_116.0_iphoneos-arm.deb
+Filename: ./source/sanakarepo/debs/ai.akemi.appsyncunified_116.0_iphoneos-arm.deb
 Size: 51658
 MD5sum: 536009a11dad57e48a5563224eaffaff
 SHA1: e0fa412cb3c26718887edd834804c88909297079
@@ -19,12 +19,29 @@ Author: Karen/あけみ, Linus Yang <karen@akemi.ai>
 Depiction: https://cydia.akemi.ai/?page/ai.akemi.appsyncunified
 Name: AppSync Unified
 
+Package: com.coolbooter.cbuntether
+Version: 1.0-release
+Architecture: iphoneos-arm
+Maintainer: CoolBooter <coolbooterios@gmail.com>
+Depends: mobilesubstrate
+Filename: ./source/sanakarepo/debs/sanaka_cbuntether.deb
+Size: 21644
+MD5sum: 1ea8cd6c3f40124d06bc585b62c4e890
+SHA1: b09f8c1a0f2a2604c10d006215467d5526386013
+SHA256: 589a3577165b6fa06084e8bce149eab6c89ccaaf574089c2fe70123faf720c8c
+Section: System
+Description: "Untethers" an existing CoolBooter install
+ Coolbooter Untetherer 是一个 CoolBooter 的扩展，它允许用户自动启动进入他们的第二个操作系统。
+ 要禁用自动启动，请在开机时按住音量减键。
+Author: CoolBooter <coolbooterios@gmail.com>
+Name: CoolBooter Untetherer 自动启动第二系统
+
 Package: com.coolbooter.coolbooter
 Version: 1.6-release
 Architecture: iphoneos-arm
 Maintainer: CoolBooter <coolbooterios@gmail.com>
 Depends: xpwn, zip, unzip, ldid, diskdev-cmds, firmware (>= 7.0)
-Filename: debs/com.coolbooter.coolbooter-1.6-release.deb
+Filename: ./source/sanakarepo/debs/com.coolbooter.coolbooter-1.6-release.deb
 Size: 33805256
 MD5sum: a9a390a10541ccaf617a901118554ec9
 SHA1: c713f8ac4e1ffd266f6d8bdd3c41f7bea8a22b3f
@@ -39,7 +56,7 @@ Version: 1.0-release
 Architecture: iphoneos-arm
 Maintainer: CoolBooter <coolbooterios@gmail.com>
 Depends: xpwn, zip, unzip, ldid, diskdev-cmds, wget, firmware (>= 5.0)
-Filename: debs/com.coolbooter.coolbootercli-1.0-release.deb
+Filename: ./source/sanakarepo/debs/com.coolbooter.coolbootercli-1.0-release.deb
 Size: 23677008
 MD5sum: 08f4148c453f26a5fc8d0fab27cba5ee
 SHA1: 9e21c112fbef1a6fb42eb6dc881ca4494baa8bcd
@@ -48,6 +65,22 @@ Section: System
 Description: CoolBooter is an all-in-one dual booting utility for jailbroken 32 bit iOS devices.
 Author: CoolBooter <coolbooterios@gmail.com>
 Name: CoolBooter CLI
+
+Package: com.isoftru.bochs
+Version: 1.0.0-1
+Architecture: iphoneos-arm
+Maintainer: isoftcom.com <isoftteamsupport@gmail.com>>
+Filename: ./source/sanakarepo/debs/bochsios.deb
+Size: 36844432
+MD5sum: 2fc90234ca64aec8d45d14b938b722c9
+SHA1: a1aeb6638d3a14378b4eefca73e4e38ee1fb5275
+SHA256: b4b076aa5fe88dc2dad22b3da9a329043b5efbc3c4eefb96f57f45a0273fc382
+Section: System
+Homepage: http://isoftcom.com/
+Description: Run Windows 3.11 and Windows 95 on your iPhone. It's slow, but worked.
+Author: isoftcom.com <isoftteamsupport@gmail.com>
+Dev: isoftru
+Name: Bochs (Win95 for iPhone)
 
 Package: cydia
 Version: 1.1.37-3
@@ -58,7 +91,7 @@ Depends: bzip2, darwintools, debianutils, dpkg (>= 1.19.1), gzip, sed, shell-cmd
 Conflicts: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, cydia-lproj, ispazio.net, modmyifone, ste, yellowsn0w.com, zodttd
 Replaces: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, cydia-lproj, ispazio.net, modmyifone, saurik, ste, yellowsn0w.com, zodttd
 Provides: bigbossbetarepo, cydia-sources, cydia-lproj
-Filename: debs/cydia_1.1.37-3_iphoneos-arm64.deb
+Filename: ./source/sanakarepo/debs/cydia_1.1.37-3_iphoneos-arm64.deb
 Size: 1234456
 MD5sum: 92a5bd48083927bcc57a218079aa77a9
 SHA1: 2d7bde4c0735edf84e440a7748c3f2bd4f19c592
