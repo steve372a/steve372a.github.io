@@ -19,6 +19,36 @@ Author: Karen/あけみ, Linus Yang <karen@akemi.ai>
 Depiction: https://cydia.akemi.ai/?page/ai.akemi.appsyncunified
 Name: AppSync Unified
 
+Package: com.coolbooter.coolbooter
+Version: 1.6-release
+Architecture: iphoneos-arm
+Maintainer: CoolBooter <coolbooterios@gmail.com>
+Depends: xpwn, zip, unzip, ldid, diskdev-cmds, firmware (>= 7.0)
+Filename: debs/com.coolbooter.coolbooter-1.6-release.deb
+Size: 33805256
+MD5sum: a9a390a10541ccaf617a901118554ec9
+SHA1: c713f8ac4e1ffd266f6d8bdd3c41f7bea8a22b3f
+SHA256: a1cc1907e4c0a62325ddf0654796dcaa3623ea57db0c9456125c9e0744caa1c3
+Section: System
+Description: CoolBooter is an all-in-one dual booting utility for jailbroken 32 bit iOS devices.
+Author: CoolBooter <coolbooterios@gmail.com>
+Name: CoolBooter
+
+Package: com.coolbooter.coolbootercli
+Version: 1.0-release
+Architecture: iphoneos-arm
+Maintainer: CoolBooter <coolbooterios@gmail.com>
+Depends: xpwn, zip, unzip, ldid, diskdev-cmds, wget, firmware (>= 5.0)
+Filename: debs/com.coolbooter.coolbootercli-1.0-release.deb
+Size: 23677008
+MD5sum: 08f4148c453f26a5fc8d0fab27cba5ee
+SHA1: 9e21c112fbef1a6fb42eb6dc881ca4494baa8bcd
+SHA256: c2dbc8c015f0df4ff84d3076c321428280be118d8c838660d0b61226f26f4814
+Section: System
+Description: CoolBooter is an all-in-one dual booting utility for jailbroken 32 bit iOS devices.
+Author: CoolBooter <coolbooterios@gmail.com>
+Name: CoolBooter CLI
+
 Package: cydia
 Version: 1.1.37-3
 Architecture: iphoneos-arm64
