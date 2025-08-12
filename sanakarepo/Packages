@@ -105,3 +105,38 @@ Depiction: https://repo.ironside.org.uk/cydia-exp/
 Icon: http://cydia.saurik.com/icon@2x/cydia7.png
 Name: Cydia Installer [Experimental]
 
+Package: openssl
+Version: 0.9.8zg-13
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 6164
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: debs/openssl_0.9.8zg-13_iphoneos-arm.deb
+Size: 1031128
+MD5sum: 405f8d4c91aab0cf85e6f8ad93b8ab30
+SHA1: 3aedf9d8393b7c8a426840223625a601dd7d089d
+SHA256: 0e57f4b5968fc32c1fb56c1361d163a1ffdcda9173145551aff839cfc19be664
+Section: Security
+Priority: standard
+Description: SSL library and cryptographic tools
+Name: OpenSSL
+
+Package: vn.gsm.displayrecorder
+Version: 1.3.20K
+Architecture: iphoneos-arm
+Maintainer: Cydia.vn <repo@cydia.vn>
+Installed-Size: 2464
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.2), libactivator (>= 1.9.1), gdata-objectivec-client | firmware (>= 7.0), firmware (>= 3), openssl, firmware (<< 9.9), com.rpetrich.rocketbootstrap (>= 1.0.1) | firmware (<< 7.0), com.a3tweaks.flipswitch (>= 1.0.5)
+Filename: debs/vn.gsm.displayrecorder_1.3.20K.deb
+Size: 914032
+MD5sum: a7fc80f27c726500b5c0ea36f4c3e97f
+SHA1: c910e71e4f82537e29b3377b9a8e94f176056599
+SHA256: 96a5e0dff5496f627fb2c4094fedb34814fb415f0b63084d78312330320bf447
+Section: !CydiaVn-Apps
+Homepage: http://cydia.vn/
+Description: Record the display in real-time, send to camera roll, web interface, ProTapper-style touch circles and Activator integration
+Author: Ryan Petrich <repo@cydia.vn>
+Depiction: http://cydia.vn/depic/t971/
+Name: Display Recorder
+Sponsor: Cydia.vn Blog's <http://cydia.vn/>
+
