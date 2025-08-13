@@ -66,6 +66,27 @@ Description: CoolBooter is an all-in-one dual booting utility for jailbroken 32 
 Author: CoolBooter <coolbooterios@gmail.com>
 Name: CoolBooter CLI
 
+Package: com.dewmobile.zapyapro
+Version: 2.1.2
+Architecture: iphoneos-arm
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Installed-Size: 25123
+Depends: firmware (>= 5.0), mobilesubstrate
+Filename: debs/zapyapro_2.1.2.deb
+Size: 10444156
+MD5sum: f08cce8e4737d72a6076117530c0529a
+SHA1: 993db0ee0b31aacb03daaba20c1a81658a906651
+SHA256: c7d3d018de8cdf0ecec020298e03361ad8678be8845602af0ee5ba9aa687dffa
+Section: Utilities
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=zapyaproDp
+Description: share media & files to other phones
+ Best transfer tools on mobile phones, allow users to share all kind of contents such as Apps, Music, Video, Photos and Files to iOS and Android devices.
+Author: Dewmobile <release@dewmobile.net>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=zapyaproDp
+Dev: dewmobile
+Icon: file:///Applications/Zapya.app/Icon.png
+Name: 快牙Zapya
+
 Package: com.isoftru.bochs
 Version: 1.0.0-1
 Architecture: iphoneos-arm

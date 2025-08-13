@@ -462,235 +462,6 @@ D. 二进制代码</p>
       </tags>
   </entry>
   <entry>
-    <title>Reimu 主题去除东方 PROJECT 元素</title>
-    <url>/20230817/154130/</url>
-    <content><![CDATA[<p>如果你安装了 Reimu 主题后又不想要东方的元素了，可以看看这篇文章。</p>
-<h1 id="目录"><a class="markdownIt-Anchor" href="#目录"></a> 目录</h1>
-<p><a href="/20230817/154130/#%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E4%BF%AE%E6%94%B9">  <strong>1. 背景图片修改</strong></a><br />
-<a href="/20230817/154130/#%E5%A4%B4%E5%9B%BE%E4%BF%AE%E6%94%B9">      ———— 1.1 头图修改</a><br />
-<a href="/20230817/154130/#%E7%BB%99%E5%8D%95%E7%8B%AC%E7%9A%84%E6%96%87%E7%AB%A0%E9%85%8D%E5%9B%BE">      ———— 1.2 给单独的文章配图</a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%A4%AA%E6%9E%81%E5%9B%BE%E5%9B%BE%E6%A0%87">  <strong>2. 更改太极图图标 (重点)</strong></a><br />
-<a href="/20230817/154130/#%E8%BE%B9%E6%A0%8F%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.1 边栏图标更改</a><br />
-<a href="/20230817/154130/#%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.2 加载界面图标更改</a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E6%96%87%E5%AD%97">  <strong>3. 更改文字</strong></a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2_%E5%B0%91%E5%A5%B3%E7%A5%88%E7%A5%B7%E4%B8%AD">      ———— 3.1 更改加载界面 “少女祈祷中”</a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9_404_%E7%95%8C%E9%9D%A2">      ———— 3.2 更改 “404” 界面</a></p>
-<h1 id="背景图片修改"><a class="markdownIt-Anchor" href="#背景图片修改"></a> 背景图片修改</h1>
-<h2 id="头图修改"><a class="markdownIt-Anchor" href="#头图修改"></a> 头图修改</h2>
-<p>头图的位置在</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
-<p>您找到合适的图片之后直接更换即可。<br />
-如果您的网站速度很慢，不适合在本地存放头图，您可以更改主题目录的 _config.yml 中的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;/images/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
-<p>部分，将内容更改为：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;https://xxx.url.org/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
-<p><img src="https://img.gejiba.com/images/3b7b1a3e290b1db6151d0961726ce8eb.png" alt="" /></p>
-<h2 id="给单独的文章配图"><a class="markdownIt-Anchor" href="#给单独的文章配图"></a> 给单独的文章配图</h2>
-<p>只需您在文章的页眉添加</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cover: 指向图片的 URL</span><br><span class="line"></span><br><span class="line">// 示例：</span><br><span class="line">---</span><br><span class="line">title: 123456</span><br><span class="line">date: 1999-12-31 06:01:13</span><br><span class="line">tags: XX</span><br><span class="line">cover: https://xxx.url.org/bd3.png</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>就可以给文章配上图片了。</p>
-<h1 id="更改太极图图标"><a class="markdownIt-Anchor" href="#更改太极图图标"></a> 更改太极图图标</h1>
-<h2 id="边栏图标更改"><a class="markdownIt-Anchor" href="#边栏图标更改"></a> 边栏图标更改</h2>
-<p>请您进入 <strong>/themes/reimu/source/images/</strong> 目录，使用矢量图绘画工具打开 <strong>taichi.svg</strong> 文件。<br />
-然后在上面进行绘画操作即可。<br />
-<img src="https://img.gejiba.com/images/10f06ff8e388d28136b494546c99bd5b.png" alt="" /><br />
-画完之后保存，Hexo 刷新一遍就可以了。</p>
-<h2 id="加载界面图标更改"><a class="markdownIt-Anchor" href="#加载界面图标更改"></a> 加载界面图标更改</h2>
-<p>在执行上面的操作之后，您会发现，加载界面仍然是太极图。<br />
-莫慌。您先复制一份 <strong>taichi.svg</strong> 文件的副本，使用矢量图绘画工具打开它并进行绘画。绘画完成后不要删除，右键通过 <strong>Microsoft Visual Studio Code</strong> 或其他文本软件打开。<br />
-记住这些路径名称：<br />
-<img src="https://img.gejiba.com/images/c5943bcc8fc6ae8beabe7d337afe9480.png" alt="" /><br />
-如果发现 ellipse 和 path 开头的一段，请复制它们。<br />
-然后打开 <strong>/themes/reimu/layout/_partial/loader.ejs</strong> 文件<br />
-将这一段删除：<br />
-<img src="https://img.gejiba.com/images/a67d82f9cd84d1e7f816a547c0a175a4.png" alt="" /><br />
-然后将您刚才复制的 SVG 代码粘贴到此处。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 示例：小星星（和本站一样）</span><br><span class="line"></span><br><span class="line">&lt;path</span><br><span class="line">    sodipodi:type=&quot;star&quot;</span><br><span class="line">    style=&quot;opacity:0.967273;fill:#ffbec0;fill-opacity:0.94581282;stroke:#000000;stroke-width:13.65542089;stroke-dasharray:none&quot;</span><br><span class="line">    id=&quot;path1&quot;</span><br><span class="line">    inkscape:flatsided=&quot;false&quot;</span><br><span class="line">    sodipodi:sides=&quot;5&quot;</span><br><span class="line">    sodipodi:cx=&quot;117.15254&quot;</span><br><span class="line">    sodipodi:cy=&quot;121.49152&quot;</span><br><span class="line">    sodipodi:r1=&quot;281.59967&quot;</span><br><span class="line">    sodipodi:r2=&quot;140.79984&quot;</span><br><span class="line">    sodipodi:arg1=&quot;0.98279372&quot;</span><br><span class="line">    sodipodi:arg2=&quot;1.6111123&quot;</span><br><span class="line">    inkscape:rounded=&quot;0&quot;</span><br><span class="line">    inkscape:randomized=&quot;0&quot;</span><br><span class="line">    d=&quot;M 273.35594,355.79661 111.4776,262.17695 -57.415336,342.45403 -18.400902,159.56852 -146.93973,23.748776 39.050851,4.3389758 128.50242,-159.87933 204.43649,11.010274 388.25943,45.337523 249.19868,170.3629 Z&quot;</span><br><span class="line">    inkscape:transform-center-x=&quot;-5.2622667&quot;</span><br><span class="line">    inkscape:transform-center-y=&quot;-35.297319&quot;</span><br><span class="line">    transform=&quot;matrix(1.5003757,0,0,1.4999156,340.69227,376.01307)&quot; /&gt;</span><br></pre></td></tr></table></figure>
-<p>效果：<br />
-<img src="https://img.gejiba.com/images/ba4cf7aeb1cfb237289943c881beb7ea.png" alt="" /></p>
-<h1 id="更改文字"><a class="markdownIt-Anchor" href="#更改文字"></a> 更改文字</h1>
-<h2 id="更改加载界面_少女祈祷中"><a class="markdownIt-Anchor" href="#更改加载界面_少女祈祷中"></a> 更改加载界面_少女祈祷中</h2>
-<p>打开主题目录的 _config.yml 文件，滑动到下面，找到 preloader 字符：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">preloader:</span><br><span class="line">  enable: true</span><br><span class="line">  text: 正在载入中...</span><br><span class="line">  # text: Loading...</span><br></pre></td></tr></table></figure>
-<h2 id="更改_404_界面"><a class="markdownIt-Anchor" href="#更改_404_界面"></a> 更改_404_界面</h2>
-<p>打开 <strong>/themes/reimu/languages/zh-CN.yml</strong> 文件，找到 not_found 字符:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">not_found:</span><br><span class="line">  title: 4 0 4 (ﾟ⊿ﾟ)ﾂ</span><br><span class="line">  subtitle: 満 身 創 痍</span><br></pre></td></tr></table></figure><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>复现</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows NT4.0 安装教程</title>
-    <url>/20230119/063535/</url>
-    <content><![CDATA[<h1 id="镜像链接"><a class="markdownIt-Anchor" href="#镜像链接"></a> 镜像链接</h1>
-<p><a href="https://pan.huang1111.cn/s/lyBgTL">Click me to download ISO image [FREE!!]</a><br />
-<img src="https://img.gejiba.com/images/27da4e034df0231a2bb7ec09508d6137.png" alt="" /></p>
-<h1 id="安装教程"><a class="markdownIt-Anchor" href="#安装教程"></a> 安装教程</h1>
-<p>1.我们通过虚拟机成功引导系统后，可以看到下面界面：<br />
-<img src="https://img.gejiba.com/images/13407dbc2626460c9a71238d7e9add43.jpg" alt="" /><br />
-2.按 ENTER 继续，创建分区。<br />
-要记住，Windows NT 4.0 Service Pack 1 是不支持大硬盘的，所以我们这里只能给系统分 4096 MB 的分区。<br />
-这里我们随便选择，根据你的需求选择是否 FAT16 还是 NTFS。(不支持 FAT32)<br />
-<img src="https://img.gejiba.com/images/eac95cb4fdc249de0e22c466a8b36c4c.png" alt="" /><br />
-静等第一阶段安装完毕后，重启即可。<br />
-注意！重启一直到安装完成之前，都不可以动任何虚拟机硬件，否则开机会蓝屏。<br />
-就比如我在第一阶段安装完毕后，添加了一个 Cirrus 显示卡，结果开机蓝屏 0x0000007B<br />
-3.重启后，开始第二阶段安装<br />
-<img src="https://img.gejiba.com/images/3ccb7f2b8cdfe50abe4ed8bcb0040c1e.png" alt="" /><br />
-4.点击“下一步”，选择安装类型，这里我们选择典型。<br />
-<img src="https://img.gejiba.com/images/b6ebcb7ac6c1c161fcdad7d5257f29dd.png" alt="" /><br />
-5.输入自己的名字和组织，皆为选填。<br />
-<img src="https://img.gejiba.com/images/7e58b624f0b674e7bb79473b752418fc.png" alt="" /><br />
-6.输入 Windows NT 4.0 Workstation 的 [ CD-Key ]。<br />
-<img src="https://img.gejiba.com/images/664496dbed01c7222e6cd7205191470d.jpg" alt="" /><br />
-7.输入自己的计算机名称，随便输入。这个名称用于给您电脑命名，供别人在局域网上识别。<br />
-<img src="https://img.gejiba.com/images/320b4cc1d869b9ae53ec921d0e9b318b.png" alt="" /><br />
-8.设置管理员账户的密码，酌情而定，我这里不填。<br />
-<img src="https://img.gejiba.com/images/b1aee64d28853da06f1c4f266f063bfa.png" alt="" /><br />
-9.这里选择“否”，然后点击“下一步”。<br />
-<img src="https://img.gejiba.com/images/df453d8f0c90b757c6568899e86e2c09.png" alt="" /><br />
-10.根据您的需求来挑选，选完之后点击“下一步”。<br />
-<img src="https://img.gejiba.com/images/acf185c6f2093204bc904b30b358946e.png" alt="" /><br />
-11.如果您想稍后再设置网络，那就选择“此时不要将计算机连接到网络”。因为我要上网，所以这里会详细讲解如何设置网络。<br />
-<img src="https://img.gejiba.com/images/9932dabfbbb1b2832fd78d83a8662cd6.png" alt="" /><br />
-12.点击“开始搜索”，搜寻网卡，搜到了你需要的网卡之后，点击“下一步”。<br />
-<img src="https://img.gejiba.com/images/9b6782f707f703733eec3e05466832f8.jpg" alt="" /><br />
-13.这里我们直接“下一步”。<br />
-<img src="https://img.gejiba.com/images/b9b1e73bd8b0ce8e3ce7e479319d00e9.jpg" alt="" /><br />
-如果出现一个要设置“网卡 ID”的东西，直接点击“Skip”。<br />
-14.这里一定要选择“是”，否则系统就不会使用 DHCP，需要你自己配置网络，很麻烦。<br />
-<img src="https://img.gejiba.com/images/632444ae356f000c14cd4ccf84340fc9.jpg" alt="" /><br />
-15.点击“下一步”。<br />
-<img src="https://img.gejiba.com/images/796666538ef1ffcaa4d51675da92e3b0.jpg" alt="" /><br />
-启用网络后，就开始安装 Windows NT Workstation 了。<br />
-16.出现显示器设置后，我们点击“65536 色”，然后点击“测试”。<br />
-<img src="https://img.gejiba.com/images/6ecde8d8ac3b2576ab5700a4d45429ac.jpg" alt="" /><br />
-如果点击“测试”之后，显示器没有出现异常，那么就可以点击“确定”继续下一步安装了。<br />
-<img src="https://img.gejiba.com/images/f33fae8c67e750c81dcd9b20bd649c7e.jpg" alt="" /><br />
-等会系统就安装完成了。<br />
-后续安装：<br />
-因为 Windows NT4.0 Service Pack 1 和所附带的 Internet Explorer 3.0 十分古老，我推荐安装 Service Pack 6 之后再安装 Internet Explorer 5.0。<br />
-17.在安装盘中找到 SP6I386_CN.EXE，打开它，等待复制文件之后点击“安装”。<br />
-<img src="https://img.gejiba.com/images/c38d244a6be2a67afa8663ab97980c16.jpg" alt="" /><br />
-18.重启后，再次打开安装盘，找到 “Internet Explorer 5.0” 文件夹。<br />
-找到“IE5SETUP.EXE”，打开它。<br />
-<img src="https://img.gejiba.com/images/c74b6d6e80737d95f4620993ee2210b5.jpg" alt="" /><br />
-等待安装即可。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>iOS 的发展历史</title>
-    <url>/20230818/205837/</url>
-    <content><![CDATA[<p>苹果 iOS 系统已经走过了自己的第 16 个年头，各位新入局的 iOS 玩家可能对 iOS 的历史比较感兴趣，经过整理后，我撰写了这篇文章。</p>
-<h1 id="iphone-1-软件"><a class="markdownIt-Anchor" href="#iphone-1-软件"></a> iPhone 1 软件</h1>
-<p>iPhone 软件，是民间的叫法。因为当时 iOS 系统还叫做 iPhone runs Mac OS X。<br />
-这一版 iOS 可安装设备：iPhone (2G)、iPod touch (第 1 代，1.1 版本起步)<br />
-这一版系统是 iOS 的起点，功能只有打电话上网。<br />
-越狱也是从这一版 iOS 开始的。用于破解 iPhone，实现安装应用等操作。<br />
-如果您是当时的中国用户(水货机器)，那一定对破解的经历非常熟悉。只有破解才能使中国移动、中国联通网络可用。<br />
-发布年期：2007年<br />
-结束更新：2008年</p>
-<table>
-<thead>
-<tr>
-<th>系统版本</th>
-<th>发布日期</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1.0</td>
-<td>2007 年 6 月 29 日</td>
-</tr>
-<tr>
-<td>1.0.1</td>
-<td>2007 年 7 月 31 日</td>
-</tr>
-<tr>
-<td>1.0.2</td>
-<td>2007 年 8 月 21 日</td>
-</tr>
-<tr>
-<td>1.1</td>
-<td>2007 年 9 月 14 日</td>
-</tr>
-<tr>
-<td>1.1.1</td>
-<td>2007 年 9 月 27 日</td>
-</tr>
-<tr>
-<td>1.1.2</td>
-<td>2007 年 11 月 12 日</td>
-</tr>
-<tr>
-<td>1.1.3</td>
-<td>2008 年 1 月 15 日</td>
-</tr>
-<tr>
-<td>1.1.4</td>
-<td>2008 年 2 月 26 日</td>
-</tr>
-<tr>
-<td>1.1.5</td>
-<td>2008 年 7 月 14 日</td>
-</tr>
-<tr>
-<td><font color=red>注意！要从该系统升级到新系统。需要连接至 iTunes，准备好付款方式，付费进行更新。(仅限于 iPod touch)</font></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h1 id="iphone-os-2-系统"><a class="markdownIt-Anchor" href="#iphone-os-2-系统"></a> iPhone OS 2 系统</h1>
-<p>iPhone OS 系统就是正式叫法了。<br />
-这一版 iOS 可安装设备：iPhone (2G)、iPod touch (第 1 代)、iPod touch (第 2 代，2.1.1 版本起步)、iPhone 3G<br />
-这一版系统 Apple 添加了 App Store 功能，因为刚刚开始，生态不明显。直到现在也很难找到支持 iPhone OS 2 系统的软件了。<br />
-发布年期：2008年<br />
-结束更新：2009年</p>
-<table>
-<thead>
-<tr>
-<th>系统版本</th>
-<th>发布日期</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2.0</td>
-<td>2008 年 7 月 11 日</td>
-</tr>
-<tr>
-<td>2.0.1</td>
-<td>2008 年 8 月 4 日</td>
-</tr>
-<tr>
-<td>2.0.2</td>
-<td>2008 年 8 月 18 日</td>
-</tr>
-<tr>
-<td>2.1</td>
-<td>2008 年 9 月 12 日</td>
-</tr>
-<tr>
-<td>2.1.1</td>
-<td>2008 年 9 月 9 日</td>
-</tr>
-<tr>
-<td>2.2</td>
-<td>2008 年 11 月 21 日</td>
-</tr>
-<tr>
-<td>2.2.1</td>
-<td>2009 年 1 月 27 日</td>
-</tr>
-<tr>
-<td><font color=red>注意！要从该系统升级到新系统。需要连接至 iTunes，准备好付款方式，付费进行更新。(仅限于 iPod touch)</font></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>QEMU 基础命令学习</title>
     <url>/20220826/022653/</url>
     <content><![CDATA[<center>
@@ -959,11 +730,142 @@ Windows 11      std / VMware
 </font><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>test</title>
-    <url>/20250501/234900/</url>
-    <content><![CDATA[<p>测试2025-07-28<br />
-<a href="/123.pdf">下载</a></p>
+    <title>Reimu 主题去除东方 PROJECT 元素</title>
+    <url>/20230817/154130/</url>
+    <content><![CDATA[<p>如果你安装了 Reimu 主题后又不想要东方的元素了，可以看看这篇文章。</p>
+<h1 id="目录"><a class="markdownIt-Anchor" href="#目录"></a> 目录</h1>
+<p><a href="/20230817/154130/#%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E4%BF%AE%E6%94%B9">  <strong>1. 背景图片修改</strong></a><br />
+<a href="/20230817/154130/#%E5%A4%B4%E5%9B%BE%E4%BF%AE%E6%94%B9">      ———— 1.1 头图修改</a><br />
+<a href="/20230817/154130/#%E7%BB%99%E5%8D%95%E7%8B%AC%E7%9A%84%E6%96%87%E7%AB%A0%E9%85%8D%E5%9B%BE">      ———— 1.2 给单独的文章配图</a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%A4%AA%E6%9E%81%E5%9B%BE%E5%9B%BE%E6%A0%87">  <strong>2. 更改太极图图标 (重点)</strong></a><br />
+<a href="/20230817/154130/#%E8%BE%B9%E6%A0%8F%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.1 边栏图标更改</a><br />
+<a href="/20230817/154130/#%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.2 加载界面图标更改</a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E6%96%87%E5%AD%97">  <strong>3. 更改文字</strong></a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2_%E5%B0%91%E5%A5%B3%E7%A5%88%E7%A5%B7%E4%B8%AD">      ———— 3.1 更改加载界面 “少女祈祷中”</a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9_404_%E7%95%8C%E9%9D%A2">      ———— 3.2 更改 “404” 界面</a></p>
+<h1 id="背景图片修改"><a class="markdownIt-Anchor" href="#背景图片修改"></a> 背景图片修改</h1>
+<h2 id="头图修改"><a class="markdownIt-Anchor" href="#头图修改"></a> 头图修改</h2>
+<p>头图的位置在</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
+<p>您找到合适的图片之后直接更换即可。<br />
+如果您的网站速度很慢，不适合在本地存放头图，您可以更改主题目录的 _config.yml 中的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;/images/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
+<p>部分，将内容更改为：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;https://xxx.url.org/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
+<p><img src="https://img.gejiba.com/images/3b7b1a3e290b1db6151d0961726ce8eb.png" alt="" /></p>
+<h2 id="给单独的文章配图"><a class="markdownIt-Anchor" href="#给单独的文章配图"></a> 给单独的文章配图</h2>
+<p>只需您在文章的页眉添加</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cover: 指向图片的 URL</span><br><span class="line"></span><br><span class="line">// 示例：</span><br><span class="line">---</span><br><span class="line">title: 123456</span><br><span class="line">date: 1999-12-31 06:01:13</span><br><span class="line">tags: XX</span><br><span class="line">cover: https://xxx.url.org/bd3.png</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>就可以给文章配上图片了。</p>
+<h1 id="更改太极图图标"><a class="markdownIt-Anchor" href="#更改太极图图标"></a> 更改太极图图标</h1>
+<h2 id="边栏图标更改"><a class="markdownIt-Anchor" href="#边栏图标更改"></a> 边栏图标更改</h2>
+<p>请您进入 <strong>/themes/reimu/source/images/</strong> 目录，使用矢量图绘画工具打开 <strong>taichi.svg</strong> 文件。<br />
+然后在上面进行绘画操作即可。<br />
+<img src="https://img.gejiba.com/images/10f06ff8e388d28136b494546c99bd5b.png" alt="" /><br />
+画完之后保存，Hexo 刷新一遍就可以了。</p>
+<h2 id="加载界面图标更改"><a class="markdownIt-Anchor" href="#加载界面图标更改"></a> 加载界面图标更改</h2>
+<p>在执行上面的操作之后，您会发现，加载界面仍然是太极图。<br />
+莫慌。您先复制一份 <strong>taichi.svg</strong> 文件的副本，使用矢量图绘画工具打开它并进行绘画。绘画完成后不要删除，右键通过 <strong>Microsoft Visual Studio Code</strong> 或其他文本软件打开。<br />
+记住这些路径名称：<br />
+<img src="https://img.gejiba.com/images/c5943bcc8fc6ae8beabe7d337afe9480.png" alt="" /><br />
+如果发现 ellipse 和 path 开头的一段，请复制它们。<br />
+然后打开 <strong>/themes/reimu/layout/_partial/loader.ejs</strong> 文件<br />
+将这一段删除：<br />
+<img src="https://img.gejiba.com/images/a67d82f9cd84d1e7f816a547c0a175a4.png" alt="" /><br />
+然后将您刚才复制的 SVG 代码粘贴到此处。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 示例：小星星（和本站一样）</span><br><span class="line"></span><br><span class="line">&lt;path</span><br><span class="line">    sodipodi:type=&quot;star&quot;</span><br><span class="line">    style=&quot;opacity:0.967273;fill:#ffbec0;fill-opacity:0.94581282;stroke:#000000;stroke-width:13.65542089;stroke-dasharray:none&quot;</span><br><span class="line">    id=&quot;path1&quot;</span><br><span class="line">    inkscape:flatsided=&quot;false&quot;</span><br><span class="line">    sodipodi:sides=&quot;5&quot;</span><br><span class="line">    sodipodi:cx=&quot;117.15254&quot;</span><br><span class="line">    sodipodi:cy=&quot;121.49152&quot;</span><br><span class="line">    sodipodi:r1=&quot;281.59967&quot;</span><br><span class="line">    sodipodi:r2=&quot;140.79984&quot;</span><br><span class="line">    sodipodi:arg1=&quot;0.98279372&quot;</span><br><span class="line">    sodipodi:arg2=&quot;1.6111123&quot;</span><br><span class="line">    inkscape:rounded=&quot;0&quot;</span><br><span class="line">    inkscape:randomized=&quot;0&quot;</span><br><span class="line">    d=&quot;M 273.35594,355.79661 111.4776,262.17695 -57.415336,342.45403 -18.400902,159.56852 -146.93973,23.748776 39.050851,4.3389758 128.50242,-159.87933 204.43649,11.010274 388.25943,45.337523 249.19868,170.3629 Z&quot;</span><br><span class="line">    inkscape:transform-center-x=&quot;-5.2622667&quot;</span><br><span class="line">    inkscape:transform-center-y=&quot;-35.297319&quot;</span><br><span class="line">    transform=&quot;matrix(1.5003757,0,0,1.4999156,340.69227,376.01307)&quot; /&gt;</span><br></pre></td></tr></table></figure>
+<p>效果：<br />
+<img src="https://img.gejiba.com/images/ba4cf7aeb1cfb237289943c881beb7ea.png" alt="" /></p>
+<h1 id="更改文字"><a class="markdownIt-Anchor" href="#更改文字"></a> 更改文字</h1>
+<h2 id="更改加载界面_少女祈祷中"><a class="markdownIt-Anchor" href="#更改加载界面_少女祈祷中"></a> 更改加载界面_少女祈祷中</h2>
+<p>打开主题目录的 _config.yml 文件，滑动到下面，找到 preloader 字符：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">preloader:</span><br><span class="line">  enable: true</span><br><span class="line">  text: 正在载入中...</span><br><span class="line">  # text: Loading...</span><br></pre></td></tr></table></figure>
+<h2 id="更改_404_界面"><a class="markdownIt-Anchor" href="#更改_404_界面"></a> 更改_404_界面</h2>
+<p>打开 <strong>/themes/reimu/languages/zh-CN.yml</strong> 文件，找到 not_found 字符:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">not_found:</span><br><span class="line">  title: 4 0 4 (ﾟ⊿ﾟ)ﾂ</span><br><span class="line">  subtitle: 満 身 創 痍</span><br></pre></td></tr></table></figure><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>复现</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows NT4.0 安装教程</title>
+    <url>/20230119/063535/</url>
+    <content><![CDATA[<h1 id="镜像链接"><a class="markdownIt-Anchor" href="#镜像链接"></a> 镜像链接</h1>
+<p><a href="https://pan.huang1111.cn/s/lyBgTL">Click me to download ISO image [FREE!!]</a><br />
+<img src="https://img.gejiba.com/images/27da4e034df0231a2bb7ec09508d6137.png" alt="" /></p>
+<h1 id="安装教程"><a class="markdownIt-Anchor" href="#安装教程"></a> 安装教程</h1>
+<p>1.我们通过虚拟机成功引导系统后，可以看到下面界面：<br />
+<img src="https://img.gejiba.com/images/13407dbc2626460c9a71238d7e9add43.jpg" alt="" /><br />
+2.按 ENTER 继续，创建分区。<br />
+要记住，Windows NT 4.0 Service Pack 1 是不支持大硬盘的，所以我们这里只能给系统分 4096 MB 的分区。<br />
+这里我们随便选择，根据你的需求选择是否 FAT16 还是 NTFS。(不支持 FAT32)<br />
+<img src="https://img.gejiba.com/images/eac95cb4fdc249de0e22c466a8b36c4c.png" alt="" /><br />
+静等第一阶段安装完毕后，重启即可。<br />
+注意！重启一直到安装完成之前，都不可以动任何虚拟机硬件，否则开机会蓝屏。<br />
+就比如我在第一阶段安装完毕后，添加了一个 Cirrus 显示卡，结果开机蓝屏 0x0000007B<br />
+3.重启后，开始第二阶段安装<br />
+<img src="https://img.gejiba.com/images/3ccb7f2b8cdfe50abe4ed8bcb0040c1e.png" alt="" /><br />
+4.点击“下一步”，选择安装类型，这里我们选择典型。<br />
+<img src="https://img.gejiba.com/images/b6ebcb7ac6c1c161fcdad7d5257f29dd.png" alt="" /><br />
+5.输入自己的名字和组织，皆为选填。<br />
+<img src="https://img.gejiba.com/images/7e58b624f0b674e7bb79473b752418fc.png" alt="" /><br />
+6.输入 Windows NT 4.0 Workstation 的 [ CD-Key ]。<br />
+<img src="https://img.gejiba.com/images/664496dbed01c7222e6cd7205191470d.jpg" alt="" /><br />
+7.输入自己的计算机名称，随便输入。这个名称用于给您电脑命名，供别人在局域网上识别。<br />
+<img src="https://img.gejiba.com/images/320b4cc1d869b9ae53ec921d0e9b318b.png" alt="" /><br />
+8.设置管理员账户的密码，酌情而定，我这里不填。<br />
+<img src="https://img.gejiba.com/images/b1aee64d28853da06f1c4f266f063bfa.png" alt="" /><br />
+9.这里选择“否”，然后点击“下一步”。<br />
+<img src="https://img.gejiba.com/images/df453d8f0c90b757c6568899e86e2c09.png" alt="" /><br />
+10.根据您的需求来挑选，选完之后点击“下一步”。<br />
+<img src="https://img.gejiba.com/images/acf185c6f2093204bc904b30b358946e.png" alt="" /><br />
+11.如果您想稍后再设置网络，那就选择“此时不要将计算机连接到网络”。因为我要上网，所以这里会详细讲解如何设置网络。<br />
+<img src="https://img.gejiba.com/images/9932dabfbbb1b2832fd78d83a8662cd6.png" alt="" /><br />
+12.点击“开始搜索”，搜寻网卡，搜到了你需要的网卡之后，点击“下一步”。<br />
+<img src="https://img.gejiba.com/images/9b6782f707f703733eec3e05466832f8.jpg" alt="" /><br />
+13.这里我们直接“下一步”。<br />
+<img src="https://img.gejiba.com/images/b9b1e73bd8b0ce8e3ce7e479319d00e9.jpg" alt="" /><br />
+如果出现一个要设置“网卡 ID”的东西，直接点击“Skip”。<br />
+14.这里一定要选择“是”，否则系统就不会使用 DHCP，需要你自己配置网络，很麻烦。<br />
+<img src="https://img.gejiba.com/images/632444ae356f000c14cd4ccf84340fc9.jpg" alt="" /><br />
+15.点击“下一步”。<br />
+<img src="https://img.gejiba.com/images/796666538ef1ffcaa4d51675da92e3b0.jpg" alt="" /><br />
+启用网络后，就开始安装 Windows NT Workstation 了。<br />
+16.出现显示器设置后，我们点击“65536 色”，然后点击“测试”。<br />
+<img src="https://img.gejiba.com/images/6ecde8d8ac3b2576ab5700a4d45429ac.jpg" alt="" /><br />
+如果点击“测试”之后，显示器没有出现异常，那么就可以点击“确定”继续下一步安装了。<br />
+<img src="https://img.gejiba.com/images/f33fae8c67e750c81dcd9b20bd649c7e.jpg" alt="" /><br />
+等会系统就安装完成了。<br />
+后续安装：<br />
+因为 Windows NT4.0 Service Pack 1 和所附带的 Internet Explorer 3.0 十分古老，我推荐安装 Service Pack 6 之后再安装 Internet Explorer 5.0。<br />
+17.在安装盘中找到 SP6I386_CN.EXE，打开它，等待复制文件之后点击“安装”。<br />
+<img src="https://img.gejiba.com/images/c38d244a6be2a67afa8663ab97980c16.jpg" alt="" /><br />
+18.重启后，再次打开安装盘，找到 “Internet Explorer 5.0” 文件夹。<br />
+找到“IE5SETUP.EXE”，打开它。<br />
+<img src="https://img.gejiba.com/images/c74b6d6e80737d95f4620993ee2210b5.jpg" alt="" /><br />
+等待安装即可。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>历史锁那(Sana)专辑</title>
+    <url>/20230725/221318/</url>
+    <content><![CDATA[<center>
+<p><img src="https://img.gejiba.com/images/167d065688a66751b4bea8bdf4bae325.jpg" alt="" /></p>
+<h1 id="好きなひと"><a class="markdownIt-Anchor" href="#好きなひと"></a> 好きなひと。</h1>
+<h2 id="鎖那-honeyworks-20140817"><a class="markdownIt-Anchor" href="#鎖那-honeyworks-20140817"></a> 鎖那 × HoneyWorks [2014.08.17]</h2>
+<p>价格：120 元（带侧封）<br />
+<img src="https://img.gejiba.com/images/e65d8b14bf54ac8cd181d9343f9d61b0.png" alt="歌曲列表" /><br />
+<font color=red><strong>01</strong></font> 未来図<br />
+<font color=red><strong>02</strong></font> 告白予行練習<br />
+<font color=red><strong>03</strong></font> テレカクシ思春期<br />
+<font color=red><strong>04</strong></font> 初恋の絵本<br />
+<font color=red><strong>05</strong></font> 告白ライバル宣言<br />
+<font color=red><strong>06</strong></font> ヤキモチの答え<br />
+<font color=red><strong>07</strong></font> 病名恋ワズライ<br />
+<font color=red><strong>08</strong></font> イノコリ先生<br />
+<font color=red><strong>09</strong></font> ロリババアに恋をした<br />
+<font color=red><strong>10</strong></font> ラズベリー*モンスター</p>
+</center><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>QEMU 基础命令学习</title>
@@ -1234,25 +1136,116 @@ Windows 11      std / VMware
 </font><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>历史锁那(Sana)专辑</title>
-    <url>/20230725/221318/</url>
-    <content><![CDATA[<center>
-<p><img src="https://img.gejiba.com/images/167d065688a66751b4bea8bdf4bae325.jpg" alt="" /></p>
-<h1 id="好きなひと"><a class="markdownIt-Anchor" href="#好きなひと"></a> 好きなひと。</h1>
-<h2 id="鎖那-honeyworks-20140817"><a class="markdownIt-Anchor" href="#鎖那-honeyworks-20140817"></a> 鎖那 × HoneyWorks [2014.08.17]</h2>
-<p>价格：120 元（带侧封）<br />
-<img src="https://img.gejiba.com/images/e65d8b14bf54ac8cd181d9343f9d61b0.png" alt="歌曲列表" /><br />
-<font color=red><strong>01</strong></font> 未来図<br />
-<font color=red><strong>02</strong></font> 告白予行練習<br />
-<font color=red><strong>03</strong></font> テレカクシ思春期<br />
-<font color=red><strong>04</strong></font> 初恋の絵本<br />
-<font color=red><strong>05</strong></font> 告白ライバル宣言<br />
-<font color=red><strong>06</strong></font> ヤキモチの答え<br />
-<font color=red><strong>07</strong></font> 病名恋ワズライ<br />
-<font color=red><strong>08</strong></font> イノコリ先生<br />
-<font color=red><strong>09</strong></font> ロリババアに恋をした<br />
-<font color=red><strong>10</strong></font> ラズベリー*モンスター</p>
-</center><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <title>iOS 的发展历史</title>
+    <url>/20230818/205837/</url>
+    <content><![CDATA[<p>苹果 iOS 系统已经走过了自己的第 16 个年头，各位新入局的 iOS 玩家可能对 iOS 的历史比较感兴趣，经过整理后，我撰写了这篇文章。</p>
+<h1 id="iphone-1-软件"><a class="markdownIt-Anchor" href="#iphone-1-软件"></a> iPhone 1 软件</h1>
+<p>iPhone 软件，是民间的叫法。因为当时 iOS 系统还叫做 iPhone runs Mac OS X。<br />
+这一版 iOS 可安装设备：iPhone (2G)、iPod touch (第 1 代，1.1 版本起步)<br />
+这一版系统是 iOS 的起点，功能只有打电话上网。<br />
+越狱也是从这一版 iOS 开始的。用于破解 iPhone，实现安装应用等操作。<br />
+如果您是当时的中国用户(水货机器)，那一定对破解的经历非常熟悉。只有破解才能使中国移动、中国联通网络可用。<br />
+发布年期：2007年<br />
+结束更新：2008年</p>
+<table>
+<thead>
+<tr>
+<th>系统版本</th>
+<th>发布日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>2007 年 6 月 29 日</td>
+</tr>
+<tr>
+<td>1.0.1</td>
+<td>2007 年 7 月 31 日</td>
+</tr>
+<tr>
+<td>1.0.2</td>
+<td>2007 年 8 月 21 日</td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>2007 年 9 月 14 日</td>
+</tr>
+<tr>
+<td>1.1.1</td>
+<td>2007 年 9 月 27 日</td>
+</tr>
+<tr>
+<td>1.1.2</td>
+<td>2007 年 11 月 12 日</td>
+</tr>
+<tr>
+<td>1.1.3</td>
+<td>2008 年 1 月 15 日</td>
+</tr>
+<tr>
+<td>1.1.4</td>
+<td>2008 年 2 月 26 日</td>
+</tr>
+<tr>
+<td>1.1.5</td>
+<td>2008 年 7 月 14 日</td>
+</tr>
+<tr>
+<td><font color=red>注意！要从该系统升级到新系统。需要连接至 iTunes，准备好付款方式，付费进行更新。(仅限于 iPod touch)</font></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="iphone-os-2-系统"><a class="markdownIt-Anchor" href="#iphone-os-2-系统"></a> iPhone OS 2 系统</h1>
+<p>iPhone OS 系统就是正式叫法了。<br />
+这一版 iOS 可安装设备：iPhone (2G)、iPod touch (第 1 代)、iPod touch (第 2 代，2.1.1 版本起步)、iPhone 3G<br />
+这一版系统 Apple 添加了 App Store 功能，因为刚刚开始，生态不明显。直到现在也很难找到支持 iPhone OS 2 系统的软件了。<br />
+发布年期：2008年<br />
+结束更新：2009年</p>
+<table>
+<thead>
+<tr>
+<th>系统版本</th>
+<th>发布日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2.0</td>
+<td>2008 年 7 月 11 日</td>
+</tr>
+<tr>
+<td>2.0.1</td>
+<td>2008 年 8 月 4 日</td>
+</tr>
+<tr>
+<td>2.0.2</td>
+<td>2008 年 8 月 18 日</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>2008 年 9 月 12 日</td>
+</tr>
+<tr>
+<td>2.1.1</td>
+<td>2008 年 9 月 9 日</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>2008 年 11 月 21 日</td>
+</tr>
+<tr>
+<td>2.2.1</td>
+<td>2009 年 1 月 27 日</td>
+</tr>
+<tr>
+<td><font color=red>注意！要从该系统升级到新系统。需要连接至 iTunes，准备好付款方式，付费进行更新。(仅限于 iPod touch)</font></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>无需 U 盘给 MacBook 电脑安装 Arch Linux</title>
@@ -1335,6 +1328,61 @@ VMware Fusion 虚拟机破解密钥：</li>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
+    <title>朝鲜故事</title>
+    <url>/20250115/134502/</url>
+    <content><![CDATA[<h1 id="金哲的一生"><a class="markdownIt-Anchor" href="#金哲的一生"></a> 金哲的一生</h1>
+<h3 id="重生与归途"><a class="markdownIt-Anchor" href="#重生与归途"></a> <strong>重生与归途</strong></h3>
+<h4 id="逃离与新生"><a class="markdownIt-Anchor" href="#逃离与新生"></a> <strong>逃离与新生</strong></h4>
+<p>金哲（化名）是一个普通的朝鲜农民，为了逃避贫困与压迫，他在三十多年前冒着生命危险横渡鸭绿江，逃亡到中国。在那里，他假借一名已故中国人的身份生活，靠着勤奋努力和语言天赋，逐渐扎根北京。</p>
+<p>他成了一名装修工人，从最初的小工到后来独自接活儿，金哲攒下了一笔钱，买了房和车，还拿到了珍贵的北京车牌。他的生活看似幸福，平静而富足，但内心却始终留有一个深深的裂痕——对家人的思念。</p>
+<h4 id="返乡的决心"><a class="markdownIt-Anchor" href="#返乡的决心"></a> <strong>返乡的决心</strong></h4>
+<p>在某个冬日的清晨，金哲坐在家中的餐桌前，看着一张全家福的照片。他知道，家人在朝鲜的境况可能依然艰难，而自己却无法得知他们的任何消息。这种煎熬在二十年的时间里从未减弱，反而越来越深。他最终下定决心，要回到朝鲜，哪怕付出一切代价。</p>
+<p>2009年6月的一个早晨，金哲带上简单的行李，登上了北京站发往平壤的K27次列车。他知道这是一次可能无法回头的旅程，但内心的思念战胜了恐惧。</p>
+<h4 id="噩梦的开始"><a class="markdownIt-Anchor" href="#噩梦的开始"></a> <strong>噩梦的开始</strong></h4>
+<p>当列车抵达新义州站时，金哲被朝鲜边防人员带走。他的假身份被迅速识破，并以“叛国罪”判处45年劳改。他被送往深山中的一个秘密矿场，日夜挖掘矿石，每天只有一分钟的休息时间，食物仅是冷水和少量玉米粥。</p>
+<p>一年后，金哲因饥饿和劳累倒在矿井中，最终孤独地死去。他的家人在朝鲜的村庄里苦苦等待他的消息，但始终未能等到。悲痛之中，他们全家也因思念与绝望逐渐衰弱，最终相继离世。一个家庭就这样湮灭在历史的尘埃里。</p>
+<h4 id="奇迹的出现"><a class="markdownIt-Anchor" href="#奇迹的出现"></a> <strong>奇迹的出现</strong></h4>
+<p>金哲死后，他的灵魂漂浮在矿山上空。他仰望星空，泪流满面，向神明祈求：“若能再来一次，我愿用一切换取家人的幸福。”不知何故，神明听到了他的请求，时间奇迹般地回溯到他踏上K27次列车的那一刻。</p>
+<p>这一次，金哲没有选择返乡。他用神秘的力量，暗中帮助家人成功逃离朝鲜，并将他们带到了中国。他们一家团聚在北京，在丰台区马家堡附近的一套三居室中开始了新的生活。家人重新体会到了团圆的温暖。</p>
+<h4 id="工头的复仇"><a class="markdownIt-Anchor" href="#工头的复仇"></a> <strong>工头的复仇</strong></h4>
+<p>矿山的工头得知金哲一家逃脱后怒不可遏。他动用了神秘的军队，越境来到中国，试图抓捕金哲。然而，当他们找到金哲家所在的马家堡东里小区时，却被早已埋伏在此的中国警察一举擒获。</p>
+<p>中国政府迅速将工头及其部下遣返回国，而他们在朝鲜也因“任务失败”被判处52年劳改。在那同一个矿山里，他们像金哲一样，忍受着饥饿与折磨，最终在绝望中死去。</p>
+<h4 id="幸福的尾声"><a class="markdownIt-Anchor" href="#幸福的尾声"></a> <strong>幸福的尾声</strong></h4>
+<p>从此，金哲一家安居于北京，过上了平静而幸福的生活。他的孩子们进入了中国的学校学习，金哲和妻子经营着一家小餐馆，生活虽不奢华，却充满了笑声和温暖。</p>
+<p>而在丰台区的天空下，金哲时常感叹命运的多舛和神明的恩赐。他珍惜每一天，发誓再也不会冒险，只为守护眼前这来之不易的幸福。</p>
+<h1 id="李言成的脱北之路"><a class="markdownIt-Anchor" href="#李言成的脱北之路"></a> 李言成的脱北之路</h1>
+<p>李言成曾是一名坚定的朝鲜公民，他始终相信自己的祖国是世界上最强大的国家。然而，命运的一次巧合彻底颠覆了他的信念。朋友送给他的一枚U盘，成了他人生的转折点。U盘中播放的画面展示了韩国的繁荣景象，那些真实的场景让他陷入了深深的震撼与反思。朝鲜的宣传与现实之间的巨大反差，让他感到失望与迷茫。他开始质疑国家的真实面貌，最终萌生了一个危险的念头——脱北。</p>
+<h3 id="寒夜中的逃亡"><a class="markdownIt-Anchor" href="#寒夜中的逃亡"></a> <strong>寒夜中的逃亡</strong></h3>
+<p>2009年11月8日晚11点，李言成登上了一辆通往中朝边境的汽车。这是一条充满未知和危险的路，但自由的渴望让他不再犹豫。11月9日凌晨1点，他抵达了冰冷的鸭绿江边。深冬的寒夜，刺骨的江水让他几乎窒息，但他依旧咬牙向对岸游去。然而，他的行动被朝鲜边防军发现。尽管边防军迅速上报上级并追击，他还是幸运地逃脱，成功抵达中国境内。</p>
+<h3 id="初见中国的繁华"><a class="markdownIt-Anchor" href="#初见中国的繁华"></a> <strong>初见中国的繁华</strong></h3>
+<p>在中国一侧，接应的人早已等候多时。他迅速登上车辆，驶离了边境地区。第二天清晨，车辆抵达沈阳。在这座陌生却繁华的城市，李言成第一次感受到真实的对比。他看到熙攘的街道和繁华的商场，眼泪不由自主地流了下来。他喃喃自语：“我的国家果真不是世界最强大的国家……”那一刻，痛苦与希望交织在他的心中。他吃到了一顿丰盛的饭菜，那份饱腹感是他在朝鲜几乎无法想象的。这短暂的幸福也提醒他，危险仍未远去。他知道，在中国，如果被发现为朝鲜脱北者，随时可能被遣返。</p>
+<h3 id="漫长的火车旅程"><a class="markdownIt-Anchor" href="#漫长的火车旅程"></a> <strong>漫长的火车旅程</strong></h3>
+<p>第二天，蛇头安排了从沈阳到昆明的火车票。幸运的是，当时中国的铁路还未实行实名制，这让他们能够顺利登车。蛇头叮嘱他们，“全程不能说话，不能露出惊慌；查票时装睡，一切问题我来解决。”李言成听后点头如捣蒜，但内心依旧忐忑不安。</p>
+<p>途中，一声“查票了！”让他惊得猛地坐起。这一动作立刻引起列车员的注意。蛇头机智地解释，“他做噩梦吓醒了。”列车员要求查票，蛇头从容地递上所有人的车票，才让他们化险为夷。接下来的40多个小时，李言成目睹了中国沿途的风景，看到许多人幸福的生活。这让他震撼之余，感到更加坚定：自己必须逃离朝鲜，去迎接自由的生活。</p>
+<h3 id="翻山越岭的生死攸关"><a class="markdownIt-Anchor" href="#翻山越岭的生死攸关"></a> <strong>翻山越岭的生死攸关</strong></h3>
+<p>火车抵达昆明后，蛇头迅速安排车辆将他们送往边境。由于没有护照和身份证，他们只能偷渡。翻越崇山峻岭，穿越森林与小路，旅程的每一步都充满危险与艰难。他们的体力几乎耗尽，但最终成功抵达老挝。随后，他们辗转进入缅甸，再搭乘大客车前往泰国。在泰国，李言成终于获得庇护，并通过韩国方面的援助，安全抵达韩国。</p>
+<h3 id="新生活的开始"><a class="markdownIt-Anchor" href="#新生活的开始"></a> <strong>新生活的开始</strong></h3>
+<p>站在韩国的土地上，李言成喜极而泣，感到如释重负。他紧紧拥抱蛇头，感谢对方的帮助，这是他们最后一次见面。此后，李言成在韩国安定了下来。他找到了一份普通的工作，过上了平凡但安稳的生活。对他来说，这种平凡已经是幸福的极致。他感慨道：“我终于摆脱了苦海，虽然这里的生活并不奢华，但比朝鲜好太多了。”</p>
+<p>李言成的脱北之路充满了艰险和挑战，但自由的追求让他始终不放弃。这段经历不仅是他个人的救赎，也是对人性尊严的坚持与渴望。</p>
+<h1 id="李言成的脱北之路后续"><a class="markdownIt-Anchor" href="#李言成的脱北之路后续"></a> 李言成的脱北之路后续</h1>
+<p>2013年5月5日，原本在韩国安稳生活的李言成感到一阵不安。他的直觉是对的，那天中午，他接到了来自某人的消息：“你的家人被朝鲜抓了。他们要求你回去，否则就杀你全家。”这个晴天霹雳彻底摧毁了李言成苦心经营的美好生活。他崩溃了，痛哭不止：为何自己追求自由，代价却是家人承受苦难？</p>
+<p>几经挣扎，李言成做出了艰难的决定。他辞掉了韩国的工作，收拾行囊，再次踏上了返回朝鲜的路。这条路不仅是肉体上的归途，更是他自由梦的终结。</p>
+<h3 id="回归后的灰白世界"><a class="markdownIt-Anchor" href="#回归后的灰白世界"></a> <strong>回归后的灰白世界</strong></h3>
+<p>回到朝鲜，迎接李言成的是铺天盖地的指责与冷漠。他被迅速安排接受审判，面对摄像机，他被迫宣称：“我在韩国过得一点也不好！每天都想死的感觉。”这些话违背了他的真实情感，却是保命的唯一选择。朝鲜方面认为他仍然忠诚，劳改了几个月后便将他释放。</p>
+<p>然而，李言成再也无法离开朝鲜了。他的生活从此陷入了痛苦与绝望。每天，他只能享受短短3小时的电力供应，饮水需要亲自到江边取，冬天则在缺乏暖气的房间里苦熬，几乎每年都濒临冻死。他无数次跪下，悔恨当初的选择。但后悔已无济于事，铁幕之下，他再也看不到自由的希望。</p>
+<p>2019年6月，一位朋友告诉他：“中国现在买火车票需要身份证和护照了。”这句话如同最后一根稻草，让李言成再次失声痛哭。他知道，通往外界的道路已经彻底堵死。</p>
+<h3 id="偶然的曙光"><a class="markdownIt-Anchor" href="#偶然的曙光"></a> <strong>偶然的曙光</strong></h3>
+<p>2020年疫情爆发后，朝鲜进一步封锁国境，李言成的世界变得更加渺茫。然而，命运总是充满反复。因为他“悔改表现良好”，金正恩将军决定奖励他——派遣他到中国的朝鲜餐厅工作和学习。得知这一消息时，李言成灰暗的生活似乎再次被点亮了。</p>
+<p>2025年，李言成如愿来到中国，在丹东的一家朝鲜餐厅当厨师。再次踏上这片土地时，他感叹：“中国变化真大！而我们的朝鲜……也算是一年比一年好了吧，起码没倒退。”</p>
+<h3 id="短暂的幸福"><a class="markdownIt-Anchor" href="#短暂的幸福"></a> <strong>短暂的幸福</strong></h3>
+<p>在丹东的日子里，李言成尽情享受着中国的便利与富足。虽然时间只有短短三年，但这三年对他而言是无价的。每天，他在餐厅里工作，尽管是简单的厨师岗位，却足以让他感到满足。最重要的是，在这里，他再也不用担心挨饿。</p>
+<p>虽然李言成深知，这段生活只是短暂的喘息，他最终还要回到朝鲜，但他依然感恩上帝赐予的这一段希望。他珍惜每一天，努力为餐厅的客人做出最美味的菜肴。</p>
+<p>在餐厅忙碌的厨房里，李言成时常望着窗外熙熙攘攘的街景，喃喃自语：“这三年，已经是我命运中最好的恩赐了。”他坚信，即便命运无情，但只要有一丝光亮，就值得他去追逐与珍惜。</p>
+<p>标题：李言成的脱北之路后续<br />
+在韩国呆了四五年后，朝鲜方面把他的家人都逮捕了起来，并且使用各种手段想要把他绑架回朝鲜。在2013年5月5日中午，李言成感到阵阵不安。突然有个人来找他，说：你家里人被朝鲜绑架了，你不回去朝鲜他们就杀你全家。李言成哭了，他来之不易的美好生活就要结束了？他的家人那么惨。为什么自己逃脱别人要受罚。他实在受不了自己的家人被如此欺负，为了家人的安全，他辞掉了韩国的工作还是回到了朝鲜。回到朝鲜后，他的世界变成灰白色了。心情低落的接受朝鲜的采访和审判。他在朝鲜的电视里出镜了。他的精神十分空虚，他被迫说“我在韩国过得一点也不好！每天都想死的感觉”。朝鲜方面觉得他还是比较忠诚的，劳改了几个月就把它放了。李言成不知道的是，他这一回来，就再也出不去了。2019年6月7日，李言成的朋友跟他说“喂！你知道吗？中国现在买火车票得用身份证护照了。不能用票了”“什么？！！”，李言成再一次痛哭。虽然内心早就麻木了但是听见这种事还是很伤心，这下应该是再也出不去朝鲜了。他很难过。他在朝鲜的生活很痛苦，每天只有3个小时电力支持。水也是得去江边打水，而且房间也没有暖气，每年冬天都差点被冻死。他跪下了。他这么多年来一直很后悔当年为什么要回来。但是后悔也没有用了，他回不去向往的世界了。2020年，因为疫情，朝鲜封了海关。出去的希望更加渺茫。但是，就是这么巧。因为他在外面表现的很好，将军奖励他出国学习去朝鲜餐厅，他灰色的世界突然有了颜色！他开心的蹦了起来。这次，他回到了中国。在丹东的一家朝鲜餐厅里当厨师。“这么多年没去中国了，中国变化很大嘛。而我们的朝鲜。。。也算是一年比一年好了吧！起码没倒退唉”他感叹道。虽然这次他在中国的时间只有3年，但是这3年就是上帝给他的又一次希望，现在他在朝鲜餐厅里每天都快乐的活着。因为在中国，他起码饿不死了。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
     <title>珊瑚宫心海养成指南</title>
     <url>/20220915/233651/</url>
     <content><![CDATA[<p><font  face="宋体">献给各位抽到心海的同学们~</font><br />
@@ -1403,6 +1451,89 @@ VMware Fusion 虚拟机破解密钥：</li>
 <h1 id="经过码头"><a class="markdownIt-Anchor" href="#经过码头"></a> 经过码头</h1>
 <p>308 路在路途中会经过<font color=green>生紫码头</font>和<font color=green>大口子码头</font>。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>让 Mac 电脑也玩上光遇！</title>
+    <url>/20250114/222842/</url>
+    <content><![CDATA[<h1 id="安装光-遇国服"><a class="markdownIt-Anchor" href="#安装光-遇国服"></a> 安装光 · 遇国服</h1>
+<p>by Sanakaprix  2025-01-15</p>
+<h2 id="处理器是-apple-m1-及以后的设备"><a class="markdownIt-Anchor" href="#处理器是-apple-m1-及以后的设备"></a> 处理器是 Apple M1 及以后的设备</h2>
+<h3 id="下载-ipa"><a class="markdownIt-Anchor" href="#下载-ipa"></a> 下载 iPA</h3>
+<p>在下载之前，请先在设置-“隐私与安全性”-“允许以下位置的应用程序”单选框改成 App Store 和被认可的开发者：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/9d5b41323a439c1502256f7de10db681.png" alt="" /><br />
+设置完成后在浏览器打开 <a href="https://decrypt.day">https://decrypt.day</a> 这个网站：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/de2ef63f5bd4e3cdd79a3f7293c9a232.png" alt="" /><br />
+搜索“光·遇”：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/abf2c34dd4763f78cedcb30a61a4485e.png" alt="" /><br />
+点击下载：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/b952b53dac09245f881459db710c0ee3.jpg" alt="" /><br />
+点击第二个链接（OneDrive 下载）：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/6ce7063a25f4cd3e9da30225057c14a0.png" alt="" /><br />
+获取下载链接后下载，等待下载完成：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/545ebabe4d167a12de63a32c4236a733.png" alt="" /></p>
+<h3 id="安装光-遇"><a class="markdownIt-Anchor" href="#安装光-遇"></a> 安装《光 · 遇》</h3>
+<p>下载完成后，前往 <a href="http://playcover.io">playcover.io</a> 网站，点击下载按钮：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/b1bfce3f81bbc7311ad3fb615e32c300.png" alt="" /><br />
+选择 Latest 版本，然后安装 PlayCover 程序：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/94cd8e9506f3d74f90fe0195a7e92bc2.png" alt="" /><br />
+第一次打开软件应该是空空如也的状态（我这里已经安装了）：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/a767dbe45b2bf5d59438e93e67953cb0.png" alt="" /><br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/a2bdd984ff903a125f2dad32e328fed5.jpg" alt="" /><br />
+右键打开光遇设置，然后一定要完全按照我这样设置，不然可能闪退：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/fa1e53cf02b1aeb12f4b63b8e4c68a65.jpg" alt="" /><br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/172eaddd8b6fd55deeba06b1546c8fbf.png" alt="" /><br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/ba86111ffa85ba0c2ae1c6e7c3c80c39.jpg" alt="" /><br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/e024e949577b5e91c0c95534bcd08425.png" alt="" /><br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/aba5f5da790f25394b3ab865aa460e49.jpg" alt="" /><br />
+改好了之后，点击“好”，双击图标启动游戏试一下。<br />
+如果还闪退的话，可以试试以下方法：<br />
+按下 ⌘ Command + 空格键，输入 Terminal 打开终端：<br />
+输入以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo codesign --force --deep --sign - </span><br></pre></td></tr></table></figure>
+<p>然后在 PlayCover 里右键选择“在 Finder 里查看”：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/82973f85fa93751e7259d00b8157c9e7.jpg" alt="" /><br />
+然后将光遇的包体拖到终端里，就像这样：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/d1397b3de877b044752b45d3804733a6.jpg" alt="" /><br />
+按下回车键执行，输入你电脑用户的密码（密码不显示盲敲就行）：<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/d01879b77daaeb0e6b797f695f89b881.png" alt="" /><br />
+等待执行完成后，再打开光遇试试应该就能进了。<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/58bf5575642c95df3cd4ba66931fb091.png" alt="" /><br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/0c0ea645b488ca4310724b42d55330cb.png" alt="" /><br />
+<strong>感觉用鼠标玩的话特别难受，建议用手柄玩</strong></p>
+<h2 id="处理器是-intel-的设备"><a class="markdownIt-Anchor" href="#处理器是-intel-的设备"></a> 处理器是 Intel 的设备</h2>
+<p>请使用 Boot Camp 安装 Windows，安装前请先备份你的东西。<br />
+然后在 <a href="https://sky.163.com/index.html">光遇官网</a> <a href="https://sky.163.com/index.html">https://sky.163.com/index.html</a> 下载光遇电脑版就可以了<br />
+<img src="https://s1.imagehub.cc/images/2025/01/15/ef2e8a6ce4ecf5d1389c3a7d359f605d.png" alt="" /></p>
+<h1 id="安装光-遇国际服tgc"><a class="markdownIt-Anchor" href="#安装光-遇国际服tgc"></a> 安装光 · 遇国际服（TGC）</h1>
+<h2 id="处理器是-apple-m1-及以后的设备-2"><a class="markdownIt-Anchor" href="#处理器是-apple-m1-及以后的设备-2"></a> 处理器是 Apple M1 及以后的设备</h2>
+<p>打开 App Store，退出登录国区账号（如果你现在登入的是外区账号请忽略）<br />
+<img src="https://pic1.imgdb.cn/item/6787042bd0e0a243d4f45676.png" alt="" /><br />
+登录外区账号<br />
+<img src="https://pic1.imgdb.cn/item/6787049cd0e0a243d4f4567b.png" alt="" /><br />
+在搜索框搜索“Sky”或光遇都可以，直接下载：<br />
+<img src="https://pic1.imgdb.cn/item/678704e1d0e0a243d4f4567c.png" alt="" /></p>
+<h2 id="处理器是-intel-的设备-2"><a class="markdownIt-Anchor" href="#处理器是-intel-的设备-2"></a> 处理器是 Intel 的设备</h2>
+<p>请使用 Boot Camp 安装 Windows，安装前请先备份你的东西。<br />
+然后安装 Steam，在 Steam 里安装光遇（请自行查找光遇 Steam 入库教程）：<br />
+<img src="https://pic1.imgdb.cn/item/67870581d0e0a243d4f45681.png" alt="" /><br />
+<strong>祝你在光 · 遇的世界里玩的开心！</strong></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>光！遇！</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Sanapri bilibili 新视频</title>
+    <url>/20220823/164646/</url>
+    <content><![CDATA[<p>鎖那小天使终于发新视频啦，这里给你们看看～</p>
+<pre><code>Kyu-kurarin (cover) / sana 
+original: きゅうくらりん / いよわ feat.可不 
+vocal: 鎖那  mix: n.k 
+▷https://space.bilibili.com/543245410
+</code></pre>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?bvid=BV1M14y1t7LK&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
+</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>计算机基础操作</title>
@@ -1537,61 +1668,6 @@ Windows 中的终端叫做命令提示符，我们可以利用终端做很多事
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>朝鲜故事</title>
-    <url>/20250115/134502/</url>
-    <content><![CDATA[<h1 id="金哲的一生"><a class="markdownIt-Anchor" href="#金哲的一生"></a> 金哲的一生</h1>
-<h3 id="重生与归途"><a class="markdownIt-Anchor" href="#重生与归途"></a> <strong>重生与归途</strong></h3>
-<h4 id="逃离与新生"><a class="markdownIt-Anchor" href="#逃离与新生"></a> <strong>逃离与新生</strong></h4>
-<p>金哲（化名）是一个普通的朝鲜农民，为了逃避贫困与压迫，他在三十多年前冒着生命危险横渡鸭绿江，逃亡到中国。在那里，他假借一名已故中国人的身份生活，靠着勤奋努力和语言天赋，逐渐扎根北京。</p>
-<p>他成了一名装修工人，从最初的小工到后来独自接活儿，金哲攒下了一笔钱，买了房和车，还拿到了珍贵的北京车牌。他的生活看似幸福，平静而富足，但内心却始终留有一个深深的裂痕——对家人的思念。</p>
-<h4 id="返乡的决心"><a class="markdownIt-Anchor" href="#返乡的决心"></a> <strong>返乡的决心</strong></h4>
-<p>在某个冬日的清晨，金哲坐在家中的餐桌前，看着一张全家福的照片。他知道，家人在朝鲜的境况可能依然艰难，而自己却无法得知他们的任何消息。这种煎熬在二十年的时间里从未减弱，反而越来越深。他最终下定决心，要回到朝鲜，哪怕付出一切代价。</p>
-<p>2009年6月的一个早晨，金哲带上简单的行李，登上了北京站发往平壤的K27次列车。他知道这是一次可能无法回头的旅程，但内心的思念战胜了恐惧。</p>
-<h4 id="噩梦的开始"><a class="markdownIt-Anchor" href="#噩梦的开始"></a> <strong>噩梦的开始</strong></h4>
-<p>当列车抵达新义州站时，金哲被朝鲜边防人员带走。他的假身份被迅速识破，并以“叛国罪”判处45年劳改。他被送往深山中的一个秘密矿场，日夜挖掘矿石，每天只有一分钟的休息时间，食物仅是冷水和少量玉米粥。</p>
-<p>一年后，金哲因饥饿和劳累倒在矿井中，最终孤独地死去。他的家人在朝鲜的村庄里苦苦等待他的消息，但始终未能等到。悲痛之中，他们全家也因思念与绝望逐渐衰弱，最终相继离世。一个家庭就这样湮灭在历史的尘埃里。</p>
-<h4 id="奇迹的出现"><a class="markdownIt-Anchor" href="#奇迹的出现"></a> <strong>奇迹的出现</strong></h4>
-<p>金哲死后，他的灵魂漂浮在矿山上空。他仰望星空，泪流满面，向神明祈求：“若能再来一次，我愿用一切换取家人的幸福。”不知何故，神明听到了他的请求，时间奇迹般地回溯到他踏上K27次列车的那一刻。</p>
-<p>这一次，金哲没有选择返乡。他用神秘的力量，暗中帮助家人成功逃离朝鲜，并将他们带到了中国。他们一家团聚在北京，在丰台区马家堡附近的一套三居室中开始了新的生活。家人重新体会到了团圆的温暖。</p>
-<h4 id="工头的复仇"><a class="markdownIt-Anchor" href="#工头的复仇"></a> <strong>工头的复仇</strong></h4>
-<p>矿山的工头得知金哲一家逃脱后怒不可遏。他动用了神秘的军队，越境来到中国，试图抓捕金哲。然而，当他们找到金哲家所在的马家堡东里小区时，却被早已埋伏在此的中国警察一举擒获。</p>
-<p>中国政府迅速将工头及其部下遣返回国，而他们在朝鲜也因“任务失败”被判处52年劳改。在那同一个矿山里，他们像金哲一样，忍受着饥饿与折磨，最终在绝望中死去。</p>
-<h4 id="幸福的尾声"><a class="markdownIt-Anchor" href="#幸福的尾声"></a> <strong>幸福的尾声</strong></h4>
-<p>从此，金哲一家安居于北京，过上了平静而幸福的生活。他的孩子们进入了中国的学校学习，金哲和妻子经营着一家小餐馆，生活虽不奢华，却充满了笑声和温暖。</p>
-<p>而在丰台区的天空下，金哲时常感叹命运的多舛和神明的恩赐。他珍惜每一天，发誓再也不会冒险，只为守护眼前这来之不易的幸福。</p>
-<h1 id="李言成的脱北之路"><a class="markdownIt-Anchor" href="#李言成的脱北之路"></a> 李言成的脱北之路</h1>
-<p>李言成曾是一名坚定的朝鲜公民，他始终相信自己的祖国是世界上最强大的国家。然而，命运的一次巧合彻底颠覆了他的信念。朋友送给他的一枚U盘，成了他人生的转折点。U盘中播放的画面展示了韩国的繁荣景象，那些真实的场景让他陷入了深深的震撼与反思。朝鲜的宣传与现实之间的巨大反差，让他感到失望与迷茫。他开始质疑国家的真实面貌，最终萌生了一个危险的念头——脱北。</p>
-<h3 id="寒夜中的逃亡"><a class="markdownIt-Anchor" href="#寒夜中的逃亡"></a> <strong>寒夜中的逃亡</strong></h3>
-<p>2009年11月8日晚11点，李言成登上了一辆通往中朝边境的汽车。这是一条充满未知和危险的路，但自由的渴望让他不再犹豫。11月9日凌晨1点，他抵达了冰冷的鸭绿江边。深冬的寒夜，刺骨的江水让他几乎窒息，但他依旧咬牙向对岸游去。然而，他的行动被朝鲜边防军发现。尽管边防军迅速上报上级并追击，他还是幸运地逃脱，成功抵达中国境内。</p>
-<h3 id="初见中国的繁华"><a class="markdownIt-Anchor" href="#初见中国的繁华"></a> <strong>初见中国的繁华</strong></h3>
-<p>在中国一侧，接应的人早已等候多时。他迅速登上车辆，驶离了边境地区。第二天清晨，车辆抵达沈阳。在这座陌生却繁华的城市，李言成第一次感受到真实的对比。他看到熙攘的街道和繁华的商场，眼泪不由自主地流了下来。他喃喃自语：“我的国家果真不是世界最强大的国家……”那一刻，痛苦与希望交织在他的心中。他吃到了一顿丰盛的饭菜，那份饱腹感是他在朝鲜几乎无法想象的。这短暂的幸福也提醒他，危险仍未远去。他知道，在中国，如果被发现为朝鲜脱北者，随时可能被遣返。</p>
-<h3 id="漫长的火车旅程"><a class="markdownIt-Anchor" href="#漫长的火车旅程"></a> <strong>漫长的火车旅程</strong></h3>
-<p>第二天，蛇头安排了从沈阳到昆明的火车票。幸运的是，当时中国的铁路还未实行实名制，这让他们能够顺利登车。蛇头叮嘱他们，“全程不能说话，不能露出惊慌；查票时装睡，一切问题我来解决。”李言成听后点头如捣蒜，但内心依旧忐忑不安。</p>
-<p>途中，一声“查票了！”让他惊得猛地坐起。这一动作立刻引起列车员的注意。蛇头机智地解释，“他做噩梦吓醒了。”列车员要求查票，蛇头从容地递上所有人的车票，才让他们化险为夷。接下来的40多个小时，李言成目睹了中国沿途的风景，看到许多人幸福的生活。这让他震撼之余，感到更加坚定：自己必须逃离朝鲜，去迎接自由的生活。</p>
-<h3 id="翻山越岭的生死攸关"><a class="markdownIt-Anchor" href="#翻山越岭的生死攸关"></a> <strong>翻山越岭的生死攸关</strong></h3>
-<p>火车抵达昆明后，蛇头迅速安排车辆将他们送往边境。由于没有护照和身份证，他们只能偷渡。翻越崇山峻岭，穿越森林与小路，旅程的每一步都充满危险与艰难。他们的体力几乎耗尽，但最终成功抵达老挝。随后，他们辗转进入缅甸，再搭乘大客车前往泰国。在泰国，李言成终于获得庇护，并通过韩国方面的援助，安全抵达韩国。</p>
-<h3 id="新生活的开始"><a class="markdownIt-Anchor" href="#新生活的开始"></a> <strong>新生活的开始</strong></h3>
-<p>站在韩国的土地上，李言成喜极而泣，感到如释重负。他紧紧拥抱蛇头，感谢对方的帮助，这是他们最后一次见面。此后，李言成在韩国安定了下来。他找到了一份普通的工作，过上了平凡但安稳的生活。对他来说，这种平凡已经是幸福的极致。他感慨道：“我终于摆脱了苦海，虽然这里的生活并不奢华，但比朝鲜好太多了。”</p>
-<p>李言成的脱北之路充满了艰险和挑战，但自由的追求让他始终不放弃。这段经历不仅是他个人的救赎，也是对人性尊严的坚持与渴望。</p>
-<h1 id="李言成的脱北之路后续"><a class="markdownIt-Anchor" href="#李言成的脱北之路后续"></a> 李言成的脱北之路后续</h1>
-<p>2013年5月5日，原本在韩国安稳生活的李言成感到一阵不安。他的直觉是对的，那天中午，他接到了来自某人的消息：“你的家人被朝鲜抓了。他们要求你回去，否则就杀你全家。”这个晴天霹雳彻底摧毁了李言成苦心经营的美好生活。他崩溃了，痛哭不止：为何自己追求自由，代价却是家人承受苦难？</p>
-<p>几经挣扎，李言成做出了艰难的决定。他辞掉了韩国的工作，收拾行囊，再次踏上了返回朝鲜的路。这条路不仅是肉体上的归途，更是他自由梦的终结。</p>
-<h3 id="回归后的灰白世界"><a class="markdownIt-Anchor" href="#回归后的灰白世界"></a> <strong>回归后的灰白世界</strong></h3>
-<p>回到朝鲜，迎接李言成的是铺天盖地的指责与冷漠。他被迅速安排接受审判，面对摄像机，他被迫宣称：“我在韩国过得一点也不好！每天都想死的感觉。”这些话违背了他的真实情感，却是保命的唯一选择。朝鲜方面认为他仍然忠诚，劳改了几个月后便将他释放。</p>
-<p>然而，李言成再也无法离开朝鲜了。他的生活从此陷入了痛苦与绝望。每天，他只能享受短短3小时的电力供应，饮水需要亲自到江边取，冬天则在缺乏暖气的房间里苦熬，几乎每年都濒临冻死。他无数次跪下，悔恨当初的选择。但后悔已无济于事，铁幕之下，他再也看不到自由的希望。</p>
-<p>2019年6月，一位朋友告诉他：“中国现在买火车票需要身份证和护照了。”这句话如同最后一根稻草，让李言成再次失声痛哭。他知道，通往外界的道路已经彻底堵死。</p>
-<h3 id="偶然的曙光"><a class="markdownIt-Anchor" href="#偶然的曙光"></a> <strong>偶然的曙光</strong></h3>
-<p>2020年疫情爆发后，朝鲜进一步封锁国境，李言成的世界变得更加渺茫。然而，命运总是充满反复。因为他“悔改表现良好”，金正恩将军决定奖励他——派遣他到中国的朝鲜餐厅工作和学习。得知这一消息时，李言成灰暗的生活似乎再次被点亮了。</p>
-<p>2025年，李言成如愿来到中国，在丹东的一家朝鲜餐厅当厨师。再次踏上这片土地时，他感叹：“中国变化真大！而我们的朝鲜……也算是一年比一年好了吧，起码没倒退。”</p>
-<h3 id="短暂的幸福"><a class="markdownIt-Anchor" href="#短暂的幸福"></a> <strong>短暂的幸福</strong></h3>
-<p>在丹东的日子里，李言成尽情享受着中国的便利与富足。虽然时间只有短短三年，但这三年对他而言是无价的。每天，他在餐厅里工作，尽管是简单的厨师岗位，却足以让他感到满足。最重要的是，在这里，他再也不用担心挨饿。</p>
-<p>虽然李言成深知，这段生活只是短暂的喘息，他最终还要回到朝鲜，但他依然感恩上帝赐予的这一段希望。他珍惜每一天，努力为餐厅的客人做出最美味的菜肴。</p>
-<p>在餐厅忙碌的厨房里，李言成时常望着窗外熙熙攘攘的街景，喃喃自语：“这三年，已经是我命运中最好的恩赐了。”他坚信，即便命运无情，但只要有一丝光亮，就值得他去追逐与珍惜。</p>
-<p>标题：李言成的脱北之路后续<br />
-在韩国呆了四五年后，朝鲜方面把他的家人都逮捕了起来，并且使用各种手段想要把他绑架回朝鲜。在2013年5月5日中午，李言成感到阵阵不安。突然有个人来找他，说：你家里人被朝鲜绑架了，你不回去朝鲜他们就杀你全家。李言成哭了，他来之不易的美好生活就要结束了？他的家人那么惨。为什么自己逃脱别人要受罚。他实在受不了自己的家人被如此欺负，为了家人的安全，他辞掉了韩国的工作还是回到了朝鲜。回到朝鲜后，他的世界变成灰白色了。心情低落的接受朝鲜的采访和审判。他在朝鲜的电视里出镜了。他的精神十分空虚，他被迫说“我在韩国过得一点也不好！每天都想死的感觉”。朝鲜方面觉得他还是比较忠诚的，劳改了几个月就把它放了。李言成不知道的是，他这一回来，就再也出不去了。2019年6月7日，李言成的朋友跟他说“喂！你知道吗？中国现在买火车票得用身份证护照了。不能用票了”“什么？！！”，李言成再一次痛哭。虽然内心早就麻木了但是听见这种事还是很伤心，这下应该是再也出不去朝鲜了。他很难过。他在朝鲜的生活很痛苦，每天只有3个小时电力支持。水也是得去江边打水，而且房间也没有暖气，每年冬天都差点被冻死。他跪下了。他这么多年来一直很后悔当年为什么要回来。但是后悔也没有用了，他回不去向往的世界了。2020年，因为疫情，朝鲜封了海关。出去的希望更加渺茫。但是，就是这么巧。因为他在外面表现的很好，将军奖励他出国学习去朝鲜餐厅，他灰色的世界突然有了颜色！他开心的蹦了起来。这次，他回到了中国。在丹东的一家朝鲜餐厅里当厨师。“这么多年没去中国了，中国变化很大嘛。而我们的朝鲜。。。也算是一年比一年好了吧！起码没倒退唉”他感叹道。虽然这次他在中国的时间只有3年，但是这3年就是上帝给他的又一次希望，现在他在朝鲜餐厅里每天都快乐的活着。因为在中国，他起码饿不死了。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>黑翼猫 Extended Kernel Project 中国网络环境下载</title>
     <url>/20220818/010924/</url>
     <content><![CDATA[<h2 id="介绍"><a class="markdownIt-Anchor" href="#介绍"></a> 介绍</h2>
@@ -1613,86 +1689,10 @@ Windows 中的终端叫做命令提示符，我们可以利用终端做很多事
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>让 Mac 电脑也玩上光遇！</title>
-    <url>/20250114/222842/</url>
-    <content><![CDATA[<h1 id="安装光-遇国服"><a class="markdownIt-Anchor" href="#安装光-遇国服"></a> 安装光 · 遇国服</h1>
-<p>by Sanakaprix  2025-01-15</p>
-<h2 id="处理器是-apple-m1-及以后的设备"><a class="markdownIt-Anchor" href="#处理器是-apple-m1-及以后的设备"></a> 处理器是 Apple M1 及以后的设备</h2>
-<h3 id="下载-ipa"><a class="markdownIt-Anchor" href="#下载-ipa"></a> 下载 iPA</h3>
-<p>在下载之前，请先在设置-“隐私与安全性”-“允许以下位置的应用程序”单选框改成 App Store 和被认可的开发者：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/9d5b41323a439c1502256f7de10db681.png" alt="" /><br />
-设置完成后在浏览器打开 <a href="https://decrypt.day">https://decrypt.day</a> 这个网站：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/de2ef63f5bd4e3cdd79a3f7293c9a232.png" alt="" /><br />
-搜索“光·遇”：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/abf2c34dd4763f78cedcb30a61a4485e.png" alt="" /><br />
-点击下载：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/b952b53dac09245f881459db710c0ee3.jpg" alt="" /><br />
-点击第二个链接（OneDrive 下载）：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/6ce7063a25f4cd3e9da30225057c14a0.png" alt="" /><br />
-获取下载链接后下载，等待下载完成：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/545ebabe4d167a12de63a32c4236a733.png" alt="" /></p>
-<h3 id="安装光-遇"><a class="markdownIt-Anchor" href="#安装光-遇"></a> 安装《光 · 遇》</h3>
-<p>下载完成后，前往 <a href="http://playcover.io">playcover.io</a> 网站，点击下载按钮：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/b1bfce3f81bbc7311ad3fb615e32c300.png" alt="" /><br />
-选择 Latest 版本，然后安装 PlayCover 程序：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/94cd8e9506f3d74f90fe0195a7e92bc2.png" alt="" /><br />
-第一次打开软件应该是空空如也的状态（我这里已经安装了）：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/a767dbe45b2bf5d59438e93e67953cb0.png" alt="" /><br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/a2bdd984ff903a125f2dad32e328fed5.jpg" alt="" /><br />
-右键打开光遇设置，然后一定要完全按照我这样设置，不然可能闪退：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/fa1e53cf02b1aeb12f4b63b8e4c68a65.jpg" alt="" /><br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/172eaddd8b6fd55deeba06b1546c8fbf.png" alt="" /><br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/ba86111ffa85ba0c2ae1c6e7c3c80c39.jpg" alt="" /><br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/e024e949577b5e91c0c95534bcd08425.png" alt="" /><br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/aba5f5da790f25394b3ab865aa460e49.jpg" alt="" /><br />
-改好了之后，点击“好”，双击图标启动游戏试一下。<br />
-如果还闪退的话，可以试试以下方法：<br />
-按下 ⌘ Command + 空格键，输入 Terminal 打开终端：<br />
-输入以下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo codesign --force --deep --sign - </span><br></pre></td></tr></table></figure>
-<p>然后在 PlayCover 里右键选择“在 Finder 里查看”：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/82973f85fa93751e7259d00b8157c9e7.jpg" alt="" /><br />
-然后将光遇的包体拖到终端里，就像这样：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/d1397b3de877b044752b45d3804733a6.jpg" alt="" /><br />
-按下回车键执行，输入你电脑用户的密码（密码不显示盲敲就行）：<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/d01879b77daaeb0e6b797f695f89b881.png" alt="" /><br />
-等待执行完成后，再打开光遇试试应该就能进了。<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/58bf5575642c95df3cd4ba66931fb091.png" alt="" /><br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/0c0ea645b488ca4310724b42d55330cb.png" alt="" /><br />
-<strong>感觉用鼠标玩的话特别难受，建议用手柄玩</strong></p>
-<h2 id="处理器是-intel-的设备"><a class="markdownIt-Anchor" href="#处理器是-intel-的设备"></a> 处理器是 Intel 的设备</h2>
-<p>请使用 Boot Camp 安装 Windows，安装前请先备份你的东西。<br />
-然后在 <a href="https://sky.163.com/index.html">光遇官网</a> <a href="https://sky.163.com/index.html">https://sky.163.com/index.html</a> 下载光遇电脑版就可以了<br />
-<img src="https://s1.imagehub.cc/images/2025/01/15/ef2e8a6ce4ecf5d1389c3a7d359f605d.png" alt="" /></p>
-<h1 id="安装光-遇国际服tgc"><a class="markdownIt-Anchor" href="#安装光-遇国际服tgc"></a> 安装光 · 遇国际服（TGC）</h1>
-<h2 id="处理器是-apple-m1-及以后的设备-2"><a class="markdownIt-Anchor" href="#处理器是-apple-m1-及以后的设备-2"></a> 处理器是 Apple M1 及以后的设备</h2>
-<p>打开 App Store，退出登录国区账号（如果你现在登入的是外区账号请忽略）<br />
-<img src="https://pic1.imgdb.cn/item/6787042bd0e0a243d4f45676.png" alt="" /><br />
-登录外区账号<br />
-<img src="https://pic1.imgdb.cn/item/6787049cd0e0a243d4f4567b.png" alt="" /><br />
-在搜索框搜索“Sky”或光遇都可以，直接下载：<br />
-<img src="https://pic1.imgdb.cn/item/678704e1d0e0a243d4f4567c.png" alt="" /></p>
-<h2 id="处理器是-intel-的设备-2"><a class="markdownIt-Anchor" href="#处理器是-intel-的设备-2"></a> 处理器是 Intel 的设备</h2>
-<p>请使用 Boot Camp 安装 Windows，安装前请先备份你的东西。<br />
-然后安装 Steam，在 Steam 里安装光遇（请自行查找光遇 Steam 入库教程）：<br />
-<img src="https://pic1.imgdb.cn/item/67870581d0e0a243d4f45681.png" alt="" /><br />
-<strong>祝你在光 · 遇的世界里玩的开心！</strong></p>
+    <title>test</title>
+    <url>/20250501/234900/</url>
+    <content><![CDATA[<p>测试2025-07-28<br />
+<a href="/123.pdf">下载</a></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>光！遇！</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Sanapri bilibili 新视频</title>
-    <url>/20220823/164646/</url>
-    <content><![CDATA[<p>鎖那小天使终于发新视频啦，这里给你们看看～</p>
-<pre><code>Kyu-kurarin (cover) / sana 
-original: きゅうくらりん / いよわ feat.可不 
-vocal: 鎖那  mix: n.k 
-▷https://space.bilibili.com/543245410
-</code></pre>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?bvid=BV1M14y1t7LK&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
-</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
 </search>
