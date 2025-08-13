@@ -24,17 +24,17 @@ Version: 1.0-release
 Architecture: iphoneos-arm
 Maintainer: CoolBooter <coolbooterios@gmail.com>
 Depends: mobilesubstrate
-Filename: debs/sanaka_cbuntether.deb
-Size: 21644
-MD5sum: 1ea8cd6c3f40124d06bc585b62c4e890
-SHA1: b09f8c1a0f2a2604c10d006215467d5526386013
-SHA256: 589a3577165b6fa06084e8bce149eab6c89ccaaf574089c2fe70123faf720c8c
+Filename: debs/com.coolbooter.cbuntether_1.0-release_iphoneos-arm.deb
+Size: 21320
+MD5sum: 41731a3a85e57af4e98653cce88dc419
+SHA1: 05e010563d17ab831e9047b68e2d1c1140667078
+SHA256: 2adb5e835a46bddfeccaa569906430f3fb1749cfa32f2fcb0a53b37cb418e9f9
 Section: System
 Description: "Untethers" an existing CoolBooter install
- Coolbooter Untetherer 是一个 CoolBooter 的扩展，它允许用户自动启动进入他们的第二个操作系统。
- 要禁用自动启动，请在开机时按住音量减键。
+ CoolBooter Untetherer is an extension for CoolBooter that allows the user to boot into their second OS automatically.
+ To disable the untether, hold volume down during boot.
 Author: CoolBooter <coolbooterios@gmail.com>
-Name: CoolBooter Untetherer 自动启动第二系统
+Name: CoolBooter Untetherer
 
 Package: com.coolbooter.coolbooter
 Version: 1.6-release
