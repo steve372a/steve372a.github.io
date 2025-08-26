@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-05-17T15:23:49.107Z</updated>
+  <updated>2025-08-25T16:52:00.798Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>复习2025-08-25</title>
+    <link href="http://example.com/20250825/231456/"/>
+    <id>http://example.com/20250825/231456/</id>
+    <published>2025-08-25T15:14:56.000Z</published>
+    <updated>2025-08-25T16:52:00.798Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://pic1.imgdb.cn/item/68ac850b58cb8da5c84d1c6f.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;集合的概念&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>小米HyperOS Bootloader解锁技术能力认证考试试卷</title>
