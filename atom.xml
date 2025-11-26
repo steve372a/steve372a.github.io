@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-08-25T16:52:00.798Z</updated>
+  <updated>2025-11-26T07:57:32.778Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何让Linux系统报废</title>
+    <link href="http://example.com/20251126/155720/"/>
+    <id>http://example.com/20251126/155720/</id>
+    <published>2025-11-26T07:57:20.000Z</published>
+    <updated>2025-11-26T07:57:32.778Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;linux系统报废的机制分析与潜在风险研究&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#linux系统报废的机制分析与潜在风险研究&quot;&gt;&lt;/a&gt; 📜</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>复习2025-08-25</title>
@@ -274,7 +295,7 @@
     <link href="http://example.com/20220826/022653/"/>
     <id>http://example.com/20220826/022653/</id>
     <published>2022-08-25T18:26:53.000Z</published>
-    <updated>2022-10-17T01:59:32.000Z</updated>
+    <updated>2026-01-01T10:18:00.000Z</updated>
     
     
     <summary type="html">本文章是为了让各位更好的学习 QEMU 命令。</summary>
@@ -289,7 +310,7 @@
     <link href="http://example.com/20220826/022653/"/>
     <id>http://example.com/20220826/022653/</id>
     <published>2022-08-25T18:26:53.000Z</published>
-    <updated>2026-01-01T10:18:00.000Z</updated>
+    <updated>2022-10-17T01:59:32.000Z</updated>
     
     
     <summary type="html">本文章是为了让各位更好的学习 QEMU 命令。</summary>
