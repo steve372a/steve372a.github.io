@@ -12,7 +12,7 @@
 
     
     <title>
-        如何让Linux系统报废 |
+        C# 入门课 |
         
         Sanakaprix 的个人小站</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,15 +23,15 @@
     
 <link rel="stylesheet" href="/css/loader.css">
 
-    <meta name="description" content="📜 Linux系统报废的机制分析与潜在风险研究  摘要 本文深入探讨了在特定操作或环境因素下，Linux操作系统可能陷入“报废”状态的各种机制和技术路径。我们通过理论分析与实验路径模拟，详细阐述了从文件系统彻底损坏、内核模块灾难性错误到系统级资源耗尽等多种导致系统不可恢复性故障的方法。研究旨在提高系统管理员和开发者对系统脆弱性的认识，加强对关键系统的防护，并为系统容错设计提供参考。   1.">
+    <meta name="description" content="💡 第一课：C# 是什么？.NET 是什么？  核心知识点  C# (C-Sharp) 是一种 面向对象 的高级编程语言。 C# 由微软开发，它很像 Java 和 C++，主要用来开发 Windows 应用、Web 服务、手机 App 和游戏 (Unity)。 .NET 是 C# 程序的 运行环境和框架。 CLR (Common Language Runtime) 是 .NET 的核心组件，负">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何让Linux系统报废">
+<meta property="og:title" content="C# 入门课">
 <meta property="og:url" content="http://example.com/20251126/155720/index.html">
 <meta property="og:site_name" content="Sanakaprix 的个人小站">
-<meta property="og:description" content="📜 Linux系统报废的机制分析与潜在风险研究  摘要 本文深入探讨了在特定操作或环境因素下，Linux操作系统可能陷入“报废”状态的各种机制和技术路径。我们通过理论分析与实验路径模拟，详细阐述了从文件系统彻底损坏、内核模块灾难性错误到系统级资源耗尽等多种导致系统不可恢复性故障的方法。研究旨在提高系统管理员和开发者对系统脆弱性的认识，加强对关键系统的防护，并为系统容错设计提供参考。   1.">
+<meta property="og:description" content="💡 第一课：C# 是什么？.NET 是什么？  核心知识点  C# (C-Sharp) 是一种 面向对象 的高级编程语言。 C# 由微软开发，它很像 Java 和 C++，主要用来开发 Windows 应用、Web 服务、手机 App 和游戏 (Unity)。 .NET 是 C# 程序的 运行环境和框架。 CLR (Common Language Runtime) 是 .NET 的核心组件，负">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-11-26T07:57:20.000Z">
-<meta property="article:modified_time" content="2025-11-26T07:57:32.778Z">
+<meta property="article:modified_time" content="2025-11-26T13:03:19.424Z">
 <meta property="article:author" content="Sanakaprix">
 <meta name="twitter:card" content="summary">
     
@@ -87,7 +87,7 @@
         <div id="wrap">
             <header id="header">
     
-        <img data-src="/images/banner.jpg" data-sizes="auto" alt="如何让Linux系统报废" class="lazyload">
+        <img data-src="/images/banner.jpg" data-sizes="auto" alt="C# 入门课" class="lazyload">
     
     <div id="header-outer" class="outer">
         <div id="header-title" class="inner">
@@ -95,7 +95,7 @@
                 
                     
                     
-                        <a href="/" id="logo"><h1>如何让Linux系统报废</h1></a>
+                        <a href="/" id="logo"><h1>C# 入门课</h1></a>
                     
                 
             </div>
@@ -168,80 +168,221 @@
 
         <div class="e-content article-entry" itemprop="articleBody">
             
-                <h1 id="linux系统报废的机制分析与潜在风险研究"><a class="markdownIt-Anchor" href="#linux系统报废的机制分析与潜在风险研究"></a> 📜 <strong>Linux系统报废的机制分析与潜在风险研究</strong></h1>
-<h2 id="摘要"><a class="markdownIt-Anchor" href="#摘要"></a> <strong>摘要</strong></h2>
-<p>本文深入探讨了在特定操作或环境因素下，Linux操作系统可能陷入“报废”状态的各种机制和技术路径。我们通过理论分析与实验路径模拟，详细阐述了从<strong>文件系统彻底损坏</strong>、<strong>内核模块灾难性错误</strong>到<strong>系统级资源耗尽</strong>等多种导致系统不可恢复性故障的方法。研究旨在提高系统管理员和开发者对系统脆弱性的认识，加强对关键系统的防护，并为系统容错设计提供参考。</p>
-<hr />
-<h2 id="1-引言"><a class="markdownIt-Anchor" href="#1-引言"></a> <strong>1. 引言</strong></h2>
-<p>Linux作为一种广泛应用于服务器、嵌入式设备及个人电脑的<strong>开源操作系统</strong>，以其<strong>稳定性、灵活性和安全性</strong>著称。然而，如同任何复杂的软件系统一样，Linux并非坚不可摧。在特定条件下，尤其是由于<strong>操作失误、恶意攻击或软件/硬件故障</strong>的结合，系统可能会达到一种无法通过标准手段恢复的“报废”状态。本论文将系统性地梳理这些路径，并分析其背后的技术原理。</p>
-<hr />
-<h2 id="2-文件系统层面的破坏"><a class="markdownIt-Anchor" href="#2-文件系统层面的破坏"></a> <strong>2. 文件系统层面的破坏</strong></h2>
-<p>文件系统是操作系统存储和管理数据的基础。对这一层面的彻底破坏是最直接、最有效的系统报废方法之一。</p>
-<h3 id="21-根目录的递归删除"><a class="markdownIt-Anchor" href="#21-根目录的递归删除"></a> <strong>2.1. 根目录的递归删除</strong></h3>
-<p>最臭名昭著且效果显著的操作是使用<code>rm -rf /</code>命令（在非保护模式或通过特定权限绕过）。</p>
+                <h2 id="第一课c-是什么net-是什么"><a class="markdownIt-Anchor" href="#第一课c-是什么net-是什么"></a> 💡 第一课：C# 是什么？.NET 是什么？</h2>
+<h3 id="核心知识点"><a class="markdownIt-Anchor" href="#核心知识点"></a> 核心知识点</h3>
 <ul>
-<li><strong>命令示例：</strong>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> -rf / --no-preserve-root</span><br></pre></td></tr></table></figure>
-</li>
-<li><strong>破坏机制：</strong><br />
-该命令会<strong>递归地、强制地删除</strong>根目录下及其所有子目录中的所有文件和文件夹。这包括<strong>核心的系统二进制文件</strong>（如<code>/bin</code>, <code>/sbin</code>）、<strong>关键配置文件</strong>（如<code>/etc</code>）、<strong>设备文件</strong>（如<code>/dev</code>）以及<strong>内核模块和库文件</strong>（如<code>/lib</code>, <code>/usr</code>）。一旦核心组件被删除，系统在运行中会立即遭遇<strong>段错误（Segmentation Fault）<strong>或</strong>内核崩溃（Kernel Panic）</strong>，且无法通过重启恢复。</li>
+<li>C# (C-Sharp) 是一种 <strong>面向对象</strong> 的高级编程语言。</li>
+<li>C# 由微软开发，它很像 Java 和 C++，主要用来开发 Windows 应用、Web 服务、手机 App 和游戏 (Unity)。</li>
+<li>.NET 是 C# 程序的 <strong>运行环境和框架</strong>。</li>
+<li>CLR (Common Language Runtime) 是 .NET 的核心组件，负责把 C# 代码翻译给电脑执行 (就像一个翻译官)。</li>
 </ul>
-<h3 id="22-关键文件系统的元数据损坏"><a class="markdownIt-Anchor" href="#22-关键文件系统的元数据损坏"></a> <strong>2.2. 关键文件系统的元数据损坏</strong></h3>
-<p>即使没有进行大规模删除，对文件系统<strong>元数据</strong>的精确破坏也能导致整个分区或系统变得无法访问。</p>
+<hr />
+<h2 id="️-第二课写-c-代码需要啥工具"><a class="markdownIt-Anchor" href="#️-第二课写-c-代码需要啥工具"></a> 🛠️ 第二课：写 C# 代码需要啥工具？</h2>
+<h3 id="核心知识点-2"><a class="markdownIt-Anchor" href="#核心知识点-2"></a> 核心知识点</h3>
+<p>要写 C# 代码，你需要两个核心工具：</p>
+<ol>
+<li><strong>代码编辑器 / 集成开发环境 (IDE)</strong>：
 <ul>
-<li><strong>工具与方法：</strong> 使用如<code>dd</code>工具直接向存储设备写入<strong>随机或空数据</strong>到关键区域，特别是文件系统的<strong>超级块（Superblock）</strong>。
-<ul>
-<li><strong>超级块的作用：</strong> 存储着文件系统的<strong>类型、大小、状态、空闲块列表</strong>等核心信息。</li>
-<li><strong>破坏后果：</strong> 超级块一旦损坏，文件系统将<strong>无法被挂载</strong>，操作系统将无法定位任何文件，导致系统启动失败。</li>
+<li><strong>推荐</strong>：<strong>Visual Studio (VS)</strong>。它是微软的旗舰工具，集成了写代码、编译、调试等所有功能。</li>
 </ul>
 </li>
-<li><strong>示例操作路径：</strong> 识别文件系统的超级块位置并使用<code>dd</code>写入：<code>dd if=/dev/urandom of=/dev/sda1 bs=1k count=1 skip=1</code> (此操作覆盖超级块)。</li>
-</ul>
-<h3 id="23-文件系统类型转换或格式化"><a class="markdownIt-Anchor" href="#23-文件系统类型转换或格式化"></a> <strong>2.3. 文件系统类型转换或格式化</strong></h3>
-<p>在系统运行时，强制对<strong>根文件系统</strong>进行格式化或使用不兼容的工具进行类型转换，将立即导致系统崩溃和永久性数据丢失。</p>
+<li><strong>.NET SDK (软件开发工具包)</strong>：
 <ul>
-<li><strong>危险操作：</strong> 尝试对<strong>已挂载</strong>的根分区执行<code>mkfs</code>命令。</li>
-<li><strong>后果：</strong> 操作系统正在使用的文件结构会被<strong>瞬间覆盖</strong>，导致<strong>内存中运行的进程失去底层文件支持</strong>，触发<strong>内核级错误</strong>。</li>
+<li>这是 C# 程序的 <strong>发动机</strong> 和工具箱，包含了编译器和运行环境。</li>
+<li>你需要安装它，才能编译和运行 C# 代码。</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="️-第三课c-世界的你好"><a class="markdownIt-Anchor" href="#️-第三课c-世界的你好"></a> ✍️ 第三课：C# 世界的“你好”</h2>
+<h3 id="核心知识点-3"><a class="markdownIt-Anchor" href="#核心知识点-3"></a> 核心知识点</h3>
+<ul>
+<li>程序从 <code>static void Main(string[] args)</code> 这个方法开始执行，这是程序的 <strong>入口</strong>。</li>
+<li>我们用 <code>Console.WriteLine(&quot;...&quot;);</code> 语句来向屏幕 (控制台) 输出文本。</li>
+<li>我们用 <code>Console.ReadKey();</code> 语句来暂停程序，等待用户按键，这样才能看到输出结果。</li>
+<li><strong>控制台应用 (Console App)</strong> 是学习编程基础的最佳起点。</li>
 </ul>
 <hr />
-<h2 id="3-内核与硬件层面的灾难性故障"><a class="markdownIt-Anchor" href="#3-内核与硬件层面的灾难性故障"></a> <strong>3. 内核与硬件层面的灾难性故障</strong></h2>
-<p>系统报废不仅限于文件系统，还可以通过破坏操作系统的核心——<strong>内核</strong>，或通过<strong>滥用硬件资源</strong>来实现。</p>
-<h3 id="31-关键内核文件的破坏"><a class="markdownIt-Anchor" href="#31-关键内核文件的破坏"></a> <strong>3.1. 关键内核文件的破坏</strong></h3>
-<p>Linux内核（通常位于<code>/boot</code>目录下的<code>vmlinuz-*</code>文件）和引导加载程序（如<strong>GRUB</strong>）是系统启动的<strong>基石</strong>。</p>
+<h2 id="第四课语句与分号-的重要性"><a class="markdownIt-Anchor" href="#第四课语句与分号-的重要性"></a> 🛑 第四课：语句与分号 (😉 的重要性</h2>
+<h3 id="核心知识点-4"><a class="markdownIt-Anchor" href="#核心知识点-4"></a> 核心知识点</h3>
+<ol>
+<li><strong>语句 (Statement)</strong>：程序中一个完整的动作或命令。</li>
+<li><strong>分号 (😉</strong>：<strong>每个完整的语句都必须以分号结束</strong>。它就像 C# 语句的“句号”。忘记分号会导致语法错误。</li>
+<li><strong>区分大小写 (Case-Sensitive)</strong>：C# 严格区分大小写。 <code>Console</code> 和 <code>console</code> 是两个不同的东西。</li>
+</ol>
+<hr />
+<h2 id="第五课代码的旁白注释"><a class="markdownIt-Anchor" href="#第五课代码的旁白注释"></a> 💬 第五课：代码的“旁白”——注释</h2>
+<h3 id="核心知识点-5"><a class="markdownIt-Anchor" href="#核心知识点-5"></a> 核心知识点</h3>
 <ul>
-<li><strong>破坏内核映像：</strong> 删除或用随机数据覆盖<strong>正在使用的内核映像文件</strong>，以及<strong>初始化内存盘（initramfs/initrd）</strong>。</li>
-<li><strong>破坏引导配置：</strong> 修改或删除**/boot/grub/grub.cfg**，使其无法找到正确的内核位置或启动参数，导致系统停留在<strong>GRUB命令行界面</strong>。</li>
+<li><strong>注释</strong> 是写给程序员看的说明文字，<strong>编译器会忽略它</strong>，不影响程序运行。</li>
+<li><strong>单行注释</strong>：使用 <code>//</code>。它只注释掉当前行的剩余部分。</li>
+<li><strong>多行注释</strong>：使用 <code>/* ... */</code>。它注释掉 <code>/* </code> 和 <code>*/</code> 之间的所有内容。</li>
+<li><strong>作用</strong>：提高代码可读性，解释复杂逻辑，或临时禁用代码。</li>
 </ul>
-<h3 id="32-内核模块的冲突或破坏"><a class="markdownIt-Anchor" href="#32-内核模块的冲突或破坏"></a> <strong>3.2. 内核模块的冲突或破坏</strong></h3>
-<p>内核模块（Kernel Modules）用于动态扩展内核功能。加载<strong>恶意或有缺陷的模块</strong>可能导致系统不稳定或立即崩溃。</p>
+<hr />
+<h2 id="第六课数据存哪里变量-variables-简介"><a class="markdownIt-Anchor" href="#第六课数据存哪里变量-variables-简介"></a> 📦 第六课：数据存哪里？——变量 (Variables) 简介</h2>
+<h3 id="核心知识点-6"><a class="markdownIt-Anchor" href="#核心知识点-6"></a> 核心知识点</h3>
+<ol>
+<li><strong>变量</strong>：存储数据的“容器”或“小盒子”。</li>
+<li><strong>强类型</strong>：C# 要求在声明变量时 <strong>必须</strong> 指定数据类型。</li>
+<li><strong>声明与赋值</strong>：
 <ul>
-<li><strong>方法：</strong> 强制加载一个<strong>与当前内核版本严重不兼容</strong>的模块，或者故意编写一个执行<strong>空指针解引用</strong>或<strong>无限循环</strong>的模块并加载，从而触发<strong>内核恐慌（Kernel Panic）</strong>。</li>
+<li><strong>声明</strong>：<code>数据类型 变量名;</code> (如 <code>int age;</code>)</li>
+<li><strong>赋值</strong>：<code>变量名 = 值;</code> (如 <code>age = 25;</code>)</li>
 </ul>
-<h3 id="33-资源耗尽导致的硬性停机"><a class="markdownIt-Anchor" href="#33-资源耗尽导致的硬性停机"></a> <strong>3.3. 资源耗尽导致的硬性停机</strong></h3>
-<p>通过<strong>滥用系统资源</strong>可以导致系统不可操作，从而达到报废效果，尽管这通常是临时的，但可以使系统处于无法远程恢复的状态。</p>
+</li>
+<li><strong>常用基本类型</strong>：
 <ul>
-<li><strong>内存与进程耗尽：</strong> 启动一个或多个进程，<strong>无限分配内存</strong>，直到<strong>OOM（Out Of Memory）Killer</strong>失效或系统交换空间被占满，导致系统彻底失去响应。</li>
-<li><strong>I/O阻塞：</strong> 启动<strong>大规模、高频率</strong>的磁盘写入和读取操作，使<strong>I/O子系统饱和</strong>，导致所有其他系统操作超时或卡死。
+<li><strong><code>int</code></strong>：用于存储 <strong>整数</strong> (如 100, -5)。</li>
+<li><strong><code>string</code></strong>：用于存储 <strong>文本/字符串</strong> (如 “锁那”)，文本必须用 <strong>双引号</strong> <code>&quot;&quot;</code> 括起来。</li>
+</ul>
+</li>
+<li><strong>命名规范</strong>：变量推荐使用 <strong>小驼峰命名法 (camelCase)</strong>，如 <code>loveSinger</code>。</li>
+</ol>
+<hr />
+<h2 id="️-第七课显示变量里的数据-与-更多的数字类型"><a class="markdownIt-Anchor" href="#️-第七课显示变量里的数据-与-更多的数字类型"></a> 🖥️ 第七课：显示变量里的数据 与 更多的数字类型</h2>
+<h3 id="核心知识点-两部分内容"><a class="markdownIt-Anchor" href="#核心知识点-两部分内容"></a> 核心知识点 (两部分内容)</h3>
+<h4 id="a-输出变量"><a class="markdownIt-Anchor" href="#a-输出变量"></a> (A) 输出变量</h4>
 <ul>
-<li><strong>示例：</strong> 创建一个<strong>巨大的稀疏文件</strong>并进行连续写入。</li>
+<li><strong>直接输出</strong>：将变量名放在 <code>Console.WriteLine()</code> 括号内即可。</li>
+<li><strong>字符串拼接</strong>：使用 <strong>加号 <code>+</code></strong> 将文本和变量的值连接起来，形成一个完整的句子。
+<ul>
+<li><code>Console.WriteLine(&quot;我的年龄是：&quot; + age);</code></li>
 </ul>
 </li>
 </ul>
-<hr />
-<h2 id="4-权限与安全机制的绕过"><a class="markdownIt-Anchor" href="#4-权限与安全机制的绕过"></a> <strong>4. 权限与安全机制的绕过</strong></h2>
-<p>在现代Linux系统中，上述许多破坏性操作需要<strong>超级用户（root）权限</strong>。因此，“报废”的路径往往依赖于获取和滥用这些特权。</p>
+<h4 id="b-更多的数字类型"><a class="markdownIt-Anchor" href="#b-更多的数字类型"></a> (B) 更多的数字类型</h4>
 <ul>
-<li><strong>权限提升：</strong> 利用<strong>未修补的内核漏洞</strong>或<strong>配置错误的SUID二进制文件</strong>获取root权限。</li>
-<li><strong>系统加固绕过：</strong> 禁用或绕过安全机制，如<strong>SELinux</strong>或<strong>AppArmor</strong>，以确保破坏性操作不会被安全策略阻止。</li>
+<li><strong><code>double</code></strong>：标准浮点数 (带小数点的数字)，如 <code>98.5</code>。这是 C# 默认的小数类型。</li>
+<li><strong><code>decimal</code></strong>：高精度十进制数，<strong>用于货币和金融计算</strong>。赋值时必须加 <code>m</code> 后缀，如 <code>19.99m</code>。</li>
 </ul>
 <hr />
-<h2 id="5-结论"><a class="markdownIt-Anchor" href="#5-结论"></a> <strong>5. 结论</strong></h2>
-<p>本研究阐明了导致Linux系统报废的各种<strong>技术路径和内在机制</strong>，包括对<strong>文件系统的致命打击</strong>、<strong>内核引导组件的破坏</strong>以及<strong>系统资源的灾难性耗尽</strong>。这些机制的核心在于破坏系统运行的<strong>最小集合</strong>或<strong>核心功能</strong>。了解这些脆弱点对于系统安全维护至关重要，提醒我们必须严格限制对关键资源的访问，实施<strong>最小权限原则</strong>，并定期进行<strong>关键系统文件的备份与完整性检查</strong>。</p>
+<h2 id="第八课让数字动起来算术运算符"><a class="markdownIt-Anchor" href="#第八课让数字动起来算术运算符"></a> ➕ 第八课：让数字动起来——算术运算符</h2>
+<h3 id="核心知识点-7"><a class="markdownIt-Anchor" href="#核心知识点-7"></a> 核心知识点</h3>
+<ol>
+<li><strong>基本算术符</strong>：<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code>。</li>
+<li><strong>取模运算 (<code>%</code>)</strong>：求除法运算后的<strong>余数</strong>。例如：<code>10 % 3</code> 结果是 1。</li>
+<li><strong>整数除法陷阱</strong>：
+<ul>
+<li>当两个 <code>int</code> (整数) 相除时，结果也是 <code>int</code>，小数部分会被<strong>丢弃</strong> (例如 <code>10 / 4</code> 结果是 2)。</li>
+<li><strong>强制精确除法</strong>：需要使用<strong>强制类型转换 (Casting)</strong>：  <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">int</span> a = <span class="number">17</span>;</span><br><span class="line"><span class="built_in">int</span> b = <span class="number">5</span>;</span><br><span class="line"><span class="built_in">double</span> result = (<span class="built_in">double</span>)a / b; <span class="comment">// 结果为 3.4</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
 <hr />
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+<h2 id="第九课变量的快速修改复合赋值运算符"><a class="markdownIt-Anchor" href="#第九课变量的快速修改复合赋值运算符"></a> 🔗 第九课：变量的快速修改——复合赋值运算符</h2>
+<h3 id="核心知识点-8"><a class="markdownIt-Anchor" href="#核心知识点-8"></a> 核心知识点</h3>
+<ul>
+<li><strong>复合赋值运算符</strong>：将算术操作符和赋值操作符 (<code>=</code>) 结合，用于对变量自身进行修改，使代码更简洁。</li>
+<li><strong>常用形式</strong>：
+<ul>
+<li><strong>加后赋值</strong>：<code>x += y</code> 等同于 <code>x = x + y</code>。</li>
+<li><strong>减后赋值</strong>：<code>x -= y</code> 等同于 <code>x = x - y</code>。</li>
+<li><strong>乘后赋值</strong>：<code>x *= y</code> 等同于 <code>x = x * y</code>。</li>
+</ul>
+</li>
+<li><strong>字符串拼接</strong>：<code>stringName += &quot; World!&quot;</code> 可用于简洁地追加文本。</li>
+</ul>
+<hr />
+<h2 id="第十课最简洁的修改递增与递减运算符"><a class="markdownIt-Anchor" href="#第十课最简洁的修改递增与递减运算符"></a> 📈 第十课：最简洁的修改——递增与递减运算符</h2>
+<h3 id="核心知识点-9"><a class="markdownIt-Anchor" href="#核心知识点-9"></a> 核心知识点</h3>
+<ol>
+<li><strong>递增 (<code>++</code>)</strong>：将变量值加 1。</li>
+<li><strong>递减 (<code>--</code>)</strong>：将变量值减 1。</li>
+<li><strong>前缀式 vs. 后缀式</strong> (在表达式中使用时有区别)：
+<ul>
+<li><strong>前缀式 (<code>++a</code>)</strong>：<strong>先变</strong> (先加 1)，<strong>后用新值</strong>。</li>
+<li><strong>后缀式 (<code>a++</code>)</strong>：<strong>后变</strong> (先用旧值)，<strong>后加 1</strong>。</li>
+<li>记忆口诀：“前缀先变，后缀后变。”</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="第十一课比较与判断布尔值和关系运算符"><a class="markdownIt-Anchor" href="#第十一课比较与判断布尔值和关系运算符"></a> 🧐 第十一课：比较与判断——布尔值和关系运算符</h2>
+<h3 id="核心知识点-10"><a class="markdownIt-Anchor" href="#核心知识点-10"></a> 核心知识点</h3>
+<ol>
+<li><strong>布尔值 (<code>bool</code>)</strong>：只能存储两个值：<strong><code>true</code></strong> (真) 或 <strong><code>false</code></strong> (假)。这是所有程序判断的基础。</li>
+<li><strong>关系运算符</strong>：用于比较两个值，返回一个 <code>bool</code> 结果。
+<ul>
+<li><strong>等于</strong>：<code>==</code> (<strong>重点：双等号！</strong>)</li>
+<li><strong>不等于</strong>：<code>!=</code></li>
+<li><strong>大于/小于</strong>：<code>&gt;</code>, <code>&lt;</code></li>
+<li><strong>大于等于/小于等于</strong>：<code>&gt;=</code>, <code>&lt;=</code></li>
+</ul>
+</li>
+<li><strong>重要区分</strong>：<strong><code>=</code> 是赋值</strong>，<strong><code>==</code> 是比较</strong>。</li>
+</ol>
+<hr />
+<h2 id="第十二课组合条件逻辑运算符"><a class="markdownIt-Anchor" href="#第十二课组合条件逻辑运算符"></a> 🚦 第十二课：组合条件——逻辑运算符</h2>
+<h3 id="核心知识点-11"><a class="markdownIt-Anchor" href="#核心知识点-11"></a> 核心知识点</h3>
+<p>逻辑运算符用于组合或反转 <code>bool</code> 表达式：</p>
+<ol>
+<li><strong>逻辑与 (AND)：<code>&amp;&amp;</code></strong>
+<ul>
+<li><strong>要求</strong>：所有条件都为 <code>true</code>，结果才是 <code>true</code>。</li>
+<li><strong>口诀</strong>：【一假即假】。</li>
+</ul>
+</li>
+<li><strong>逻辑或 (OR)：<code>||</code></strong>
+<ul>
+<li><strong>要求</strong>：只要有一个条件为 <code>true</code>，结果就是 <code>true</code>。</li>
+<li><strong>口诀</strong>：【一真即真】。</li>
+</ul>
+</li>
+<li><strong>逻辑非 (NOT)：<code>!</code></strong>
+<ul>
+<li><strong>作用</strong>：将布尔值结果<strong>反转</strong> (<code>true</code> 变 <code>false</code>，<code>false</code> 变 <code>true</code>)。</li>
+</ul>
+</li>
+</ol>
+<h2 id="至第十二课全部代码"><a class="markdownIt-Anchor" href="#至第十二课全部代码"></a> 至第十二课全部代码</h2>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 整数变量演示</span></span><br><span class="line"><span class="built_in">int</span> sanaYears = <span class="number">2015</span>;</span><br><span class="line">Console.WriteLine(<span class="string">&quot;锁那出道年：&quot;</span> + sanaYears);</span><br><span class="line"><span class="comment">// 非整数变量演示</span></span><br><span class="line"><span class="built_in">double</span> sanaRating = <span class="number">9.9</span>;</span><br><span class="line"><span class="built_in">decimal</span> sanaPrice = <span class="number">350.5</span>m;<span class="comment">//m</span></span><br><span class="line">Console.WriteLine(<span class="string">&quot;锁那评分：&quot;</span> + sanaRating + <span class="string">&quot;。锁那专辑价格 &quot;</span>+sanaPrice+<span class="string">&quot; 元。&quot;</span>);</span><br><span class="line"><span class="comment">// 计算演示</span></span><br><span class="line"><span class="built_in">int</span> num1=<span class="number">17</span>;</span><br><span class="line"><span class="built_in">int</span> num2=<span class="number">5</span>;</span><br><span class="line"><span class="comment">// 加法</span></span><br><span class="line"><span class="built_in">int</span> sumResult = num1 + num2;</span><br><span class="line"><span class="comment">// 余数</span></span><br><span class="line"><span class="built_in">int</span> modResult = num1 % num2;</span><br><span class="line"><span class="comment">// 除以，强制 num1 为 double</span></span><br><span class="line"><span class="built_in">double</span> divisionResult = (<span class="built_in">double</span>)num1 / num2;</span><br><span class="line"><span class="comment">// 结果</span></span><br><span class="line">Console.WriteLine(<span class="string">&quot;sum:&quot;</span> + sumResult + <span class="string">&quot; mod:&quot;</span> + modResult + <span class="string">&quot; div:&quot;</span> + divisionResult);</span><br><span class="line"><span class="comment">// 复合赋值运算符</span></span><br><span class="line"><span class="built_in">string</span> singerName = <span class="string">&quot;锁那&quot;</span>;</span><br><span class="line">sanaYears += <span class="number">10</span>;<span class="comment">// 2025</span></span><br><span class="line"><span class="comment">// 锁那 Hush...</span></span><br><span class="line">singerName += <span class="string">&quot; Hush a by little girl&quot;</span>;</span><br><span class="line">Console.WriteLine(<span class="string">&quot;10年后：&quot;</span>+sanaYears +<span class="string">&quot;名字：&quot;</span>+ singerName);</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 递增与递减 及 复合赋值 */</span></span><br><span class="line"><span class="comment">// **声明与初始化**：变量 a 初始为 10，b 待赋值</span></span><br><span class="line"><span class="built_in">int</span> a = <span class="number">10</span>, b;</span><br><span class="line"><span class="comment">// **后缀递增 (a++)**：先使用 a 的旧值 (10) 赋值给 b，再将 a 加 1。</span></span><br><span class="line">b = a++;</span><br><span class="line"><span class="comment">// 运行后：a = 11, b = 10</span></span><br><span class="line">Console.WriteLine(a); <span class="comment">// 输出 11</span></span><br><span class="line">Console.WriteLine(b); <span class="comment">// 输出 10</span></span><br><span class="line"><span class="comment">// **前缀递减 (--a)**：先将 a 减 1 (a 变为 10)，再使用 a 的新值 (10) 赋值给 b。</span></span><br><span class="line">b = --a;</span><br><span class="line"><span class="comment">// 运行后：a = 10, b = 10</span></span><br><span class="line">Console.WriteLine(a); <span class="comment">// 输出 10</span></span><br><span class="line">Console.WriteLine(b); <span class="comment">// 输出 10</span></span><br><span class="line"><span class="comment">// **复合赋值 (b += 2)**：等同于 b = b + 2，将 b 的值 (10) 增加 2。</span></span><br><span class="line">b += <span class="number">2</span>;</span><br><span class="line"><span class="comment">// 运行后：a = 10, b = 12</span></span><br><span class="line">Console.WriteLine(a); <span class="comment">// 输出 10</span></span><br><span class="line">Console.WriteLine(b); <span class="comment">// 输出 12</span></span><br><span class="line">Console.ReadKey();</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 关系运算符和布尔值 */</span></span><br><span class="line"><span class="comment">// **数据初始化**：用于比较的整数变量</span></span><br><span class="line"><span class="built_in">int</span> currentYear = <span class="number">2025</span>;</span><br><span class="line"><span class="built_in">int</span> targetYear = <span class="number">2030</span>;</span><br><span class="line"><span class="comment">// **关系运算符 (&lt;=)**：小于等于。关系运算符总是返回 **bool** 类型的结果。</span></span><br><span class="line"><span class="built_in">bool</span> isFuture = currentYear &lt;= targetYear;</span><br><span class="line"><span class="comment">// **关系运算符 (==)**：判断是否相等，注意使用【双等号 ==】(比较) 而非【单等号 =】(赋值)。</span></span><br><span class="line"><span class="built_in">bool</span> isEqual = currentYear == targetYear;</span><br><span class="line"><span class="comment">// **输出拼接**：开头使用空字符串 &quot;&quot; 来强制将后面的数字变量转换为文本进行拼接，而不是相加。</span></span><br><span class="line">Console.WriteLine(<span class="string">&quot;&quot;</span> + currentYear + targetYear);</span><br><span class="line"><span class="comment">// **输出布尔值**：布尔值 (True/False) 可以直接与字符串拼接输出。</span></span><br><span class="line">Console.WriteLine(<span class="string">&quot;是否 isFuture: &quot;</span> + isFuture + <span class="string">&quot; | 是否 isEqual: &quot;</span> + isEqual);</span><br><span class="line">Console.ReadKey(); <span class="comment">// 这个代码是让控制台暂停</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 逻辑运算符 */</span></span><br><span class="line"><span class="comment">// **数据初始化**：用于演示逻辑判断的初始值</span></span><br><span class="line"><span class="built_in">int</span> temp = <span class="number">25</span>; <span class="comment">// 温度</span></span><br><span class="line"><span class="built_in">bool</span> isRaining = <span class="literal">true</span>; <span class="comment">// 是否下雨</span></span><br><span class="line"><span class="comment">// **逻辑与 (&amp;&amp;)**：要求所有条件都为 True，口诀【一假即假】。</span></span><br><span class="line"><span class="comment">// 判断条件：温度 &lt; 20 (False) AND 下雨 (True)</span></span><br><span class="line"><span class="built_in">bool</span> needJacket = (temp &lt; <span class="number">20</span>) &amp;&amp; isRaining;</span><br><span class="line"><span class="comment">// **逻辑或 (||)**：只要有一个条件为 True，结果就是 True，口诀【一真即真】。</span></span><br><span class="line"><span class="comment">// 判断条件：温度 &gt;= 30 (False) OR 下雨 (True)</span></span><br><span class="line"><span class="built_in">bool</span> isGoodDay = (temp &gt;= <span class="number">30</span>) || isRaining;</span><br><span class="line"><span class="comment">// **逻辑非 (!)**：将布尔值结果取反。</span></span><br><span class="line"><span class="comment">// 判断条件：NOT(温度 &gt;= 30) AND NOT(下雨)</span></span><br><span class="line"><span class="built_in">bool</span> isNotGoodDay = !(temp &gt;= <span class="number">30</span>) &amp;&amp; !isRaining;</span><br><span class="line"><span class="comment">// **输出结果**：将布尔判断的结果用拼接符 (+) 输出到控制台。</span></span><br><span class="line">Console.WriteLine(<span class="string">&quot;需要外套：&quot;</span> + needJacket + <span class="string">&quot;。好天气：&quot;</span> + isGoodDay + <span class="string">&quot;。坏天气：&quot;</span> + isNotGoodDay);</span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure>
+<hr />
+<h2 id="第十三课程序的岔路口条件语句-if-else"><a class="markdownIt-Anchor" href="#第十三课程序的岔路口条件语句-if-else"></a> 🚦 第十三课：程序的岔路口——条件语句 <code>if-else</code></h2>
+<h3 id="核心知识点-12"><a class="markdownIt-Anchor" href="#核心知识点-12"></a> 核心知识点</h3>
+<p>条件语句用于根据布尔结果 (<code>true</code> 或 <code>false</code>) 来控制程序的执行流程。</p>
+<ol>
+<li>
+<p><strong>基础 <code>if</code> 语句</strong>：</p>
+<ul>
+<li><strong>作用</strong>：如果条件满足 (<code>true</code>)，则执行 <code>&#123;&#125;</code> 内的代码。</li>
+<li><strong>语法</strong>：  <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (布尔表达式)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 条件为 true 时执行</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 注意：if 后面不能有分号 (;)</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>if-else</code> 语句 (非此即彼)</strong>：</p>
+<ul>
+<li><strong>作用</strong>：在条件为 <code>true</code> 或 <code>false</code> 时执行不同逻辑。</li>
+<li><strong>语法</strong>：  <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (条件)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 条件为 true 时执行 (A 任务)</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 条件为 false 时执行 (B 任务)</span></span><br><span class="line">    <span class="comment">// else 是默认的、最后的选择</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><code>if-else if-else</code> 语句 (多重判断)</strong>：</p>
+<ul>
+<li><strong>作用</strong>：依次检查多个互斥条件。</li>
+<li><strong>执行流程</strong>：C# 从上到下依次检查，一旦遇到第一个 <code>true</code> 的条件，就执行对应代码块，然后<strong>跳出整个结构</strong>。</li>
+<li><strong>语法</strong>：  <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (条件一)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span> (条件二)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 以上所有条件都不满足时执行</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>重要语法规则</strong>：</p>
+<ul>
+<li><code>if</code>, <code>else if</code>, <code>else</code> 后面<strong>都不能</strong>直接跟分号 <code>;</code>。</li>
+<li><code>if</code> 后面的小括号 <code>()</code> 内必须是最终能得出 <code>bool</code> 结果的表达式。</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="第十三课全部代码"><a class="markdownIt-Anchor" href="#第十三课全部代码"></a> 第十三课全部代码</h2>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 第十三课：if-else 条件语句 */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 声明变量并初始化数据</span></span><br><span class="line"><span class="built_in">int</span> currentScore = <span class="number">75</span>; </span><br><span class="line"></span><br><span class="line"><span class="comment">// **if 语句**：程序的第一个判断点。</span></span><br><span class="line"><span class="comment">// 核心知识点 1：if 后的 () 内必须是布尔表达式。</span></span><br><span class="line"><span class="comment">// 核心知识点 2：if/else if/else 后面**不能**加分号 (;)。</span></span><br><span class="line"><span class="keyword">if</span> (currentScore &gt;= <span class="number">90</span>) </span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 如果条件 (75 &gt;= 90) 为 FALSE，则跳过此代码块。</span></span><br><span class="line">    Console.WriteLine(<span class="string">&quot;等级 A&quot;</span>); </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// **else if 语句**：当前一个 if/else if 为 FALSE 时，检查这个新条件。</span></span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span> (currentScore &gt;= <span class="number">60</span>) </span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 检查条件 (75 &gt;= 60) 为 TRUE，程序执行此代码块。</span></span><br><span class="line">    <span class="comment">// 执行完后，会跳过后面的所有 else 语句。</span></span><br><span class="line">    Console.WriteLine(<span class="string">&quot;等级 B&quot;</span>); </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// **else 语句**：如果以上所有条件都为 FALSE，则执行此默认代码块。</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 流程控制：由于上一个 else if 为 TRUE，此处代码会被跳过。</span></span><br><span class="line">    Console.WriteLine(<span class="string">&quot;等级 C&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 暂停程序，等待用户按键退出</span></span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
             
         </div>
         <footer class="article-footer">
-            <a data-url="http://example.com/20251126/155720/" data-id="cmifpqq6h000nyjg4ho706za8" data-title="如何让Linux系统报废"
+            <a data-url="http://example.com/20251126/155720/" data-id="cmig0ohse000kh9g43dhu0wt1" data-title="C# 入门课"
                class="article-share-link">分享</a>
             
                 <a href="/20251126/155720/#comments" class="article-comment-link">
@@ -411,10 +552,10 @@
             
                 <div>
                     <span class="icon-brush"></span>
-                    24k
+                    25k
                     &nbsp;|&nbsp;
                     <span class="icon-coffee"></span>
-                    01:35
+                    01:40
                 </div>
             
             
