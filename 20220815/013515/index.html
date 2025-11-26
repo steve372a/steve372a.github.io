@@ -175,8 +175,9 @@
 
         <div class="e-content article-entry" itemprop="articleBody">
             
-                <h2 id="准备开始"><a href="#准备开始" class="headerlink" title="准备开始"></a>准备开始</h2><h3 id="设备"><a href="#设备" class="headerlink" title="设备"></a>设备</h3><p>这里我列出了 A7 设备的降级情况，你们可以参考一下。</p>
-<div class="table-container">
+                <h2 id="准备开始"><a class="markdownIt-Anchor" href="#准备开始"></a> 准备开始</h2>
+<h3 id="设备"><a class="markdownIt-Anchor" href="#设备"></a> 设备</h3>
+<p>这里我列出了 A7 设备的降级情况，你们可以参考一下。</p>
 <table>
 <thead>
 <tr>
@@ -208,17 +209,40 @@
 </tr>
 </tbody>
 </table>
-</div>
-<p>部分机器是不能降级的，一定要看清楚！<br>依赖</p>
-<p>1.macOS系统，不要用虚拟机，黑苹果白苹果皆可。推荐白苹果。</p>
-<p><font color=red>Windows 和 Linux 也可以降级，比较麻烦。不能使用此教程。这里我贴上项目地址，你们可以去看看：</font><a target="_blank" rel="noopener" href="https://github.com/LukeZGD/iOS-OTA-Downgrader">Github 项目跳转</a><br>2.当然是你的固件啦！</p>
-<h2 id="开始咯～"><a href="#开始咯～" class="headerlink" title="开始咯～"></a>开始咯～</h2><p>首先我们需要安装 Homebrew。这里我推荐使用国内网路地址：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/zsh -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure><br>等待片刻，然后输入下面的命令：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install libusb</span><br></pre></td></tr></table></figure><br>然后我们下载 LeetDown 降级工具。鉴于国内复杂的网络环境，我专门准备了下载地址供你们下载，版本1.0.5：点我下载<br>安装完成后，可能会提示“意外退出”的提示，不用担心。<br><img src="https://img.gejiba.com/images/9ea7514ba09b7128226ba5231a40ba9d.png" alt=""><br>可以直接使用以下方法修复。输入命令：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo codesign --force --deep --sign - /Applications/LeetDown.app</span><br></pre></td></tr></table></figure><br><img src="https://img.gejiba.com/images/c5e9175306a6226e49fad54cbf722bda.png" alt=""><br>上方的 xcode 开头的命令在安装 Homebrew 的时候就要求你运行了，无需再次运行。”<br>运行完成此命令后，重新启动 LeetDown 软件。<br><img src="https://img.gejiba.com/images/c74987f4b630b46df57fac969aca8ef3.png" alt=""><br>点击第一个按钮，选择你设备的固件。如果你还没下载固件，推荐你在爱思助手网站下载：<a target="_blank" rel="noopener" href="https://www.i4.cn/firmware.html">点击进入下载页面</a></p>
-<p><font color=red>稍等一会，然后将你的设备进入 DFU 模式。进入方法是：先是长按电源键+HOME键 15 秒，然后松开电源键(但切记一定不要松开 HOME 键)再按十秒即可。</font><br>然后点击第二个按钮即可。<br>点击后会让我们选择使用 ipwndfu 还是 pwnedDFU，我们这里选择 pwnedDFU。<br><img src="https://img.gejiba.com/images/5194621142f936b4ff57a28328d69211.png" alt=""><br>如果一切顺利的话，等待一会后设备会红屏然后绿屏然后出现 Apple Logo。<br><img src="https://img.gejiba.com/images/75fa330ca2a8541f26187dc603b894be.jpg" alt=""><br>然后一台崭新的 iOS 10.3.3 系统就安装完成啦～<br><img src="https://img.gejiba.com/images/f0df81048ef6666b6c4a3ced0e7302e4.jpg" alt=""><br>希望此教程能对你有帮助！感谢你看到这里！</p>
+<p>部分机器是不能降级的，一定要看清楚！<br />
+依赖</p>
+<p>1.macOS系统，不要用虚拟机，黑苹果白苹果皆可。推荐白苹果。<br />
+<font color=red>Windows 和 Linux 也可以降级，比较麻烦。不能使用此教程。这里我贴上项目地址，你们可以去看看：</font><a target="_blank" rel="noopener" href="https://github.com/LukeZGD/iOS-OTA-Downgrader">Github 项目跳转</a><br />
+2.当然是你的固件啦！</p>
+<h2 id="开始咯~"><a class="markdownIt-Anchor" href="#开始咯~"></a> 开始咯～</h2>
+<p>首先我们需要安装 Homebrew。这里我推荐使用国内网路地址：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/zsh -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure>
+<p>等待片刻，然后输入下面的命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install libusb</span><br></pre></td></tr></table></figure>
+<p>然后我们下载 LeetDown 降级工具。鉴于国内复杂的网络环境，我专门准备了下载地址供你们下载，版本1.0.5：点我下载<br />
+安装完成后，可能会提示“意外退出”的提示，不用担心。<br />
+<img src="https://img.gejiba.com/images/9ea7514ba09b7128226ba5231a40ba9d.png" alt="" /><br />
+可以直接使用以下方法修复。输入命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo codesign --force --deep --sign - /Applications/LeetDown.app</span><br></pre></td></tr></table></figure>
+<p><img src="https://img.gejiba.com/images/c5e9175306a6226e49fad54cbf722bda.png" alt="" /><br />
+上方的 xcode 开头的命令在安装 Homebrew 的时候就要求你运行了，无需再次运行。”<br />
+运行完成此命令后，重新启动 LeetDown 软件。<br />
+<img src="https://img.gejiba.com/images/c74987f4b630b46df57fac969aca8ef3.png" alt="" /><br />
+点击第一个按钮，选择你设备的固件。如果你还没下载固件，推荐你在爱思助手网站下载：<a target="_blank" rel="noopener" href="https://www.i4.cn/firmware.html">点击进入下载页面</a><br />
+<font color=red>稍等一会，然后将你的设备进入 DFU 模式。进入方法是：先是长按电源键+HOME键 15 秒，然后松开电源键(但切记一定不要松开 HOME 键)再按十秒即可。</font><br />
+然后点击第二个按钮即可。<br />
+点击后会让我们选择使用 ipwndfu 还是 pwnedDFU，我们这里选择 pwnedDFU。<br />
+<img src="https://img.gejiba.com/images/5194621142f936b4ff57a28328d69211.png" alt="" /><br />
+如果一切顺利的话，等待一会后设备会红屏然后绿屏然后出现 Apple Logo。<br />
+<img src="https://img.gejiba.com/images/75fa330ca2a8541f26187dc603b894be.jpg" alt="" /><br />
+然后一台崭新的 iOS 10.3.3 系统就安装完成啦～<br />
+<img src="https://img.gejiba.com/images/f0df81048ef6666b6c4a3ced0e7302e4.jpg" alt="" /><br />
+希望此教程能对你有帮助！感谢你看到这里！</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
             
         </div>
         <footer class="article-footer">
-            <a data-url="http://example.com/20220815/013515/" data-id="cmig6cbno0001a0g4eja4a5yh" data-title="Apple A7 设备降级到 10.3.3 系统"
+            <a data-url="http://example.com/20220815/013515/" data-id="cmig6gjbl0001ifg42550f5p7" data-title="Apple A7 设备降级到 10.3.3 系统"
                class="article-share-link">分享</a>
             
                 <a href="/20220815/013515/#comments" class="article-comment-link">
@@ -388,10 +412,10 @@
             
                 <div>
                     <span class="icon-brush"></span>
-                    26.6k
+                    26.3k
                     &nbsp;|&nbsp;
                     <span class="icon-coffee"></span>
-                    01:45
+                    01:44
                 </div>
             
             
