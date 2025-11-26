@@ -788,6 +788,65 @@ Windows 11      std / VMware
       </tags>
   </entry>
   <entry>
+    <title>Windows NT4.0 安装教程</title>
+    <url>/20230119/063535/</url>
+    <content><![CDATA[<h1 id="镜像链接"><a class="markdownIt-Anchor" href="#镜像链接"></a> 镜像链接</h1>
+<p><a href="https://pan.huang1111.cn/s/lyBgTL">Click me to download ISO image [FREE!!]</a><br />
+<img src="https://img.gejiba.com/images/27da4e034df0231a2bb7ec09508d6137.png" alt="" /></p>
+<h1 id="安装教程"><a class="markdownIt-Anchor" href="#安装教程"></a> 安装教程</h1>
+<p>1.我们通过虚拟机成功引导系统后，可以看到下面界面：<br />
+<img src="https://img.gejiba.com/images/13407dbc2626460c9a71238d7e9add43.jpg" alt="" /><br />
+2.按 ENTER 继续，创建分区。<br />
+要记住，Windows NT 4.0 Service Pack 1 是不支持大硬盘的，所以我们这里只能给系统分 4096 MB 的分区。<br />
+这里我们随便选择，根据你的需求选择是否 FAT16 还是 NTFS。(不支持 FAT32)<br />
+<img src="https://img.gejiba.com/images/eac95cb4fdc249de0e22c466a8b36c4c.png" alt="" /><br />
+静等第一阶段安装完毕后，重启即可。<br />
+注意！重启一直到安装完成之前，都不可以动任何虚拟机硬件，否则开机会蓝屏。<br />
+就比如我在第一阶段安装完毕后，添加了一个 Cirrus 显示卡，结果开机蓝屏 0x0000007B<br />
+3.重启后，开始第二阶段安装<br />
+<img src="https://img.gejiba.com/images/3ccb7f2b8cdfe50abe4ed8bcb0040c1e.png" alt="" /><br />
+4.点击“下一步”，选择安装类型，这里我们选择典型。<br />
+<img src="https://img.gejiba.com/images/b6ebcb7ac6c1c161fcdad7d5257f29dd.png" alt="" /><br />
+5.输入自己的名字和组织，皆为选填。<br />
+<img src="https://img.gejiba.com/images/7e58b624f0b674e7bb79473b752418fc.png" alt="" /><br />
+6.输入 Windows NT 4.0 Workstation 的 [ CD-Key ]。<br />
+<img src="https://img.gejiba.com/images/664496dbed01c7222e6cd7205191470d.jpg" alt="" /><br />
+7.输入自己的计算机名称，随便输入。这个名称用于给您电脑命名，供别人在局域网上识别。<br />
+<img src="https://img.gejiba.com/images/320b4cc1d869b9ae53ec921d0e9b318b.png" alt="" /><br />
+8.设置管理员账户的密码，酌情而定，我这里不填。<br />
+<img src="https://img.gejiba.com/images/b1aee64d28853da06f1c4f266f063bfa.png" alt="" /><br />
+9.这里选择“否”，然后点击“下一步”。<br />
+<img src="https://img.gejiba.com/images/df453d8f0c90b757c6568899e86e2c09.png" alt="" /><br />
+10.根据您的需求来挑选，选完之后点击“下一步”。<br />
+<img src="https://img.gejiba.com/images/acf185c6f2093204bc904b30b358946e.png" alt="" /><br />
+11.如果您想稍后再设置网络，那就选择“此时不要将计算机连接到网络”。因为我要上网，所以这里会详细讲解如何设置网络。<br />
+<img src="https://img.gejiba.com/images/9932dabfbbb1b2832fd78d83a8662cd6.png" alt="" /><br />
+12.点击“开始搜索”，搜寻网卡，搜到了你需要的网卡之后，点击“下一步”。<br />
+<img src="https://img.gejiba.com/images/9b6782f707f703733eec3e05466832f8.jpg" alt="" /><br />
+13.这里我们直接“下一步”。<br />
+<img src="https://img.gejiba.com/images/b9b1e73bd8b0ce8e3ce7e479319d00e9.jpg" alt="" /><br />
+如果出现一个要设置“网卡 ID”的东西，直接点击“Skip”。<br />
+14.这里一定要选择“是”，否则系统就不会使用 DHCP，需要你自己配置网络，很麻烦。<br />
+<img src="https://img.gejiba.com/images/632444ae356f000c14cd4ccf84340fc9.jpg" alt="" /><br />
+15.点击“下一步”。<br />
+<img src="https://img.gejiba.com/images/796666538ef1ffcaa4d51675da92e3b0.jpg" alt="" /><br />
+启用网络后，就开始安装 Windows NT Workstation 了。<br />
+16.出现显示器设置后，我们点击“65536 色”，然后点击“测试”。<br />
+<img src="https://img.gejiba.com/images/6ecde8d8ac3b2576ab5700a4d45429ac.jpg" alt="" /><br />
+如果点击“测试”之后，显示器没有出现异常，那么就可以点击“确定”继续下一步安装了。<br />
+<img src="https://img.gejiba.com/images/f33fae8c67e750c81dcd9b20bd649c7e.jpg" alt="" /><br />
+等会系统就安装完成了。<br />
+后续安装：<br />
+因为 Windows NT4.0 Service Pack 1 和所附带的 Internet Explorer 3.0 十分古老，我推荐安装 Service Pack 6 之后再安装 Internet Explorer 5.0。<br />
+17.在安装盘中找到 SP6I386_CN.EXE，打开它，等待复制文件之后点击“安装”。<br />
+<img src="https://img.gejiba.com/images/c38d244a6be2a67afa8663ab97980c16.jpg" alt="" /><br />
+18.重启后，再次打开安装盘，找到 “Internet Explorer 5.0” 文件夹。<br />
+找到“IE5SETUP.EXE”，打开它。<br />
+<img src="https://img.gejiba.com/images/c74b6d6e80737d95f4620993ee2210b5.jpg" alt="" /><br />
+等待安装即可。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
     <title>iOS 的发展历史</title>
     <url>/20230818/205837/</url>
     <content><![CDATA[<p>苹果 iOS 系统已经走过了自己的第 16 个年头，各位新入局的 iOS 玩家可能对 iOS 的历史比较感兴趣，经过整理后，我撰写了这篇文章。</p>
@@ -900,135 +959,11 @@ Windows 11      std / VMware
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>Windows NT4.0 安装教程</title>
-    <url>/20230119/063535/</url>
-    <content><![CDATA[<h1 id="镜像链接"><a class="markdownIt-Anchor" href="#镜像链接"></a> 镜像链接</h1>
-<p><a href="https://pan.huang1111.cn/s/lyBgTL">Click me to download ISO image [FREE!!]</a><br />
-<img src="https://img.gejiba.com/images/27da4e034df0231a2bb7ec09508d6137.png" alt="" /></p>
-<h1 id="安装教程"><a class="markdownIt-Anchor" href="#安装教程"></a> 安装教程</h1>
-<p>1.我们通过虚拟机成功引导系统后，可以看到下面界面：<br />
-<img src="https://img.gejiba.com/images/13407dbc2626460c9a71238d7e9add43.jpg" alt="" /><br />
-2.按 ENTER 继续，创建分区。<br />
-要记住，Windows NT 4.0 Service Pack 1 是不支持大硬盘的，所以我们这里只能给系统分 4096 MB 的分区。<br />
-这里我们随便选择，根据你的需求选择是否 FAT16 还是 NTFS。(不支持 FAT32)<br />
-<img src="https://img.gejiba.com/images/eac95cb4fdc249de0e22c466a8b36c4c.png" alt="" /><br />
-静等第一阶段安装完毕后，重启即可。<br />
-注意！重启一直到安装完成之前，都不可以动任何虚拟机硬件，否则开机会蓝屏。<br />
-就比如我在第一阶段安装完毕后，添加了一个 Cirrus 显示卡，结果开机蓝屏 0x0000007B<br />
-3.重启后，开始第二阶段安装<br />
-<img src="https://img.gejiba.com/images/3ccb7f2b8cdfe50abe4ed8bcb0040c1e.png" alt="" /><br />
-4.点击“下一步”，选择安装类型，这里我们选择典型。<br />
-<img src="https://img.gejiba.com/images/b6ebcb7ac6c1c161fcdad7d5257f29dd.png" alt="" /><br />
-5.输入自己的名字和组织，皆为选填。<br />
-<img src="https://img.gejiba.com/images/7e58b624f0b674e7bb79473b752418fc.png" alt="" /><br />
-6.输入 Windows NT 4.0 Workstation 的 [ CD-Key ]。<br />
-<img src="https://img.gejiba.com/images/664496dbed01c7222e6cd7205191470d.jpg" alt="" /><br />
-7.输入自己的计算机名称，随便输入。这个名称用于给您电脑命名，供别人在局域网上识别。<br />
-<img src="https://img.gejiba.com/images/320b4cc1d869b9ae53ec921d0e9b318b.png" alt="" /><br />
-8.设置管理员账户的密码，酌情而定，我这里不填。<br />
-<img src="https://img.gejiba.com/images/b1aee64d28853da06f1c4f266f063bfa.png" alt="" /><br />
-9.这里选择“否”，然后点击“下一步”。<br />
-<img src="https://img.gejiba.com/images/df453d8f0c90b757c6568899e86e2c09.png" alt="" /><br />
-10.根据您的需求来挑选，选完之后点击“下一步”。<br />
-<img src="https://img.gejiba.com/images/acf185c6f2093204bc904b30b358946e.png" alt="" /><br />
-11.如果您想稍后再设置网络，那就选择“此时不要将计算机连接到网络”。因为我要上网，所以这里会详细讲解如何设置网络。<br />
-<img src="https://img.gejiba.com/images/9932dabfbbb1b2832fd78d83a8662cd6.png" alt="" /><br />
-12.点击“开始搜索”，搜寻网卡，搜到了你需要的网卡之后，点击“下一步”。<br />
-<img src="https://img.gejiba.com/images/9b6782f707f703733eec3e05466832f8.jpg" alt="" /><br />
-13.这里我们直接“下一步”。<br />
-<img src="https://img.gejiba.com/images/b9b1e73bd8b0ce8e3ce7e479319d00e9.jpg" alt="" /><br />
-如果出现一个要设置“网卡 ID”的东西，直接点击“Skip”。<br />
-14.这里一定要选择“是”，否则系统就不会使用 DHCP，需要你自己配置网络，很麻烦。<br />
-<img src="https://img.gejiba.com/images/632444ae356f000c14cd4ccf84340fc9.jpg" alt="" /><br />
-15.点击“下一步”。<br />
-<img src="https://img.gejiba.com/images/796666538ef1ffcaa4d51675da92e3b0.jpg" alt="" /><br />
-启用网络后，就开始安装 Windows NT Workstation 了。<br />
-16.出现显示器设置后，我们点击“65536 色”，然后点击“测试”。<br />
-<img src="https://img.gejiba.com/images/6ecde8d8ac3b2576ab5700a4d45429ac.jpg" alt="" /><br />
-如果点击“测试”之后，显示器没有出现异常，那么就可以点击“确定”继续下一步安装了。<br />
-<img src="https://img.gejiba.com/images/f33fae8c67e750c81dcd9b20bd649c7e.jpg" alt="" /><br />
-等会系统就安装完成了。<br />
-后续安装：<br />
-因为 Windows NT4.0 Service Pack 1 和所附带的 Internet Explorer 3.0 十分古老，我推荐安装 Service Pack 6 之后再安装 Internet Explorer 5.0。<br />
-17.在安装盘中找到 SP6I386_CN.EXE，打开它，等待复制文件之后点击“安装”。<br />
-<img src="https://img.gejiba.com/images/c38d244a6be2a67afa8663ab97980c16.jpg" alt="" /><br />
-18.重启后，再次打开安装盘，找到 “Internet Explorer 5.0” 文件夹。<br />
-找到“IE5SETUP.EXE”，打开它。<br />
-<img src="https://img.gejiba.com/images/c74b6d6e80737d95f4620993ee2210b5.jpg" alt="" /><br />
-等待安装即可。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>test</title>
     <url>/20250501/234900/</url>
     <content><![CDATA[<p>测试2025-07-28<br />
 <a href="/123.pdf">下载</a></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>复习2025-08-25</title>
-    <url>/20250825/231456/</url>
-    <content><![CDATA[<p><img src="https://pic1.imgdb.cn/item/68ac850b58cb8da5c84d1c6f.png" alt="" /></p>
-<h1 id="集合的概念"><a class="markdownIt-Anchor" href="#集合的概念"></a> 集合的概念</h1>
-<p>1个班级40个人，班级=1个集合、人=元素。<br />
-交集：<strong>相同的部分，1、2、3和2、3、4中的2、3</strong><br />
-并集：<strong>全部部分，1、2、3和2、3、4中的1、2、3、4</strong><br />
-补集：<strong>补集 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mstyle scriptlevel="1" displaystyle="false"><mi>U</mi></mstyle><mi>A</mi></mrow><annotation encoding="application/x-tex">C {\scriptstyle U} A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord"><span class="mord mathnormal mtight sizing reset-size6 size3" style="margin-right:0.10903em;">U</span></span><span class="mord mathnormal">A</span></span></span></span> 是指在全集 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi></mrow><annotation encoding="application/x-tex">U</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span></span></span></span> 中，所有不属于集合 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span></span></span></span> 的元素的集合。</strong><br />
-<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>例如：</mtext><mi>U</mi><mo>=</mo><mo stretchy="false">{</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mn>3</mn><mo separator="true">,</mo><mn>4</mn><mo stretchy="false">}</mo><mo separator="true">,</mo><mi>A</mi><mo>=</mo><mo stretchy="false">{</mo><mn>2</mn><mo separator="true">,</mo><mn>3</mn><mo stretchy="false">}</mo><mtext>，</mtext><mi>C</mi><mstyle scriptlevel="1" displaystyle="false"><mi>U</mi></mstyle><mi>A</mi><mo>=</mo><mo stretchy="false">{</mo><mn>1</mn><mo separator="true">,</mo><mn>4</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">
-例如：U=\{1,2,3,4\},A=\{2,3\}，C {\scriptstyle U} A=\{1,4\}
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">例</span><span class="mord cjk_fallback">如</span><span class="mord cjk_fallback">：</span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">4</span><span class="mclose">}</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">3</span><span class="mclose">}</span><span class="mord cjk_fallback">，</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord"><span class="mord mathnormal mtight sizing reset-size6 size3" style="margin-right:0.10903em;">U</span></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">4</span><span class="mclose">}</span></span></span></span></p>
-<p><img src="https://pic1.imgdb.cn/item/68ac838858cb8da5c84d19db.png" alt="" /><br />
-确定性：<strong>元素是确定的，例如：小于3</strong><br />
-互异性：<strong>集合里面，两个元素不能相同，例如1、2、2、3，中间的2要只允许存在一个</strong><br />
-无序性：<strong>元素的顺序可以不同，例如1、2、3或者1、3、2都可以</strong><br />
-符号：<br />
-Z：整数（包括负数）<br />
-Q：有理数<br />
-R：实数<br />
-N：自然数<br />
-N+和N*：自然数</p>
-<p>R分成：Q、无理数</p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>R</mi><mo>=</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.3599999999999999em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>Q</mi><mtext>（有理数）</mtext></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mtext>无理数</mtext></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">R = \begin{cases}
-Q（\text{有理数}） \\
-\text{无理数}
-\end{cases}
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.0000299999999998em;vertical-align:-1.25003em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">{</span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.69em;"><span style="top:-3.69em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="mord cjk_fallback">（</span><span class="mord text"><span class="mord cjk_fallback">有理数</span></span><span class="mord cjk_fallback">）</span></span></span><span style="top:-2.25em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord text"><span class="mord cjk_fallback">无理数</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.19em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
-<p>Q分成：整数、分数、0</p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>Q</mi><mo>=</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.24999999999999992em" columnalign="right left" columnspacing="0em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mtext>整数</mtext><mspace width="1em"/></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mrow><mo fence="true">{</mo><mtable rowspacing="0.24999999999999992em" columnalign="right" columnspacing=""><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mtext>正整数</mtext></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mtext>负整数</mtext></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mn>0</mn></mstyle></mtd></mtr></mtable></mrow></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mtext>分数</mtext></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mn>0</mn></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">Q = \left\{ \begin{aligned} \text{整数} \quad &amp; \left\{ \begin{aligned} \text{正整数} \\ \text{负整数} \\ 0 \end{aligned} \right. \\ \text{分数} \\ 0 \end{aligned} \right.
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">Q</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:7.800040000000001em;vertical-align:-3.65002em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:4.1500200000000005em;"><span style="top:-0.39998999999999985em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎩</span></span></span><span style="top:-0.39498999999999995em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-0.6899899999999999em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-0.9849899999999998em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-1.27999em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-1.5749900000000001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-1.8699900000000003em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-2.1649900000000004em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-2.2049900000000004em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-3.1500100000000004em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎨</span></span></span><span style="top:-4.29501em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-4.59001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-4.885010000000001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-5.180010000000001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-5.475010000000001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-5.770010000000001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-6.065010000000001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-6.10501em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-6.40002em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎧</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:3.65002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:4.15em;"><span style="top:-6.15em;"><span class="pstrut" style="height:4.5em;"></span><span class="mord"><span class="mord text"><span class="mord cjk_fallback">整数</span></span><span class="mspace" style="margin-right:1em;"></span></span></span><span style="top:-3.01em;"><span class="pstrut" style="height:4.5em;"></span><span class="mord"><span class="mord text"><span class="mord cjk_fallback">分数</span></span></span></span><span style="top:-1.5099999999999998em;"><span class="pstrut" style="height:4.5em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:3.6500000000000004em;"><span></span></span></span></span></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:4.15em;"><span style="top:-6.15em;"><span class="pstrut" style="height:4.5em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.35002em;"><span style="top:-2.19999em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎩</span></span></span><span style="top:-2.19499em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-2.20499em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-3.15001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎨</span></span></span><span style="top:-4.2950099999999996em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-4.30501em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-4.60002em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎧</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.8500199999999998em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.5000000000000004em;"><span style="top:-4.66em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord cjk_fallback">正整数</span></span></span></span><span style="top:-3.16em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord cjk_fallback">负整数</span></span></span></span><span style="top:-1.6599999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:2.000000000000001em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.6500000000000008em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
-<p>整数分成：正整数、负整数、0</p>
-<h1 id="表示方法"><a class="markdownIt-Anchor" href="#表示方法"></a> 表示方法</h1>
-<h2 id="列举法"><a class="markdownIt-Anchor" href="#列举法"></a> 列举法：</h2>
-<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy="false">{</mo><mn>1</mn><mtext>、</mtext><mn>2</mn><mtext>、</mtext><mn>3</mn><mtext>、</mtext><mn>4</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">A=\{1、2、3、4\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">1</span><span class="mord cjk_fallback">、</span><span class="mord">2</span><span class="mord cjk_fallback">、</span><span class="mord">3</span><span class="mord cjk_fallback">、</span><span class="mord">4</span><span class="mclose">}</span></span></span></span></p>
-<h2 id="描述法"><a class="markdownIt-Anchor" href="#描述法"></a> 描述法：</h2>
-<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy="false">{</mo><mi>x</mi><mi mathvariant="normal">∣</mi><mn>1</mn><mo>&lt;</mo><mo>=</mo><mi>x</mi><mo>&lt;</mo><mo>=</mo><mn>5</mn><mo separator="true">,</mo><mi>x</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">A=\{x|1&lt;=x&lt;=5,x\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">x</span><span class="mord">∣</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">x</span><span class="mclose">}</span></span></span></span></p>
-<h2 id="维恩图"><a class="markdownIt-Anchor" href="#维恩图"></a> 维恩图：</h2>
-<h1 id="包含属于关系"><a class="markdownIt-Anchor" href="#包含属于关系"></a> 包含属于关系</h1>
-<p>属于<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>（</mtext><mo>∈</mo><mtext>）</mtext></mrow><annotation encoding="application/x-tex">（\in）</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72243em;vertical-align:-0.0391em;"></span><span class="mord cjk_fallback">（</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">）</span></span></span></span>，不属于<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>（</mtext><mo mathvariant="normal">∉</mo><mtext>）</mtext></mrow><annotation encoding="application/x-tex">（\notin）</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord cjk_fallback">（</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mord"><span class="mrel">∈</span></span><span class="mord vbox"><span class="thinbox"><span class="llap"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="inner"><span class="mord"><span class="mord">/</span><span class="mspace" style="margin-right:0.05555555555555555em;"></span></span></span><span class="fix"></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">）</span></span></span></span>：<strong>元素与集合之间的关系</strong><br />
-包含<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>（</mtext><mo>⊃</mo><mtext>）</mtext></mrow><annotation encoding="application/x-tex">（\supset）</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72243em;vertical-align:-0.0391em;"></span><span class="mord cjk_fallback">（</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⊃</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">）</span></span></span></span>，不包含<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>（</mtext><mo>⊅</mo><mtext>）</mtext></mrow><annotation encoding="application/x-tex">（\not\supset）</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord cjk_fallback">（</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mord vbox"><span class="thinbox"><span class="rlap"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="inner"><span class="mrel"></span></span><span class="fix"></span></span></span></span></span></span><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">⊃</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">）</span></span></span></span>：<strong>集合与集合之间的关系</strong></p>
-<p><img src="https://pic1.imgdb.cn/item/68ac800758cb8da5c84d11b8.png" alt="" /></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>历史锁那(Sana)专辑</title>
-    <url>/20230725/221318/</url>
-    <content><![CDATA[<center>
-<p><img src="https://img.gejiba.com/images/167d065688a66751b4bea8bdf4bae325.jpg" alt="" /></p>
-<h1 id="好きなひと"><a class="markdownIt-Anchor" href="#好きなひと"></a> 好きなひと。</h1>
-<h2 id="鎖那-honeyworks-20140817"><a class="markdownIt-Anchor" href="#鎖那-honeyworks-20140817"></a> 鎖那 × HoneyWorks [2014.08.17]</h2>
-<p>价格：120 元（带侧封）<br />
-<img src="https://img.gejiba.com/images/e65d8b14bf54ac8cd181d9343f9d61b0.png" alt="歌曲列表" /><br />
-<font color=red><strong>01</strong></font> 未来図<br />
-<font color=red><strong>02</strong></font> 告白予行練習<br />
-<font color=red><strong>03</strong></font> テレカクシ思春期<br />
-<font color=red><strong>04</strong></font> 初恋の絵本<br />
-<font color=red><strong>05</strong></font> 告白ライバル宣言<br />
-<font color=red><strong>06</strong></font> ヤキモチの答え<br />
-<font color=red><strong>07</strong></font> 病名恋ワズライ<br />
-<font color=red><strong>08</strong></font> イノコリ先生<br />
-<font color=red><strong>09</strong></font> ロリババアに恋をした<br />
-<font color=red><strong>10</strong></font> ラズベリー*モンスター</p>
-</center><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>QEMU 基础命令学习</title>
@@ -1299,208 +1234,68 @@ Windows 11      std / VMware
 </font><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>无需 U 盘给 MacBook 电脑安装 Arch Linux</title>
-    <url>/20230108/134420/</url>
-    <content><![CDATA[<p>想装Arch Linux却没有带U盘，心急如焚的话，就看看我这个教程吧！保有效。</p>
-<h1 id="安装要求"><a class="markdownIt-Anchor" href="#安装要求"></a> 安装要求</h1>
-<ul>
-<li>一双手</li>
-<li>灵慧的大脑</li>
-<li>一台 (Intel 芯片) 的 MacBook Air 或者 MacBook Pro。 (不知道带安全芯片的可不可以)</li>
-</ul>
-<h1 id="开始安装"><a class="markdownIt-Anchor" href="#开始安装"></a> 开始安装</h1>
-<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
-<p>首先你需要有 Linux 基础，不然我之后跟你讲的，你都听不懂。<br />
-其次需要备份数据，因为我们要全盘格式化。</p>
-<h2 id="下载-arch-linux"><a class="markdownIt-Anchor" href="#下载-arch-linux"></a> 下载 Arch Linux</h2>
-<p>您可以通过以下链接来下载：<a href="https://mirrors.bfsu.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso">点击下载</a></p>
-<h2 id="macos-下的操作"><a class="markdownIt-Anchor" href="#macos-下的操作"></a> macOS 下的操作</h2>
-<h3 id="分区"><a class="markdownIt-Anchor" href="#分区"></a> 分区</h3>
-<ul>
-<li>在确定好已经备份好了文件之后，我们打开“磁盘工具”<br />
-<img src="https://img.gejiba.com/images/307403f27e39b88ad31f7034e3e6f3ca.png" alt="" /></li>
-<li>然后在上面的“显示”选项中，选择：“显示所有设备”<br />
-<img src="https://img.gejiba.com/images/10a4685ab86b81d9dfa2b4c032f1c707.png" alt="" /></li>
-<li>然后点击整块盘，找到“分区”选项。<br />
-<img src="https://img.gejiba.com/images/80d7dc7a41780488c98874460b234c5d.png" alt="" /></li>
-<li>添加一块 4 GB 的分区，分区格式 FAT 即可，名称先随意改一下，后面还需要改名字。<br />
-<img src="https://img.gejiba.com/images/265334b0ee5aad473c7de1f498b0f723.png" alt="" /></li>
-</ul>
-<h3 id="安装虚拟机"><a class="markdownIt-Anchor" href="#安装虚拟机"></a> 安装虚拟机</h3>
-<ul>
-<li>添加好之后，我们安装 VMware Fusion 虚拟机，安装一个 Windows 系统。<br />
-(如果你有 Parallels Desktop 虚拟机，可以跳过这一步)<br />
-VMware Fusion 虚拟机下载链接：<a href="https://download3.vmware.com/software/fusion/file/VMware-Fusion-12.0.0-16880131.dmg">点我下载</a><br />
-VMware Fusion 虚拟机破解密钥：</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ZF3R0-FHED2-M80TY-8QYGC-NPKYF</span><br></pre></td></tr></table></figure>
-<p>如果找不到 Windows 镜像的话，可以用我这个 Windows XP：<a href="https://pan.huang1111.cn/s/KBgZsY">点我下载</a></p>
-<ul>
-<li>安装好虚拟机和虚拟机扩展套件(例如：VMware Tools)之后，共享你那个 4 GB 的分区到虚拟机上。</li>
-</ul>
-<h4 id="vmware-fusion"><a class="markdownIt-Anchor" href="#vmware-fusion"></a> VMware Fusion</h4>
-<p>在菜单栏中找到“虚拟机”选项，然后拉到最后有一个“共享”，点那个共享设置。<br />
-<img src="https://img.gejiba.com/images/6ea78bdea57adb61727bc59cc2fb97fe.png" alt="" /><br />
-点击启用共享文件夹，然后点击那个”+“号。<br />
-<img src="https://img.gejiba.com/images/632ccbf19ea918679c36351e75d324d0.png" alt="" /><br />
-找到那个 4 GB 的分区，点击“添加”<br />
-<img src="https://img.gejiba.com/images/b397da48952fba48c994214f4e12b6e0.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/3cb6087a20bce76a8bc4a793218eb333.png" alt="" /></p>
-<h4 id="parallels-desktop"><a class="markdownIt-Anchor" href="#parallels-desktop"></a> Parallels Desktop</h4>
-<p>在菜单栏中找到“设备”选项，找到“共享”，点：添加文件夹。<br />
-<img src="https://img.gejiba.com/images/bd405cf58579076c9fa6508614cc58bc.png" alt="" /><br />
-找到那个 4 GB 的分区，点击“打开”<br />
-<img src="https://img.gejiba.com/images/d39aed7bf6269001f2dfcfe784a018c0.png" alt="" /></p>
-<h3 id="拷贝镜像到分区"><a class="markdownIt-Anchor" href="#拷贝镜像到分区"></a> 拷贝镜像到分区</h3>
-<ul>
-<li>这一步就非常简单了，只需要将ARCH Linux光盘文件拷贝到分区即可，这也就是为什么要装一个 Windows 虚拟机的原因，因为 macOS 不能识别 Arch Linux 的文件。</li>
-<li>虚拟机插入Arch Linux光盘，然后将光盘所有文件全部复制到那个分区。<br />
-<img src="https://img.gejiba.com/images/3853d5b817845a45de0a1daf8acf9cc9.png" alt="" /></li>
-</ul>
-<h3 id="再次更改名字"><a class="markdownIt-Anchor" href="#再次更改名字"></a> 再次更改名字</h3>
-<ul>
-<li>记住虚拟机中显示的 Arch Linux 光盘名称，我这里是<b><font color=red>「ARCH_202301」</font></b>，再次进入“磁盘工具”。<br />
-然后点击 4 GB 的分区，再点击一下他的名字：<br />
-<img src="https://img.gejiba.com/images/dc5319ee01c52ced07a08a2d49b3f9c5.png" alt="" /><br />
-将这个分区名称改成ARCH_202301之后，macOS的所有操作就都完成了。</li>
-</ul>
-<h2 id="开始安装-arch-linux"><a class="markdownIt-Anchor" href="#开始安装-arch-linux"></a> 开始安装 Arch Linux</h2>
-<p>重新启动你的 Mac 电脑，按下 Option 键，等看到启动选项出现 EFI Boot 之后，引导它。如果顺利的话，你应该可以看到 GRUB 界面，开始引导即可。<br />
-<img src="https://img.gejiba.com/images/d5d322d4fb129852c7d8365791828811.jpg" alt="" /></p>
-<h3 id="连接互联网"><a class="markdownIt-Anchor" href="#连接互联网"></a> 连接互联网</h3>
-<p>输入 iwctl 进入 iwd。<br />
-然后查看网卡号是什么，以 wlan0 为例子：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">device list</span><br></pre></td></tr></table></figure>
-<p>然后联网，输入以下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">station wlan0 scan</span><br><span class="line">station wlan0 get-networks</span><br><span class="line">station wlan0 connect TestWiFi_5G</span><br></pre></td></tr></table></figure>
-<p>连接好网络后，输入 exit 退出 iwd。再输入 ping <a href="http://www.baidu.com">www.baidu.com</a> 看看网络是不是正确连接。</p>
-<h3 id="为磁盘分区"><a class="markdownIt-Anchor" href="#为磁盘分区"></a> 为磁盘分区</h3>
-<p>未完待续。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <title>历史锁那(Sana)专辑</title>
+    <url>/20230725/221318/</url>
+    <content><![CDATA[<center>
+<p><img src="https://img.gejiba.com/images/167d065688a66751b4bea8bdf4bae325.jpg" alt="" /></p>
+<h1 id="好きなひと"><a class="markdownIt-Anchor" href="#好きなひと"></a> 好きなひと。</h1>
+<h2 id="鎖那-honeyworks-20140817"><a class="markdownIt-Anchor" href="#鎖那-honeyworks-20140817"></a> 鎖那 × HoneyWorks [2014.08.17]</h2>
+<p>价格：120 元（带侧封）<br />
+<img src="https://img.gejiba.com/images/e65d8b14bf54ac8cd181d9343f9d61b0.png" alt="歌曲列表" /><br />
+<font color=red><strong>01</strong></font> 未来図<br />
+<font color=red><strong>02</strong></font> 告白予行練習<br />
+<font color=red><strong>03</strong></font> テレカクシ思春期<br />
+<font color=red><strong>04</strong></font> 初恋の絵本<br />
+<font color=red><strong>05</strong></font> 告白ライバル宣言<br />
+<font color=red><strong>06</strong></font> ヤキモチの答え<br />
+<font color=red><strong>07</strong></font> 病名恋ワズライ<br />
+<font color=red><strong>08</strong></font> イノコリ先生<br />
+<font color=red><strong>09</strong></font> ロリババアに恋をした<br />
+<font color=red><strong>10</strong></font> ラズベリー*モンスター</p>
+</center><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>朝鲜故事</title>
-    <url>/20250115/134502/</url>
-    <content><![CDATA[<h1 id="金哲的一生"><a class="markdownIt-Anchor" href="#金哲的一生"></a> 金哲的一生</h1>
-<h3 id="重生与归途"><a class="markdownIt-Anchor" href="#重生与归途"></a> <strong>重生与归途</strong></h3>
-<h4 id="逃离与新生"><a class="markdownIt-Anchor" href="#逃离与新生"></a> <strong>逃离与新生</strong></h4>
-<p>金哲（化名）是一个普通的朝鲜农民，为了逃避贫困与压迫，他在三十多年前冒着生命危险横渡鸭绿江，逃亡到中国。在那里，他假借一名已故中国人的身份生活，靠着勤奋努力和语言天赋，逐渐扎根北京。</p>
-<p>他成了一名装修工人，从最初的小工到后来独自接活儿，金哲攒下了一笔钱，买了房和车，还拿到了珍贵的北京车牌。他的生活看似幸福，平静而富足，但内心却始终留有一个深深的裂痕——对家人的思念。</p>
-<h4 id="返乡的决心"><a class="markdownIt-Anchor" href="#返乡的决心"></a> <strong>返乡的决心</strong></h4>
-<p>在某个冬日的清晨，金哲坐在家中的餐桌前，看着一张全家福的照片。他知道，家人在朝鲜的境况可能依然艰难，而自己却无法得知他们的任何消息。这种煎熬在二十年的时间里从未减弱，反而越来越深。他最终下定决心，要回到朝鲜，哪怕付出一切代价。</p>
-<p>2009年6月的一个早晨，金哲带上简单的行李，登上了北京站发往平壤的K27次列车。他知道这是一次可能无法回头的旅程，但内心的思念战胜了恐惧。</p>
-<h4 id="噩梦的开始"><a class="markdownIt-Anchor" href="#噩梦的开始"></a> <strong>噩梦的开始</strong></h4>
-<p>当列车抵达新义州站时，金哲被朝鲜边防人员带走。他的假身份被迅速识破，并以“叛国罪”判处45年劳改。他被送往深山中的一个秘密矿场，日夜挖掘矿石，每天只有一分钟的休息时间，食物仅是冷水和少量玉米粥。</p>
-<p>一年后，金哲因饥饿和劳累倒在矿井中，最终孤独地死去。他的家人在朝鲜的村庄里苦苦等待他的消息，但始终未能等到。悲痛之中，他们全家也因思念与绝望逐渐衰弱，最终相继离世。一个家庭就这样湮灭在历史的尘埃里。</p>
-<h4 id="奇迹的出现"><a class="markdownIt-Anchor" href="#奇迹的出现"></a> <strong>奇迹的出现</strong></h4>
-<p>金哲死后，他的灵魂漂浮在矿山上空。他仰望星空，泪流满面，向神明祈求：“若能再来一次，我愿用一切换取家人的幸福。”不知何故，神明听到了他的请求，时间奇迹般地回溯到他踏上K27次列车的那一刻。</p>
-<p>这一次，金哲没有选择返乡。他用神秘的力量，暗中帮助家人成功逃离朝鲜，并将他们带到了中国。他们一家团聚在北京，在丰台区马家堡附近的一套三居室中开始了新的生活。家人重新体会到了团圆的温暖。</p>
-<h4 id="工头的复仇"><a class="markdownIt-Anchor" href="#工头的复仇"></a> <strong>工头的复仇</strong></h4>
-<p>矿山的工头得知金哲一家逃脱后怒不可遏。他动用了神秘的军队，越境来到中国，试图抓捕金哲。然而，当他们找到金哲家所在的马家堡东里小区时，却被早已埋伏在此的中国警察一举擒获。</p>
-<p>中国政府迅速将工头及其部下遣返回国，而他们在朝鲜也因“任务失败”被判处52年劳改。在那同一个矿山里，他们像金哲一样，忍受着饥饿与折磨，最终在绝望中死去。</p>
-<h4 id="幸福的尾声"><a class="markdownIt-Anchor" href="#幸福的尾声"></a> <strong>幸福的尾声</strong></h4>
-<p>从此，金哲一家安居于北京，过上了平静而幸福的生活。他的孩子们进入了中国的学校学习，金哲和妻子经营着一家小餐馆，生活虽不奢华，却充满了笑声和温暖。</p>
-<p>而在丰台区的天空下，金哲时常感叹命运的多舛和神明的恩赐。他珍惜每一天，发誓再也不会冒险，只为守护眼前这来之不易的幸福。</p>
-<h1 id="李言成的脱北之路"><a class="markdownIt-Anchor" href="#李言成的脱北之路"></a> 李言成的脱北之路</h1>
-<p>李言成曾是一名坚定的朝鲜公民，他始终相信自己的祖国是世界上最强大的国家。然而，命运的一次巧合彻底颠覆了他的信念。朋友送给他的一枚U盘，成了他人生的转折点。U盘中播放的画面展示了韩国的繁荣景象，那些真实的场景让他陷入了深深的震撼与反思。朝鲜的宣传与现实之间的巨大反差，让他感到失望与迷茫。他开始质疑国家的真实面貌，最终萌生了一个危险的念头——脱北。</p>
-<h3 id="寒夜中的逃亡"><a class="markdownIt-Anchor" href="#寒夜中的逃亡"></a> <strong>寒夜中的逃亡</strong></h3>
-<p>2009年11月8日晚11点，李言成登上了一辆通往中朝边境的汽车。这是一条充满未知和危险的路，但自由的渴望让他不再犹豫。11月9日凌晨1点，他抵达了冰冷的鸭绿江边。深冬的寒夜，刺骨的江水让他几乎窒息，但他依旧咬牙向对岸游去。然而，他的行动被朝鲜边防军发现。尽管边防军迅速上报上级并追击，他还是幸运地逃脱，成功抵达中国境内。</p>
-<h3 id="初见中国的繁华"><a class="markdownIt-Anchor" href="#初见中国的繁华"></a> <strong>初见中国的繁华</strong></h3>
-<p>在中国一侧，接应的人早已等候多时。他迅速登上车辆，驶离了边境地区。第二天清晨，车辆抵达沈阳。在这座陌生却繁华的城市，李言成第一次感受到真实的对比。他看到熙攘的街道和繁华的商场，眼泪不由自主地流了下来。他喃喃自语：“我的国家果真不是世界最强大的国家……”那一刻，痛苦与希望交织在他的心中。他吃到了一顿丰盛的饭菜，那份饱腹感是他在朝鲜几乎无法想象的。这短暂的幸福也提醒他，危险仍未远去。他知道，在中国，如果被发现为朝鲜脱北者，随时可能被遣返。</p>
-<h3 id="漫长的火车旅程"><a class="markdownIt-Anchor" href="#漫长的火车旅程"></a> <strong>漫长的火车旅程</strong></h3>
-<p>第二天，蛇头安排了从沈阳到昆明的火车票。幸运的是，当时中国的铁路还未实行实名制，这让他们能够顺利登车。蛇头叮嘱他们，“全程不能说话，不能露出惊慌；查票时装睡，一切问题我来解决。”李言成听后点头如捣蒜，但内心依旧忐忑不安。</p>
-<p>途中，一声“查票了！”让他惊得猛地坐起。这一动作立刻引起列车员的注意。蛇头机智地解释，“他做噩梦吓醒了。”列车员要求查票，蛇头从容地递上所有人的车票，才让他们化险为夷。接下来的40多个小时，李言成目睹了中国沿途的风景，看到许多人幸福的生活。这让他震撼之余，感到更加坚定：自己必须逃离朝鲜，去迎接自由的生活。</p>
-<h3 id="翻山越岭的生死攸关"><a class="markdownIt-Anchor" href="#翻山越岭的生死攸关"></a> <strong>翻山越岭的生死攸关</strong></h3>
-<p>火车抵达昆明后，蛇头迅速安排车辆将他们送往边境。由于没有护照和身份证，他们只能偷渡。翻越崇山峻岭，穿越森林与小路，旅程的每一步都充满危险与艰难。他们的体力几乎耗尽，但最终成功抵达老挝。随后，他们辗转进入缅甸，再搭乘大客车前往泰国。在泰国，李言成终于获得庇护，并通过韩国方面的援助，安全抵达韩国。</p>
-<h3 id="新生活的开始"><a class="markdownIt-Anchor" href="#新生活的开始"></a> <strong>新生活的开始</strong></h3>
-<p>站在韩国的土地上，李言成喜极而泣，感到如释重负。他紧紧拥抱蛇头，感谢对方的帮助，这是他们最后一次见面。此后，李言成在韩国安定了下来。他找到了一份普通的工作，过上了平凡但安稳的生活。对他来说，这种平凡已经是幸福的极致。他感慨道：“我终于摆脱了苦海，虽然这里的生活并不奢华，但比朝鲜好太多了。”</p>
-<p>李言成的脱北之路充满了艰险和挑战，但自由的追求让他始终不放弃。这段经历不仅是他个人的救赎，也是对人性尊严的坚持与渴望。</p>
-<h1 id="李言成的脱北之路后续"><a class="markdownIt-Anchor" href="#李言成的脱北之路后续"></a> 李言成的脱北之路后续</h1>
-<p>2013年5月5日，原本在韩国安稳生活的李言成感到一阵不安。他的直觉是对的，那天中午，他接到了来自某人的消息：“你的家人被朝鲜抓了。他们要求你回去，否则就杀你全家。”这个晴天霹雳彻底摧毁了李言成苦心经营的美好生活。他崩溃了，痛哭不止：为何自己追求自由，代价却是家人承受苦难？</p>
-<p>几经挣扎，李言成做出了艰难的决定。他辞掉了韩国的工作，收拾行囊，再次踏上了返回朝鲜的路。这条路不仅是肉体上的归途，更是他自由梦的终结。</p>
-<h3 id="回归后的灰白世界"><a class="markdownIt-Anchor" href="#回归后的灰白世界"></a> <strong>回归后的灰白世界</strong></h3>
-<p>回到朝鲜，迎接李言成的是铺天盖地的指责与冷漠。他被迅速安排接受审判，面对摄像机，他被迫宣称：“我在韩国过得一点也不好！每天都想死的感觉。”这些话违背了他的真实情感，却是保命的唯一选择。朝鲜方面认为他仍然忠诚，劳改了几个月后便将他释放。</p>
-<p>然而，李言成再也无法离开朝鲜了。他的生活从此陷入了痛苦与绝望。每天，他只能享受短短3小时的电力供应，饮水需要亲自到江边取，冬天则在缺乏暖气的房间里苦熬，几乎每年都濒临冻死。他无数次跪下，悔恨当初的选择。但后悔已无济于事，铁幕之下，他再也看不到自由的希望。</p>
-<p>2019年6月，一位朋友告诉他：“中国现在买火车票需要身份证和护照了。”这句话如同最后一根稻草，让李言成再次失声痛哭。他知道，通往外界的道路已经彻底堵死。</p>
-<h3 id="偶然的曙光"><a class="markdownIt-Anchor" href="#偶然的曙光"></a> <strong>偶然的曙光</strong></h3>
-<p>2020年疫情爆发后，朝鲜进一步封锁国境，李言成的世界变得更加渺茫。然而，命运总是充满反复。因为他“悔改表现良好”，金正恩将军决定奖励他——派遣他到中国的朝鲜餐厅工作和学习。得知这一消息时，李言成灰暗的生活似乎再次被点亮了。</p>
-<p>2025年，李言成如愿来到中国，在丹东的一家朝鲜餐厅当厨师。再次踏上这片土地时，他感叹：“中国变化真大！而我们的朝鲜……也算是一年比一年好了吧，起码没倒退。”</p>
-<h3 id="短暂的幸福"><a class="markdownIt-Anchor" href="#短暂的幸福"></a> <strong>短暂的幸福</strong></h3>
-<p>在丹东的日子里，李言成尽情享受着中国的便利与富足。虽然时间只有短短三年，但这三年对他而言是无价的。每天，他在餐厅里工作，尽管是简单的厨师岗位，却足以让他感到满足。最重要的是，在这里，他再也不用担心挨饿。</p>
-<p>虽然李言成深知，这段生活只是短暂的喘息，他最终还要回到朝鲜，但他依然感恩上帝赐予的这一段希望。他珍惜每一天，努力为餐厅的客人做出最美味的菜肴。</p>
-<p>在餐厅忙碌的厨房里，李言成时常望着窗外熙熙攘攘的街景，喃喃自语：“这三年，已经是我命运中最好的恩赐了。”他坚信，即便命运无情，但只要有一丝光亮，就值得他去追逐与珍惜。</p>
-<p>标题：李言成的脱北之路后续<br />
-在韩国呆了四五年后，朝鲜方面把他的家人都逮捕了起来，并且使用各种手段想要把他绑架回朝鲜。在2013年5月5日中午，李言成感到阵阵不安。突然有个人来找他，说：你家里人被朝鲜绑架了，你不回去朝鲜他们就杀你全家。李言成哭了，他来之不易的美好生活就要结束了？他的家人那么惨。为什么自己逃脱别人要受罚。他实在受不了自己的家人被如此欺负，为了家人的安全，他辞掉了韩国的工作还是回到了朝鲜。回到朝鲜后，他的世界变成灰白色了。心情低落的接受朝鲜的采访和审判。他在朝鲜的电视里出镜了。他的精神十分空虚，他被迫说“我在韩国过得一点也不好！每天都想死的感觉”。朝鲜方面觉得他还是比较忠诚的，劳改了几个月就把它放了。李言成不知道的是，他这一回来，就再也出不去了。2019年6月7日，李言成的朋友跟他说“喂！你知道吗？中国现在买火车票得用身份证护照了。不能用票了”“什么？！！”，李言成再一次痛哭。虽然内心早就麻木了但是听见这种事还是很伤心，这下应该是再也出不去朝鲜了。他很难过。他在朝鲜的生活很痛苦，每天只有3个小时电力支持。水也是得去江边打水，而且房间也没有暖气，每年冬天都差点被冻死。他跪下了。他这么多年来一直很后悔当年为什么要回来。但是后悔也没有用了，他回不去向往的世界了。2020年，因为疫情，朝鲜封了海关。出去的希望更加渺茫。但是，就是这么巧。因为他在外面表现的很好，将军奖励他出国学习去朝鲜餐厅，他灰色的世界突然有了颜色！他开心的蹦了起来。这次，他回到了中国。在丹东的一家朝鲜餐厅里当厨师。“这么多年没去中国了，中国变化很大嘛。而我们的朝鲜。。。也算是一年比一年好了吧！起码没倒退唉”他感叹道。虽然这次他在中国的时间只有3年，但是这3年就是上帝给他的又一次希望，现在他在朝鲜餐厅里每天都快乐的活着。因为在中国，他起码饿不死了。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>白洋淀公交乘坐体验</title>
-    <url>/20220821/011817/</url>
-    <content><![CDATA[<h1 id="线路走向"><a class="markdownIt-Anchor" href="#线路走向"></a> 线路走向</h1>
-<p>2022 年 8 月 20 日，沧州市任丘市新开到白洋淀李广村<font color=red>（现归雄安新区保定市雄县管辖）</font>的公交：308 路。以下是线路走向。</p>
-<h3 id="308-路-代河枢纽站-李广村"><a class="markdownIt-Anchor" href="#308-路-代河枢纽站-李广村"></a> 308 路 代河枢纽站 - 李广村</h3>
-<p><font color=green>代河枢纽站-西黄垒村西-于村路口<font color=red>(106国道)</font>-杜家营村-前塔村-后塔村-鄚州镇政府-鄚州镇中心卫生院-南阁村-东七里庄-中七里庄-西七里庄-生紫码头-大口子码头-李广村南-李广村</font><br />
-<img src="https://img.gejiba.com/images/03eb9f97595c40fdcc4b32a1dd089d9b.png" alt="" /></p>
-<h1 id="乘车日志"><a class="markdownIt-Anchor" href="#乘车日志"></a> 乘车日志</h1>
-<p>20号下午一点半从市区乘坐202路公交（任丘市客运西站-代河枢纽站）到达北代河。<br />
-<img src="https://img.gejiba.com/images/0b4afc34f40d79694614063114824073.jpg" alt="" /><br />
-小歇息后。一点四十308路开始行走。车内座子还是很新的，支持刷卡和刷码。<br />
-<img src="https://img.gejiba.com/images/caabb0a863887deefa35a70dcdfde4b2.jpg" alt="" /><br />
-今天天空很好看啊…<br />
-车子运行还是很快的，最高速度大概 40 km/h。噪音蛮大的。<br />
-过了于村路口就基本出了任丘界了，驶入鄚州镇。<br />
-<img src="https://img.gejiba.com/images/4c294fd8d37c149493ac12bb8e4efb89.jpg" alt="" /><br />
-驾驶到千里堤路的时候，就可以看到白洋淀的河流了。<br />
-这里有几个旅游码头，308路基本都设置了站点。<br />
-人还挺多的，比较热闹。<br />
-然后就到了李广村，本车的终点站。<br />
-<img src="https://img.gejiba.com/images/38e1a10c805be98b163dad05b4c93ab9.jpg" alt="" /><br />
-李广村离白洋淀河流还算是挺近的，我在这里拍了一些照片。<br />
-<img src="https://img.gejiba.com/images/3fc817b205738ced7dd3ce1e378a5447.jpg" alt="" /><br />
-<img src="https://img.gejiba.com/images/bd0f431dfabddf5fd30d250932523d59.jpg" alt="" /><br />
-<img src="https://img.gejiba.com/images/b1b5d6fb64e809b6c4b3acc160c97807.png" alt="李广村在白洋淀的位置" /><br />
-在近距离观察时，录了一小段视频。<font color=red></font><br />
-<a href="https://steve372yeyeye.github.io/20220821/011817/480p.mov">点击播放 QuickTime 视频</a></p>
-<h1 id=""><a class="markdownIt-Anchor" href="#"></a> </h1>
-<p>白洋淀环境很好，即使是在不是景区的乡村小河，也是很美丽的。<br />
-有一种很自然很清新的感觉。如果是清晨应该会更有感觉。</p>
-<h1 id="经过码头"><a class="markdownIt-Anchor" href="#经过码头"></a> 经过码头</h1>
-<p>308 路在路途中会经过<font color=green>生紫码头</font>和<font color=green>大口子码头</font>。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>珊瑚宫心海养成指南</title>
-    <url>/20220915/233651/</url>
-    <content><![CDATA[<p><font  face="宋体">献给各位抽到心海的同学们~</font><br />
-<font  face="宋体"><br />
-<img src="https://img.gejiba.com/images/9b0eb764a0ac82311a641c0c879ec1ec.jpg" alt="" /><br />
-<img src="https://img.gejiba.com/images/32d21d0e305c9d5a21a56fb8dc992737.gif" alt="" /></p>
-<h2 id="圣遗物"><a class="markdownIt-Anchor" href="#圣遗物"></a> 圣遗物</h2>
-<p>建议使用<font face="宋体" color=#9393FF><strong>海</font><font  face="宋体" color=#FF60AF>染</font><font face="宋体" color=#46A3FF>四件套</strong></font>。<br />
-双爆<font face="宋体" color=red><strong>越少越好，不要堆双爆</strong></font>。</p>
-<h3 id="词条"><a class="markdownIt-Anchor" href="#词条"></a> 词条</h3>
-<p><font  face="宋体">生之花：<font face="宋体" color=red><strong>生命值</strong></font><br />
-<img src="https://img.gejiba.com/images/07ad11abca89d87bd1ae38612e54cbe4.jpg" alt="" /><br />
-死之羽：<font face="宋体" color=red><strong>攻击力</strong></font><br />
-<img src="https://img.gejiba.com/images/ea4acec0d7fd5b0ff0bb789fb965d28e.jpg" alt="" /><br />
-理之冠：<font color=red><strong>治疗加成</strong></font>（可以使用生命）<br />
-<img src="https://img.gejiba.com/images/6865e4d0d785f80d26c9b51409787372.jpg" alt="" /><br />
-时之沙：<font color=red><strong>生命值</strong></font><br />
-<img src="https://img.gejiba.com/images/d7763d67dab5e0bc3a78c0f63c197824.jpg" alt="" /><br />
-空之杯：<font color=red><strong>水元素伤害加成</strong></font><br />
-<img src="https://img.gejiba.com/images/989b021bb7fa09b6cfa7cf591337f2dd.jpg" alt="" /><br />
-</font></p>
-<h2 id="武器"><a class="markdownIt-Anchor" href="#武器"></a> 武器</h2>
-<p>使用<font face="宋体" color=#CA8EC2><strong>试作金铂</strong></font>即可。如果追求更高可以抽取<font color=#FFD306><strong>不灭月华</strong></font>。</p>
-<h2 id="命座"><a class="markdownIt-Anchor" href="#命座"></a> 命座</h2>
-<p>零命即可，一般没必要抽取命座。</p>
-<h2 id="组队"><a class="markdownIt-Anchor" href="#组队"></a> 组队</h2>
-<p>可以放进<b>“神鹤万心”</b>配合打永冻流：<br />
-<font color=#FFD306><strong>神里绫华</strong></font>、<font color=#FFD306><strong>珊瑚宫心海</strong></font>、<font color=#FFD306><strong>申鹤</strong></font>、<font color=#FFD306><strong>枫原万叶</strong></font>。</p>
-<p><font face="宋体">还有心海武装队：</font><br />
-<font face="宋体" color=#FFD306><strong>珊瑚宫心海</strong></font>、<font face="宋体" color=#CA8EC2><strong>菲谢尔</strong></font>、<font face="宋体" color=#CA8EC2><strong>北斗</strong></font>、<font face="宋体" color=#CA8EC2><strong>行秋</strong></font>。<br />
-<font face="宋体" color=red>心海武装队和砂糖武装队不一样的是，心海武装队可以随意搭配后三位角色。</font><br />
-</font></p>
+    <title>复习2025-08-25</title>
+    <url>/20250825/231456/</url>
+    <content><![CDATA[<p><img src="https://pic1.imgdb.cn/item/68ac850b58cb8da5c84d1c6f.png" alt="" /></p>
+<h1 id="集合的概念"><a class="markdownIt-Anchor" href="#集合的概念"></a> 集合的概念</h1>
+<p>1个班级40个人，班级=1个集合、人=元素。<br />
+交集：<strong>相同的部分，1、2、3和2、3、4中的2、3</strong><br />
+并集：<strong>全部部分，1、2、3和2、3、4中的1、2、3、4</strong><br />
+补集：<strong>补集 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mstyle scriptlevel="1" displaystyle="false"><mi>U</mi></mstyle><mi>A</mi></mrow><annotation encoding="application/x-tex">C {\scriptstyle U} A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord"><span class="mord mathnormal mtight sizing reset-size6 size3" style="margin-right:0.10903em;">U</span></span><span class="mord mathnormal">A</span></span></span></span> 是指在全集 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi></mrow><annotation encoding="application/x-tex">U</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span></span></span></span> 中，所有不属于集合 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span></span></span></span> 的元素的集合。</strong><br />
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>例如：</mtext><mi>U</mi><mo>=</mo><mo stretchy="false">{</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mn>3</mn><mo separator="true">,</mo><mn>4</mn><mo stretchy="false">}</mo><mo separator="true">,</mo><mi>A</mi><mo>=</mo><mo stretchy="false">{</mo><mn>2</mn><mo separator="true">,</mo><mn>3</mn><mo stretchy="false">}</mo><mtext>，</mtext><mi>C</mi><mstyle scriptlevel="1" displaystyle="false"><mi>U</mi></mstyle><mi>A</mi><mo>=</mo><mo stretchy="false">{</mo><mn>1</mn><mo separator="true">,</mo><mn>4</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">
+例如：U=\{1,2,3,4\},A=\{2,3\}，C {\scriptstyle U} A=\{1,4\}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">例</span><span class="mord cjk_fallback">如</span><span class="mord cjk_fallback">：</span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">4</span><span class="mclose">}</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">3</span><span class="mclose">}</span><span class="mord cjk_fallback">，</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord"><span class="mord mathnormal mtight sizing reset-size6 size3" style="margin-right:0.10903em;">U</span></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">4</span><span class="mclose">}</span></span></span></span></p>
+<p><img src="https://pic1.imgdb.cn/item/68ac838858cb8da5c84d19db.png" alt="" /><br />
+确定性：<strong>元素是确定的，例如：小于3</strong><br />
+互异性：<strong>集合里面，两个元素不能相同，例如1、2、2、3，中间的2要只允许存在一个</strong><br />
+无序性：<strong>元素的顺序可以不同，例如1、2、3或者1、3、2都可以</strong><br />
+符号：<br />
+Z：整数（包括负数）<br />
+Q：有理数<br />
+R：实数<br />
+N：自然数<br />
+N+和N*：自然数</p>
+<p>R分成：Q、无理数</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>R</mi><mo>=</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.3599999999999999em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mi>Q</mi><mtext>（有理数）</mtext></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mtext>无理数</mtext></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">R = \begin{cases}
+Q（\text{有理数}） \\
+\text{无理数}
+\end{cases}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.0000299999999998em;vertical-align:-1.25003em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size4">{</span></span><span class="mord"><span class="mtable"><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.69em;"><span style="top:-3.69em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="mord cjk_fallback">（</span><span class="mord text"><span class="mord cjk_fallback">有理数</span></span><span class="mord cjk_fallback">）</span></span></span><span style="top:-2.25em;"><span class="pstrut" style="height:3.008em;"></span><span class="mord"><span class="mord text"><span class="mord cjk_fallback">无理数</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.19em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p>Q分成：整数、分数、0</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>Q</mi><mo>=</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.24999999999999992em" columnalign="right left" columnspacing="0em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mtext>整数</mtext><mspace width="1em"/></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mrow><mo fence="true">{</mo><mtable rowspacing="0.24999999999999992em" columnalign="right" columnspacing=""><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mtext>正整数</mtext></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mtext>负整数</mtext></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mn>0</mn></mstyle></mtd></mtr></mtable></mrow></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mtext>分数</mtext></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mn>0</mn></mstyle></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">Q = \left\{ \begin{aligned} \text{整数} \quad &amp; \left\{ \begin{aligned} \text{正整数} \\ \text{负整数} \\ 0 \end{aligned} \right. \\ \text{分数} \\ 0 \end{aligned} \right.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">Q</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:7.800040000000001em;vertical-align:-3.65002em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:4.1500200000000005em;"><span style="top:-0.39998999999999985em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎩</span></span></span><span style="top:-0.39498999999999995em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-0.6899899999999999em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-0.9849899999999998em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-1.27999em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-1.5749900000000001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-1.8699900000000003em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-2.1649900000000004em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-2.2049900000000004em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-3.1500100000000004em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎨</span></span></span><span style="top:-4.29501em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-4.59001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-4.885010000000001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-5.180010000000001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-5.475010000000001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-5.770010000000001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-6.065010000000001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-6.10501em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-6.40002em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎧</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:3.65002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:4.15em;"><span style="top:-6.15em;"><span class="pstrut" style="height:4.5em;"></span><span class="mord"><span class="mord text"><span class="mord cjk_fallback">整数</span></span><span class="mspace" style="margin-right:1em;"></span></span></span><span style="top:-3.01em;"><span class="pstrut" style="height:4.5em;"></span><span class="mord"><span class="mord text"><span class="mord cjk_fallback">分数</span></span></span></span><span style="top:-1.5099999999999998em;"><span class="pstrut" style="height:4.5em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:3.6500000000000004em;"><span></span></span></span></span></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:4.15em;"><span style="top:-6.15em;"><span class="pstrut" style="height:4.5em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.35002em;"><span style="top:-2.19999em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎩</span></span></span><span style="top:-2.19499em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-2.20499em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-3.15001em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎨</span></span></span><span style="top:-4.2950099999999996em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-4.30501em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎪</span></span></span><span style="top:-4.60002em;"><span class="pstrut" style="height:3.15em;"></span><span class="delimsizinginner delim-size4"><span>⎧</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.8500199999999998em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.5000000000000004em;"><span style="top:-4.66em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord cjk_fallback">正整数</span></span></span></span><span style="top:-3.16em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord cjk_fallback">负整数</span></span></span></span><span style="top:-1.6599999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:2.000000000000001em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.6500000000000008em;"><span></span></span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p>整数分成：正整数、负整数、0</p>
+<h1 id="表示方法"><a class="markdownIt-Anchor" href="#表示方法"></a> 表示方法</h1>
+<h2 id="列举法"><a class="markdownIt-Anchor" href="#列举法"></a> 列举法：</h2>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy="false">{</mo><mn>1</mn><mtext>、</mtext><mn>2</mn><mtext>、</mtext><mn>3</mn><mtext>、</mtext><mn>4</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">A=\{1、2、3、4\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">1</span><span class="mord cjk_fallback">、</span><span class="mord">2</span><span class="mord cjk_fallback">、</span><span class="mord">3</span><span class="mord cjk_fallback">、</span><span class="mord">4</span><span class="mclose">}</span></span></span></span></p>
+<h2 id="描述法"><a class="markdownIt-Anchor" href="#描述法"></a> 描述法：</h2>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy="false">{</mo><mi>x</mi><mi mathvariant="normal">∣</mi><mn>1</mn><mo>&lt;</mo><mo>=</mo><mi>x</mi><mo>&lt;</mo><mo>=</mo><mn>5</mn><mo separator="true">,</mo><mi>x</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">A=\{x|1&lt;=x&lt;=5,x\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">x</span><span class="mord">∣</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">x</span><span class="mclose">}</span></span></span></span></p>
+<h2 id="维恩图"><a class="markdownIt-Anchor" href="#维恩图"></a> 维恩图：</h2>
+<h1 id="包含属于关系"><a class="markdownIt-Anchor" href="#包含属于关系"></a> 包含属于关系</h1>
+<p>属于<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>（</mtext><mo>∈</mo><mtext>）</mtext></mrow><annotation encoding="application/x-tex">（\in）</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72243em;vertical-align:-0.0391em;"></span><span class="mord cjk_fallback">（</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">）</span></span></span></span>，不属于<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>（</mtext><mo mathvariant="normal">∉</mo><mtext>）</mtext></mrow><annotation encoding="application/x-tex">（\notin）</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord cjk_fallback">（</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mord"><span class="mrel">∈</span></span><span class="mord vbox"><span class="thinbox"><span class="llap"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="inner"><span class="mord"><span class="mord">/</span><span class="mspace" style="margin-right:0.05555555555555555em;"></span></span></span><span class="fix"></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">）</span></span></span></span>：<strong>元素与集合之间的关系</strong><br />
+包含<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>（</mtext><mo>⊃</mo><mtext>）</mtext></mrow><annotation encoding="application/x-tex">（\supset）</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72243em;vertical-align:-0.0391em;"></span><span class="mord cjk_fallback">（</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⊃</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">）</span></span></span></span>，不包含<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>（</mtext><mo>⊅</mo><mtext>）</mtext></mrow><annotation encoding="application/x-tex">（\not\supset）</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord cjk_fallback">（</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mord vbox"><span class="thinbox"><span class="rlap"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="inner"><span class="mrel"></span></span><span class="fix"></span></span></span></span></span></span><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">⊃</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">）</span></span></span></span>：<strong>集合与集合之间的关系</strong></p>
+<p><img src="https://pic1.imgdb.cn/item/68ac800758cb8da5c84d11b8.png" alt="" /></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -1509,6 +1304,115 @@ VMware Fusion 虚拟机破解密钥：</li>
     <content><![CDATA[<h2 id="c-入门课提醒"><a class="markdownIt-Anchor" href="#c-入门课提醒"></a> C# 入门课提醒</h2>
 <p>查看作业代码请访问：<a href="https://steve372a.github.io/hmwork/csharp">观看作业示例</a><br />
 作者不建议你直接照抄代码，请仔细阅读文章，做作业，并思考代码背后的逻辑。</p>
+<h2 id="c-新手学习大纲-第-1-课-第-92-课"><a class="markdownIt-Anchor" href="#c-新手学习大纲-第-1-课-第-92-课"></a> 📚 C# 新手学习大纲 (第 1 课 - 第 92 课)</h2>
+<p><a href="#c-%E6%96%B0%E6%89%8B%E5%AD%A6%E4%B9%A0%E5%A4%A7%E7%BA%B2-%E7%AC%AC-1-%E8%AF%BE---%E7%AC%AC-92-%E8%AF%BE">回到顶部</a></p>
+<h3 id="第一阶段基础语法与流程控制-l1-l19"><a class="markdownIt-Anchor" href="#第一阶段基础语法与流程控制-l1-l19"></a> 🚀 第一阶段：基础语法与流程控制 (L1 - L19)</h3>
+<ol>
+<li><a href="#%E7%AC%AC-1-%E8%AF%BE%EF%BC%9A%E7%BC%96%E7%A8%8B%E7%8E%AF%E5%A2%83%E4%B8%8E-c-%E7%AE%80%E4%BB%8B">第 1 课：编程环境与 C# 简介</a></li>
+<li><a href="#%E7%AC%AC-2-%E8%AF%BE%EF%BC%9Avisual-studio-%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8">第 2 课：Visual Studio 基础使用</a></li>
+<li><a href="#%E7%AC%AC-3-%E8%AF%BE%EF%BC%9Ac-%E4%B8%96%E7%95%8C%E7%9A%84%E4%BD%A0%E5%A5%BD">第 3 课：C# 世界的“你好”</a></li>
+<li><a href="#%E7%AC%AC-4-%E8%AF%BE%EF%BC%9A%E6%B3%A8%E9%87%8A%E4%B8%8E%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83">第 4 课：注释与代码规范</a></li>
+<li><a href="#%E7%AC%AC-5-%E8%AF%BE%EF%BC%9A%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B-int-string">第 5 课：基本数据类型 (int, string)</a></li>
+<li><a href="#%E7%AC%AC-6-%E8%AF%BE%EF%BC%9A%E5%8F%98%E9%87%8F-variables-%E7%AE%80%E4%BB%8B">第 6 课：变量 (Variables) 简介</a></li>
+<li><a href="#%E7%AC%AC-7-%E8%AF%BE%EF%BC%9A%E6%98%BE%E7%A4%BA%E5%8F%98%E9%87%8F%E9%87%8C%E7%9A%84%E6%95%B0%E6%8D%AE-%E4%B8%8E-%E6%9B%B4%E5%A4%9A%E7%9A%84%E6%95%B0%E5%AD%97%E7%B1%BB%E5%9E%8B">第 7 课：显示变量里的数据 与 更多的数字类型</a></li>
+<li><a href="#%E7%AC%AC-8-%E8%AF%BE%EF%BC%9A%E8%AE%A9%E6%95%B0%E5%AD%97%E5%8A%A8%E8%B5%B7%E6%9D%A5%E2%80%94%E2%80%94%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6">第 8 课：让数字动起来——算术运算符</a></li>
+<li><a href="#%E7%AC%AC-9-%E8%AF%BE%EF%BC%9A%E5%8F%98%E9%87%8F%E7%9A%84%E5%BF%AB%E9%80%9F%E4%BF%AE%E6%94%B9%E2%80%94%E2%80%94%E5%A4%8D%E5%90%88%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6">第 9 课：变量的快速修改——复合赋值运算符</a></li>
+<li><a href="#%E7%AC%AC-10-%E8%AF%BE%EF%BC%9A%E6%9C%80%E7%AE%80%E6%B4%81%E7%9A%84%E4%BF%AE%E6%94%B9%E2%80%94%E2%80%94%E9%80%92%E5%A2%9E%E4%B8%8E%E9%80%92%E5%87%8F%E8%BF%90%E7%AE%97%E7%AC%A6">第 10 课：最简洁的修改——递增与递减运算符</a></li>
+<li><a href="#%E7%AC%AC-11-%E8%AF%BE%EF%BC%9A%E5%B8%83%E5%B0%94%E5%80%BC%E5%92%8C%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97%E7%AC%A6">第 11 课：布尔值和关系运算符</a></li>
+<li><a href="#%E7%AC%AC-12-%E8%AF%BE%EF%BC%9A%E7%BB%84%E5%90%88%E6%9D%A1%E4%BB%B6%E2%80%94%E2%80%94%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6">第 12 课：组合条件——逻辑运算符</a></li>
+<li><a href="#%E7%AC%AC-13-%E8%AF%BE%EF%BC%9A%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%B2%94%E8%B7%AF%E5%8F%A3%E2%80%94%E2%80%94%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5-if-else">第 13 课：程序的岔路口——条件语句 <code>if-else</code></a></li>
+<li><a href="#%E7%AC%AC-14-%E8%AF%BE%EF%BC%9A%E7%AE%80%E6%B4%81%E7%9A%84%E5%A4%9A%E5%80%BC%E5%88%A4%E6%96%AD%E2%80%94%E2%80%94switch-%E8%AF%AD%E5%8F%A5">第 14 课：简洁的多值判断——<code>switch</code> 语句</a></li>
+<li><a href="#%E7%AC%AC-15-%E8%AF%BE%EF%BC%9A%E9%87%8D%E5%A4%8D%E6%89%A7%E8%A1%8C%E4%BB%BB%E5%8A%A1%E2%80%94%E2%80%94while-%E5%BE%AA%E7%8E%AF">第 15 课：重复执行任务——<code>while</code> 循环</a></li>
+<li><a href="#%E7%AC%AC-16-%E8%AF%BE%EF%BC%9A%E4%B8%93%E4%B8%9A%E7%9A%84%E8%AE%A1%E6%95%B0%E5%BE%AA%E7%8E%AF%E2%80%94%E2%80%94for-%E5%BE%AA%E7%8E%AF">第 16 课：专业的计数循环——<code>for</code> 循环</a></li>
+<li><a href="#%E7%AC%AC-17-%E8%AF%BE%EF%BC%9A%E8%87%B3%E5%B0%91%E6%89%A7%E8%A1%8C%E4%B8%80%E6%AC%A1%E7%9A%84%E5%BE%AA%E7%8E%AF%E2%80%94%E2%80%94do-while-%E5%BE%AA%E7%8E%AF">第 17 课：至少执行一次的循环——<code>do-while</code> 循环</a></li>
+<li><a href="#%E7%AC%AC-18-%E8%AF%BE%EF%BC%9A%E6%8E%A7%E5%88%B6%E5%BE%AA%E7%8E%AF%E6%B5%81%EF%BC%9Abreak-%E5%92%8C-continue">第 18 课：控制循环流：<code>break</code> 和 <code>continue</code></a></li>
+<li><a href="#%E7%AC%AC-19-%E8%AF%BE%EF%BC%9A%E5%B5%8C%E5%A5%97%E5%BE%AA%E7%8E%AF">第 19 课：嵌套循环</a></li>
+</ol>
+<hr />
+<h3 id="第二阶段console-进阶与桌面应用基础-l20-l47"><a class="markdownIt-Anchor" href="#第二阶段console-进阶与桌面应用基础-l20-l47"></a> 💻 第二阶段：Console 进阶与桌面应用基础 (L20 - L47)</h3>
+<ol start="20">
+<li><a href="#%E7%AC%AC-20-%E8%AF%BE%EF%BC%9A%E6%95%B0%E7%BB%84-arrays-%E5%9F%BA%E7%A1%80-i">第 20 课：数组 (Arrays) 基础 I</a></li>
+<li><a href="#%E7%AC%AC-21-%E8%AF%BE%EF%BC%9A%E9%99%84%E5%8A%A0%E8%AF%BE-i%EF%BC%9Aconsole-%E8%BF%9B%E9%98%B6%E2%80%94%E2%80%94%E9%A2%9C%E8%89%B2%E4%B8%8E%E6%A0%BC%E5%BC%8F">第 21 课：附加课 I：Console 进阶——颜色与格式</a></li>
+<li><a href="#%E7%AC%AC-22-%E8%AF%BE%EF%BC%9A%E9%99%84%E5%8A%A0%E8%AF%BE-ii%EF%BC%9A%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE%E2%80%94%E2%80%94%E5%BD%A9%E8%89%B2-echo-%E7%A8%8B%E5%BA%8F">第 22 课：附加课 II：实战项目——彩色 Echo 程序</a></li>
+<li><a href="##%E7%AC%AC-23-%E8%AF%BE%EF%BC%9A%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8%E7%AE%80%E4%BB%8B%EF%BC%9Awinforms-%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F">第 23 课：桌面应用简介：WinForms 是什么？</a></li>
+<li><a href="#%E7%AC%AC-24-%E8%AF%BE%EF%BC%9Awinforms-design-%E7%95%8C%E9%9D%A2-i%EF%BC%9A%E5%88%9B%E5%BB%BA%E4%B8%8E%E4%B8%BB%E7%AA%97%E5%8F%A3">第 24 课：WinForms Design 界面 I：创建与主窗口</a></li>
+<li><a href="#%E7%AC%AC-25-%E8%AF%BE%EF%BC%9Awinforms-design-%E7%95%8C%E9%9D%A2-ii%EF%BC%9A%E5%B1%9E%E6%80%A7%E4%B8%8E%E4%BA%8B%E4%BB%B6">第 25 课：WinForms Design 界面 II：属性与事件</a></li>
+<li><a href="#%E7%AC%AC-26-%E8%AF%BE%EF%BC%9Awinforms-design-%E7%95%8C%E9%9D%A2-iii%EF%BC%9A%E5%B7%A5%E5%85%B7%E7%AE%B1%E4%B8%8E%E5%B8%83%E5%B1%80">第 26 课：WinForms Design 界面 III：工具箱与布局</a></li>
+<li><a href="#%E7%AC%AC-27-%E8%AF%BE%EF%BC%9Awinforms-%E7%90%86%E8%AE%BA-i%EF%BC%9Aform-%E7%B1%BB%E4%B8%8E%E4%BB%A3%E7%A0%81-%E6%97%A0%E4%BD%9C%E4%B8%9A">第 27 课：WinForms 理论 I：Form 类与代码 (无作业)</a></li>
+<li><a href="#%E7%AC%AC-28-%E8%AF%BE%EF%BC%9Awinforms-%E7%90%86%E8%AE%BA-ii%EF%BC%9A%E6%8E%A7%E4%BB%B6%E5%8D%B3%E5%AF%B9%E8%B1%A1-%E6%97%A0%E4%BD%9C%E4%B8%9A">第 28 课：WinForms 理论 II：控件即对象 (无作业)</a></li>
+<li><a href="#%E7%AC%AC-29-%E8%AF%BE%EF%BC%9Awinforms-%E7%90%86%E8%AE%BA-iii%EF%BC%9A%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86%E4%B8%8E%E5%A7%94%E6%89%98-%E6%97%A0%E4%BD%9C%E4%B8%9A">第 29 课：WinForms 理论 III：事件处理与委托 (无作业)</a></li>
+<li><a href="#%E7%AC%AC-30-%E8%AF%BE%EF%BC%9Awinforms-%E6%8E%A7%E4%BB%B6-i%EF%BC%9Abutton-%E6%8C%89%E9%92%AE">第 30 课：WinForms 控件 I：Button 按钮</a></li>
+<li><a href="#%E7%AC%AC-31-%E8%AF%BE%EF%BC%9Awinforms-%E6%8E%A7%E4%BB%B6-ii%EF%BC%9Alabel-%E6%A0%87%E7%AD%BE%E4%B8%8E%E5%AD%97%E4%BD%93">第 31 课：WinForms 控件 II：Label 标签与字体</a></li>
+<li><a href="#%E7%AC%AC-32-%E8%AF%BE%EF%BC%9Awinforms-%E6%8E%A7%E4%BB%B6-iii%EF%BC%9Atextbox-%E6%96%87%E6%9C%AC%E6%A1%86">第 32 课：WinForms 控件 III：TextBox 文本框</a></li>
+<li><a href="#%E7%AC%AC-33-%E8%AF%BE%EF%BC%9Awinforms-%E6%8E%A7%E4%BB%B6-iv%EF%BC%9Acheckbox-%E5%92%8C-radiobutton">第 33 课：WinForms 控件 IV：CheckBox 和 RadioButton</a></li>
+<li><a href="#%E7%AC%AC-34-%E8%AF%BE%EF%BC%9Awinforms-%E6%8E%A7%E4%BB%B6-v%EF%BC%9Apicturebox-%E4%B8%8E%E5%9B%BE%E5%83%8F">第 34 课：WinForms 控件 V：PictureBox 与图像</a></li>
+<li><a href="#%E7%AC%AC-35-%E8%AF%BE%EF%BC%9Awinforms-%E6%8E%A7%E4%BB%B6-vi%EF%BC%9Alistbox-%E5%92%8C-combobox">第 35 课：WinForms 控件 VI：ListBox 和 ComboBox</a></li>
+<li><a href="#%E7%AC%AC-36-%E8%AF%BE%EF%BC%9Awinforms-%E6%8E%A7%E4%BB%B6-vii%EF%BC%9Aprogressbar-%E5%92%8C-timer">第 36 课：WinForms 控件 VII：ProgressBar 和 Timer</a></li>
+<li><a href="#%E7%AC%AC-37-%E8%AF%BE%EF%BC%9Awinforms-%E6%8E%A7%E4%BB%B6-viii%EF%BC%9Arichtextbox-%E5%92%8C-tooltip">第 37 课：WinForms 控件 VIII：RichTextBox 和 ToolTip</a></li>
+<li><a href="#%E7%AC%AC-38-%E8%AF%BE%EF%BC%9Awinforms-%E6%8E%A7%E4%BB%B6-ix%EF%BC%9Adatetimepicker-%E5%92%8C-notifyicon">第 38 课：WinForms 控件 IX：DateTimePicker 和 NotifyIcon</a></li>
+<li><a href="#%E7%AC%AC-39-%E8%AF%BE%EF%BC%9Awinforms-%E7%AA%97%E5%8F%A3-i%EF%BC%9A%E8%AE%BE%E7%BD%AE%E7%AA%97%E4%BD%93%E5%B1%9E%E6%80%A7">第 39 课：WinForms 窗口 I：设置窗体属性</a></li>
+<li><a href="#%E7%AC%AC-40-%E8%AF%BE%EF%BC%9Awinforms-%E7%AA%97%E5%8F%A3-ii%EF%BC%9A%E6%B6%88%E6%81%AF%E6%A1%86-messagebox">第 40 课：WinForms 窗口 II：消息框 (MessageBox)</a></li>
+<li><a href="#%E7%AC%AC-41-%E8%AF%BE%EF%BC%9Awinforms-%E7%AA%97%E5%8F%A3-iii%EF%BC%9A%E5%A4%9A%E7%AA%97%E5%8F%A3%E4%BA%A4%E4%BA%92-i">第 41 课：WinForms 窗口 III：多窗口交互 I</a></li>
+<li><a href="#%E7%AC%AC-42-%E8%AF%BE%EF%BC%9Awinforms-%E7%AA%97%E5%8F%A3-iv%EF%BC%9A%E5%A4%9A%E7%AA%97%E5%8F%A3%E4%BA%A4%E4%BA%92-ii">第 42 课：WinForms 窗口 IV：多窗口交互 II</a></li>
+<li><a href="#%E7%AC%AC-43-%E8%AF%BE%EF%BC%9Awinforms-%E7%AA%97%E5%8F%A3-v%EF%BC%9A%E6%95%B0%E6%8D%AE%E4%BC%A0%E9%80%92">第 43 课：WinForms 窗口 V：数据传递</a></li>
+<li><a href="#%E7%AC%AC-44-%E8%AF%BE%EF%BC%9Awinforms-%E7%AA%97%E5%8F%A3-vi%EF%BC%9A%E8%8F%9C%E5%8D%95%E6%A0%8F%E5%92%8C%E5%B7%A5%E5%85%B7%E6%A0%8F">第 44 课：WinForms 窗口 VI：菜单栏和工具栏</a></li>
+<li><a href="#%E7%AC%AC-45-%E8%AF%BE%EF%BC%9Awinforms-%E7%AA%97%E5%8F%A3-vii%EF%BC%9A%E5%AF%B9%E8%AF%9D%E6%A1%86-opensave">第 45 课：WinForms 窗口 VII：对话框 (Open/Save)</a></li>
+<li><a href="#%E7%AC%AC-46-%E8%AF%BE%EF%BC%9Awinforms-%E7%AA%97%E5%8F%A3-viii%EF%BC%9A%E5%BC%80%E5%90%AF%E5%A4%96%E9%83%A8%E7%A8%8B%E5%BA%8F">第 46 课：WinForms 窗口 VIII：开启外部程序</a></li>
+<li><a href="#%E7%AC%AC-47-%E8%AF%BE%EF%BC%9A%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE%EF%BC%9A%E5%BC%80%E5%8F%91%E7%AC%AC%E4%B8%80%E4%B8%AA-winform-%E8%AE%A1%E7%AE%97%E5%99%A8">第 47 课：实战项目：开发第一个 WinForm 计算器</a></li>
+</ol>
+<hr />
+<h3 id="️-第三阶段高级概念-项目与部署-l48-l68"><a class="markdownIt-Anchor" href="#️-第三阶段高级概念-项目与部署-l48-l68"></a> 🏗️ 第三阶段：高级概念、项目与部署 (L48 - L68)</h3>
+<ol start="48">
+<li><a href="#%E7%AC%AC-48-%E8%AF%BE%EF%BC%9A%E8%BF%9B%E9%98%B6%E5%86%85%E5%AE%B9-i%EF%BC%9A%E6%96%B9%E6%B3%95-methods-%E5%9F%BA%E7%A1%80">第 48 课：进阶内容 I：方法 (Methods) 基础</a></li>
+<li><a href="#%E7%AC%AC-49-%E8%AF%BE%EF%BC%9A%E8%BF%9B%E9%98%B6%E5%86%85%E5%AE%B9-ii%EF%BC%9A%E6%96%B9%E6%B3%95%E5%8F%82%E6%95%B0%E4%B8%8E%E8%BF%94%E5%9B%9E%E5%80%BC">第 49 课：进阶内容 II：方法参数与返回值</a></li>
+<li><a href="#%E7%AC%AC-50-%E8%AF%BE%EF%BC%9A%E8%BF%9B%E9%98%B6%E5%86%85%E5%AE%B9-iii%EF%BC%9A%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1-oop-%E7%AE%80%E4%BB%8B">第 50 课：进阶内容 III：面向对象 (OOP) 简介</a></li>
+<li><a href="#%E7%AC%AC-51-%E8%AF%BE%EF%BC%9A%E8%BF%9B%E9%98%B6%E5%86%85%E5%AE%B9-iv%EF%BC%9A%E7%B1%BB-classes-%E5%92%8C%E5%AF%B9%E8%B1%A1">第 51 课：进阶内容 IV：类 (Classes) 和对象</a></li>
+<li><a href="#%E7%AC%AC-52-%E8%AF%BE%EF%BC%9A%E8%BF%9B%E9%98%B6%E5%86%85%E5%AE%B9-v%EF%BC%9A%E9%9B%86%E5%90%88-collections-%E5%9F%BA%E7%A1%80">第 52 课：进阶内容 V：集合 (Collections) 基础</a></li>
+<li><a href="#%E7%AC%AC-53-%E8%AF%BE%EF%BC%9A%E8%BF%9B%E9%98%B6%E5%86%85%E5%AE%B9-vi%EF%BC%9A%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99-i">第 53 课：进阶内容 VI：文件读写 I</a></li>
+<li><a href="#%E7%AC%AC-54-%E8%AF%BE%EF%BC%9A%E8%BF%9B%E9%98%B6%E5%86%85%E5%AE%B9-vii%EF%BC%9A%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99-ii%EF%BC%9A%E5%BA%8F%E5%88%97%E5%8C%96">第 54 课：进阶内容 VII：文件读写 II：序列化</a></li>
+<li><a href="#%E7%AC%AC-55-%E8%AF%BE%EF%BC%9A%E7%AE%80%E5%8D%95-bug-%E8%A7%A3%E5%86%B3%E4%B8%8E%E8%B0%83%E8%AF%95%E6%8A%80%E6%9C%AF">第 55 课：简单 Bug 解决与调试技术</a></li>
+<li><a href="#%E7%AC%AC-56-%E8%AF%BE%EF%BC%9A%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91-i%EF%BC%9A%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E4%B8%8E%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1">第 56 课：项目开发 I：需求分析与功能设计</a></li>
+<li><a href="#%E7%AC%AC-57-%E8%AF%BE%EF%BC%9A%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91-ii%EF%BC%9A%E7%95%8C%E9%9D%A2%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%B8%83%E5%B1%80">第 57 课：项目开发 II：界面设计与布局</a></li>
+<li><a href="#%E7%AC%AC-58-%E8%AF%BE%EF%BC%9A%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91-iii%EF%BC%9A%E5%8A%9F%E8%83%BD%E5%AE%9E%E7%8E%B0%E4%B8%8E%E4%BB%A3%E7%A0%81%E6%A8%A1%E5%9D%97%E5%8C%96">第 58 课：项目开发 III：功能实现与代码模块化</a></li>
+<li><a href="#%E7%AC%AC-59-%E8%AF%BE%EF%BC%9A%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91-iv%EF%BC%9A%E9%A1%B9%E7%9B%AE%E6%B5%8B%E8%AF%95%E4%B8%8E%E9%AA%8C%E6%94%B6">第 59 课：项目开发 IV：项目测试与验收</a></li>
+<li><a href="#%E7%AC%AC-60-%E8%AF%BE%EF%BC%9A%E8%BD%AF%E4%BB%B6%E5%88%86%E5%8F%91-i%EF%BC%9A%E5%8F%91%E5%B8%83-publish-%E5%9F%BA%E7%A1%80">第 60 课：软件分发 I：发布 (Publish) 基础</a></li>
+<li><a href="#%E7%AC%AC-61-%E8%AF%BE%EF%BC%9A%E8%BD%AF%E4%BB%B6%E5%88%86%E5%8F%91-ii%EF%BC%9A%E7%94%9F%E6%88%90%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6-exe">第 61 课：软件分发 II：生成可执行文件 (.exe)</a></li>
+<li><a href="#%E7%AC%AC-62-%E8%AF%BE%EF%BC%9A%E8%BD%AF%E4%BB%B6%E5%88%86%E5%8F%91-iii%EF%BC%9A%E7%AE%80%E5%8D%95%E7%9A%84%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F">第 62 课：软件分发 III：简单的安装程序</a></li>
+<li><a href="#%E7%AC%AC-63-%E8%AF%BE%EF%BC%9A%E7%AE%80%E5%8D%95%E8%B7%A8%E5%B9%B3%E5%8F%B0-i%EF%BC%9Anet-core--net-%E7%AE%80%E4%BB%8B">第 63 课：简单跨平台 I：.NET Core / .NET 简介</a></li>
+<li><a href="#%E7%AC%AC-64-%E8%AF%BE%EF%BC%9A%E7%AE%80%E5%8D%95%E8%B7%A8%E5%B9%B3%E5%8F%B0-ii%EF%BC%9A%E8%B7%A8%E5%B9%B3%E5%8F%B0-console-%E5%BA%94%E7%94%A8">第 64 课：简单跨平台 II：跨平台 Console 应用</a></li>
+<li><a href="#%E7%AC%AC-65-%E8%AF%BE%EF%BC%9A%E7%AE%80%E5%8D%95%E8%B7%A8%E5%B9%B3%E5%8F%B0-iii%EF%BC%9Amaui-%E6%A6%82%E5%BF%B5-i">第 65 课：简单跨平台 III：MAUI 概念 I</a></li>
+<li><a href="#%E7%AC%AC-66-%E8%AF%BE%EF%BC%9A%E7%AE%80%E5%8D%95%E8%B7%A8%E5%B9%B3%E5%8F%B0-iv%EF%BC%9Amaui-%E6%A6%82%E5%BF%B5-ii">第 66 课：简单跨平台 IV：MAUI 概念 II</a></li>
+<li><a href="#%E7%AC%AC-67-%E8%AF%BE%EF%BC%9A%E7%AE%80%E5%8D%95%E8%B7%A8%E5%B9%B3%E5%8F%B0-v%EF%BC%9A%E7%AC%AC%E4%B8%80%E4%B8%AA-maui-%E9%A1%B5%E9%9D%A2">第 67 课：简单跨平台 V：第一个 MAUI 页面</a></li>
+<li><a href="#%E7%AC%AC-68-%E8%AF%BE%EF%BC%9A%E7%AE%80%E5%8D%95%E8%B7%A8%E5%B9%B3%E5%8F%B0-vi%EF%BC%9Amaui-%E6%8C%89%E9%92%AE%E4%B8%8E%E4%BA%8B%E4%BB%B6">第 68 课：简单跨平台 VI：MAUI 按钮与事件</a></li>
+</ol>
+<hr />
+<h3 id="第四阶段ai-时代-进阶与选修-l69-l92"><a class="markdownIt-Anchor" href="#第四阶段ai-时代-进阶与选修-l69-l92"></a> 🌐 第四阶段：AI 时代、进阶与选修 (L69 - L92)</h3>
+<ol start="69">
+<li><a href="#%E7%AC%AC-69-%E8%AF%BE%EF%BC%9Aai-%E6%97%B6%E4%BB%A3-i%EF%BC%9A%E7%90%86%E8%AE%BA%E2%80%94%E2%80%94ai-%E5%AF%B9-c-%E5%BC%80%E5%8F%91%E7%9A%84%E5%BD%B1%E5%93%8D">第 69 课：AI 时代 I：理论——AI 对 C# 开发的影响</a></li>
+<li><a href="#%E7%AC%AC-70-%E8%AF%BE%EF%BC%9Aai-%E6%97%B6%E4%BB%A3-ii%EF%BC%9A%E7%90%86%E8%AE%BA%E2%80%94%E2%80%94%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E7%9A%84%E8%B0%83%E6%95%B4">第 70 课：AI 时代 II：理论——学习路线的调整</a></li>
+<li><a href="#%E7%AC%AC-71-%E8%AF%BE%EF%BC%9Aai-%E6%97%B6%E4%BB%A3-iii%EF%BC%9A%E5%AE%9E%E8%B7%B5%E2%80%94%E2%80%94%E4%BD%BF%E7%94%A8-ai-%E8%BE%85%E5%8A%A9%E4%BB%A3%E7%A0%81-i">第 71 课：AI 时代 III：实践——使用 AI 辅助代码 I</a></li>
+<li><a href="#%E7%AC%AC-72-%E8%AF%BE%EF%BC%9Aai-%E6%97%B6%E4%BB%A3-iv%EF%BC%9A%E5%AE%9E%E8%B7%B5%E2%80%94%E2%80%94%E4%BD%BF%E7%94%A8-ai-%E8%BE%85%E5%8A%A9%E4%BB%A3%E7%A0%81-ii">第 72 课：AI 时代 IV：实践——使用 AI 辅助代码 II</a></li>
+<li><a href="#%E7%AC%AC-73-%E8%AF%BE%EF%BC%9A%E9%80%89%E4%BF%AE-i%EF%BC%9Amacos-%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E6%A6%82%E5%BF%B5">第 73 课：选修 I：macOS 软件开发概念</a></li>
+<li><a href="#%E7%AC%AC-74-%E8%AF%BE%EF%BC%9A%E9%80%89%E4%BF%AE-ii%EF%BC%9Amacos-%E7%95%8C%E9%9D%A2%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99">第 74 课：选修 II：macOS 界面设计原则</a></li>
+<li><a href="#%E7%AC%AC-75-%E8%AF%BE%EF%BC%9A%E9%80%89%E4%BF%AE-iii%EF%BC%9Amacos-%E5%9F%BA%E7%A1%80%E9%A1%B5%E9%9D%A2%E7%BB%93%E6%9E%84">第 75 课：选修 III：macOS 基础页面结构</a></li>
+<li><a href="#%E7%AC%AC-76-%E8%AF%BE%EF%BC%9A%E9%80%89%E4%BF%AE-iv%EF%BC%9Amacos-%E5%BA%94%E7%94%A8%E6%89%93%E5%8C%85%E4%B8%8E%E5%88%86%E5%8F%91">第 76 课：选修 IV：macOS 应用打包与分发</a></li>
+<li><a href="#%E7%AC%AC-77-%E8%AF%BE%EF%BC%9A%E9%80%89%E4%BF%AE-v%EF%BC%9A%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E6%A6%82%E5%BF%B5-androidios">第 77 课：选修 V：移动开发概念 (Android/iOS)</a></li>
+<li><a href="#%E7%AC%AC-78-%E8%AF%BE%EF%BC%9A%E9%80%89%E4%BF%AE-vi%EF%BC%9A%E7%A7%BB%E5%8A%A8-ui-%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80">第 78 课：选修 VI：移动 UI 设计基础</a></li>
+<li><a href="#%E7%AC%AC-79-%E8%AF%BE%EF%BC%9A%E9%80%89%E4%BF%AE-vii%EF%BC%9A%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80%E9%A1%B5%E9%9D%A2">第 79 课：选修 VII：移动应用基础页面</a></li>
+<li><a href="#%E7%AC%AC-80-%E8%AF%BE%EF%BC%9A%E9%80%89%E4%BF%AE-viii%EF%BC%9A%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E6%89%93%E5%8C%85%E4%B8%8E%E5%88%86%E5%8F%91">第 80 课：选修 VIII：移动应用打包与分发</a></li>
+<li><a href="#%E7%AC%AC-81-%E8%AF%BE%EF%BC%9A%E8%BF%9B%E9%98%B6-windows-%E7%BC%96%E7%A8%8B-i%EF%BC%9A%E5%A7%94%E6%89%98-delegates-%E5%92%8C%E4%BA%8B%E4%BB%B6">第 81 课：进阶 Windows 编程 I：委托 (Delegates) 和事件</a></li>
+<li><a href="#%E7%AC%AC-82-%E8%AF%BE%EF%BC%9A%E8%BF%9B%E9%98%B6-windows-%E7%BC%96%E7%A8%8B-ii%EF%BC%9A%E6%B3%9B%E5%9E%8B-generics">第 82 课：进阶 Windows 编程 II：泛型 (Generics)</a></li>
+<li><a href="#%E7%AC%AC-83-%E8%AF%BE%EF%BC%9A%E8%BF%9B%E9%98%B6-windows-%E7%BC%96%E7%A8%8B-iii%EF%BC%9Alinq-%E5%9F%BA%E7%A1%80">第 83 课：进阶 Windows 编程 III：LINQ 基础</a></li>
+<li><a href="#%E7%AC%AC-84-%E8%AF%BE%EF%BC%9A%E8%BF%9B%E9%98%B6-windows-%E7%BC%96%E7%A8%8B-iv%EF%BC%9Atask-%E5%92%8C-asyncevent-await">第 84 课：进阶 Windows 编程 IV：Task 和 Async/Await</a></li>
+<li><a href="#%E7%AC%AC-85-%E8%AF%BE%EF%BC%9A%E8%BF%9B%E9%98%B6-windows-%E7%BC%96%E7%A8%8B-v%EF%BC%9A%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A6%82%E5%BF%B5">第 85 课：进阶 Windows 编程 V：多线程概念</a></li>
+<li><a href="#%E7%AC%AC-86-%E8%AF%BE%EF%BC%9A%E8%BF%9B%E9%98%B6-windows-%E7%BC%96%E7%A8%8B-vi%EF%BC%9A%E6%96%87%E4%BB%B6%E6%95%B0%E6%8D%AE%E6%B5%81-stream">第 86 课：进阶 Windows 编程 VI：文件/数据流 (Stream)</a></li>
+<li><a href="#%E7%AC%AC-87-%E8%AF%BE%EF%BC%9A%E8%BF%9B%E9%98%B6-windows-%E7%BC%96%E7%A8%8B-vii%EF%BC%9A%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4%E4%B8%8E-dll">第 87 课：进阶 Windows 编程 VII：命名空间与 DLL</a></li>
+<li><a href="#%E7%AC%AC-88-%E8%AF%BE%EF%BC%9A%E8%BF%9B%E9%98%B6-windows-%E7%BC%96%E7%A8%8B-viii%EF%BC%9A%E5%8F%8D%E5%B0%84-reflection-%E5%9F%BA%E7%A1%80">第 88 课：进阶 Windows 编程 VIII：反射 (Reflection) 基础</a></li>
+<li><a href="#%E7%AC%AC-89-%E8%AF%BE%EF%BC%9A%E8%BF%9B%E9%98%B6-windows-%E7%BC%96%E7%A8%8B-ix%EF%BC%9Awindows-%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%A6%82%E5%BF%B5">第 89 课：进阶 Windows 编程 IX：Windows 服务的概念</a></li>
+<li><a href="#%E7%AC%AC-90-%E8%AF%BE%EF%BC%9A%E8%BF%9B%E9%98%B6-windows-%E7%BC%96%E7%A8%8B-x%EF%BC%9Apinvoke-%E6%A6%82%E5%BF%B5">第 90 课：进阶 Windows 编程 X：P/Invoke 概念</a></li>
+<li><a href="#%E7%AC%AC-91-%E8%AF%BE%EF%BC%9A%E5%90%8E%E8%AF%AD-i%EF%BC%9A%E4%B8%8B%E4%B8%80%E6%AD%A5%E7%9A%84%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF">第 91 课：后语 I：下一步的学习路线</a></li>
+<li><a href="#%E7%AC%AC-92-%E8%AF%BE%EF%BC%9A%E5%90%8E%E8%AF%AD-ii%EF%BC%9A%E8%87%B4-c-%E5%88%9D%E5%AD%A6%E8%80%85">第 92 课：后语 II：致 C# 初学者</a></li>
+</ol>
 <h2 id="第一课c-是什么net-是什么"><a class="markdownIt-Anchor" href="#第一课c-是什么net-是什么"></a> 💡 第一课：C# 是什么？.NET 是什么？</h2>
 <h3 id="核心知识点"><a class="markdownIt-Anchor" href="#核心知识点"></a> 核心知识点</h3>
 <ul>
@@ -2082,6 +1986,211 @@ VMware Fusion 虚拟机破解密钥：</li>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
+    <title>无需 U 盘给 MacBook 电脑安装 Arch Linux</title>
+    <url>/20230108/134420/</url>
+    <content><![CDATA[<p>想装Arch Linux却没有带U盘，心急如焚的话，就看看我这个教程吧！保有效。</p>
+<h1 id="安装要求"><a class="markdownIt-Anchor" href="#安装要求"></a> 安装要求</h1>
+<ul>
+<li>一双手</li>
+<li>灵慧的大脑</li>
+<li>一台 (Intel 芯片) 的 MacBook Air 或者 MacBook Pro。 (不知道带安全芯片的可不可以)</li>
+</ul>
+<h1 id="开始安装"><a class="markdownIt-Anchor" href="#开始安装"></a> 开始安装</h1>
+<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
+<p>首先你需要有 Linux 基础，不然我之后跟你讲的，你都听不懂。<br />
+其次需要备份数据，因为我们要全盘格式化。</p>
+<h2 id="下载-arch-linux"><a class="markdownIt-Anchor" href="#下载-arch-linux"></a> 下载 Arch Linux</h2>
+<p>您可以通过以下链接来下载：<a href="https://mirrors.bfsu.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso">点击下载</a></p>
+<h2 id="macos-下的操作"><a class="markdownIt-Anchor" href="#macos-下的操作"></a> macOS 下的操作</h2>
+<h3 id="分区"><a class="markdownIt-Anchor" href="#分区"></a> 分区</h3>
+<ul>
+<li>在确定好已经备份好了文件之后，我们打开“磁盘工具”<br />
+<img src="https://img.gejiba.com/images/307403f27e39b88ad31f7034e3e6f3ca.png" alt="" /></li>
+<li>然后在上面的“显示”选项中，选择：“显示所有设备”<br />
+<img src="https://img.gejiba.com/images/10a4685ab86b81d9dfa2b4c032f1c707.png" alt="" /></li>
+<li>然后点击整块盘，找到“分区”选项。<br />
+<img src="https://img.gejiba.com/images/80d7dc7a41780488c98874460b234c5d.png" alt="" /></li>
+<li>添加一块 4 GB 的分区，分区格式 FAT 即可，名称先随意改一下，后面还需要改名字。<br />
+<img src="https://img.gejiba.com/images/265334b0ee5aad473c7de1f498b0f723.png" alt="" /></li>
+</ul>
+<h3 id="安装虚拟机"><a class="markdownIt-Anchor" href="#安装虚拟机"></a> 安装虚拟机</h3>
+<ul>
+<li>添加好之后，我们安装 VMware Fusion 虚拟机，安装一个 Windows 系统。<br />
+(如果你有 Parallels Desktop 虚拟机，可以跳过这一步)<br />
+VMware Fusion 虚拟机下载链接：<a href="https://download3.vmware.com/software/fusion/file/VMware-Fusion-12.0.0-16880131.dmg">点我下载</a><br />
+VMware Fusion 虚拟机破解密钥：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ZF3R0-FHED2-M80TY-8QYGC-NPKYF</span><br></pre></td></tr></table></figure>
+<p>如果找不到 Windows 镜像的话，可以用我这个 Windows XP：<a href="https://pan.huang1111.cn/s/KBgZsY">点我下载</a></p>
+<ul>
+<li>安装好虚拟机和虚拟机扩展套件(例如：VMware Tools)之后，共享你那个 4 GB 的分区到虚拟机上。</li>
+</ul>
+<h4 id="vmware-fusion"><a class="markdownIt-Anchor" href="#vmware-fusion"></a> VMware Fusion</h4>
+<p>在菜单栏中找到“虚拟机”选项，然后拉到最后有一个“共享”，点那个共享设置。<br />
+<img src="https://img.gejiba.com/images/6ea78bdea57adb61727bc59cc2fb97fe.png" alt="" /><br />
+点击启用共享文件夹，然后点击那个”+“号。<br />
+<img src="https://img.gejiba.com/images/632ccbf19ea918679c36351e75d324d0.png" alt="" /><br />
+找到那个 4 GB 的分区，点击“添加”<br />
+<img src="https://img.gejiba.com/images/b397da48952fba48c994214f4e12b6e0.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/3cb6087a20bce76a8bc4a793218eb333.png" alt="" /></p>
+<h4 id="parallels-desktop"><a class="markdownIt-Anchor" href="#parallels-desktop"></a> Parallels Desktop</h4>
+<p>在菜单栏中找到“设备”选项，找到“共享”，点：添加文件夹。<br />
+<img src="https://img.gejiba.com/images/bd405cf58579076c9fa6508614cc58bc.png" alt="" /><br />
+找到那个 4 GB 的分区，点击“打开”<br />
+<img src="https://img.gejiba.com/images/d39aed7bf6269001f2dfcfe784a018c0.png" alt="" /></p>
+<h3 id="拷贝镜像到分区"><a class="markdownIt-Anchor" href="#拷贝镜像到分区"></a> 拷贝镜像到分区</h3>
+<ul>
+<li>这一步就非常简单了，只需要将ARCH Linux光盘文件拷贝到分区即可，这也就是为什么要装一个 Windows 虚拟机的原因，因为 macOS 不能识别 Arch Linux 的文件。</li>
+<li>虚拟机插入Arch Linux光盘，然后将光盘所有文件全部复制到那个分区。<br />
+<img src="https://img.gejiba.com/images/3853d5b817845a45de0a1daf8acf9cc9.png" alt="" /></li>
+</ul>
+<h3 id="再次更改名字"><a class="markdownIt-Anchor" href="#再次更改名字"></a> 再次更改名字</h3>
+<ul>
+<li>记住虚拟机中显示的 Arch Linux 光盘名称，我这里是<b><font color=red>「ARCH_202301」</font></b>，再次进入“磁盘工具”。<br />
+然后点击 4 GB 的分区，再点击一下他的名字：<br />
+<img src="https://img.gejiba.com/images/dc5319ee01c52ced07a08a2d49b3f9c5.png" alt="" /><br />
+将这个分区名称改成ARCH_202301之后，macOS的所有操作就都完成了。</li>
+</ul>
+<h2 id="开始安装-arch-linux"><a class="markdownIt-Anchor" href="#开始安装-arch-linux"></a> 开始安装 Arch Linux</h2>
+<p>重新启动你的 Mac 电脑，按下 Option 键，等看到启动选项出现 EFI Boot 之后，引导它。如果顺利的话，你应该可以看到 GRUB 界面，开始引导即可。<br />
+<img src="https://img.gejiba.com/images/d5d322d4fb129852c7d8365791828811.jpg" alt="" /></p>
+<h3 id="连接互联网"><a class="markdownIt-Anchor" href="#连接互联网"></a> 连接互联网</h3>
+<p>输入 iwctl 进入 iwd。<br />
+然后查看网卡号是什么，以 wlan0 为例子：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">device list</span><br></pre></td></tr></table></figure>
+<p>然后联网，输入以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">station wlan0 scan</span><br><span class="line">station wlan0 get-networks</span><br><span class="line">station wlan0 connect TestWiFi_5G</span><br></pre></td></tr></table></figure>
+<p>连接好网络后，输入 exit 退出 iwd。再输入 ping <a href="http://www.baidu.com">www.baidu.com</a> 看看网络是不是正确连接。</p>
+<h3 id="为磁盘分区"><a class="markdownIt-Anchor" href="#为磁盘分区"></a> 为磁盘分区</h3>
+<p>未完待续。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>朝鲜故事</title>
+    <url>/20250115/134502/</url>
+    <content><![CDATA[<h1 id="金哲的一生"><a class="markdownIt-Anchor" href="#金哲的一生"></a> 金哲的一生</h1>
+<h3 id="重生与归途"><a class="markdownIt-Anchor" href="#重生与归途"></a> <strong>重生与归途</strong></h3>
+<h4 id="逃离与新生"><a class="markdownIt-Anchor" href="#逃离与新生"></a> <strong>逃离与新生</strong></h4>
+<p>金哲（化名）是一个普通的朝鲜农民，为了逃避贫困与压迫，他在三十多年前冒着生命危险横渡鸭绿江，逃亡到中国。在那里，他假借一名已故中国人的身份生活，靠着勤奋努力和语言天赋，逐渐扎根北京。</p>
+<p>他成了一名装修工人，从最初的小工到后来独自接活儿，金哲攒下了一笔钱，买了房和车，还拿到了珍贵的北京车牌。他的生活看似幸福，平静而富足，但内心却始终留有一个深深的裂痕——对家人的思念。</p>
+<h4 id="返乡的决心"><a class="markdownIt-Anchor" href="#返乡的决心"></a> <strong>返乡的决心</strong></h4>
+<p>在某个冬日的清晨，金哲坐在家中的餐桌前，看着一张全家福的照片。他知道，家人在朝鲜的境况可能依然艰难，而自己却无法得知他们的任何消息。这种煎熬在二十年的时间里从未减弱，反而越来越深。他最终下定决心，要回到朝鲜，哪怕付出一切代价。</p>
+<p>2009年6月的一个早晨，金哲带上简单的行李，登上了北京站发往平壤的K27次列车。他知道这是一次可能无法回头的旅程，但内心的思念战胜了恐惧。</p>
+<h4 id="噩梦的开始"><a class="markdownIt-Anchor" href="#噩梦的开始"></a> <strong>噩梦的开始</strong></h4>
+<p>当列车抵达新义州站时，金哲被朝鲜边防人员带走。他的假身份被迅速识破，并以“叛国罪”判处45年劳改。他被送往深山中的一个秘密矿场，日夜挖掘矿石，每天只有一分钟的休息时间，食物仅是冷水和少量玉米粥。</p>
+<p>一年后，金哲因饥饿和劳累倒在矿井中，最终孤独地死去。他的家人在朝鲜的村庄里苦苦等待他的消息，但始终未能等到。悲痛之中，他们全家也因思念与绝望逐渐衰弱，最终相继离世。一个家庭就这样湮灭在历史的尘埃里。</p>
+<h4 id="奇迹的出现"><a class="markdownIt-Anchor" href="#奇迹的出现"></a> <strong>奇迹的出现</strong></h4>
+<p>金哲死后，他的灵魂漂浮在矿山上空。他仰望星空，泪流满面，向神明祈求：“若能再来一次，我愿用一切换取家人的幸福。”不知何故，神明听到了他的请求，时间奇迹般地回溯到他踏上K27次列车的那一刻。</p>
+<p>这一次，金哲没有选择返乡。他用神秘的力量，暗中帮助家人成功逃离朝鲜，并将他们带到了中国。他们一家团聚在北京，在丰台区马家堡附近的一套三居室中开始了新的生活。家人重新体会到了团圆的温暖。</p>
+<h4 id="工头的复仇"><a class="markdownIt-Anchor" href="#工头的复仇"></a> <strong>工头的复仇</strong></h4>
+<p>矿山的工头得知金哲一家逃脱后怒不可遏。他动用了神秘的军队，越境来到中国，试图抓捕金哲。然而，当他们找到金哲家所在的马家堡东里小区时，却被早已埋伏在此的中国警察一举擒获。</p>
+<p>中国政府迅速将工头及其部下遣返回国，而他们在朝鲜也因“任务失败”被判处52年劳改。在那同一个矿山里，他们像金哲一样，忍受着饥饿与折磨，最终在绝望中死去。</p>
+<h4 id="幸福的尾声"><a class="markdownIt-Anchor" href="#幸福的尾声"></a> <strong>幸福的尾声</strong></h4>
+<p>从此，金哲一家安居于北京，过上了平静而幸福的生活。他的孩子们进入了中国的学校学习，金哲和妻子经营着一家小餐馆，生活虽不奢华，却充满了笑声和温暖。</p>
+<p>而在丰台区的天空下，金哲时常感叹命运的多舛和神明的恩赐。他珍惜每一天，发誓再也不会冒险，只为守护眼前这来之不易的幸福。</p>
+<h1 id="李言成的脱北之路"><a class="markdownIt-Anchor" href="#李言成的脱北之路"></a> 李言成的脱北之路</h1>
+<p>李言成曾是一名坚定的朝鲜公民，他始终相信自己的祖国是世界上最强大的国家。然而，命运的一次巧合彻底颠覆了他的信念。朋友送给他的一枚U盘，成了他人生的转折点。U盘中播放的画面展示了韩国的繁荣景象，那些真实的场景让他陷入了深深的震撼与反思。朝鲜的宣传与现实之间的巨大反差，让他感到失望与迷茫。他开始质疑国家的真实面貌，最终萌生了一个危险的念头——脱北。</p>
+<h3 id="寒夜中的逃亡"><a class="markdownIt-Anchor" href="#寒夜中的逃亡"></a> <strong>寒夜中的逃亡</strong></h3>
+<p>2009年11月8日晚11点，李言成登上了一辆通往中朝边境的汽车。这是一条充满未知和危险的路，但自由的渴望让他不再犹豫。11月9日凌晨1点，他抵达了冰冷的鸭绿江边。深冬的寒夜，刺骨的江水让他几乎窒息，但他依旧咬牙向对岸游去。然而，他的行动被朝鲜边防军发现。尽管边防军迅速上报上级并追击，他还是幸运地逃脱，成功抵达中国境内。</p>
+<h3 id="初见中国的繁华"><a class="markdownIt-Anchor" href="#初见中国的繁华"></a> <strong>初见中国的繁华</strong></h3>
+<p>在中国一侧，接应的人早已等候多时。他迅速登上车辆，驶离了边境地区。第二天清晨，车辆抵达沈阳。在这座陌生却繁华的城市，李言成第一次感受到真实的对比。他看到熙攘的街道和繁华的商场，眼泪不由自主地流了下来。他喃喃自语：“我的国家果真不是世界最强大的国家……”那一刻，痛苦与希望交织在他的心中。他吃到了一顿丰盛的饭菜，那份饱腹感是他在朝鲜几乎无法想象的。这短暂的幸福也提醒他，危险仍未远去。他知道，在中国，如果被发现为朝鲜脱北者，随时可能被遣返。</p>
+<h3 id="漫长的火车旅程"><a class="markdownIt-Anchor" href="#漫长的火车旅程"></a> <strong>漫长的火车旅程</strong></h3>
+<p>第二天，蛇头安排了从沈阳到昆明的火车票。幸运的是，当时中国的铁路还未实行实名制，这让他们能够顺利登车。蛇头叮嘱他们，“全程不能说话，不能露出惊慌；查票时装睡，一切问题我来解决。”李言成听后点头如捣蒜，但内心依旧忐忑不安。</p>
+<p>途中，一声“查票了！”让他惊得猛地坐起。这一动作立刻引起列车员的注意。蛇头机智地解释，“他做噩梦吓醒了。”列车员要求查票，蛇头从容地递上所有人的车票，才让他们化险为夷。接下来的40多个小时，李言成目睹了中国沿途的风景，看到许多人幸福的生活。这让他震撼之余，感到更加坚定：自己必须逃离朝鲜，去迎接自由的生活。</p>
+<h3 id="翻山越岭的生死攸关"><a class="markdownIt-Anchor" href="#翻山越岭的生死攸关"></a> <strong>翻山越岭的生死攸关</strong></h3>
+<p>火车抵达昆明后，蛇头迅速安排车辆将他们送往边境。由于没有护照和身份证，他们只能偷渡。翻越崇山峻岭，穿越森林与小路，旅程的每一步都充满危险与艰难。他们的体力几乎耗尽，但最终成功抵达老挝。随后，他们辗转进入缅甸，再搭乘大客车前往泰国。在泰国，李言成终于获得庇护，并通过韩国方面的援助，安全抵达韩国。</p>
+<h3 id="新生活的开始"><a class="markdownIt-Anchor" href="#新生活的开始"></a> <strong>新生活的开始</strong></h3>
+<p>站在韩国的土地上，李言成喜极而泣，感到如释重负。他紧紧拥抱蛇头，感谢对方的帮助，这是他们最后一次见面。此后，李言成在韩国安定了下来。他找到了一份普通的工作，过上了平凡但安稳的生活。对他来说，这种平凡已经是幸福的极致。他感慨道：“我终于摆脱了苦海，虽然这里的生活并不奢华，但比朝鲜好太多了。”</p>
+<p>李言成的脱北之路充满了艰险和挑战，但自由的追求让他始终不放弃。这段经历不仅是他个人的救赎，也是对人性尊严的坚持与渴望。</p>
+<h1 id="李言成的脱北之路后续"><a class="markdownIt-Anchor" href="#李言成的脱北之路后续"></a> 李言成的脱北之路后续</h1>
+<p>2013年5月5日，原本在韩国安稳生活的李言成感到一阵不安。他的直觉是对的，那天中午，他接到了来自某人的消息：“你的家人被朝鲜抓了。他们要求你回去，否则就杀你全家。”这个晴天霹雳彻底摧毁了李言成苦心经营的美好生活。他崩溃了，痛哭不止：为何自己追求自由，代价却是家人承受苦难？</p>
+<p>几经挣扎，李言成做出了艰难的决定。他辞掉了韩国的工作，收拾行囊，再次踏上了返回朝鲜的路。这条路不仅是肉体上的归途，更是他自由梦的终结。</p>
+<h3 id="回归后的灰白世界"><a class="markdownIt-Anchor" href="#回归后的灰白世界"></a> <strong>回归后的灰白世界</strong></h3>
+<p>回到朝鲜，迎接李言成的是铺天盖地的指责与冷漠。他被迅速安排接受审判，面对摄像机，他被迫宣称：“我在韩国过得一点也不好！每天都想死的感觉。”这些话违背了他的真实情感，却是保命的唯一选择。朝鲜方面认为他仍然忠诚，劳改了几个月后便将他释放。</p>
+<p>然而，李言成再也无法离开朝鲜了。他的生活从此陷入了痛苦与绝望。每天，他只能享受短短3小时的电力供应，饮水需要亲自到江边取，冬天则在缺乏暖气的房间里苦熬，几乎每年都濒临冻死。他无数次跪下，悔恨当初的选择。但后悔已无济于事，铁幕之下，他再也看不到自由的希望。</p>
+<p>2019年6月，一位朋友告诉他：“中国现在买火车票需要身份证和护照了。”这句话如同最后一根稻草，让李言成再次失声痛哭。他知道，通往外界的道路已经彻底堵死。</p>
+<h3 id="偶然的曙光"><a class="markdownIt-Anchor" href="#偶然的曙光"></a> <strong>偶然的曙光</strong></h3>
+<p>2020年疫情爆发后，朝鲜进一步封锁国境，李言成的世界变得更加渺茫。然而，命运总是充满反复。因为他“悔改表现良好”，金正恩将军决定奖励他——派遣他到中国的朝鲜餐厅工作和学习。得知这一消息时，李言成灰暗的生活似乎再次被点亮了。</p>
+<p>2025年，李言成如愿来到中国，在丹东的一家朝鲜餐厅当厨师。再次踏上这片土地时，他感叹：“中国变化真大！而我们的朝鲜……也算是一年比一年好了吧，起码没倒退。”</p>
+<h3 id="短暂的幸福"><a class="markdownIt-Anchor" href="#短暂的幸福"></a> <strong>短暂的幸福</strong></h3>
+<p>在丹东的日子里，李言成尽情享受着中国的便利与富足。虽然时间只有短短三年，但这三年对他而言是无价的。每天，他在餐厅里工作，尽管是简单的厨师岗位，却足以让他感到满足。最重要的是，在这里，他再也不用担心挨饿。</p>
+<p>虽然李言成深知，这段生活只是短暂的喘息，他最终还要回到朝鲜，但他依然感恩上帝赐予的这一段希望。他珍惜每一天，努力为餐厅的客人做出最美味的菜肴。</p>
+<p>在餐厅忙碌的厨房里，李言成时常望着窗外熙熙攘攘的街景，喃喃自语：“这三年，已经是我命运中最好的恩赐了。”他坚信，即便命运无情，但只要有一丝光亮，就值得他去追逐与珍惜。</p>
+<p>标题：李言成的脱北之路后续<br />
+在韩国呆了四五年后，朝鲜方面把他的家人都逮捕了起来，并且使用各种手段想要把他绑架回朝鲜。在2013年5月5日中午，李言成感到阵阵不安。突然有个人来找他，说：你家里人被朝鲜绑架了，你不回去朝鲜他们就杀你全家。李言成哭了，他来之不易的美好生活就要结束了？他的家人那么惨。为什么自己逃脱别人要受罚。他实在受不了自己的家人被如此欺负，为了家人的安全，他辞掉了韩国的工作还是回到了朝鲜。回到朝鲜后，他的世界变成灰白色了。心情低落的接受朝鲜的采访和审判。他在朝鲜的电视里出镜了。他的精神十分空虚，他被迫说“我在韩国过得一点也不好！每天都想死的感觉”。朝鲜方面觉得他还是比较忠诚的，劳改了几个月就把它放了。李言成不知道的是，他这一回来，就再也出不去了。2019年6月7日，李言成的朋友跟他说“喂！你知道吗？中国现在买火车票得用身份证护照了。不能用票了”“什么？！！”，李言成再一次痛哭。虽然内心早就麻木了但是听见这种事还是很伤心，这下应该是再也出不去朝鲜了。他很难过。他在朝鲜的生活很痛苦，每天只有3个小时电力支持。水也是得去江边打水，而且房间也没有暖气，每年冬天都差点被冻死。他跪下了。他这么多年来一直很后悔当年为什么要回来。但是后悔也没有用了，他回不去向往的世界了。2020年，因为疫情，朝鲜封了海关。出去的希望更加渺茫。但是，就是这么巧。因为他在外面表现的很好，将军奖励他出国学习去朝鲜餐厅，他灰色的世界突然有了颜色！他开心的蹦了起来。这次，他回到了中国。在丹东的一家朝鲜餐厅里当厨师。“这么多年没去中国了，中国变化很大嘛。而我们的朝鲜。。。也算是一年比一年好了吧！起码没倒退唉”他感叹道。虽然这次他在中国的时间只有3年，但是这3年就是上帝给他的又一次希望，现在他在朝鲜餐厅里每天都快乐的活着。因为在中国，他起码饿不死了。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>珊瑚宫心海养成指南</title>
+    <url>/20220915/233651/</url>
+    <content><![CDATA[<p><font  face="宋体">献给各位抽到心海的同学们~</font><br />
+<font  face="宋体"><br />
+<img src="https://img.gejiba.com/images/9b0eb764a0ac82311a641c0c879ec1ec.jpg" alt="" /><br />
+<img src="https://img.gejiba.com/images/32d21d0e305c9d5a21a56fb8dc992737.gif" alt="" /></p>
+<h2 id="圣遗物"><a class="markdownIt-Anchor" href="#圣遗物"></a> 圣遗物</h2>
+<p>建议使用<font face="宋体" color=#9393FF><strong>海</font><font  face="宋体" color=#FF60AF>染</font><font face="宋体" color=#46A3FF>四件套</strong></font>。<br />
+双爆<font face="宋体" color=red><strong>越少越好，不要堆双爆</strong></font>。</p>
+<h3 id="词条"><a class="markdownIt-Anchor" href="#词条"></a> 词条</h3>
+<p><font  face="宋体">生之花：<font face="宋体" color=red><strong>生命值</strong></font><br />
+<img src="https://img.gejiba.com/images/07ad11abca89d87bd1ae38612e54cbe4.jpg" alt="" /><br />
+死之羽：<font face="宋体" color=red><strong>攻击力</strong></font><br />
+<img src="https://img.gejiba.com/images/ea4acec0d7fd5b0ff0bb789fb965d28e.jpg" alt="" /><br />
+理之冠：<font color=red><strong>治疗加成</strong></font>（可以使用生命）<br />
+<img src="https://img.gejiba.com/images/6865e4d0d785f80d26c9b51409787372.jpg" alt="" /><br />
+时之沙：<font color=red><strong>生命值</strong></font><br />
+<img src="https://img.gejiba.com/images/d7763d67dab5e0bc3a78c0f63c197824.jpg" alt="" /><br />
+空之杯：<font color=red><strong>水元素伤害加成</strong></font><br />
+<img src="https://img.gejiba.com/images/989b021bb7fa09b6cfa7cf591337f2dd.jpg" alt="" /><br />
+</font></p>
+<h2 id="武器"><a class="markdownIt-Anchor" href="#武器"></a> 武器</h2>
+<p>使用<font face="宋体" color=#CA8EC2><strong>试作金铂</strong></font>即可。如果追求更高可以抽取<font color=#FFD306><strong>不灭月华</strong></font>。</p>
+<h2 id="命座"><a class="markdownIt-Anchor" href="#命座"></a> 命座</h2>
+<p>零命即可，一般没必要抽取命座。</p>
+<h2 id="组队"><a class="markdownIt-Anchor" href="#组队"></a> 组队</h2>
+<p>可以放进<b>“神鹤万心”</b>配合打永冻流：<br />
+<font color=#FFD306><strong>神里绫华</strong></font>、<font color=#FFD306><strong>珊瑚宫心海</strong></font>、<font color=#FFD306><strong>申鹤</strong></font>、<font color=#FFD306><strong>枫原万叶</strong></font>。</p>
+<p><font face="宋体">还有心海武装队：</font><br />
+<font face="宋体" color=#FFD306><strong>珊瑚宫心海</strong></font>、<font face="宋体" color=#CA8EC2><strong>菲谢尔</strong></font>、<font face="宋体" color=#CA8EC2><strong>北斗</strong></font>、<font face="宋体" color=#CA8EC2><strong>行秋</strong></font>。<br />
+<font face="宋体" color=red>心海武装队和砂糖武装队不一样的是，心海武装队可以随意搭配后三位角色。</font><br />
+</font></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>白洋淀公交乘坐体验</title>
+    <url>/20220821/011817/</url>
+    <content><![CDATA[<h1 id="线路走向"><a class="markdownIt-Anchor" href="#线路走向"></a> 线路走向</h1>
+<p>2022 年 8 月 20 日，沧州市任丘市新开到白洋淀李广村<font color=red>（现归雄安新区保定市雄县管辖）</font>的公交：308 路。以下是线路走向。</p>
+<h3 id="308-路-代河枢纽站-李广村"><a class="markdownIt-Anchor" href="#308-路-代河枢纽站-李广村"></a> 308 路 代河枢纽站 - 李广村</h3>
+<p><font color=green>代河枢纽站-西黄垒村西-于村路口<font color=red>(106国道)</font>-杜家营村-前塔村-后塔村-鄚州镇政府-鄚州镇中心卫生院-南阁村-东七里庄-中七里庄-西七里庄-生紫码头-大口子码头-李广村南-李广村</font><br />
+<img src="https://img.gejiba.com/images/03eb9f97595c40fdcc4b32a1dd089d9b.png" alt="" /></p>
+<h1 id="乘车日志"><a class="markdownIt-Anchor" href="#乘车日志"></a> 乘车日志</h1>
+<p>20号下午一点半从市区乘坐202路公交（任丘市客运西站-代河枢纽站）到达北代河。<br />
+<img src="https://img.gejiba.com/images/0b4afc34f40d79694614063114824073.jpg" alt="" /><br />
+小歇息后。一点四十308路开始行走。车内座子还是很新的，支持刷卡和刷码。<br />
+<img src="https://img.gejiba.com/images/caabb0a863887deefa35a70dcdfde4b2.jpg" alt="" /><br />
+今天天空很好看啊…<br />
+车子运行还是很快的，最高速度大概 40 km/h。噪音蛮大的。<br />
+过了于村路口就基本出了任丘界了，驶入鄚州镇。<br />
+<img src="https://img.gejiba.com/images/4c294fd8d37c149493ac12bb8e4efb89.jpg" alt="" /><br />
+驾驶到千里堤路的时候，就可以看到白洋淀的河流了。<br />
+这里有几个旅游码头，308路基本都设置了站点。<br />
+人还挺多的，比较热闹。<br />
+然后就到了李广村，本车的终点站。<br />
+<img src="https://img.gejiba.com/images/38e1a10c805be98b163dad05b4c93ab9.jpg" alt="" /><br />
+李广村离白洋淀河流还算是挺近的，我在这里拍了一些照片。<br />
+<img src="https://img.gejiba.com/images/3fc817b205738ced7dd3ce1e378a5447.jpg" alt="" /><br />
+<img src="https://img.gejiba.com/images/bd0f431dfabddf5fd30d250932523d59.jpg" alt="" /><br />
+<img src="https://img.gejiba.com/images/b1b5d6fb64e809b6c4b3acc160c97807.png" alt="李广村在白洋淀的位置" /><br />
+在近距离观察时，录了一小段视频。<font color=red></font><br />
+<a href="https://steve372yeyeye.github.io/20220821/011817/480p.mov">点击播放 QuickTime 视频</a></p>
+<h1 id=""><a class="markdownIt-Anchor" href="#"></a> </h1>
+<p>白洋淀环境很好，即使是在不是景区的乡村小河，也是很美丽的。<br />
+有一种很自然很清新的感觉。如果是清晨应该会更有感觉。</p>
+<h1 id="经过码头"><a class="markdownIt-Anchor" href="#经过码头"></a> 经过码头</h1>
+<p>308 路在路途中会经过<font color=green>生紫码头</font>和<font color=green>大口子码头</font>。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
     <title>计算机基础操作</title>
     <url>/20220910/083627/</url>
     <content><![CDATA[<p>为了让各位用户都能会用 Windows，特此写下该教程。<br />
@@ -2214,19 +2323,6 @@ Windows 中的终端叫做命令提示符，我们可以利用终端做很多事
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>Sanapri bilibili 新视频</title>
-    <url>/20220823/164646/</url>
-    <content><![CDATA[<p>鎖那小天使终于发新视频啦，这里给你们看看～</p>
-<pre><code>Kyu-kurarin (cover) / sana 
-original: きゅうくらりん / いよわ feat.可不 
-vocal: 鎖那  mix: n.k 
-▷https://space.bilibili.com/543245410
-</code></pre>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?bvid=BV1M14y1t7LK&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
-</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>让 Mac 电脑也玩上光遇！</title>
     <url>/20250114/222842/</url>
     <content><![CDATA[<h1 id="安装光-遇国服"><a class="markdownIt-Anchor" href="#安装光-遇国服"></a> 安装光 · 遇国服</h1>
@@ -2295,6 +2391,19 @@ vocal: 鎖那  mix: n.k
       <tags>
         <tag>光！遇！</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Sanapri bilibili 新视频</title>
+    <url>/20220823/164646/</url>
+    <content><![CDATA[<p>鎖那小天使终于发新视频啦，这里给你们看看～</p>
+<pre><code>Kyu-kurarin (cover) / sana 
+original: きゅうくらりん / いよわ feat.可不 
+vocal: 鎖那  mix: n.k 
+▷https://space.bilibili.com/543245410
+</code></pre>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?bvid=BV1M14y1t7LK&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
+</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>黑翼猫 Extended Kernel Project 中国网络环境下载</title>
