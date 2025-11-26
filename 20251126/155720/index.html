@@ -31,7 +31,7 @@
 <meta property="og:description" content="💡 第一课：C# 是什么？.NET 是什么？  核心知识点  C# (C-Sharp) 是一种 面向对象 的高级编程语言。 C# 由微软开发，它很像 Java 和 C++，主要用来开发 Windows 应用、Web 服务、手机 App 和游戏 (Unity)。 .NET 是 C# 程序的 运行环境和框架。 CLR (Common Language Runtime) 是 .NET 的核心组件，负">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-11-26T07:57:20.000Z">
-<meta property="article:modified_time" content="2025-11-26T13:03:19.424Z">
+<meta property="article:modified_time" content="2025-11-26T13:42:24.000Z">
 <meta property="article:author" content="Sanakaprix">
 <meta name="twitter:card" content="summary">
     
@@ -378,11 +378,47 @@
 </ol>
 <hr />
 <h2 id="第十三课全部代码"><a class="markdownIt-Anchor" href="#第十三课全部代码"></a> 第十三课全部代码</h2>
-<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 第十三课：if-else 条件语句 */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 声明变量并初始化数据</span></span><br><span class="line"><span class="built_in">int</span> currentScore = <span class="number">75</span>; </span><br><span class="line"></span><br><span class="line"><span class="comment">// **if 语句**：程序的第一个判断点。</span></span><br><span class="line"><span class="comment">// 核心知识点 1：if 后的 () 内必须是布尔表达式。</span></span><br><span class="line"><span class="comment">// 核心知识点 2：if/else if/else 后面**不能**加分号 (;)。</span></span><br><span class="line"><span class="keyword">if</span> (currentScore &gt;= <span class="number">90</span>) </span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 如果条件 (75 &gt;= 90) 为 FALSE，则跳过此代码块。</span></span><br><span class="line">    Console.WriteLine(<span class="string">&quot;等级 A&quot;</span>); </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// **else if 语句**：当前一个 if/else if 为 FALSE 时，检查这个新条件。</span></span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span> (currentScore &gt;= <span class="number">60</span>) </span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 检查条件 (75 &gt;= 60) 为 TRUE，程序执行此代码块。</span></span><br><span class="line">    <span class="comment">// 执行完后，会跳过后面的所有 else 语句。</span></span><br><span class="line">    Console.WriteLine(<span class="string">&quot;等级 B&quot;</span>); </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// **else 语句**：如果以上所有条件都为 FALSE，则执行此默认代码块。</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 流程控制：由于上一个 else if 为 TRUE，此处代码会被跳过。</span></span><br><span class="line">    Console.WriteLine(<span class="string">&quot;等级 C&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 暂停程序，等待用户按键退出</span></span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 第十三课：if-else 条件语句 */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 声明变量并初始化数据</span></span><br><span class="line"><span class="built_in">int</span> currentScore = <span class="number">75</span>; </span><br><span class="line"></span><br><span class="line"><span class="comment">// **if 语句**：程序的第一个判断点。</span></span><br><span class="line"><span class="comment">// 核心知识点 1：if 后的 () 内必须是布尔表达式。</span></span><br><span class="line"><span class="comment">// 核心知识点 2：if/else if/else 后面**不能**加分号 (;)。</span></span><br><span class="line"><span class="keyword">if</span> (currentScore &gt;= <span class="number">90</span>) </span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 如果条件 (75 &gt;= 90) 为 FALSE，则跳过此代码块。</span></span><br><span class="line">    Console.WriteLine(<span class="string">&quot;等级 A&quot;</span>); </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// **else if 语句**：当前一个 if/else if 为 FALSE 时，检查这个新条件。</span></span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span> (currentScore &gt;= <span class="number">60</span>) </span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 检查条件 (75 &gt;= 60) 为 TRUE，程序执行此代码块。</span></span><br><span class="line">    <span class="comment">// 执行完后，会跳过后面的所有 else 语句。</span></span><br><span class="line">    Console.WriteLine(<span class="string">&quot;等级 B&quot;</span>); </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// **else 语句**：如果以上所有条件都为 FALSE，则执行此默认代码块。</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 流程控制：由于上一个 else if 为 TRUE，此处代码会被跳过。</span></span><br><span class="line">    Console.WriteLine(<span class="string">&quot;等级 C&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 暂停程序，等待用户按键退出</span></span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure>
+<hr />
+<h2 id="第十四课简洁的多值判断switch-语句"><a class="markdownIt-Anchor" href="#第十四课简洁的多值判断switch-语句"></a> 🧭 第十四课：简洁的多值判断——<code>switch</code> 语句</h2>
+<h3 id="核心知识点-13"><a class="markdownIt-Anchor" href="#核心知识点-13"></a> 核心知识点</h3>
+<p><code>switch</code> 语句适用于对一个变量或表达式的<strong>精确值</strong>进行多分支匹配判断。</p>
+<ol>
+<li>
+<p><strong>基本结构</strong>：</p>
+<ul>
+<li><strong>作用</strong>：将 <code>switch</code> 括号内的值与各个 <code>case</code> 后的值进行比较。</li>
+<li><strong>语法</strong>：  <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span> (变量或表达式)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">1</span>:</span><br><span class="line">        <span class="comment">// 如果值匹配，执行这里的代码</span></span><br><span class="line">        <span class="keyword">break</span>; <span class="comment">// 必须使用 break 跳出 switch</span></span><br><span class="line">        </span><br><span class="line">    <span class="keyword">case</span> 值<span class="number">2</span>:</span><br><span class="line">        <span class="comment">// 如果值匹配，执行这里的代码</span></span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">    <span class="literal">default</span>:</span><br><span class="line">        <span class="comment">// 如果所有 case 都不匹配，执行这里的代码</span></span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>类型一致性</strong>：</p>
+<ul>
+<li><strong>规则</strong>：<code>case</code> 后的匹配值的数据类型，必须与 <code>switch</code> 括号内的<strong>变量类型保持一致</strong>。</li>
+<li>示例：如果 <code>switch (string name)</code>，则 <code>case</code> 必须是字符串：<code>case &quot;Alice&quot;:</code></li>
+</ul>
+</li>
+<li>
+<p><strong><code>break</code> 语句</strong>：</p>
+<ul>
+<li><strong>重要性</strong>：每个 <code>case</code> 的代码块执行完毕后，<strong>必须</strong>使用 <code>break;</code> 语句，否则 C# 会报错（不允许代码“穿透”到下一个 <code>case</code>）。</li>
+</ul>
+</li>
+<li>
+<p><strong><code>default</code> 语句</strong>：</p>
+<ul>
+<li><strong>作用</strong>：类似于 <code>if-else if</code> 结构中的最后的 <code>else</code>，处理所有不匹配的输入。</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="第十四课全部代码"><a class="markdownIt-Anchor" href="#第十四课全部代码"></a> 第十四课全部代码</h2>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 第十四课：switch 语句 */</span></span><br><span class="line"><span class="comment">// **switch 关键字**：用于对一个变量的精确值进行多分支匹配。</span></span><br><span class="line"><span class="built_in">string</span> singerName = <span class="string">&quot;锁那&quot;</span>;<span class="comment">// 歌手名称，作为 switch 的判断依据</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">switch</span> (singerName) <span class="comment">// switch 括号内是需要匹配的变量</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="comment">// **case 关键字**：定义一个特定的匹配值。</span></span><br><span class="line"><span class="comment">// 核心规则：case 的值（如 &quot;锁那&quot;）必须与 switch 变量的类型（string）一致。</span></span><br><span class="line"><span class="keyword">case</span> <span class="string">&quot;锁那&quot;</span>:</span><br><span class="line">Console.WriteLine(<span class="string">&quot;你喜欢锁那。&quot;</span>);</span><br><span class="line"><span class="comment">// **break 关键字**：必需！结束当前 case 的执行，跳出整个 switch 结构。</span></span><br><span class="line"><span class="keyword">break</span>;</span><br><span class="line"><span class="comment">// 第二个匹配项</span></span><br><span class="line"><span class="keyword">case</span> <span class="string">&quot;鹿乃&quot;</span>:</span><br><span class="line">Console.WriteLine(<span class="string">&quot;你喜欢鹿乃。&quot;</span>);</span><br><span class="line"><span class="keyword">break</span>;</span><br><span class="line"><span class="comment">// **default 关键字**：可选。如果所有 case 都不匹配，则执行 default。</span></span><br><span class="line"><span class="literal">default</span>:</span><br><span class="line">Console.WriteLine(<span class="string">&quot;不知道你喜欢谁。&quot;</span>);</span><br><span class="line"><span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Console.ReadKey()：暂停程序，让用户看到输出结果。</span></span><br><span class="line">Console.ReadKey();</span><br></pre></td></tr></table></figure><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
             
         </div>
         <footer class="article-footer">
-            <a data-url="http://example.com/20251126/155720/" data-id="cmig0y93m0022wtg4ellxcwz4" data-title="C# 入门课"
+            <a data-url="http://example.com/20251126/155720/" data-id="cmig2e7yl000rpag48iaqgn5q" data-title="C# 入门课"
                class="article-share-link">分享</a>
             
                 <a href="/20251126/155720/#comments" class="article-comment-link">
@@ -552,10 +588,10 @@
             
                 <div>
                     <span class="icon-brush"></span>
-                    25k
+                    25.5k
                     &nbsp;|&nbsp;
                     <span class="icon-coffee"></span>
-                    01:40
+                    01:42
                 </div>
             
             
