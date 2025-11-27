@@ -31,7 +31,7 @@
 <meta property="og:description" content="C# 入门课提醒 查看作业代码请访问：观看作业示例 作者不建议你直接照抄代码，请仔细阅读文章，做作业，并思考代码背后的逻辑。  📚 C# 新手学习大纲 (第 1 课 - 第 92 课) 回到顶部  🚀 第一阶段：基础语法与流程控制 (L1 - L19)  第 1 课：编程环境与 C# 简介 第 2 课：Visual Studio 基础使用 第 3 课：C# 世界的“你好” 第 4 课：注释与">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-11-26T07:57:20.000Z">
-<meta property="article:modified_time" content="2025-11-27T08:38:17.240Z">
+<meta property="article:modified_time" content="2025-11-27T08:45:25.524Z">
 <meta property="article:author" content="Sanakaprix">
 <meta name="twitter:card" content="summary">
     
@@ -927,7 +927,7 @@
 <li>一旦程序执行到 <code>break</code> 语句，无论循环条件是否仍为真（<code>true</code>），循环都会立刻停止执行。</li>
 <li>程序流程将跳转到该循环结构之后的下一条可执行语句。</li>
 </ul>
-<h3 id="语法和用途-syntax-and-usage"><a class="markdownIt-Anchor" href="#语法和用途-syntax-and-usage"></a> 📝 ### 📝 语法和用途 (Syntax and Usage)</h3>
+<h3 id="语法和用途-syntax-and-usage"><a class="markdownIt-Anchor" href="#语法和用途-syntax-and-usage"></a> 📝 语法和用途 (Syntax and Usage)</h3>
 <p><code>break</code> 通常与条件判断（<code>if</code> 语句）结合使用，用于实现“提早退出”或“找到目标后停止”的逻辑。</p>
 <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 示例：在找到目标数字 77 后立即停止搜索</span></span><br><span class="line"><span class="built_in">int</span>[] dataSet = &#123; <span class="number">10</span>, <span class="number">35</span>, <span class="number">77</span>, <span class="number">88</span>, <span class="number">99</span> &#125;;</span><br><span class="line"><span class="built_in">int</span> target = <span class="number">77</span>;</span><br><span class="line"><span class="built_in">bool</span> isFound = <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="built_in">int</span> i = <span class="number">0</span>; i &lt; dataSet.Length; i++)</span><br><span class="line">&#123;</span><br><span class="line">    Console.WriteLine(<span class="string">$&quot;正在检查索引 <span class="subst">&#123;i&#125;</span>，数值：<span class="subst">&#123;dataSet[i]&#125;</span>&quot;</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> (dataSet[i] == target)</span><br><span class="line">    &#123;</span><br><span class="line">        isFound = <span class="literal">true</span>;</span><br><span class="line">        Console.WriteLine(<span class="string">$&quot;\n目标 <span class="subst">&#123;target&#125;</span> 已找到！&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>; <span class="comment">// 👈 紧急停止整个 for 循环</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (!isFound)</span><br><span class="line">&#123;</span><br><span class="line">    Console.WriteLine(<span class="string">&quot;未找到目标。&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 注意：如果 dataSet[2] == 77 触发 break，索引 3 和 4 的数据将不会被检查。</span></span><br></pre></td></tr></table></figure>
 <h3 id="关键点总结"><a class="markdownIt-Anchor" href="#关键点总结"></a> 关键点总结</h3>
@@ -974,11 +974,23 @@
 </tr>
 </tbody>
 </table>
+<hr />
+<h2 id="第十八课课堂作业"><a class="markdownIt-Anchor" href="#第十八课课堂作业"></a> 第十八课课堂作业</h2>
+<h3 id="课堂作业目标-4"><a class="markdownIt-Anchor" href="#课堂作业目标-4"></a> 🎯 课堂作业目标</h3>
+<p>请编写一个 for 循环，计数器 i 从 1 循环到 10，同时使用 break 和 continue 来控制流程，并确保最终只输出未被跳过的数字：</p>
+<h4 id="要求说明"><a class="markdownIt-Anchor" href="#要求说明"></a> 要求说明：</h4>
+<ul>
+<li><strong>循环范围</strong>: i 从 1 开始，到 10 结束（包含 10）</li>
+<li><strong>筛选条件 (continue)</strong>: 如果 i 能被 3 整除（即 i % 3 == 0），则跳过本次循环</li>
+<li><strong>终止条件 (break)</strong>: 如果 i 大于 7，立即退出整个循环</li>
+<li><strong>预期输出</strong>: 1, 2, 4, 5, 7</li>
+</ul>
+<p>请将完成的 C# 代码提交给我。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
             
         </div>
         <footer class="article-footer">
-            <a data-url="http://example.com/20251126/155720/" data-id="cmih6lvil000ttbg4e62k235l" data-title="C# 入门课"
+            <a data-url="http://example.com/20251126/155720/" data-id="cmih6v5us000v9dg4fjpaboak" data-title="C# 入门课"
                class="article-share-link">分享</a>
             
                 <a href="/20251126/155720/#comments" class="article-comment-link">
@@ -1148,7 +1160,7 @@
             
                 <div>
                     <span class="icon-brush"></span>
-                    29.4k
+                    29.5k
                     &nbsp;|&nbsp;
                     <span class="icon-coffee"></span>
                     01:56
@@ -1302,7 +1314,22 @@
             <span class="popup-btn-close"></span>
         </div>
     </div>
-    <!-- hexo injector body_end start -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="//cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<!-- hexo injector body_end start -->
 <script src="/js/insertHighlight.js"></script>
 <!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":false},"log":false});</script></body>
     </html>
