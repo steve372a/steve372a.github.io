@@ -183,28 +183,85 @@
         <div class="e-content article-entry" itemprop="articleBody">
             
                 <p>想装Arch Linux却没有带U盘，心急如焚的话，就看看我这个教程吧！保有效。</p>
-<h1 id="安装要求"><a href="#安装要求" class="headerlink" title="安装要求"></a>安装要求</h1><ul>
+<h1 id="安装要求"><a class="markdownIt-Anchor" href="#安装要求"></a> 安装要求</h1>
+<ul>
 <li>一双手</li>
 <li>灵慧的大脑</li>
-<li>一台 (Intel 芯片) 的 MacBook Air 或者 MacBook Pro。 (不知道带安全芯片的可不可以)<h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2>首先你需要有 Linux 基础，不然我之后跟你讲的，你都听不懂。<br>其次需要备份数据，因为我们要全盘格式化。<h2 id="下载-Arch-Linux"><a href="#下载-Arch-Linux" class="headerlink" title="下载 Arch Linux"></a>下载 Arch Linux</h2>您可以通过以下链接来下载：<a target="_blank" rel="noopener" href="https://mirrors.bfsu.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso">点击下载</a><h2 id="macOS-下的操作"><a href="#macOS-下的操作" class="headerlink" title="macOS 下的操作"></a>macOS 下的操作</h2><h3 id="分区"><a href="#分区" class="headerlink" title="分区"></a>分区</h3></li>
-<li>在确定好已经备份好了文件之后，我们打开“磁盘工具”<br><img src="https://img.gejiba.com/images/307403f27e39b88ad31f7034e3e6f3ca.png" alt=""></li>
-<li>然后在上面的“显示”选项中，选择：“显示所有设备”<br><img src="https://img.gejiba.com/images/10a4685ab86b81d9dfa2b4c032f1c707.png" alt=""></li>
-<li>然后点击整块盘，找到“分区”选项。<br><img src="https://img.gejiba.com/images/80d7dc7a41780488c98874460b234c5d.png" alt=""></li>
-<li>添加一块 4 GB 的分区，分区格式 FAT 即可，名称先随意改一下，后面还需要改名字。<br><img src="https://img.gejiba.com/images/265334b0ee5aad473c7de1f498b0f723.png" alt=""><h3 id="安装虚拟机"><a href="#安装虚拟机" class="headerlink" title="安装虚拟机"></a>安装虚拟机</h3></li>
-<li>添加好之后，我们安装 VMware Fusion 虚拟机，安装一个 Windows 系统。<br>(如果你有 Parallels Desktop 虚拟机，可以跳过这一步)<br>VMware Fusion 虚拟机下载链接：<a target="_blank" rel="noopener" href="https://download3.vmware.com/software/fusion/file/VMware-Fusion-12.0.0-16880131.dmg">点我下载</a><br>VMware Fusion 虚拟机破解密钥：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ZF3R0-FHED2-M80TY-8QYGC-NPKYF</span><br></pre></td></tr></table></figure>
-如果找不到 Windows 镜像的话，可以用我这个 Windows XP：<a target="_blank" rel="noopener" href="https://pan.huang1111.cn/s/KBgZsY">点我下载</a></li>
-<li>安装好虚拟机和虚拟机扩展套件(例如：VMware Tools)之后，共享你那个 4 GB 的分区到虚拟机上。<h4 id="VMware-Fusion"><a href="#VMware-Fusion" class="headerlink" title="VMware Fusion"></a>VMware Fusion</h4>在菜单栏中找到“虚拟机”选项，然后拉到最后有一个“共享”，点那个共享设置。<br><img src="https://img.gejiba.com/images/6ea78bdea57adb61727bc59cc2fb97fe.png" alt=""><br>点击启用共享文件夹，然后点击那个”+“号。<br><img src="https://img.gejiba.com/images/632ccbf19ea918679c36351e75d324d0.png" alt=""><br>找到那个 4 GB 的分区，点击“添加”<br><img src="https://img.gejiba.com/images/b397da48952fba48c994214f4e12b6e0.png" alt=""><br><img src="https://img.gejiba.com/images/3cb6087a20bce76a8bc4a793218eb333.png" alt=""><h4 id="Parallels-Desktop"><a href="#Parallels-Desktop" class="headerlink" title="Parallels Desktop"></a>Parallels Desktop</h4>在菜单栏中找到“设备”选项，找到“共享”，点：添加文件夹。<br><img src="https://img.gejiba.com/images/bd405cf58579076c9fa6508614cc58bc.png" alt=""><br>找到那个 4 GB 的分区，点击“打开”<br><img src="https://img.gejiba.com/images/d39aed7bf6269001f2dfcfe784a018c0.png" alt=""><h3 id="拷贝镜像到分区"><a href="#拷贝镜像到分区" class="headerlink" title="拷贝镜像到分区"></a>拷贝镜像到分区</h3></li>
-<li>这一步就非常简单了，只需要将ARCH Linux光盘文件拷贝到分区即可，这也就是为什么要装一个 Windows 虚拟机的原因，因为 macOS 不能识别 Arch Linux 的文件。</li>
-<li>虚拟机插入Arch Linux光盘，然后将光盘所有文件全部复制到那个分区。<br><img src="https://img.gejiba.com/images/3853d5b817845a45de0a1daf8acf9cc9.png" alt=""><h3 id="再次更改名字"><a href="#再次更改名字" class="headerlink" title="再次更改名字"></a>再次更改名字</h3></li>
-<li>记住虚拟机中显示的 Arch Linux 光盘名称，我这里是<b><font color=red>「ARCH_202301」</font></b>，再次进入“磁盘工具”。<br>然后点击 4 GB 的分区，再点击一下他的名字：<br><img src="https://img.gejiba.com/images/dc5319ee01c52ced07a08a2d49b3f9c5.png" alt=""><br>将这个分区名称改成ARCH_202301之后，macOS的所有操作就都完成了。<h2 id="开始安装-Arch-Linux"><a href="#开始安装-Arch-Linux" class="headerlink" title="开始安装 Arch Linux"></a>开始安装 Arch Linux</h2>重新启动你的 Mac 电脑，按下 Option 键，等看到启动选项出现 EFI Boot 之后，引导它。如果顺利的话，你应该可以看到 GRUB 界面，开始引导即可。<br><img src="https://img.gejiba.com/images/d5d322d4fb129852c7d8365791828811.jpg" alt=""><h3 id="连接互联网"><a href="#连接互联网" class="headerlink" title="连接互联网"></a>连接互联网</h3>输入 iwctl 进入 iwd。<br>然后查看网卡号是什么，以 wlan0 为例子：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">device list</span><br></pre></td></tr></table></figure>
-然后联网，输入以下命令：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">station wlan0 scan</span><br><span class="line">station wlan0 get-networks</span><br><span class="line">station wlan0 connect TestWiFi_5G</span><br></pre></td></tr></table></figure>
-连接好网络后，输入 exit 退出 iwd。再输入 ping www.baidu.com 看看网络是不是正确连接。<h3 id="为磁盘分区"><a href="#为磁盘分区" class="headerlink" title="为磁盘分区"></a>为磁盘分区</h3>未完待续。</li>
+<li>一台 (Intel 芯片) 的 MacBook Air 或者 MacBook Pro。 (不知道带安全芯片的可不可以)</li>
 </ul>
+<h1 id="开始安装"><a class="markdownIt-Anchor" href="#开始安装"></a> 开始安装</h1>
+<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
+<p>首先你需要有 Linux 基础，不然我之后跟你讲的，你都听不懂。<br />
+其次需要备份数据，因为我们要全盘格式化。</p>
+<h2 id="下载-arch-linux"><a class="markdownIt-Anchor" href="#下载-arch-linux"></a> 下载 Arch Linux</h2>
+<p>您可以通过以下链接来下载：<a target="_blank" rel="noopener" href="https://mirrors.bfsu.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso">点击下载</a></p>
+<h2 id="macos-下的操作"><a class="markdownIt-Anchor" href="#macos-下的操作"></a> macOS 下的操作</h2>
+<h3 id="分区"><a class="markdownIt-Anchor" href="#分区"></a> 分区</h3>
+<ul>
+<li>在确定好已经备份好了文件之后，我们打开“磁盘工具”<br />
+<img src="https://img.gejiba.com/images/307403f27e39b88ad31f7034e3e6f3ca.png" alt="" /></li>
+<li>然后在上面的“显示”选项中，选择：“显示所有设备”<br />
+<img src="https://img.gejiba.com/images/10a4685ab86b81d9dfa2b4c032f1c707.png" alt="" /></li>
+<li>然后点击整块盘，找到“分区”选项。<br />
+<img src="https://img.gejiba.com/images/80d7dc7a41780488c98874460b234c5d.png" alt="" /></li>
+<li>添加一块 4 GB 的分区，分区格式 FAT 即可，名称先随意改一下，后面还需要改名字。<br />
+<img src="https://img.gejiba.com/images/265334b0ee5aad473c7de1f498b0f723.png" alt="" /></li>
+</ul>
+<h3 id="安装虚拟机"><a class="markdownIt-Anchor" href="#安装虚拟机"></a> 安装虚拟机</h3>
+<ul>
+<li>添加好之后，我们安装 VMware Fusion 虚拟机，安装一个 Windows 系统。<br />
+(如果你有 Parallels Desktop 虚拟机，可以跳过这一步)<br />
+VMware Fusion 虚拟机下载链接：<a target="_blank" rel="noopener" href="https://download3.vmware.com/software/fusion/file/VMware-Fusion-12.0.0-16880131.dmg">点我下载</a><br />
+VMware Fusion 虚拟机破解密钥：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ZF3R0-FHED2-M80TY-8QYGC-NPKYF</span><br></pre></td></tr></table></figure>
+<p>如果找不到 Windows 镜像的话，可以用我这个 Windows XP：<a target="_blank" rel="noopener" href="https://pan.huang1111.cn/s/KBgZsY">点我下载</a></p>
+<ul>
+<li>安装好虚拟机和虚拟机扩展套件(例如：VMware Tools)之后，共享你那个 4 GB 的分区到虚拟机上。</li>
+</ul>
+<h4 id="vmware-fusion"><a class="markdownIt-Anchor" href="#vmware-fusion"></a> VMware Fusion</h4>
+<p>在菜单栏中找到“虚拟机”选项，然后拉到最后有一个“共享”，点那个共享设置。<br />
+<img src="https://img.gejiba.com/images/6ea78bdea57adb61727bc59cc2fb97fe.png" alt="" /><br />
+点击启用共享文件夹，然后点击那个”+“号。<br />
+<img src="https://img.gejiba.com/images/632ccbf19ea918679c36351e75d324d0.png" alt="" /><br />
+找到那个 4 GB 的分区，点击“添加”<br />
+<img src="https://img.gejiba.com/images/b397da48952fba48c994214f4e12b6e0.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/3cb6087a20bce76a8bc4a793218eb333.png" alt="" /></p>
+<h4 id="parallels-desktop"><a class="markdownIt-Anchor" href="#parallels-desktop"></a> Parallels Desktop</h4>
+<p>在菜单栏中找到“设备”选项，找到“共享”，点：添加文件夹。<br />
+<img src="https://img.gejiba.com/images/bd405cf58579076c9fa6508614cc58bc.png" alt="" /><br />
+找到那个 4 GB 的分区，点击“打开”<br />
+<img src="https://img.gejiba.com/images/d39aed7bf6269001f2dfcfe784a018c0.png" alt="" /></p>
+<h3 id="拷贝镜像到分区"><a class="markdownIt-Anchor" href="#拷贝镜像到分区"></a> 拷贝镜像到分区</h3>
+<ul>
+<li>这一步就非常简单了，只需要将ARCH Linux光盘文件拷贝到分区即可，这也就是为什么要装一个 Windows 虚拟机的原因，因为 macOS 不能识别 Arch Linux 的文件。</li>
+<li>虚拟机插入Arch Linux光盘，然后将光盘所有文件全部复制到那个分区。<br />
+<img src="https://img.gejiba.com/images/3853d5b817845a45de0a1daf8acf9cc9.png" alt="" /></li>
+</ul>
+<h3 id="再次更改名字"><a class="markdownIt-Anchor" href="#再次更改名字"></a> 再次更改名字</h3>
+<ul>
+<li>记住虚拟机中显示的 Arch Linux 光盘名称，我这里是<b><font color=red>「ARCH_202301」</font></b>，再次进入“磁盘工具”。<br />
+然后点击 4 GB 的分区，再点击一下他的名字：<br />
+<img src="https://img.gejiba.com/images/dc5319ee01c52ced07a08a2d49b3f9c5.png" alt="" /><br />
+将这个分区名称改成ARCH_202301之后，macOS的所有操作就都完成了。</li>
+</ul>
+<h2 id="开始安装-arch-linux"><a class="markdownIt-Anchor" href="#开始安装-arch-linux"></a> 开始安装 Arch Linux</h2>
+<p>重新启动你的 Mac 电脑，按下 Option 键，等看到启动选项出现 EFI Boot 之后，引导它。如果顺利的话，你应该可以看到 GRUB 界面，开始引导即可。<br />
+<img src="https://img.gejiba.com/images/d5d322d4fb129852c7d8365791828811.jpg" alt="" /></p>
+<h3 id="连接互联网"><a class="markdownIt-Anchor" href="#连接互联网"></a> 连接互联网</h3>
+<p>输入 iwctl 进入 iwd。<br />
+然后查看网卡号是什么，以 wlan0 为例子：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">device list</span><br></pre></td></tr></table></figure>
+<p>然后联网，输入以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">station wlan0 scan</span><br><span class="line">station wlan0 get-networks</span><br><span class="line">station wlan0 connect TestWiFi_5G</span><br></pre></td></tr></table></figure>
+<p>连接好网络后，输入 exit 退出 iwd。再输入 ping <a target="_blank" rel="noopener" href="http://www.baidu.com">www.baidu.com</a> 看看网络是不是正确连接。</p>
+<h3 id="为磁盘分区"><a class="markdownIt-Anchor" href="#为磁盘分区"></a> 为磁盘分区</h3>
+<p>未完待续。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
             
         </div>
         <footer class="article-footer">
-            <a data-url="http://example.com/20230108/134420/" data-id="cmihg7s06000o5pg4alxk9ltq" data-title="无需 U 盘给 MacBook 电脑安装 Arch Linux"
+            <a data-url="http://example.com/20230108/134420/" data-id="cmihkruo2000n3xg47eyfarir" data-title="无需 U 盘给 MacBook 电脑安装 Arch Linux"
                class="article-share-link">分享</a>
             
                 <a href="/20230108/134420/#comments" class="article-comment-link">
@@ -385,10 +442,10 @@
             
                 <div>
                     <span class="icon-brush"></span>
-                    29.9k
+                    31.5k
                     &nbsp;|&nbsp;
                     <span class="icon-coffee"></span>
-                    01:58
+                    02:04
                 </div>
             
             
