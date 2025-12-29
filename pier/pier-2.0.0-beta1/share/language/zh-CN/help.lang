@@ -1,0 +1,32 @@
+
+制作者: Sanakaprix
+
+邮箱：steve372@foxmail.com
+
+本软件可以完全自由的使用，上传数据到官方源请发送至邮箱：
+< steve372@foxmail.com >
+
+======================== 软件包设置 ========================
+pier install <packagename> -y - 安装选定的软件包。-y 参数代表不再询问是否安装。
+pier remove <packagename> - 卸载选定的软件包。
+
+======================== 语言包设置 ========================
+可以输入 pier sl 执行相同操作~！
+pier --setlang set <language> - 设置 Package Installer 的语言。
+pier --setlang install <language> - 从源镜像中下载其他语言。
+pier --setlang reins <language> - 重新安装语言。
+
+======================== 源列表设置 ========================
+pier list - 从远程服务器拉取可用软件包列表。
+
+========================  其他设置  ========================
+pier web - 访问官方网站（简易版）
+
+======================== 源镜像设置 ========================
+pier sources - 更换官方认证的 Package Installer 软件源。
+pier sources change <url> - 更换其他 Package Installer 软件源。
+pier sources list - 更换其他 Package Installer 软件源。
+
+========================  帮助设置  ========================
+可以输入 pier help;-help;?;-?;--? 执行相同操作~！
+pier --help - 显示该帮助。
