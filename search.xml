@@ -730,64 +730,6 @@ Windows 11      std / VMware
 </font><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>Reimu 主题去除东方 PROJECT 元素</title>
-    <url>/20230817/154130/</url>
-    <content><![CDATA[<p>如果你安装了 Reimu 主题后又不想要东方的元素了，可以看看这篇文章。</p>
-<h1 id="目录"><a class="markdownIt-Anchor" href="#目录"></a> 目录</h1>
-<p><a href="/20230817/154130/#%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E4%BF%AE%E6%94%B9">  <strong>1. 背景图片修改</strong></a><br />
-<a href="/20230817/154130/#%E5%A4%B4%E5%9B%BE%E4%BF%AE%E6%94%B9">      ———— 1.1 头图修改</a><br />
-<a href="/20230817/154130/#%E7%BB%99%E5%8D%95%E7%8B%AC%E7%9A%84%E6%96%87%E7%AB%A0%E9%85%8D%E5%9B%BE">      ———— 1.2 给单独的文章配图</a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%A4%AA%E6%9E%81%E5%9B%BE%E5%9B%BE%E6%A0%87">  <strong>2. 更改太极图图标 (重点)</strong></a><br />
-<a href="/20230817/154130/#%E8%BE%B9%E6%A0%8F%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.1 边栏图标更改</a><br />
-<a href="/20230817/154130/#%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.2 加载界面图标更改</a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E6%96%87%E5%AD%97">  <strong>3. 更改文字</strong></a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2_%E5%B0%91%E5%A5%B3%E7%A5%88%E7%A5%B7%E4%B8%AD">      ———— 3.1 更改加载界面 “少女祈祷中”</a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9_404_%E7%95%8C%E9%9D%A2">      ———— 3.2 更改 “404” 界面</a></p>
-<h1 id="背景图片修改"><a class="markdownIt-Anchor" href="#背景图片修改"></a> 背景图片修改</h1>
-<h2 id="头图修改"><a class="markdownIt-Anchor" href="#头图修改"></a> 头图修改</h2>
-<p>头图的位置在</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
-<p>您找到合适的图片之后直接更换即可。<br />
-如果您的网站速度很慢，不适合在本地存放头图，您可以更改主题目录的 _config.yml 中的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;/images/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
-<p>部分，将内容更改为：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;https://xxx.url.org/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
-<p><img src="https://img.gejiba.com/images/3b7b1a3e290b1db6151d0961726ce8eb.png" alt="" /></p>
-<h2 id="给单独的文章配图"><a class="markdownIt-Anchor" href="#给单独的文章配图"></a> 给单独的文章配图</h2>
-<p>只需您在文章的页眉添加</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cover: 指向图片的 URL</span><br><span class="line"></span><br><span class="line">// 示例：</span><br><span class="line">---</span><br><span class="line">title: 123456</span><br><span class="line">date: 1999-12-31 06:01:13</span><br><span class="line">tags: XX</span><br><span class="line">cover: https://xxx.url.org/bd3.png</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>就可以给文章配上图片了。</p>
-<h1 id="更改太极图图标"><a class="markdownIt-Anchor" href="#更改太极图图标"></a> 更改太极图图标</h1>
-<h2 id="边栏图标更改"><a class="markdownIt-Anchor" href="#边栏图标更改"></a> 边栏图标更改</h2>
-<p>请您进入 <strong>/themes/reimu/source/images/</strong> 目录，使用矢量图绘画工具打开 <strong>taichi.svg</strong> 文件。<br />
-然后在上面进行绘画操作即可。<br />
-<img src="https://img.gejiba.com/images/10f06ff8e388d28136b494546c99bd5b.png" alt="" /><br />
-画完之后保存，Hexo 刷新一遍就可以了。</p>
-<h2 id="加载界面图标更改"><a class="markdownIt-Anchor" href="#加载界面图标更改"></a> 加载界面图标更改</h2>
-<p>在执行上面的操作之后，您会发现，加载界面仍然是太极图。<br />
-莫慌。您先复制一份 <strong>taichi.svg</strong> 文件的副本，使用矢量图绘画工具打开它并进行绘画。绘画完成后不要删除，右键通过 <strong>Microsoft Visual Studio Code</strong> 或其他文本软件打开。<br />
-记住这些路径名称：<br />
-<img src="https://img.gejiba.com/images/c5943bcc8fc6ae8beabe7d337afe9480.png" alt="" /><br />
-如果发现 ellipse 和 path 开头的一段，请复制它们。<br />
-然后打开 <strong>/themes/reimu/layout/_partial/loader.ejs</strong> 文件<br />
-将这一段删除：<br />
-<img src="https://img.gejiba.com/images/a67d82f9cd84d1e7f816a547c0a175a4.png" alt="" /><br />
-然后将您刚才复制的 SVG 代码粘贴到此处。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 示例：小星星（和本站一样）</span><br><span class="line"></span><br><span class="line">&lt;path</span><br><span class="line">    sodipodi:type=&quot;star&quot;</span><br><span class="line">    style=&quot;opacity:0.967273;fill:#ffbec0;fill-opacity:0.94581282;stroke:#000000;stroke-width:13.65542089;stroke-dasharray:none&quot;</span><br><span class="line">    id=&quot;path1&quot;</span><br><span class="line">    inkscape:flatsided=&quot;false&quot;</span><br><span class="line">    sodipodi:sides=&quot;5&quot;</span><br><span class="line">    sodipodi:cx=&quot;117.15254&quot;</span><br><span class="line">    sodipodi:cy=&quot;121.49152&quot;</span><br><span class="line">    sodipodi:r1=&quot;281.59967&quot;</span><br><span class="line">    sodipodi:r2=&quot;140.79984&quot;</span><br><span class="line">    sodipodi:arg1=&quot;0.98279372&quot;</span><br><span class="line">    sodipodi:arg2=&quot;1.6111123&quot;</span><br><span class="line">    inkscape:rounded=&quot;0&quot;</span><br><span class="line">    inkscape:randomized=&quot;0&quot;</span><br><span class="line">    d=&quot;M 273.35594,355.79661 111.4776,262.17695 -57.415336,342.45403 -18.400902,159.56852 -146.93973,23.748776 39.050851,4.3389758 128.50242,-159.87933 204.43649,11.010274 388.25943,45.337523 249.19868,170.3629 Z&quot;</span><br><span class="line">    inkscape:transform-center-x=&quot;-5.2622667&quot;</span><br><span class="line">    inkscape:transform-center-y=&quot;-35.297319&quot;</span><br><span class="line">    transform=&quot;matrix(1.5003757,0,0,1.4999156,340.69227,376.01307)&quot; /&gt;</span><br></pre></td></tr></table></figure>
-<p>效果：<br />
-<img src="https://img.gejiba.com/images/ba4cf7aeb1cfb237289943c881beb7ea.png" alt="" /></p>
-<h1 id="更改文字"><a class="markdownIt-Anchor" href="#更改文字"></a> 更改文字</h1>
-<h2 id="更改加载界面_少女祈祷中"><a class="markdownIt-Anchor" href="#更改加载界面_少女祈祷中"></a> 更改加载界面_少女祈祷中</h2>
-<p>打开主题目录的 _config.yml 文件，滑动到下面，找到 preloader 字符：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">preloader:</span><br><span class="line">  enable: true</span><br><span class="line">  text: 正在载入中...</span><br><span class="line">  # text: Loading...</span><br></pre></td></tr></table></figure>
-<h2 id="更改_404_界面"><a class="markdownIt-Anchor" href="#更改_404_界面"></a> 更改_404_界面</h2>
-<p>打开 <strong>/themes/reimu/languages/zh-CN.yml</strong> 文件，找到 not_found 字符:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">not_found:</span><br><span class="line">  title: 4 0 4 (ﾟ⊿ﾟ)ﾂ</span><br><span class="line">  subtitle: 満 身 創 痍</span><br></pre></td></tr></table></figure><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>复现</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Windows NT4.0 安装教程</title>
     <url>/20230119/063535/</url>
     <content><![CDATA[<h1 id="镜像链接"><a class="markdownIt-Anchor" href="#镜像链接"></a> 镜像链接</h1>
@@ -845,6 +787,64 @@ Windows 11      std / VMware
 <img src="https://img.gejiba.com/images/c74b6d6e80737d95f4620993ee2210b5.jpg" alt="" /><br />
 等待安装即可。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>Reimu 主题去除东方 PROJECT 元素</title>
+    <url>/20230817/154130/</url>
+    <content><![CDATA[<p>如果你安装了 Reimu 主题后又不想要东方的元素了，可以看看这篇文章。</p>
+<h1 id="目录"><a class="markdownIt-Anchor" href="#目录"></a> 目录</h1>
+<p><a href="/20230817/154130/#%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E4%BF%AE%E6%94%B9">  <strong>1. 背景图片修改</strong></a><br />
+<a href="/20230817/154130/#%E5%A4%B4%E5%9B%BE%E4%BF%AE%E6%94%B9">      ———— 1.1 头图修改</a><br />
+<a href="/20230817/154130/#%E7%BB%99%E5%8D%95%E7%8B%AC%E7%9A%84%E6%96%87%E7%AB%A0%E9%85%8D%E5%9B%BE">      ———— 1.2 给单独的文章配图</a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%A4%AA%E6%9E%81%E5%9B%BE%E5%9B%BE%E6%A0%87">  <strong>2. 更改太极图图标 (重点)</strong></a><br />
+<a href="/20230817/154130/#%E8%BE%B9%E6%A0%8F%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.1 边栏图标更改</a><br />
+<a href="/20230817/154130/#%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.2 加载界面图标更改</a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E6%96%87%E5%AD%97">  <strong>3. 更改文字</strong></a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2_%E5%B0%91%E5%A5%B3%E7%A5%88%E7%A5%B7%E4%B8%AD">      ———— 3.1 更改加载界面 “少女祈祷中”</a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9_404_%E7%95%8C%E9%9D%A2">      ———— 3.2 更改 “404” 界面</a></p>
+<h1 id="背景图片修改"><a class="markdownIt-Anchor" href="#背景图片修改"></a> 背景图片修改</h1>
+<h2 id="头图修改"><a class="markdownIt-Anchor" href="#头图修改"></a> 头图修改</h2>
+<p>头图的位置在</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
+<p>您找到合适的图片之后直接更换即可。<br />
+如果您的网站速度很慢，不适合在本地存放头图，您可以更改主题目录的 _config.yml 中的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;/images/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
+<p>部分，将内容更改为：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;https://xxx.url.org/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
+<p><img src="https://img.gejiba.com/images/3b7b1a3e290b1db6151d0961726ce8eb.png" alt="" /></p>
+<h2 id="给单独的文章配图"><a class="markdownIt-Anchor" href="#给单独的文章配图"></a> 给单独的文章配图</h2>
+<p>只需您在文章的页眉添加</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cover: 指向图片的 URL</span><br><span class="line"></span><br><span class="line">// 示例：</span><br><span class="line">---</span><br><span class="line">title: 123456</span><br><span class="line">date: 1999-12-31 06:01:13</span><br><span class="line">tags: XX</span><br><span class="line">cover: https://xxx.url.org/bd3.png</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>就可以给文章配上图片了。</p>
+<h1 id="更改太极图图标"><a class="markdownIt-Anchor" href="#更改太极图图标"></a> 更改太极图图标</h1>
+<h2 id="边栏图标更改"><a class="markdownIt-Anchor" href="#边栏图标更改"></a> 边栏图标更改</h2>
+<p>请您进入 <strong>/themes/reimu/source/images/</strong> 目录，使用矢量图绘画工具打开 <strong>taichi.svg</strong> 文件。<br />
+然后在上面进行绘画操作即可。<br />
+<img src="https://img.gejiba.com/images/10f06ff8e388d28136b494546c99bd5b.png" alt="" /><br />
+画完之后保存，Hexo 刷新一遍就可以了。</p>
+<h2 id="加载界面图标更改"><a class="markdownIt-Anchor" href="#加载界面图标更改"></a> 加载界面图标更改</h2>
+<p>在执行上面的操作之后，您会发现，加载界面仍然是太极图。<br />
+莫慌。您先复制一份 <strong>taichi.svg</strong> 文件的副本，使用矢量图绘画工具打开它并进行绘画。绘画完成后不要删除，右键通过 <strong>Microsoft Visual Studio Code</strong> 或其他文本软件打开。<br />
+记住这些路径名称：<br />
+<img src="https://img.gejiba.com/images/c5943bcc8fc6ae8beabe7d337afe9480.png" alt="" /><br />
+如果发现 ellipse 和 path 开头的一段，请复制它们。<br />
+然后打开 <strong>/themes/reimu/layout/_partial/loader.ejs</strong> 文件<br />
+将这一段删除：<br />
+<img src="https://img.gejiba.com/images/a67d82f9cd84d1e7f816a547c0a175a4.png" alt="" /><br />
+然后将您刚才复制的 SVG 代码粘贴到此处。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 示例：小星星（和本站一样）</span><br><span class="line"></span><br><span class="line">&lt;path</span><br><span class="line">    sodipodi:type=&quot;star&quot;</span><br><span class="line">    style=&quot;opacity:0.967273;fill:#ffbec0;fill-opacity:0.94581282;stroke:#000000;stroke-width:13.65542089;stroke-dasharray:none&quot;</span><br><span class="line">    id=&quot;path1&quot;</span><br><span class="line">    inkscape:flatsided=&quot;false&quot;</span><br><span class="line">    sodipodi:sides=&quot;5&quot;</span><br><span class="line">    sodipodi:cx=&quot;117.15254&quot;</span><br><span class="line">    sodipodi:cy=&quot;121.49152&quot;</span><br><span class="line">    sodipodi:r1=&quot;281.59967&quot;</span><br><span class="line">    sodipodi:r2=&quot;140.79984&quot;</span><br><span class="line">    sodipodi:arg1=&quot;0.98279372&quot;</span><br><span class="line">    sodipodi:arg2=&quot;1.6111123&quot;</span><br><span class="line">    inkscape:rounded=&quot;0&quot;</span><br><span class="line">    inkscape:randomized=&quot;0&quot;</span><br><span class="line">    d=&quot;M 273.35594,355.79661 111.4776,262.17695 -57.415336,342.45403 -18.400902,159.56852 -146.93973,23.748776 39.050851,4.3389758 128.50242,-159.87933 204.43649,11.010274 388.25943,45.337523 249.19868,170.3629 Z&quot;</span><br><span class="line">    inkscape:transform-center-x=&quot;-5.2622667&quot;</span><br><span class="line">    inkscape:transform-center-y=&quot;-35.297319&quot;</span><br><span class="line">    transform=&quot;matrix(1.5003757,0,0,1.4999156,340.69227,376.01307)&quot; /&gt;</span><br></pre></td></tr></table></figure>
+<p>效果：<br />
+<img src="https://img.gejiba.com/images/ba4cf7aeb1cfb237289943c881beb7ea.png" alt="" /></p>
+<h1 id="更改文字"><a class="markdownIt-Anchor" href="#更改文字"></a> 更改文字</h1>
+<h2 id="更改加载界面_少女祈祷中"><a class="markdownIt-Anchor" href="#更改加载界面_少女祈祷中"></a> 更改加载界面_少女祈祷中</h2>
+<p>打开主题目录的 _config.yml 文件，滑动到下面，找到 preloader 字符：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">preloader:</span><br><span class="line">  enable: true</span><br><span class="line">  text: 正在载入中...</span><br><span class="line">  # text: Loading...</span><br></pre></td></tr></table></figure>
+<h2 id="更改_404_界面"><a class="markdownIt-Anchor" href="#更改_404_界面"></a> 更改_404_界面</h2>
+<p>打开 <strong>/themes/reimu/languages/zh-CN.yml</strong> 文件，找到 not_found 字符:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">not_found:</span><br><span class="line">  title: 4 0 4 (ﾟ⊿ﾟ)ﾂ</span><br><span class="line">  subtitle: 満 身 創 痍</span><br></pre></td></tr></table></figure><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>复现</tag>
+      </tags>
   </entry>
   <entry>
     <title>iOS 的发展历史</title>
@@ -1289,141 +1289,6 @@ Q（\text{有理数}） \\
 <p>属于<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>（</mtext><mo>∈</mo><mtext>）</mtext></mrow><annotation encoding="application/x-tex">（\in）</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72243em;vertical-align:-0.0391em;"></span><span class="mord cjk_fallback">（</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">）</span></span></span></span>，不属于<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>（</mtext><mo mathvariant="normal">∉</mo><mtext>）</mtext></mrow><annotation encoding="application/x-tex">（\notin）</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord cjk_fallback">（</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mord"><span class="mrel">∈</span></span><span class="mord vbox"><span class="thinbox"><span class="llap"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="inner"><span class="mord"><span class="mord">/</span><span class="mspace" style="margin-right:0.05555555555555555em;"></span></span></span><span class="fix"></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">）</span></span></span></span>：<strong>元素与集合之间的关系</strong><br />
 包含<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>（</mtext><mo>⊃</mo><mtext>）</mtext></mrow><annotation encoding="application/x-tex">（\supset）</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72243em;vertical-align:-0.0391em;"></span><span class="mord cjk_fallback">（</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⊃</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">）</span></span></span></span>，不包含<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>（</mtext><mo>⊅</mo><mtext>）</mtext></mrow><annotation encoding="application/x-tex">（\not\supset）</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord cjk_fallback">（</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mord vbox"><span class="thinbox"><span class="rlap"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="inner"><span class="mrel"></span></span><span class="fix"></span></span></span></span></span></span><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">⊃</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">）</span></span></span></span>：<strong>集合与集合之间的关系</strong></p>
 <p><img src="https://pic1.imgdb.cn/item/68ac800758cb8da5c84d11b8.png" alt="" /></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>无需 U 盘给 MacBook 电脑安装 Arch Linux</title>
-    <url>/20230108/134420/</url>
-    <content><![CDATA[<p>想装Arch Linux却没有带U盘，心急如焚的话，就看看我这个教程吧！保有效。</p>
-<h1 id="安装要求"><a class="markdownIt-Anchor" href="#安装要求"></a> 安装要求</h1>
-<ul>
-<li>一双手</li>
-<li>灵慧的大脑</li>
-<li>一台 (Intel 芯片) 的 MacBook Air 或者 MacBook Pro。 (不知道带安全芯片的可不可以)</li>
-</ul>
-<h1 id="开始安装"><a class="markdownIt-Anchor" href="#开始安装"></a> 开始安装</h1>
-<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
-<p>首先你需要有 Linux 基础，不然我之后跟你讲的，你都听不懂。<br />
-其次需要备份数据，因为我们要全盘格式化。</p>
-<h2 id="下载-arch-linux"><a class="markdownIt-Anchor" href="#下载-arch-linux"></a> 下载 Arch Linux</h2>
-<p>您可以通过以下链接来下载：<a href="https://mirrors.bfsu.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso">点击下载</a></p>
-<h2 id="macos-下的操作"><a class="markdownIt-Anchor" href="#macos-下的操作"></a> macOS 下的操作</h2>
-<h3 id="分区"><a class="markdownIt-Anchor" href="#分区"></a> 分区</h3>
-<ul>
-<li>在确定好已经备份好了文件之后，我们打开“磁盘工具”<br />
-<img src="https://img.gejiba.com/images/307403f27e39b88ad31f7034e3e6f3ca.png" alt="" /></li>
-<li>然后在上面的“显示”选项中，选择：“显示所有设备”<br />
-<img src="https://img.gejiba.com/images/10a4685ab86b81d9dfa2b4c032f1c707.png" alt="" /></li>
-<li>然后点击整块盘，找到“分区”选项。<br />
-<img src="https://img.gejiba.com/images/80d7dc7a41780488c98874460b234c5d.png" alt="" /></li>
-<li>添加一块 4 GB 的分区，分区格式 FAT 即可，名称先随意改一下，后面还需要改名字。<br />
-<img src="https://img.gejiba.com/images/265334b0ee5aad473c7de1f498b0f723.png" alt="" /></li>
-</ul>
-<h3 id="安装虚拟机"><a class="markdownIt-Anchor" href="#安装虚拟机"></a> 安装虚拟机</h3>
-<ul>
-<li>添加好之后，我们安装 VMware Fusion 虚拟机，安装一个 Windows 系统。<br />
-(如果你有 Parallels Desktop 虚拟机，可以跳过这一步)<br />
-VMware Fusion 虚拟机下载链接：<a href="https://download3.vmware.com/software/fusion/file/VMware-Fusion-12.0.0-16880131.dmg">点我下载</a><br />
-VMware Fusion 虚拟机破解密钥：</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ZF3R0-FHED2-M80TY-8QYGC-NPKYF</span><br></pre></td></tr></table></figure>
-<p>如果找不到 Windows 镜像的话，可以用我这个 Windows XP：<a href="https://pan.huang1111.cn/s/KBgZsY">点我下载</a></p>
-<ul>
-<li>安装好虚拟机和虚拟机扩展套件(例如：VMware Tools)之后，共享你那个 4 GB 的分区到虚拟机上。</li>
-</ul>
-<h4 id="vmware-fusion"><a class="markdownIt-Anchor" href="#vmware-fusion"></a> VMware Fusion</h4>
-<p>在菜单栏中找到“虚拟机”选项，然后拉到最后有一个“共享”，点那个共享设置。<br />
-<img src="https://img.gejiba.com/images/6ea78bdea57adb61727bc59cc2fb97fe.png" alt="" /><br />
-点击启用共享文件夹，然后点击那个”+“号。<br />
-<img src="https://img.gejiba.com/images/632ccbf19ea918679c36351e75d324d0.png" alt="" /><br />
-找到那个 4 GB 的分区，点击“添加”<br />
-<img src="https://img.gejiba.com/images/b397da48952fba48c994214f4e12b6e0.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/3cb6087a20bce76a8bc4a793218eb333.png" alt="" /></p>
-<h4 id="parallels-desktop"><a class="markdownIt-Anchor" href="#parallels-desktop"></a> Parallels Desktop</h4>
-<p>在菜单栏中找到“设备”选项，找到“共享”，点：添加文件夹。<br />
-<img src="https://img.gejiba.com/images/bd405cf58579076c9fa6508614cc58bc.png" alt="" /><br />
-找到那个 4 GB 的分区，点击“打开”<br />
-<img src="https://img.gejiba.com/images/d39aed7bf6269001f2dfcfe784a018c0.png" alt="" /></p>
-<h3 id="拷贝镜像到分区"><a class="markdownIt-Anchor" href="#拷贝镜像到分区"></a> 拷贝镜像到分区</h3>
-<ul>
-<li>这一步就非常简单了，只需要将ARCH Linux光盘文件拷贝到分区即可，这也就是为什么要装一个 Windows 虚拟机的原因，因为 macOS 不能识别 Arch Linux 的文件。</li>
-<li>虚拟机插入Arch Linux光盘，然后将光盘所有文件全部复制到那个分区。<br />
-<img src="https://img.gejiba.com/images/3853d5b817845a45de0a1daf8acf9cc9.png" alt="" /></li>
-</ul>
-<h3 id="再次更改名字"><a class="markdownIt-Anchor" href="#再次更改名字"></a> 再次更改名字</h3>
-<ul>
-<li>记住虚拟机中显示的 Arch Linux 光盘名称，我这里是<b><font color=red>「ARCH_202301」</font></b>，再次进入“磁盘工具”。<br />
-然后点击 4 GB 的分区，再点击一下他的名字：<br />
-<img src="https://img.gejiba.com/images/dc5319ee01c52ced07a08a2d49b3f9c5.png" alt="" /><br />
-将这个分区名称改成ARCH_202301之后，macOS的所有操作就都完成了。</li>
-</ul>
-<h2 id="开始安装-arch-linux"><a class="markdownIt-Anchor" href="#开始安装-arch-linux"></a> 开始安装 Arch Linux</h2>
-<p>重新启动你的 Mac 电脑，按下 Option 键，等看到启动选项出现 EFI Boot 之后，引导它。如果顺利的话，你应该可以看到 GRUB 界面，开始引导即可。<br />
-<img src="https://img.gejiba.com/images/d5d322d4fb129852c7d8365791828811.jpg" alt="" /></p>
-<h3 id="连接互联网"><a class="markdownIt-Anchor" href="#连接互联网"></a> 连接互联网</h3>
-<p>输入 iwctl 进入 iwd。<br />
-然后查看网卡号是什么，以 wlan0 为例子：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">device list</span><br></pre></td></tr></table></figure>
-<p>然后联网，输入以下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">station wlan0 scan</span><br><span class="line">station wlan0 get-networks</span><br><span class="line">station wlan0 connect TestWiFi_5G</span><br></pre></td></tr></table></figure>
-<p>连接好网络后，输入 exit 退出 iwd。再输入 ping <a href="http://www.baidu.com">www.baidu.com</a> 看看网络是不是正确连接。</p>
-<h3 id="为磁盘分区"><a class="markdownIt-Anchor" href="#为磁盘分区"></a> 为磁盘分区</h3>
-<p>未完待续。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>朝鲜故事</title>
-    <url>/20250115/134502/</url>
-    <content><![CDATA[<h1 id="金哲的一生"><a class="markdownIt-Anchor" href="#金哲的一生"></a> 金哲的一生</h1>
-<h3 id="重生与归途"><a class="markdownIt-Anchor" href="#重生与归途"></a> <strong>重生与归途</strong></h3>
-<h4 id="逃离与新生"><a class="markdownIt-Anchor" href="#逃离与新生"></a> <strong>逃离与新生</strong></h4>
-<p>金哲（化名）是一个普通的朝鲜农民，为了逃避贫困与压迫，他在三十多年前冒着生命危险横渡鸭绿江，逃亡到中国。在那里，他假借一名已故中国人的身份生活，靠着勤奋努力和语言天赋，逐渐扎根北京。</p>
-<p>他成了一名装修工人，从最初的小工到后来独自接活儿，金哲攒下了一笔钱，买了房和车，还拿到了珍贵的北京车牌。他的生活看似幸福，平静而富足，但内心却始终留有一个深深的裂痕——对家人的思念。</p>
-<h4 id="返乡的决心"><a class="markdownIt-Anchor" href="#返乡的决心"></a> <strong>返乡的决心</strong></h4>
-<p>在某个冬日的清晨，金哲坐在家中的餐桌前，看着一张全家福的照片。他知道，家人在朝鲜的境况可能依然艰难，而自己却无法得知他们的任何消息。这种煎熬在二十年的时间里从未减弱，反而越来越深。他最终下定决心，要回到朝鲜，哪怕付出一切代价。</p>
-<p>2009年6月的一个早晨，金哲带上简单的行李，登上了北京站发往平壤的K27次列车。他知道这是一次可能无法回头的旅程，但内心的思念战胜了恐惧。</p>
-<h4 id="噩梦的开始"><a class="markdownIt-Anchor" href="#噩梦的开始"></a> <strong>噩梦的开始</strong></h4>
-<p>当列车抵达新义州站时，金哲被朝鲜边防人员带走。他的假身份被迅速识破，并以“叛国罪”判处45年劳改。他被送往深山中的一个秘密矿场，日夜挖掘矿石，每天只有一分钟的休息时间，食物仅是冷水和少量玉米粥。</p>
-<p>一年后，金哲因饥饿和劳累倒在矿井中，最终孤独地死去。他的家人在朝鲜的村庄里苦苦等待他的消息，但始终未能等到。悲痛之中，他们全家也因思念与绝望逐渐衰弱，最终相继离世。一个家庭就这样湮灭在历史的尘埃里。</p>
-<h4 id="奇迹的出现"><a class="markdownIt-Anchor" href="#奇迹的出现"></a> <strong>奇迹的出现</strong></h4>
-<p>金哲死后，他的灵魂漂浮在矿山上空。他仰望星空，泪流满面，向神明祈求：“若能再来一次，我愿用一切换取家人的幸福。”不知何故，神明听到了他的请求，时间奇迹般地回溯到他踏上K27次列车的那一刻。</p>
-<p>这一次，金哲没有选择返乡。他用神秘的力量，暗中帮助家人成功逃离朝鲜，并将他们带到了中国。他们一家团聚在北京，在丰台区马家堡附近的一套三居室中开始了新的生活。家人重新体会到了团圆的温暖。</p>
-<h4 id="工头的复仇"><a class="markdownIt-Anchor" href="#工头的复仇"></a> <strong>工头的复仇</strong></h4>
-<p>矿山的工头得知金哲一家逃脱后怒不可遏。他动用了神秘的军队，越境来到中国，试图抓捕金哲。然而，当他们找到金哲家所在的马家堡东里小区时，却被早已埋伏在此的中国警察一举擒获。</p>
-<p>中国政府迅速将工头及其部下遣返回国，而他们在朝鲜也因“任务失败”被判处52年劳改。在那同一个矿山里，他们像金哲一样，忍受着饥饿与折磨，最终在绝望中死去。</p>
-<h4 id="幸福的尾声"><a class="markdownIt-Anchor" href="#幸福的尾声"></a> <strong>幸福的尾声</strong></h4>
-<p>从此，金哲一家安居于北京，过上了平静而幸福的生活。他的孩子们进入了中国的学校学习，金哲和妻子经营着一家小餐馆，生活虽不奢华，却充满了笑声和温暖。</p>
-<p>而在丰台区的天空下，金哲时常感叹命运的多舛和神明的恩赐。他珍惜每一天，发誓再也不会冒险，只为守护眼前这来之不易的幸福。</p>
-<h1 id="李言成的脱北之路"><a class="markdownIt-Anchor" href="#李言成的脱北之路"></a> 李言成的脱北之路</h1>
-<p>李言成曾是一名坚定的朝鲜公民，他始终相信自己的祖国是世界上最强大的国家。然而，命运的一次巧合彻底颠覆了他的信念。朋友送给他的一枚U盘，成了他人生的转折点。U盘中播放的画面展示了韩国的繁荣景象，那些真实的场景让他陷入了深深的震撼与反思。朝鲜的宣传与现实之间的巨大反差，让他感到失望与迷茫。他开始质疑国家的真实面貌，最终萌生了一个危险的念头——脱北。</p>
-<h3 id="寒夜中的逃亡"><a class="markdownIt-Anchor" href="#寒夜中的逃亡"></a> <strong>寒夜中的逃亡</strong></h3>
-<p>2009年11月8日晚11点，李言成登上了一辆通往中朝边境的汽车。这是一条充满未知和危险的路，但自由的渴望让他不再犹豫。11月9日凌晨1点，他抵达了冰冷的鸭绿江边。深冬的寒夜，刺骨的江水让他几乎窒息，但他依旧咬牙向对岸游去。然而，他的行动被朝鲜边防军发现。尽管边防军迅速上报上级并追击，他还是幸运地逃脱，成功抵达中国境内。</p>
-<h3 id="初见中国的繁华"><a class="markdownIt-Anchor" href="#初见中国的繁华"></a> <strong>初见中国的繁华</strong></h3>
-<p>在中国一侧，接应的人早已等候多时。他迅速登上车辆，驶离了边境地区。第二天清晨，车辆抵达沈阳。在这座陌生却繁华的城市，李言成第一次感受到真实的对比。他看到熙攘的街道和繁华的商场，眼泪不由自主地流了下来。他喃喃自语：“我的国家果真不是世界最强大的国家……”那一刻，痛苦与希望交织在他的心中。他吃到了一顿丰盛的饭菜，那份饱腹感是他在朝鲜几乎无法想象的。这短暂的幸福也提醒他，危险仍未远去。他知道，在中国，如果被发现为朝鲜脱北者，随时可能被遣返。</p>
-<h3 id="漫长的火车旅程"><a class="markdownIt-Anchor" href="#漫长的火车旅程"></a> <strong>漫长的火车旅程</strong></h3>
-<p>第二天，蛇头安排了从沈阳到昆明的火车票。幸运的是，当时中国的铁路还未实行实名制，这让他们能够顺利登车。蛇头叮嘱他们，“全程不能说话，不能露出惊慌；查票时装睡，一切问题我来解决。”李言成听后点头如捣蒜，但内心依旧忐忑不安。</p>
-<p>途中，一声“查票了！”让他惊得猛地坐起。这一动作立刻引起列车员的注意。蛇头机智地解释，“他做噩梦吓醒了。”列车员要求查票，蛇头从容地递上所有人的车票，才让他们化险为夷。接下来的40多个小时，李言成目睹了中国沿途的风景，看到许多人幸福的生活。这让他震撼之余，感到更加坚定：自己必须逃离朝鲜，去迎接自由的生活。</p>
-<h3 id="翻山越岭的生死攸关"><a class="markdownIt-Anchor" href="#翻山越岭的生死攸关"></a> <strong>翻山越岭的生死攸关</strong></h3>
-<p>火车抵达昆明后，蛇头迅速安排车辆将他们送往边境。由于没有护照和身份证，他们只能偷渡。翻越崇山峻岭，穿越森林与小路，旅程的每一步都充满危险与艰难。他们的体力几乎耗尽，但最终成功抵达老挝。随后，他们辗转进入缅甸，再搭乘大客车前往泰国。在泰国，李言成终于获得庇护，并通过韩国方面的援助，安全抵达韩国。</p>
-<h3 id="新生活的开始"><a class="markdownIt-Anchor" href="#新生活的开始"></a> <strong>新生活的开始</strong></h3>
-<p>站在韩国的土地上，李言成喜极而泣，感到如释重负。他紧紧拥抱蛇头，感谢对方的帮助，这是他们最后一次见面。此后，李言成在韩国安定了下来。他找到了一份普通的工作，过上了平凡但安稳的生活。对他来说，这种平凡已经是幸福的极致。他感慨道：“我终于摆脱了苦海，虽然这里的生活并不奢华，但比朝鲜好太多了。”</p>
-<p>李言成的脱北之路充满了艰险和挑战，但自由的追求让他始终不放弃。这段经历不仅是他个人的救赎，也是对人性尊严的坚持与渴望。</p>
-<h1 id="李言成的脱北之路后续"><a class="markdownIt-Anchor" href="#李言成的脱北之路后续"></a> 李言成的脱北之路后续</h1>
-<p>2013年5月5日，原本在韩国安稳生活的李言成感到一阵不安。他的直觉是对的，那天中午，他接到了来自某人的消息：“你的家人被朝鲜抓了。他们要求你回去，否则就杀你全家。”这个晴天霹雳彻底摧毁了李言成苦心经营的美好生活。他崩溃了，痛哭不止：为何自己追求自由，代价却是家人承受苦难？</p>
-<p>几经挣扎，李言成做出了艰难的决定。他辞掉了韩国的工作，收拾行囊，再次踏上了返回朝鲜的路。这条路不仅是肉体上的归途，更是他自由梦的终结。</p>
-<h3 id="回归后的灰白世界"><a class="markdownIt-Anchor" href="#回归后的灰白世界"></a> <strong>回归后的灰白世界</strong></h3>
-<p>回到朝鲜，迎接李言成的是铺天盖地的指责与冷漠。他被迅速安排接受审判，面对摄像机，他被迫宣称：“我在韩国过得一点也不好！每天都想死的感觉。”这些话违背了他的真实情感，却是保命的唯一选择。朝鲜方面认为他仍然忠诚，劳改了几个月后便将他释放。</p>
-<p>然而，李言成再也无法离开朝鲜了。他的生活从此陷入了痛苦与绝望。每天，他只能享受短短3小时的电力供应，饮水需要亲自到江边取，冬天则在缺乏暖气的房间里苦熬，几乎每年都濒临冻死。他无数次跪下，悔恨当初的选择。但后悔已无济于事，铁幕之下，他再也看不到自由的希望。</p>
-<p>2019年6月，一位朋友告诉他：“中国现在买火车票需要身份证和护照了。”这句话如同最后一根稻草，让李言成再次失声痛哭。他知道，通往外界的道路已经彻底堵死。</p>
-<h3 id="偶然的曙光"><a class="markdownIt-Anchor" href="#偶然的曙光"></a> <strong>偶然的曙光</strong></h3>
-<p>2020年疫情爆发后，朝鲜进一步封锁国境，李言成的世界变得更加渺茫。然而，命运总是充满反复。因为他“悔改表现良好”，金正恩将军决定奖励他——派遣他到中国的朝鲜餐厅工作和学习。得知这一消息时，李言成灰暗的生活似乎再次被点亮了。</p>
-<p>2025年，李言成如愿来到中国，在丹东的一家朝鲜餐厅当厨师。再次踏上这片土地时，他感叹：“中国变化真大！而我们的朝鲜……也算是一年比一年好了吧，起码没倒退。”</p>
-<h3 id="短暂的幸福"><a class="markdownIt-Anchor" href="#短暂的幸福"></a> <strong>短暂的幸福</strong></h3>
-<p>在丹东的日子里，李言成尽情享受着中国的便利与富足。虽然时间只有短短三年，但这三年对他而言是无价的。每天，他在餐厅里工作，尽管是简单的厨师岗位，却足以让他感到满足。最重要的是，在这里，他再也不用担心挨饿。</p>
-<p>虽然李言成深知，这段生活只是短暂的喘息，他最终还要回到朝鲜，但他依然感恩上帝赐予的这一段希望。他珍惜每一天，努力为餐厅的客人做出最美味的菜肴。</p>
-<p>在餐厅忙碌的厨房里，李言成时常望着窗外熙熙攘攘的街景，喃喃自语：“这三年，已经是我命运中最好的恩赐了。”他坚信，即便命运无情，但只要有一丝光亮，就值得他去追逐与珍惜。</p>
-<p>标题：李言成的脱北之路后续<br />
-在韩国呆了四五年后，朝鲜方面把他的家人都逮捕了起来，并且使用各种手段想要把他绑架回朝鲜。在2013年5月5日中午，李言成感到阵阵不安。突然有个人来找他，说：你家里人被朝鲜绑架了，你不回去朝鲜他们就杀你全家。李言成哭了，他来之不易的美好生活就要结束了？他的家人那么惨。为什么自己逃脱别人要受罚。他实在受不了自己的家人被如此欺负，为了家人的安全，他辞掉了韩国的工作还是回到了朝鲜。回到朝鲜后，他的世界变成灰白色了。心情低落的接受朝鲜的采访和审判。他在朝鲜的电视里出镜了。他的精神十分空虚，他被迫说“我在韩国过得一点也不好！每天都想死的感觉”。朝鲜方面觉得他还是比较忠诚的，劳改了几个月就把它放了。李言成不知道的是，他这一回来，就再也出不去了。2019年6月7日，李言成的朋友跟他说“喂！你知道吗？中国现在买火车票得用身份证护照了。不能用票了”“什么？！！”，李言成再一次痛哭。虽然内心早就麻木了但是听见这种事还是很伤心，这下应该是再也出不去朝鲜了。他很难过。他在朝鲜的生活很痛苦，每天只有3个小时电力支持。水也是得去江边打水，而且房间也没有暖气，每年冬天都差点被冻死。他跪下了。他这么多年来一直很后悔当年为什么要回来。但是后悔也没有用了，他回不去向往的世界了。2020年，因为疫情，朝鲜封了海关。出去的希望更加渺茫。但是，就是这么巧。因为他在外面表现的很好，将军奖励他出国学习去朝鲜餐厅，他灰色的世界突然有了颜色！他开心的蹦了起来。这次，他回到了中国。在丹东的一家朝鲜餐厅里当厨师。“这么多年没去中国了，中国变化很大嘛。而我们的朝鲜。。。也算是一年比一年好了吧！起码没倒退唉”他感叹道。虽然这次他在中国的时间只有3年，但是这3年就是上帝给他的又一次希望，现在他在朝鲜餐厅里每天都快乐的活着。因为在中国，他起码饿不死了。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -2595,6 +2460,121 @@ VMware Fusion 虚拟机破解密钥：</li>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
+    <title>无需 U 盘给 MacBook 电脑安装 Arch Linux</title>
+    <url>/20230108/134420/</url>
+    <content><![CDATA[<p>想装Arch Linux却没有带U盘，心急如焚的话，就看看我这个教程吧！保有效。</p>
+<h1 id="安装要求"><a class="markdownIt-Anchor" href="#安装要求"></a> 安装要求</h1>
+<ul>
+<li>一双手</li>
+<li>灵慧的大脑</li>
+<li>一台 (Intel 芯片) 的 MacBook Air 或者 MacBook Pro。 (不知道带安全芯片的可不可以)</li>
+</ul>
+<h1 id="开始安装"><a class="markdownIt-Anchor" href="#开始安装"></a> 开始安装</h1>
+<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
+<p>首先你需要有 Linux 基础，不然我之后跟你讲的，你都听不懂。<br />
+其次需要备份数据，因为我们要全盘格式化。</p>
+<h2 id="下载-arch-linux"><a class="markdownIt-Anchor" href="#下载-arch-linux"></a> 下载 Arch Linux</h2>
+<p>您可以通过以下链接来下载：<a href="https://mirrors.bfsu.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso">点击下载</a></p>
+<h2 id="macos-下的操作"><a class="markdownIt-Anchor" href="#macos-下的操作"></a> macOS 下的操作</h2>
+<h3 id="分区"><a class="markdownIt-Anchor" href="#分区"></a> 分区</h3>
+<ul>
+<li>在确定好已经备份好了文件之后，我们打开“磁盘工具”<br />
+<img src="https://img.gejiba.com/images/307403f27e39b88ad31f7034e3e6f3ca.png" alt="" /></li>
+<li>然后在上面的“显示”选项中，选择：“显示所有设备”<br />
+<img src="https://img.gejiba.com/images/10a4685ab86b81d9dfa2b4c032f1c707.png" alt="" /></li>
+<li>然后点击整块盘，找到“分区”选项。<br />
+<img src="https://img.gejiba.com/images/80d7dc7a41780488c98874460b234c5d.png" alt="" /></li>
+<li>添加一块 4 GB 的分区，分区格式 FAT 即可，名称先随意改一下，后面还需要改名字。<br />
+<img src="https://img.gejiba.com/images/265334b0ee5aad473c7de1f498b0f723.png" alt="" /></li>
+</ul>
+<h3 id="安装虚拟机"><a class="markdownIt-Anchor" href="#安装虚拟机"></a> 安装虚拟机</h3>
+<ul>
+<li>添加好之后，我们安装 VMware Fusion 虚拟机，安装一个 Windows 系统。<br />
+(如果你有 Parallels Desktop 虚拟机，可以跳过这一步)<br />
+VMware Fusion 虚拟机下载链接：<a href="https://download3.vmware.com/software/fusion/file/VMware-Fusion-12.0.0-16880131.dmg">点我下载</a><br />
+VMware Fusion 虚拟机破解密钥：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ZF3R0-FHED2-M80TY-8QYGC-NPKYF</span><br></pre></td></tr></table></figure>
+<p>如果找不到 Windows 镜像的话，可以用我这个 Windows XP：<a href="https://pan.huang1111.cn/s/KBgZsY">点我下载</a></p>
+<ul>
+<li>安装好虚拟机和虚拟机扩展套件(例如：VMware Tools)之后，共享你那个 4 GB 的分区到虚拟机上。</li>
+</ul>
+<h4 id="vmware-fusion"><a class="markdownIt-Anchor" href="#vmware-fusion"></a> VMware Fusion</h4>
+<p>在菜单栏中找到“虚拟机”选项，然后拉到最后有一个“共享”，点那个共享设置。<br />
+<img src="https://img.gejiba.com/images/6ea78bdea57adb61727bc59cc2fb97fe.png" alt="" /><br />
+点击启用共享文件夹，然后点击那个”+“号。<br />
+<img src="https://img.gejiba.com/images/632ccbf19ea918679c36351e75d324d0.png" alt="" /><br />
+找到那个 4 GB 的分区，点击“添加”<br />
+<img src="https://img.gejiba.com/images/b397da48952fba48c994214f4e12b6e0.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/3cb6087a20bce76a8bc4a793218eb333.png" alt="" /></p>
+<h4 id="parallels-desktop"><a class="markdownIt-Anchor" href="#parallels-desktop"></a> Parallels Desktop</h4>
+<p>在菜单栏中找到“设备”选项，找到“共享”，点：添加文件夹。<br />
+<img src="https://img.gejiba.com/images/bd405cf58579076c9fa6508614cc58bc.png" alt="" /><br />
+找到那个 4 GB 的分区，点击“打开”<br />
+<img src="https://img.gejiba.com/images/d39aed7bf6269001f2dfcfe784a018c0.png" alt="" /></p>
+<h3 id="拷贝镜像到分区"><a class="markdownIt-Anchor" href="#拷贝镜像到分区"></a> 拷贝镜像到分区</h3>
+<ul>
+<li>这一步就非常简单了，只需要将ARCH Linux光盘文件拷贝到分区即可，这也就是为什么要装一个 Windows 虚拟机的原因，因为 macOS 不能识别 Arch Linux 的文件。</li>
+<li>虚拟机插入Arch Linux光盘，然后将光盘所有文件全部复制到那个分区。<br />
+<img src="https://img.gejiba.com/images/3853d5b817845a45de0a1daf8acf9cc9.png" alt="" /></li>
+</ul>
+<h3 id="再次更改名字"><a class="markdownIt-Anchor" href="#再次更改名字"></a> 再次更改名字</h3>
+<ul>
+<li>记住虚拟机中显示的 Arch Linux 光盘名称，我这里是<b><font color=red>「ARCH_202301」</font></b>，再次进入“磁盘工具”。<br />
+然后点击 4 GB 的分区，再点击一下他的名字：<br />
+<img src="https://img.gejiba.com/images/dc5319ee01c52ced07a08a2d49b3f9c5.png" alt="" /><br />
+将这个分区名称改成ARCH_202301之后，macOS的所有操作就都完成了。</li>
+</ul>
+<h2 id="开始安装-arch-linux"><a class="markdownIt-Anchor" href="#开始安装-arch-linux"></a> 开始安装 Arch Linux</h2>
+<p>重新启动你的 Mac 电脑，按下 Option 键，等看到启动选项出现 EFI Boot 之后，引导它。如果顺利的话，你应该可以看到 GRUB 界面，开始引导即可。<br />
+<img src="https://img.gejiba.com/images/d5d322d4fb129852c7d8365791828811.jpg" alt="" /></p>
+<h3 id="连接互联网"><a class="markdownIt-Anchor" href="#连接互联网"></a> 连接互联网</h3>
+<p>输入 iwctl 进入 iwd。<br />
+然后查看网卡号是什么，以 wlan0 为例子：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">device list</span><br></pre></td></tr></table></figure>
+<p>然后联网，输入以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">station wlan0 scan</span><br><span class="line">station wlan0 get-networks</span><br><span class="line">station wlan0 connect TestWiFi_5G</span><br></pre></td></tr></table></figure>
+<p>连接好网络后，输入 exit 退出 iwd。再输入 ping <a href="http://www.baidu.com">www.baidu.com</a> 看看网络是不是正确连接。</p>
+<h3 id="为磁盘分区"><a class="markdownIt-Anchor" href="#为磁盘分区"></a> 为磁盘分区</h3>
+<p>未完待续。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>珊瑚宫心海养成指南</title>
+    <url>/20220915/233651/</url>
+    <content><![CDATA[<p><font  face="宋体">献给各位抽到心海的同学们~</font><br />
+<font  face="宋体"><br />
+<img src="https://img.gejiba.com/images/9b0eb764a0ac82311a641c0c879ec1ec.jpg" alt="" /><br />
+<img src="https://img.gejiba.com/images/32d21d0e305c9d5a21a56fb8dc992737.gif" alt="" /></p>
+<h2 id="圣遗物"><a class="markdownIt-Anchor" href="#圣遗物"></a> 圣遗物</h2>
+<p>建议使用<font face="宋体" color=#9393FF><strong>海</font><font  face="宋体" color=#FF60AF>染</font><font face="宋体" color=#46A3FF>四件套</strong></font>。<br />
+双爆<font face="宋体" color=red><strong>越少越好，不要堆双爆</strong></font>。</p>
+<h3 id="词条"><a class="markdownIt-Anchor" href="#词条"></a> 词条</h3>
+<p><font  face="宋体">生之花：<font face="宋体" color=red><strong>生命值</strong></font><br />
+<img src="https://img.gejiba.com/images/07ad11abca89d87bd1ae38612e54cbe4.jpg" alt="" /><br />
+死之羽：<font face="宋体" color=red><strong>攻击力</strong></font><br />
+<img src="https://img.gejiba.com/images/ea4acec0d7fd5b0ff0bb789fb965d28e.jpg" alt="" /><br />
+理之冠：<font color=red><strong>治疗加成</strong></font>（可以使用生命）<br />
+<img src="https://img.gejiba.com/images/6865e4d0d785f80d26c9b51409787372.jpg" alt="" /><br />
+时之沙：<font color=red><strong>生命值</strong></font><br />
+<img src="https://img.gejiba.com/images/d7763d67dab5e0bc3a78c0f63c197824.jpg" alt="" /><br />
+空之杯：<font color=red><strong>水元素伤害加成</strong></font><br />
+<img src="https://img.gejiba.com/images/989b021bb7fa09b6cfa7cf591337f2dd.jpg" alt="" /><br />
+</font></p>
+<h2 id="武器"><a class="markdownIt-Anchor" href="#武器"></a> 武器</h2>
+<p>使用<font face="宋体" color=#CA8EC2><strong>试作金铂</strong></font>即可。如果追求更高可以抽取<font color=#FFD306><strong>不灭月华</strong></font>。</p>
+<h2 id="命座"><a class="markdownIt-Anchor" href="#命座"></a> 命座</h2>
+<p>零命即可，一般没必要抽取命座。</p>
+<h2 id="组队"><a class="markdownIt-Anchor" href="#组队"></a> 组队</h2>
+<p>可以放进<b>“神鹤万心”</b>配合打永冻流：<br />
+<font color=#FFD306><strong>神里绫华</strong></font>、<font color=#FFD306><strong>珊瑚宫心海</strong></font>、<font color=#FFD306><strong>申鹤</strong></font>、<font color=#FFD306><strong>枫原万叶</strong></font>。</p>
+<p><font face="宋体">还有心海武装队：</font><br />
+<font face="宋体" color=#FFD306><strong>珊瑚宫心海</strong></font>、<font face="宋体" color=#CA8EC2><strong>菲谢尔</strong></font>、<font face="宋体" color=#CA8EC2><strong>北斗</strong></font>、<font face="宋体" color=#CA8EC2><strong>行秋</strong></font>。<br />
+<font face="宋体" color=red>心海武装队和砂糖武装队不一样的是，心海武装队可以随意搭配后三位角色。</font><br />
+</font></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
     <title>白洋淀公交乘坐体验</title>
     <url>/20220821/011817/</url>
     <content><![CDATA[<h1 id="线路走向"><a class="markdownIt-Anchor" href="#线路走向"></a> 线路走向</h1>
@@ -2627,6 +2607,61 @@ VMware Fusion 虚拟机破解密钥：</li>
 有一种很自然很清新的感觉。如果是清晨应该会更有感觉。</p>
 <h1 id="经过码头"><a class="markdownIt-Anchor" href="#经过码头"></a> 经过码头</h1>
 <p>308 路在路途中会经过<font color=green>生紫码头</font>和<font color=green>大口子码头</font>。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>朝鲜故事</title>
+    <url>/20250115/134502/</url>
+    <content><![CDATA[<h1 id="金哲的一生"><a class="markdownIt-Anchor" href="#金哲的一生"></a> 金哲的一生</h1>
+<h3 id="重生与归途"><a class="markdownIt-Anchor" href="#重生与归途"></a> <strong>重生与归途</strong></h3>
+<h4 id="逃离与新生"><a class="markdownIt-Anchor" href="#逃离与新生"></a> <strong>逃离与新生</strong></h4>
+<p>金哲（化名）是一个普通的朝鲜农民，为了逃避贫困与压迫，他在三十多年前冒着生命危险横渡鸭绿江，逃亡到中国。在那里，他假借一名已故中国人的身份生活，靠着勤奋努力和语言天赋，逐渐扎根北京。</p>
+<p>他成了一名装修工人，从最初的小工到后来独自接活儿，金哲攒下了一笔钱，买了房和车，还拿到了珍贵的北京车牌。他的生活看似幸福，平静而富足，但内心却始终留有一个深深的裂痕——对家人的思念。</p>
+<h4 id="返乡的决心"><a class="markdownIt-Anchor" href="#返乡的决心"></a> <strong>返乡的决心</strong></h4>
+<p>在某个冬日的清晨，金哲坐在家中的餐桌前，看着一张全家福的照片。他知道，家人在朝鲜的境况可能依然艰难，而自己却无法得知他们的任何消息。这种煎熬在二十年的时间里从未减弱，反而越来越深。他最终下定决心，要回到朝鲜，哪怕付出一切代价。</p>
+<p>2009年6月的一个早晨，金哲带上简单的行李，登上了北京站发往平壤的K27次列车。他知道这是一次可能无法回头的旅程，但内心的思念战胜了恐惧。</p>
+<h4 id="噩梦的开始"><a class="markdownIt-Anchor" href="#噩梦的开始"></a> <strong>噩梦的开始</strong></h4>
+<p>当列车抵达新义州站时，金哲被朝鲜边防人员带走。他的假身份被迅速识破，并以“叛国罪”判处45年劳改。他被送往深山中的一个秘密矿场，日夜挖掘矿石，每天只有一分钟的休息时间，食物仅是冷水和少量玉米粥。</p>
+<p>一年后，金哲因饥饿和劳累倒在矿井中，最终孤独地死去。他的家人在朝鲜的村庄里苦苦等待他的消息，但始终未能等到。悲痛之中，他们全家也因思念与绝望逐渐衰弱，最终相继离世。一个家庭就这样湮灭在历史的尘埃里。</p>
+<h4 id="奇迹的出现"><a class="markdownIt-Anchor" href="#奇迹的出现"></a> <strong>奇迹的出现</strong></h4>
+<p>金哲死后，他的灵魂漂浮在矿山上空。他仰望星空，泪流满面，向神明祈求：“若能再来一次，我愿用一切换取家人的幸福。”不知何故，神明听到了他的请求，时间奇迹般地回溯到他踏上K27次列车的那一刻。</p>
+<p>这一次，金哲没有选择返乡。他用神秘的力量，暗中帮助家人成功逃离朝鲜，并将他们带到了中国。他们一家团聚在北京，在丰台区马家堡附近的一套三居室中开始了新的生活。家人重新体会到了团圆的温暖。</p>
+<h4 id="工头的复仇"><a class="markdownIt-Anchor" href="#工头的复仇"></a> <strong>工头的复仇</strong></h4>
+<p>矿山的工头得知金哲一家逃脱后怒不可遏。他动用了神秘的军队，越境来到中国，试图抓捕金哲。然而，当他们找到金哲家所在的马家堡东里小区时，却被早已埋伏在此的中国警察一举擒获。</p>
+<p>中国政府迅速将工头及其部下遣返回国，而他们在朝鲜也因“任务失败”被判处52年劳改。在那同一个矿山里，他们像金哲一样，忍受着饥饿与折磨，最终在绝望中死去。</p>
+<h4 id="幸福的尾声"><a class="markdownIt-Anchor" href="#幸福的尾声"></a> <strong>幸福的尾声</strong></h4>
+<p>从此，金哲一家安居于北京，过上了平静而幸福的生活。他的孩子们进入了中国的学校学习，金哲和妻子经营着一家小餐馆，生活虽不奢华，却充满了笑声和温暖。</p>
+<p>而在丰台区的天空下，金哲时常感叹命运的多舛和神明的恩赐。他珍惜每一天，发誓再也不会冒险，只为守护眼前这来之不易的幸福。</p>
+<h1 id="李言成的脱北之路"><a class="markdownIt-Anchor" href="#李言成的脱北之路"></a> 李言成的脱北之路</h1>
+<p>李言成曾是一名坚定的朝鲜公民，他始终相信自己的祖国是世界上最强大的国家。然而，命运的一次巧合彻底颠覆了他的信念。朋友送给他的一枚U盘，成了他人生的转折点。U盘中播放的画面展示了韩国的繁荣景象，那些真实的场景让他陷入了深深的震撼与反思。朝鲜的宣传与现实之间的巨大反差，让他感到失望与迷茫。他开始质疑国家的真实面貌，最终萌生了一个危险的念头——脱北。</p>
+<h3 id="寒夜中的逃亡"><a class="markdownIt-Anchor" href="#寒夜中的逃亡"></a> <strong>寒夜中的逃亡</strong></h3>
+<p>2009年11月8日晚11点，李言成登上了一辆通往中朝边境的汽车。这是一条充满未知和危险的路，但自由的渴望让他不再犹豫。11月9日凌晨1点，他抵达了冰冷的鸭绿江边。深冬的寒夜，刺骨的江水让他几乎窒息，但他依旧咬牙向对岸游去。然而，他的行动被朝鲜边防军发现。尽管边防军迅速上报上级并追击，他还是幸运地逃脱，成功抵达中国境内。</p>
+<h3 id="初见中国的繁华"><a class="markdownIt-Anchor" href="#初见中国的繁华"></a> <strong>初见中国的繁华</strong></h3>
+<p>在中国一侧，接应的人早已等候多时。他迅速登上车辆，驶离了边境地区。第二天清晨，车辆抵达沈阳。在这座陌生却繁华的城市，李言成第一次感受到真实的对比。他看到熙攘的街道和繁华的商场，眼泪不由自主地流了下来。他喃喃自语：“我的国家果真不是世界最强大的国家……”那一刻，痛苦与希望交织在他的心中。他吃到了一顿丰盛的饭菜，那份饱腹感是他在朝鲜几乎无法想象的。这短暂的幸福也提醒他，危险仍未远去。他知道，在中国，如果被发现为朝鲜脱北者，随时可能被遣返。</p>
+<h3 id="漫长的火车旅程"><a class="markdownIt-Anchor" href="#漫长的火车旅程"></a> <strong>漫长的火车旅程</strong></h3>
+<p>第二天，蛇头安排了从沈阳到昆明的火车票。幸运的是，当时中国的铁路还未实行实名制，这让他们能够顺利登车。蛇头叮嘱他们，“全程不能说话，不能露出惊慌；查票时装睡，一切问题我来解决。”李言成听后点头如捣蒜，但内心依旧忐忑不安。</p>
+<p>途中，一声“查票了！”让他惊得猛地坐起。这一动作立刻引起列车员的注意。蛇头机智地解释，“他做噩梦吓醒了。”列车员要求查票，蛇头从容地递上所有人的车票，才让他们化险为夷。接下来的40多个小时，李言成目睹了中国沿途的风景，看到许多人幸福的生活。这让他震撼之余，感到更加坚定：自己必须逃离朝鲜，去迎接自由的生活。</p>
+<h3 id="翻山越岭的生死攸关"><a class="markdownIt-Anchor" href="#翻山越岭的生死攸关"></a> <strong>翻山越岭的生死攸关</strong></h3>
+<p>火车抵达昆明后，蛇头迅速安排车辆将他们送往边境。由于没有护照和身份证，他们只能偷渡。翻越崇山峻岭，穿越森林与小路，旅程的每一步都充满危险与艰难。他们的体力几乎耗尽，但最终成功抵达老挝。随后，他们辗转进入缅甸，再搭乘大客车前往泰国。在泰国，李言成终于获得庇护，并通过韩国方面的援助，安全抵达韩国。</p>
+<h3 id="新生活的开始"><a class="markdownIt-Anchor" href="#新生活的开始"></a> <strong>新生活的开始</strong></h3>
+<p>站在韩国的土地上，李言成喜极而泣，感到如释重负。他紧紧拥抱蛇头，感谢对方的帮助，这是他们最后一次见面。此后，李言成在韩国安定了下来。他找到了一份普通的工作，过上了平凡但安稳的生活。对他来说，这种平凡已经是幸福的极致。他感慨道：“我终于摆脱了苦海，虽然这里的生活并不奢华，但比朝鲜好太多了。”</p>
+<p>李言成的脱北之路充满了艰险和挑战，但自由的追求让他始终不放弃。这段经历不仅是他个人的救赎，也是对人性尊严的坚持与渴望。</p>
+<h1 id="李言成的脱北之路后续"><a class="markdownIt-Anchor" href="#李言成的脱北之路后续"></a> 李言成的脱北之路后续</h1>
+<p>2013年5月5日，原本在韩国安稳生活的李言成感到一阵不安。他的直觉是对的，那天中午，他接到了来自某人的消息：“你的家人被朝鲜抓了。他们要求你回去，否则就杀你全家。”这个晴天霹雳彻底摧毁了李言成苦心经营的美好生活。他崩溃了，痛哭不止：为何自己追求自由，代价却是家人承受苦难？</p>
+<p>几经挣扎，李言成做出了艰难的决定。他辞掉了韩国的工作，收拾行囊，再次踏上了返回朝鲜的路。这条路不仅是肉体上的归途，更是他自由梦的终结。</p>
+<h3 id="回归后的灰白世界"><a class="markdownIt-Anchor" href="#回归后的灰白世界"></a> <strong>回归后的灰白世界</strong></h3>
+<p>回到朝鲜，迎接李言成的是铺天盖地的指责与冷漠。他被迅速安排接受审判，面对摄像机，他被迫宣称：“我在韩国过得一点也不好！每天都想死的感觉。”这些话违背了他的真实情感，却是保命的唯一选择。朝鲜方面认为他仍然忠诚，劳改了几个月后便将他释放。</p>
+<p>然而，李言成再也无法离开朝鲜了。他的生活从此陷入了痛苦与绝望。每天，他只能享受短短3小时的电力供应，饮水需要亲自到江边取，冬天则在缺乏暖气的房间里苦熬，几乎每年都濒临冻死。他无数次跪下，悔恨当初的选择。但后悔已无济于事，铁幕之下，他再也看不到自由的希望。</p>
+<p>2019年6月，一位朋友告诉他：“中国现在买火车票需要身份证和护照了。”这句话如同最后一根稻草，让李言成再次失声痛哭。他知道，通往外界的道路已经彻底堵死。</p>
+<h3 id="偶然的曙光"><a class="markdownIt-Anchor" href="#偶然的曙光"></a> <strong>偶然的曙光</strong></h3>
+<p>2020年疫情爆发后，朝鲜进一步封锁国境，李言成的世界变得更加渺茫。然而，命运总是充满反复。因为他“悔改表现良好”，金正恩将军决定奖励他——派遣他到中国的朝鲜餐厅工作和学习。得知这一消息时，李言成灰暗的生活似乎再次被点亮了。</p>
+<p>2025年，李言成如愿来到中国，在丹东的一家朝鲜餐厅当厨师。再次踏上这片土地时，他感叹：“中国变化真大！而我们的朝鲜……也算是一年比一年好了吧，起码没倒退。”</p>
+<h3 id="短暂的幸福"><a class="markdownIt-Anchor" href="#短暂的幸福"></a> <strong>短暂的幸福</strong></h3>
+<p>在丹东的日子里，李言成尽情享受着中国的便利与富足。虽然时间只有短短三年，但这三年对他而言是无价的。每天，他在餐厅里工作，尽管是简单的厨师岗位，却足以让他感到满足。最重要的是，在这里，他再也不用担心挨饿。</p>
+<p>虽然李言成深知，这段生活只是短暂的喘息，他最终还要回到朝鲜，但他依然感恩上帝赐予的这一段希望。他珍惜每一天，努力为餐厅的客人做出最美味的菜肴。</p>
+<p>在餐厅忙碌的厨房里，李言成时常望着窗外熙熙攘攘的街景，喃喃自语：“这三年，已经是我命运中最好的恩赐了。”他坚信，即便命运无情，但只要有一丝光亮，就值得他去追逐与珍惜。</p>
+<p>标题：李言成的脱北之路后续<br />
+在韩国呆了四五年后，朝鲜方面把他的家人都逮捕了起来，并且使用各种手段想要把他绑架回朝鲜。在2013年5月5日中午，李言成感到阵阵不安。突然有个人来找他，说：你家里人被朝鲜绑架了，你不回去朝鲜他们就杀你全家。李言成哭了，他来之不易的美好生活就要结束了？他的家人那么惨。为什么自己逃脱别人要受罚。他实在受不了自己的家人被如此欺负，为了家人的安全，他辞掉了韩国的工作还是回到了朝鲜。回到朝鲜后，他的世界变成灰白色了。心情低落的接受朝鲜的采访和审判。他在朝鲜的电视里出镜了。他的精神十分空虚，他被迫说“我在韩国过得一点也不好！每天都想死的感觉”。朝鲜方面觉得他还是比较忠诚的，劳改了几个月就把它放了。李言成不知道的是，他这一回来，就再也出不去了。2019年6月7日，李言成的朋友跟他说“喂！你知道吗？中国现在买火车票得用身份证护照了。不能用票了”“什么？！！”，李言成再一次痛哭。虽然内心早就麻木了但是听见这种事还是很伤心，这下应该是再也出不去朝鲜了。他很难过。他在朝鲜的生活很痛苦，每天只有3个小时电力支持。水也是得去江边打水，而且房间也没有暖气，每年冬天都差点被冻死。他跪下了。他这么多年来一直很后悔当年为什么要回来。但是后悔也没有用了，他回不去向往的世界了。2020年，因为疫情，朝鲜封了海关。出去的希望更加渺茫。但是，就是这么巧。因为他在外面表现的很好，将军奖励他出国学习去朝鲜餐厅，他灰色的世界突然有了颜色！他开心的蹦了起来。这次，他回到了中国。在丹东的一家朝鲜餐厅里当厨师。“这么多年没去中国了，中国变化很大嘛。而我们的朝鲜。。。也算是一年比一年好了吧！起码没倒退唉”他感叹道。虽然这次他在中国的时间只有3年，但是这3年就是上帝给他的又一次希望，现在他在朝鲜餐厅里每天都快乐的活着。因为在中国，他起码饿不死了。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -2762,40 +2797,6 @@ Windows 中的终端叫做命令提示符，我们可以利用终端做很多事
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>Sanapri bilibili 新视频</title>
-    <url>/20220823/164646/</url>
-    <content><![CDATA[<p>鎖那小天使终于发新视频啦，这里给你们看看～</p>
-<pre><code>Kyu-kurarin (cover) / sana 
-original: きゅうくらりん / いよわ feat.可不 
-vocal: 鎖那  mix: n.k 
-▷https://space.bilibili.com/543245410
-</code></pre>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?bvid=BV1M14y1t7LK&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
-</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>黑翼猫 Extended Kernel Project 中国网络环境下载</title>
-    <url>/20220818/010924/</url>
-    <content><![CDATA[<h2 id="介绍"><a class="markdownIt-Anchor" href="#介绍"></a> 介绍</h2>
-<p>众所周知，因为<font color=green>国内网络环境的特殊</font>，好多网站不能访问。黑翼猫大佬的博客也是如此，在国内访问会提示连接被重置。所以我翻墙后下载了黑翼猫 Windows 2000 Extended Kernel Project 和依赖的补丁集。(包括 wlupdate)</p>
-<h2 id="教程"><a class="markdownIt-Anchor" href="#教程"></a> 教程</h2>
-<p>关于黑翼猫的 Windows 2000 拓展补丁安装，可以参考这个文章…<a href="https://zhuanlan.zhihu.com/p/484014315">传送点！</a></p>
-<h2 id="下载"><a class="markdownIt-Anchor" href="#下载"></a> 下载</h2>
-<p>下载链接：<a href="https://pan.huang1111.cn/s/4d34hg">点我下载</a></p>
-<h2 id="产品密钥"><a class="markdownIt-Anchor" href="#产品密钥"></a> 产品密钥</h2>
-<p><font color=red>PQHKR-G4JFW-VTY3P-G4WQ2-88CTW</font><br />
-<img src="https://img.gejiba.com/images/179c2f93582f6652f270c41e07636539.png" alt="" /></p>
-<h2 id="安装中"><a class="markdownIt-Anchor" href="#安装中"></a> 安装中…</h2>
-<p><img src="https://img.gejiba.com/images/20975efcd5f8834d9a0f81dc7047c5e8.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/eb69053f5eab4d6b2cd8000e2c985296.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/ea1fa06f63547b60ecc660645cc5240e.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/1ecefcd2e46809e7174800d584b53e20.png" alt="" /></p>
-<h2 id="伪装系统版本用的软件"><a class="markdownIt-Anchor" href="#伪装系统版本用的软件"></a> 伪装系统版本用的软件</h2>
-<p><img src="https://img.gejiba.com/images/b269d479dbb9aab60c0bfcbac371d2ed.png" alt="" /></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>让 Mac 电脑也玩上光遇！</title>
     <url>/20250114/222842/</url>
     <content><![CDATA[<h1 id="安装光-遇国服"><a class="markdownIt-Anchor" href="#安装光-遇国服"></a> 安装光 · 遇国服</h1>
@@ -2866,38 +2867,37 @@ vocal: 鎖那  mix: n.k
       </tags>
   </entry>
   <entry>
-    <title>珊瑚宫心海养成指南</title>
-    <url>/20220915/233651/</url>
-    <content><![CDATA[<p><font  face="宋体">献给各位抽到心海的同学们~</font><br />
-<font  face="宋体"><br />
-<img src="https://img.gejiba.com/images/9b0eb764a0ac82311a641c0c879ec1ec.jpg" alt="" /><br />
-<img src="https://img.gejiba.com/images/32d21d0e305c9d5a21a56fb8dc992737.gif" alt="" /></p>
-<h2 id="圣遗物"><a class="markdownIt-Anchor" href="#圣遗物"></a> 圣遗物</h2>
-<p>建议使用<font face="宋体" color=#9393FF><strong>海</font><font  face="宋体" color=#FF60AF>染</font><font face="宋体" color=#46A3FF>四件套</strong></font>。<br />
-双爆<font face="宋体" color=red><strong>越少越好，不要堆双爆</strong></font>。</p>
-<h3 id="词条"><a class="markdownIt-Anchor" href="#词条"></a> 词条</h3>
-<p><font  face="宋体">生之花：<font face="宋体" color=red><strong>生命值</strong></font><br />
-<img src="https://img.gejiba.com/images/07ad11abca89d87bd1ae38612e54cbe4.jpg" alt="" /><br />
-死之羽：<font face="宋体" color=red><strong>攻击力</strong></font><br />
-<img src="https://img.gejiba.com/images/ea4acec0d7fd5b0ff0bb789fb965d28e.jpg" alt="" /><br />
-理之冠：<font color=red><strong>治疗加成</strong></font>（可以使用生命）<br />
-<img src="https://img.gejiba.com/images/6865e4d0d785f80d26c9b51409787372.jpg" alt="" /><br />
-时之沙：<font color=red><strong>生命值</strong></font><br />
-<img src="https://img.gejiba.com/images/d7763d67dab5e0bc3a78c0f63c197824.jpg" alt="" /><br />
-空之杯：<font color=red><strong>水元素伤害加成</strong></font><br />
-<img src="https://img.gejiba.com/images/989b021bb7fa09b6cfa7cf591337f2dd.jpg" alt="" /><br />
-</font></p>
-<h2 id="武器"><a class="markdownIt-Anchor" href="#武器"></a> 武器</h2>
-<p>使用<font face="宋体" color=#CA8EC2><strong>试作金铂</strong></font>即可。如果追求更高可以抽取<font color=#FFD306><strong>不灭月华</strong></font>。</p>
-<h2 id="命座"><a class="markdownIt-Anchor" href="#命座"></a> 命座</h2>
-<p>零命即可，一般没必要抽取命座。</p>
-<h2 id="组队"><a class="markdownIt-Anchor" href="#组队"></a> 组队</h2>
-<p>可以放进<b>“神鹤万心”</b>配合打永冻流：<br />
-<font color=#FFD306><strong>神里绫华</strong></font>、<font color=#FFD306><strong>珊瑚宫心海</strong></font>、<font color=#FFD306><strong>申鹤</strong></font>、<font color=#FFD306><strong>枫原万叶</strong></font>。</p>
-<p><font face="宋体">还有心海武装队：</font><br />
-<font face="宋体" color=#FFD306><strong>珊瑚宫心海</strong></font>、<font face="宋体" color=#CA8EC2><strong>菲谢尔</strong></font>、<font face="宋体" color=#CA8EC2><strong>北斗</strong></font>、<font face="宋体" color=#CA8EC2><strong>行秋</strong></font>。<br />
-<font face="宋体" color=red>心海武装队和砂糖武装队不一样的是，心海武装队可以随意搭配后三位角色。</font><br />
-</font></p>
+    <title>Sanapri bilibili 新视频</title>
+    <url>/20220823/164646/</url>
+    <content><![CDATA[<p>鎖那小天使终于发新视频啦，这里给你们看看～</p>
+<pre><code>Kyu-kurarin (cover) / sana 
+original: きゅうくらりん / いよわ feat.可不 
+vocal: 鎖那  mix: n.k 
+▷https://space.bilibili.com/543245410
+</code></pre>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?bvid=BV1M14y1t7LK&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
+</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>黑翼猫 Extended Kernel Project 中国网络环境下载</title>
+    <url>/20220818/010924/</url>
+    <content><![CDATA[<h2 id="介绍"><a class="markdownIt-Anchor" href="#介绍"></a> 介绍</h2>
+<p>众所周知，因为<font color=green>国内网络环境的特殊</font>，好多网站不能访问。黑翼猫大佬的博客也是如此，在国内访问会提示连接被重置。所以我翻墙后下载了黑翼猫 Windows 2000 Extended Kernel Project 和依赖的补丁集。(包括 wlupdate)</p>
+<h2 id="教程"><a class="markdownIt-Anchor" href="#教程"></a> 教程</h2>
+<p>关于黑翼猫的 Windows 2000 拓展补丁安装，可以参考这个文章…<a href="https://zhuanlan.zhihu.com/p/484014315">传送点！</a></p>
+<h2 id="下载"><a class="markdownIt-Anchor" href="#下载"></a> 下载</h2>
+<p>下载链接：<a href="https://pan.huang1111.cn/s/4d34hg">点我下载</a></p>
+<h2 id="产品密钥"><a class="markdownIt-Anchor" href="#产品密钥"></a> 产品密钥</h2>
+<p><font color=red>PQHKR-G4JFW-VTY3P-G4WQ2-88CTW</font><br />
+<img src="https://img.gejiba.com/images/179c2f93582f6652f270c41e07636539.png" alt="" /></p>
+<h2 id="安装中"><a class="markdownIt-Anchor" href="#安装中"></a> 安装中…</h2>
+<p><img src="https://img.gejiba.com/images/20975efcd5f8834d9a0f81dc7047c5e8.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/eb69053f5eab4d6b2cd8000e2c985296.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/ea1fa06f63547b60ecc660645cc5240e.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/1ecefcd2e46809e7174800d584b53e20.png" alt="" /></p>
+<h2 id="伪装系统版本用的软件"><a class="markdownIt-Anchor" href="#伪装系统版本用的软件"></a> 伪装系统版本用的软件</h2>
+<p><img src="https://img.gejiba.com/images/b269d479dbb9aab60c0bfcbac371d2ed.png" alt="" /></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
 </search>
