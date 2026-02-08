@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pier Packer 包制作、打包工具</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        body { font-family: "Microsoft YaHei", sans-serif; background: #f0f2f5; margin: 0; padding: 20px; color: #333; }
+        .card { background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 20px; margin-bottom: 20px; }
+        h2 { color: #0078d7; font-size: 18px; margin-top: 0; border-left: 4px solid #0078d7; padding-left: 10px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .field { margin-bottom: 10px; }
+        label { display: block; font-size: 12px; color: #666; margin-bottom: 4px; }
+        input[type="text"] { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        .btn-group { margin-top: 15px; text-align: right; }
+        button { padding: 8px 20px; cursor: pointer; border: none; border-radius: 4px; background: #0078d7; color: white; font-weight: bold; }
+        button:hover { background: #005a9e; }
+        .secondary { background: #e1e1e1; color: #333; margin-right: 10px; }
+        .log-box { font-family: Consolas; font-size: 12px; background: #222; color: #0f0; padding: 10px; height: 100px; overflow-y: scroll; margin-top: 10px; }
+    </style>
+
+    <script language="VBScript">
+        Set fso = CreateObject("Scripting.FileSystemObject")
+        Set shell = CreateObject("WScript.Shell")
+        currDir = fso.GetParentFolderName(replace(window.location.pathname, "/", "\"))
+        If Left(currDir, 1) = "\" Then currDir = Mid(currDir, 2) ' 处理路径前缀
+
+        Sub Window_OnLoad
+            window.resizeTo 750, 850
+            window.moveTo (screen.width - 750) / 2, (screen.height - 850) / 2
+            window.focus
+        End Sub
+
+        ' 日志输出（同时输出到HTA界面和CMD窗口）
+        Sub Log(msg)
+            document.getElementById("logBox").innerHTML = document.getElementById("logBox").innerHTML & "> " & msg & "<br>"
+            document.getElementById("logBox").scrollTop = document.getElementById("logBox").scrollHeight
+            ' 输出到CMD窗口
+            On Error Resume Next
+            shell.Run "cmd /c echo " & msg, 0, False
+            On Error GoTo 0
+        End Sub
+
+        ' --- 元数据功能段 ---
+
+        ' 读取现有 .metadata
+        Sub OpenMetadata
+            Log "=== 开始打开 .metadata 文件 ==="
+
+            ' 使用 PowerShell 调用文件选择对话框
+            tempFile = currDir & "\dialog_path.tmp"
+            If fso.FileExists(tempFile) Then fso.DeleteFile(tempFile)
+
+            ' 使用 ASCII 编码写入路径，避免 VBScript 读取乱码
+            psCmd = "Add-Type -AssemblyName System.Windows.Forms;" & _
+                    "$ofd = New-Object System.Windows.Forms.OpenFileDialog;" & _
+                    "$ofd.Filter = 'Pier Metadata (*.metadata)|*.metadata';" & _
+                    "$ofd.Title = '选择 .metadata 文件';" & _
+                    "if($ofd.ShowDialog() -eq 'OK'){ $ofd.FileName.Trim() | Out-File -FilePath '" & tempFile & "' -Encoding ASCII -NoNewline }"
+
+            Log "正在打开文件选择对话框..."
+            shell.Run "powershell -Command """ & psCmd & """", 0, True
+
+            If fso.FileExists(tempFile) Then
+                ' 使用系统默认编码读取文件
+                Set f = fso.OpenTextFile(tempFile, 1, False, -2)
+                path = Trim(Trim(f.ReadAll))
+                f.Close
+                fso.DeleteFile(tempFile)
+
+                Log "选择的文件路径: [" & path & "]"
+                Log "路径长度: " & Len(path)
+
+                If path <> "" Then
+                    If fso.FileExists(path) Then
+                        Log "文件存在，准备解压..."
+                        Log "正在解压并读取: " & fso.GetFileName(path)
+
+                        ' 解压到临时文件夹
+                        tempDir = currDir & "\temp_meta"
+                        If fso.FolderExists(tempDir) Then
+                            Log "清理临时文件夹..."
+                            fso.DeleteFolder(tempDir)
+                        End If
+                        fso.CreateFolder(tempDir)
+
+                        ' 执行解压并获取返回码
+                        Log "正在执行 7za.exe 解压..."
+                        shell.Run ".\bin\7za.exe x """ & path & """ -o""" & tempDir & """ -y", 0, True
+                        Log "解压命令已执行"
+
+                        squePath = tempDir & "\metadata.sque"
+                        If fso.FileExists(squePath) Then
+                            Log "metadata.sque 文件已找到，准备读取"
+                            ' 使用系统默认编码读取 (参数: 1=读取, False=不覆盖, -2=系统默认)
+                            Set f = fso.OpenTextFile(squePath, 1, False, -2)
+                            content = f.ReadAll
+                            f.Close
+                            Log "文件读取成功，开始解析..."
+                            Log "文件内容长度: " & Len(content) & " 字符"
+                            Log "原始内容前200字符: " & Left(content, 200)
+                            ParseSque content
+                            Log "解析完成。"
+                        Else
+                            Log "错误：压缩包内未找到 metadata.sque"
+                            Log "临时文件夹内容："
+                            LogFilesInFolder tempDir
+                        End If
+
+                        ' 清理临时文件夹
+                        Log "清理临时文件夹..."
+                        If fso.FolderExists(tempDir) Then fso.DeleteFolder(tempDir)
+                    Else
+                        Log "错误：文件不存在，路径 = [" & path & "]"
+                    End If
+                Else
+                    Log "错误：路径为空"
+                End If
+            Else
+                Log "未选择文件"
+            End If
+
+            Log "=== .metadata 文件处理结束 ==="
+        End Sub
+
+        ' 列出文件夹内文件（用于调试）
+        Sub LogFilesInFolder(folderPath)
+            If fso.FolderExists(folderPath) Then
+                Set folder = fso.GetFolder(folderPath)
+                Set files = folder.Files
+                For Each file In files
+                    Log "  - " & file.Name
+                Next
+            End If
+        End Sub
+
+        ' 解析 sque 文本到界面
+        Sub ParseSque(txt)
+            Log "开始解析，内容长度: " & Len(txt) & " 字符"
+            matchedCount = 0
+
+            ' 使用正则表达式匹配 [Key] 然后读取下一行的值
+            pattern = "\[([^\]]+)\]\r?\n?\s*([^\r\n]*)"
+            Set regex = New RegExp
+            regex.Pattern = pattern
+            regex.Global = True
+            regex.IgnoreCase = False
+
+            Set matches = regex.Execute(txt)
+
+            For Each match In matches
+                key = Trim(match.SubMatches(0))
+                value = Trim(match.SubMatches(1))
+
+                Select Case key
+                    Case "DesktopShortcut"
+                        document.getElementById("shortcut").value = value
+                        Log "匹配成功 [DesktopShortcut] = " & value
+                        matchedCount = matchedCount + 1
+                    Case "InstallerName"
+                        document.getElementById("insName").value = value
+                        Log "匹配成功 [InstallerName] = " & value
+                        matchedCount = matchedCount + 1
+                    Case "OS"
+                        document.getElementById("os").value = value
+                        Log "匹配成功 [OS] = " & value
+                        matchedCount = matchedCount + 1
+                    Case "PackageName"
+                        document.getElementById("pkgName").value = value
+                        Log "匹配成功 [PackageName] = " & value
+                        matchedCount = matchedCount + 1
+                    Case "ProFile"
+                        document.getElementById("profile").value = value
+                        Log "匹配成功 [ProFile] = " & value
+                        matchedCount = matchedCount + 1
+                    Case "ProFile_En"
+                        document.getElementById("profileEn").value = value
+                        Log "匹配成功 [ProFile_En] = " & value
+                        matchedCount = matchedCount + 1
+                    Case "URL"
+                        document.getElementById("url").value = value
+                        Log "匹配成功 [URL] = " & value
+                        matchedCount = matchedCount + 1
+                    Case "Version"
+                        document.getElementById("version").value = value
+                        Log "匹配成功 [Version] = " & value
+                        matchedCount = matchedCount + 1
+                    Case "InstallDir"
+                        document.getElementById("instDir").value = value
+                        Log "匹配成功 [InstallDir] = " & value
+                        matchedCount = matchedCount + 1
+                    Case "Autorun"
+                        document.getElementById("autorun").value = value
+                        Log "匹配成功 [Autorun] = " & value
+                        matchedCount = matchedCount + 1
+                End Select
+            Next
+
+            Log "解析完成，共匹配 " & matchedCount & " 个字段"
+        End Sub
+
+        ' 保存并打包 .metadata
+        Sub SaveMetadata
+            pkg = document.getElementById("insName").value
+            If pkg = "" Then MsgBox "请至少填写 InstallerName": Exit Sub
+            
+            sque = "[DesktopShortcut]" & vbCrLf & document.getElementById("shortcut").value & vbCrLf & vbCrLf & _
+                   "[InstallerName]" & vbCrLf & document.getElementById("insName").value & vbCrLf & vbCrLf & _
+                   "[OS]" & vbCrLf & document.getElementById("os").value & vbCrLf & vbCrLf & _
+                   "[PackageName]" & vbCrLf & document.getElementById("pkgName").value & vbCrLf & vbCrLf & _
+                   "[ProFile]" & vbCrLf & document.getElementById("profile").value & vbCrLf & vbCrLf & _
+                   "[ProFile_En]" & vbCrLf & document.getElementById("profileEn").value & vbCrLf & vbCrLf & _
+                   "[URL]" & vbCrLf & document.getElementById("url").value & vbCrLf & vbCrLf & _
+                   "[Version]" & vbCrLf & document.getElementById("version").value & vbCrLf & vbCrLf & _
+                   "[InstallDir]" & vbCrLf & document.getElementById("instDir").value & vbCrLf & vbCrLf & _
+                   "[Autorun]" & vbCrLf & document.getElementById("autorun").value
+
+            ' 创建临时文件
+            tempSque = currDir & "\metadata.sque"
+            Set f = fso.CreateTextFile(tempSque, True)
+            f.Write sque
+            f.Close
+            
+            ' 打包
+            targetMeta = currDir & "\output\" & pkg & ".metadata"
+            If Not fso.FolderExists(currDir & "\output") Then fso.CreateFolder(currDir & "\output")
+            shell.Run ".\bin\7za.exe a -tzip """ & targetMeta & """ """ & tempSque & """", 0, True
+            
+            ' 删除临时文件
+            fso.DeleteFile(tempSque)
+            Log "已生成: " & targetMeta
+            MsgBox "元数据打包成功！"
+        End Sub
+
+        ' --- 软件打包功能段 ---
+
+        Sub SelectFolder
+            ' 调用 Shell.Application 选择文件夹
+            Set objShell = CreateObject("Shell.Application")
+            Set objFolder = objShell.BrowseForFolder(0, "选择要打包的软件文件夹:", 0, 0)
+            If Not objFolder Is Nothing Then
+                document.getElementById("folderPath").value = objFolder.Self.Path
+            End If
+        End Sub
+
+        Sub BuildPie
+            Log "=== 开始 BuildPie ==="
+            
+            ' 使用document.all来访问元素（HTA中比getElementById更稳定）
+            On Error Resume Next
+            
+            Set folderInput = document.all("folderPath")
+            If Err.Number <> 0 Then
+                Log "错误: 无法获取folderPath元素 - " & Err.Description
+                MsgBox "无法获取folderPath元素"
+                Exit Sub
+            End If
+            
+            folder = folderInput.value
+            If Err.Number <> 0 Then
+                Log "错误: 无法获取folderPath值 - " & Err.Description
+                MsgBox "无法获取folderPath值"
+                Exit Sub
+            End If
+            
+            If folder = "" Then 
+                MsgBox "请先选择文件夹"
+                Exit Sub
+            End If
+            Log "folderPath: " & folder
+            
+            ' 获取URL
+            Set urlInput = document.all("url")
+            If Err.Number = 0 Then
+                url = urlInput.value
+            Else
+                url = ""
+            End If
+            Log "url: " & url
+            
+            ' 根据 URL 获取文件名
+            If url = "" Then 
+                fileName = "package.pie" 
+            Else 
+                p = Split(url, "/")
+                fileName = p(UBound(p))
+            End If
+            Log "fileName: " & fileName
+
+            targetPie = currDir & "\output\" & fileName
+            Log "targetPie: " & targetPie
+            Log "正在打包软件为: " & fileName
+            shell.Run ".\bin\7za.exe a -tzip """ & targetPie & """ """ & folder & "\*""", 0, True
+            Log "打包完成。"
+            MsgBox "PIE 软件包生成成功！"
+            Log "=== BuildPie 结束 ==="
+            On Error GoTo 0
+        End Sub
+    </script>
+</head>
+<body>
+
+<div class="card">
+    <h2>1. 元数据编辑器 (Metadata Editor)</h2>
+    <div class="btn-group" style="text-align:left; margin-bottom:10px;">
+        <button class="secondary" onclick="OpenMetadata()">后期编辑 (打开 .metadata)</button>
+    </div>
+    <div class="grid">
+        <div class="field"><label for="shortcut">桌面快捷键名称 (\name.lnk)</label><input type="text" id="shortcut" name="shortcut" value=""></div>
+        <div class="field"><label for="insName">安装程序内部标识 (InstallerName)</label><input type="text" id="insName" name="insName" value=""></div>
+        <div class="field"><label for="os">最低系统要求 (OS)</label><input type="text" id="os" name="os" value=""></div>
+        <div class="field"><label for="pkgName">软件包显示名称 (PackageName)</label><input type="text" id="pkgName" name="pkgName" value=""></div>
+        <div class="field"><label for="version">版本号 (Version)</label><input type="text" id="version" name="version" value=""></div>
+        <div class="field"><label for="instDir">安装子目录 (\folder)</label><input type="text" id="instDir" name="instDir" value=""></div>
+    </div>
+    <div class="field"><label for="profile">软件简介 (中文)</label><input type="text" id="profile" name="profile" value=""></div>
+    <div class="field"><label for="profileEn">软件简介 (英文)</label><input type="text" id="profileEn" name="profileEn" value=""></div>
+    <div class="field"><label for="url">下载 URL (相对于 Source)</label><input type="text" id="url" name="url" value=""></div>
+    <div class="field"><label for="autorun">安装后执行脚本 (Autorun)</label><input type="text" id="autorun" name="autorun" value=""></div>
+    <div class="btn-group">
+        <button onclick="SaveMetadata()">生成并打包 Metadata</button>
+    </div>
+</div>
+
+<div class="card">
+    <h2>2. 软件打包器 (PIE Packer)</h2>
+    <div class="field">
+        <label>源文件夹路径</label>
+        <div style="display:flex;">
+            <input type="text" id="folderPath" style="flex:1; margin-right:10px;" readonly>
+            <button class="secondary" onclick="SelectFolder()">选择 (C)</button>
+        </div>
+    </div>
+    <div class="btn-group">
+        <button onclick="BuildPie()">打包成 .pie 文件</button>
+    </div>
+</div>
+
+<div class="log-box" id="logBox">准备就绪...<br></div>
+
+</body>
+</html>

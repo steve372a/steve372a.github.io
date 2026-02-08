@@ -1,0 +1,127 @@
+<html>
+<head>
+    <title>安装确认</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <hta:application id="oHTA" border="thin" caption="yes" showInTaskbar="yes" icon="" />
+    <style>
+        body { font-family: "Microsoft YaHei", sans-serif; background: #f3f3f3; padding: 20px; overflow: hidden; }
+        .card { background: white; padding: 25px; border-radius: 5px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h2 { color: #0078d7; border-bottom: 2px solid #0078d7; padding-bottom: 12px; margin-top: 0; font-weight: normal; }
+        .info { margin: 12px 0; font-size: 14px; line-height: 1.6; display: flex; }
+        .label { font-weight: bold; color: #666; width: 140px; flex-shrink: 0; }
+        .value { color: #333; word-break: break-all; }
+        .btn-group { text-align: right; margin-top: 30px; }
+        button { font-family: "Microsoft YaHei"; padding: 8px 25px; margin-left: 12px; cursor: pointer; border: none; border-radius: 2px; transition: 0.2s; }
+        .btn-yes { background: #0078d7; color: white; }
+        .btn-yes:hover { background: #005a9e; }
+        .btn-no { background: #e0e0e0; color: #333; }
+        .btn-no:hover { background: #d0d0d0; }
+    </style>
+    <script>
+        var shell = new ActiveXObject("WScript.Shell");
+
+        window.onload = function() {
+    var shell = new ActiveXObject("WScript.Shell");
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    var btnYes = document.getElementsByClassName("btn-yes")[0];
+    var titleH2 = document.getElementsByTagName("h2")[0];
+
+    // 从临时文件读取环境变量
+    var envFile = shell.ExpandEnvironmentStrings("%TEMP%\\pier_env.tmp");
+    var pkgName = "", pkgVer = "", pkgOS = "", pkgDesc = "", pkgLnk = "";
+    var labName = "", labVer = "", labOS = "", labDesc = "", labLnk = "";
+    var action = "install";
+
+    if (fso.FileExists(envFile)) {
+        var f = fso.OpenTextFile(envFile, 1, false);
+        while (!f.AtEndOfStream) {
+            var line = f.ReadLine().trim();
+            var eqPos = line.indexOf("=");
+            if (eqPos > 0) {
+                var key = line.substring(0, eqPos).trim();
+                var val = line.substring(eqPos + 1).trim();
+                if (key === "P_PKGNAME") pkgName = val;
+                else if (key === "P_VERSION") pkgVer = val;
+                else if (key === "P_OS") pkgOS = val;
+                else if (key === "P_DESC") pkgDesc = val;
+                else if (key === "P_SHORTCUT") pkgLnk = val;
+                else if (key === "P_LAB_NAME") labName = val;
+                else if (key === "P_LAB_VER") labVer = val;
+                else if (key === "P_LAB_OS") labOS = val;
+                else if (key === "P_LAB_DESC") labDesc = val;
+                else if (key === "P_LAB_LNK") labLnk = val;
+                else if (key === "P_ACTION") action = val;
+            }
+        }
+        f.Close();
+        fso.DeleteFile(envFile);
+    }
+
+    // 填充界面内容
+    document.getElementById("pkgName").innerText = pkgName || "";
+    document.getElementById("pkgVer").innerText = pkgVer || "";
+    document.getElementById("pkgOS").innerText = pkgOS || "";
+    document.getElementById("pkgDesc").innerText = pkgDesc || "";
+    document.getElementById("labName").innerText = labName || "";
+    document.getElementById("labVer").innerText = labVer || "";
+    document.getElementById("labOS").innerText = labOS || "";
+    document.getElementById("labDesc").innerText = labDesc || "";
+
+    var lnkRow = document.getElementById("lnkRow");
+    if (pkgLnk && pkgLnk !== "null" && pkgLnk !== "") {
+        document.getElementById("pkgLnk").innerText = pkgLnk;
+        document.getElementById("labLnk").innerText = labLnk || "";
+        lnkRow.style.display = "flex";
+    } else {
+        lnkRow.style.display = "none";
+    }
+
+    // 动态调整界面内容
+    if (action === "uninstall") {
+        titleH2.innerText = "卸载程序确认";
+        titleH2.style.color = "#d13438";
+        titleH2.style.borderBottomColor = "#d13438";
+        btnYes.innerText = "立即卸载 (Y)";
+        btnYes.style.background = "#d13438";
+    } else {
+        titleH2.innerText = "安装程序确认";
+        btnYes.innerText = "下一步 (Y)";
+    }
+
+    // 调整窗口大小（标准中小型对话框比例 640x440）
+    window.resizeTo(640, 440);
+    window.moveTo((screen.width - 640) / 2, (screen.height - 440) / 2);
+}
+
+        function select(v) {
+            var fso = new ActiveXObject("Scripting.FileSystemObject");
+            // 使用系统 Temp 目录传递结果
+            var tempPath = shell.ExpandEnvironmentStrings("%TEMP%\\pier_choice.tmp");
+            try {
+                var f = fso.CreateTextFile(tempPath, true);
+                f.Write(v);
+                f.Close();
+            } catch(e) {
+                alert("写入反馈文件失败，请检查权限。");
+            }
+            window.close();
+        }
+    </script>
+</head>
+<body>
+    <div class="card">
+        <h2>安装程序确认</h2>
+        <div class="info"><span id="labName" class="label"></span><span id="pkgName" class="value"></span></div>
+        <div class="info"><span id="labVer" class="label"></span><span id="pkgVer" class="value"></span></div>
+        <div class="info"><span id="labOS" class="label"></span><span id="pkgOS" class="value"></span></div>
+        <div class="info"><span id="labDesc" class="label"></span><span id="pkgDesc" class="value"></span></div>
+        
+        <div id="lnkRow" class="info"><span id="labLnk" class="label"></span><span id="pkgLnk" class="value"></span></div>
+        
+        <div class="btn-group">
+            <button class="btn-no" onclick="select('N')">取消 (N)</button>
+            <button class="btn-yes" onclick="select('Y')">下一步 (Y)</button>
+        </div>
+    </div>
+</body>
+</html>

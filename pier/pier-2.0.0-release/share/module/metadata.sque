@@ -1,0 +1,28 @@
+[DesktopShortcut]
+\Qgenerator.lnk
+
+[InstallerName]
+qgenerator
+
+[OS]
+8.1
+
+[PackageName]
+Qgenerator
+
+[ProFile]
+Qgenerator - QEMU 命令行图形化生成工具
+
+[ProFile_En]
+Qgenerator - Simple QEMU Command GUI Generator
+
+[URL]
+/pies/qgenerator.pie
+
+[Version]
+1.0.2
+
+[InstallDir]
+\qgenerator
+
+[Autorun]
