@@ -23,12 +23,12 @@
     
 <link rel="stylesheet" href="/css/loader.css">
 
-    <meta name="description" content="Pier 软件包管理器：终极技术白皮书  一、 序言：为什么要有 Pier？ 在 Windows 的世界里，安装软件通常意味着：双击 .exe -&gt; 下一步 -&gt; 下一步 -&gt; 忍受广告 -&gt; 注册表被塞满。 虽然有像 Scoop 或 Winget 这样的现代管理器，但它们往往需要复杂的运行环境（如 PowerShell 策略或 .NET）。 Pier 的哲学是：回归原始">
+    <meta name="description" content="Pier 软件包管理器：终极技术白皮书一、 序言：为什么要有 Pier？在 Windows 的世界里，安装软件通常意味着：双击 .exe -&gt; 下一步 -&gt; 下一步 -&gt; 忍受广告 -&gt; 注册表被塞满。虽然有像 Scoop 或 Winget 这样的现代管理器，但它们往往需要复杂的运行环境（如 PowerShell 策略或 .NET）。 Pier 的哲学是：回归原始。它诞生于">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Pier组件原理详解">
 <meta property="og:url" content="http://example.com/20251230/044559/index.html">
 <meta property="og:site_name" content="Sanakaprix 的个人小站">
-<meta property="og:description" content="Pier 软件包管理器：终极技术白皮书  一、 序言：为什么要有 Pier？ 在 Windows 的世界里，安装软件通常意味着：双击 .exe -&gt; 下一步 -&gt; 下一步 -&gt; 忍受广告 -&gt; 注册表被塞满。 虽然有像 Scoop 或 Winget 这样的现代管理器，但它们往往需要复杂的运行环境（如 PowerShell 策略或 .NET）。 Pier 的哲学是：回归原始">
+<meta property="og:description" content="Pier 软件包管理器：终极技术白皮书一、 序言：为什么要有 Pier？在 Windows 的世界里，安装软件通常意味着：双击 .exe -&gt; 下一步 -&gt; 下一步 -&gt; 忍受广告 -&gt; 注册表被塞满。虽然有像 Scoop 或 Winget 这样的现代管理器，但它们往往需要复杂的运行环境（如 PowerShell 策略或 .NET）。 Pier 的哲学是：回归原始。它诞生于">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://www.helloimg.com/i/2025/12/30/6952f9edd26ee.png">
 <meta property="og:image" content="https://pic1.imgdb.cn/item/6952fbf04b4fb88febf283c8.png">
@@ -174,126 +174,80 @@
 
         <div class="e-content article-entry" itemprop="articleBody">
             
-                <h1 id="pier-软件包管理器终极技术白皮书"><a class="markdownIt-Anchor" href="#pier-软件包管理器终极技术白皮书"></a> Pier 软件包管理器：终极技术白皮书</h1>
-<h2 id="一-序言为什么要有-pier"><a class="markdownIt-Anchor" href="#一-序言为什么要有-pier"></a> 一、 序言：为什么要有 Pier？</h2>
-<p>在 Windows 的世界里，安装软件通常意味着：双击 .exe -&gt; 下一步 -&gt; 下一步 -&gt; 忍受广告 -&gt; 注册表被塞满。<br />
-虽然有像 Scoop 或 Winget 这样的现代管理器，但它们往往需要复杂的运行环境（如 PowerShell 策略或 .NET）。</p>
-<p><strong>Pier 的哲学是：回归原始。</strong><br />
-它诞生于一个朴素的想法——能不能只用 Windows 诞生之初就有的“老古董”技术，做一个像 Linux 那样干净、透明、自动化的包管理器？</p>
-<h3 id="pier-的核心定义"><a class="markdownIt-Anchor" href="#pier-的核心定义"></a> Pier 的核心定义：</h3>
-<p>Pier 是一个基于 <strong>Batch（批处理）</strong> 逻辑内核，通过 <strong>HTA（网页程序）</strong> 提供交互界面，利用 <strong>7z/sed</strong> 等工具链实现软件下载、安装、卸载全生命周期管理的生态系统。</p>
-<hr />
-<h2 id="二-pier-的家族成员"><a class="markdownIt-Anchor" href="#二-pier-的家族成员"></a> 二、 Pier 的家族成员</h2>
-<p>为了让你从零理解，我们把 Pier 比作一个“自动售货机系统”：</p>
+                <h1 id="Pier-软件包管理器：终极技术白皮书"><a href="#Pier-软件包管理器：终极技术白皮书" class="headerlink" title="Pier 软件包管理器：终极技术白皮书"></a>Pier 软件包管理器：终极技术白皮书</h1><h2 id="一、-序言：为什么要有-Pier？"><a href="#一、-序言：为什么要有-Pier？" class="headerlink" title="一、 序言：为什么要有 Pier？"></a>一、 序言：为什么要有 Pier？</h2><p>在 Windows 的世界里，安装软件通常意味着：双击 .exe -&gt; 下一步 -&gt; 下一步 -&gt; 忍受广告 -&gt; 注册表被塞满。<br>虽然有像 Scoop 或 Winget 这样的现代管理器，但它们往往需要复杂的运行环境（如 PowerShell 策略或 .NET）。</p>
+<p><strong>Pier 的哲学是：回归原始。</strong><br>它诞生于一个朴素的想法——能不能只用 Windows 诞生之初就有的“老古董”技术，做一个像 Linux 那样干净、透明、自动化的包管理器？</p>
+<h3 id="Pier-的核心定义："><a href="#Pier-的核心定义：" class="headerlink" title="Pier 的核心定义："></a>Pier 的核心定义：</h3><p>Pier 是一个基于 <strong>Batch（批处理）</strong> 逻辑内核，通过 <strong>HTA（网页程序）</strong> 提供交互界面，利用 <strong>7z/sed</strong> 等工具链实现软件下载、安装、卸载全生命周期管理的生态系统。</p>
+<hr>
+<h2 id="二、-Pier-的家族成员"><a href="#二、-Pier-的家族成员" class="headerlink" title="二、 Pier 的家族成员"></a>二、 Pier 的家族成员</h2><p>为了让你从零理解，我们把 Pier 比作一个“自动售货机系统”：</p>
 <ol>
-<li>
-<p><strong>柜台 (pier.bat)</strong>：<br />
-这是你唯一需要直接打交道的入口。它负责接收你的命令（比如 <code>pier install wechat</code>），然后去后台翻账本、调货。</p>
+<li><p><strong>柜台 (pier.bat)</strong>：<br>这是你唯一需要直接打交道的入口。它负责接收你的命令（比如 <code>pier install wechat</code>），然后去后台翻账本、调货。</p>
 </li>
-<li>
-<p><strong>账本 (lang.ini &amp; sourceimage.ini)</strong>：<br />
-记录了机器该说哪国语言，以及去哪个服务器地址下载软件。</p>
+<li><p><strong>账本 (lang.ini &amp; sourceimage.ini)</strong>：<br>记录了机器该说哪国语言，以及去哪个服务器地址下载软件。</p>
 </li>
-<li>
-<p><strong>电子显示屏 (install.hta)</strong>：<br />
-当你准备买东西（安装）时，它会跳出来让你确认价格和信息。</p>
+<li><p><strong>电子显示屏 (install.hta)</strong>：<br>当你准备买东西（安装）时，它会跳出来让你确认价格和信息。</p>
 </li>
-<li>
-<p><strong>打包工厂 (PierPacker)</strong>：<br />
-这是生产商使用的工具。它负责把散装的程序零件（文件），封装成 Pier 能识别的“标准易拉罐”（.pie 格式）。</p>
+<li><p><strong>打包工厂 (PierPacker)</strong>：<br>这是生产商使用的工具。它负责把散装的程序零件（文件），封装成 Pier 能识别的“标准易拉罐”（.pie 格式）。</p>
 </li>
 </ol>
-<hr />
-<h2 id="三-图解pier-原理分析"><a class="markdownIt-Anchor" href="#三-图解pier-原理分析"></a> 三、 图解：Pier 原理分析</h2>
-<h3 id="31-各种文件是干什么的"><a class="markdownIt-Anchor" href="#31-各种文件是干什么的"></a> 3.1、各种文件是干什么的</h3>
-<p><img src="https://www.helloimg.com/i/2025/12/30/6952f9edd26ee.png" alt="" /></p>
-<h3 id="32-pier-执行全过程"><a class="markdownIt-Anchor" href="#32-pier-执行全过程"></a> 3.2、Pier 执行全过程</h3>
-<img src="https://pic1.imgdb.cn/item/6952fbf04b4fb88febf283c8.png" width="45%">
-<h2 id="四-核心原理hta-对话框是如何工作的"><a class="markdownIt-Anchor" href="#四-核心原理hta-对话框是如何工作的"></a> 四、 核心原理：HTA 对话框是如何工作的？</h2>
-<p><img src="https://pic1.imgdb.cn/item/6952f4a04b4fb88febf283c0.png" alt="" /></p>
+<hr>
+<h2 id="三、-图解：Pier-原理分析"><a href="#三、-图解：Pier-原理分析" class="headerlink" title="三、 图解：Pier 原理分析"></a>三、 图解：Pier 原理分析</h2><h3 id="3-1、各种文件是干什么的"><a href="#3-1、各种文件是干什么的" class="headerlink" title="3.1、各种文件是干什么的"></a>3.1、各种文件是干什么的</h3><p><img src="https://www.helloimg.com/i/2025/12/30/6952f9edd26ee.png" alt=""></p>
+<h3 id="3-2、Pier-执行全过程"><a href="#3-2、Pier-执行全过程" class="headerlink" title="3.2、Pier 执行全过程"></a>3.2、Pier 执行全过程</h3><p><img src="https://pic1.imgdb.cn/item/6952fbf04b4fb88febf283c8.png" width="45%"></p>
+<h2 id="四、-核心原理：HTA-对话框是如何工作的？"><a href="#四、-核心原理：HTA-对话框是如何工作的？" class="headerlink" title="四、 核心原理：HTA 对话框是如何工作的？"></a>四、 核心原理：HTA 对话框是如何工作的？</h2><p><img src="https://pic1.imgdb.cn/item/6952f4a04b4fb88febf283c0.png" alt=""></p>
 <p>这是 Pier 最亮眼的地方。你看到的那个带有“确认安装”按钮的精美窗口，实际上是一个 <strong>HTA (HTML Application)</strong>。</p>
-<h3 id="1-为什么不直接用-cmd-询问"><a class="markdownIt-Anchor" href="#1-为什么不直接用-cmd-询问"></a> 1. 为什么不直接用 CMD 询问？</h3>
-<p>CMD 的 <code>set /p</code> 只能输入文字，不能点按钮，更不能显示精美的软件图标和排版。HTA 本质上是一个“拥有本地最高权限的 IE 浏览器渲染窗口”，它能调用 JavaScript 操作文件。</p>
-<h3 id="2-跨进程通信pier_choicetmp"><a class="markdownIt-Anchor" href="#2-跨进程通信pier_choicetmp"></a> 2. 跨进程通信：pier_choice.tmp</h3>
-<p>这是你代码中最精妙的逻辑。由于批处理无法直接读取网页里的变量，它们通过“写小纸条”的方式通信：</p>
+<h3 id="1-为什么不直接用-CMD-询问？"><a href="#1-为什么不直接用-CMD-询问？" class="headerlink" title="1. 为什么不直接用 CMD 询问？"></a>1. 为什么不直接用 CMD 询问？</h3><p>CMD 的 <code>set /p</code> 只能输入文字，不能点按钮，更不能显示精美的软件图标和排版。HTA 本质上是一个“拥有本地最高权限的 IE 浏览器渲染窗口”，它能调用 JavaScript 操作文件。</p>
+<h3 id="2-跨进程通信：pier-choice-tmp"><a href="#2-跨进程通信：pier-choice-tmp" class="headerlink" title="2. 跨进程通信：pier_choice.tmp"></a>2. 跨进程通信：pier_choice.tmp</h3><p>这是你代码中最精妙的逻辑。由于批处理无法直接读取网页里的变量，它们通过“写小纸条”的方式通信：</p>
 <ul>
 <li><strong>第一步</strong>：<code>pier.bat</code> 运行 <code>mshta install.hta</code>。</li>
 <li><strong>第二步</strong>：HTA 运行，用户点击“确认”。</li>
-<li><strong>第三步</strong>：HTA 内部的 JS 代码执行：<br />
-<code>fso.CreateTextFile(&quot;%TEMP%\\pier_choice.tmp&quot;).Write(&quot;Y&quot;)</code>。</li>
+<li><strong>第三步</strong>：HTA 内部的 JS 代码执行：<br><code>fso.CreateTextFile(&quot;%TEMP%\\pier_choice.tmp&quot;).Write(&quot;Y&quot;)</code>。</li>
 <li><strong>第四步</strong>：HTA 关闭，<code>pier.bat</code> 检查 <code>%TEMP%</code> 目录下有没有这个 <code>.tmp</code> 文件。</li>
 <li><strong>第五步</strong>：读到 <code>Y</code>，继续安装；没读到，直接退出。</li>
 </ul>
-<h3 id="3-hta-界面视觉图"><a class="markdownIt-Anchor" href="#3-hta-界面视觉图"></a> 3. HTA 界面视觉图</h3>
-<p><img src="https://pic1.imgdb.cn/item/6952f4504b4fb88febf283bf.png" alt="" /></p>
-<h2 id="五-pierpacker软件是如何被制作出来的"><a class="markdownIt-Anchor" href="#五-pierpacker软件是如何被制作出来的"></a> 五、 PierPacker：软件是如何被制作出来的？</h2>
-<p><code>PierPacker.bat</code> 和 <code>Builder.hta</code> 是 Pier 生态的“生产力工具”。没有它们，开发者就得手动写那些复杂的配置文件。</p>
-<h3 id="1-打包流程分解"><a class="markdownIt-Anchor" href="#1-打包流程分解"></a> 1. 打包流程分解</h3>
-<p>当你有一个文件夹（比如绿色版的软件），想把它变成 Pier 格式，你需要经历以下步骤：</p>
+<h3 id="3-HTA-界面视觉图"><a href="#3-HTA-界面视觉图" class="headerlink" title="3. HTA 界面视觉图"></a>3. HTA 界面视觉图</h3><p><img src="https://pic1.imgdb.cn/item/6952f4504b4fb88febf283bf.png" alt=""></p>
+<h2 id="五、-PierPacker：软件是如何被制作出来的？"><a href="#五、-PierPacker：软件是如何被制作出来的？" class="headerlink" title="五、 PierPacker：软件是如何被制作出来的？"></a>五、 PierPacker：软件是如何被制作出来的？</h2><p> <code>PierPacker.bat</code> 和 <code>Builder.hta</code> 是 Pier 生态的“生产力工具”。没有它们，开发者就得手动写那些复杂的配置文件。</p>
+<h3 id="1-打包流程分解"><a href="#1-打包流程分解" class="headerlink" title="1. 打包流程分解"></a>1. 打包流程分解</h3><p>当你有一个文件夹（比如绿色版的软件），想把它变成 Pier 格式，你需要经历以下步骤：</p>
 <ol>
-<li>
-<p><strong>信息采集 (Builder.hta)</strong>：<br />
-你在界面上填入软件名、版本、作者、Autorun 脚本名称。</p>
+<li><p><strong>信息采集 (Builder.hta)</strong>：<br>你在界面上填入软件名、版本、作者、Autorun 脚本名称。</p>
 </li>
-<li>
-<p><strong>生成 Metadata</strong>：<br />
-Builder 会在你的源码文件夹里自动生成一个 <code>[软件名].metadata</code>。这个文件是 Pier 安装时的“说明书”。</p>
+<li><p><strong>生成 Metadata</strong>：<br>Builder 会在你的源码文件夹里自动生成一个 <code>[软件名].metadata</code>。这个文件是 Pier 安装时的“说明书”。</p>
 </li>
-<li>
-<p><strong>物理压缩 (7za.exe)</strong>：<br />
-<code>PierPacker</code> 会调用后台的 7zip 工具，把文件夹压缩成一个 <code>.pie</code> 后缀的压缩包。</p>
+<li><p><strong>物理压缩 (7za.exe)</strong>：<br><code>PierPacker</code> 会调用后台的 7zip 工具，把文件夹压缩成一个 <code>.pie</code> 后缀的压缩包。</p>
 </li>
 </ol>
-<h3 id="2-pierpacker-架构图"><a class="markdownIt-Anchor" href="#2-pierpacker-架构图"></a> 2. PierPacker 架构图</h3>
-<p><img src="https://pic1.imgdb.cn/item/6952f4274b4fb88febf283bc.png" alt="" /></p>
-<h2 id="六-开发者必看源码中的细节"><a class="markdownIt-Anchor" href="#六-开发者必看源码中的细节"></a> 六、 开发者必看：源码中的细节</h2>
-<h3 id="1-管理员权限的静默夺取"><a class="markdownIt-Anchor" href="#1-管理员权限的静默夺取"></a> 1. 管理员权限的“静默夺取”</h3>
-<p>在 <code>PierPacker.bat</code> 中，有一段非常硬核的代码：<br />
-<code>powershell -Command &quot;Start-Process ... -Verb RunAs&quot;</code></p>
-<p><strong>为什么要这么做？</strong><br />
-因为打包过程需要调用系统级的 <code>7za.exe</code> 并往可能受到保护的目录下写文件。这段代码确保了用户双击运行时，如果权限不够，会自动跳出 UAC 弹窗申请管理员权限，而不需要用户手动右键运行。</p>
-<h3 id="2-builderhta-的-activex-调用"><a class="markdownIt-Anchor" href="#2-builderhta-的-activex-调用"></a> 2. Builder.hta 的 ActiveX 调用</h3>
-<p>Builder 之所以能读取你的文件夹路径，是因为它使用了 Windows 的壳层对象：<br />
-<code>var shell = new ActiveXObject(&quot;Shell.Application&quot;);</code><br />
-<code>var folder = shell.BrowseForFolder(0, &quot;选择要打包的文件夹&quot;, 0);</code></p>
-<hr />
-<h2 id="七-字典检索sedexe-的妙用"><a class="markdownIt-Anchor" href="#七-字典检索sedexe-的妙用"></a> 七、 字典检索：sed.exe 的妙用</h2>
-<p>Pier 的核心没有使用复杂的数据库解析器，而是用了著名的流编辑器 <code>sed.exe</code>。</p>
-<p><strong>逻辑示例：</strong><br />
-<code>sed.exe -n &quot;/\[welcome\]/&#123;n;p&#125;&quot; lang.ini</code></p>
-<p><strong>口语化解释：</strong><br />
-“喂，sed，帮我去 <code>lang.ini</code> 账本里找一个叫 <code>[welcome]</code> 的标签。找到了之后，别打印标签这一行，打印它的<strong>下一行</strong>内容。”</p>
+<h3 id="2-PierPacker-架构图"><a href="#2-PierPacker-架构图" class="headerlink" title="2. PierPacker 架构图"></a>2. PierPacker 架构图</h3><p><img src="https://pic1.imgdb.cn/item/6952f4274b4fb88febf283bc.png" alt=""></p>
+<h2 id="六、-开发者必看：源码中的细节"><a href="#六、-开发者必看：源码中的细节" class="headerlink" title="六、 开发者必看：源码中的细节"></a>六、 开发者必看：源码中的细节</h2><h3 id="1-管理员权限的“静默夺取”"><a href="#1-管理员权限的“静默夺取”" class="headerlink" title="1. 管理员权限的“静默夺取”"></a>1. 管理员权限的“静默夺取”</h3><p>在 <code>PierPacker.bat</code> 中，有一段非常硬核的代码：<br><code>powershell -Command &quot;Start-Process ... -Verb RunAs&quot;</code></p>
+<p><strong>为什么要这么做？</strong><br>因为打包过程需要调用系统级的 <code>7za.exe</code> 并往可能受到保护的目录下写文件。这段代码确保了用户双击运行时，如果权限不够，会自动跳出 UAC 弹窗申请管理员权限，而不需要用户手动右键运行。</p>
+<h3 id="2-Builder-hta-的-ActiveX-调用"><a href="#2-Builder-hta-的-ActiveX-调用" class="headerlink" title="2. Builder.hta 的 ActiveX 调用"></a>2. Builder.hta 的 ActiveX 调用</h3><p>Builder 之所以能读取你的文件夹路径，是因为它使用了 Windows 的壳层对象：<br><code>var shell = new ActiveXObject(&quot;Shell.Application&quot;);</code><br><code>var folder = shell.BrowseForFolder(0, &quot;选择要打包的文件夹&quot;, 0);</code></p>
+<hr>
+<h2 id="七、-字典检索：sed-exe-的妙用"><a href="#七、-字典检索：sed-exe-的妙用" class="headerlink" title="七、 字典检索：sed.exe 的妙用"></a>七、 字典检索：sed.exe 的妙用</h2><p>Pier 的核心没有使用复杂的数据库解析器，而是用了著名的流编辑器 <code>sed.exe</code>。</p>
+<p><strong>逻辑示例：</strong><br><code>sed.exe -n &quot;/\[welcome\]/&#123;n;p&#125;&quot; lang.ini</code></p>
+<p><strong>口语化解释：</strong><br>“喂，sed，帮我去 <code>lang.ini</code> 账本里找一个叫 <code>[welcome]</code> 的标签。找到了之后，别打印标签这一行，打印它的<strong>下一行</strong>内容。”</p>
 <p>这种设计极其精妙：</p>
 <ul>
 <li><strong>极速</strong>：sed 处理文本的速度是毫秒级的。</li>
 <li><strong>解耦</strong>：你想改文字，只需要改 <code>lang.ini</code>，一通代码都不用动。</li>
 </ul>
-<h2 id="八-全局组件流转逻辑"><a class="markdownIt-Anchor" href="#八-全局组件流转逻辑"></a> 八、 全局组件流转逻辑</h2>
-<ol>
-<li>
-<p><strong>启动阶段</strong>：</p>
+<h2 id="八、-全局组件流转逻辑"><a href="#八、-全局组件流转逻辑" class="headerlink" title="八、 全局组件流转逻辑"></a>八、 全局组件流转逻辑</h2><ol>
+<li><p><strong>启动阶段</strong>：</p>
 <ul>
 <li><code>pier.bat</code> 读取 <code>.share/config/language.ini</code> 确定语言。</li>
 <li>调用 <code>sed</code> 从 <code>lang.ini</code> 抓取对应的翻译文字。</li>
 </ul>
 </li>
-<li>
-<p><strong>指令阶段</strong>：</p>
+<li><p><strong>指令阶段</strong>：</p>
 <ul>
 <li>用户输入 <code>pier install wechat</code>。</li>
 <li><code>pier.bat</code> 访问 <code>sourceimage.ini</code> 获取下载服务器地址。</li>
 </ul>
 </li>
-<li>
-<p><strong>交互阶段</strong>：</p>
+<li><p><strong>交互阶段</strong>：</p>
 <ul>
 <li><code>pier.bat</code> 生成一个包含环境参数的 <code>pier_env.tmp</code>。</li>
 <li><code>start /wait install.hta</code>。</li>
 <li>用户在 HTA 看到精美的软件介绍。</li>
 </ul>
 </li>
-<li>
-<p><strong>执行阶段</strong>：</p>
+<li><p><strong>执行阶段</strong>：</p>
 <ul>
 <li>如果用户点 Y，HTA 写下 <code>pier_choice.tmp</code>。</li>
 <li><code>pier.bat</code> 醒来，调用 <code>uma-get.exe</code> 下载包。</li>
@@ -302,19 +256,16 @@ Builder 会在你的源码文件夹里自动生成一个 <code>[软件名].metad
 </ul>
 </li>
 </ol>
-<hr />
-<h1 id="结语古法技术的新生命"><a class="markdownIt-Anchor" href="#结语古法技术的新生命"></a> 结语：古法技术的新生命</h1>
-<p>Pier 不是最先进的，但它一定是最“通透”的。通过对 <code>pier.bat</code>、<code>PierPacker</code> 以及各色 <code>ini</code> 文件的拆解，我们看到了一种利用原生能力解决复杂问题的匠心。</p>
-<p><strong>给开发者的建议：</strong><br />
-如果你想扩展 Pier，不要试图加入厚重的库。保持它的轻量，保持它的 Batch + HTA 架构。这正是 Pier 区别于其他成千上万个软件管理器的独特魅力。</p>
-<hr />
-<p><em>文档编写：Gemini Thought Partner</em><br />
-<em>适用版本：Pier 2.0.0 &amp; PierPacker 1.5.0+</em></p>
+<hr>
+<h1 id="结语：古法技术的新生命"><a href="#结语：古法技术的新生命" class="headerlink" title="结语：古法技术的新生命"></a>结语：古法技术的新生命</h1><p>Pier 不是最先进的，但它一定是最“通透”的。通过对 <code>pier.bat</code>、<code>PierPacker</code> 以及各色 <code>ini</code> 文件的拆解，我们看到了一种利用原生能力解决复杂问题的匠心。</p>
+<p><strong>给开发者的建议：</strong><br>如果你想扩展 Pier，不要试图加入厚重的库。保持它的轻量，保持它的 Batch + HTA 架构。这正是 Pier 区别于其他成千上万个软件管理器的独特魅力。</p>
+<hr>
+<p><em>文档编写：Gemini Thought Partner</em><br><em>适用版本：Pier 2.0.0 &amp; PierPacker 1.5.0+</em></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
             
         </div>
         <footer class="article-footer">
-            <a data-url="http://example.com/20251230/044559/" data-id="cmlec2h08001qqyg4glvzbo28" data-title="Pier组件原理详解"
+            <a data-url="http://example.com/20251230/044559/" data-id="cmlec4dft001x1ng4cc8na2v4" data-title="Pier组件原理详解"
                class="article-share-link">分享</a>
             
                 <a href="/20251230/044559/#comments" class="article-comment-link">
@@ -484,10 +435,10 @@ Builder 会在你的源码文件夹里自动生成一个 <code>[软件名].metad
             
                 <div>
                     <span class="icon-brush"></span>
-                    39.6k
+                    39.9k
                     &nbsp;|&nbsp;
                     <span class="icon-coffee"></span>
-                    02:34
+                    02:35
                 </div>
             
             
