@@ -1,0 +1,28 @@
+Creator: Sanakaprix
+Email: steve372@foxmail.com
+
+This software can be used completely freely. To upload data to the official repository, 
+please send to: <steve372@foxmail.com >
+
+====================== PACKAGE OPERATIONS ======================
+pier install <packagename> -y  - Install selected package. -y skips confirmation.
+pier remove <packagename>      - Uninstall selected package.
+
+====================== LANGUAGE SETTINGS =======================
+(You may use "pier sl" as shortcut!)
+pier --setlang set <language>     - Set Package Installer's display language.
+pier --setlang install <language> - Download additional language from mirror.
+pier --setlang reins <language>   - Reinstall language pack.
+
+====================== REPOSITORY SETTINGS =====================
+pier list offline          - Fetch available packages list locally.
+pier list online           - Fetch available packages list from remote server.
+pier list piersourcecode   - View Package Installer's source code.
+
+======================= OTHER SETTINGS =========================
+pier web     - Visit official website (lite version)
+pier repo    - Display currently configured package repository.
+
+======================= HELP COMMANDS ==========================
+(You may use "pier help;-help;?;-?;--?" as shortcuts!)
+pier --help  - Show this help message.

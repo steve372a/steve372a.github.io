@@ -1,0 +1,21 @@
+
+メーカー：？ 、アイドル宣言
+
+電子メール: steve372@foxmail.com
+
+このソフトウェアは完全に自由に使用できます.
+公式ソースにメタデータをアップロードするには、
+次の Web ページにアクセスしてください:
+< https://gitee.com/steve372/pier/tree/master/sources >
+
+pier install <packagename> - 選択したパッケージをインストールします。
+
+pier remove <packagename> - 選択したパッケージをアンインストールします。
+
+pier --setlang set <language> - Pier の言語を設定します。
+
+pier --setlang install <language> - ソース ミラーから追加の言語をダウンロードします。
+
+pier --setlang remove <language> - 言語パックをアンインストールします。
+
+pier --help - このヘルプを表示します。

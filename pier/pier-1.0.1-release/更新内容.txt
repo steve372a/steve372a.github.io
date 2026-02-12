@@ -1,0 +1,7 @@
+时隔三年的更新！~
+1.支持参数加 -y;yes;y 跳过询问是否安装
+2.遗弃 pier GUI 版
+3.添加 piercmd，作为原来 piergui 的代替。
+4.默认源改为个人小站 https://steve372a.github.io。原 Gitee 源废弃
+5.可以通知用户软件是否会创建桌面快捷方式。
+6.更新 Offline 软件包列表。

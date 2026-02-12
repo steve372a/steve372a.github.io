@@ -1,0 +1,18 @@
+
+maker: ? , ¥¢¥¤¥É¥ëÐûÑÔ
+
+Email: steve372@foxmail.com
+
+This software can be used completely freely. 
+To upload metadata to the official source, please visit the webpage:
+< https://gitee.com/steve372/pier/tree/master/sources >
+
+pier install <packagename> <-y;yes> - Install the selected package. The -y flag skips installation confirmation.
+pier remove <packagename> - Uninstalls the selected package.
+pier --setlang set <language> - Set the language of Package Installer.
+pier --setlang install <language> - Download additional languages from source mirrors.
+pier list offline - Pulls a list of available packages from local.
+pier list online - Pulls a list of available packages from a remote server.
+pier list piersourcecode - View Package Installer's source code
+pier license - Read the license.
+pier --help - Display this help.

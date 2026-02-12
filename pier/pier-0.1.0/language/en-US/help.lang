@@ -1,0 +1,18 @@
+
+maker: ? , アイドル傚冱
+
+Email: steve372@foxmail.com
+
+This software can be used completely freely. 
+To upload metadata to the official source, please visit the webpage:
+< https://gitee.com/steve372/pier/tree/master/sources >
+
+pier install <packagename> - installs the selected package.
+
+pier remove <packagename> - Uninstalls the selected package.
+
+pier --setlang set <language> - Set the language of Pier.
+
+pier --setlang install <language> - Download additional languages from source mirrors.
+
+pier --help - Display this help.
