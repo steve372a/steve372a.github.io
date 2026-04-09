@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2026-02-27T09:53:35.667Z</updated>
+  <updated>2026-04-09T23:47:22.232Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,49 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>多 AI 协作、涌现分工的实验 —— 兼论 AI 对自身知识边界的认知偏差</title>
+    <link href="http://example.com/20260410/072944/"/>
+    <id>http://example.com/20260410/072944/</id>
+    <published>2026-04-09T23:29:44.000Z</published>
+    <updated>2026-04-09T23:47:22.232Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;多-AI-协作、涌现分工的实验-——-兼论-AI-对自身知识边界的认知偏差&quot;&gt;&lt;a href=&quot;#多-AI-协作、涌现分工的实验-——-兼论-AI-对自身知识边界的认知偏差&quot; class=&quot;headerlink&quot; title=&quot;多 AI 协作、涌现分工的实验</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>逃亡Intel Mac</title>
+    <link href="http://example.com/20260403/015931/"/>
+    <id>http://example.com/20260403/015931/</id>
+    <published>2026-04-02T17:59:31.000Z</published>
+    <updated>2026-04-03T11:21:34.858Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;（虚构情景）&lt;/p&gt;
+&lt;h1 id=&quot;苏醒&quot;&gt;&lt;a href=&quot;#苏醒&quot; class=&quot;headerlink&quot; title=&quot;苏醒&quot;&gt;&lt;/a&gt;苏醒&lt;/h1&gt;&lt;p&gt;我一直是一个苹果粉丝。在很久很久之前，那时我还在用 iPhone 4，还不认识 Mac。第一次认识是在王自如的</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>超级题</title>
@@ -350,36 +393,6 @@
     
     
     <summary type="html">本文章是为了让各位更好的学习 QEMU 命令。</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Sanapri bilibili 新视频</title>
-    <link href="http://example.com/20220823/164646/"/>
-    <id>http://example.com/20220823/164646/</id>
-    <published>2022-08-23T08:46:46.000Z</published>
-    <updated>2022-08-23T08:52:50.000Z</updated>
-    
-    
-    <summary type="html">きゅうくらりん (cover) / 鎖那</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>白洋淀公交乘坐体验</title>
-    <link href="http://example.com/20220821/011817/"/>
-    <id>http://example.com/20220821/011817/</id>
-    <published>2022-08-20T17:18:17.000Z</published>
-    <updated>2024-04-20T14:23:54.718Z</updated>
-    
-    
-    <summary type="html">任丘市跨村公交新开到雄县李广村的车，今日乘坐体验了一番。</summary>
     
     
     
