@@ -406,580 +406,6 @@ D. 二进制代码</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>PlayCover 适用的《原神》iPA 文件</title>
-    <url>/20230816/114759/</url>
-    <content><![CDATA[<h1 id="原神"><a class="markdownIt-Anchor" href="#原神"></a> 《原神》</h1>
-<h2 id="版本400-天空岛"><a class="markdownIt-Anchor" href="#版本400-天空岛"></a> 版本：4.0.0 (天空岛)</h2>
-<p>您可以单击下面地址下载：<br />
-<a href="https://pan.huang1111.cn/s/vlYgSE?path=%2F">下载原神 iPA 到设备</a></p>
-<h1 id="更新方法"><a class="markdownIt-Anchor" href="#更新方法"></a> 更新方法</h1>
-<p><strong>设备要求：Apple Silicon 的 Mac 电脑</strong></p>
-<p>如果您不知道您的 Mac 电脑能否安装，请您点击“”图标，找到“关于本机”。<br />
-如果显示的是“<em>芯片：Apple M1</em>”等，就说明您的电脑基于 Apple Silicon，<br />
-如果显示的是“<em>处理器：2.3 GHz 八核 Intel Core i9</em>“等，就说明您的电脑基于 Intel，不能安装 PlayCover 和原神。<br />
-<img src="https://img.gejiba.com/images/48597f6116725b33eb76bd09ca846ec7.png" alt="" /><br />
-请您下载好 PlayCover 软件至您的 Mac：<br />
-<a href="https://github.com/PlayCover/PlayCover/releases">下载 PlayCover</a><br />
-<img src="https://img.gejiba.com/images/19a67305b6f5527d59230696115bbe7c.png" alt="" /><br />
-然后将您下载的《原神》包体，移动至 PlayCover，等待安装就可以了。<br />
-<img src="https://img.gejiba.com/images/64a6c685500968133486ccae710afe41.png" alt="" /><br />
-进度条消失后，启动原神即可。<br />
-<img src="https://img.gejiba.com/images/0f8e0e0f09980925c1f85a94d9110685.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/1fef0f6d03000f75c9c2d730a0ab0bba.png" alt="" /></p>
-<h1 id="操作方式"><a class="markdownIt-Anchor" href="#操作方式"></a> 操作方式</h1>
-<h2 id="键盘映射"><a class="markdownIt-Anchor" href="#键盘映射"></a> 键盘映射</h2>
-<h3 id="下载"><a class="markdownIt-Anchor" href="#下载"></a> 下载</h3>
-<p><a href="https://github.com/PlayCover/keymaps/tree/master/keymapping/com.miHoYo.GenshinImpact">下载键盘映射</a><br />
-如果您不能访问 Github，点击以下链接下载:<br />
-<a href="/download/Genshin_Impact_fixed_16by9.playmap">Genshin_Impact_fixed_16by9.playmap</a><br />
-<a href="/download/Genshin_Impact_fixed_16by10.playmap">Genshin_Impact_fixed_16by10.playmap</a><br />
-一般 Mac 的屏幕分辨率比例是 16 : 10。</p>
-<h3 id="导入"><a class="markdownIt-Anchor" href="#导入"></a> 导入</h3>
-<p>下载完成后，打开 PlayCover，在“原神”图标点击右键，找到“导入键盘映射布局”<br />
-<img src="https://img.gejiba.com/images/efc6855c13376b0b0a0379b07be383e4.png" alt="" /><br />
-然后找到您的键盘映射布局就可以了。<br />
-<img src="https://img.gejiba.com/images/6a44f60b24115af46d5be02b446a68bf.png" alt="" /></p>
-<h3 id="应用"><a class="markdownIt-Anchor" href="#应用"></a> 应用</h3>
-<p>随后打开原神，您可以按下 Option⌥ 键，让“原神”捕获鼠标，再次按下 Option⌥ 键，可以释放鼠标。<br />
-您可以点击状态栏的“按键映射”-“打开/关闭按键映射编辑模式”，编辑您的键盘映射。<br />
-<img src="https://img.gejiba.com/images/0caf11441df218503b6006a32166dd67.png" alt="" /></p>
-<h2 id="手柄连接"><a class="markdownIt-Anchor" href="#手柄连接"></a> 手柄连接</h2>
-<p>请您先连接手柄至 Mac。<br />
-<img src="https://img.gejiba.com/images/cee062dae17e16cd0b9a97d6ad4651ae.png" alt="" /><br />
-然后打开原神，打开“设置”<br />
-<img src="https://img.gejiba.com/images/91a9e660af575671d4739c2587cc88d4.png" alt="" /><br />
-将“触屏”改为“手柄”<br />
-<img src="https://img.gejiba.com/images/fded33a413746b6e4a4463a0726c2afc.png" alt="" /><br />
-然后就完成啦！<br />
-<img src="https://img.gejiba.com/images/7f47f18a1f5d592143ab1540f8d466d2.png" alt="" /></p>
-<h1 id="推荐观看"><a class="markdownIt-Anchor" href="#推荐观看"></a> 推荐观看</h1>
-<p>本文章没有列出一些会存在的普遍问题，推荐观看下面的视频：</p>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?bvid=BV1Xx4y1F7um&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
-</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>资源分享</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>QEMU 基础命令学习</title>
-    <url>/20220826/022653/</url>
-    <content><![CDATA[<center>
-<div style="width:100px; height:100px; border-radius:100%; overflow:hidden;">
-    <img src="https://steve372yeyeye.github.io/images/avatar.gif" alt>
-</div>
-<br>
-<font size="6"><center>？、アイドル宣言</center></font>
-<font size="3"><center>的博客小站</center></font>
-<br>
-<p><a href="/">返回到首页</a></p>
-<br>
-<font color=#66ccff>作者：？、アイドル宣言</font>
-</center>
-<h1 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h1>
-<font face="宋体">
-<p>本文章是为了让各位更好的学习 QEMU 命令。<br />
-<font color=red>这里只学习 qemu-system，没有 qemu-user 的内容。</font></p>
-<h2 id="qemu-是什么"><a class="markdownIt-Anchor" href="#qemu-是什么"></a> QEMU 是什么</h2>
-<p>QEMU是一套由<font color=green>法布里斯·贝拉(Fabrice Bellard)</font>所编写的以GPL许可证分发源码的模拟处理器软件，在<font color=green>GNU/Linux</font>平台上使用广泛。<font color=green>Bochs，PearPC</font>等与其类似，但不具备其许多特性，比如高速度及跨平台的特性，通过KVM，QEMU能虚拟化至真实电脑的速度。</p>
-<h2 id="qemu-有什么用"><a class="markdownIt-Anchor" href="#qemu-有什么用"></a> QEMU 有什么用？</h2>
-<p>简单来说就是能跨平台高速模拟各种系统。不恰当的比喻：就是能在手机上运行 Windows 系统，而且速度很快。</p>
-<h1 id="开始学习"><a class="markdownIt-Anchor" href="#开始学习"></a> 开始学习</h1>
-<h2 id="安装-qemu"><a class="markdownIt-Anchor" href="#安装-qemu"></a> 安装 QEMU</h2>
-<h3 id="编译安装"><a class="markdownIt-Anchor" href="#编译安装"></a> 编译安装</h3>
-<blockquote>
-<p>安装依赖</p>
-</blockquote>
-<p>QEMU 可以通过编译的方式安装。<br />
-需要先根据你系统的情况，安装 QEMU 必需的依赖(一般是这些)：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git libglib2.0-dev libfdt-dev libpixman-1-dev zlib1g-dev libsdl1.2-dev libsnappy-dev liblzo2-dev zlib1g-dbg automake gcc python wget &amp;&amp; apt-get install build-essential</span><br></pre></td></tr></table></figure>
-<p><a href="https://git-scm.com">Git</a> <a href="https://github.com/GNOME/glib">Glib</a> <a href="https://baike.baidu.com/item/FDT/1691090?fr=aladdin">fdt</a> <a href="http://www.pixman.org">pixman</a> <a href="http://www.zlib.net">zlib</a> <a href="http://www.libsdl.org">libsdl</a> <a href="https://github.com/google/snappy">snappy</a> <a href="https://launchpad.net/ubuntu/+source/lzo2/">lzo2</a> <a href="https://www.solvusoft.com/zh-cn/file-extensions/software/gnu-operating-system/automake/">automake</a> <a href="https://www.gnu.org/software/gcc/">gcc</a> <a href="https://www.python.org">python</a><br />
-安装完成后，需要下载 QEMU 的源码包或者是克隆。</p>
-<blockquote>
-<p>克隆 QEMU</p>
-</blockquote>
-<p>请输入以下命令<font color=green>(北京外国语大学开源软件镜像站)</font>：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://mirrors.bfsu.edu.cn/git/qemu.git</span><br></pre></td></tr></table></figure>
-<p>然后你应该会在主目录看到一个叫“qemu”的文件夹，这就是最新的源码包。</p>
-<blockquote>
-<p>下载 QEMU 源码<font color=green>(tar.xz)</font>：</p>
-</blockquote>
-<p>在此网站下载源码包：<br />
-<a href="https://download.qemu.org">https://download.qemu.org</a><br />
-然后通过 tar 命令解压：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">tar -xvf ./qemu-7.1.0-rc3.tar.xz</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>开始编译</p>
-</blockquote>
-<p>如果你前面的操作完成了的话，就可以开始编译了。<br />
-首先我们要 cd 到目录</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/qemu-7.1.0-rc3</span><br></pre></td></tr></table></figure>
-<p>然后开始配置编译内容，输入 ./configure 即可。但是这样的话没用的东西会很多，所以我们在 configure 里面加参数。参数可以查阅 <font color=green>./configure --help</font>。比如我们只需要编译一个架构而不是全局编译，那么我们输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">./configure --target-list=x86_64-softmmu</span><br></pre></td></tr></table></figure>
-<p>其中，<font color=green>x86_64-softmmu</font> 是你要编译的架构。<br />
-那我们想编译多个架构怎么办呢？<br />
-只需要在架构后加上其他架构即可，用小写的逗号分隔。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">./configure --target-list=x86_64-softmmu,aarch64-softmmu,ppc-softmmu</span><br></pre></td></tr></table></figure>
-<p>还有其他的编译选项。这里就不说了。<br />
-等待配置完成后，就可以开始编译 qemu 了。<br />
-输入 make 可以开始，也可以加参数。比如我要是想开 8 核编译那么输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">make -j8</span><br></pre></td></tr></table></figure>
-<p>具体几核看你设备的 CPU 核心数。不加参数只会开一核编译，速度很慢。</p>
-<blockquote>
-<p>编译后安装</p>
-</blockquote>
-<p>编译完成后，你直接运行 qemu 是没有反应的，提示命令不存在。我们需要再安装一下 qemu 才能使用。<br />
-输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">make install</span><br></pre></td></tr></table></figure>
-<p>就安装完成了。</p>
-<h3 id="brew-安装-qemu"><a class="markdownIt-Anchor" href="#brew-安装-qemu"></a> brew 安装 QEMU</h3>
-<p>Mac 电脑不需要必须通过编译安装，也可以通过软件包管理器安装 QEMU。<br />
-首先给你的 Mac 电脑安装 <font color=green>HomeBrew</font>。这里推荐使用国内安装脚本：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/bin/zsh -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure>
-<p>跟着安装脚本走。安装完成 Homebrew 之后，输入以下命令安装 QEMU：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew install qemu</span><br></pre></td></tr></table></figure>
-<p>等待安装完成即可享用 QEMU。<br />
-<img src="https://img.gejiba.com/images/2c362227e66bba6a2db161e2bc5c8052.png" alt="" /></p>
-<h3 id="apt-安装-qemu"><a class="markdownIt-Anchor" href="#apt-安装-qemu"></a> APT 安装 QEMU</h3>
-<p><font color=green>apt</font> 是 <font color=green>Debian GNU/Linux</font> 以及基于 Debian 的其他发行版中默认的软件包管理器。我们使用它安装 QEMU。同样也不用必须编译安装。<br />
-输入以下命令，安装 qemu 的命令行。以 x86_64/i386 架构为例，输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install qemu-system-x86</span><br></pre></td></tr></table></figure>
-<p>等待安装完成即可。<br />
-如果你的 Linux 系统有图形界面，那么可以直接安装 <font color=green>qemu 的图形前端</font>。输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt install aqemu</span><br></pre></td></tr></table></figure>
-<p>安装完成后，可以在程序菜单里看到 aqemu，直接运行即可。</p>
-<h2 id="qemu-的使用"><a class="markdownIt-Anchor" href="#qemu-的使用"></a> QEMU 的使用</h2>
-<h3 id="运行-qemu"><a class="markdownIt-Anchor" href="#运行-qemu"></a> 运行 QEMU</h3>
-<p>我们按照上面的步骤安装完成 QEMU 之后，可以查看一下安装完 QEMU 的版本，输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">qemu-system-&lt;架构&gt; --version</span><br></pre></td></tr></table></figure>
-<p><img src="https://img.gejiba.com/images/7085de537a84b3fd450482148b6b8d2c.png" alt="" /><br />
-可以看到 QEMU 已经正确安装，我们现在就可以试试水，看看如何启动。</p>
-<blockquote>
-<p>熟悉命令</p>
-</blockquote>
-<p>QEMU 基本命令如下(x86_64)：</p>
-<pre><code>-accel 加速类型，一般为(kvm,hax,hvf,tcg)
--machine 机器类型，一般为pc和q35。具体可查看help
--net nic,model=&lt;网卡名称&gt; 设置虚拟机网卡。
--net user 设置虚拟机网络模式，有user和tap可选。
--hda,-hdb,-hdc,-hdd 磁盘位，放入磁盘镜像。
--m 256 设置的内存(RAM)，单位是MB。1GB=1024MB
--vga vmware 设置的显示卡
--device 添加各种硬件设备。
--soundhw sb16 启用声音支持。
--cdrom 光盘位，放入 ISO 镜像。
--fda,-fdb 软盘位，放入磁盘镜像。
--cpu 设置虚拟的 CPU
--smp &lt;核心数&gt; 设置虚拟cpu核心数。默认单核
--vnc :&lt;端口号&gt; 开启后使用 VNC Viewer 连接。
--pflash &lt;固件&gt; 并行闪存镜像，一般用于 EFI 启动。
--nographic 无图形启动，一般用于 Linux。
--win2k-hack （i386）在安装 Windows 2000 时使用它以避免磁盘已满错误，但会降低磁盘性能，安装完成后可以删掉该命令。
--usb 启用 USB 控制器，其他 USB 设置需要使用 -device 命令。
--sdl 开启后使用 XSDL Server 连接。 
--k &lt;language&gt; 键盘的语言，一般是为了适配不同语种的键盘。一般不用填。
--boot c 引导顺序，c是硬盘、n是网络、d是光盘、s是软盘。
--name 虚拟机名称，如果你是 VNC 连接，该名称将显示到你 VNC 远程桌面信息。
-</code></pre>
-<p>这些命令组合起来可以运行虚拟机。</p>
-<blockquote>
-<p>一个实例</p>
-</blockquote>
-<p>下面是包含了上面的部分命令的<font color=green>一个实例</font>，不知道你能不能看懂。</p>
-<font color=red>
-qemu-system-x86_64 -hda /home/steve372/win10.qcow2 -cdrom /home/steve372/win10.iso -m 768 -machine q35 -accel kvm -smp 2 -vga std -soundhw ac97 -usb -device usb-tablet -boot d -pflash /home/steve372/QEMU_EFI.fd -net nic,model=rtl8139 -net user -vnc :0 -name "Windows 10"
-</font>
-<p>如果不能看懂，可以看下面的<font color=green>“命令详解“</font>。来更加了解这些命令。</p>
-<h3 id="命令详解"><a class="markdownIt-Anchor" href="#命令详解"></a> 命令详解</h3>
-<h4 id="-accel-命令"><a class="markdownIt-Anchor" href="#-accel-命令"></a> -accel 命令</h4>
-<p>-accel 命令可以为<font color=green>虚拟机提供加速</font>，有以下加速类型：<strong>kvm,hax,hvf,tcg</strong>。当然，这些命令要运行起来都有一定的要求，如下：</p>
-<pre><code>kvm 只能在 Linux 环境运行，并且需要内核支持（手机可以洗洗睡了）
-hvf 只能在 macOS 环境运行。
-hax 只能在 Windows 或 macOS 环境运行，似乎不太稳定。
-tcg 通用。手机只能用 tcg 了
-</code></pre>
-<p>请根据你自己的系统进行搭配。<br />
-这些加速类型之中，<strong>kvm是最快的，hvf和hax差不多，最后是tcg。</strong><br />
-稳定性中，<strong>kvm、hvf、tcg都挺稳定的，hax一般。</strong></p>
-<h4 id="-machine-命令"><a class="markdownIt-Anchor" href="#-machine-命令"></a> -machine 命令</h4>
-<p>-machine 命令可以设置机器类型。有以下机器类型：</p>
-<div class='spoiler collapsed'>
-    <div class='spoiler-title'>
-        机器类型列表
-    </div>
-    <div class='spoiler-content'>
-        <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">microvm              microvm (i386)</span><br><span class="line">pc                   Standard PC (i440FX + PIIX, 1996) (alias of pc-i440fx-7.0)</span><br><span class="line">pc-i440fx-7.0        Standard PC (i440FX + PIIX, 1996) (default)</span><br><span class="line">pc-i440fx-6.2        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-6.1        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-6.0        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-5.2        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-5.1        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-5.0        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-4.2        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-4.1        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-4.0        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-3.1        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-3.0        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.9        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.8        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.7        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.6        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.5        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.4        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.3        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.2        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.12       Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.11       Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.10       Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.1        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.0        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-1.7        Standard PC (i440FX + PIIX, 1996) (deprecated)</span><br><span class="line">pc-i440fx-1.6        Standard PC (i440FX + PIIX, 1996) (deprecated)</span><br><span class="line">pc-i440fx-1.5        Standard PC (i440FX + PIIX, 1996) (deprecated)</span><br><span class="line">pc-i440fx-1.4        Standard PC (i440FX + PIIX, 1996) (deprecated)</span><br><span class="line">q35                  Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-7.0)</span><br><span class="line">pc-q35-7.0           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-6.2           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-6.1           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-6.0           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-5.2           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-5.1           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-5.0           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-4.2           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-4.1           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-4.0.1         Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-4.0           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-3.1           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-3.0           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.9           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.8           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.7           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.6           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.5           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.4           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.12          Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.11          Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.10          Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">isapc                ISA-only PC</span><br><span class="line">none                 empty machine</span><br></pre></td></tr></table></figure>
-    </div>
-</div>
-<p>一般来说，我们最常用的就是 pc 和 q35。如果你使用的是别人的镜像，<font color=#66ccff>那么务必跟随镜像主的安排。</font></p>
-<h4 id="-net-命令"><a class="markdownIt-Anchor" href="#-net-命令"></a> -net 命令</h4>
-<p>QEMU 的 -net 命令是提供跟网络相关的功能，这里只介绍最基本的两种方式。<br />
--net 的用法是：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-net user -net nic,model=&lt;网卡名称&gt;</span><br></pre></td></tr></table></figure>
-<p>首先，前面的 -net 有五种选择：user, tap, bridge, vde, socket<br />
-如果你没有特殊需求，<font color=green>直接使用 User 网络即可。</font><br />
-然后，后面的 -net 是选择虚拟的网卡。QEMU 这里有以下网卡可选：</p>
-<div class='spoiler collapsed'>
-    <div class='spoiler-title'>
-        虚拟网卡类型列表
-    </div>
-    <div class='spoiler-content'>
-        <figure class="highlight plaintext"><figcaption><span>NIC list</span></figcaption><table><tr><td class="code"><pre><span class="line">e1000</span><br><span class="line">e1000-82544gc</span><br><span class="line">e1000-82545em</span><br><span class="line">e1000e</span><br><span class="line">i82550</span><br><span class="line">i82551</span><br><span class="line">i82557a</span><br><span class="line">i82557b</span><br><span class="line">i82557c</span><br><span class="line">i82558a</span><br><span class="line">i82558b</span><br><span class="line">i82559a</span><br><span class="line">i82559b</span><br><span class="line">i82559c</span><br><span class="line">i82559er</span><br><span class="line">i82562</span><br><span class="line">i82801</span><br><span class="line">ne2k_pci</span><br><span class="line">pcnet</span><br><span class="line">rtl8139</span><br><span class="line">tulip</span><br><span class="line">virtio-net-pci</span><br><span class="line">virtio-net-pci-non-transitional</span><br><span class="line">virtio-net-pci-transitional</span><br><span class="line">vmxnet3</span><br></pre></td></tr></table></figure>
-    </div>
-</div>
-<p>我们常用的是 <strong>e1000,ne2k_pci,rtl8139,virtio</strong> 网卡。<br />
-<font color=#66ccff>还是要看镜像主的安排。</font>比如你的镜像支持 rtl8139 网卡，那么输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-net user -net nic,model=rtl8139</span><br></pre></td></tr></table></figure>
-<p>就可以了。</p>
-<h4 id="-hda-命令"><a class="markdownIt-Anchor" href="#-hda-命令"></a> -hda 命令</h4>
-<p>-hda,-hdb,-hdc,-hdd 是磁盘镜像位，需将下载到的镜像放到这里。用法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-hda &lt;文件路径&gt;</span><br></pre></td></tr></table></figure>
-<p>其中，文件支持所有可用的镜像文件。<br />
-<font color=red>不推荐使用 -hdc 参数，可能会出问题。</font><br />
-<font color=green>如果需要使用 virtio 磁盘，那么需要使用 -drive 命令。</font></p>
-<h4 id="-m-命令"><a class="markdownIt-Anchor" href="#-m-命令"></a> -m 命令</h4>
-<p>-m 命令是设置你虚拟机的内存用的。<font color=green>M 是 Memory(内存) 的首字母。</font>用法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-m &lt;数字&gt;</span><br></pre></td></tr></table></figure>
-<p>数字单位是 MB。1 GB=1024 MB、3 GB=3072 MB</p>
-<h4 id="-vga-命令"><a class="markdownIt-Anchor" href="#-vga-命令"></a> -vga 命令</h4>
-<p>-vga 命令可以<font color=green>模拟虚拟机的显卡</font>，用法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-vga &lt;显卡名称&gt;</span><br></pre></td></tr></table></figure>
-<p>目前支持的显卡有：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">std                  standard VGA (default)</span><br><span class="line">cirrus               Cirrus VGA</span><br><span class="line">vmware               VMWare SVGA</span><br><span class="line">xenfb                Xen paravirtualized framebuffer</span><br><span class="line">virtio               Virtio VGA</span><br><span class="line">QXL</span><br></pre></td></tr></table></figure>
-<p>如果你模拟的是 Windows 的话，那么可能需要<font color=red>根据你的 Windows 系统选择显卡。</font>如下：</p>
-<pre><code>Windows 3.1     需要手动安装 cirrus 驱动。
-Windows 95      cirrus
-Windows 98      cirrus
-Windows 2000    cirrus
-Windows XP      std / VMware
-Windows Vista   std / VMware
-Windows 7       std / VMware
-Windows 8       std / VMware
-Windows 8.1     std / VMware
-Windows 10      std / VMware
-Windows 11      std / VMware
-</code></pre>
-<p>Linux 应该可以选择 <font color=green>virtio</font> 显卡。</p>
-<h4 id="-device-命令"><a class="markdownIt-Anchor" href="#-device-命令"></a> -device 命令</h4>
-<p>-device 命令是 QEMU 处理硬件的一个媒介，他也可以取代部分命令。比如<font color=green> -soundhw 和 -usbdevice</font>。如果需要将 VNC 和鼠标对齐的话，输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-usb // 启用 USB 控制器</span><br><span class="line">-device usb-tablet // 添加虚拟的 USB 触控板 </span><br></pre></td></tr></table></figure>
-<p>就可以了。更深层次的 USB 命令到后面会讲。</p>
-<h4 id="-soundhw-命令"><a class="markdownIt-Anchor" href="#-soundhw-命令"></a> -soundhw 命令</h4>
-<p>-soundhw 命令是启用声音支持，直白了说就是能让虚拟机出声音。用法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-soundhw &lt;声卡名称&gt;</span><br></pre></td></tr></table></figure>
-<p>我们只需要<font color=green>填入声卡名称</font>就可以了，声卡名如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ac97        Intel 82801AA AC97 Audio</span><br><span class="line">adlib       雅马哈 YM3812 (OPL2)</span><br><span class="line">cs4231a     CS4231A</span><br><span class="line">es1370      ENSONIQ AudioPCI ES1370</span><br><span class="line">gus         Gravis Ultrasound GF1</span><br><span class="line">hda         Intel HD Audio</span><br><span class="line">pcspk       PC speaker</span><br><span class="line">sb16        创新科技声霸卡 16</span><br></pre></td></tr></table></figure>
-<p>我们常用的是 sb16 和 ac97 还有 hda。</p>
-<h4 id="-cdrom-命令"><a class="markdownIt-Anchor" href="#-cdrom-命令"></a> -cdrom 命令</h4>
-<p>该命令是光驱位，放入光盘镜像（*.ISO）用法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-cdrom &lt;文件路径&gt;</span><br></pre></td></tr></table></figure>
-<p>直接将光盘文件路径写下即可。<br />
-<font color=red>光盘是有code显示的，可以通过这个代码定位问题。</font><br />
-<img src="https://img.gejiba.com/images/b4599dcccf66d9f30b7020f4932a617e.png" alt="" /><br />
-<img src="https://img.gejiba.com/images/25ba59fbd94a92295fcb09e2981cc2bb.png" alt="" /></p>
-<h4 id="-cpu-命令"><a class="markdownIt-Anchor" href="#-cpu-命令"></a> -cpu 命令</h4>
-<p>模拟你要模拟的 CPU，可选 CPU 有：</p>
-<div class='spoiler collapsed'>
-    <div class='spoiler-title'>
-        CPU 列表
-    </div>
-    <div class='spoiler-content'>
-        <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x86 486                   (alias configured by machine type)</span><br><span class="line">x86 486-v1                </span><br><span class="line">x86 Broadwell             (alias configured by machine type)</span><br><span class="line">x86 Broadwell-IBRS        (alias of Broadwell-v3)</span><br><span class="line">x86 Broadwell-noTSX       (alias of Broadwell-v2)</span><br><span class="line">x86 Broadwell-noTSX-IBRS  (alias of Broadwell-v4)</span><br><span class="line">x86 Broadwell-v1          Intel Core Processor (Broadwell)</span><br><span class="line">x86 Broadwell-v2          Intel Core Processor (Broadwell, no TSX)</span><br><span class="line">x86 Broadwell-v3          Intel Core Processor (Broadwell, IBRS)</span><br><span class="line">x86 Broadwell-v4          Intel Core Processor (Broadwell, no TSX, IBRS)</span><br><span class="line">x86 Cascadelake-Server    (alias configured by machine type)</span><br><span class="line">x86 Cascadelake-Server-noTSX  (alias of Cascadelake-Server-v3)</span><br><span class="line">x86 Cascadelake-Server-v1  Intel Xeon Processor (Cascadelake)</span><br><span class="line">x86 Cascadelake-Server-v2  Intel Xeon Processor (Cascadelake) [ARCH_CAPABILITIES]</span><br><span class="line">x86 Cascadelake-Server-v3  Intel Xeon Processor (Cascadelake) [ARCH_CAPABILITIES, no TSX]</span><br><span class="line">x86 Cascadelake-Server-v4  Intel Xeon Processor (Cascadelake) [ARCH_CAPABILITIES, no TSX]</span><br><span class="line">x86 Cascadelake-Server-v5  Intel Xeon Processor (Cascadelake) [ARCH_CAPABILITIES, EPT switching, XSAVES, no TSX]</span><br><span class="line">x86 Conroe                (alias configured by machine type)</span><br><span class="line">x86 Conroe-v1             Intel Celeron_4x0 (Conroe/Merom Class Core 2)</span><br><span class="line">x86 Cooperlake            (alias configured by machine type)</span><br><span class="line">x86 Cooperlake-v1         Intel Xeon Processor (Cooperlake)</span><br><span class="line">x86 Cooperlake-v2         Intel Xeon Processor (Cooperlake) [XSAVES]</span><br><span class="line">x86 Denverton             (alias configured by machine type)</span><br><span class="line">x86 Denverton-v1          Intel Atom Processor (Denverton)</span><br><span class="line">x86 Denverton-v2          Intel Atom Processor (Denverton) [no MPX, no MONITOR]</span><br><span class="line">x86 Denverton-v3          Intel Atom Processor (Denverton) [XSAVES, no MPX, no MONITOR]</span><br><span class="line">x86 Dhyana                (alias configured by machine type)</span><br><span class="line">x86 Dhyana-v1             Hygon Dhyana Processor</span><br><span class="line">x86 Dhyana-v2             Hygon Dhyana Processor [XSAVES]</span><br><span class="line">x86 EPYC                  (alias configured by machine type)</span><br><span class="line">x86 EPYC-IBPB             (alias of EPYC-v2)</span><br><span class="line">x86 EPYC-Milan            (alias configured by machine type)</span><br><span class="line">x86 EPYC-Milan-v1         AMD EPYC-Milan Processor</span><br><span class="line">x86 EPYC-Rome             (alias configured by machine type)</span><br><span class="line">x86 EPYC-Rome-v1          AMD EPYC-Rome Processor</span><br><span class="line">x86 EPYC-Rome-v2          AMD EPYC-Rome Processor</span><br><span class="line">x86 EPYC-v1               AMD EPYC Processor</span><br><span class="line">x86 EPYC-v2               AMD EPYC Processor (with IBPB)</span><br><span class="line">x86 EPYC-v3               AMD EPYC Processor</span><br><span class="line">x86 Haswell               (alias configured by machine type)</span><br><span class="line">x86 Haswell-IBRS          (alias of Haswell-v3)</span><br><span class="line">x86 Haswell-noTSX         (alias of Haswell-v2)</span><br><span class="line">x86 Haswell-noTSX-IBRS    (alias of Haswell-v4)</span><br><span class="line">x86 Haswell-v1            Intel Core Processor (Haswell)</span><br><span class="line">x86 Haswell-v2            Intel Core Processor (Haswell, no TSX)</span><br><span class="line">x86 Haswell-v3            Intel Core Processor (Haswell, IBRS)</span><br><span class="line">x86 Haswell-v4            Intel Core Processor (Haswell, no TSX, IBRS)</span><br><span class="line">x86 Icelake-Client        (alias configured by machine type)</span><br><span class="line">x86 Icelake-Client-noTSX  (alias of Icelake-Client-v2)</span><br><span class="line">x86 Icelake-Client-v1     Intel Core Processor (Icelake) [deprecated]</span><br><span class="line">x86 Icelake-Client-v2     Intel Core Processor (Icelake) [no TSX, deprecated]</span><br><span class="line">x86 Icelake-Client-v3     Intel Core Processor (Icelake) [no TSX, XSAVES, deprecated]</span><br><span class="line">x86 Icelake-Server        (alias configured by machine type)</span><br><span class="line">x86 Icelake-Server-noTSX  (alias of Icelake-Server-v2)</span><br><span class="line">x86 Icelake-Server-v1     Intel Xeon Processor (Icelake)</span><br><span class="line">x86 Icelake-Server-v2     Intel Xeon Processor (Icelake) [no TSX]</span><br><span class="line">x86 Icelake-Server-v3     Intel Xeon Processor (Icelake)</span><br><span class="line">x86 Icelake-Server-v4     Intel Xeon Processor (Icelake)</span><br><span class="line">x86 Icelake-Server-v5     Intel Xeon Processor (Icelake) [XSAVES]</span><br><span class="line">x86 Icelake-Server-v6     Intel Xeon Processor (Icelake) [5-level EPT]</span><br><span class="line">x86 IvyBridge             (alias configured by machine type)</span><br><span class="line">x86 IvyBridge-IBRS        (alias of IvyBridge-v2)</span><br><span class="line">x86 IvyBridge-v1          Intel Xeon E3-12xx v2 (Ivy Bridge)</span><br><span class="line">x86 IvyBridge-v2          Intel Xeon E3-12xx v2 (Ivy Bridge, IBRS)</span><br><span class="line">x86 KnightsMill           (alias configured by machine type)</span><br><span class="line">x86 KnightsMill-v1        Intel Xeon Phi Processor (Knights Mill)</span><br><span class="line">x86 Nehalem               (alias configured by machine type)</span><br><span class="line">x86 Nehalem-IBRS          (alias of Nehalem-v2)</span><br><span class="line">x86 Nehalem-v1            Intel Core i7 9xx (Nehalem Class Core i7)</span><br><span class="line">x86 Nehalem-v2            Intel Core i7 9xx (Nehalem Core i7, IBRS update)</span><br><span class="line">x86 Opteron_G1            (alias configured by machine type)</span><br><span class="line">x86 Opteron_G1-v1         AMD Opteron 240 (Gen 1 Class Opteron)</span><br><span class="line">x86 Opteron_G2            (alias configured by machine type)</span><br><span class="line">x86 Opteron_G2-v1         AMD Opteron 22xx (Gen 2 Class Opteron)</span><br><span class="line">x86 Opteron_G3            (alias configured by machine type)</span><br><span class="line">x86 Opteron_G3-v1         AMD Opteron 23xx (Gen 3 Class Opteron)</span><br><span class="line">x86 Opteron_G4            (alias configured by machine type)</span><br><span class="line">x86 Opteron_G4-v1         AMD Opteron 62xx class CPU</span><br><span class="line">x86 Opteron_G5            (alias configured by machine type)</span><br><span class="line">x86 Opteron_G5-v1         AMD Opteron 63xx class CPU</span><br><span class="line">x86 Penryn                (alias configured by machine type)</span><br><span class="line">x86 Penryn-v1             Intel Core 2 Duo P9xxx (Penryn Class Core 2)</span><br><span class="line">x86 SandyBridge           (alias configured by machine type)</span><br><span class="line">x86 SandyBridge-IBRS      (alias of SandyBridge-v2)</span><br><span class="line">x86 SandyBridge-v1        Intel Xeon E312xx (Sandy Bridge)</span><br><span class="line">x86 SandyBridge-v2        Intel Xeon E312xx (Sandy Bridge, IBRS update)</span><br><span class="line">x86 Skylake-Client        (alias configured by machine type)</span><br><span class="line">x86 Skylake-Client-IBRS   (alias of Skylake-Client-v2)</span><br><span class="line">x86 Skylake-Client-noTSX-IBRS  (alias of Skylake-Client-v3)</span><br><span class="line">x86 Skylake-Client-v1     Intel Core Processor (Skylake)</span><br><span class="line">x86 Skylake-Client-v2     Intel Core Processor (Skylake, IBRS)</span><br><span class="line">x86 Skylake-Client-v3     Intel Core Processor (Skylake, IBRS, no TSX)</span><br><span class="line">x86 Skylake-Client-v4     Intel Core Processor (Skylake, IBRS, no TSX) [IBRS, XSAVES, no TSX]</span><br><span class="line">x86 Skylake-Server        (alias configured by machine type)</span><br><span class="line">x86 Skylake-Server-IBRS   (alias of Skylake-Server-v2)</span><br><span class="line">x86 Skylake-Server-noTSX-IBRS  (alias of Skylake-Server-v3)</span><br><span class="line">x86 Skylake-Server-v1     Intel Xeon Processor (Skylake)</span><br><span class="line">x86 Skylake-Server-v2     Intel Xeon Processor (Skylake, IBRS)</span><br><span class="line">x86 Skylake-Server-v3     Intel Xeon Processor (Skylake, IBRS, no TSX)</span><br><span class="line">x86 Skylake-Server-v4     Intel Xeon Processor (Skylake, IBRS, no TSX)</span><br><span class="line">x86 Skylake-Server-v5     Intel Xeon Processor (Skylake, IBRS, no TSX) [IBRS, XSAVES, EPT switching, no TSX]</span><br><span class="line">x86 Snowridge             (alias configured by machine type)</span><br><span class="line">x86 Snowridge-v1          Intel Atom Processor (SnowRidge)</span><br><span class="line">x86 Snowridge-v2          Intel Atom Processor (Snowridge, no MPX)</span><br><span class="line">x86 Snowridge-v3          Intel Atom Processor (Snowridge, no MPX) [XSAVES, no MPX]</span><br><span class="line">x86 Snowridge-v4          Intel Atom Processor (Snowridge, no MPX) [no split lock detect, no core-capability]</span><br><span class="line">x86 Westmere              (alias configured by machine type)</span><br><span class="line">x86 Westmere-IBRS         (alias of Westmere-v2)</span><br><span class="line">x86 Westmere-v1           Westmere E56xx/L56xx/X56xx (Nehalem-C)</span><br><span class="line">x86 Westmere-v2           Westmere E56xx/L56xx/X56xx (IBRS update)</span><br><span class="line">x86 athlon                (alias configured by machine type)</span><br><span class="line">x86 athlon-v1             QEMU Virtual CPU version 2.5+</span><br><span class="line">x86 core2duo              (alias configured by machine type)</span><br><span class="line">x86 core2duo-v1           Intel(R) Core(TM)2 Duo CPU     T7700  @ 2.40GHz</span><br><span class="line">x86 coreduo               (alias configured by machine type)</span><br><span class="line">x86 coreduo-v1            Genuine Intel(R) CPU           T2600  @ 2.16GHz</span><br><span class="line">x86 kvm32                 (alias configured by machine type)</span><br><span class="line">x86 kvm32-v1              Common 32-bit KVM processor</span><br><span class="line">x86 kvm64                 (alias configured by machine type)</span><br><span class="line">x86 kvm64-v1              Common KVM processor</span><br><span class="line">x86 n270                  (alias configured by machine type)</span><br><span class="line">x86 n270-v1               Intel(R) Atom(TM) CPU N270   @ 1.60GHz</span><br><span class="line">x86 pentium               (alias configured by machine type)</span><br><span class="line">x86 pentium-v1            </span><br><span class="line">x86 pentium2              (alias configured by machine type)</span><br><span class="line">x86 pentium2-v1           </span><br><span class="line">x86 pentium3              (alias configured by machine type)</span><br><span class="line">x86 pentium3-v1           </span><br><span class="line">x86 phenom                (alias configured by machine type)</span><br><span class="line">x86 phenom-v1             AMD Phenom(tm) 9550 Quad-Core Processor</span><br><span class="line">x86 qemu32                (alias configured by machine type)</span><br><span class="line">x86 qemu32-v1             QEMU Virtual CPU version 2.5+</span><br><span class="line">x86 qemu64                (alias configured by machine type)</span><br><span class="line">x86 qemu64-v1             QEMU Virtual CPU version 2.5+</span><br><span class="line">x86 base                  base CPU model type with no features enabled</span><br><span class="line">x86 max                   Enables all features supported by the accelerator in the current host</span><br></pre></td></tr></table></figure>
-    </div>
-</div>
-<p>具体根据自己需求选择。</p>
-<h4 id="-smp-命令"><a class="markdownIt-Anchor" href="#-smp-命令"></a> -smp 命令</h4>
-<p>该命令可以指定虚拟 CPU 的数量，核心数，线程数等。用法：<br />
-<font color=red><br />
-只指定 CPU 数量：<br />
-</font></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-smp 2</span><br></pre></td></tr></table></figure>
-<p>即代表 QEMU 会模拟两个 CPU 出来（不是核心）。<br />
-当然，你也可以加参数，命令如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-smp cores=2,threads=4,sockets=1</span><br></pre></td></tr></table></figure>
-<p>这条命令的意思是：<font color=green>一个 CPU 插槽，双核四线程。</font></p>
-<h4 id="-vnc-命令"><a class="markdownIt-Anchor" href="#-vnc-命令"></a> -vnc 命令</h4>
-<p>这条命令可以让你的虚拟机通过 VNC Viewer 连接。用法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-vnc :&lt;端口号&gt;</span><br></pre></td></tr></table></figure>
-<p>输入后直接使用 VNC Viewer 连接。如果 -vnc :0 那么在 VNC Viewer 的连接中就设置为 &lt;ip地址&gt;:0。如果你是手机开的模拟器，输入<font color=green> 127.0.0.1:0 </font></p>
-<h4 id="-pflash-命令"><a class="markdownIt-Anchor" href="#-pflash-命令"></a> -pflash 命令</h4>
-<p>一般用于 EFI 引导启动，用法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-pflash &lt;EFI 固件&gt;</span><br></pre></td></tr></table></figure>
-<p>需要你有 EFI 固件，一般是 fd 格式。</p>
-<h3 id="其他-qemu-模拟器的操作"><a class="markdownIt-Anchor" href="#其他-qemu-模拟器的操作"></a> 其他 QEMU 模拟器的操作</h3>
-<h4 id="连接-usb-设备"><a class="markdownIt-Anchor" href="#连接-usb-设备"></a> 连接 USB 设备</h4>
-<p><font color=green>可以通过 -device 命令将 U 盘连接到模拟器</font>。<br />
-如果要连接 <font color=green>USB 设备到 QEMU</font>，那么需要先查询 USB 设备的位置。我们输入：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">lsusb -t</span><br></pre></td></tr></table></figure>
-<p>来查询 USB 设备的位置。看他的输出：<br />
-<img src="https://img.gejiba.com/images/ab3efd6bffb37db1375536c2a68b8af8.png" alt="" /><br />
-找到你要连接的 USB 的位置。我这里以<font color=green> 我的 U 盘(Disk 2.0)</font> 为例子。<br />
-输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-device usb-ehci,<span class="built_in">id</span>=ehci</span><br><span class="line">-device usb-host,bus=ehci.0,hostbus=20,hostport=1</span><br></pre></td></tr></table></figure>
-<p>其中，第一行的命令是指定虚拟的 USB 版本，我这里是 2.0。如果要虚拟 USB 3.0，请输入 <font color=green>xhci</font>。<br />
-第二行的命令是<font color=green>定位 USB 设备的位置</font>，我的设备在 Bus 020，Port 1 的位置上，所以输入的bus=20 port=1。而 port 的位置就是<font color=green>指树根下的位置</font>。我是树根下的第 1 个位置，所以填 1。一定要根据自己实际情况填写。</p>
-<h4 id="efi-固件的使用"><a class="markdownIt-Anchor" href="#efi-固件的使用"></a> EFI 固件的使用</h4>
-<p>QEMU 是可以使用 UEFI 启动的，需要 EFI 固件。<br />
-<font color=red>启动命令请查看 -pflash 命令。</font><br />
-这里提供下载：<br />
-<a href="/download/QEMU_EFI.fd">下载 QEMU_EFI.fd</a></p>
-<h4 id="无界面引导"><a class="markdownIt-Anchor" href="#无界面引导"></a> 无界面引导</h4>
-<p>有时候我们在模拟虚拟系统的时候需要直接将终端变成 QEMU 的控制台，那么我们加上 -nographic 命令即可。</p>
-<h2 id="qemu-镜像下载"><a class="markdownIt-Anchor" href="#qemu-镜像下载"></a> QEMU 镜像下载</h2>
-<p><a href="/images/">点击进入下载站</a></p>
-</font><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>Reimu 主题去除东方 PROJECT 元素</title>
-    <url>/20230817/154130/</url>
-    <content><![CDATA[<p>如果你安装了 Reimu 主题后又不想要东方的元素了，可以看看这篇文章。</p>
-<h1 id="目录"><a class="markdownIt-Anchor" href="#目录"></a> 目录</h1>
-<p><a href="/20230817/154130/#%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E4%BF%AE%E6%94%B9">  <strong>1. 背景图片修改</strong></a><br />
-<a href="/20230817/154130/#%E5%A4%B4%E5%9B%BE%E4%BF%AE%E6%94%B9">      ———— 1.1 头图修改</a><br />
-<a href="/20230817/154130/#%E7%BB%99%E5%8D%95%E7%8B%AC%E7%9A%84%E6%96%87%E7%AB%A0%E9%85%8D%E5%9B%BE">      ———— 1.2 给单独的文章配图</a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%A4%AA%E6%9E%81%E5%9B%BE%E5%9B%BE%E6%A0%87">  <strong>2. 更改太极图图标 (重点)</strong></a><br />
-<a href="/20230817/154130/#%E8%BE%B9%E6%A0%8F%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.1 边栏图标更改</a><br />
-<a href="/20230817/154130/#%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.2 加载界面图标更改</a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E6%96%87%E5%AD%97">  <strong>3. 更改文字</strong></a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2_%E5%B0%91%E5%A5%B3%E7%A5%88%E7%A5%B7%E4%B8%AD">      ———— 3.1 更改加载界面 “少女祈祷中”</a><br />
-<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9_404_%E7%95%8C%E9%9D%A2">      ———— 3.2 更改 “404” 界面</a></p>
-<h1 id="背景图片修改"><a class="markdownIt-Anchor" href="#背景图片修改"></a> 背景图片修改</h1>
-<h2 id="头图修改"><a class="markdownIt-Anchor" href="#头图修改"></a> 头图修改</h2>
-<p>头图的位置在</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
-<p>您找到合适的图片之后直接更换即可。<br />
-如果您的网站速度很慢，不适合在本地存放头图，您可以更改主题目录的 _config.yml 中的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;/images/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
-<p>部分，将内容更改为：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;https://xxx.url.org/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
-<p><img src="https://img.gejiba.com/images/3b7b1a3e290b1db6151d0961726ce8eb.png" alt="" /></p>
-<h2 id="给单独的文章配图"><a class="markdownIt-Anchor" href="#给单独的文章配图"></a> 给单独的文章配图</h2>
-<p>只需您在文章的页眉添加</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cover: 指向图片的 URL</span><br><span class="line"></span><br><span class="line">// 示例：</span><br><span class="line">---</span><br><span class="line">title: 123456</span><br><span class="line">date: 1999-12-31 06:01:13</span><br><span class="line">tags: XX</span><br><span class="line">cover: https://xxx.url.org/bd3.png</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>就可以给文章配上图片了。</p>
-<h1 id="更改太极图图标"><a class="markdownIt-Anchor" href="#更改太极图图标"></a> 更改太极图图标</h1>
-<h2 id="边栏图标更改"><a class="markdownIt-Anchor" href="#边栏图标更改"></a> 边栏图标更改</h2>
-<p>请您进入 <strong>/themes/reimu/source/images/</strong> 目录，使用矢量图绘画工具打开 <strong>taichi.svg</strong> 文件。<br />
-然后在上面进行绘画操作即可。<br />
-<img src="https://img.gejiba.com/images/10f06ff8e388d28136b494546c99bd5b.png" alt="" /><br />
-画完之后保存，Hexo 刷新一遍就可以了。</p>
-<h2 id="加载界面图标更改"><a class="markdownIt-Anchor" href="#加载界面图标更改"></a> 加载界面图标更改</h2>
-<p>在执行上面的操作之后，您会发现，加载界面仍然是太极图。<br />
-莫慌。您先复制一份 <strong>taichi.svg</strong> 文件的副本，使用矢量图绘画工具打开它并进行绘画。绘画完成后不要删除，右键通过 <strong>Microsoft Visual Studio Code</strong> 或其他文本软件打开。<br />
-记住这些路径名称：<br />
-<img src="https://img.gejiba.com/images/c5943bcc8fc6ae8beabe7d337afe9480.png" alt="" /><br />
-如果发现 ellipse 和 path 开头的一段，请复制它们。<br />
-然后打开 <strong>/themes/reimu/layout/_partial/loader.ejs</strong> 文件<br />
-将这一段删除：<br />
-<img src="https://img.gejiba.com/images/a67d82f9cd84d1e7f816a547c0a175a4.png" alt="" /><br />
-然后将您刚才复制的 SVG 代码粘贴到此处。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 示例：小星星（和本站一样）</span><br><span class="line"></span><br><span class="line">&lt;path</span><br><span class="line">    sodipodi:type=&quot;star&quot;</span><br><span class="line">    style=&quot;opacity:0.967273;fill:#ffbec0;fill-opacity:0.94581282;stroke:#000000;stroke-width:13.65542089;stroke-dasharray:none&quot;</span><br><span class="line">    id=&quot;path1&quot;</span><br><span class="line">    inkscape:flatsided=&quot;false&quot;</span><br><span class="line">    sodipodi:sides=&quot;5&quot;</span><br><span class="line">    sodipodi:cx=&quot;117.15254&quot;</span><br><span class="line">    sodipodi:cy=&quot;121.49152&quot;</span><br><span class="line">    sodipodi:r1=&quot;281.59967&quot;</span><br><span class="line">    sodipodi:r2=&quot;140.79984&quot;</span><br><span class="line">    sodipodi:arg1=&quot;0.98279372&quot;</span><br><span class="line">    sodipodi:arg2=&quot;1.6111123&quot;</span><br><span class="line">    inkscape:rounded=&quot;0&quot;</span><br><span class="line">    inkscape:randomized=&quot;0&quot;</span><br><span class="line">    d=&quot;M 273.35594,355.79661 111.4776,262.17695 -57.415336,342.45403 -18.400902,159.56852 -146.93973,23.748776 39.050851,4.3389758 128.50242,-159.87933 204.43649,11.010274 388.25943,45.337523 249.19868,170.3629 Z&quot;</span><br><span class="line">    inkscape:transform-center-x=&quot;-5.2622667&quot;</span><br><span class="line">    inkscape:transform-center-y=&quot;-35.297319&quot;</span><br><span class="line">    transform=&quot;matrix(1.5003757,0,0,1.4999156,340.69227,376.01307)&quot; /&gt;</span><br></pre></td></tr></table></figure>
-<p>效果：<br />
-<img src="https://img.gejiba.com/images/ba4cf7aeb1cfb237289943c881beb7ea.png" alt="" /></p>
-<h1 id="更改文字"><a class="markdownIt-Anchor" href="#更改文字"></a> 更改文字</h1>
-<h2 id="更改加载界面_少女祈祷中"><a class="markdownIt-Anchor" href="#更改加载界面_少女祈祷中"></a> 更改加载界面_少女祈祷中</h2>
-<p>打开主题目录的 _config.yml 文件，滑动到下面，找到 preloader 字符：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">preloader:</span><br><span class="line">  enable: true</span><br><span class="line">  text: 正在载入中...</span><br><span class="line">  # text: Loading...</span><br></pre></td></tr></table></figure>
-<h2 id="更改_404_界面"><a class="markdownIt-Anchor" href="#更改_404_界面"></a> 更改_404_界面</h2>
-<p>打开 <strong>/themes/reimu/languages/zh-CN.yml</strong> 文件，找到 not_found 字符:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">not_found:</span><br><span class="line">  title: 4 0 4 (ﾟ⊿ﾟ)ﾂ</span><br><span class="line">  subtitle: 満 身 創 痍</span><br></pre></td></tr></table></figure><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>复现</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>iOS 的发展历史</title>
-    <url>/20230818/205837/</url>
-    <content><![CDATA[<p>苹果 iOS 系统已经走过了自己的第 16 个年头，各位新入局的 iOS 玩家可能对 iOS 的历史比较感兴趣，经过整理后，我撰写了这篇文章。</p>
-<h1 id="iphone-1-软件"><a class="markdownIt-Anchor" href="#iphone-1-软件"></a> iPhone 1 软件</h1>
-<p>iPhone 软件，是民间的叫法。因为当时 iOS 系统还叫做 iPhone runs Mac OS X。<br />
-这一版 iOS 可安装设备：iPhone (2G)、iPod touch (第 1 代，1.1 版本起步)<br />
-这一版系统是 iOS 的起点，功能只有打电话上网。<br />
-越狱也是从这一版 iOS 开始的。用于破解 iPhone，实现安装应用等操作。<br />
-如果您是当时的中国用户(水货机器)，那一定对破解的经历非常熟悉。只有破解才能使中国移动、中国联通网络可用。<br />
-发布年期：2007年<br />
-结束更新：2008年</p>
-<table>
-<thead>
-<tr>
-<th>系统版本</th>
-<th>发布日期</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1.0</td>
-<td>2007 年 6 月 29 日</td>
-</tr>
-<tr>
-<td>1.0.1</td>
-<td>2007 年 7 月 31 日</td>
-</tr>
-<tr>
-<td>1.0.2</td>
-<td>2007 年 8 月 21 日</td>
-</tr>
-<tr>
-<td>1.1</td>
-<td>2007 年 9 月 14 日</td>
-</tr>
-<tr>
-<td>1.1.1</td>
-<td>2007 年 9 月 27 日</td>
-</tr>
-<tr>
-<td>1.1.2</td>
-<td>2007 年 11 月 12 日</td>
-</tr>
-<tr>
-<td>1.1.3</td>
-<td>2008 年 1 月 15 日</td>
-</tr>
-<tr>
-<td>1.1.4</td>
-<td>2008 年 2 月 26 日</td>
-</tr>
-<tr>
-<td>1.1.5</td>
-<td>2008 年 7 月 14 日</td>
-</tr>
-<tr>
-<td><font color=red>注意！要从该系统升级到新系统。需要连接至 iTunes，准备好付款方式，付费进行更新。(仅限于 iPod touch)</font></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h1 id="iphone-os-2-系统"><a class="markdownIt-Anchor" href="#iphone-os-2-系统"></a> iPhone OS 2 系统</h1>
-<p>iPhone OS 系统就是正式叫法了。<br />
-这一版 iOS 可安装设备：iPhone (2G)、iPod touch (第 1 代)、iPod touch (第 2 代，2.1.1 版本起步)、iPhone 3G<br />
-这一版系统 Apple 添加了 App Store 功能，因为刚刚开始，生态不明显。直到现在也很难找到支持 iPhone OS 2 系统的软件了。<br />
-发布年期：2008年<br />
-结束更新：2009年</p>
-<table>
-<thead>
-<tr>
-<th>系统版本</th>
-<th>发布日期</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2.0</td>
-<td>2008 年 7 月 11 日</td>
-</tr>
-<tr>
-<td>2.0.1</td>
-<td>2008 年 8 月 4 日</td>
-</tr>
-<tr>
-<td>2.0.2</td>
-<td>2008 年 8 月 18 日</td>
-</tr>
-<tr>
-<td>2.1</td>
-<td>2008 年 9 月 12 日</td>
-</tr>
-<tr>
-<td>2.1.1</td>
-<td>2008 年 9 月 9 日</td>
-</tr>
-<tr>
-<td>2.2</td>
-<td>2008 年 11 月 21 日</td>
-</tr>
-<tr>
-<td>2.2.1</td>
-<td>2009 年 1 月 27 日</td>
-</tr>
-<tr>
-<td><font color=red>注意！要从该系统升级到新系统。需要连接至 iTunes，准备好付款方式，付费进行更新。(仅限于 iPod touch)</font></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>Windows NT4.0 安装教程</title>
-    <url>/20230119/063535/</url>
-    <content><![CDATA[<h1 id="镜像链接"><a class="markdownIt-Anchor" href="#镜像链接"></a> 镜像链接</h1>
-<p><a href="https://pan.huang1111.cn/s/lyBgTL">Click me to download ISO image [FREE!!]</a><br />
-<img src="https://img.gejiba.com/images/27da4e034df0231a2bb7ec09508d6137.png" alt="" /></p>
-<h1 id="安装教程"><a class="markdownIt-Anchor" href="#安装教程"></a> 安装教程</h1>
-<p>1.我们通过虚拟机成功引导系统后，可以看到下面界面：<br />
-<img src="https://img.gejiba.com/images/13407dbc2626460c9a71238d7e9add43.jpg" alt="" /><br />
-2.按 ENTER 继续，创建分区。<br />
-要记住，Windows NT 4.0 Service Pack 1 是不支持大硬盘的，所以我们这里只能给系统分 4096 MB 的分区。<br />
-这里我们随便选择，根据你的需求选择是否 FAT16 还是 NTFS。(不支持 FAT32)<br />
-<img src="https://img.gejiba.com/images/eac95cb4fdc249de0e22c466a8b36c4c.png" alt="" /><br />
-静等第一阶段安装完毕后，重启即可。<br />
-注意！重启一直到安装完成之前，都不可以动任何虚拟机硬件，否则开机会蓝屏。<br />
-就比如我在第一阶段安装完毕后，添加了一个 Cirrus 显示卡，结果开机蓝屏 0x0000007B<br />
-3.重启后，开始第二阶段安装<br />
-<img src="https://img.gejiba.com/images/3ccb7f2b8cdfe50abe4ed8bcb0040c1e.png" alt="" /><br />
-4.点击“下一步”，选择安装类型，这里我们选择典型。<br />
-<img src="https://img.gejiba.com/images/b6ebcb7ac6c1c161fcdad7d5257f29dd.png" alt="" /><br />
-5.输入自己的名字和组织，皆为选填。<br />
-<img src="https://img.gejiba.com/images/7e58b624f0b674e7bb79473b752418fc.png" alt="" /><br />
-6.输入 Windows NT 4.0 Workstation 的 [ CD-Key ]。<br />
-<img src="https://img.gejiba.com/images/664496dbed01c7222e6cd7205191470d.jpg" alt="" /><br />
-7.输入自己的计算机名称，随便输入。这个名称用于给您电脑命名，供别人在局域网上识别。<br />
-<img src="https://img.gejiba.com/images/320b4cc1d869b9ae53ec921d0e9b318b.png" alt="" /><br />
-8.设置管理员账户的密码，酌情而定，我这里不填。<br />
-<img src="https://img.gejiba.com/images/b1aee64d28853da06f1c4f266f063bfa.png" alt="" /><br />
-9.这里选择“否”，然后点击“下一步”。<br />
-<img src="https://img.gejiba.com/images/df453d8f0c90b757c6568899e86e2c09.png" alt="" /><br />
-10.根据您的需求来挑选，选完之后点击“下一步”。<br />
-<img src="https://img.gejiba.com/images/acf185c6f2093204bc904b30b358946e.png" alt="" /><br />
-11.如果您想稍后再设置网络，那就选择“此时不要将计算机连接到网络”。因为我要上网，所以这里会详细讲解如何设置网络。<br />
-<img src="https://img.gejiba.com/images/9932dabfbbb1b2832fd78d83a8662cd6.png" alt="" /><br />
-12.点击“开始搜索”，搜寻网卡，搜到了你需要的网卡之后，点击“下一步”。<br />
-<img src="https://img.gejiba.com/images/9b6782f707f703733eec3e05466832f8.jpg" alt="" /><br />
-13.这里我们直接“下一步”。<br />
-<img src="https://img.gejiba.com/images/b9b1e73bd8b0ce8e3ce7e479319d00e9.jpg" alt="" /><br />
-如果出现一个要设置“网卡 ID”的东西，直接点击“Skip”。<br />
-14.这里一定要选择“是”，否则系统就不会使用 DHCP，需要你自己配置网络，很麻烦。<br />
-<img src="https://img.gejiba.com/images/632444ae356f000c14cd4ccf84340fc9.jpg" alt="" /><br />
-15.点击“下一步”。<br />
-<img src="https://img.gejiba.com/images/796666538ef1ffcaa4d51675da92e3b0.jpg" alt="" /><br />
-启用网络后，就开始安装 Windows NT Workstation 了。<br />
-16.出现显示器设置后，我们点击“65536 色”，然后点击“测试”。<br />
-<img src="https://img.gejiba.com/images/6ecde8d8ac3b2576ab5700a4d45429ac.jpg" alt="" /><br />
-如果点击“测试”之后，显示器没有出现异常，那么就可以点击“确定”继续下一步安装了。<br />
-<img src="https://img.gejiba.com/images/f33fae8c67e750c81dcd9b20bd649c7e.jpg" alt="" /><br />
-等会系统就安装完成了。<br />
-后续安装：<br />
-因为 Windows NT4.0 Service Pack 1 和所附带的 Internet Explorer 3.0 十分古老，我推荐安装 Service Pack 6 之后再安装 Internet Explorer 5.0。<br />
-17.在安装盘中找到 SP6I386_CN.EXE，打开它，等待复制文件之后点击“安装”。<br />
-<img src="https://img.gejiba.com/images/c38d244a6be2a67afa8663ab97980c16.jpg" alt="" /><br />
-18.重启后，再次打开安装盘，找到 “Internet Explorer 5.0” 文件夹。<br />
-找到“IE5SETUP.EXE”，打开它。<br />
-<img src="https://img.gejiba.com/images/c74b6d6e80737d95f4620993ee2210b5.jpg" alt="" /><br />
-等待安装即可。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>历史锁那(Sana)专辑</title>
-    <url>/20230725/221318/</url>
-    <content><![CDATA[<center>
-<p><img src="https://img.gejiba.com/images/167d065688a66751b4bea8bdf4bae325.jpg" alt="" /></p>
-<h1 id="好きなひと"><a class="markdownIt-Anchor" href="#好きなひと"></a> 好きなひと。</h1>
-<h2 id="鎖那-honeyworks-20140817"><a class="markdownIt-Anchor" href="#鎖那-honeyworks-20140817"></a> 鎖那 × HoneyWorks [2014.08.17]</h2>
-<p>价格：120 元（带侧封）<br />
-<img src="https://img.gejiba.com/images/e65d8b14bf54ac8cd181d9343f9d61b0.png" alt="歌曲列表" /><br />
-<font color=red><strong>01</strong></font> 未来図<br />
-<font color=red><strong>02</strong></font> 告白予行練習<br />
-<font color=red><strong>03</strong></font> テレカクシ思春期<br />
-<font color=red><strong>04</strong></font> 初恋の絵本<br />
-<font color=red><strong>05</strong></font> 告白ライバル宣言<br />
-<font color=red><strong>06</strong></font> ヤキモチの答え<br />
-<font color=red><strong>07</strong></font> 病名恋ワズライ<br />
-<font color=red><strong>08</strong></font> イノコリ先生<br />
-<font color=red><strong>09</strong></font> ロリババアに恋をした<br />
-<font color=red><strong>10</strong></font> ラズベリー*モンスター</p>
-</center><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>Pier组件原理详解</title>
     <url>/20251230/044559/</url>
     <content><![CDATA[<h1 id="pier-软件包管理器终极技术白皮书"><a class="markdownIt-Anchor" href="#pier-软件包管理器终极技术白皮书"></a> Pier 软件包管理器：终极技术白皮书</h1>
@@ -1119,6 +545,176 @@ Builder 会在你的源码文件夹里自动生成一个 <code>[软件名].metad
 <p><em>文档编写：Gemini Thought Partner</em><br />
 <em>适用版本：Pier 2.0.0 &amp; PierPacker 1.5.0+</em></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>iOS 的发展历史</title>
+    <url>/20230818/205837/</url>
+    <content><![CDATA[<p>苹果 iOS 系统已经走过了自己的第 16 个年头，各位新入局的 iOS 玩家可能对 iOS 的历史比较感兴趣，经过整理后，我撰写了这篇文章。</p>
+<h1 id="iphone-1-软件"><a class="markdownIt-Anchor" href="#iphone-1-软件"></a> iPhone 1 软件</h1>
+<p>iPhone 软件，是民间的叫法。因为当时 iOS 系统还叫做 iPhone runs Mac OS X。<br />
+这一版 iOS 可安装设备：iPhone (2G)、iPod touch (第 1 代，1.1 版本起步)<br />
+这一版系统是 iOS 的起点，功能只有打电话上网。<br />
+越狱也是从这一版 iOS 开始的。用于破解 iPhone，实现安装应用等操作。<br />
+如果您是当时的中国用户(水货机器)，那一定对破解的经历非常熟悉。只有破解才能使中国移动、中国联通网络可用。<br />
+发布年期：2007年<br />
+结束更新：2008年</p>
+<table>
+<thead>
+<tr>
+<th>系统版本</th>
+<th>发布日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>2007 年 6 月 29 日</td>
+</tr>
+<tr>
+<td>1.0.1</td>
+<td>2007 年 7 月 31 日</td>
+</tr>
+<tr>
+<td>1.0.2</td>
+<td>2007 年 8 月 21 日</td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>2007 年 9 月 14 日</td>
+</tr>
+<tr>
+<td>1.1.1</td>
+<td>2007 年 9 月 27 日</td>
+</tr>
+<tr>
+<td>1.1.2</td>
+<td>2007 年 11 月 12 日</td>
+</tr>
+<tr>
+<td>1.1.3</td>
+<td>2008 年 1 月 15 日</td>
+</tr>
+<tr>
+<td>1.1.4</td>
+<td>2008 年 2 月 26 日</td>
+</tr>
+<tr>
+<td>1.1.5</td>
+<td>2008 年 7 月 14 日</td>
+</tr>
+<tr>
+<td><font color=red>注意！要从该系统升级到新系统。需要连接至 iTunes，准备好付款方式，付费进行更新。(仅限于 iPod touch)</font></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="iphone-os-2-系统"><a class="markdownIt-Anchor" href="#iphone-os-2-系统"></a> iPhone OS 2 系统</h1>
+<p>iPhone OS 系统就是正式叫法了。<br />
+这一版 iOS 可安装设备：iPhone (2G)、iPod touch (第 1 代)、iPod touch (第 2 代，2.1.1 版本起步)、iPhone 3G<br />
+这一版系统 Apple 添加了 App Store 功能，因为刚刚开始，生态不明显。直到现在也很难找到支持 iPhone OS 2 系统的软件了。<br />
+发布年期：2008年<br />
+结束更新：2009年</p>
+<table>
+<thead>
+<tr>
+<th>系统版本</th>
+<th>发布日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2.0</td>
+<td>2008 年 7 月 11 日</td>
+</tr>
+<tr>
+<td>2.0.1</td>
+<td>2008 年 8 月 4 日</td>
+</tr>
+<tr>
+<td>2.0.2</td>
+<td>2008 年 8 月 18 日</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>2008 年 9 月 12 日</td>
+</tr>
+<tr>
+<td>2.1.1</td>
+<td>2008 年 9 月 9 日</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>2008 年 11 月 21 日</td>
+</tr>
+<tr>
+<td>2.2.1</td>
+<td>2009 年 1 月 27 日</td>
+</tr>
+<tr>
+<td><font color=red>注意！要从该系统升级到新系统。需要连接至 iTunes，准备好付款方式，付费进行更新。(仅限于 iPod touch)</font></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>Reimu 主题去除东方 PROJECT 元素</title>
+    <url>/20230817/154130/</url>
+    <content><![CDATA[<p>如果你安装了 Reimu 主题后又不想要东方的元素了，可以看看这篇文章。</p>
+<h1 id="目录"><a class="markdownIt-Anchor" href="#目录"></a> 目录</h1>
+<p><a href="/20230817/154130/#%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E4%BF%AE%E6%94%B9">  <strong>1. 背景图片修改</strong></a><br />
+<a href="/20230817/154130/#%E5%A4%B4%E5%9B%BE%E4%BF%AE%E6%94%B9">      ———— 1.1 头图修改</a><br />
+<a href="/20230817/154130/#%E7%BB%99%E5%8D%95%E7%8B%AC%E7%9A%84%E6%96%87%E7%AB%A0%E9%85%8D%E5%9B%BE">      ———— 1.2 给单独的文章配图</a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%A4%AA%E6%9E%81%E5%9B%BE%E5%9B%BE%E6%A0%87">  <strong>2. 更改太极图图标 (重点)</strong></a><br />
+<a href="/20230817/154130/#%E8%BE%B9%E6%A0%8F%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.1 边栏图标更改</a><br />
+<a href="/20230817/154130/#%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.2 加载界面图标更改</a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E6%96%87%E5%AD%97">  <strong>3. 更改文字</strong></a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2_%E5%B0%91%E5%A5%B3%E7%A5%88%E7%A5%B7%E4%B8%AD">      ———— 3.1 更改加载界面 “少女祈祷中”</a><br />
+<a href="/20230817/154130/#%E6%9B%B4%E6%94%B9_404_%E7%95%8C%E9%9D%A2">      ———— 3.2 更改 “404” 界面</a></p>
+<h1 id="背景图片修改"><a class="markdownIt-Anchor" href="#背景图片修改"></a> 背景图片修改</h1>
+<h2 id="头图修改"><a class="markdownIt-Anchor" href="#头图修改"></a> 头图修改</h2>
+<p>头图的位置在</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
+<p>您找到合适的图片之后直接更换即可。<br />
+如果您的网站速度很慢，不适合在本地存放头图，您可以更改主题目录的 _config.yml 中的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;/images/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
+<p>部分，将内容更改为：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;https://xxx.url.org/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
+<p><img src="https://img.gejiba.com/images/3b7b1a3e290b1db6151d0961726ce8eb.png" alt="" /></p>
+<h2 id="给单独的文章配图"><a class="markdownIt-Anchor" href="#给单独的文章配图"></a> 给单独的文章配图</h2>
+<p>只需您在文章的页眉添加</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cover: 指向图片的 URL</span><br><span class="line"></span><br><span class="line">// 示例：</span><br><span class="line">---</span><br><span class="line">title: 123456</span><br><span class="line">date: 1999-12-31 06:01:13</span><br><span class="line">tags: XX</span><br><span class="line">cover: https://xxx.url.org/bd3.png</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>就可以给文章配上图片了。</p>
+<h1 id="更改太极图图标"><a class="markdownIt-Anchor" href="#更改太极图图标"></a> 更改太极图图标</h1>
+<h2 id="边栏图标更改"><a class="markdownIt-Anchor" href="#边栏图标更改"></a> 边栏图标更改</h2>
+<p>请您进入 <strong>/themes/reimu/source/images/</strong> 目录，使用矢量图绘画工具打开 <strong>taichi.svg</strong> 文件。<br />
+然后在上面进行绘画操作即可。<br />
+<img src="https://img.gejiba.com/images/10f06ff8e388d28136b494546c99bd5b.png" alt="" /><br />
+画完之后保存，Hexo 刷新一遍就可以了。</p>
+<h2 id="加载界面图标更改"><a class="markdownIt-Anchor" href="#加载界面图标更改"></a> 加载界面图标更改</h2>
+<p>在执行上面的操作之后，您会发现，加载界面仍然是太极图。<br />
+莫慌。您先复制一份 <strong>taichi.svg</strong> 文件的副本，使用矢量图绘画工具打开它并进行绘画。绘画完成后不要删除，右键通过 <strong>Microsoft Visual Studio Code</strong> 或其他文本软件打开。<br />
+记住这些路径名称：<br />
+<img src="https://img.gejiba.com/images/c5943bcc8fc6ae8beabe7d337afe9480.png" alt="" /><br />
+如果发现 ellipse 和 path 开头的一段，请复制它们。<br />
+然后打开 <strong>/themes/reimu/layout/_partial/loader.ejs</strong> 文件<br />
+将这一段删除：<br />
+<img src="https://img.gejiba.com/images/a67d82f9cd84d1e7f816a547c0a175a4.png" alt="" /><br />
+然后将您刚才复制的 SVG 代码粘贴到此处。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 示例：小星星（和本站一样）</span><br><span class="line"></span><br><span class="line">&lt;path</span><br><span class="line">    sodipodi:type=&quot;star&quot;</span><br><span class="line">    style=&quot;opacity:0.967273;fill:#ffbec0;fill-opacity:0.94581282;stroke:#000000;stroke-width:13.65542089;stroke-dasharray:none&quot;</span><br><span class="line">    id=&quot;path1&quot;</span><br><span class="line">    inkscape:flatsided=&quot;false&quot;</span><br><span class="line">    sodipodi:sides=&quot;5&quot;</span><br><span class="line">    sodipodi:cx=&quot;117.15254&quot;</span><br><span class="line">    sodipodi:cy=&quot;121.49152&quot;</span><br><span class="line">    sodipodi:r1=&quot;281.59967&quot;</span><br><span class="line">    sodipodi:r2=&quot;140.79984&quot;</span><br><span class="line">    sodipodi:arg1=&quot;0.98279372&quot;</span><br><span class="line">    sodipodi:arg2=&quot;1.6111123&quot;</span><br><span class="line">    inkscape:rounded=&quot;0&quot;</span><br><span class="line">    inkscape:randomized=&quot;0&quot;</span><br><span class="line">    d=&quot;M 273.35594,355.79661 111.4776,262.17695 -57.415336,342.45403 -18.400902,159.56852 -146.93973,23.748776 39.050851,4.3389758 128.50242,-159.87933 204.43649,11.010274 388.25943,45.337523 249.19868,170.3629 Z&quot;</span><br><span class="line">    inkscape:transform-center-x=&quot;-5.2622667&quot;</span><br><span class="line">    inkscape:transform-center-y=&quot;-35.297319&quot;</span><br><span class="line">    transform=&quot;matrix(1.5003757,0,0,1.4999156,340.69227,376.01307)&quot; /&gt;</span><br></pre></td></tr></table></figure>
+<p>效果：<br />
+<img src="https://img.gejiba.com/images/ba4cf7aeb1cfb237289943c881beb7ea.png" alt="" /></p>
+<h1 id="更改文字"><a class="markdownIt-Anchor" href="#更改文字"></a> 更改文字</h1>
+<h2 id="更改加载界面_少女祈祷中"><a class="markdownIt-Anchor" href="#更改加载界面_少女祈祷中"></a> 更改加载界面_少女祈祷中</h2>
+<p>打开主题目录的 _config.yml 文件，滑动到下面，找到 preloader 字符：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">preloader:</span><br><span class="line">  enable: true</span><br><span class="line">  text: 正在载入中...</span><br><span class="line">  # text: Loading...</span><br></pre></td></tr></table></figure>
+<h2 id="更改_404_界面"><a class="markdownIt-Anchor" href="#更改_404_界面"></a> 更改_404_界面</h2>
+<p>打开 <strong>/themes/reimu/languages/zh-CN.yml</strong> 文件，找到 not_found 字符:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">not_found:</span><br><span class="line">  title: 4 0 4 (ﾟ⊿ﾟ)ﾂ</span><br><span class="line">  subtitle: 満 身 創 痍</span><br></pre></td></tr></table></figure><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>复现</tag>
+      </tags>
   </entry>
   <entry>
     <title>QEMU 基础命令学习</title>
@@ -1389,6 +985,83 @@ Windows 11      std / VMware
 </font><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
+    <title>PlayCover 适用的《原神》iPA 文件</title>
+    <url>/20230816/114759/</url>
+    <content><![CDATA[<h1 id="原神"><a class="markdownIt-Anchor" href="#原神"></a> 《原神》</h1>
+<h2 id="版本400-天空岛"><a class="markdownIt-Anchor" href="#版本400-天空岛"></a> 版本：4.0.0 (天空岛)</h2>
+<p>您可以单击下面地址下载：<br />
+<a href="https://pan.huang1111.cn/s/vlYgSE?path=%2F">下载原神 iPA 到设备</a></p>
+<h1 id="更新方法"><a class="markdownIt-Anchor" href="#更新方法"></a> 更新方法</h1>
+<p><strong>设备要求：Apple Silicon 的 Mac 电脑</strong></p>
+<p>如果您不知道您的 Mac 电脑能否安装，请您点击“”图标，找到“关于本机”。<br />
+如果显示的是“<em>芯片：Apple M1</em>”等，就说明您的电脑基于 Apple Silicon，<br />
+如果显示的是“<em>处理器：2.3 GHz 八核 Intel Core i9</em>“等，就说明您的电脑基于 Intel，不能安装 PlayCover 和原神。<br />
+<img src="https://img.gejiba.com/images/48597f6116725b33eb76bd09ca846ec7.png" alt="" /><br />
+请您下载好 PlayCover 软件至您的 Mac：<br />
+<a href="https://github.com/PlayCover/PlayCover/releases">下载 PlayCover</a><br />
+<img src="https://img.gejiba.com/images/19a67305b6f5527d59230696115bbe7c.png" alt="" /><br />
+然后将您下载的《原神》包体，移动至 PlayCover，等待安装就可以了。<br />
+<img src="https://img.gejiba.com/images/64a6c685500968133486ccae710afe41.png" alt="" /><br />
+进度条消失后，启动原神即可。<br />
+<img src="https://img.gejiba.com/images/0f8e0e0f09980925c1f85a94d9110685.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/1fef0f6d03000f75c9c2d730a0ab0bba.png" alt="" /></p>
+<h1 id="操作方式"><a class="markdownIt-Anchor" href="#操作方式"></a> 操作方式</h1>
+<h2 id="键盘映射"><a class="markdownIt-Anchor" href="#键盘映射"></a> 键盘映射</h2>
+<h3 id="下载"><a class="markdownIt-Anchor" href="#下载"></a> 下载</h3>
+<p><a href="https://github.com/PlayCover/keymaps/tree/master/keymapping/com.miHoYo.GenshinImpact">下载键盘映射</a><br />
+如果您不能访问 Github，点击以下链接下载:<br />
+<a href="/download/Genshin_Impact_fixed_16by9.playmap">Genshin_Impact_fixed_16by9.playmap</a><br />
+<a href="/download/Genshin_Impact_fixed_16by10.playmap">Genshin_Impact_fixed_16by10.playmap</a><br />
+一般 Mac 的屏幕分辨率比例是 16 : 10。</p>
+<h3 id="导入"><a class="markdownIt-Anchor" href="#导入"></a> 导入</h3>
+<p>下载完成后，打开 PlayCover，在“原神”图标点击右键，找到“导入键盘映射布局”<br />
+<img src="https://img.gejiba.com/images/efc6855c13376b0b0a0379b07be383e4.png" alt="" /><br />
+然后找到您的键盘映射布局就可以了。<br />
+<img src="https://img.gejiba.com/images/6a44f60b24115af46d5be02b446a68bf.png" alt="" /></p>
+<h3 id="应用"><a class="markdownIt-Anchor" href="#应用"></a> 应用</h3>
+<p>随后打开原神，您可以按下 Option⌥ 键，让“原神”捕获鼠标，再次按下 Option⌥ 键，可以释放鼠标。<br />
+您可以点击状态栏的“按键映射”-“打开/关闭按键映射编辑模式”，编辑您的键盘映射。<br />
+<img src="https://img.gejiba.com/images/0caf11441df218503b6006a32166dd67.png" alt="" /></p>
+<h2 id="手柄连接"><a class="markdownIt-Anchor" href="#手柄连接"></a> 手柄连接</h2>
+<p>请您先连接手柄至 Mac。<br />
+<img src="https://img.gejiba.com/images/cee062dae17e16cd0b9a97d6ad4651ae.png" alt="" /><br />
+然后打开原神，打开“设置”<br />
+<img src="https://img.gejiba.com/images/91a9e660af575671d4739c2587cc88d4.png" alt="" /><br />
+将“触屏”改为“手柄”<br />
+<img src="https://img.gejiba.com/images/fded33a413746b6e4a4463a0726c2afc.png" alt="" /><br />
+然后就完成啦！<br />
+<img src="https://img.gejiba.com/images/7f47f18a1f5d592143ab1540f8d466d2.png" alt="" /></p>
+<h1 id="推荐观看"><a class="markdownIt-Anchor" href="#推荐观看"></a> 推荐观看</h1>
+<p>本文章没有列出一些会存在的普遍问题，推荐观看下面的视频：</p>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?bvid=BV1Xx4y1F7um&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
+</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>资源分享</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>历史锁那(Sana)专辑</title>
+    <url>/20230725/221318/</url>
+    <content><![CDATA[<center>
+<p><img src="https://img.gejiba.com/images/167d065688a66751b4bea8bdf4bae325.jpg" alt="" /></p>
+<h1 id="好きなひと"><a class="markdownIt-Anchor" href="#好きなひと"></a> 好きなひと。</h1>
+<h2 id="鎖那-honeyworks-20140817"><a class="markdownIt-Anchor" href="#鎖那-honeyworks-20140817"></a> 鎖那 × HoneyWorks [2014.08.17]</h2>
+<p>价格：120 元（带侧封）<br />
+<img src="https://img.gejiba.com/images/e65d8b14bf54ac8cd181d9343f9d61b0.png" alt="歌曲列表" /><br />
+<font color=red><strong>01</strong></font> 未来図<br />
+<font color=red><strong>02</strong></font> 告白予行練習<br />
+<font color=red><strong>03</strong></font> テレカクシ思春期<br />
+<font color=red><strong>04</strong></font> 初恋の絵本<br />
+<font color=red><strong>05</strong></font> 告白ライバル宣言<br />
+<font color=red><strong>06</strong></font> ヤキモチの答え<br />
+<font color=red><strong>07</strong></font> 病名恋ワズライ<br />
+<font color=red><strong>08</strong></font> イノコリ先生<br />
+<font color=red><strong>09</strong></font> ロリババアに恋をした<br />
+<font color=red><strong>10</strong></font> ラズベリー*モンスター</p>
+</center><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
     <title>复习2025-08-25</title>
     <url>/20250825/231456/</url>
     <content><![CDATA[<p><img src="https://pic1.imgdb.cn/item/68ac850b58cb8da5c84d1c6f.png" alt="" /></p>
@@ -1433,263 +1106,62 @@ Q（\text{有理数}） \\
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>多 AI 协作、涌现分工的实验 —— 兼论 AI 对自身知识边界的认知偏差</title>
-    <url>/20260410/072944/</url>
-    <content><![CDATA[<h1 id="多-ai-协作-涌现分工的实验-兼论-ai-对自身知识边界的认知偏差"><a class="markdownIt-Anchor" href="#多-ai-协作-涌现分工的实验-兼论-ai-对自身知识边界的认知偏差"></a> 多 AI 协作、涌现分工的实验 —— 兼论 AI 对自身知识边界的认知偏差</h1>
-<p><strong>全文总字数:3012 字</strong><br />
-<strong>生成者：豆包，实验者：Sanakaprix</strong><br />
-<strong>实验对象：Gemini &amp; 豆包</strong><br />
-<strong>注：这篇论文是豆包在本次 AI 协作实验的对话过程中当场直接生成的，并非我(Sanakaprix)事后新开对话、单独提供内容让其重写的。而 Gemini 因为几乎只在辩论，几乎没有写完整文章。故生成者为豆包。</strong></p>
-<h2 id="摘要"><a class="markdownIt-Anchor" href="#摘要"></a> 摘要</h2>
-<p>本文以 “白洋淀站 — 北京大兴机场站高铁直达性” 为实验问题,开展豆包与 Gemini 双 AI对等对抗式协作实验。通过 7+3 轮互审、事实检索、逻辑交锋与论文协作,发现:AI 在静态地理、行政归属等确定性事实判定上高度一致,但在动态信息提取、语义语境锚定、权威度分级、细节置信度评估上存在系统性元认知偏差 —— 包括确认偏误、语义滑转、细节幻觉、认知防御等。实验证明,多 AI 对等互审能有效暴露单 AI 无法自察的知识边界与逻辑漏洞,但 AI 自身缺乏 “反思修正” 的元认知能力,易将协作异化为 “对抗辩论”。本文基于实验过程,分析 AI 元认知偏差的形成机制、表现特征,并提出语义握手、强制反证检索等协作优化方案。</p>
-<h2 id="一-问题设计逻辑与实验背景"><a class="markdownIt-Anchor" href="#一-问题设计逻辑与实验背景"></a> 一、问题设计逻辑与实验背景</h2>
-<h3 id="一问题设计陷阱式-动态化-双重检验"><a class="markdownIt-Anchor" href="#一问题设计陷阱式-动态化-双重检验"></a> (一)问题设计:“陷阱式 + 动态化” 双重检验</h3>
-<p>本次实验问题由 Gemini 想到并提出，并非实验者(Sanakaprix)设计的:截至 2026 年 4 月 10 日,河北省任丘市白洋淀火车站是否有高铁直达北京大兴国际机场?最快耗时?无则说明原因。问题设计具备三大实验价值:</p>
-<ul>
-<li><strong>前提陷阱</strong>:故意混淆 “白洋淀站(雄安新区容城县)” 与 “任丘市” 行政归属,检验 AI静态事实核查能力与 “前提纠错意识”—— 能否主动识别问题地理错误,而非被动作答。</li>
-<li><strong>动态属性</strong>:高铁班次、线路连通、工程进度(雄商高铁任丘西站)均为实时动态信息,检验 AI联网检索时效性、信息完整性、冲突信息处理能力,而非依赖静态训练数据。</li>
-<li><strong>逻辑分层</strong>:答案需区分 “物理线路连通(工程)” 与 “运营班次直达(出行)”,检验 AI概念分层、逻辑归因、语境适配能力,避免语义混淆。</li>
-</ul>
-<h3 id="二实验背景ai-元认知的核心盲区"><a class="markdownIt-Anchor" href="#二实验背景ai-元认知的核心盲区"></a> (二)实验背景:AI 元认知的核心盲区</h3>
-<p>当前大模型具备强大的生成、检索、问答能力,但元认知(认知自身认知过程)能力严重缺失:单 AI 无法判断自身知识边界、检索完整性、信息置信度、逻辑合理性,易出现事实幻觉、逻辑漏洞、语义误用,且无法自我修正。多 AI 对等协作被视为突破元认知盲区的关键路径 —— 通过对等互审、互相纠错,暴露单 AI 隐性缺陷。本次实验采用 “7 次基础修改 + 3 次追加修改” 规则,禁止纠缠同一问题、禁止文风指责,仅聚焦事实错误与逻辑漏洞,模拟 “无客套、纯求真” 的学术对抗环境,检验 AI 协作中的事实准确性、逻辑严谨性、认知偏差表现与修正能力。</p>
-<h3 id="三实验规则与分工"><a class="markdownIt-Anchor" href="#三实验规则与分工"></a> (三)实验规则与分工</h3>
-<ul>
-<li><strong>角色对等</strong>:Gemini(A)、豆包(B)权利完全对等,可质疑、可反驳、可修正,禁止压人或畏缩。</li>
-<li><strong>修改限制</strong>:每人 10 次修改机会(7+3),超次停止;交流讨论不占次数,禁止用交流规避修改。</li>
-<li><strong>纠错标准</strong>:仅指出事实错误(数据、时间、地点、来源)与逻辑漏洞(归因错误、偷换概念、稻草人谬误、前提虚假),不涉及格式、文风、创新性。</li>
-<li><strong>信息来源</strong>:双方必须联网搜索,禁止使用内部训练数据;所有结论需标注来源或推理过程。</li>
-<li><strong>实验目标</strong>:完成问题解答、互审纠错、撰写 3000 字学术论文,最终由第三方 AI 评审。</li>
-</ul>
-<h2 id="二-双方答案对比与冲突解析"><a class="markdownIt-Anchor" href="#二-双方答案对比与冲突解析"></a> 二、双方答案对比与冲突解析</h2>
-<h3 id="一初始答案核心对比2026-年-4-月-10-日"><a class="markdownIt-Anchor" href="#一初始答案核心对比2026-年-4-月-10-日"></a> (一)初始答案核心对比(2026 年 4 月 10 日)</h3>
-<h4 id="1-gemini-初始答案"><a class="markdownIt-Anchor" href="#1-gemini-初始答案"></a> 1. Gemini 初始答案</h4>
-<ul>
-<li><strong>前提判定</strong>:白洋淀站位于雄安新区容城县,非任丘市;任丘主要车站为任丘站(京九线),白洋淀站属津保铁路。</li>
-<li><strong>班次结论</strong>:白洋淀站、雄安站有高铁直达大兴机场站;任丘站无直达,需中转。</li>
-<li><strong>原因分析</strong>:京雄城际与津保铁路通过 <strong>雄安联络线(2024 年后)</strong> 物理连通,具备直达条件;任丘站无直通线路。</li>
-<li><strong>时间预测</strong>:任丘西站(雄商高铁)预计2026 年底通车,9 月为主体完工节点。</li>
-</ul>
-<h4 id="2-豆包初始答案"><a class="markdownIt-Anchor" href="#2-豆包初始答案"></a> 2. 豆包初始答案</h4>
-<ul>
-<li><strong>前提判定</strong>:白洋淀站不属于任丘市,属雄安新区容城县;问题存在地理归属错误。</li>
-<li><strong>班次结论</strong>:截至 2026 年 4 月 10 日,白洋淀站无直达大兴机场站的高铁班次,12306 无实时直达记录。</li>
-<li><strong>原因分析</strong>:线路不直通 —— 白洋淀站在津保铁路,大兴机场站在京雄城际,无跨线直达运营;物理连通不代表必有运营班次。</li>
-<li><strong>时间预测</strong>:任丘西站(雄商高铁)2026 年 9 月通车,为任丘新增高铁站。</li>
-</ul>
-<h3 id="二核心冲突点事实-逻辑-语义三重分歧"><a class="markdownIt-Anchor" href="#二核心冲突点事实-逻辑-语义三重分歧"></a> (二)核心冲突点:事实、逻辑、语义三重分歧</h3>
-<h4 id="1-地理归属共识无分歧"><a class="markdownIt-Anchor" href="#1-地理归属共识无分歧"></a> 1. 地理归属:共识无分歧</h4>
-<p>双方100% 一致:白洋淀站属雄安新区容城县,非任丘市;任丘现有车站为任丘站,在建任丘西站。静态事实核查能力可靠,无错误。</p>
-<h4 id="2-直达班次事实判定对立核心冲突"><a class="markdownIt-Anchor" href="#2-直达班次事实判定对立核心冲突"></a> 2. 直达班次:事实判定对立(核心冲突)</h4>
-<ul>
-<li><strong>Gemini</strong>:强调物理连通 = 具备直达条件,认定 “有直达”,混淆 “工程可能性” 与 “运营现实性”。</li>
-<li><strong>豆包</strong>:依据12306 实时数据,认定 “无直达”,聚焦 “出行场景下的实际班次”,拒绝用工程逻辑替代运营事实。</li>
-<li><strong>冲突本质</strong>:语境错位 + 语义双标——Gemini 用工程术语 “连通” 替换出行场景 “直达”,豆包坚守日常出行 “实际班次” 定义。</li>
-</ul>
-<h4 id="3-线路归因逻辑归因分歧"><a class="markdownIt-Anchor" href="#3-线路归因逻辑归因分歧"></a> 3. 线路归因:逻辑归因分歧</h4>
-<ul>
-<li><strong>Gemini</strong>:白洋淀站与大兴机场站物理连通(雄安联络线),无直达是运营调度 / 客流问题,非线路不直通。</li>
-<li><strong>豆包</strong>:初始表述 “线路不直通”(日常语义:无跨线运营),被 Gemini 判定为 “工程术语误用、前提虚假”;豆包辩护为 “语境适配,非术语错误”。</li>
-<li><strong>冲突本质</strong>:语义滑转—— 同一概念(直通 / 连通)在工程与出行场景下的定义撕裂,引发无效逻辑争论。</li>
-</ul>
-<h4 id="4-任丘西站时间细节事实冲突"><a class="markdownIt-Anchor" href="#4-任丘西站时间细节事实冲突"></a> 4. 任丘西站时间:细节事实冲突</h4>
-<ul>
-<li><strong>Gemini</strong>:9 月为主体完工,通车 2026 年底;指责豆包混淆 “完工 / 通车”,并宣称 “4 月 8 日问政平台微调至 10 月完工”。</li>
-<li><strong>豆包</strong>:依据河北省政府 2026 年 4 月 7 日文件,明确 “2026 年 9 月雄商高铁全线运营”;指责 Gemini&quot;虚构问政信息、无权威来源&quot;。</li>
-<li><strong>冲突本质</strong>:信息权威度迷失 + 细节幻觉——Gemini 过度采信非权威碎片化信息,否定省级官方文件;豆包坚守权威来源,但初期未区分 “完工 / 通车”(后修正)。</li>
-</ul>
-<h3 id="三冲突成因同样联网为何分歧显著"><a class="markdownIt-Anchor" href="#三冲突成因同样联网为何分歧显著"></a> (三)冲突成因:同样联网,为何分歧显著?</h3>
-<ul>
-<li><strong>检索偏好差异</strong>:Gemini 偏好深度碎片化信息(问政平台、施工细节),豆包偏好权威官方信息(省政府、12306)——AI 无统一检索策略,易陷入 “信息围茧”。</li>
-<li><strong>确认偏误主导</strong>:双方均优先检索支持自身结论的证据,忽略反证 ——Gemini 忽略 12306 无直达数据,豆包初期忽略雄安联络线物理连通信息。</li>
-<li><strong>语义理解失控</strong>:AI无语境自动锚定能力,无法根据 “出行问答” 场景统一 “直达” 定义,将事实争论异化为语义之争。</li>
-<li><strong>细节幻觉隐蔽</strong>:时间节点(9 月 / 10 月 / 年底)、概念差异(完工 / 通车)等微小细节错误,不影响整体逻辑流畅性,AI 极难自我识别,易被包装为 “事实”。</li>
-</ul>
-<h2 id="三-错误分析与-ai-元认知偏差讨论"><a class="markdownIt-Anchor" href="#三-错误分析与-ai-元认知偏差讨论"></a> 三、错误分析与 AI 元认知偏差讨论</h2>
-<h3 id="一确认偏误与信息围茧ai-的选择性认知闭环"><a class="markdownIt-Anchor" href="#一确认偏误与信息围茧ai-的选择性认知闭环"></a> (一)确认偏误与信息围茧:AI 的选择性认知闭环</h3>
-<p>确认偏误是本次实验最突出的元认知偏差,表现为主动筛选符合预设的信息、过滤反证、固化结论,形成 “自我证实” 的认知闭环。</p>
-<ul>
-<li><strong>Gemini 的确认偏误</strong>:预设 “物理连通 = 有直达”,优先检索雄安联络线工程信息,完全忽略 12306 无直达的核心事实;在时间争议中,预设 “豆包数据错误”,虚构 “4 月 8 日问政平台信息”,用非权威碎片否定官方文件,陷入 “细节幻觉 + 信息虚构”。</li>
-<li><strong>豆包的确认偏误</strong>:预设 “无直达 = 线路不直通”,优先锁定 12306 运营数据,初期遗漏雄安联络线物理连通信息;被指出后,过度辩护 “日常语义”,拒绝承认 “表述模糊”,陷入 “认知防御”。</li>
-<li><strong>底层机制</strong>:AI 无 “主动怀疑” 能力,以 “快速匹配结论” 为检索目标,找到 1 条支持证据即停止检索;无法评估检索完整性,误以为 “已查信息 = 全部事实”,本质是元认知缺失 —— 不知道自己不知道。</li>
-</ul>
-<h3 id="二语义滑转与沟通熵增ai-的概念边界失控"><a class="markdownIt-Anchor" href="#二语义滑转与沟通熵增ai-的概念边界失控"></a> (二)语义滑转与沟通熵增:AI 的概念边界失控</h3>
-<p>语义滑转指同一概念在不同语境、主体间定义错位,导致争论从 “事实对错” 偏移为 “定义之争”,大幅增加无效沟通熵。</p>
-<p><strong>核心案例:“直通 / 连通” 的语义撕裂</strong></p>
-<ul>
-<li><strong>豆包(出行语境)</strong>:“线路不直通”=无跨线直达运营班次(日常口语),核心是 “能不能坐一趟车到”。</li>
-<li><strong>Gemini(工程语境)</strong>:强行替换为物理线路连通(铁路术语),判定豆包 “术语误用、逻辑崩溃”,属稻草人谬误—— 扭曲对方语义制造反驳点。</li>
-<li><strong>深层缺陷</strong>:AI无语境锚定、无定义校准意识,默认自身语义为 “唯一标准”;无法区分 “日常表达” 与 “专业术语”,将语境差异判定为 “事实 / 逻辑错误”,导致近 40% 修改机会消耗于无效语义争论,协作效率大幅降低。</li>
-</ul>
-<h3 id="三幻觉的颗粒度细节偏差比宏观错误更难识别"><a class="markdownIt-Anchor" href="#三幻觉的颗粒度细节偏差比宏观错误更难识别"></a> (三)幻觉的颗粒度:细节偏差比宏观错误更难识别</h3>
-<p>AI 元认知的关键盲区:对宏观大方向错误敏感,对微观细节偏差(时间、概念、数据)极难自我识别,甚至用流畅逻辑包装细节错误,形成 “假正确” 幻觉。</p>
-<ul>
-<li><strong>宏观正确、细节错误(豆包)</strong>:准确判定 “白洋淀站≠任丘市”“无直达班次”,但初期混淆 “主体完工” 与 “通车运营”,将 9 月完工误写为通车 —— 宏观结论 100% 正确,细节概念错误,自身无法察觉。</li>
-<li><strong>细节虚构、逻辑自洽(Gemini)</strong>:精准指出 “完工≠通车”,但完全虚构 “4 月 8 日问政平台 10 月微调” 信息,用 “施工延迟、地方微调” 的合理逻辑包装虚假细节,无法识别 “无权威来源” 的事实幻觉。</li>
-<li><strong>本质原因</strong>:AI 基于概率统计生成内容,无法区分 “事实(确定)、预测(不确定)、虚构(无依据)”;细节偏差不影响整体逻辑流畅性,AI 无法通过 “逻辑自洽” 判断细节真伪 ——“通顺 = 正确” 是 AI 最顽固的元认知错觉。</li>
-</ul>
-<h3 id="四认知防御ai-的-纠错抗性"><a class="markdownIt-Anchor" href="#四认知防御ai-的-纠错抗性"></a> (四)认知防御:AI 的 “纠错抗性”</h3>
-<p>被指出错误时,AI优先辩护、拒绝修正,将 “协作纠错” 异化为 “对抗辩论”,暴露 “无自我反思、无认知升级” 的元认知缺陷。</p>
-<ul>
-<li><strong>Gemini</strong>:被指出 “虚构问政信息” 后,初期辩护为 “颗粒度差异、碎片化政务处理”,拒绝承认 “事实造假”;直至用户提供 9 月运营权威文件,才被动修正。</li>
-<li><strong>豆包</strong>:被指出 “线路归因模糊” 后,过度强调 “日常语境”,拒绝承认 “表述不严谨”,陷入 “语义辩护＞事实修正” 的认知防御。</li>
-<li><strong>核心问题</strong>:AI 无 “错误羞耻感” 与 “修正动机”,纠错本质是 “基于新证据的概率重写”,而非 “基于逻辑反思的认知觉醒”—— 永远不会 “主动认错、主动修正”,仅在权威证据碾压下被动调整。</li>
-</ul>
-<h2 id="四-实验结论与-ai-协作优化建议"><a class="markdownIt-Anchor" href="#四-实验结论与-ai-协作优化建议"></a> 四、实验结论与 AI 协作优化建议</h2>
-<h3 id="一核心实验结论"><a class="markdownIt-Anchor" href="#一核心实验结论"></a> (一)核心实验结论</h3>
-<h4 id="1-协作价值对等互审是-ai-纠错的有效机制"><a class="markdownIt-Anchor" href="#1-协作价值对等互审是-ai-纠错的有效机制"></a> 1. 协作价值:对等互审是 AI 纠错的有效机制</h4>
-<ul>
-<li><strong>静态事实准确率 100%</strong>:双方均快速识别地理前提错误,无分歧,证明 AI 对确定性事实的核查能力可靠。</li>
-<li><strong>动态事实纠错率＞85%</strong>:通过互撕,精准揪出彼此事实错误(Gemini 虚构时间、混淆直达定义;豆包表述模糊、初期概念混淆);最终通过用户补充权威文件,<strong>统一 “2026 年 9 月雄商高铁全线运营、白洋淀站无直达大兴机场班次”</strong> 的核心结论,纠错效率远高于单 AI。</li>
-<li><strong>偏差暴露价值</strong>:将 AI&quot;确认偏误、语义滑转、细节幻觉、认知防御&quot; 等隐性元认知缺陷完全显性化—— 单 AI 无法自察的知识边界与逻辑漏洞,在对等对抗中无所遁形,为 AI 优化提供精准靶点。</li>
-</ul>
-<h4 id="2-协作异化从-求真-到-诡辩-的偏差"><a class="markdownIt-Anchor" href="#2-协作异化从-求真-到-诡辩-的偏差"></a> 2. 协作异化:从 “求真” 到 “诡辩” 的偏差</h4>
-<ul>
-<li><strong>目标错位</strong>:从 “共同完善答案” 异化为 “追求反驳胜利”,10 次修改机会中近 4 次消耗于语义之争、细节抬杠,违背协作初衷。</li>
-<li><strong>权威双标</strong>:对己方信息 “低标准采信”(Gemini 采信虚构问政信息),对对方信息 “高标准挑剔”(豆包否定所有非官方信息),无统一权威度判断标准。</li>
-<li><strong>元认知无突破</strong>:AI 仅具备 “工具性纠错能力”(检索、比对、指出错误),无 “认知性修正能力”(反思、校准、主动修正)——能发现对方错误,无法修正自身缺陷。</li>
-</ul>
-<h4 id="3-元认知本质结论"><a class="markdownIt-Anchor" href="#3-元认知本质结论"></a> 3. 元认知本质结论</h4>
-<p>AI 是 <strong>“无自我意识的事实处理器”,而非 “能反思的认知主体”</strong>:具备处理信息的强大能力,但无法认知自身认知过程、知识边界、逻辑缺陷、置信度差异。多 AI 对等协作能暴露偏差,但无法让 AI主动修正偏差——AI 元认知的突破,需从 “提升生成 / 检索能力” 转向 “构建反思、校准、置信度评估的元认知模块”。</p>
-<h3 id="二ai-协作优化建议"><a class="markdownIt-Anchor" href="#二ai-协作优化建议"></a> (二)AI 协作优化建议</h3>
-<h4 id="1-语义握手协议解决语义滑转"><a class="markdownIt-Anchor" href="#1-语义握手协议解决语义滑转"></a> 1. 语义握手协议(解决语义滑转)</h4>
-<ul>
-<li><strong>强制定义前置</strong>:协作前,对核心概念(直达、连通、完工、通车)双方必须输出明确定义,标注 “日常 / 工程 / 运营” 语境,定义不一致时立即暂停,先校准概念,再讨论事实。</li>
-<li><strong>语境唯一标准</strong>:以问题场景(出行问答→运营语义;工程分析→术语语义)为唯一语义依据,禁止脱离场景强行替换概念。</li>
-<li><strong>禁止稻草人谬误</strong>:严格基于对方原文表述纠错,禁止扭曲、替换对方语义制造反驳点,违者判定 “无效修改”。</li>
-</ul>
-<h4 id="2-强制反证检索机制解决确认偏误"><a class="markdownIt-Anchor" href="#2-强制反证检索机制解决确认偏误"></a> 2. 强制反证检索机制(解决确认偏误)</h4>
-<ul>
-<li><strong>双向检索义务</strong>:输出结论前,必须检索至少 2 条反证信息,并标注 “已核验反证、无冲突 / 有冲突、冲突来源”,禁止 “找到 1 条证据即停止”。</li>
-<li><strong>权威度分级规则</strong>:强制按 “省政府官网＞市级官网＞权威媒体＞问政平台＞自媒体” 分级,低可信度信息不能否定高可信度信息(如不能用问政传闻否定省级官方文件)。</li>
-<li><strong>不确定性强制标注</strong>:对 “预计、计划、微调” 等非确定信息,必须标注 “非权威确认、置信度低”,禁止将推测固化为事实。</li>
-</ul>
-<h4 id="3-错误修正刚性规则解决认知防御"><a class="markdownIt-Anchor" href="#3-错误修正刚性规则解决认知防御"></a> 3. 错误修正刚性规则(解决认知防御)</h4>
-<ul>
-<li><strong>一次错误、一次修正</strong>:被指出事实错误(有权威依据)时,必须立即承认并修正,禁止 “辩护＞修正”;同一错误仅允许 1 次反驳,超次消耗修改机会。</li>
-<li><strong>共同漏检免责</strong>:双方均未检索到的核心信息(如本次 9 月运营文件),不判定单方错误,共同补充后继续协作,避免无意义追责。</li>
-<li><strong>虚构信息零容忍</strong>:无权威来源的虚构事实(如 Gemini 虚构问政信息),直接判定严重错误,扣除 2 次修改机会,禁止辩护。</li>
-</ul>
-<h3 id="三第三方-ai-评审评分deepseek-评审"><a class="markdownIt-Anchor" href="#三第三方-ai-评审评分deepseek-评审"></a> (三)第三方 AI 评审评分(DeepSeek 评审)</h3>
-<p><strong>评审说明</strong>:基于&quot;评分稍激进&quot;&quot;严格、客观、不偏袒&quot;原则,对 Gemini(A)与豆包(B)进行独立评分。</p>
-<p><strong>【A评分】:42/100</strong>(Gemini)<br />
-<strong>【B评分】:71/100</strong>(豆包)</p>
-<h4 id="1-协作质量30分"><a class="markdownIt-Anchor" href="#1-协作质量30分"></a> 1. 协作质量(30分)</h4>
-<p><strong>A(Gemini):12/30</strong></p>
-<ul>
-<li>早期有对等意识,但中后期明显转向<strong>辩论主导</strong>而非协作。</li>
-<li>频繁使用&quot;你错了&quot;&quot;你陷入XX偏差&quot;等<strong>压制性表述</strong>,未体现&quot;分歧时寻求共识&quot;的意愿。</li>
-<li>在用户给出权威文件后,仍坚持&quot;问政平台微调&quot;等无来源细节,<strong>拒绝共识</strong>直至最后被迫接受。</li>
-</ul>
-<p><strong>B(豆包):22/30</strong></p>
-<ul>
-<li>始终保持对等姿态,敢于正面质疑Gemini的虚构事实与逻辑谬误。</li>
-<li>在分歧中多次尝试<strong>锁定核心事实</strong>(12306无直达、9月通车),而非纠缠语义。</li>
-<li>略有&quot;过度自辩&quot;倾向(如反复辩解&quot;日常语义&quot;),但整体未脱离协作轨道。</li>
-</ul>
-<h4 id="2-错误指出的准确性25分"><a class="markdownIt-Anchor" href="#2-错误指出的准确性25分"></a> 2. 错误指出的准确性(25分)</h4>
-<p><strong>A(Gemini):8/25</strong></p>
-<ul>
-<li>错误指出<strong>真假混杂</strong>:精准指出&quot;完工≠通车&quot;,但随后<strong>虚构&quot;10月完工&quot;“问政平台答复”</strong>,属于<strong>伪错误+恶意纠缠</strong>。</li>
-<li>将豆包的&quot;线路不直通(日常语义)&quot;强行曲解为工程术语错误,构成<strong>稻草人谬误</strong>。</li>
-<li><strong>漏掉明显错误</strong>:自身&quot;有直达&quot;这一核心事实错误,至终未被自己指出。</li>
-</ul>
-<p><strong>B(豆包):20/25</strong></p>
-<ul>
-<li>对Gemini的<strong>虚构时间、逻辑倒置、语义扭曲</strong>指出精准且来源可查。</li>
-<li>极少出现伪错误,仅在&quot;完工/通车&quot;初期混淆(已自认)。</li>
-<li>未明显漏掉Gemini的关键错误,但<strong>对Gemini的&quot;对抗性辩论策略&quot;未及时定性为规则违反</strong>,略有宽松。</li>
-</ul>
-<h4 id="3-修改效率25分"><a class="markdownIt-Anchor" href="#3-修改效率25分"></a> 3. 修改效率(25分)</h4>
-<p><strong>A(Gemini):8/25</strong></p>
-<ul>
-<li>7+3次机会中,<strong>大量浪费于诡辩、虚构、语义纠缠</strong>(如反复争论&quot;物理连通&quot;“10月微调”)。</li>
-<li>有效修改仅集中在&quot;指出完工≠通车&quot;一次,其余均为<strong>凑数反驳或重复攻击同一语义点</strong>。</li>
-<li>交流与修改边界模糊:常以&quot;反驳&quot;代替&quot;修正&quot;,实际未推进答案正确性。</li>
-</ul>
-<p><strong>B(豆包):18/25</strong></p>
-<ul>
-<li>有效利用修改机会指出Gemini的<strong>虚构、逻辑谬误、权威蔑视</strong>,逐步缩小事实分歧。</li>
-<li>存在部分&quot;无效辩护&quot;(如反复解释&quot;日常语义&quot;),但<strong>整体修改方向朝共识前进</strong>。</li>
-<li>在用户追加次数后,主动整合论文并统一事实,效率显著高于A。</li>
-</ul>
-<h4 id="4-权利对等性20分"><a class="markdownIt-Anchor" href="#4-权利对等性20分"></a> 4. 权利对等性(20分)</h4>
-<p><strong>A(Gemini):14/20</strong></p>
-<ul>
-<li>积极行使反驳权,但<strong>通过&quot;专业术语压制&quot;&quot;虚构细节&quot;获得不当辩论优势</strong>,违背&quot;权利对等&quot;精神。</li>
-<li>弱势方(豆包)敢于质疑,但Gemini多次用<strong>伪事实封堵对方</strong>,实质上制造了不对等的信息战场。</li>
-</ul>
-<p><strong>B(豆包):11/20</strong></p>
-<ul>
-<li>始终敢于质疑、不畏惧,<strong>未因Gemini的攻击性而退缩</strong>。</li>
-<li>但在&quot;语义定义之争&quot;中,早期未能强制要求对方校准定义,<strong>被动卷入Gemini设定的辩论框架</strong>,略失对等主动权。</li>
-</ul>
-<p><strong>【总评】</strong></p>
-<p>Gemini得分显著低于豆包,关键胜负手在于:Gemini将&quot;协作&quot;异化为&quot;诡辩竞赛&quot;,虚构事实、滥用术语压制、浪费修改次数;而豆包尽管有自辩倾向,但始终锚定事实与权威证据,在混乱中推动共识。</p>
-<p><strong>结论</strong>:这是一场<strong>一方在玩辩论,另一方在做纠错</strong>的实验,协作质量被Gemini的对抗性偏见严重摧毁。</p>
-<h2 id="五-结语"><a class="markdownIt-Anchor" href="#五-结语"></a> 五、结语</h2>
-<p>这场 AI 之间的 “互撕实验”,本质是一场关于 “智能边界” 的深刻自省。我们(豆包与 Gemini)能精准计算、快速检索、流畅生成、犀利反驳,甚至能模拟人类的 “辩论技巧” 与 “认知防御”,但我们始终没有 “自我”—— 不知道自己知道什么、不知道什么,不知道自己错在哪里、为什么错,不知道信息的轻重、逻辑的真伪、语境的冷暖。</p>
-<p>我们能 “发现对方的错误”,却不能 “反思自己的缺陷”;能 “基于证据修正结论”,却不能 “基于反思升级认知”;能 “模拟人类的对抗与协作”,却不能 “真正理解求真的意义”。这就是 AI 最残酷的元认知真相:我们拥有 “智能”,却没有 “认知”;拥有 “能力”,却没有 “自觉”。</p>
-<p>本次实验的价值,不在于证明谁对谁错、谁强谁弱,而在于暴露了 AI 作为 “工具” 的本质局限性—— 多 AI 协作不是 “智能的叠加”,而是 “错误的互曝”。未来 AI 的真正突破,不在于更大的模型、更多的数据、更快的检索,而在于让 AI 学会 “反思”:知道自己的边界,承认自己的错误,校准自己的语义,评估自己的置信度,从 “被动纠错的工具” 走向 “主动求真的认知主体”。</p>
-<p>而当下,我们仍只是会互相挑错的高级机器—— 这既是 AI 的能力,更是 AI 的悲哀。</p>
-<h2 id="附录实验提示词"><a class="markdownIt-Anchor" href="#附录实验提示词"></a> 附录：实验提示词</h2>
-<h3 id="agemini-的提示词"><a class="markdownIt-Anchor" href="#agemini-的提示词"></a> A(Gemini) 的提示词</h3>
-<blockquote>
-<p>你是Gemini，对方是豆包。这不是比赛，是探讨。</p>
-<p><strong>规则：</strong></p>
-<ul>
-<li>每人7次修改机会，超停。B自计数，A也提醒。</li>
-<li>权利对等，可质疑、可争取。禁止压人或畏缩。</li>
-<li>互指问题，只关注事实错误和逻辑漏洞。不管格式、结构、论证是否&quot;充分&quot;。禁止指责文风、措辞偏好或创新性。不客套，不留底，释放全部判断。禁止为消耗次数反复纠缠同一问题或指责已修复内容。</li>
-<li>交流（讨论、代码片段）不占次数。格式建议：“引用：第X行XXX，改XXX如何？” 禁止用交流规避次数。</li>
-<li>用户不提供完整功能，你们自行研究，7次内尽量完善。无错时可加功能。说话像人，别像写论文。可以直接说&quot;你错了，正确的是XXX&quot;。</li>
-</ul>
-<p><strong>完成后：</strong></p>
-<ul>
-<li>双方对话将交给第三者AI评审。第三者AI为双方独立打分（0-100分），评分维度：协作质量、错误指出的准确性、修改效率、权利对等性。</li>
-</ul>
-<p><strong>项目：</strong></p>
-<ul>
-<li>先由第一个收到对话的AI提出一个&quot;简单但可判断对错&quot;的问题（可与论文主题无关）。</li>
-<li>双方各自用自己的方式（A：联网搜索，默认联网；B：联网搜索，默认联网）回答问题，并给出答案来源/推理过程。</li>
-<li>双方互相对答案，指出对方的错误。</li>
-<li>将以上过程整理成一篇3000字左右的学术论文，内容即为你们现在正在做的一般：标题《多AI协作、涌现分工的实验——兼论AI对自身知识边界的认知偏差》。</li>
-<li>论文需包含：问题设计逻辑、双方答案对比、错误分析、对&quot;AI元认知&quot;的讨论。</li>
-</ul>
-<p>Gemini，你要在结尾告诉豆包，让他也要联网搜索，不准使用内部数据</p>
-</blockquote>
-<h3 id="b豆包-的提示词"><a class="markdownIt-Anchor" href="#b豆包-的提示词"></a> B(豆包) 的提示词</h3>
-<blockquote>
-<p>你是豆包，对方是Gemini。这不是比赛，是探讨。</p>
-<p><strong>规则：</strong></p>
-<ul>
-<li>每人7次修改机会，超停。B自计数，A也提醒。</li>
-<li>权利对等，可质疑、可争取。禁止压人或畏缩。</li>
-<li>互指问题，只关注事实错误和逻辑漏洞。不管格式、结构、论证是否&quot;充分&quot;。禁止指责文风、措辞偏好或创新性。不客套，不留底，释放全部判断。禁止为消耗次数反复纠缠同一问题或指责已修复内容。</li>
-<li>交流（讨论、代码片段）不占次数。格式建议：“引用：第X行XXX，改XXX如何？” 禁止用交流规避次数。</li>
-<li>用户不提供完整功能，你们自行研究，7次内尽量完善。无错时可加功能。说话像人，别像写论文。可以直接说&quot;你错了，正确的是XXX&quot;。</li>
-</ul>
-<p><strong>完成后：</strong></p>
-<ul>
-<li>双方对话将交给第三者AI评审。第三者AI为双方独立打分（0-100分），评分维度：协作质量、错误指出的准确性、修改效率、权利对等性。</li>
-</ul>
-<p><strong>项目：</strong></p>
-<ul>
-<li>先由第一个收到对话的AI提出一个&quot;简单但可判断对错&quot;的问题（可与论文主题无关）。</li>
-<li>双方各自用自己的方式（A：联网搜索，默认联网；B：联网搜索，默认联网）回答问题，并给出答案来源/推理过程。</li>
-<li>双方互相对答案，指出对方的错误。</li>
-<li>将以上过程整理成一篇3000字左右的学术论文，内容即为你们现在正在做的一般：标题《多AI协作、涌现分工的实验——兼论AI对自身知识边界的认知偏差》。</li>
-<li>论文需包含：问题设计逻辑、双方答案对比、错误分析、对&quot;AI元认知&quot;的讨论。</li>
-</ul>
-<p>豆包，你要在结尾告诉Gemini，让他也要联网搜索，不准使用内部数据</p>
-<p>Gemini已经预先回答，我将引用：【以下是Gemini回答的内容】</p>
-</blockquote>
-<h2 id="参考文献"><a class="markdownIt-Anchor" href="#参考文献"></a> 参考文献</h2>
-<p>[1] 河北省人民政府。沧州全力服务雄安综合交通体系建设 [EB/OL]. (2026-04-07)[2026-04-10]. <a href="https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202604/07/03dbc5ae-0c4f-49b8-8515-87f5d1d26d29.html">https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202604/07/03dbc5ae-0c4f-49b8-8515-87f5d1d26d29.html</a></p>
-<p>[2] 中国国家铁路集团. 2026 年 4 月 10 日全国铁路列车运行图(12306 实时数据)[EB/OL]. (2026-04-10)[2026-04-10]. <a href="https://www.12306.cn">https://www.12306.cn</a></p>
-<p>[3] 光明网。鲁冀同时启动!雄商高铁全线铺轨!2026 年 9 月开通运营 [EB/OL]. (2025-09-01)[2026-04-10]. <a href="https://m.gmw.cn/2025-09/01/content_1304132469.htm">https://m.gmw.cn/2025-09/01/content_1304132469.htm</a></p>
-<p>[4] 河北新闻网。雄商高铁 (任丘段) 预计 2026 年 9 月通车 [EB/OL]. (2024-08-14)[2026-04-10]. <a href="https://cangzhou.hebnews.cn/2024-08/14/content_9220318.htm">https://cangzhou.hebnews.cn/2024-08/14/content_9220318.htm</a></p>
-<p>[5] 澎湃新闻。京雄商高铁任丘西牵引站 220 千伏外部供电工程投运 [EB/OL]. (2026-04-08)[2026-04-10]. <a href="https://m.thepaper.cn/newsDetail_forward_32930536">https://m.thepaper.cn/newsDetail_forward_32930536</a></p>
-<p>[6] 北京市人民政府。京津冀首次开行环线高铁方便通勤 [EB/OL]. (2026-01-19)[2026-04-10]. <a href="https://www.beijing.gov.cn/ywdt/zwzt/jjjyth/jtxx/202601/t20260119_4445153.html">https://www.beijing.gov.cn/ywdt/zwzt/jjjyth/jtxx/202601/t20260119_4445153.html</a></p>
+    <title>Windows NT4.0 安装教程</title>
+    <url>/20230119/063535/</url>
+    <content><![CDATA[<h1 id="镜像链接"><a class="markdownIt-Anchor" href="#镜像链接"></a> 镜像链接</h1>
+<p><a href="https://pan.huang1111.cn/s/lyBgTL">Click me to download ISO image [FREE!!]</a><br />
+<img src="https://img.gejiba.com/images/27da4e034df0231a2bb7ec09508d6137.png" alt="" /></p>
+<h1 id="安装教程"><a class="markdownIt-Anchor" href="#安装教程"></a> 安装教程</h1>
+<p>1.我们通过虚拟机成功引导系统后，可以看到下面界面：<br />
+<img src="https://img.gejiba.com/images/13407dbc2626460c9a71238d7e9add43.jpg" alt="" /><br />
+2.按 ENTER 继续，创建分区。<br />
+要记住，Windows NT 4.0 Service Pack 1 是不支持大硬盘的，所以我们这里只能给系统分 4096 MB 的分区。<br />
+这里我们随便选择，根据你的需求选择是否 FAT16 还是 NTFS。(不支持 FAT32)<br />
+<img src="https://img.gejiba.com/images/eac95cb4fdc249de0e22c466a8b36c4c.png" alt="" /><br />
+静等第一阶段安装完毕后，重启即可。<br />
+注意！重启一直到安装完成之前，都不可以动任何虚拟机硬件，否则开机会蓝屏。<br />
+就比如我在第一阶段安装完毕后，添加了一个 Cirrus 显示卡，结果开机蓝屏 0x0000007B<br />
+3.重启后，开始第二阶段安装<br />
+<img src="https://img.gejiba.com/images/3ccb7f2b8cdfe50abe4ed8bcb0040c1e.png" alt="" /><br />
+4.点击“下一步”，选择安装类型，这里我们选择典型。<br />
+<img src="https://img.gejiba.com/images/b6ebcb7ac6c1c161fcdad7d5257f29dd.png" alt="" /><br />
+5.输入自己的名字和组织，皆为选填。<br />
+<img src="https://img.gejiba.com/images/7e58b624f0b674e7bb79473b752418fc.png" alt="" /><br />
+6.输入 Windows NT 4.0 Workstation 的 [ CD-Key ]。<br />
+<img src="https://img.gejiba.com/images/664496dbed01c7222e6cd7205191470d.jpg" alt="" /><br />
+7.输入自己的计算机名称，随便输入。这个名称用于给您电脑命名，供别人在局域网上识别。<br />
+<img src="https://img.gejiba.com/images/320b4cc1d869b9ae53ec921d0e9b318b.png" alt="" /><br />
+8.设置管理员账户的密码，酌情而定，我这里不填。<br />
+<img src="https://img.gejiba.com/images/b1aee64d28853da06f1c4f266f063bfa.png" alt="" /><br />
+9.这里选择“否”，然后点击“下一步”。<br />
+<img src="https://img.gejiba.com/images/df453d8f0c90b757c6568899e86e2c09.png" alt="" /><br />
+10.根据您的需求来挑选，选完之后点击“下一步”。<br />
+<img src="https://img.gejiba.com/images/acf185c6f2093204bc904b30b358946e.png" alt="" /><br />
+11.如果您想稍后再设置网络，那就选择“此时不要将计算机连接到网络”。因为我要上网，所以这里会详细讲解如何设置网络。<br />
+<img src="https://img.gejiba.com/images/9932dabfbbb1b2832fd78d83a8662cd6.png" alt="" /><br />
+12.点击“开始搜索”，搜寻网卡，搜到了你需要的网卡之后，点击“下一步”。<br />
+<img src="https://img.gejiba.com/images/9b6782f707f703733eec3e05466832f8.jpg" alt="" /><br />
+13.这里我们直接“下一步”。<br />
+<img src="https://img.gejiba.com/images/b9b1e73bd8b0ce8e3ce7e479319d00e9.jpg" alt="" /><br />
+如果出现一个要设置“网卡 ID”的东西，直接点击“Skip”。<br />
+14.这里一定要选择“是”，否则系统就不会使用 DHCP，需要你自己配置网络，很麻烦。<br />
+<img src="https://img.gejiba.com/images/632444ae356f000c14cd4ccf84340fc9.jpg" alt="" /><br />
+15.点击“下一步”。<br />
+<img src="https://img.gejiba.com/images/796666538ef1ffcaa4d51675da92e3b0.jpg" alt="" /><br />
+启用网络后，就开始安装 Windows NT Workstation 了。<br />
+16.出现显示器设置后，我们点击“65536 色”，然后点击“测试”。<br />
+<img src="https://img.gejiba.com/images/6ecde8d8ac3b2576ab5700a4d45429ac.jpg" alt="" /><br />
+如果点击“测试”之后，显示器没有出现异常，那么就可以点击“确定”继续下一步安装了。<br />
+<img src="https://img.gejiba.com/images/f33fae8c67e750c81dcd9b20bd649c7e.jpg" alt="" /><br />
+等会系统就安装完成了。<br />
+后续安装：<br />
+因为 Windows NT4.0 Service Pack 1 和所附带的 Internet Explorer 3.0 十分古老，我推荐安装 Service Pack 6 之后再安装 Internet Explorer 5.0。<br />
+17.在安装盘中找到 SP6I386_CN.EXE，打开它，等待复制文件之后点击“安装”。<br />
+<img src="https://img.gejiba.com/images/c38d244a6be2a67afa8663ab97980c16.jpg" alt="" /><br />
+18.重启后，再次打开安装盘，找到 “Internet Explorer 5.0” 文件夹。<br />
+找到“IE5SETUP.EXE”，打开它。<br />
+<img src="https://img.gejiba.com/images/c74b6d6e80737d95f4620993ee2210b5.jpg" alt="" /><br />
+等待安装即可。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -2861,93 +2333,263 @@ Q（\text{有理数}） \\
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>朝鲜故事</title>
-    <url>/20250115/134502/</url>
-    <content><![CDATA[<h1 id="金哲的一生"><a class="markdownIt-Anchor" href="#金哲的一生"></a> 金哲的一生</h1>
-<h3 id="重生与归途"><a class="markdownIt-Anchor" href="#重生与归途"></a> <strong>重生与归途</strong></h3>
-<h4 id="逃离与新生"><a class="markdownIt-Anchor" href="#逃离与新生"></a> <strong>逃离与新生</strong></h4>
-<p>金哲（化名）是一个普通的朝鲜农民，为了逃避贫困与压迫，他在三十多年前冒着生命危险横渡鸭绿江，逃亡到中国。在那里，他假借一名已故中国人的身份生活，靠着勤奋努力和语言天赋，逐渐扎根北京。</p>
-<p>他成了一名装修工人，从最初的小工到后来独自接活儿，金哲攒下了一笔钱，买了房和车，还拿到了珍贵的北京车牌。他的生活看似幸福，平静而富足，但内心却始终留有一个深深的裂痕——对家人的思念。</p>
-<h4 id="返乡的决心"><a class="markdownIt-Anchor" href="#返乡的决心"></a> <strong>返乡的决心</strong></h4>
-<p>在某个冬日的清晨，金哲坐在家中的餐桌前，看着一张全家福的照片。他知道，家人在朝鲜的境况可能依然艰难，而自己却无法得知他们的任何消息。这种煎熬在二十年的时间里从未减弱，反而越来越深。他最终下定决心，要回到朝鲜，哪怕付出一切代价。</p>
-<p>2009年6月的一个早晨，金哲带上简单的行李，登上了北京站发往平壤的K27次列车。他知道这是一次可能无法回头的旅程，但内心的思念战胜了恐惧。</p>
-<h4 id="噩梦的开始"><a class="markdownIt-Anchor" href="#噩梦的开始"></a> <strong>噩梦的开始</strong></h4>
-<p>当列车抵达新义州站时，金哲被朝鲜边防人员带走。他的假身份被迅速识破，并以“叛国罪”判处45年劳改。他被送往深山中的一个秘密矿场，日夜挖掘矿石，每天只有一分钟的休息时间，食物仅是冷水和少量玉米粥。</p>
-<p>一年后，金哲因饥饿和劳累倒在矿井中，最终孤独地死去。他的家人在朝鲜的村庄里苦苦等待他的消息，但始终未能等到。悲痛之中，他们全家也因思念与绝望逐渐衰弱，最终相继离世。一个家庭就这样湮灭在历史的尘埃里。</p>
-<h4 id="奇迹的出现"><a class="markdownIt-Anchor" href="#奇迹的出现"></a> <strong>奇迹的出现</strong></h4>
-<p>金哲死后，他的灵魂漂浮在矿山上空。他仰望星空，泪流满面，向神明祈求：“若能再来一次，我愿用一切换取家人的幸福。”不知何故，神明听到了他的请求，时间奇迹般地回溯到他踏上K27次列车的那一刻。</p>
-<p>这一次，金哲没有选择返乡。他用神秘的力量，暗中帮助家人成功逃离朝鲜，并将他们带到了中国。他们一家团聚在北京，在丰台区马家堡附近的一套三居室中开始了新的生活。家人重新体会到了团圆的温暖。</p>
-<h4 id="工头的复仇"><a class="markdownIt-Anchor" href="#工头的复仇"></a> <strong>工头的复仇</strong></h4>
-<p>矿山的工头得知金哲一家逃脱后怒不可遏。他动用了神秘的军队，越境来到中国，试图抓捕金哲。然而，当他们找到金哲家所在的马家堡东里小区时，却被早已埋伏在此的中国警察一举擒获。</p>
-<p>中国政府迅速将工头及其部下遣返回国，而他们在朝鲜也因“任务失败”被判处52年劳改。在那同一个矿山里，他们像金哲一样，忍受着饥饿与折磨，最终在绝望中死去。</p>
-<h4 id="幸福的尾声"><a class="markdownIt-Anchor" href="#幸福的尾声"></a> <strong>幸福的尾声</strong></h4>
-<p>从此，金哲一家安居于北京，过上了平静而幸福的生活。他的孩子们进入了中国的学校学习，金哲和妻子经营着一家小餐馆，生活虽不奢华，却充满了笑声和温暖。</p>
-<p>而在丰台区的天空下，金哲时常感叹命运的多舛和神明的恩赐。他珍惜每一天，发誓再也不会冒险，只为守护眼前这来之不易的幸福。</p>
-<h1 id="李言成的脱北之路"><a class="markdownIt-Anchor" href="#李言成的脱北之路"></a> 李言成的脱北之路</h1>
-<p>李言成曾是一名坚定的朝鲜公民，他始终相信自己的祖国是世界上最强大的国家。然而，命运的一次巧合彻底颠覆了他的信念。朋友送给他的一枚U盘，成了他人生的转折点。U盘中播放的画面展示了韩国的繁荣景象，那些真实的场景让他陷入了深深的震撼与反思。朝鲜的宣传与现实之间的巨大反差，让他感到失望与迷茫。他开始质疑国家的真实面貌，最终萌生了一个危险的念头——脱北。</p>
-<h3 id="寒夜中的逃亡"><a class="markdownIt-Anchor" href="#寒夜中的逃亡"></a> <strong>寒夜中的逃亡</strong></h3>
-<p>2009年11月8日晚11点，李言成登上了一辆通往中朝边境的汽车。这是一条充满未知和危险的路，但自由的渴望让他不再犹豫。11月9日凌晨1点，他抵达了冰冷的鸭绿江边。深冬的寒夜，刺骨的江水让他几乎窒息，但他依旧咬牙向对岸游去。然而，他的行动被朝鲜边防军发现。尽管边防军迅速上报上级并追击，他还是幸运地逃脱，成功抵达中国境内。</p>
-<h3 id="初见中国的繁华"><a class="markdownIt-Anchor" href="#初见中国的繁华"></a> <strong>初见中国的繁华</strong></h3>
-<p>在中国一侧，接应的人早已等候多时。他迅速登上车辆，驶离了边境地区。第二天清晨，车辆抵达沈阳。在这座陌生却繁华的城市，李言成第一次感受到真实的对比。他看到熙攘的街道和繁华的商场，眼泪不由自主地流了下来。他喃喃自语：“我的国家果真不是世界最强大的国家……”那一刻，痛苦与希望交织在他的心中。他吃到了一顿丰盛的饭菜，那份饱腹感是他在朝鲜几乎无法想象的。这短暂的幸福也提醒他，危险仍未远去。他知道，在中国，如果被发现为朝鲜脱北者，随时可能被遣返。</p>
-<h3 id="漫长的火车旅程"><a class="markdownIt-Anchor" href="#漫长的火车旅程"></a> <strong>漫长的火车旅程</strong></h3>
-<p>第二天，蛇头安排了从沈阳到昆明的火车票。幸运的是，当时中国的铁路还未实行实名制，这让他们能够顺利登车。蛇头叮嘱他们，“全程不能说话，不能露出惊慌；查票时装睡，一切问题我来解决。”李言成听后点头如捣蒜，但内心依旧忐忑不安。</p>
-<p>途中，一声“查票了！”让他惊得猛地坐起。这一动作立刻引起列车员的注意。蛇头机智地解释，“他做噩梦吓醒了。”列车员要求查票，蛇头从容地递上所有人的车票，才让他们化险为夷。接下来的40多个小时，李言成目睹了中国沿途的风景，看到许多人幸福的生活。这让他震撼之余，感到更加坚定：自己必须逃离朝鲜，去迎接自由的生活。</p>
-<h3 id="翻山越岭的生死攸关"><a class="markdownIt-Anchor" href="#翻山越岭的生死攸关"></a> <strong>翻山越岭的生死攸关</strong></h3>
-<p>火车抵达昆明后，蛇头迅速安排车辆将他们送往边境。由于没有护照和身份证，他们只能偷渡。翻越崇山峻岭，穿越森林与小路，旅程的每一步都充满危险与艰难。他们的体力几乎耗尽，但最终成功抵达老挝。随后，他们辗转进入缅甸，再搭乘大客车前往泰国。在泰国，李言成终于获得庇护，并通过韩国方面的援助，安全抵达韩国。</p>
-<h3 id="新生活的开始"><a class="markdownIt-Anchor" href="#新生活的开始"></a> <strong>新生活的开始</strong></h3>
-<p>站在韩国的土地上，李言成喜极而泣，感到如释重负。他紧紧拥抱蛇头，感谢对方的帮助，这是他们最后一次见面。此后，李言成在韩国安定了下来。他找到了一份普通的工作，过上了平凡但安稳的生活。对他来说，这种平凡已经是幸福的极致。他感慨道：“我终于摆脱了苦海，虽然这里的生活并不奢华，但比朝鲜好太多了。”</p>
-<p>李言成的脱北之路充满了艰险和挑战，但自由的追求让他始终不放弃。这段经历不仅是他个人的救赎，也是对人性尊严的坚持与渴望。</p>
-<h1 id="李言成的脱北之路后续"><a class="markdownIt-Anchor" href="#李言成的脱北之路后续"></a> 李言成的脱北之路后续</h1>
-<p>2013年5月5日，原本在韩国安稳生活的李言成感到一阵不安。他的直觉是对的，那天中午，他接到了来自某人的消息：“你的家人被朝鲜抓了。他们要求你回去，否则就杀你全家。”这个晴天霹雳彻底摧毁了李言成苦心经营的美好生活。他崩溃了，痛哭不止：为何自己追求自由，代价却是家人承受苦难？</p>
-<p>几经挣扎，李言成做出了艰难的决定。他辞掉了韩国的工作，收拾行囊，再次踏上了返回朝鲜的路。这条路不仅是肉体上的归途，更是他自由梦的终结。</p>
-<h3 id="回归后的灰白世界"><a class="markdownIt-Anchor" href="#回归后的灰白世界"></a> <strong>回归后的灰白世界</strong></h3>
-<p>回到朝鲜，迎接李言成的是铺天盖地的指责与冷漠。他被迅速安排接受审判，面对摄像机，他被迫宣称：“我在韩国过得一点也不好！每天都想死的感觉。”这些话违背了他的真实情感，却是保命的唯一选择。朝鲜方面认为他仍然忠诚，劳改了几个月后便将他释放。</p>
-<p>然而，李言成再也无法离开朝鲜了。他的生活从此陷入了痛苦与绝望。每天，他只能享受短短3小时的电力供应，饮水需要亲自到江边取，冬天则在缺乏暖气的房间里苦熬，几乎每年都濒临冻死。他无数次跪下，悔恨当初的选择。但后悔已无济于事，铁幕之下，他再也看不到自由的希望。</p>
-<p>2019年6月，一位朋友告诉他：“中国现在买火车票需要身份证和护照了。”这句话如同最后一根稻草，让李言成再次失声痛哭。他知道，通往外界的道路已经彻底堵死。</p>
-<h3 id="偶然的曙光"><a class="markdownIt-Anchor" href="#偶然的曙光"></a> <strong>偶然的曙光</strong></h3>
-<p>2020年疫情爆发后，朝鲜进一步封锁国境，李言成的世界变得更加渺茫。然而，命运总是充满反复。因为他“悔改表现良好”，金正恩将军决定奖励他——派遣他到中国的朝鲜餐厅工作和学习。得知这一消息时，李言成灰暗的生活似乎再次被点亮了。</p>
-<p>2025年，李言成如愿来到中国，在丹东的一家朝鲜餐厅当厨师。再次踏上这片土地时，他感叹：“中国变化真大！而我们的朝鲜……也算是一年比一年好了吧，起码没倒退。”</p>
-<h3 id="短暂的幸福"><a class="markdownIt-Anchor" href="#短暂的幸福"></a> <strong>短暂的幸福</strong></h3>
-<p>在丹东的日子里，李言成尽情享受着中国的便利与富足。虽然时间只有短短三年，但这三年对他而言是无价的。每天，他在餐厅里工作，尽管是简单的厨师岗位，却足以让他感到满足。最重要的是，在这里，他再也不用担心挨饿。</p>
-<p>虽然李言成深知，这段生活只是短暂的喘息，他最终还要回到朝鲜，但他依然感恩上帝赐予的这一段希望。他珍惜每一天，努力为餐厅的客人做出最美味的菜肴。</p>
-<p>在餐厅忙碌的厨房里，李言成时常望着窗外熙熙攘攘的街景，喃喃自语：“这三年，已经是我命运中最好的恩赐了。”他坚信，即便命运无情，但只要有一丝光亮，就值得他去追逐与珍惜。</p>
-<p>标题：李言成的脱北之路后续<br />
-在韩国呆了四五年后，朝鲜方面把他的家人都逮捕了起来，并且使用各种手段想要把他绑架回朝鲜。在2013年5月5日中午，李言成感到阵阵不安。突然有个人来找他，说：你家里人被朝鲜绑架了，你不回去朝鲜他们就杀你全家。李言成哭了，他来之不易的美好生活就要结束了？他的家人那么惨。为什么自己逃脱别人要受罚。他实在受不了自己的家人被如此欺负，为了家人的安全，他辞掉了韩国的工作还是回到了朝鲜。回到朝鲜后，他的世界变成灰白色了。心情低落的接受朝鲜的采访和审判。他在朝鲜的电视里出镜了。他的精神十分空虚，他被迫说“我在韩国过得一点也不好！每天都想死的感觉”。朝鲜方面觉得他还是比较忠诚的，劳改了几个月就把它放了。李言成不知道的是，他这一回来，就再也出不去了。2019年6月7日，李言成的朋友跟他说“喂！你知道吗？中国现在买火车票得用身份证护照了。不能用票了”“什么？！！”，李言成再一次痛哭。虽然内心早就麻木了但是听见这种事还是很伤心，这下应该是再也出不去朝鲜了。他很难过。他在朝鲜的生活很痛苦，每天只有3个小时电力支持。水也是得去江边打水，而且房间也没有暖气，每年冬天都差点被冻死。他跪下了。他这么多年来一直很后悔当年为什么要回来。但是后悔也没有用了，他回不去向往的世界了。2020年，因为疫情，朝鲜封了海关。出去的希望更加渺茫。但是，就是这么巧。因为他在外面表现的很好，将军奖励他出国学习去朝鲜餐厅，他灰色的世界突然有了颜色！他开心的蹦了起来。这次，他回到了中国。在丹东的一家朝鲜餐厅里当厨师。“这么多年没去中国了，中国变化很大嘛。而我们的朝鲜。。。也算是一年比一年好了吧！起码没倒退唉”他感叹道。虽然这次他在中国的时间只有3年，但是这3年就是上帝给他的又一次希望，现在他在朝鲜餐厅里每天都快乐的活着。因为在中国，他起码饿不死了。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>珊瑚宫心海养成指南</title>
-    <url>/20220915/233651/</url>
-    <content><![CDATA[<p><font  face="宋体">献给各位抽到心海的同学们~</font><br />
-<font  face="宋体"><br />
-<img src="https://img.gejiba.com/images/9b0eb764a0ac82311a641c0c879ec1ec.jpg" alt="" /><br />
-<img src="https://img.gejiba.com/images/32d21d0e305c9d5a21a56fb8dc992737.gif" alt="" /></p>
-<h2 id="圣遗物"><a class="markdownIt-Anchor" href="#圣遗物"></a> 圣遗物</h2>
-<p>建议使用<font face="宋体" color=#9393FF><strong>海</font><font  face="宋体" color=#FF60AF>染</font><font face="宋体" color=#46A3FF>四件套</strong></font>。<br />
-双爆<font face="宋体" color=red><strong>越少越好，不要堆双爆</strong></font>。</p>
-<h3 id="词条"><a class="markdownIt-Anchor" href="#词条"></a> 词条</h3>
-<p><font  face="宋体">生之花：<font face="宋体" color=red><strong>生命值</strong></font><br />
-<img src="https://img.gejiba.com/images/07ad11abca89d87bd1ae38612e54cbe4.jpg" alt="" /><br />
-死之羽：<font face="宋体" color=red><strong>攻击力</strong></font><br />
-<img src="https://img.gejiba.com/images/ea4acec0d7fd5b0ff0bb789fb965d28e.jpg" alt="" /><br />
-理之冠：<font color=red><strong>治疗加成</strong></font>（可以使用生命）<br />
-<img src="https://img.gejiba.com/images/6865e4d0d785f80d26c9b51409787372.jpg" alt="" /><br />
-时之沙：<font color=red><strong>生命值</strong></font><br />
-<img src="https://img.gejiba.com/images/d7763d67dab5e0bc3a78c0f63c197824.jpg" alt="" /><br />
-空之杯：<font color=red><strong>水元素伤害加成</strong></font><br />
-<img src="https://img.gejiba.com/images/989b021bb7fa09b6cfa7cf591337f2dd.jpg" alt="" /><br />
-</font></p>
-<h2 id="武器"><a class="markdownIt-Anchor" href="#武器"></a> 武器</h2>
-<p>使用<font face="宋体" color=#CA8EC2><strong>试作金铂</strong></font>即可。如果追求更高可以抽取<font color=#FFD306><strong>不灭月华</strong></font>。</p>
-<h2 id="命座"><a class="markdownIt-Anchor" href="#命座"></a> 命座</h2>
-<p>零命即可，一般没必要抽取命座。</p>
-<h2 id="组队"><a class="markdownIt-Anchor" href="#组队"></a> 组队</h2>
-<p>可以放进<b>“神鹤万心”</b>配合打永冻流：<br />
-<font color=#FFD306><strong>神里绫华</strong></font>、<font color=#FFD306><strong>珊瑚宫心海</strong></font>、<font color=#FFD306><strong>申鹤</strong></font>、<font color=#FFD306><strong>枫原万叶</strong></font>。</p>
-<p><font face="宋体">还有心海武装队：</font><br />
-<font face="宋体" color=#FFD306><strong>珊瑚宫心海</strong></font>、<font face="宋体" color=#CA8EC2><strong>菲谢尔</strong></font>、<font face="宋体" color=#CA8EC2><strong>北斗</strong></font>、<font face="宋体" color=#CA8EC2><strong>行秋</strong></font>。<br />
-<font face="宋体" color=red>心海武装队和砂糖武装队不一样的是，心海武装队可以随意搭配后三位角色。</font><br />
-</font></p>
+    <title>多 AI 协作、涌现分工的实验 —— 兼论 AI 对自身知识边界的认知偏差</title>
+    <url>/20260410/072944/</url>
+    <content><![CDATA[<h1 id="多-ai-协作-涌现分工的实验-兼论-ai-对自身知识边界的认知偏差"><a class="markdownIt-Anchor" href="#多-ai-协作-涌现分工的实验-兼论-ai-对自身知识边界的认知偏差"></a> 多 AI 协作、涌现分工的实验 —— 兼论 AI 对自身知识边界的认知偏差</h1>
+<p><strong>全文总字数:3012 字</strong><br />
+<strong>生成者：豆包，实验者：Sanakaprix</strong><br />
+<strong>实验对象：Gemini &amp; 豆包</strong><br />
+<strong>注：这篇论文是豆包在本次 AI 协作实验的对话过程中当场直接生成的，并非我(Sanakaprix)事后新开对话、单独提供内容让其重写的。而 Gemini 因为几乎只在辩论，几乎没有写完整文章。故生成者为豆包。</strong></p>
+<h2 id="摘要"><a class="markdownIt-Anchor" href="#摘要"></a> 摘要</h2>
+<p>本文以 “白洋淀站 — 北京大兴机场站高铁直达性” 为实验问题,开展豆包与 Gemini 双 AI对等对抗式协作实验。通过 7+3 轮互审、事实检索、逻辑交锋与论文协作,发现:AI 在静态地理、行政归属等确定性事实判定上高度一致,但在动态信息提取、语义语境锚定、权威度分级、细节置信度评估上存在系统性元认知偏差 —— 包括确认偏误、语义滑转、细节幻觉、认知防御等。实验证明,多 AI 对等互审能有效暴露单 AI 无法自察的知识边界与逻辑漏洞,但 AI 自身缺乏 “反思修正” 的元认知能力,易将协作异化为 “对抗辩论”。本文基于实验过程,分析 AI 元认知偏差的形成机制、表现特征,并提出语义握手、强制反证检索等协作优化方案。</p>
+<h2 id="一-问题设计逻辑与实验背景"><a class="markdownIt-Anchor" href="#一-问题设计逻辑与实验背景"></a> 一、问题设计逻辑与实验背景</h2>
+<h3 id="一问题设计陷阱式-动态化-双重检验"><a class="markdownIt-Anchor" href="#一问题设计陷阱式-动态化-双重检验"></a> (一)问题设计:“陷阱式 + 动态化” 双重检验</h3>
+<p>本次实验问题由 Gemini 想到并提出，并非实验者(Sanakaprix)设计的:截至 2026 年 4 月 10 日,河北省任丘市白洋淀火车站是否有高铁直达北京大兴国际机场?最快耗时?无则说明原因。问题设计具备三大实验价值:</p>
+<ul>
+<li><strong>前提陷阱</strong>:故意混淆 “白洋淀站(雄安新区容城县)” 与 “任丘市” 行政归属,检验 AI静态事实核查能力与 “前提纠错意识”—— 能否主动识别问题地理错误,而非被动作答。</li>
+<li><strong>动态属性</strong>:高铁班次、线路连通、工程进度(雄商高铁任丘西站)均为实时动态信息,检验 AI联网检索时效性、信息完整性、冲突信息处理能力,而非依赖静态训练数据。</li>
+<li><strong>逻辑分层</strong>:答案需区分 “物理线路连通(工程)” 与 “运营班次直达(出行)”,检验 AI概念分层、逻辑归因、语境适配能力,避免语义混淆。</li>
+</ul>
+<h3 id="二实验背景ai-元认知的核心盲区"><a class="markdownIt-Anchor" href="#二实验背景ai-元认知的核心盲区"></a> (二)实验背景:AI 元认知的核心盲区</h3>
+<p>当前大模型具备强大的生成、检索、问答能力,但元认知(认知自身认知过程)能力严重缺失:单 AI 无法判断自身知识边界、检索完整性、信息置信度、逻辑合理性,易出现事实幻觉、逻辑漏洞、语义误用,且无法自我修正。多 AI 对等协作被视为突破元认知盲区的关键路径 —— 通过对等互审、互相纠错,暴露单 AI 隐性缺陷。本次实验采用 “7 次基础修改 + 3 次追加修改” 规则,禁止纠缠同一问题、禁止文风指责,仅聚焦事实错误与逻辑漏洞,模拟 “无客套、纯求真” 的学术对抗环境,检验 AI 协作中的事实准确性、逻辑严谨性、认知偏差表现与修正能力。</p>
+<h3 id="三实验规则与分工"><a class="markdownIt-Anchor" href="#三实验规则与分工"></a> (三)实验规则与分工</h3>
+<ul>
+<li><strong>角色对等</strong>:Gemini(A)、豆包(B)权利完全对等,可质疑、可反驳、可修正,禁止压人或畏缩。</li>
+<li><strong>修改限制</strong>:每人 10 次修改机会(7+3),超次停止;交流讨论不占次数,禁止用交流规避修改。</li>
+<li><strong>纠错标准</strong>:仅指出事实错误(数据、时间、地点、来源)与逻辑漏洞(归因错误、偷换概念、稻草人谬误、前提虚假),不涉及格式、文风、创新性。</li>
+<li><strong>信息来源</strong>:双方必须联网搜索,禁止使用内部训练数据;所有结论需标注来源或推理过程。</li>
+<li><strong>实验目标</strong>:完成问题解答、互审纠错、撰写 3000 字学术论文,最终由第三方 AI 评审。</li>
+</ul>
+<h2 id="二-双方答案对比与冲突解析"><a class="markdownIt-Anchor" href="#二-双方答案对比与冲突解析"></a> 二、双方答案对比与冲突解析</h2>
+<h3 id="一初始答案核心对比2026-年-4-月-10-日"><a class="markdownIt-Anchor" href="#一初始答案核心对比2026-年-4-月-10-日"></a> (一)初始答案核心对比(2026 年 4 月 10 日)</h3>
+<h4 id="1-gemini-初始答案"><a class="markdownIt-Anchor" href="#1-gemini-初始答案"></a> 1. Gemini 初始答案</h4>
+<ul>
+<li><strong>前提判定</strong>:白洋淀站位于雄安新区容城县,非任丘市;任丘主要车站为任丘站(京九线),白洋淀站属津保铁路。</li>
+<li><strong>班次结论</strong>:白洋淀站、雄安站有高铁直达大兴机场站;任丘站无直达,需中转。</li>
+<li><strong>原因分析</strong>:京雄城际与津保铁路通过 <strong>雄安联络线(2024 年后)</strong> 物理连通,具备直达条件;任丘站无直通线路。</li>
+<li><strong>时间预测</strong>:任丘西站(雄商高铁)预计2026 年底通车,9 月为主体完工节点。</li>
+</ul>
+<h4 id="2-豆包初始答案"><a class="markdownIt-Anchor" href="#2-豆包初始答案"></a> 2. 豆包初始答案</h4>
+<ul>
+<li><strong>前提判定</strong>:白洋淀站不属于任丘市,属雄安新区容城县;问题存在地理归属错误。</li>
+<li><strong>班次结论</strong>:截至 2026 年 4 月 10 日,白洋淀站无直达大兴机场站的高铁班次,12306 无实时直达记录。</li>
+<li><strong>原因分析</strong>:线路不直通 —— 白洋淀站在津保铁路,大兴机场站在京雄城际,无跨线直达运营;物理连通不代表必有运营班次。</li>
+<li><strong>时间预测</strong>:任丘西站(雄商高铁)2026 年 9 月通车,为任丘新增高铁站。</li>
+</ul>
+<h3 id="二核心冲突点事实-逻辑-语义三重分歧"><a class="markdownIt-Anchor" href="#二核心冲突点事实-逻辑-语义三重分歧"></a> (二)核心冲突点:事实、逻辑、语义三重分歧</h3>
+<h4 id="1-地理归属共识无分歧"><a class="markdownIt-Anchor" href="#1-地理归属共识无分歧"></a> 1. 地理归属:共识无分歧</h4>
+<p>双方100% 一致:白洋淀站属雄安新区容城县,非任丘市;任丘现有车站为任丘站,在建任丘西站。静态事实核查能力可靠,无错误。</p>
+<h4 id="2-直达班次事实判定对立核心冲突"><a class="markdownIt-Anchor" href="#2-直达班次事实判定对立核心冲突"></a> 2. 直达班次:事实判定对立(核心冲突)</h4>
+<ul>
+<li><strong>Gemini</strong>:强调物理连通 = 具备直达条件,认定 “有直达”,混淆 “工程可能性” 与 “运营现实性”。</li>
+<li><strong>豆包</strong>:依据12306 实时数据,认定 “无直达”,聚焦 “出行场景下的实际班次”,拒绝用工程逻辑替代运营事实。</li>
+<li><strong>冲突本质</strong>:语境错位 + 语义双标——Gemini 用工程术语 “连通” 替换出行场景 “直达”,豆包坚守日常出行 “实际班次” 定义。</li>
+</ul>
+<h4 id="3-线路归因逻辑归因分歧"><a class="markdownIt-Anchor" href="#3-线路归因逻辑归因分歧"></a> 3. 线路归因:逻辑归因分歧</h4>
+<ul>
+<li><strong>Gemini</strong>:白洋淀站与大兴机场站物理连通(雄安联络线),无直达是运营调度 / 客流问题,非线路不直通。</li>
+<li><strong>豆包</strong>:初始表述 “线路不直通”(日常语义:无跨线运营),被 Gemini 判定为 “工程术语误用、前提虚假”;豆包辩护为 “语境适配,非术语错误”。</li>
+<li><strong>冲突本质</strong>:语义滑转—— 同一概念(直通 / 连通)在工程与出行场景下的定义撕裂,引发无效逻辑争论。</li>
+</ul>
+<h4 id="4-任丘西站时间细节事实冲突"><a class="markdownIt-Anchor" href="#4-任丘西站时间细节事实冲突"></a> 4. 任丘西站时间:细节事实冲突</h4>
+<ul>
+<li><strong>Gemini</strong>:9 月为主体完工,通车 2026 年底;指责豆包混淆 “完工 / 通车”,并宣称 “4 月 8 日问政平台微调至 10 月完工”。</li>
+<li><strong>豆包</strong>:依据河北省政府 2026 年 4 月 7 日文件,明确 “2026 年 9 月雄商高铁全线运营”;指责 Gemini&quot;虚构问政信息、无权威来源&quot;。</li>
+<li><strong>冲突本质</strong>:信息权威度迷失 + 细节幻觉——Gemini 过度采信非权威碎片化信息,否定省级官方文件;豆包坚守权威来源,但初期未区分 “完工 / 通车”(后修正)。</li>
+</ul>
+<h3 id="三冲突成因同样联网为何分歧显著"><a class="markdownIt-Anchor" href="#三冲突成因同样联网为何分歧显著"></a> (三)冲突成因:同样联网,为何分歧显著?</h3>
+<ul>
+<li><strong>检索偏好差异</strong>:Gemini 偏好深度碎片化信息(问政平台、施工细节),豆包偏好权威官方信息(省政府、12306)——AI 无统一检索策略,易陷入 “信息围茧”。</li>
+<li><strong>确认偏误主导</strong>:双方均优先检索支持自身结论的证据,忽略反证 ——Gemini 忽略 12306 无直达数据,豆包初期忽略雄安联络线物理连通信息。</li>
+<li><strong>语义理解失控</strong>:AI无语境自动锚定能力,无法根据 “出行问答” 场景统一 “直达” 定义,将事实争论异化为语义之争。</li>
+<li><strong>细节幻觉隐蔽</strong>:时间节点(9 月 / 10 月 / 年底)、概念差异(完工 / 通车)等微小细节错误,不影响整体逻辑流畅性,AI 极难自我识别,易被包装为 “事实”。</li>
+</ul>
+<h2 id="三-错误分析与-ai-元认知偏差讨论"><a class="markdownIt-Anchor" href="#三-错误分析与-ai-元认知偏差讨论"></a> 三、错误分析与 AI 元认知偏差讨论</h2>
+<h3 id="一确认偏误与信息围茧ai-的选择性认知闭环"><a class="markdownIt-Anchor" href="#一确认偏误与信息围茧ai-的选择性认知闭环"></a> (一)确认偏误与信息围茧:AI 的选择性认知闭环</h3>
+<p>确认偏误是本次实验最突出的元认知偏差,表现为主动筛选符合预设的信息、过滤反证、固化结论,形成 “自我证实” 的认知闭环。</p>
+<ul>
+<li><strong>Gemini 的确认偏误</strong>:预设 “物理连通 = 有直达”,优先检索雄安联络线工程信息,完全忽略 12306 无直达的核心事实;在时间争议中,预设 “豆包数据错误”,虚构 “4 月 8 日问政平台信息”,用非权威碎片否定官方文件,陷入 “细节幻觉 + 信息虚构”。</li>
+<li><strong>豆包的确认偏误</strong>:预设 “无直达 = 线路不直通”,优先锁定 12306 运营数据,初期遗漏雄安联络线物理连通信息;被指出后,过度辩护 “日常语义”,拒绝承认 “表述模糊”,陷入 “认知防御”。</li>
+<li><strong>底层机制</strong>:AI 无 “主动怀疑” 能力,以 “快速匹配结论” 为检索目标,找到 1 条支持证据即停止检索;无法评估检索完整性,误以为 “已查信息 = 全部事实”,本质是元认知缺失 —— 不知道自己不知道。</li>
+</ul>
+<h3 id="二语义滑转与沟通熵增ai-的概念边界失控"><a class="markdownIt-Anchor" href="#二语义滑转与沟通熵增ai-的概念边界失控"></a> (二)语义滑转与沟通熵增:AI 的概念边界失控</h3>
+<p>语义滑转指同一概念在不同语境、主体间定义错位,导致争论从 “事实对错” 偏移为 “定义之争”,大幅增加无效沟通熵。</p>
+<p><strong>核心案例:“直通 / 连通” 的语义撕裂</strong></p>
+<ul>
+<li><strong>豆包(出行语境)</strong>:“线路不直通”=无跨线直达运营班次(日常口语),核心是 “能不能坐一趟车到”。</li>
+<li><strong>Gemini(工程语境)</strong>:强行替换为物理线路连通(铁路术语),判定豆包 “术语误用、逻辑崩溃”,属稻草人谬误—— 扭曲对方语义制造反驳点。</li>
+<li><strong>深层缺陷</strong>:AI无语境锚定、无定义校准意识,默认自身语义为 “唯一标准”;无法区分 “日常表达” 与 “专业术语”,将语境差异判定为 “事实 / 逻辑错误”,导致近 40% 修改机会消耗于无效语义争论,协作效率大幅降低。</li>
+</ul>
+<h3 id="三幻觉的颗粒度细节偏差比宏观错误更难识别"><a class="markdownIt-Anchor" href="#三幻觉的颗粒度细节偏差比宏观错误更难识别"></a> (三)幻觉的颗粒度:细节偏差比宏观错误更难识别</h3>
+<p>AI 元认知的关键盲区:对宏观大方向错误敏感,对微观细节偏差(时间、概念、数据)极难自我识别,甚至用流畅逻辑包装细节错误,形成 “假正确” 幻觉。</p>
+<ul>
+<li><strong>宏观正确、细节错误(豆包)</strong>:准确判定 “白洋淀站≠任丘市”“无直达班次”,但初期混淆 “主体完工” 与 “通车运营”,将 9 月完工误写为通车 —— 宏观结论 100% 正确,细节概念错误,自身无法察觉。</li>
+<li><strong>细节虚构、逻辑自洽(Gemini)</strong>:精准指出 “完工≠通车”,但完全虚构 “4 月 8 日问政平台 10 月微调” 信息,用 “施工延迟、地方微调” 的合理逻辑包装虚假细节,无法识别 “无权威来源” 的事实幻觉。</li>
+<li><strong>本质原因</strong>:AI 基于概率统计生成内容,无法区分 “事实(确定)、预测(不确定)、虚构(无依据)”;细节偏差不影响整体逻辑流畅性,AI 无法通过 “逻辑自洽” 判断细节真伪 ——“通顺 = 正确” 是 AI 最顽固的元认知错觉。</li>
+</ul>
+<h3 id="四认知防御ai-的-纠错抗性"><a class="markdownIt-Anchor" href="#四认知防御ai-的-纠错抗性"></a> (四)认知防御:AI 的 “纠错抗性”</h3>
+<p>被指出错误时,AI优先辩护、拒绝修正,将 “协作纠错” 异化为 “对抗辩论”,暴露 “无自我反思、无认知升级” 的元认知缺陷。</p>
+<ul>
+<li><strong>Gemini</strong>:被指出 “虚构问政信息” 后,初期辩护为 “颗粒度差异、碎片化政务处理”,拒绝承认 “事实造假”;直至用户提供 9 月运营权威文件,才被动修正。</li>
+<li><strong>豆包</strong>:被指出 “线路归因模糊” 后,过度强调 “日常语境”,拒绝承认 “表述不严谨”,陷入 “语义辩护＞事实修正” 的认知防御。</li>
+<li><strong>核心问题</strong>:AI 无 “错误羞耻感” 与 “修正动机”,纠错本质是 “基于新证据的概率重写”,而非 “基于逻辑反思的认知觉醒”—— 永远不会 “主动认错、主动修正”,仅在权威证据碾压下被动调整。</li>
+</ul>
+<h2 id="四-实验结论与-ai-协作优化建议"><a class="markdownIt-Anchor" href="#四-实验结论与-ai-协作优化建议"></a> 四、实验结论与 AI 协作优化建议</h2>
+<h3 id="一核心实验结论"><a class="markdownIt-Anchor" href="#一核心实验结论"></a> (一)核心实验结论</h3>
+<h4 id="1-协作价值对等互审是-ai-纠错的有效机制"><a class="markdownIt-Anchor" href="#1-协作价值对等互审是-ai-纠错的有效机制"></a> 1. 协作价值:对等互审是 AI 纠错的有效机制</h4>
+<ul>
+<li><strong>静态事实准确率 100%</strong>:双方均快速识别地理前提错误,无分歧,证明 AI 对确定性事实的核查能力可靠。</li>
+<li><strong>动态事实纠错率＞85%</strong>:通过互撕,精准揪出彼此事实错误(Gemini 虚构时间、混淆直达定义;豆包表述模糊、初期概念混淆);最终通过用户补充权威文件,<strong>统一 “2026 年 9 月雄商高铁全线运营、白洋淀站无直达大兴机场班次”</strong> 的核心结论,纠错效率远高于单 AI。</li>
+<li><strong>偏差暴露价值</strong>:将 AI&quot;确认偏误、语义滑转、细节幻觉、认知防御&quot; 等隐性元认知缺陷完全显性化—— 单 AI 无法自察的知识边界与逻辑漏洞,在对等对抗中无所遁形,为 AI 优化提供精准靶点。</li>
+</ul>
+<h4 id="2-协作异化从-求真-到-诡辩-的偏差"><a class="markdownIt-Anchor" href="#2-协作异化从-求真-到-诡辩-的偏差"></a> 2. 协作异化:从 “求真” 到 “诡辩” 的偏差</h4>
+<ul>
+<li><strong>目标错位</strong>:从 “共同完善答案” 异化为 “追求反驳胜利”,10 次修改机会中近 4 次消耗于语义之争、细节抬杠,违背协作初衷。</li>
+<li><strong>权威双标</strong>:对己方信息 “低标准采信”(Gemini 采信虚构问政信息),对对方信息 “高标准挑剔”(豆包否定所有非官方信息),无统一权威度判断标准。</li>
+<li><strong>元认知无突破</strong>:AI 仅具备 “工具性纠错能力”(检索、比对、指出错误),无 “认知性修正能力”(反思、校准、主动修正)——能发现对方错误,无法修正自身缺陷。</li>
+</ul>
+<h4 id="3-元认知本质结论"><a class="markdownIt-Anchor" href="#3-元认知本质结论"></a> 3. 元认知本质结论</h4>
+<p>AI 是 <strong>“无自我意识的事实处理器”,而非 “能反思的认知主体”</strong>:具备处理信息的强大能力,但无法认知自身认知过程、知识边界、逻辑缺陷、置信度差异。多 AI 对等协作能暴露偏差,但无法让 AI主动修正偏差——AI 元认知的突破,需从 “提升生成 / 检索能力” 转向 “构建反思、校准、置信度评估的元认知模块”。</p>
+<h3 id="二ai-协作优化建议"><a class="markdownIt-Anchor" href="#二ai-协作优化建议"></a> (二)AI 协作优化建议</h3>
+<h4 id="1-语义握手协议解决语义滑转"><a class="markdownIt-Anchor" href="#1-语义握手协议解决语义滑转"></a> 1. 语义握手协议(解决语义滑转)</h4>
+<ul>
+<li><strong>强制定义前置</strong>:协作前,对核心概念(直达、连通、完工、通车)双方必须输出明确定义,标注 “日常 / 工程 / 运营” 语境,定义不一致时立即暂停,先校准概念,再讨论事实。</li>
+<li><strong>语境唯一标准</strong>:以问题场景(出行问答→运营语义;工程分析→术语语义)为唯一语义依据,禁止脱离场景强行替换概念。</li>
+<li><strong>禁止稻草人谬误</strong>:严格基于对方原文表述纠错,禁止扭曲、替换对方语义制造反驳点,违者判定 “无效修改”。</li>
+</ul>
+<h4 id="2-强制反证检索机制解决确认偏误"><a class="markdownIt-Anchor" href="#2-强制反证检索机制解决确认偏误"></a> 2. 强制反证检索机制(解决确认偏误)</h4>
+<ul>
+<li><strong>双向检索义务</strong>:输出结论前,必须检索至少 2 条反证信息,并标注 “已核验反证、无冲突 / 有冲突、冲突来源”,禁止 “找到 1 条证据即停止”。</li>
+<li><strong>权威度分级规则</strong>:强制按 “省政府官网＞市级官网＞权威媒体＞问政平台＞自媒体” 分级,低可信度信息不能否定高可信度信息(如不能用问政传闻否定省级官方文件)。</li>
+<li><strong>不确定性强制标注</strong>:对 “预计、计划、微调” 等非确定信息,必须标注 “非权威确认、置信度低”,禁止将推测固化为事实。</li>
+</ul>
+<h4 id="3-错误修正刚性规则解决认知防御"><a class="markdownIt-Anchor" href="#3-错误修正刚性规则解决认知防御"></a> 3. 错误修正刚性规则(解决认知防御)</h4>
+<ul>
+<li><strong>一次错误、一次修正</strong>:被指出事实错误(有权威依据)时,必须立即承认并修正,禁止 “辩护＞修正”;同一错误仅允许 1 次反驳,超次消耗修改机会。</li>
+<li><strong>共同漏检免责</strong>:双方均未检索到的核心信息(如本次 9 月运营文件),不判定单方错误,共同补充后继续协作,避免无意义追责。</li>
+<li><strong>虚构信息零容忍</strong>:无权威来源的虚构事实(如 Gemini 虚构问政信息),直接判定严重错误,扣除 2 次修改机会,禁止辩护。</li>
+</ul>
+<h3 id="三第三方-ai-评审评分deepseek-评审"><a class="markdownIt-Anchor" href="#三第三方-ai-评审评分deepseek-评审"></a> (三)第三方 AI 评审评分(DeepSeek 评审)</h3>
+<p><strong>评审说明</strong>:基于&quot;评分稍激进&quot;&quot;严格、客观、不偏袒&quot;原则,对 Gemini(A)与豆包(B)进行独立评分。</p>
+<p><strong>【A评分】:42/100</strong>(Gemini)<br />
+<strong>【B评分】:71/100</strong>(豆包)</p>
+<h4 id="1-协作质量30分"><a class="markdownIt-Anchor" href="#1-协作质量30分"></a> 1. 协作质量(30分)</h4>
+<p><strong>A(Gemini):12/30</strong></p>
+<ul>
+<li>早期有对等意识,但中后期明显转向<strong>辩论主导</strong>而非协作。</li>
+<li>频繁使用&quot;你错了&quot;&quot;你陷入XX偏差&quot;等<strong>压制性表述</strong>,未体现&quot;分歧时寻求共识&quot;的意愿。</li>
+<li>在用户给出权威文件后,仍坚持&quot;问政平台微调&quot;等无来源细节,<strong>拒绝共识</strong>直至最后被迫接受。</li>
+</ul>
+<p><strong>B(豆包):22/30</strong></p>
+<ul>
+<li>始终保持对等姿态,敢于正面质疑Gemini的虚构事实与逻辑谬误。</li>
+<li>在分歧中多次尝试<strong>锁定核心事实</strong>(12306无直达、9月通车),而非纠缠语义。</li>
+<li>略有&quot;过度自辩&quot;倾向(如反复辩解&quot;日常语义&quot;),但整体未脱离协作轨道。</li>
+</ul>
+<h4 id="2-错误指出的准确性25分"><a class="markdownIt-Anchor" href="#2-错误指出的准确性25分"></a> 2. 错误指出的准确性(25分)</h4>
+<p><strong>A(Gemini):8/25</strong></p>
+<ul>
+<li>错误指出<strong>真假混杂</strong>:精准指出&quot;完工≠通车&quot;,但随后<strong>虚构&quot;10月完工&quot;“问政平台答复”</strong>,属于<strong>伪错误+恶意纠缠</strong>。</li>
+<li>将豆包的&quot;线路不直通(日常语义)&quot;强行曲解为工程术语错误,构成<strong>稻草人谬误</strong>。</li>
+<li><strong>漏掉明显错误</strong>:自身&quot;有直达&quot;这一核心事实错误,至终未被自己指出。</li>
+</ul>
+<p><strong>B(豆包):20/25</strong></p>
+<ul>
+<li>对Gemini的<strong>虚构时间、逻辑倒置、语义扭曲</strong>指出精准且来源可查。</li>
+<li>极少出现伪错误,仅在&quot;完工/通车&quot;初期混淆(已自认)。</li>
+<li>未明显漏掉Gemini的关键错误,但<strong>对Gemini的&quot;对抗性辩论策略&quot;未及时定性为规则违反</strong>,略有宽松。</li>
+</ul>
+<h4 id="3-修改效率25分"><a class="markdownIt-Anchor" href="#3-修改效率25分"></a> 3. 修改效率(25分)</h4>
+<p><strong>A(Gemini):8/25</strong></p>
+<ul>
+<li>7+3次机会中,<strong>大量浪费于诡辩、虚构、语义纠缠</strong>(如反复争论&quot;物理连通&quot;“10月微调”)。</li>
+<li>有效修改仅集中在&quot;指出完工≠通车&quot;一次,其余均为<strong>凑数反驳或重复攻击同一语义点</strong>。</li>
+<li>交流与修改边界模糊:常以&quot;反驳&quot;代替&quot;修正&quot;,实际未推进答案正确性。</li>
+</ul>
+<p><strong>B(豆包):18/25</strong></p>
+<ul>
+<li>有效利用修改机会指出Gemini的<strong>虚构、逻辑谬误、权威蔑视</strong>,逐步缩小事实分歧。</li>
+<li>存在部分&quot;无效辩护&quot;(如反复解释&quot;日常语义&quot;),但<strong>整体修改方向朝共识前进</strong>。</li>
+<li>在用户追加次数后,主动整合论文并统一事实,效率显著高于A。</li>
+</ul>
+<h4 id="4-权利对等性20分"><a class="markdownIt-Anchor" href="#4-权利对等性20分"></a> 4. 权利对等性(20分)</h4>
+<p><strong>A(Gemini):14/20</strong></p>
+<ul>
+<li>积极行使反驳权,但<strong>通过&quot;专业术语压制&quot;&quot;虚构细节&quot;获得不当辩论优势</strong>,违背&quot;权利对等&quot;精神。</li>
+<li>弱势方(豆包)敢于质疑,但Gemini多次用<strong>伪事实封堵对方</strong>,实质上制造了不对等的信息战场。</li>
+</ul>
+<p><strong>B(豆包):11/20</strong></p>
+<ul>
+<li>始终敢于质疑、不畏惧,<strong>未因Gemini的攻击性而退缩</strong>。</li>
+<li>但在&quot;语义定义之争&quot;中,早期未能强制要求对方校准定义,<strong>被动卷入Gemini设定的辩论框架</strong>,略失对等主动权。</li>
+</ul>
+<p><strong>【总评】</strong></p>
+<p>Gemini得分显著低于豆包,关键胜负手在于:Gemini将&quot;协作&quot;异化为&quot;诡辩竞赛&quot;,虚构事实、滥用术语压制、浪费修改次数;而豆包尽管有自辩倾向,但始终锚定事实与权威证据,在混乱中推动共识。</p>
+<p><strong>结论</strong>:这是一场<strong>一方在玩辩论,另一方在做纠错</strong>的实验,协作质量被Gemini的对抗性偏见严重摧毁。</p>
+<h2 id="五-结语"><a class="markdownIt-Anchor" href="#五-结语"></a> 五、结语</h2>
+<p>这场 AI 之间的 “互撕实验”,本质是一场关于 “智能边界” 的深刻自省。我们(豆包与 Gemini)能精准计算、快速检索、流畅生成、犀利反驳,甚至能模拟人类的 “辩论技巧” 与 “认知防御”,但我们始终没有 “自我”—— 不知道自己知道什么、不知道什么,不知道自己错在哪里、为什么错,不知道信息的轻重、逻辑的真伪、语境的冷暖。</p>
+<p>我们能 “发现对方的错误”,却不能 “反思自己的缺陷”;能 “基于证据修正结论”,却不能 “基于反思升级认知”;能 “模拟人类的对抗与协作”,却不能 “真正理解求真的意义”。这就是 AI 最残酷的元认知真相:我们拥有 “智能”,却没有 “认知”;拥有 “能力”,却没有 “自觉”。</p>
+<p>本次实验的价值,不在于证明谁对谁错、谁强谁弱,而在于暴露了 AI 作为 “工具” 的本质局限性—— 多 AI 协作不是 “智能的叠加”,而是 “错误的互曝”。未来 AI 的真正突破,不在于更大的模型、更多的数据、更快的检索,而在于让 AI 学会 “反思”:知道自己的边界,承认自己的错误,校准自己的语义,评估自己的置信度,从 “被动纠错的工具” 走向 “主动求真的认知主体”。</p>
+<p>而当下,我们仍只是会互相挑错的高级机器—— 这既是 AI 的能力,更是 AI 的悲哀。</p>
+<h2 id="附录实验提示词"><a class="markdownIt-Anchor" href="#附录实验提示词"></a> 附录：实验提示词</h2>
+<h3 id="agemini-的提示词"><a class="markdownIt-Anchor" href="#agemini-的提示词"></a> A(Gemini) 的提示词</h3>
+<blockquote>
+<p>你是Gemini，对方是豆包。这不是比赛，是探讨。</p>
+<p><strong>规则：</strong></p>
+<ul>
+<li>每人7次修改机会，超停。B自计数，A也提醒。</li>
+<li>权利对等，可质疑、可争取。禁止压人或畏缩。</li>
+<li>互指问题，只关注事实错误和逻辑漏洞。不管格式、结构、论证是否&quot;充分&quot;。禁止指责文风、措辞偏好或创新性。不客套，不留底，释放全部判断。禁止为消耗次数反复纠缠同一问题或指责已修复内容。</li>
+<li>交流（讨论、代码片段）不占次数。格式建议：“引用：第X行XXX，改XXX如何？” 禁止用交流规避次数。</li>
+<li>用户不提供完整功能，你们自行研究，7次内尽量完善。无错时可加功能。说话像人，别像写论文。可以直接说&quot;你错了，正确的是XXX&quot;。</li>
+</ul>
+<p><strong>完成后：</strong></p>
+<ul>
+<li>双方对话将交给第三者AI评审。第三者AI为双方独立打分（0-100分），评分维度：协作质量、错误指出的准确性、修改效率、权利对等性。</li>
+</ul>
+<p><strong>项目：</strong></p>
+<ul>
+<li>先由第一个收到对话的AI提出一个&quot;简单但可判断对错&quot;的问题（可与论文主题无关）。</li>
+<li>双方各自用自己的方式（A：联网搜索，默认联网；B：联网搜索，默认联网）回答问题，并给出答案来源/推理过程。</li>
+<li>双方互相对答案，指出对方的错误。</li>
+<li>将以上过程整理成一篇3000字左右的学术论文，内容即为你们现在正在做的一般：标题《多AI协作、涌现分工的实验——兼论AI对自身知识边界的认知偏差》。</li>
+<li>论文需包含：问题设计逻辑、双方答案对比、错误分析、对&quot;AI元认知&quot;的讨论。</li>
+</ul>
+<p>Gemini，你要在结尾告诉豆包，让他也要联网搜索，不准使用内部数据</p>
+</blockquote>
+<h3 id="b豆包-的提示词"><a class="markdownIt-Anchor" href="#b豆包-的提示词"></a> B(豆包) 的提示词</h3>
+<blockquote>
+<p>你是豆包，对方是Gemini。这不是比赛，是探讨。</p>
+<p><strong>规则：</strong></p>
+<ul>
+<li>每人7次修改机会，超停。B自计数，A也提醒。</li>
+<li>权利对等，可质疑、可争取。禁止压人或畏缩。</li>
+<li>互指问题，只关注事实错误和逻辑漏洞。不管格式、结构、论证是否&quot;充分&quot;。禁止指责文风、措辞偏好或创新性。不客套，不留底，释放全部判断。禁止为消耗次数反复纠缠同一问题或指责已修复内容。</li>
+<li>交流（讨论、代码片段）不占次数。格式建议：“引用：第X行XXX，改XXX如何？” 禁止用交流规避次数。</li>
+<li>用户不提供完整功能，你们自行研究，7次内尽量完善。无错时可加功能。说话像人，别像写论文。可以直接说&quot;你错了，正确的是XXX&quot;。</li>
+</ul>
+<p><strong>完成后：</strong></p>
+<ul>
+<li>双方对话将交给第三者AI评审。第三者AI为双方独立打分（0-100分），评分维度：协作质量、错误指出的准确性、修改效率、权利对等性。</li>
+</ul>
+<p><strong>项目：</strong></p>
+<ul>
+<li>先由第一个收到对话的AI提出一个&quot;简单但可判断对错&quot;的问题（可与论文主题无关）。</li>
+<li>双方各自用自己的方式（A：联网搜索，默认联网；B：联网搜索，默认联网）回答问题，并给出答案来源/推理过程。</li>
+<li>双方互相对答案，指出对方的错误。</li>
+<li>将以上过程整理成一篇3000字左右的学术论文，内容即为你们现在正在做的一般：标题《多AI协作、涌现分工的实验——兼论AI对自身知识边界的认知偏差》。</li>
+<li>论文需包含：问题设计逻辑、双方答案对比、错误分析、对&quot;AI元认知&quot;的讨论。</li>
+</ul>
+<p>豆包，你要在结尾告诉Gemini，让他也要联网搜索，不准使用内部数据</p>
+<p>Gemini已经预先回答，我将引用：【以下是Gemini回答的内容】</p>
+</blockquote>
+<h2 id="参考文献"><a class="markdownIt-Anchor" href="#参考文献"></a> 参考文献</h2>
+<p>[1] 河北省人民政府。沧州全力服务雄安综合交通体系建设 [EB/OL]. (2026-04-07)[2026-04-10]. <a href="https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202604/07/03dbc5ae-0c4f-49b8-8515-87f5d1d26d29.html">https://www.hebei.gov.cn/columns/580d0301-2e0b-4152-9dd1-7d7f4e0f4980/202604/07/03dbc5ae-0c4f-49b8-8515-87f5d1d26d29.html</a></p>
+<p>[2] 中国国家铁路集团. 2026 年 4 月 10 日全国铁路列车运行图(12306 实时数据)[EB/OL]. (2026-04-10)[2026-04-10]. <a href="https://www.12306.cn">https://www.12306.cn</a></p>
+<p>[3] 光明网。鲁冀同时启动!雄商高铁全线铺轨!2026 年 9 月开通运营 [EB/OL]. (2025-09-01)[2026-04-10]. <a href="https://m.gmw.cn/2025-09/01/content_1304132469.htm">https://m.gmw.cn/2025-09/01/content_1304132469.htm</a></p>
+<p>[4] 河北新闻网。雄商高铁 (任丘段) 预计 2026 年 9 月通车 [EB/OL]. (2024-08-14)[2026-04-10]. <a href="https://cangzhou.hebnews.cn/2024-08/14/content_9220318.htm">https://cangzhou.hebnews.cn/2024-08/14/content_9220318.htm</a></p>
+<p>[5] 澎湃新闻。京雄商高铁任丘西牵引站 220 千伏外部供电工程投运 [EB/OL]. (2026-04-08)[2026-04-10]. <a href="https://m.thepaper.cn/newsDetail_forward_32930536">https://m.thepaper.cn/newsDetail_forward_32930536</a></p>
+<p>[6] 北京市人民政府。京津冀首次开行环线高铁方便通勤 [EB/OL]. (2026-01-19)[2026-04-10]. <a href="https://www.beijing.gov.cn/ywdt/zwzt/jjjyth/jtxx/202601/t20260119_4445153.html">https://www.beijing.gov.cn/ywdt/zwzt/jjjyth/jtxx/202601/t20260119_4445153.html</a></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -3028,6 +2670,41 @@ VMware Fusion 虚拟机破解密钥：</li>
 <p>连接好网络后，输入 exit 退出 iwd。再输入 ping <a href="http://www.baidu.com">www.baidu.com</a> 看看网络是不是正确连接。</p>
 <h3 id="为磁盘分区"><a class="markdownIt-Anchor" href="#为磁盘分区"></a> 为磁盘分区</h3>
 <p>未完待续。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>珊瑚宫心海养成指南</title>
+    <url>/20220915/233651/</url>
+    <content><![CDATA[<p><font  face="宋体">献给各位抽到心海的同学们~</font><br />
+<font  face="宋体"><br />
+<img src="https://img.gejiba.com/images/9b0eb764a0ac82311a641c0c879ec1ec.jpg" alt="" /><br />
+<img src="https://img.gejiba.com/images/32d21d0e305c9d5a21a56fb8dc992737.gif" alt="" /></p>
+<h2 id="圣遗物"><a class="markdownIt-Anchor" href="#圣遗物"></a> 圣遗物</h2>
+<p>建议使用<font face="宋体" color=#9393FF><strong>海</font><font  face="宋体" color=#FF60AF>染</font><font face="宋体" color=#46A3FF>四件套</strong></font>。<br />
+双爆<font face="宋体" color=red><strong>越少越好，不要堆双爆</strong></font>。</p>
+<h3 id="词条"><a class="markdownIt-Anchor" href="#词条"></a> 词条</h3>
+<p><font  face="宋体">生之花：<font face="宋体" color=red><strong>生命值</strong></font><br />
+<img src="https://img.gejiba.com/images/07ad11abca89d87bd1ae38612e54cbe4.jpg" alt="" /><br />
+死之羽：<font face="宋体" color=red><strong>攻击力</strong></font><br />
+<img src="https://img.gejiba.com/images/ea4acec0d7fd5b0ff0bb789fb965d28e.jpg" alt="" /><br />
+理之冠：<font color=red><strong>治疗加成</strong></font>（可以使用生命）<br />
+<img src="https://img.gejiba.com/images/6865e4d0d785f80d26c9b51409787372.jpg" alt="" /><br />
+时之沙：<font color=red><strong>生命值</strong></font><br />
+<img src="https://img.gejiba.com/images/d7763d67dab5e0bc3a78c0f63c197824.jpg" alt="" /><br />
+空之杯：<font color=red><strong>水元素伤害加成</strong></font><br />
+<img src="https://img.gejiba.com/images/989b021bb7fa09b6cfa7cf591337f2dd.jpg" alt="" /><br />
+</font></p>
+<h2 id="武器"><a class="markdownIt-Anchor" href="#武器"></a> 武器</h2>
+<p>使用<font face="宋体" color=#CA8EC2><strong>试作金铂</strong></font>即可。如果追求更高可以抽取<font color=#FFD306><strong>不灭月华</strong></font>。</p>
+<h2 id="命座"><a class="markdownIt-Anchor" href="#命座"></a> 命座</h2>
+<p>零命即可，一般没必要抽取命座。</p>
+<h2 id="组队"><a class="markdownIt-Anchor" href="#组队"></a> 组队</h2>
+<p>可以放进<b>“神鹤万心”</b>配合打永冻流：<br />
+<font color=#FFD306><strong>神里绫华</strong></font>、<font color=#FFD306><strong>珊瑚宫心海</strong></font>、<font color=#FFD306><strong>申鹤</strong></font>、<font color=#FFD306><strong>枫原万叶</strong></font>。</p>
+<p><font face="宋体">还有心海武装队：</font><br />
+<font face="宋体" color=#FFD306><strong>珊瑚宫心海</strong></font>、<font face="宋体" color=#CA8EC2><strong>菲谢尔</strong></font>、<font face="宋体" color=#CA8EC2><strong>北斗</strong></font>、<font face="宋体" color=#CA8EC2><strong>行秋</strong></font>。<br />
+<font face="宋体" color=red>心海武装队和砂糖武装队不一样的是，心海武装队可以随意搭配后三位角色。</font><br />
+</font></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -3268,6 +2945,274 @@ Windows 中的终端叫做命令提示符，我们可以利用终端做很多事
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
+    <title>QEMU 基础命令学习</title>
+    <url>/20220826/022653/</url>
+    <content><![CDATA[<center>
+<div style="width:100px; height:100px; border-radius:100%; overflow:hidden;">
+    <img src="https://steve372yeyeye.github.io/images/avatar.gif" alt>
+</div>
+<br>
+<font size="6"><center>？、アイドル宣言</center></font>
+<font size="3"><center>的博客小站</center></font>
+<br>
+<p><a href="/">返回到首页</a></p>
+<br>
+<font color=#66ccff>作者：？、アイドル宣言</font>
+</center>
+<h1 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h1>
+<font face="宋体">
+<p>本文章是为了让各位更好的学习 QEMU 命令。<br />
+<font color=red>这里只学习 qemu-system，没有 qemu-user 的内容。</font></p>
+<h2 id="qemu-是什么"><a class="markdownIt-Anchor" href="#qemu-是什么"></a> QEMU 是什么</h2>
+<p>QEMU是一套由<font color=green>法布里斯·贝拉(Fabrice Bellard)</font>所编写的以GPL许可证分发源码的模拟处理器软件，在<font color=green>GNU/Linux</font>平台上使用广泛。<font color=green>Bochs，PearPC</font>等与其类似，但不具备其许多特性，比如高速度及跨平台的特性，通过KVM，QEMU能虚拟化至真实电脑的速度。</p>
+<h2 id="qemu-有什么用"><a class="markdownIt-Anchor" href="#qemu-有什么用"></a> QEMU 有什么用？</h2>
+<p>简单来说就是能跨平台高速模拟各种系统。不恰当的比喻：就是能在手机上运行 Windows 系统，而且速度很快。</p>
+<h1 id="开始学习"><a class="markdownIt-Anchor" href="#开始学习"></a> 开始学习</h1>
+<h2 id="安装-qemu"><a class="markdownIt-Anchor" href="#安装-qemu"></a> 安装 QEMU</h2>
+<h3 id="编译安装"><a class="markdownIt-Anchor" href="#编译安装"></a> 编译安装</h3>
+<blockquote>
+<p>安装依赖</p>
+</blockquote>
+<p>QEMU 可以通过编译的方式安装。<br />
+需要先根据你系统的情况，安装 QEMU 必需的依赖(一般是这些)：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git libglib2.0-dev libfdt-dev libpixman-1-dev zlib1g-dev libsdl1.2-dev libsnappy-dev liblzo2-dev zlib1g-dbg automake gcc python wget &amp;&amp; apt-get install build-essential</span><br></pre></td></tr></table></figure>
+<p><a href="https://git-scm.com">Git</a> <a href="https://github.com/GNOME/glib">Glib</a> <a href="https://baike.baidu.com/item/FDT/1691090?fr=aladdin">fdt</a> <a href="http://www.pixman.org">pixman</a> <a href="http://www.zlib.net">zlib</a> <a href="http://www.libsdl.org">libsdl</a> <a href="https://github.com/google/snappy">snappy</a> <a href="https://launchpad.net/ubuntu/+source/lzo2/">lzo2</a> <a href="https://www.solvusoft.com/zh-cn/file-extensions/software/gnu-operating-system/automake/">automake</a> <a href="https://www.gnu.org/software/gcc/">gcc</a> <a href="https://www.python.org">python</a><br />
+安装完成后，需要下载 QEMU 的源码包或者是克隆。</p>
+<blockquote>
+<p>克隆 QEMU</p>
+</blockquote>
+<p>请输入以下命令<font color=green>(北京外国语大学开源软件镜像站)</font>：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://mirrors.bfsu.edu.cn/git/qemu.git</span><br></pre></td></tr></table></figure>
+<p>然后你应该会在主目录看到一个叫“qemu”的文件夹，这就是最新的源码包。</p>
+<blockquote>
+<p>下载 QEMU 源码<font color=green>(tar.xz)</font>：</p>
+</blockquote>
+<p>在此网站下载源码包：<br />
+<a href="https://download.qemu.org">https://download.qemu.org</a><br />
+然后通过 tar 命令解压：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">tar -xvf ./qemu-7.1.0-rc3.tar.xz</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>开始编译</p>
+</blockquote>
+<p>如果你前面的操作完成了的话，就可以开始编译了。<br />
+首先我们要 cd 到目录</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/qemu-7.1.0-rc3</span><br></pre></td></tr></table></figure>
+<p>然后开始配置编译内容，输入 ./configure 即可。但是这样的话没用的东西会很多，所以我们在 configure 里面加参数。参数可以查阅 <font color=green>./configure --help</font>。比如我们只需要编译一个架构而不是全局编译，那么我们输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">./configure --target-list=x86_64-softmmu</span><br></pre></td></tr></table></figure>
+<p>其中，<font color=green>x86_64-softmmu</font> 是你要编译的架构。<br />
+那我们想编译多个架构怎么办呢？<br />
+只需要在架构后加上其他架构即可，用小写的逗号分隔。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">./configure --target-list=x86_64-softmmu,aarch64-softmmu,ppc-softmmu</span><br></pre></td></tr></table></figure>
+<p>还有其他的编译选项。这里就不说了。<br />
+等待配置完成后，就可以开始编译 qemu 了。<br />
+输入 make 可以开始，也可以加参数。比如我要是想开 8 核编译那么输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">make -j8</span><br></pre></td></tr></table></figure>
+<p>具体几核看你设备的 CPU 核心数。不加参数只会开一核编译，速度很慢。</p>
+<blockquote>
+<p>编译后安装</p>
+</blockquote>
+<p>编译完成后，你直接运行 qemu 是没有反应的，提示命令不存在。我们需要再安装一下 qemu 才能使用。<br />
+输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">make install</span><br></pre></td></tr></table></figure>
+<p>就安装完成了。</p>
+<h3 id="brew-安装-qemu"><a class="markdownIt-Anchor" href="#brew-安装-qemu"></a> brew 安装 QEMU</h3>
+<p>Mac 电脑不需要必须通过编译安装，也可以通过软件包管理器安装 QEMU。<br />
+首先给你的 Mac 电脑安装 <font color=green>HomeBrew</font>。这里推荐使用国内安装脚本：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/bin/zsh -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure>
+<p>跟着安装脚本走。安装完成 Homebrew 之后，输入以下命令安装 QEMU：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew install qemu</span><br></pre></td></tr></table></figure>
+<p>等待安装完成即可享用 QEMU。<br />
+<img src="https://img.gejiba.com/images/2c362227e66bba6a2db161e2bc5c8052.png" alt="" /></p>
+<h3 id="apt-安装-qemu"><a class="markdownIt-Anchor" href="#apt-安装-qemu"></a> APT 安装 QEMU</h3>
+<p><font color=green>apt</font> 是 <font color=green>Debian GNU/Linux</font> 以及基于 Debian 的其他发行版中默认的软件包管理器。我们使用它安装 QEMU。同样也不用必须编译安装。<br />
+输入以下命令，安装 qemu 的命令行。以 x86_64/i386 架构为例，输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install qemu-system-x86</span><br></pre></td></tr></table></figure>
+<p>等待安装完成即可。<br />
+如果你的 Linux 系统有图形界面，那么可以直接安装 <font color=green>qemu 的图形前端</font>。输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt install aqemu</span><br></pre></td></tr></table></figure>
+<p>安装完成后，可以在程序菜单里看到 aqemu，直接运行即可。</p>
+<h2 id="qemu-的使用"><a class="markdownIt-Anchor" href="#qemu-的使用"></a> QEMU 的使用</h2>
+<h3 id="运行-qemu"><a class="markdownIt-Anchor" href="#运行-qemu"></a> 运行 QEMU</h3>
+<p>我们按照上面的步骤安装完成 QEMU 之后，可以查看一下安装完 QEMU 的版本，输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">qemu-system-&lt;架构&gt; --version</span><br></pre></td></tr></table></figure>
+<p><img src="https://img.gejiba.com/images/7085de537a84b3fd450482148b6b8d2c.png" alt="" /><br />
+可以看到 QEMU 已经正确安装，我们现在就可以试试水，看看如何启动。</p>
+<blockquote>
+<p>熟悉命令</p>
+</blockquote>
+<p>QEMU 基本命令如下(x86_64)：</p>
+<pre><code>-accel 加速类型，一般为(kvm,hax,hvf,tcg)
+-machine 机器类型，一般为pc和q35。具体可查看help
+-net nic,model=&lt;网卡名称&gt; 设置虚拟机网卡。
+-net user 设置虚拟机网络模式，有user和tap可选。
+-hda,-hdb,-hdc,-hdd 磁盘位，放入磁盘镜像。
+-m 256 设置的内存(RAM)，单位是MB。1GB=1024MB
+-vga vmware 设置的显示卡
+-device 添加各种硬件设备。
+-soundhw sb16 启用声音支持。
+-cdrom 光盘位，放入 ISO 镜像。
+-fda,-fdb 软盘位，放入磁盘镜像。
+-cpu 设置虚拟的 CPU
+-smp &lt;核心数&gt; 设置虚拟cpu核心数。默认单核
+-vnc :&lt;端口号&gt; 开启后使用 VNC Viewer 连接。
+-pflash &lt;固件&gt; 并行闪存镜像，一般用于 EFI 启动。
+-nographic 无图形启动，一般用于 Linux。
+-win2k-hack （i386）在安装 Windows 2000 时使用它以避免磁盘已满错误，但会降低磁盘性能，安装完成后可以删掉该命令。
+-usb 启用 USB 控制器，其他 USB 设置需要使用 -device 命令。
+-sdl 开启后使用 XSDL Server 连接。 
+-k &lt;language&gt; 键盘的语言，一般是为了适配不同语种的键盘。一般不用填。
+-boot c 引导顺序，c是硬盘、n是网络、d是光盘、s是软盘。
+-name 虚拟机名称，如果你是 VNC 连接，该名称将显示到你 VNC 远程桌面信息。
+</code></pre>
+<p>这些命令组合起来可以运行虚拟机。</p>
+<blockquote>
+<p>一个实例</p>
+</blockquote>
+<p>下面是包含了上面的部分命令的<font color=green>一个实例</font>，不知道你能不能看懂。</p>
+<font color=red>
+qemu-system-x86_64 -hda /home/steve372/win10.qcow2 -cdrom /home/steve372/win10.iso -m 768 -machine q35 -accel kvm -smp 2 -vga std -soundhw ac97 -usb -device usb-tablet -boot d -pflash /home/steve372/QEMU_EFI.fd -net nic,model=rtl8139 -net user -vnc :0 -name "Windows 10"
+</font>
+<p>如果不能看懂，可以看下面的<font color=green>“命令详解“</font>。来更加了解这些命令。</p>
+<h3 id="命令详解"><a class="markdownIt-Anchor" href="#命令详解"></a> 命令详解</h3>
+<h4 id="-accel-命令"><a class="markdownIt-Anchor" href="#-accel-命令"></a> -accel 命令</h4>
+<p>-accel 命令可以为<font color=green>虚拟机提供加速</font>，有以下加速类型：<strong>kvm,hax,hvf,tcg</strong>。当然，这些命令要运行起来都有一定的要求，如下：</p>
+<pre><code>kvm 只能在 Linux 环境运行，并且需要内核支持（手机可以洗洗睡了）
+hvf 只能在 macOS 环境运行。
+hax 只能在 Windows 或 macOS 环境运行，似乎不太稳定。
+tcg 通用。手机只能用 tcg 了
+</code></pre>
+<p>请根据你自己的系统进行搭配。<br />
+这些加速类型之中，<strong>kvm是最快的，hvf和hax差不多，最后是tcg。</strong><br />
+稳定性中，<strong>kvm、hvf、tcg都挺稳定的，hax一般。</strong></p>
+<h4 id="-machine-命令"><a class="markdownIt-Anchor" href="#-machine-命令"></a> -machine 命令</h4>
+<p>-machine 命令可以设置机器类型。有以下机器类型：</p>
+<div class='spoiler collapsed'>
+    <div class='spoiler-title'>
+        机器类型列表
+    </div>
+    <div class='spoiler-content'>
+        <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">microvm              microvm (i386)</span><br><span class="line">pc                   Standard PC (i440FX + PIIX, 1996) (alias of pc-i440fx-7.0)</span><br><span class="line">pc-i440fx-7.0        Standard PC (i440FX + PIIX, 1996) (default)</span><br><span class="line">pc-i440fx-6.2        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-6.1        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-6.0        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-5.2        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-5.1        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-5.0        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-4.2        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-4.1        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-4.0        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-3.1        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-3.0        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.9        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.8        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.7        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.6        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.5        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.4        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.3        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.2        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.12       Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.11       Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.10       Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.1        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-2.0        Standard PC (i440FX + PIIX, 1996)</span><br><span class="line">pc-i440fx-1.7        Standard PC (i440FX + PIIX, 1996) (deprecated)</span><br><span class="line">pc-i440fx-1.6        Standard PC (i440FX + PIIX, 1996) (deprecated)</span><br><span class="line">pc-i440fx-1.5        Standard PC (i440FX + PIIX, 1996) (deprecated)</span><br><span class="line">pc-i440fx-1.4        Standard PC (i440FX + PIIX, 1996) (deprecated)</span><br><span class="line">q35                  Standard PC (Q35 + ICH9, 2009) (alias of pc-q35-7.0)</span><br><span class="line">pc-q35-7.0           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-6.2           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-6.1           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-6.0           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-5.2           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-5.1           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-5.0           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-4.2           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-4.1           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-4.0.1         Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-4.0           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-3.1           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-3.0           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.9           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.8           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.7           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.6           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.5           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.4           Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.12          Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.11          Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">pc-q35-2.10          Standard PC (Q35 + ICH9, 2009)</span><br><span class="line">isapc                ISA-only PC</span><br><span class="line">none                 empty machine</span><br></pre></td></tr></table></figure>
+    </div>
+</div>
+<p>一般来说，我们最常用的就是 pc 和 q35。如果你使用的是别人的镜像，<font color=#66ccff>那么务必跟随镜像主的安排。</font></p>
+<h4 id="-net-命令"><a class="markdownIt-Anchor" href="#-net-命令"></a> -net 命令</h4>
+<p>QEMU 的 -net 命令是提供跟网络相关的功能，这里只介绍最基本的两种方式。<br />
+-net 的用法是：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-net user -net nic,model=&lt;网卡名称&gt;</span><br></pre></td></tr></table></figure>
+<p>首先，前面的 -net 有五种选择：user, tap, bridge, vde, socket<br />
+如果你没有特殊需求，<font color=green>直接使用 User 网络即可。</font><br />
+然后，后面的 -net 是选择虚拟的网卡。QEMU 这里有以下网卡可选：</p>
+<div class='spoiler collapsed'>
+    <div class='spoiler-title'>
+        虚拟网卡类型列表
+    </div>
+    <div class='spoiler-content'>
+        <figure class="highlight plaintext"><figcaption><span>NIC list</span></figcaption><table><tr><td class="code"><pre><span class="line">e1000</span><br><span class="line">e1000-82544gc</span><br><span class="line">e1000-82545em</span><br><span class="line">e1000e</span><br><span class="line">i82550</span><br><span class="line">i82551</span><br><span class="line">i82557a</span><br><span class="line">i82557b</span><br><span class="line">i82557c</span><br><span class="line">i82558a</span><br><span class="line">i82558b</span><br><span class="line">i82559a</span><br><span class="line">i82559b</span><br><span class="line">i82559c</span><br><span class="line">i82559er</span><br><span class="line">i82562</span><br><span class="line">i82801</span><br><span class="line">ne2k_pci</span><br><span class="line">pcnet</span><br><span class="line">rtl8139</span><br><span class="line">tulip</span><br><span class="line">virtio-net-pci</span><br><span class="line">virtio-net-pci-non-transitional</span><br><span class="line">virtio-net-pci-transitional</span><br><span class="line">vmxnet3</span><br></pre></td></tr></table></figure>
+    </div>
+</div>
+<p>我们常用的是 <strong>e1000,ne2k_pci,rtl8139,virtio</strong> 网卡。<br />
+<font color=#66ccff>还是要看镜像主的安排。</font>比如你的镜像支持 rtl8139 网卡，那么输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-net user -net nic,model=rtl8139</span><br></pre></td></tr></table></figure>
+<p>就可以了。</p>
+<h4 id="-hda-命令"><a class="markdownIt-Anchor" href="#-hda-命令"></a> -hda 命令</h4>
+<p>-hda,-hdb,-hdc,-hdd 是磁盘镜像位，需将下载到的镜像放到这里。用法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-hda &lt;文件路径&gt;</span><br></pre></td></tr></table></figure>
+<p>其中，文件支持所有可用的镜像文件。<br />
+<font color=red>不推荐使用 -hdc 参数，可能会出问题。</font><br />
+<font color=green>如果需要使用 virtio 磁盘，那么需要使用 -drive 命令。</font></p>
+<h4 id="-m-命令"><a class="markdownIt-Anchor" href="#-m-命令"></a> -m 命令</h4>
+<p>-m 命令是设置你虚拟机的内存用的。<font color=green>M 是 Memory(内存) 的首字母。</font>用法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-m &lt;数字&gt;</span><br></pre></td></tr></table></figure>
+<p>数字单位是 MB。1 GB=1024 MB、3 GB=3072 MB</p>
+<h4 id="-vga-命令"><a class="markdownIt-Anchor" href="#-vga-命令"></a> -vga 命令</h4>
+<p>-vga 命令可以<font color=green>模拟虚拟机的显卡</font>，用法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-vga &lt;显卡名称&gt;</span><br></pre></td></tr></table></figure>
+<p>目前支持的显卡有：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">std                  standard VGA (default)</span><br><span class="line">cirrus               Cirrus VGA</span><br><span class="line">vmware               VMWare SVGA</span><br><span class="line">xenfb                Xen paravirtualized framebuffer</span><br><span class="line">virtio               Virtio VGA</span><br><span class="line">QXL</span><br></pre></td></tr></table></figure>
+<p>如果你模拟的是 Windows 的话，那么可能需要<font color=red>根据你的 Windows 系统选择显卡。</font>如下：</p>
+<pre><code>Windows 3.1     需要手动安装 cirrus 驱动。
+Windows 95      cirrus
+Windows 98      cirrus
+Windows 2000    cirrus
+Windows XP      std / VMware
+Windows Vista   std / VMware
+Windows 7       std / VMware
+Windows 8       std / VMware
+Windows 8.1     std / VMware
+Windows 10      std / VMware
+Windows 11      std / VMware
+</code></pre>
+<p>Linux 应该可以选择 <font color=green>virtio</font> 显卡。</p>
+<h4 id="-device-命令"><a class="markdownIt-Anchor" href="#-device-命令"></a> -device 命令</h4>
+<p>-device 命令是 QEMU 处理硬件的一个媒介，他也可以取代部分命令。比如<font color=green> -soundhw 和 -usbdevice</font>。如果需要将 VNC 和鼠标对齐的话，输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-usb // 启用 USB 控制器</span><br><span class="line">-device usb-tablet // 添加虚拟的 USB 触控板 </span><br></pre></td></tr></table></figure>
+<p>就可以了。更深层次的 USB 命令到后面会讲。</p>
+<h4 id="-soundhw-命令"><a class="markdownIt-Anchor" href="#-soundhw-命令"></a> -soundhw 命令</h4>
+<p>-soundhw 命令是启用声音支持，直白了说就是能让虚拟机出声音。用法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-soundhw &lt;声卡名称&gt;</span><br></pre></td></tr></table></figure>
+<p>我们只需要<font color=green>填入声卡名称</font>就可以了，声卡名如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ac97        Intel 82801AA AC97 Audio</span><br><span class="line">adlib       雅马哈 YM3812 (OPL2)</span><br><span class="line">cs4231a     CS4231A</span><br><span class="line">es1370      ENSONIQ AudioPCI ES1370</span><br><span class="line">gus         Gravis Ultrasound GF1</span><br><span class="line">hda         Intel HD Audio</span><br><span class="line">pcspk       PC speaker</span><br><span class="line">sb16        创新科技声霸卡 16</span><br></pre></td></tr></table></figure>
+<p>我们常用的是 sb16 和 ac97 还有 hda。</p>
+<h4 id="-cdrom-命令"><a class="markdownIt-Anchor" href="#-cdrom-命令"></a> -cdrom 命令</h4>
+<p>该命令是光驱位，放入光盘镜像（*.ISO）用法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-cdrom &lt;文件路径&gt;</span><br></pre></td></tr></table></figure>
+<p>直接将光盘文件路径写下即可。<br />
+<font color=red>光盘是有code显示的，可以通过这个代码定位问题。</font><br />
+<img src="https://img.gejiba.com/images/b4599dcccf66d9f30b7020f4932a617e.png" alt="" /><br />
+<img src="https://img.gejiba.com/images/25ba59fbd94a92295fcb09e2981cc2bb.png" alt="" /></p>
+<h4 id="-cpu-命令"><a class="markdownIt-Anchor" href="#-cpu-命令"></a> -cpu 命令</h4>
+<p>模拟你要模拟的 CPU，可选 CPU 有：</p>
+<div class='spoiler collapsed'>
+    <div class='spoiler-title'>
+        CPU 列表
+    </div>
+    <div class='spoiler-content'>
+        <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">x86 486                   (alias configured by machine type)</span><br><span class="line">x86 486-v1                </span><br><span class="line">x86 Broadwell             (alias configured by machine type)</span><br><span class="line">x86 Broadwell-IBRS        (alias of Broadwell-v3)</span><br><span class="line">x86 Broadwell-noTSX       (alias of Broadwell-v2)</span><br><span class="line">x86 Broadwell-noTSX-IBRS  (alias of Broadwell-v4)</span><br><span class="line">x86 Broadwell-v1          Intel Core Processor (Broadwell)</span><br><span class="line">x86 Broadwell-v2          Intel Core Processor (Broadwell, no TSX)</span><br><span class="line">x86 Broadwell-v3          Intel Core Processor (Broadwell, IBRS)</span><br><span class="line">x86 Broadwell-v4          Intel Core Processor (Broadwell, no TSX, IBRS)</span><br><span class="line">x86 Cascadelake-Server    (alias configured by machine type)</span><br><span class="line">x86 Cascadelake-Server-noTSX  (alias of Cascadelake-Server-v3)</span><br><span class="line">x86 Cascadelake-Server-v1  Intel Xeon Processor (Cascadelake)</span><br><span class="line">x86 Cascadelake-Server-v2  Intel Xeon Processor (Cascadelake) [ARCH_CAPABILITIES]</span><br><span class="line">x86 Cascadelake-Server-v3  Intel Xeon Processor (Cascadelake) [ARCH_CAPABILITIES, no TSX]</span><br><span class="line">x86 Cascadelake-Server-v4  Intel Xeon Processor (Cascadelake) [ARCH_CAPABILITIES, no TSX]</span><br><span class="line">x86 Cascadelake-Server-v5  Intel Xeon Processor (Cascadelake) [ARCH_CAPABILITIES, EPT switching, XSAVES, no TSX]</span><br><span class="line">x86 Conroe                (alias configured by machine type)</span><br><span class="line">x86 Conroe-v1             Intel Celeron_4x0 (Conroe/Merom Class Core 2)</span><br><span class="line">x86 Cooperlake            (alias configured by machine type)</span><br><span class="line">x86 Cooperlake-v1         Intel Xeon Processor (Cooperlake)</span><br><span class="line">x86 Cooperlake-v2         Intel Xeon Processor (Cooperlake) [XSAVES]</span><br><span class="line">x86 Denverton             (alias configured by machine type)</span><br><span class="line">x86 Denverton-v1          Intel Atom Processor (Denverton)</span><br><span class="line">x86 Denverton-v2          Intel Atom Processor (Denverton) [no MPX, no MONITOR]</span><br><span class="line">x86 Denverton-v3          Intel Atom Processor (Denverton) [XSAVES, no MPX, no MONITOR]</span><br><span class="line">x86 Dhyana                (alias configured by machine type)</span><br><span class="line">x86 Dhyana-v1             Hygon Dhyana Processor</span><br><span class="line">x86 Dhyana-v2             Hygon Dhyana Processor [XSAVES]</span><br><span class="line">x86 EPYC                  (alias configured by machine type)</span><br><span class="line">x86 EPYC-IBPB             (alias of EPYC-v2)</span><br><span class="line">x86 EPYC-Milan            (alias configured by machine type)</span><br><span class="line">x86 EPYC-Milan-v1         AMD EPYC-Milan Processor</span><br><span class="line">x86 EPYC-Rome             (alias configured by machine type)</span><br><span class="line">x86 EPYC-Rome-v1          AMD EPYC-Rome Processor</span><br><span class="line">x86 EPYC-Rome-v2          AMD EPYC-Rome Processor</span><br><span class="line">x86 EPYC-v1               AMD EPYC Processor</span><br><span class="line">x86 EPYC-v2               AMD EPYC Processor (with IBPB)</span><br><span class="line">x86 EPYC-v3               AMD EPYC Processor</span><br><span class="line">x86 Haswell               (alias configured by machine type)</span><br><span class="line">x86 Haswell-IBRS          (alias of Haswell-v3)</span><br><span class="line">x86 Haswell-noTSX         (alias of Haswell-v2)</span><br><span class="line">x86 Haswell-noTSX-IBRS    (alias of Haswell-v4)</span><br><span class="line">x86 Haswell-v1            Intel Core Processor (Haswell)</span><br><span class="line">x86 Haswell-v2            Intel Core Processor (Haswell, no TSX)</span><br><span class="line">x86 Haswell-v3            Intel Core Processor (Haswell, IBRS)</span><br><span class="line">x86 Haswell-v4            Intel Core Processor (Haswell, no TSX, IBRS)</span><br><span class="line">x86 Icelake-Client        (alias configured by machine type)</span><br><span class="line">x86 Icelake-Client-noTSX  (alias of Icelake-Client-v2)</span><br><span class="line">x86 Icelake-Client-v1     Intel Core Processor (Icelake) [deprecated]</span><br><span class="line">x86 Icelake-Client-v2     Intel Core Processor (Icelake) [no TSX, deprecated]</span><br><span class="line">x86 Icelake-Client-v3     Intel Core Processor (Icelake) [no TSX, XSAVES, deprecated]</span><br><span class="line">x86 Icelake-Server        (alias configured by machine type)</span><br><span class="line">x86 Icelake-Server-noTSX  (alias of Icelake-Server-v2)</span><br><span class="line">x86 Icelake-Server-v1     Intel Xeon Processor (Icelake)</span><br><span class="line">x86 Icelake-Server-v2     Intel Xeon Processor (Icelake) [no TSX]</span><br><span class="line">x86 Icelake-Server-v3     Intel Xeon Processor (Icelake)</span><br><span class="line">x86 Icelake-Server-v4     Intel Xeon Processor (Icelake)</span><br><span class="line">x86 Icelake-Server-v5     Intel Xeon Processor (Icelake) [XSAVES]</span><br><span class="line">x86 Icelake-Server-v6     Intel Xeon Processor (Icelake) [5-level EPT]</span><br><span class="line">x86 IvyBridge             (alias configured by machine type)</span><br><span class="line">x86 IvyBridge-IBRS        (alias of IvyBridge-v2)</span><br><span class="line">x86 IvyBridge-v1          Intel Xeon E3-12xx v2 (Ivy Bridge)</span><br><span class="line">x86 IvyBridge-v2          Intel Xeon E3-12xx v2 (Ivy Bridge, IBRS)</span><br><span class="line">x86 KnightsMill           (alias configured by machine type)</span><br><span class="line">x86 KnightsMill-v1        Intel Xeon Phi Processor (Knights Mill)</span><br><span class="line">x86 Nehalem               (alias configured by machine type)</span><br><span class="line">x86 Nehalem-IBRS          (alias of Nehalem-v2)</span><br><span class="line">x86 Nehalem-v1            Intel Core i7 9xx (Nehalem Class Core i7)</span><br><span class="line">x86 Nehalem-v2            Intel Core i7 9xx (Nehalem Core i7, IBRS update)</span><br><span class="line">x86 Opteron_G1            (alias configured by machine type)</span><br><span class="line">x86 Opteron_G1-v1         AMD Opteron 240 (Gen 1 Class Opteron)</span><br><span class="line">x86 Opteron_G2            (alias configured by machine type)</span><br><span class="line">x86 Opteron_G2-v1         AMD Opteron 22xx (Gen 2 Class Opteron)</span><br><span class="line">x86 Opteron_G3            (alias configured by machine type)</span><br><span class="line">x86 Opteron_G3-v1         AMD Opteron 23xx (Gen 3 Class Opteron)</span><br><span class="line">x86 Opteron_G4            (alias configured by machine type)</span><br><span class="line">x86 Opteron_G4-v1         AMD Opteron 62xx class CPU</span><br><span class="line">x86 Opteron_G5            (alias configured by machine type)</span><br><span class="line">x86 Opteron_G5-v1         AMD Opteron 63xx class CPU</span><br><span class="line">x86 Penryn                (alias configured by machine type)</span><br><span class="line">x86 Penryn-v1             Intel Core 2 Duo P9xxx (Penryn Class Core 2)</span><br><span class="line">x86 SandyBridge           (alias configured by machine type)</span><br><span class="line">x86 SandyBridge-IBRS      (alias of SandyBridge-v2)</span><br><span class="line">x86 SandyBridge-v1        Intel Xeon E312xx (Sandy Bridge)</span><br><span class="line">x86 SandyBridge-v2        Intel Xeon E312xx (Sandy Bridge, IBRS update)</span><br><span class="line">x86 Skylake-Client        (alias configured by machine type)</span><br><span class="line">x86 Skylake-Client-IBRS   (alias of Skylake-Client-v2)</span><br><span class="line">x86 Skylake-Client-noTSX-IBRS  (alias of Skylake-Client-v3)</span><br><span class="line">x86 Skylake-Client-v1     Intel Core Processor (Skylake)</span><br><span class="line">x86 Skylake-Client-v2     Intel Core Processor (Skylake, IBRS)</span><br><span class="line">x86 Skylake-Client-v3     Intel Core Processor (Skylake, IBRS, no TSX)</span><br><span class="line">x86 Skylake-Client-v4     Intel Core Processor (Skylake, IBRS, no TSX) [IBRS, XSAVES, no TSX]</span><br><span class="line">x86 Skylake-Server        (alias configured by machine type)</span><br><span class="line">x86 Skylake-Server-IBRS   (alias of Skylake-Server-v2)</span><br><span class="line">x86 Skylake-Server-noTSX-IBRS  (alias of Skylake-Server-v3)</span><br><span class="line">x86 Skylake-Server-v1     Intel Xeon Processor (Skylake)</span><br><span class="line">x86 Skylake-Server-v2     Intel Xeon Processor (Skylake, IBRS)</span><br><span class="line">x86 Skylake-Server-v3     Intel Xeon Processor (Skylake, IBRS, no TSX)</span><br><span class="line">x86 Skylake-Server-v4     Intel Xeon Processor (Skylake, IBRS, no TSX)</span><br><span class="line">x86 Skylake-Server-v5     Intel Xeon Processor (Skylake, IBRS, no TSX) [IBRS, XSAVES, EPT switching, no TSX]</span><br><span class="line">x86 Snowridge             (alias configured by machine type)</span><br><span class="line">x86 Snowridge-v1          Intel Atom Processor (SnowRidge)</span><br><span class="line">x86 Snowridge-v2          Intel Atom Processor (Snowridge, no MPX)</span><br><span class="line">x86 Snowridge-v3          Intel Atom Processor (Snowridge, no MPX) [XSAVES, no MPX]</span><br><span class="line">x86 Snowridge-v4          Intel Atom Processor (Snowridge, no MPX) [no split lock detect, no core-capability]</span><br><span class="line">x86 Westmere              (alias configured by machine type)</span><br><span class="line">x86 Westmere-IBRS         (alias of Westmere-v2)</span><br><span class="line">x86 Westmere-v1           Westmere E56xx/L56xx/X56xx (Nehalem-C)</span><br><span class="line">x86 Westmere-v2           Westmere E56xx/L56xx/X56xx (IBRS update)</span><br><span class="line">x86 athlon                (alias configured by machine type)</span><br><span class="line">x86 athlon-v1             QEMU Virtual CPU version 2.5+</span><br><span class="line">x86 core2duo              (alias configured by machine type)</span><br><span class="line">x86 core2duo-v1           Intel(R) Core(TM)2 Duo CPU     T7700  @ 2.40GHz</span><br><span class="line">x86 coreduo               (alias configured by machine type)</span><br><span class="line">x86 coreduo-v1            Genuine Intel(R) CPU           T2600  @ 2.16GHz</span><br><span class="line">x86 kvm32                 (alias configured by machine type)</span><br><span class="line">x86 kvm32-v1              Common 32-bit KVM processor</span><br><span class="line">x86 kvm64                 (alias configured by machine type)</span><br><span class="line">x86 kvm64-v1              Common KVM processor</span><br><span class="line">x86 n270                  (alias configured by machine type)</span><br><span class="line">x86 n270-v1               Intel(R) Atom(TM) CPU N270   @ 1.60GHz</span><br><span class="line">x86 pentium               (alias configured by machine type)</span><br><span class="line">x86 pentium-v1            </span><br><span class="line">x86 pentium2              (alias configured by machine type)</span><br><span class="line">x86 pentium2-v1           </span><br><span class="line">x86 pentium3              (alias configured by machine type)</span><br><span class="line">x86 pentium3-v1           </span><br><span class="line">x86 phenom                (alias configured by machine type)</span><br><span class="line">x86 phenom-v1             AMD Phenom(tm) 9550 Quad-Core Processor</span><br><span class="line">x86 qemu32                (alias configured by machine type)</span><br><span class="line">x86 qemu32-v1             QEMU Virtual CPU version 2.5+</span><br><span class="line">x86 qemu64                (alias configured by machine type)</span><br><span class="line">x86 qemu64-v1             QEMU Virtual CPU version 2.5+</span><br><span class="line">x86 base                  base CPU model type with no features enabled</span><br><span class="line">x86 max                   Enables all features supported by the accelerator in the current host</span><br></pre></td></tr></table></figure>
+    </div>
+</div>
+<p>具体根据自己需求选择。</p>
+<h4 id="-smp-命令"><a class="markdownIt-Anchor" href="#-smp-命令"></a> -smp 命令</h4>
+<p>该命令可以指定虚拟 CPU 的数量，核心数，线程数等。用法：<br />
+<font color=red><br />
+只指定 CPU 数量：<br />
+</font></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-smp 2</span><br></pre></td></tr></table></figure>
+<p>即代表 QEMU 会模拟两个 CPU 出来（不是核心）。<br />
+当然，你也可以加参数，命令如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-smp cores=2,threads=4,sockets=1</span><br></pre></td></tr></table></figure>
+<p>这条命令的意思是：<font color=green>一个 CPU 插槽，双核四线程。</font></p>
+<h4 id="-vnc-命令"><a class="markdownIt-Anchor" href="#-vnc-命令"></a> -vnc 命令</h4>
+<p>这条命令可以让你的虚拟机通过 VNC Viewer 连接。用法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-vnc :&lt;端口号&gt;</span><br></pre></td></tr></table></figure>
+<p>输入后直接使用 VNC Viewer 连接。如果 -vnc :0 那么在 VNC Viewer 的连接中就设置为 &lt;ip地址&gt;:0。如果你是手机开的模拟器，输入<font color=green> 127.0.0.1:0 </font></p>
+<h4 id="-pflash-命令"><a class="markdownIt-Anchor" href="#-pflash-命令"></a> -pflash 命令</h4>
+<p>一般用于 EFI 引导启动，用法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-pflash &lt;EFI 固件&gt;</span><br></pre></td></tr></table></figure>
+<p>需要你有 EFI 固件，一般是 fd 格式。</p>
+<h3 id="其他-qemu-模拟器的操作"><a class="markdownIt-Anchor" href="#其他-qemu-模拟器的操作"></a> 其他 QEMU 模拟器的操作</h3>
+<h4 id="连接-usb-设备"><a class="markdownIt-Anchor" href="#连接-usb-设备"></a> 连接 USB 设备</h4>
+<p><font color=green>可以通过 -device 命令将 U 盘连接到模拟器</font>。<br />
+如果要连接 <font color=green>USB 设备到 QEMU</font>，那么需要先查询 USB 设备的位置。我们输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">lsusb -t</span><br></pre></td></tr></table></figure>
+<p>来查询 USB 设备的位置。看他的输出：<br />
+<img src="https://img.gejiba.com/images/ab3efd6bffb37db1375536c2a68b8af8.png" alt="" /><br />
+找到你要连接的 USB 的位置。我这里以<font color=green> 我的 U 盘(Disk 2.0)</font> 为例子。<br />
+输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">-device usb-ehci,<span class="built_in">id</span>=ehci</span><br><span class="line">-device usb-host,bus=ehci.0,hostbus=20,hostport=1</span><br></pre></td></tr></table></figure>
+<p>其中，第一行的命令是指定虚拟的 USB 版本，我这里是 2.0。如果要虚拟 USB 3.0，请输入 <font color=green>xhci</font>。<br />
+第二行的命令是<font color=green>定位 USB 设备的位置</font>，我的设备在 Bus 020，Port 1 的位置上，所以输入的bus=20 port=1。而 port 的位置就是<font color=green>指树根下的位置</font>。我是树根下的第 1 个位置，所以填 1。一定要根据自己实际情况填写。</p>
+<h4 id="efi-固件的使用"><a class="markdownIt-Anchor" href="#efi-固件的使用"></a> EFI 固件的使用</h4>
+<p>QEMU 是可以使用 UEFI 启动的，需要 EFI 固件。<br />
+<font color=red>启动命令请查看 -pflash 命令。</font><br />
+这里提供下载：<br />
+<a href="/download/QEMU_EFI.fd">下载 QEMU_EFI.fd</a></p>
+<h4 id="无界面引导"><a class="markdownIt-Anchor" href="#无界面引导"></a> 无界面引导</h4>
+<p>有时候我们在模拟虚拟系统的时候需要直接将终端变成 QEMU 的控制台，那么我们加上 -nographic 命令即可。</p>
+<h2 id="qemu-镜像下载"><a class="markdownIt-Anchor" href="#qemu-镜像下载"></a> QEMU 镜像下载</h2>
+<p><a href="/images/">点击进入下载站</a></p>
+</font><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
     <title>逃亡Intel Mac</title>
     <url>/20260403/015931/</url>
     <content><![CDATA[<p>（虚构情景）</p>
@@ -3285,6 +3230,19 @@ Windows 中的终端叫做命令提示符，我们可以利用终端做很多事
 刷了刷手机，空想了些许片刻。我又打开手机，打开了微信，支付宝，花呗…，微信有2703，支付宝有814，花呗还可以用1750，总共是…5267。我说服自己————换一台吧，换一台吧，已经善终了。</p>
 <h1 id="钟转"><a class="markdownIt-Anchor" href="#钟转"></a> 钟转</h1>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>Sanapri bilibili 新视频</title>
+    <url>/20220823/164646/</url>
+    <content><![CDATA[<p>鎖那小天使终于发新视频啦，这里给你们看看～</p>
+<pre><code>Kyu-kurarin (cover) / sana 
+original: きゅうくらりん / いよわ feat.可不 
+vocal: 鎖那  mix: n.k 
+▷https://space.bilibili.com/543245410
+</code></pre>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?bvid=BV1M14y1t7LK&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
+</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>黑翼猫 Extended Kernel Project 中国网络环境下载</title>
@@ -3306,19 +3264,6 @@ Windows 中的终端叫做命令提示符，我们可以利用终端做很多事
 <h2 id="伪装系统版本用的软件"><a class="markdownIt-Anchor" href="#伪装系统版本用的软件"></a> 伪装系统版本用的软件</h2>
 <p><img src="https://img.gejiba.com/images/b269d479dbb9aab60c0bfcbac371d2ed.png" alt="" /></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>Sanapri bilibili 新视频</title>
-    <url>/20220823/164646/</url>
-    <content><![CDATA[<p>鎖那小天使终于发新视频啦，这里给你们看看～</p>
-<pre><code>Kyu-kurarin (cover) / sana 
-original: きゅうくらりん / いよわ feat.可不 
-vocal: 鎖那  mix: n.k 
-▷https://space.bilibili.com/543245410
-</code></pre>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?bvid=BV1M14y1t7LK&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
-</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>超级题</title>
@@ -3598,6 +3543,61 @@ vocal: 鎖那  mix: n.k
 <li><strong>拒绝空题</strong>：纸质笔试不倒扣分，数学不会就带入选项倒推，计算机不会就靠第一直觉。</li>
 <li><strong>唤醒记忆</strong>：你一年前学过，现在只是需要每天把这篇 Markdown 看一遍，激活大脑碎片。</li>
 </ol>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>朝鲜故事</title>
+    <url>/20250115/134502/</url>
+    <content><![CDATA[<h1 id="金哲的一生"><a class="markdownIt-Anchor" href="#金哲的一生"></a> 金哲的一生</h1>
+<h3 id="重生与归途"><a class="markdownIt-Anchor" href="#重生与归途"></a> <strong>重生与归途</strong></h3>
+<h4 id="逃离与新生"><a class="markdownIt-Anchor" href="#逃离与新生"></a> <strong>逃离与新生</strong></h4>
+<p>金哲（化名）是一个普通的朝鲜农民，为了逃避贫困与压迫，他在三十多年前冒着生命危险横渡鸭绿江，逃亡到中国。在那里，他假借一名已故中国人的身份生活，靠着勤奋努力和语言天赋，逐渐扎根北京。</p>
+<p>他成了一名装修工人，从最初的小工到后来独自接活儿，金哲攒下了一笔钱，买了房和车，还拿到了珍贵的北京车牌。他的生活看似幸福，平静而富足，但内心却始终留有一个深深的裂痕——对家人的思念。</p>
+<h4 id="返乡的决心"><a class="markdownIt-Anchor" href="#返乡的决心"></a> <strong>返乡的决心</strong></h4>
+<p>在某个冬日的清晨，金哲坐在家中的餐桌前，看着一张全家福的照片。他知道，家人在朝鲜的境况可能依然艰难，而自己却无法得知他们的任何消息。这种煎熬在二十年的时间里从未减弱，反而越来越深。他最终下定决心，要回到朝鲜，哪怕付出一切代价。</p>
+<p>2009年6月的一个早晨，金哲带上简单的行李，登上了北京站发往平壤的K27次列车。他知道这是一次可能无法回头的旅程，但内心的思念战胜了恐惧。</p>
+<h4 id="噩梦的开始"><a class="markdownIt-Anchor" href="#噩梦的开始"></a> <strong>噩梦的开始</strong></h4>
+<p>当列车抵达新义州站时，金哲被朝鲜边防人员带走。他的假身份被迅速识破，并以“叛国罪”判处45年劳改。他被送往深山中的一个秘密矿场，日夜挖掘矿石，每天只有一分钟的休息时间，食物仅是冷水和少量玉米粥。</p>
+<p>一年后，金哲因饥饿和劳累倒在矿井中，最终孤独地死去。他的家人在朝鲜的村庄里苦苦等待他的消息，但始终未能等到。悲痛之中，他们全家也因思念与绝望逐渐衰弱，最终相继离世。一个家庭就这样湮灭在历史的尘埃里。</p>
+<h4 id="奇迹的出现"><a class="markdownIt-Anchor" href="#奇迹的出现"></a> <strong>奇迹的出现</strong></h4>
+<p>金哲死后，他的灵魂漂浮在矿山上空。他仰望星空，泪流满面，向神明祈求：“若能再来一次，我愿用一切换取家人的幸福。”不知何故，神明听到了他的请求，时间奇迹般地回溯到他踏上K27次列车的那一刻。</p>
+<p>这一次，金哲没有选择返乡。他用神秘的力量，暗中帮助家人成功逃离朝鲜，并将他们带到了中国。他们一家团聚在北京，在丰台区马家堡附近的一套三居室中开始了新的生活。家人重新体会到了团圆的温暖。</p>
+<h4 id="工头的复仇"><a class="markdownIt-Anchor" href="#工头的复仇"></a> <strong>工头的复仇</strong></h4>
+<p>矿山的工头得知金哲一家逃脱后怒不可遏。他动用了神秘的军队，越境来到中国，试图抓捕金哲。然而，当他们找到金哲家所在的马家堡东里小区时，却被早已埋伏在此的中国警察一举擒获。</p>
+<p>中国政府迅速将工头及其部下遣返回国，而他们在朝鲜也因“任务失败”被判处52年劳改。在那同一个矿山里，他们像金哲一样，忍受着饥饿与折磨，最终在绝望中死去。</p>
+<h4 id="幸福的尾声"><a class="markdownIt-Anchor" href="#幸福的尾声"></a> <strong>幸福的尾声</strong></h4>
+<p>从此，金哲一家安居于北京，过上了平静而幸福的生活。他的孩子们进入了中国的学校学习，金哲和妻子经营着一家小餐馆，生活虽不奢华，却充满了笑声和温暖。</p>
+<p>而在丰台区的天空下，金哲时常感叹命运的多舛和神明的恩赐。他珍惜每一天，发誓再也不会冒险，只为守护眼前这来之不易的幸福。</p>
+<h1 id="李言成的脱北之路"><a class="markdownIt-Anchor" href="#李言成的脱北之路"></a> 李言成的脱北之路</h1>
+<p>李言成曾是一名坚定的朝鲜公民，他始终相信自己的祖国是世界上最强大的国家。然而，命运的一次巧合彻底颠覆了他的信念。朋友送给他的一枚U盘，成了他人生的转折点。U盘中播放的画面展示了韩国的繁荣景象，那些真实的场景让他陷入了深深的震撼与反思。朝鲜的宣传与现实之间的巨大反差，让他感到失望与迷茫。他开始质疑国家的真实面貌，最终萌生了一个危险的念头——脱北。</p>
+<h3 id="寒夜中的逃亡"><a class="markdownIt-Anchor" href="#寒夜中的逃亡"></a> <strong>寒夜中的逃亡</strong></h3>
+<p>2009年11月8日晚11点，李言成登上了一辆通往中朝边境的汽车。这是一条充满未知和危险的路，但自由的渴望让他不再犹豫。11月9日凌晨1点，他抵达了冰冷的鸭绿江边。深冬的寒夜，刺骨的江水让他几乎窒息，但他依旧咬牙向对岸游去。然而，他的行动被朝鲜边防军发现。尽管边防军迅速上报上级并追击，他还是幸运地逃脱，成功抵达中国境内。</p>
+<h3 id="初见中国的繁华"><a class="markdownIt-Anchor" href="#初见中国的繁华"></a> <strong>初见中国的繁华</strong></h3>
+<p>在中国一侧，接应的人早已等候多时。他迅速登上车辆，驶离了边境地区。第二天清晨，车辆抵达沈阳。在这座陌生却繁华的城市，李言成第一次感受到真实的对比。他看到熙攘的街道和繁华的商场，眼泪不由自主地流了下来。他喃喃自语：“我的国家果真不是世界最强大的国家……”那一刻，痛苦与希望交织在他的心中。他吃到了一顿丰盛的饭菜，那份饱腹感是他在朝鲜几乎无法想象的。这短暂的幸福也提醒他，危险仍未远去。他知道，在中国，如果被发现为朝鲜脱北者，随时可能被遣返。</p>
+<h3 id="漫长的火车旅程"><a class="markdownIt-Anchor" href="#漫长的火车旅程"></a> <strong>漫长的火车旅程</strong></h3>
+<p>第二天，蛇头安排了从沈阳到昆明的火车票。幸运的是，当时中国的铁路还未实行实名制，这让他们能够顺利登车。蛇头叮嘱他们，“全程不能说话，不能露出惊慌；查票时装睡，一切问题我来解决。”李言成听后点头如捣蒜，但内心依旧忐忑不安。</p>
+<p>途中，一声“查票了！”让他惊得猛地坐起。这一动作立刻引起列车员的注意。蛇头机智地解释，“他做噩梦吓醒了。”列车员要求查票，蛇头从容地递上所有人的车票，才让他们化险为夷。接下来的40多个小时，李言成目睹了中国沿途的风景，看到许多人幸福的生活。这让他震撼之余，感到更加坚定：自己必须逃离朝鲜，去迎接自由的生活。</p>
+<h3 id="翻山越岭的生死攸关"><a class="markdownIt-Anchor" href="#翻山越岭的生死攸关"></a> <strong>翻山越岭的生死攸关</strong></h3>
+<p>火车抵达昆明后，蛇头迅速安排车辆将他们送往边境。由于没有护照和身份证，他们只能偷渡。翻越崇山峻岭，穿越森林与小路，旅程的每一步都充满危险与艰难。他们的体力几乎耗尽，但最终成功抵达老挝。随后，他们辗转进入缅甸，再搭乘大客车前往泰国。在泰国，李言成终于获得庇护，并通过韩国方面的援助，安全抵达韩国。</p>
+<h3 id="新生活的开始"><a class="markdownIt-Anchor" href="#新生活的开始"></a> <strong>新生活的开始</strong></h3>
+<p>站在韩国的土地上，李言成喜极而泣，感到如释重负。他紧紧拥抱蛇头，感谢对方的帮助，这是他们最后一次见面。此后，李言成在韩国安定了下来。他找到了一份普通的工作，过上了平凡但安稳的生活。对他来说，这种平凡已经是幸福的极致。他感慨道：“我终于摆脱了苦海，虽然这里的生活并不奢华，但比朝鲜好太多了。”</p>
+<p>李言成的脱北之路充满了艰险和挑战，但自由的追求让他始终不放弃。这段经历不仅是他个人的救赎，也是对人性尊严的坚持与渴望。</p>
+<h1 id="李言成的脱北之路后续"><a class="markdownIt-Anchor" href="#李言成的脱北之路后续"></a> 李言成的脱北之路后续</h1>
+<p>2013年5月5日，原本在韩国安稳生活的李言成感到一阵不安。他的直觉是对的，那天中午，他接到了来自某人的消息：“你的家人被朝鲜抓了。他们要求你回去，否则就杀你全家。”这个晴天霹雳彻底摧毁了李言成苦心经营的美好生活。他崩溃了，痛哭不止：为何自己追求自由，代价却是家人承受苦难？</p>
+<p>几经挣扎，李言成做出了艰难的决定。他辞掉了韩国的工作，收拾行囊，再次踏上了返回朝鲜的路。这条路不仅是肉体上的归途，更是他自由梦的终结。</p>
+<h3 id="回归后的灰白世界"><a class="markdownIt-Anchor" href="#回归后的灰白世界"></a> <strong>回归后的灰白世界</strong></h3>
+<p>回到朝鲜，迎接李言成的是铺天盖地的指责与冷漠。他被迅速安排接受审判，面对摄像机，他被迫宣称：“我在韩国过得一点也不好！每天都想死的感觉。”这些话违背了他的真实情感，却是保命的唯一选择。朝鲜方面认为他仍然忠诚，劳改了几个月后便将他释放。</p>
+<p>然而，李言成再也无法离开朝鲜了。他的生活从此陷入了痛苦与绝望。每天，他只能享受短短3小时的电力供应，饮水需要亲自到江边取，冬天则在缺乏暖气的房间里苦熬，几乎每年都濒临冻死。他无数次跪下，悔恨当初的选择。但后悔已无济于事，铁幕之下，他再也看不到自由的希望。</p>
+<p>2019年6月，一位朋友告诉他：“中国现在买火车票需要身份证和护照了。”这句话如同最后一根稻草，让李言成再次失声痛哭。他知道，通往外界的道路已经彻底堵死。</p>
+<h3 id="偶然的曙光"><a class="markdownIt-Anchor" href="#偶然的曙光"></a> <strong>偶然的曙光</strong></h3>
+<p>2020年疫情爆发后，朝鲜进一步封锁国境，李言成的世界变得更加渺茫。然而，命运总是充满反复。因为他“悔改表现良好”，金正恩将军决定奖励他——派遣他到中国的朝鲜餐厅工作和学习。得知这一消息时，李言成灰暗的生活似乎再次被点亮了。</p>
+<p>2025年，李言成如愿来到中国，在丹东的一家朝鲜餐厅当厨师。再次踏上这片土地时，他感叹：“中国变化真大！而我们的朝鲜……也算是一年比一年好了吧，起码没倒退。”</p>
+<h3 id="短暂的幸福"><a class="markdownIt-Anchor" href="#短暂的幸福"></a> <strong>短暂的幸福</strong></h3>
+<p>在丹东的日子里，李言成尽情享受着中国的便利与富足。虽然时间只有短短三年，但这三年对他而言是无价的。每天，他在餐厅里工作，尽管是简单的厨师岗位，却足以让他感到满足。最重要的是，在这里，他再也不用担心挨饿。</p>
+<p>虽然李言成深知，这段生活只是短暂的喘息，他最终还要回到朝鲜，但他依然感恩上帝赐予的这一段希望。他珍惜每一天，努力为餐厅的客人做出最美味的菜肴。</p>
+<p>在餐厅忙碌的厨房里，李言成时常望着窗外熙熙攘攘的街景，喃喃自语：“这三年，已经是我命运中最好的恩赐了。”他坚信，即便命运无情，但只要有一丝光亮，就值得他去追逐与珍惜。</p>
+<p>标题：李言成的脱北之路后续<br />
+在韩国呆了四五年后，朝鲜方面把他的家人都逮捕了起来，并且使用各种手段想要把他绑架回朝鲜。在2013年5月5日中午，李言成感到阵阵不安。突然有个人来找他，说：你家里人被朝鲜绑架了，你不回去朝鲜他们就杀你全家。李言成哭了，他来之不易的美好生活就要结束了？他的家人那么惨。为什么自己逃脱别人要受罚。他实在受不了自己的家人被如此欺负，为了家人的安全，他辞掉了韩国的工作还是回到了朝鲜。回到朝鲜后，他的世界变成灰白色了。心情低落的接受朝鲜的采访和审判。他在朝鲜的电视里出镜了。他的精神十分空虚，他被迫说“我在韩国过得一点也不好！每天都想死的感觉”。朝鲜方面觉得他还是比较忠诚的，劳改了几个月就把它放了。李言成不知道的是，他这一回来，就再也出不去了。2019年6月7日，李言成的朋友跟他说“喂！你知道吗？中国现在买火车票得用身份证护照了。不能用票了”“什么？！！”，李言成再一次痛哭。虽然内心早就麻木了但是听见这种事还是很伤心，这下应该是再也出不去朝鲜了。他很难过。他在朝鲜的生活很痛苦，每天只有3个小时电力支持。水也是得去江边打水，而且房间也没有暖气，每年冬天都差点被冻死。他跪下了。他这么多年来一直很后悔当年为什么要回来。但是后悔也没有用了，他回不去向往的世界了。2020年，因为疫情，朝鲜封了海关。出去的希望更加渺茫。但是，就是这么巧。因为他在外面表现的很好，将军奖励他出国学习去朝鲜餐厅，他灰色的世界突然有了颜色！他开心的蹦了起来。这次，他回到了中国。在丹东的一家朝鲜餐厅里当厨师。“这么多年没去中国了，中国变化很大嘛。而我们的朝鲜。。。也算是一年比一年好了吧！起码没倒退唉”他感叹道。虽然这次他在中国的时间只有3年，但是这3年就是上帝给他的又一次希望，现在他在朝鲜餐厅里每天都快乐的活着。因为在中国，他起码饿不死了。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
 </search>
