@@ -234,7 +234,7 @@
     <div class="e-content article-entry" itemprop="articleBody">
         <h1 id="Pier-软件包管理器：终极技术白皮书"><a href="#Pier-软件包管理器：终极技术白皮书" class="headerlink" title="Pier 软件包管理器：终极技术白皮书"></a>Pier 软件包管理器：终极技术白皮书</h1><h2 id="一、-序言：为什么要有-Pier？"><a href="#一、-序言：为什么要有-Pier？" class="headerlink" title="一、 序言：为什么要有 Pier？"></a>一、 序言：为什么要有 Pier？</h2><p>在 Windows 的世界里，安装软件通常意味着：双击 .exe -&gt; 下一步 -&gt; 下一步 -&gt; 忍受广告 -&gt; 注册表被塞满。<br>虽然有像 Scoop 或 Winget 这样的现代管理器，但它们往往需要复杂的运行环境（如 PowerShell 策略或 .NET）。</p>
 <p><strong>Pier 的哲学是：回归原始。</strong><br>它诞生于一个朴素的想法——能不能只用 Windows 诞生之初就有的“老古董”技术，做一个像 Linux 那样干净、透明、自动化的包管理器？</p>
-<h3 id="Pier-的核心定义："><a href="#Pier-的核心定义：" class="headerlink" title="Pier 的核心定义："></a>Pier 的核心定义：</h3><p>Pier 是一个基于 <strong>Batch（批处理）</strong> 逻辑内核，通过 <strong>HTA（网页程序）</strong> 提供交互界面，利用 <strong>7z/sed</strong> 等工具链实现软件下载、安装、卸载全生命周期管理的生态系统。</p>
+<h3 id="Pier-的核心定义："><a href="#Pier-的核心定义：" class="headerlink" title="Pier 的核心定义："></a>Pier 的核心定义：</h3><p>Pier 是一个基于 <strong>Batch（批处理）</strong> 逻辑内核，通过 <strong>HTA（网页程序）</strong> 提供交互界面，利用 <strong>7z&#x2F;sed</strong> 等工具链实现软件下载、安装、卸载全生命周期管理的生态系统。</p>
 <hr>
 <h2 id="二、-Pier-的家族成员"><a href="#二、-Pier-的家族成员" class="headerlink" title="二、 Pier 的家族成员"></a>二、 Pier 的家族成员</h2><p>为了让你从零理解，我们把 Pier 比作一个“自动售货机系统”：</p>
 <ol>
@@ -248,9 +248,10 @@
 </li>
 </ol>
 <hr>
-<h2 id="三、-图解：Pier-原理分析"><a href="#三、-图解：Pier-原理分析" class="headerlink" title="三、 图解：Pier 原理分析"></a>三、 图解：Pier 原理分析</h2><h3 id="3-1、各种文件是干什么的"><a href="#3-1、各种文件是干什么的" class="headerlink" title="3.1、各种文件是干什么的"></a>3.1、各种文件是干什么的</h3><p><img src="https://www.helloimg.com/i/2025/12/30/6952f9edd26ee.png" alt=""></p>
-<h3 id="3-2、Pier-执行全过程"><a href="#3-2、Pier-执行全过程" class="headerlink" title="3.2、Pier 执行全过程"></a>3.2、Pier 执行全过程</h3><p><img src="https://pic1.imgdb.cn/item/6952fbf04b4fb88febf283c8.png" width="45%"></p>
-<h2 id="四、-核心原理：HTA-对话框是如何工作的？"><a href="#四、-核心原理：HTA-对话框是如何工作的？" class="headerlink" title="四、 核心原理：HTA 对话框是如何工作的？"></a>四、 核心原理：HTA 对话框是如何工作的？</h2><p><img src="https://pic1.imgdb.cn/item/6952f4a04b4fb88febf283c0.png" alt=""></p>
+<h2 id="三、-图解：Pier-原理分析"><a href="#三、-图解：Pier-原理分析" class="headerlink" title="三、 图解：Pier 原理分析"></a>三、 图解：Pier 原理分析</h2><h3 id="3-1、各种文件是干什么的"><a href="#3-1、各种文件是干什么的" class="headerlink" title="3.1、各种文件是干什么的"></a>3.1、各种文件是干什么的</h3><p><img src="https://www.helloimg.com/i/2025/12/30/6952f9edd26ee.png"></p>
+<h3 id="3-2、Pier-执行全过程"><a href="#3-2、Pier-执行全过程" class="headerlink" title="3.2、Pier 执行全过程"></a>3.2、Pier 执行全过程</h3><img src="https://pic1.imgdb.cn/item/6952fbf04b4fb88febf283c8.png" width="45%">
+ 
+<h2 id="四、-核心原理：HTA-对话框是如何工作的？"><a href="#四、-核心原理：HTA-对话框是如何工作的？" class="headerlink" title="四、 核心原理：HTA 对话框是如何工作的？"></a>四、 核心原理：HTA 对话框是如何工作的？</h2><p><img src="https://pic1.imgdb.cn/item/6952f4a04b4fb88febf283c0.png"></p>
 <p>这是 Pier 最亮眼的地方。你看到的那个带有“确认安装”按钮的精美窗口，实际上是一个 <strong>HTA (HTML Application)</strong>。</p>
 <h3 id="1-为什么不直接用-CMD-询问？"><a href="#1-为什么不直接用-CMD-询问？" class="headerlink" title="1. 为什么不直接用 CMD 询问？"></a>1. 为什么不直接用 CMD 询问？</h3><p>CMD 的 <code>set /p</code> 只能输入文字，不能点按钮，更不能显示精美的软件图标和排版。HTA 本质上是一个“拥有本地最高权限的 IE 浏览器渲染窗口”，它能调用 JavaScript 操作文件。</p>
 <h3 id="2-跨进程通信：pier-choice-tmp"><a href="#2-跨进程通信：pier-choice-tmp" class="headerlink" title="2. 跨进程通信：pier_choice.tmp"></a>2. 跨进程通信：pier_choice.tmp</h3><p>这是你代码中最精妙的逻辑。由于批处理无法直接读取网页里的变量，它们通过“写小纸条”的方式通信：</p>
@@ -261,7 +262,7 @@
 <li><strong>第四步</strong>：HTA 关闭，<code>pier.bat</code> 检查 <code>%TEMP%</code> 目录下有没有这个 <code>.tmp</code> 文件。</li>
 <li><strong>第五步</strong>：读到 <code>Y</code>，继续安装；没读到，直接退出。</li>
 </ul>
-<h3 id="3-HTA-界面视觉图"><a href="#3-HTA-界面视觉图" class="headerlink" title="3. HTA 界面视觉图"></a>3. HTA 界面视觉图</h3><p><img src="https://pic1.imgdb.cn/item/6952f4504b4fb88febf283bf.png" alt=""></p>
+<h3 id="3-HTA-界面视觉图"><a href="#3-HTA-界面视觉图" class="headerlink" title="3. HTA 界面视觉图"></a>3. HTA 界面视觉图</h3><p><img src="https://pic1.imgdb.cn/item/6952f4504b4fb88febf283bf.png"></p>
 <h2 id="五、-PierPacker：软件是如何被制作出来的？"><a href="#五、-PierPacker：软件是如何被制作出来的？" class="headerlink" title="五、 PierPacker：软件是如何被制作出来的？"></a>五、 PierPacker：软件是如何被制作出来的？</h2><p> <code>PierPacker.bat</code> 和 <code>Builder.hta</code> 是 Pier 生态的“生产力工具”。没有它们，开发者就得手动写那些复杂的配置文件。</p>
 <h3 id="1-打包流程分解"><a href="#1-打包流程分解" class="headerlink" title="1. 打包流程分解"></a>1. 打包流程分解</h3><p>当你有一个文件夹（比如绿色版的软件），想把它变成 Pier 格式，你需要经历以下步骤：</p>
 <ol>
@@ -272,7 +273,7 @@
 <li><p><strong>物理压缩 (7za.exe)</strong>：<br><code>PierPacker</code> 会调用后台的 7zip 工具，把文件夹压缩成一个 <code>.pie</code> 后缀的压缩包。</p>
 </li>
 </ol>
-<h3 id="2-PierPacker-架构图"><a href="#2-PierPacker-架构图" class="headerlink" title="2. PierPacker 架构图"></a>2. PierPacker 架构图</h3><p><img src="https://pic1.imgdb.cn/item/6952f4274b4fb88febf283bc.png" alt=""></p>
+<h3 id="2-PierPacker-架构图"><a href="#2-PierPacker-架构图" class="headerlink" title="2. PierPacker 架构图"></a>2. PierPacker 架构图</h3><p><img src="https://pic1.imgdb.cn/item/6952f4274b4fb88febf283bc.png"></p>
 <h2 id="六、-开发者必看：源码中的细节"><a href="#六、-开发者必看：源码中的细节" class="headerlink" title="六、 开发者必看：源码中的细节"></a>六、 开发者必看：源码中的细节</h2><h3 id="1-管理员权限的“静默夺取”"><a href="#1-管理员权限的“静默夺取”" class="headerlink" title="1. 管理员权限的“静默夺取”"></a>1. 管理员权限的“静默夺取”</h3><p>在 <code>PierPacker.bat</code> 中，有一段非常硬核的代码：<br><code>powershell -Command &quot;Start-Process ... -Verb RunAs&quot;</code></p>
 <p><strong>为什么要这么做？</strong><br>因为打包过程需要调用系统级的 <code>7za.exe</code> 并往可能受到保护的目录下写文件。这段代码确保了用户双击运行时，如果权限不够，会自动跳出 UAC 弹窗申请管理员权限，而不需要用户手动右键运行。</p>
 <h3 id="2-Builder-hta-的-ActiveX-调用"><a href="#2-Builder-hta-的-ActiveX-调用" class="headerlink" title="2. Builder.hta 的 ActiveX 调用"></a>2. Builder.hta 的 ActiveX 调用</h3><p>Builder 之所以能读取你的文件夹路径，是因为它使用了 Windows 的壳层对象：<br><code>var shell = new ActiveXObject(&quot;Shell.Application&quot;);</code><br><code>var folder = shell.BrowseForFolder(0, &quot;选择要打包的文件夹&quot;, 0);</code></p>
@@ -367,7 +368,7 @@
       </div>
       <div>
         <span class="icon-brush"></span>
-        49k
+        48.6k
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
         03:24
