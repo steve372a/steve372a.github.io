@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="vendor/codemirror/lib/codemirror.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-theme="macos">
   <div class="desktop-shell">
     <div class="window-frame">
       <header class="window-titlebar">
@@ -15,7 +15,7 @@
           <h1>Pier Package Installer 元数据生成器</h1>
         </div>
         <div class="toolbar-badges">
-          <span class="toolbar-badge">Tiger Style</span>
+          <span id="currentThemeBadge" class="toolbar-badge">macOS Theme</span>
           <span class="toolbar-badge">Local File</span>
         </div>
       </header>
@@ -38,6 +38,7 @@
           </div>
 
           <form id="mkmeta-form" novalidate>
+            <input id="importMetadataFile" type="file" accept=".sque,.metadata,.zip,application/zip" hidden>
             <div class="section-card">
               <div class="section-head">
                 <h3>Basic</h3>
@@ -66,7 +67,7 @@
 
                 <label class="field field-wide">
                   <span>URL</span>
-                  <input id="url" name="url" required placeholder="7zip-{version}.pie">
+                  <textarea id="url" name="url" required rows="3" placeholder="7zip-{version}.pie&#10;&#10;或：&#10;x86: 7zip-{version}.pie (default)&#10;x64: 7zip-x64-{version}.pie&#10;::end"></textarea>
                 </label>
 
                 <label class="field field-wide">
@@ -198,6 +199,15 @@
             <div id="infoBox" class="message message-info" hidden></div>
 
             <div class="action-row">
+              <label class="import-encoding" for="importEncodingSelect">
+                <span>导入编码</span>
+                <select id="importEncodingSelect" class="import-encoding-select" aria-label="Import Encoding">
+                  <option value="auto" selected>Auto (Prefer UTF-8)</option>
+                  <option value="utf-8">UTF-8 (Recommended)</option>
+                  <option value="gb18030">GB18030 / GBK / GB2312</option>
+                </select>
+              </label>
+              <button type="button" id="importButton" class="button button-soft">导入文件</button>
               <button type="button" id="generateButton" class="button button-primary">生成预览</button>
               <button type="button" id="downloadMetadataButton" class="button button-soft" disabled>下载 metadata.sque</button>
               <button type="button" id="downloadZipButton" class="button button-soft" disabled>下载 latest.metadata</button>

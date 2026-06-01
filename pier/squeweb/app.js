@@ -20,7 +20,11 @@
   var generateButton = document.getElementById("generateButton");
   var downloadMetadataButton = document.getElementById("downloadMetadataButton");
   var downloadZipButton = document.getElementById("downloadZipButton");
+  var importButton = document.getElementById("importButton");
+  var importMetadataFileInput = document.getElementById("importMetadataFile");
+  var importEncodingSelect = document.getElementById("importEncodingSelect");
   var tabButtons = Array.prototype.slice.call(document.querySelectorAll(".tab-button"));
+  var currentThemeBadge = document.getElementById("currentThemeBadge");
 
   var scriptSystemverSelect = document.getElementById("scriptSystemver");
   var scriptStatusText = document.getElementById("scriptStatusText");
@@ -37,9 +41,16 @@
   var scriptChipButtons = Array.prototype.slice.call(document.querySelectorAll(".script-chip"));
 
   var encoder = new TextEncoder();
+  var utf8Decoder = typeof TextDecoder === "function" ? new TextDecoder("utf-8") : null;
+  var gb18030Decoder = null;
   var previewTimer = null;
   var scriptCodeMirror = null;
   var scriptErrorLineHandle = null;
+  var scriptErrorMarker = null;
+  var scriptErrorTooltip = null;
+  var scriptErrorTooltipHideTimer = null;
+  var scriptModalCloseTimer = null;
+  var scriptModalOpenFrame = 0;
   var autocompleteItems = [];
   var autocompleteState = null;
   var autocompleteActiveIndex = 0;
@@ -66,9 +77,51 @@
     'if {systemver} != ("xp","7","8","8.1","10") then {version} = "2.3.0" else {version} = "2.4.0";',
     'if {version} == "2.4.0" then {packagesize} = "3.80 MB";'
   ].join("\n");
+  var THEME_STORAGE_KEY = "pier-mkmeta-theme";
+  var THEME_LABELS = {
+    macos: "macOS Theme"
+  };
+
+  if (typeof TextDecoder === "function") {
+    try {
+      gb18030Decoder = new TextDecoder("gb18030");
+    } catch (_error) {
+      gb18030Decoder = null;
+    }
+  }
 
   function $(id) {
     return document.getElementById(id);
+  }
+
+  function normalizeThemeName(theme) {
+    return "macos";
+  }
+
+  function readStoredTheme() {
+    try {
+      return normalizeThemeName(window.localStorage.getItem(THEME_STORAGE_KEY));
+    } catch (_error) {
+      return "macos";
+    }
+  }
+
+  function persistTheme(theme) {
+    try {
+      window.localStorage.setItem(THEME_STORAGE_KEY, theme);
+    } catch (_error) {
+      return;
+    }
+  }
+
+  function applyTheme(theme) {
+    var normalized = normalizeThemeName(theme);
+
+    document.body.setAttribute("data-theme", normalized);
+    if (currentThemeBadge) {
+      currentThemeBadge.textContent = THEME_LABELS[normalized];
+    }
+    persistTheme(normalized);
   }
 
   function normalizeLineEndings(text) {
@@ -79,8 +132,20 @@
     return normalizeLineEndings(text).replace(/^\s+|\s+$/g, "");
   }
 
+  function trimTrailingBlankLines(text) {
+    return normalizeLineEndings(text).replace(/\n+$/g, "");
+  }
+
   function normalizeScriptText(text) {
     return normalizeLineEndings(text).replace(/[ \t]+$/gm, "").replace(/^\n+|\n+$/g, "");
+  }
+
+  function stripFinalEndMarker(text) {
+    var normalized = trimTrailingBlankLines(text);
+    if (!normalized) {
+      return "";
+    }
+    return normalized.replace(/\n?::end\s*$/i, "");
   }
 
   function ensureMultilineEnd(text) {
@@ -114,6 +179,160 @@
     resolvedPreview.textContent = resolvedText || "";
     profilePreview.textContent = profileText || "";
     noticePreview.textContent = noticeText || "";
+  }
+
+  function isValidUtf8(bytes) {
+    var i = 0;
+    var length = bytes.length;
+    var byte1;
+    var byte2;
+    var byte3;
+    var byte4;
+
+    while (i < length) {
+      byte1 = bytes[i];
+      if (byte1 <= 0x7f) {
+        i += 1;
+      } else if (byte1 >= 0xc2 && byte1 <= 0xdf) {
+        if (i + 1 >= length) {
+          return false;
+        }
+        byte2 = bytes[i + 1];
+        if ((byte2 & 0xc0) !== 0x80) {
+          return false;
+        }
+        i += 2;
+      } else if (byte1 === 0xe0) {
+        if (i + 2 >= length) {
+          return false;
+        }
+        byte2 = bytes[i + 1];
+        byte3 = bytes[i + 2];
+        if (byte2 < 0xa0 || byte2 > 0xbf || (byte3 & 0xc0) !== 0x80) {
+          return false;
+        }
+        i += 3;
+      } else if ((byte1 >= 0xe1 && byte1 <= 0xec) || byte1 === 0xee || byte1 === 0xef) {
+        if (i + 2 >= length) {
+          return false;
+        }
+        byte2 = bytes[i + 1];
+        byte3 = bytes[i + 2];
+        if ((byte2 & 0xc0) !== 0x80 || (byte3 & 0xc0) !== 0x80) {
+          return false;
+        }
+        i += 3;
+      } else if (byte1 === 0xed) {
+        if (i + 2 >= length) {
+          return false;
+        }
+        byte2 = bytes[i + 1];
+        byte3 = bytes[i + 2];
+        if (byte2 < 0x80 || byte2 > 0x9f || (byte3 & 0xc0) !== 0x80) {
+          return false;
+        }
+        i += 3;
+      } else if (byte1 === 0xf0) {
+        if (i + 3 >= length) {
+          return false;
+        }
+        byte2 = bytes[i + 1];
+        byte3 = bytes[i + 2];
+        byte4 = bytes[i + 3];
+        if (byte2 < 0x90 || byte2 > 0xbf || (byte3 & 0xc0) !== 0x80 || (byte4 & 0xc0) !== 0x80) {
+          return false;
+        }
+        i += 4;
+      } else if (byte1 >= 0xf1 && byte1 <= 0xf3) {
+        if (i + 3 >= length) {
+          return false;
+        }
+        byte2 = bytes[i + 1];
+        byte3 = bytes[i + 2];
+        byte4 = bytes[i + 3];
+        if ((byte2 & 0xc0) !== 0x80 || (byte3 & 0xc0) !== 0x80 || (byte4 & 0xc0) !== 0x80) {
+          return false;
+        }
+        i += 4;
+      } else if (byte1 === 0xf4) {
+        if (i + 3 >= length) {
+          return false;
+        }
+        byte2 = bytes[i + 1];
+        byte3 = bytes[i + 2];
+        byte4 = bytes[i + 3];
+        if (byte2 < 0x80 || byte2 > 0x8f || (byte3 & 0xc0) !== 0x80 || (byte4 & 0xc0) !== 0x80) {
+          return false;
+        }
+        i += 4;
+      } else {
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  function stripUtf8BomBytes(bytes) {
+    if (bytes.length >= 3 && bytes[0] === 0xef && bytes[1] === 0xbb && bytes[2] === 0xbf) {
+      return bytes.subarray(3);
+    }
+    return bytes;
+  }
+
+  function decodeBytesFallback(bytes) {
+    return Array.prototype.map.call(bytes, function (item) {
+      return String.fromCharCode(item);
+    }).join("");
+  }
+
+  function getImportEncodingMode() {
+    if (!importEncodingSelect) {
+      return "auto";
+    }
+    if (importEncodingSelect.value === "utf-8" || importEncodingSelect.value === "gb18030") {
+      return importEncodingSelect.value;
+    }
+    return "auto";
+  }
+
+  function decodeTextBytes(bytes, mode) {
+    var encodingMode = mode || "auto";
+    var normalizedBytes = stripUtf8BomBytes(bytes);
+    var text;
+
+    if (encodingMode === "utf-8") {
+      text = utf8Decoder ? utf8Decoder.decode(normalizedBytes) : decodeBytesFallback(normalizedBytes);
+      return normalizeLineEndings(String(text || "").replace(/^\uFEFF/, ""));
+    }
+
+    if (encodingMode === "gb18030") {
+      text = gb18030Decoder ? gb18030Decoder.decode(normalizedBytes) : decodeBytesFallback(normalizedBytes);
+      return normalizeLineEndings(String(text || "").replace(/^\uFEFF/, ""));
+    }
+
+    if (utf8Decoder && isValidUtf8(normalizedBytes)) {
+      text = utf8Decoder.decode(normalizedBytes);
+    } else if (gb18030Decoder) {
+      text = gb18030Decoder.decode(normalizedBytes);
+    } else if (utf8Decoder) {
+      text = utf8Decoder.decode(normalizedBytes);
+    } else {
+      text = decodeBytesFallback(normalizedBytes);
+    }
+
+    return normalizeLineEndings(String(text || "").replace(/^\uFEFF/, ""));
+  }
+
+  function decodeZipEntryName(bytes, utf8Flag) {
+    if (utf8Flag) {
+      return decodeTextBytes(bytes, "utf-8");
+    }
+    return decodeTextBytes(bytes, "auto");
+  }
+
+  function encodeNormalizedText(text) {
+    return encoder.encode(normalizeLineEndings(text).replace(/\n/g, "\r\n"));
   }
 
   function hasCodeMirrorSupport() {
@@ -211,14 +430,82 @@
   }
 
   function clearScriptErrorMarker() {
+    if (scriptErrorTooltipHideTimer) {
+      clearTimeout(scriptErrorTooltipHideTimer);
+      scriptErrorTooltipHideTimer = null;
+    }
+    if (scriptErrorTooltip) {
+      scriptErrorTooltip.classList.remove("visible");
+    }
+    if (scriptErrorMarker && scriptErrorMarker.parentNode) {
+      scriptErrorMarker.parentNode.removeChild(scriptErrorMarker);
+    }
+    scriptErrorMarker = null;
     if (scriptCodeMirror && scriptErrorLineHandle) {
       scriptCodeMirror.removeLineClass(scriptErrorLineHandle, "wrap", "script-error-line");
       scriptErrorLineHandle = null;
     }
   }
 
+  function ensureScriptErrorTooltip() {
+    if (!scriptEditorShell) {
+      return null;
+    }
+    if (!scriptErrorTooltip) {
+      scriptErrorTooltip = document.createElement("div");
+      scriptErrorTooltip.className = "script-error-tooltip";
+      scriptEditorShell.appendChild(scriptErrorTooltip);
+    }
+    return scriptErrorTooltip;
+  }
+
+  function hideScriptErrorTooltip() {
+    if (scriptErrorTooltipHideTimer) {
+      clearTimeout(scriptErrorTooltipHideTimer);
+      scriptErrorTooltipHideTimer = null;
+    }
+    if (scriptErrorTooltip) {
+      scriptErrorTooltip.classList.remove("visible");
+    }
+  }
+
+  function scheduleHideScriptErrorTooltip() {
+    if (scriptErrorTooltipHideTimer) {
+      clearTimeout(scriptErrorTooltipHideTimer);
+    }
+    scriptErrorTooltipHideTimer = setTimeout(function () {
+      hideScriptErrorTooltip();
+    }, 120);
+  }
+
+  function showScriptErrorTooltip(target, error) {
+    var tooltip = ensureScriptErrorTooltip();
+    var shellRect;
+    var targetRect;
+    var top;
+
+    if (!tooltip || !target || !error) {
+      return;
+    }
+
+    if (scriptErrorTooltipHideTimer) {
+      clearTimeout(scriptErrorTooltipHideTimer);
+      scriptErrorTooltipHideTimer = null;
+    }
+
+    tooltip.textContent = formatScriptError(error);
+    shellRect = scriptEditorShell.getBoundingClientRect();
+    targetRect = target.getBoundingClientRect();
+    top = targetRect.top - shellRect.top - 4;
+
+    tooltip.style.left = "12px";
+    tooltip.style.top = Math.max(10, top) + "px";
+    tooltip.classList.add("visible");
+  }
+
   function markScriptErrorLine(error) {
     var lineIndex;
+    var marker;
 
     clearScriptErrorMarker();
     if (!scriptCodeMirror || !error || !error.lineNumber) {
@@ -229,6 +516,21 @@
     scriptErrorLineHandle = scriptCodeMirror.getLineHandle(lineIndex);
     if (scriptErrorLineHandle) {
       scriptCodeMirror.addLineClass(scriptErrorLineHandle, "wrap", "script-error-line");
+      marker = document.createElement("button");
+      marker.type = "button";
+      marker.className = "script-error-gutter";
+      marker.setAttribute("aria-label", formatScriptError(error));
+      marker.textContent = "!";
+      marker.addEventListener("mouseenter", function () {
+        showScriptErrorTooltip(marker, error);
+      });
+      marker.addEventListener("mouseleave", scheduleHideScriptErrorTooltip);
+      marker.addEventListener("focus", function () {
+        showScriptErrorTooltip(marker, error);
+      });
+      marker.addEventListener("blur", hideScriptErrorTooltip);
+      scriptErrorMarker = marker;
+      scriptCodeMirror.setGutterMarker(lineIndex, "script-error-gutter", marker);
     }
   }
 
@@ -245,7 +547,8 @@
         indentUnit: 2,
         tabSize: 2,
         viewportMargin: Infinity,
-        scrollbarStyle: "native"
+        scrollbarStyle: "native",
+        gutters: ["script-error-gutter"]
       });
       scriptEditorShell.classList.add("editor-enhanced");
       syncScriptTextarea();
@@ -303,18 +606,30 @@
     lines.push("");
   }
 
+  function normalizeUrlValue(value) {
+    var normalized = trimBlock(value);
+    if (!normalized) {
+      return "";
+    }
+    if (normalized.indexOf("\n") === -1) {
+      return normalized;
+    }
+    return ensureMultilineEnd(normalized);
+  }
+
   function buildMetadataText(data, scriptText, includeScript) {
     var lines = [];
     var notice = ensureMultilineEnd(data.notice);
     var defaultOpen = ensureMultilineEnd(data.defaultOpen);
     var alias = ensureMultilineEnd(data.alias);
+    var url = normalizeUrlValue(data.url);
     var normalizedScript = normalizeScriptText(scriptText);
 
     appendField(lines, "PackageName", data.packageName);
     appendField(lines, "Version", data.version);
     appendField(lines, "OS", data.os);
     appendField(lines, "InstallerName", data.installerName);
-    appendField(lines, "URL", data.url);
+    appendField(lines, "URL", url);
     appendField(lines, "ProFile", data.profile);
     if (data.author) {
       appendField(lines, "Author", data.author);
@@ -339,6 +654,109 @@
     }
 
     return lines.join("\r\n");
+  }
+
+  function normalizeSectionName(name) {
+    return String(name || "").replace(/\s+/g, "").toLowerCase();
+  }
+
+  function parseMetadataSections(text) {
+    var normalized = normalizeLineEndings(text).replace(/^\uFEFF/, "");
+    var lines = normalized.split("\n");
+    var sections = {};
+    var currentName = null;
+    var buffer = [];
+
+    function flush() {
+      if (!currentName) {
+        return;
+      }
+      while (buffer.length && !buffer[buffer.length - 1].trim()) {
+        buffer.pop();
+      }
+      sections[normalizeSectionName(currentName)] = buffer.join("\n");
+      currentName = null;
+      buffer = [];
+    }
+
+    lines.forEach(function (line) {
+      var match = line.match(/^\[([^\]]+)\]\s*$/);
+      if (match) {
+        flush();
+        currentName = match[1];
+        return;
+      }
+      if (currentName) {
+        buffer.push(line);
+      }
+    });
+
+    flush();
+    return sections;
+  }
+
+  function getMetadataSection(sections, name) {
+    return sections[normalizeSectionName(name)] || "";
+  }
+
+  function hasImportableMetadataSections(sections) {
+    return !!(getMetadataSection(sections, "PackageName") ||
+      getMetadataSection(sections, "InstallerName") ||
+      getMetadataSection(sections, "Version") ||
+      getMetadataSection(sections, "URL"));
+  }
+
+  function setFieldValue(id, value) {
+    $(id).value = value || "";
+  }
+
+  function clearGeneratedState() {
+    generatedState.metadataText = "";
+    generatedState.resolvedText = "";
+    generatedState.profileText = "";
+    generatedState.noticeText = "";
+    generatedState.metadataBytes = null;
+    generatedState.zipBlob = null;
+    downloadMetadataButton.disabled = true;
+    downloadZipButton.disabled = true;
+  }
+
+  function applyImportedMetadata(sections, extras, sourceLabel) {
+    var noticeValue = stripFinalEndMarker(getMetadataSection(sections, "Notice"));
+    var defaultOpenValue = stripFinalEndMarker(getMetadataSection(sections, "DefaultOpen"));
+    var aliasValue = stripFinalEndMarker(getMetadataSection(sections, "Alias"));
+    var scriptValue = normalizeScriptText(getMetadataSection(sections, "Script"));
+    var importedHash = getMetadataSection(sections, "HASH").trim().toUpperCase();
+
+    setFieldValue("packageName", trimBlock(getMetadataSection(sections, "PackageName")));
+    setFieldValue("version", trimBlock(getMetadataSection(sections, "Version")));
+    setFieldValue("os", trimBlock(getMetadataSection(sections, "OS")));
+    setFieldValue("installerName", trimBlock(getMetadataSection(sections, "InstallerName")));
+    setFieldValue("url", trimBlock(getMetadataSection(sections, "URL")));
+    setFieldValue("profile", trimBlock(getMetadataSection(sections, "ProFile")));
+    setFieldValue("distributor", trimBlock(getMetadataSection(sections, "Distributor")));
+    setFieldValue("author", trimBlock(getMetadataSection(sections, "Author")));
+    setFieldValue("packageSize", trimBlock(getMetadataSection(sections, "PackageSize")));
+    setFieldValue("hashValue", importedHash);
+    setFieldValue("notice", noticeValue);
+    setFieldValue("defaultOpen", defaultOpenValue);
+    setFieldValue("alias", aliasValue);
+    setFieldValue("profileSque", trimBlock(extras.profileSque || ""));
+    setFieldValue("noticeSque", trimBlock(extras.noticeSque || ""));
+    setScriptValue(scriptValue);
+
+    packageFileInput.value = "";
+    if (extras.fromArchive) {
+      includeZipInput.checked = true;
+    }
+
+    clearGeneratedState();
+    clearMessages();
+    hashHint.textContent = "已导入元数据文件；如需重新计算 SHA-256，请重新选择安装包文件。";
+    hashStatus.textContent = importedHash ? "已导入" : "未计算";
+    zipStatus.textContent = includeZipInput.checked ? "需重新生成" : "未启用";
+    refreshPreviewOnly();
+    setMessage(infoBox, "已导入 " + sourceLabel + "，预览已刷新。请重新点击“生成预览”后再下载。");
   }
 
   function createScriptError(lineNumber, column, message, lineText) {
@@ -796,10 +1214,7 @@
   }
 
   function disableGeneratedDownloads() {
-    generatedState.metadataBytes = null;
-    generatedState.zipBlob = null;
-    downloadMetadataButton.disabled = true;
-    downloadZipButton.disabled = true;
+    clearGeneratedState();
   }
 
   function invalidateGeneratedState() {
@@ -986,6 +1401,122 @@
     return new Blob(localParts.concat(centralParts, [endHeader]), { type: "application/zip" });
   }
 
+  function readUint16LE(view, offset) {
+    return view.getUint16(offset, true);
+  }
+
+  function readUint32LE(view, offset) {
+    return view.getUint32(offset, true);
+  }
+
+  function sliceBytes(arrayBuffer, start, length) {
+    return new Uint8Array(arrayBuffer.slice(start, start + length));
+  }
+
+  function getZipEntryBaseName(name) {
+    return String(name || "").replace(/\\/g, "/").split("/").pop().toLowerCase();
+  }
+
+  function findZipEndOfCentralDirectory(view) {
+    var minOffset = Math.max(0, view.byteLength - 65557);
+    var offset;
+
+    for (offset = view.byteLength - 22; offset >= minOffset; offset -= 1) {
+      if (readUint32LE(view, offset) === 0x06054b50) {
+        return offset;
+      }
+    }
+    return -1;
+  }
+
+  async function inflateZipEntry(bytes) {
+    var stream;
+    if (typeof DecompressionStream !== "function") {
+      throw new Error("当前浏览器不支持导入压缩 zip 条目。");
+    }
+    stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream("deflate-raw"));
+    return new Uint8Array(await new Response(stream).arrayBuffer());
+  }
+
+  async function parseZipEntries(arrayBuffer) {
+    var view = new DataView(arrayBuffer);
+    var eocdOffset = findZipEndOfCentralDirectory(view);
+    var totalEntries;
+    var centralOffset;
+    var offset;
+    var i;
+    var entries = {};
+
+    if (eocdOffset < 0) {
+      throw new Error("未找到 zip 目录，无法导入该 latest.metadata。");
+    }
+
+    totalEntries = readUint16LE(view, eocdOffset + 10);
+    centralOffset = readUint32LE(view, eocdOffset + 16);
+    offset = centralOffset;
+
+    for (i = 0; i < totalEntries; i += 1) {
+      var nameLength;
+      var extraLength;
+      var commentLength;
+      var localOffset;
+      var compressionMethod;
+      var compressedSize;
+      var uncompressedSize;
+      var generalPurposeFlag;
+      var entryName;
+      var localNameLength;
+      var localExtraLength;
+      var dataStart;
+      var compressedBytes;
+      var contentBytes;
+
+      if (readUint32LE(view, offset) !== 0x02014b50) {
+        throw new Error("zip 目录结构不完整，无法导入该文件。");
+      }
+
+      generalPurposeFlag = readUint16LE(view, offset + 8);
+      compressionMethod = readUint16LE(view, offset + 10);
+      compressedSize = readUint32LE(view, offset + 20);
+      uncompressedSize = readUint32LE(view, offset + 24);
+      nameLength = readUint16LE(view, offset + 28);
+      extraLength = readUint16LE(view, offset + 30);
+      commentLength = readUint16LE(view, offset + 32);
+      localOffset = readUint32LE(view, offset + 42);
+      entryName = decodeZipEntryName(sliceBytes(arrayBuffer, offset + 46, nameLength), (generalPurposeFlag & 0x0800) !== 0);
+
+      if (readUint32LE(view, localOffset) !== 0x04034b50) {
+        throw new Error("zip 本地条目头损坏，无法导入该文件。");
+      }
+
+      localNameLength = readUint16LE(view, localOffset + 26);
+      localExtraLength = readUint16LE(view, localOffset + 28);
+      dataStart = localOffset + 30 + localNameLength + localExtraLength;
+      compressedBytes = sliceBytes(arrayBuffer, dataStart, compressedSize);
+
+      if (compressionMethod === 0) {
+        contentBytes = compressedBytes;
+      } else if (compressionMethod === 8) {
+        contentBytes = await inflateZipEntry(compressedBytes);
+      } else {
+        throw new Error("暂不支持导入包含压缩方式 " + compressionMethod + " 的 zip 条目。");
+      }
+
+      if (uncompressedSize && contentBytes.length !== uncompressedSize) {
+        throw new Error("导入的 zip 条目长度异常，无法继续解析。");
+      }
+
+      entries[getZipEntryBaseName(entryName)] = {
+        name: entryName,
+        bytes: contentBytes
+      };
+
+      offset += 46 + nameLength + extraLength + commentLength;
+    }
+
+    return entries;
+  }
+
   function rightRotate(value, amount) {
     return (value >>> amount) | (value << (32 - amount));
   }
@@ -1092,6 +1623,51 @@
       }
     }
     return sha256Fallback(buffer);
+  }
+
+  function looksLikeZipFile(arrayBuffer) {
+    var view = new DataView(arrayBuffer);
+    return view.byteLength >= 4 && readUint32LE(view, 0) === 0x04034b50;
+  }
+
+  async function importFromSelectedFile(file) {
+    var arrayBuffer = await file.arrayBuffer();
+    var importEncoding = getImportEncodingMode();
+    var sections;
+    var entries;
+    var metadataEntry;
+    var profileEntry;
+    var noticeEntry;
+
+    if (looksLikeZipFile(arrayBuffer)) {
+      entries = await parseZipEntries(arrayBuffer);
+      metadataEntry = entries["metadata.sque"];
+      if (!metadataEntry) {
+        throw new Error("导入失败：压缩包中没有 metadata.sque。");
+      }
+      sections = parseMetadataSections(decodeTextBytes(metadataEntry.bytes, importEncoding));
+      if (!hasImportableMetadataSections(sections)) {
+        throw new Error("导入失败：metadata.sque 中没有可识别的 Pier 字段。");
+      }
+      profileEntry = entries["profile.sque"];
+      noticeEntry = entries["notice.sque"];
+      applyImportedMetadata(sections, {
+        profileSque: profileEntry ? decodeTextBytes(profileEntry.bytes, importEncoding) : "",
+        noticeSque: noticeEntry ? decodeTextBytes(noticeEntry.bytes, importEncoding) : "",
+        fromArchive: true
+      }, file.name);
+      return;
+    }
+
+    sections = parseMetadataSections(decodeTextBytes(new Uint8Array(arrayBuffer), importEncoding));
+    if (!hasImportableMetadataSections(sections)) {
+      throw new Error("导入失败：该文件不是可识别的 metadata.sque。");
+    }
+    applyImportedMetadata(sections, {
+      profileSque: "",
+      noticeSque: "",
+      fromArchive: false
+    }, file.name);
   }
 
   async function refreshHash() {
@@ -1342,19 +1918,46 @@
   }
 
   function openScriptModal() {
+    if (scriptModalCloseTimer) {
+      clearTimeout(scriptModalCloseTimer);
+      scriptModalCloseTimer = null;
+    }
+    if (scriptModalOpenFrame) {
+      window.cancelAnimationFrame(scriptModalOpenFrame);
+      scriptModalOpenFrame = 0;
+    }
     scriptModal.hidden = false;
+    scriptModal.classList.remove("is-closing");
+    scriptModal.classList.add("is-opening");
     document.body.classList.add("script-modal-open");
-    setTimeout(function () {
+    scriptModal.offsetWidth;
+    scriptModalOpenFrame = window.requestAnimationFrame(function () {
+      scriptModalOpenFrame = 0;
+      scriptModal.classList.remove("is-opening");
       refreshScriptEditorLayout();
       focusScriptEditor();
       renderAutocomplete();
-    }, 0);
+    });
   }
 
   function closeScriptModal() {
-    scriptModal.hidden = true;
+    if (scriptModal.hidden || scriptModal.classList.contains("is-closing")) {
+      return;
+    }
+    if (scriptModalOpenFrame) {
+      window.cancelAnimationFrame(scriptModalOpenFrame);
+      scriptModalOpenFrame = 0;
+    }
+    scriptModal.classList.remove("is-opening");
+    scriptModal.offsetWidth;
+    scriptModal.classList.add("is-closing");
     document.body.classList.remove("script-modal-open");
     hideAutocomplete();
+    scriptModalCloseTimer = setTimeout(function () {
+      scriptModal.hidden = true;
+      scriptModal.classList.remove("is-closing");
+      scriptModalCloseTimer = null;
+    }, 500);
   }
 
   function handleScriptEditorInput() {
@@ -1418,6 +2021,28 @@
       packageSizeInput.value = formatFileSize(file.size);
     }
   });
+
+  if (importButton && importMetadataFileInput) {
+    importButton.addEventListener("click", function () {
+      importMetadataFileInput.click();
+    });
+
+    importMetadataFileInput.addEventListener("change", function () {
+      var file = importMetadataFileInput.files && importMetadataFileInput.files[0];
+      if (!file) {
+        return;
+      }
+
+      clearMessages();
+      setMessage(infoBox, "正在导入 " + file.name + " ...");
+      importFromSelectedFile(file).catch(function (error) {
+        setMessage(infoBox, "");
+        setMessage(errorBox, error.message);
+      }).finally(function () {
+        importMetadataFileInput.value = "";
+      });
+    });
+  }
 
   hashButton.addEventListener("click", function () {
     clearMessages();
@@ -1544,5 +2169,6 @@
   });
 
   zipStatus.textContent = includeZipInput.checked ? "待生成" : "未启用";
+  applyTheme(readStoredTheme());
   refreshPreviewOnly();
 })();
