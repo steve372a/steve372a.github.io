@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pier MkMeta Web</title>
+  <link rel="stylesheet" href="vendor/codemirror/lib/codemirror.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="desktop-shell">
+    <div class="window-frame">
+      <header class="window-titlebar">
+        <div class="title-wrap">
+          <h1>Pier Package Installer 元数据生成器</h1>
+        </div>
+        <div class="toolbar-badges">
+          <span class="toolbar-badge">Tiger Style</span>
+          <span class="toolbar-badge">Local File</span>
+        </div>
+      </header>
+
+      <div class="window-toolbar">
+        <div class="toolbar-copy">
+          直接双击打开本页，填写字段，在浏览器内计算 SHA-256，并导出 <code>metadata.sque</code> 或 <code>latest.metadata</code>。
+        </div>
+        <div class="toolbar-mode">No Node.js · No HTA · No Server</div>
+      </div>
+
+      <main class="workspace">
+        <section class="metal-panel form-panel reveal">
+          <div class="panel-head">
+            <div>
+              <h2>Metadata Fields</h2>
+              <p>按 Pier 当前字段名生成，适合直接填表、预览和导出。</p>
+            </div>
+            <div class="panel-chip">Authoring</div>
+          </div>
+
+          <form id="mkmeta-form" novalidate>
+            <div class="section-card">
+              <div class="section-head">
+                <h3>Basic</h3>
+                <p>包名、版本、目标系统与安装器标识。</p>
+              </div>
+              <div class="field-grid">
+                <label class="field">
+                  <span>PackageName</span>
+                  <input id="packageName" name="packageName" required placeholder="7-Zip">
+                </label>
+
+                <label class="field">
+                  <span>Version</span>
+                  <input id="version" name="version" required placeholder="26.00">
+                </label>
+
+                <label class="field">
+                  <span>OS</span>
+                  <input id="os" name="os" required value="XP">
+                </label>
+
+                <label class="field">
+                  <span>InstallerName</span>
+                  <input id="installerName" name="installerName" required placeholder="7zip">
+                </label>
+
+                <label class="field field-wide">
+                  <span>URL</span>
+                  <input id="url" name="url" required placeholder="7zip-{version}.pie">
+                </label>
+
+                <label class="field field-wide">
+                  <span>ProFile</span>
+                  <textarea id="profile" name="profile" required rows="3" placeholder="7-Zip is a file compression software for Windows."></textarea>
+                </label>
+
+                <label class="field">
+                  <span>Distributor</span>
+                  <input id="distributor" name="distributor" required placeholder="Sanakaprix">
+                </label>
+
+                <label class="field">
+                  <span>Author</span>
+                  <input id="author" name="author" placeholder="Igor Pavlov">
+                </label>
+              </div>
+            </div>
+
+            <div class="section-card">
+              <div class="section-head">
+                <h3>Package</h3>
+                <p>安装包、大小和 HASH 计算入口放在同一区。</p>
+              </div>
+              <div class="field-grid">
+                <label class="field">
+                  <span>PackageSize</span>
+                  <input id="packageSize" name="packageSize" required placeholder="4.14 MB">
+                </label>
+
+                <label class="field">
+                  <span>安装包文件</span>
+                  <input id="packageFile" name="packageFile" type="file">
+                </label>
+
+                <label class="field field-wide">
+                  <span>HASH</span>
+                  <div class="hash-input-row">
+                    <input id="hashValue" name="hashValue" placeholder="自动计算或手动填写 64 位十六进制 HASH">
+                    <button type="button" id="hashButton" class="button button-secondary button-inline">计算 HASH</button>
+                  </div>
+                  <small id="hashHint" class="field-hint">选安装包后可点右侧按钮计算 SHA-256，也可手动填写 64 位 HASH。</small>
+                </label>
+              </div>
+            </div>
+
+            <div class="section-card">
+              <div class="section-head">
+                <h3>Script Fields</h3>
+                <p>支持多行文本，缺少 <code>::end</code> 时会自动补全。</p>
+              </div>
+              <div class="field-grid">
+                <label class="field field-wide">
+                  <span>Notice</span>
+                  <textarea id="notice" name="notice" rows="5" placeholder="多行内容可直接填写，缺少 ::end 时会自动补全。"></textarea>
+                </label>
+
+                <label class="field field-wide">
+                  <span>DefaultOpen</span>
+                  <textarea id="defaultOpen" name="defaultOpen" rows="4" placeholder="7zFM.exe&#10;::end"></textarea>
+                </label>
+
+                <label class="field field-wide">
+                  <span>Alias</span>
+                  <textarea id="alias" name="alias" rows="4" placeholder="zip: 7z.exe a -tzip $1 $2&#10;::end"></textarea>
+                </label>
+              </div>
+            </div>
+
+            <div class="section-card">
+              <div class="section-head">
+                <h3>Optional Localized Files</h3>
+                <p>可选附加到 <code>latest.metadata</code> 的扩展文本。</p>
+              </div>
+              <div class="field-grid">
+                <label class="field field-wide">
+                  <span>profile.sque 可选内容</span>
+                  <textarea id="profileSque" name="profileSque" rows="4" placeholder="[ja-JP]&#10;PackageName: 7-Zip&#10;ProFile: Windows用ファイルアーカイバ"></textarea>
+                </label>
+
+                <label class="field field-wide">
+                  <span>notice.sque 可选内容</span>
+                  <textarea id="noticeSque" name="noticeSque" rows="4" placeholder="[ja-JP]&#10;MIT License&#10;::end"></textarea>
+                </label>
+              </div>
+            </div>
+
+            <div class="section-card">
+              <div class="section-head">
+                <h3>SQUE Script</h3>
+                <p>在独立 IDE 子窗口中编写单行条件语句，并按模拟系统版本预览插值结果。</p>
+              </div>
+              <div class="script-summary-card">
+                <div class="script-summary-head">
+                  <div class="script-summary-meta">
+                    <span class="script-summary-label">状态</span>
+                    <strong id="scriptStatusText">未启用</strong>
+                  </div>
+                  <div class="script-summary-meta">
+                    <label for="scriptSystemver" class="script-summary-label">模拟 systemver</label>
+                    <select id="scriptSystemver" class="script-systemver-select">
+                      <option value="xp">xp</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="8.1">8.1</option>
+                      <option value="10" selected>10</option>
+                      <option value="11">11</option>
+                    </select>
+                  </div>
+                  <button type="button" id="openScriptButton" class="button button-soft">打开 Script IDE</button>
+                </div>
+                <div id="scriptSummaryHint" class="script-summary-hint">未填写 Script 规则时，将直接使用表单字段原值。</div>
+                <pre id="scriptSummaryPreview" class="script-summary-preview">未设置任何 Script 规则。</pre>
+              </div>
+            </div>
+
+            <div class="toggle-row">
+              <label class="toggle">
+                <input id="includeZip" type="checkbox" checked>
+                <span>同时生成 <code>latest.metadata</code></span>
+              </label>
+              <label class="toggle">
+                <input id="autoPackageSize" type="checkbox" checked>
+                <span>选文件时自动填充 PackageSize</span>
+              </label>
+            </div>
+
+            <div id="errorBox" class="message message-error" hidden></div>
+            <div id="infoBox" class="message message-info" hidden></div>
+
+            <div class="action-row">
+              <button type="button" id="generateButton" class="button button-primary">生成预览</button>
+              <button type="button" id="downloadMetadataButton" class="button button-soft" disabled>下载 metadata.sque</button>
+              <button type="button" id="downloadZipButton" class="button button-soft" disabled>下载 latest.metadata</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="metal-panel preview-panel reveal">
+          <div class="panel-head preview-head">
+            <div>
+              <h2>Preview Drawer</h2>
+              <p>同时查看原始输出和按模拟系统版本计算后的解析结果。</p>
+            </div>
+            <div class="panel-chip panel-chip-blue">Live Text</div>
+          </div>
+
+          <div class="status-strip">
+            <div class="status-pill">
+              <span class="status-label">HASH 状态</span>
+              <strong id="hashStatus">未计算</strong>
+            </div>
+            <div class="status-pill">
+              <span class="status-label">ZIP 状态</span>
+              <strong id="zipStatus">待生成</strong>
+            </div>
+          </div>
+
+          <div class="preview-tabs">
+            <button type="button" class="tab-button active" data-target="metadataPreview">metadata.sque</button>
+            <button type="button" class="tab-button" data-target="resolvedPreview">解析结果</button>
+            <button type="button" class="tab-button" data-target="profilePreview">profile.sque</button>
+            <button type="button" class="tab-button" data-target="noticePreview">notice.sque</button>
+          </div>
+
+          <div class="preview-stack">
+            <pre id="metadataPreview" class="preview-box active"></pre>
+            <pre id="resolvedPreview" class="preview-box"></pre>
+            <pre id="profilePreview" class="preview-box"></pre>
+            <pre id="noticePreview" class="preview-box"></pre>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <div id="scriptModal" class="script-modal" hidden>
+    <div class="script-window" role="dialog" aria-modal="true" aria-labelledby="scriptWindowTitle">
+      <div class="script-window-bar">
+        <div>
+          <div class="script-window-kicker">SQUE IDE</div>
+          <h2 id="scriptWindowTitle">Script 条件规则编辑器</h2>
+        </div>
+        <div class="script-window-actions">
+          <button type="button" id="insertTemplateButton" class="button button-soft">插入示例</button>
+          <button type="button" id="closeScriptButton" class="button button-primary">关闭</button>
+        </div>
+      </div>
+
+      <div class="script-window-body">
+        <div class="script-ide-column">
+          <div class="script-toolbar">
+            <button type="button" class="script-chip" data-insert="if {systemver} == &quot;xp&quot; then {version} = &quot;2.3.0&quot;;">{systemver}</button>
+            <button type="button" class="script-chip" data-insert="if {systemver} != (&quot;xp&quot;,&quot;7&quot;,&quot;8&quot;,&quot;8.1&quot;,&quot;10&quot;) then {version} = &quot;2.3.0&quot; else {version} = &quot;2.4.0&quot;;">集合判断</button>
+            <button type="button" class="script-chip" data-insert="{version}">{version}</button>
+            <button type="button" class="script-chip" data-insert="{os}">{os}</button>
+            <button type="button" class="script-chip" data-insert="{packagesize}">{packagesize}</button>
+          </div>
+
+          <div class="script-editor-shell">
+            <textarea id="scriptEditor" class="script-editor" spellcheck="false" wrap="off" placeholder="if {systemver} == &quot;xp&quot; then {version} = &quot;2.3.0&quot;;"></textarea>
+            <div id="scriptAutocomplete" class="script-autocomplete" hidden></div>
+          </div>
+
+          <div class="script-editor-footer">
+            <div id="scriptEditorStatus" class="script-editor-status">输入 Script 规则后会在这里显示语法状态。</div>
+            <div class="script-editor-hint">支持单行 <code>if ... then ... else ...;</code>，不支持多行嵌套。</div>
+          </div>
+        </div>
+
+        <aside class="script-help-panel">
+          <div class="script-help-block">
+            <h3>可用变量</h3>
+            <ul class="script-help-list">
+              <li><code>{systemver}</code>：只读，条件判断用</li>
+              <li><code>{os}</code>：可重载</li>
+              <li><code>{version}</code>：可重载</li>
+              <li><code>{packagesize}</code>：可重载</li>
+            </ul>
+          </div>
+
+          <div class="script-help-block">
+            <h3>语法模板</h3>
+            <pre class="script-help-code">if {systemver} == "xp" then {version} = "2.3.0";
+if {systemver} != "xp" then {version} = "2.3.0" else {version} = "2.4.0";
+if {systemver} != ("xp","7","8","8.1","10") then {version} = "2.3.0" else {version} = "2.4.0";
+if {version} == "2.4.0" then {packagesize} = "3.80 MB";</pre>
+          </div>
+
+          <div class="script-help-block">
+            <h3>说明</h3>
+            <p>生成时会把原始规则写入 <code>[Script]</code> 区段；右侧“解析结果”则按当前模拟 <code>systemver</code> 计算最终字段。</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <script src="vendor/codemirror/lib/codemirror.min.js"></script>
+  <script src="vendor/codemirror/addon/mode/simple.min.js"></script>
+  <script src="vendor/codemirror/mode/sque.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
