@@ -1,0 +1,11 @@
+version = "0.0.1-beta"
+channel = "release"
+mandatory = false
+pub_date = "2026-06-05"
+url = "https://github.com/steve372a/sanaka/releases"
+title = "Sanaka Release"
+
+notes = """
+当前为占位更新清单。
+后续发布正式版时，请更新这个文件。
+"""
