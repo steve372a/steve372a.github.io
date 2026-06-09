@@ -1,0 +1,669 @@
+  <!DOCTYPE html>
+  <html lang="zh-CN"  
+      data-theme-mode="auto"
+  >
+  <head>
+  <meta charset="utf-8">
+  
+  
+  
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_ex15nbittbh';window.REIMU_CONFIG.clipboard_tips = {"success":{"zh-CN":"复制成功 (*^▽^*)"},"fail":{"zh-CN":"复制失败 (ﾟ⊿ﾟ)ﾂ"},"copyright":{"enable":false,"count":50,"license_type":"by-nc-sa"}};window.REIMU_CONFIG.clipboard_tips.copyright.content = '本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！';window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'http://example.com';window.REIMU_CONFIG.relative = '/';</script>
+  <title>
+    Sanakaprix 的个人小站
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic|Noto Serif SC:400,400italic,700,700italic&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic|Noto Serif SC:400,400italic,700,700italic&display=swap" media="print" onload="this.media='all'">
+    <link rel="preload" href="//at.alicdn.com/t/c/font_4552607_ex15nbittbh.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    
+<link rel="stylesheet" href="/css/loader.css">
+
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Sanakaprix 的个人小站">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Sanakaprix 的个人小站">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/banner.webp">
+<meta property="article:author" content="Sanakaprix">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/banner.webp">
+    <link rel="alternate" href="/atom.xml" title="Sanakaprix 的个人小站" type="application/atom+xml">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei+Zx/1oA/0l8ysE" crossorigin="anonymous">
+    
+<script src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script>
+
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/@reimujs/aos@0.1.2/dist/aos.css" integrity="sha384-GMRP93c6Hkz9JVKGAuRR3nTS7M07RwPgTFenXiosjq2VbVgvdDNcz1g6Mkj8AONa" crossorigin="anonymous">
+
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+  <body>
+      <div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate">
+          <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+           M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg>
+      </div>
+      <div class="loading-word">少女祈祷中...</div>
+    </div>
+  </div>
+  <script>
+    var time = null;
+    var loaderEl = document.getElementById('loader');
+    var startLoading = () => {
+      time = Date.now();
+      loaderEl.classList.remove("loading");
+    }
+    var hideLoader = () => {
+      document.body.style.overflow = 'auto';
+      loader.classList.add('loading');
+    };
+
+    var endLoading = () => {
+      if (!time) {
+        hideLoader();
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          hideLoader();
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    loaderEl.addEventListener('click', endLoading);
+  </script>
+<div id="copy-tooltip"></div>
+<div id="heatmap-tooltip"></div>
+
+
+    <div id="container">
+      <div id="wrap">
+        <div id="header-nav">
+  <nav id="main-nav" aria-label="Primary navigation">
+        <a class="main-nav-link-wrap" href="/">
+            <div class="main-nav-icon icon rotate">
+                &#xe62b;
+            </div>
+          <span class="main-nav-link">首页</span>
+        </a>
+        <a class="main-nav-link-wrap" href="/archives">
+            <div class="main-nav-icon icon rotate">
+                &#xe62b;
+            </div>
+          <span class="main-nav-link">归档</span>
+        </a>
+        <a class="main-nav-link-wrap" href="/about">
+            <div class="main-nav-icon icon rotate">
+                &#xe62b;
+            </div>
+          <span class="main-nav-link">关于</span>
+        </a>
+        <a class="main-nav-link-wrap" href="/friend">
+            <div class="main-nav-icon icon rotate">
+                &#xe62b;
+            </div>
+          <span class="main-nav-link">友链</span>
+        </a>
+    <a id="main-nav-toggle" class="nav-icon" aria-label="Toggle navigation" role="button"></a>
+  </nav>
+  <nav id="sub-nav" aria-label="Secondary navigation">
+      <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅" aria-label="RSS 订阅" target="_blank"></a>
+  </nav>
+</div>
+<header id="header" aria-label="Site header">
+      <picture>
+      </picture>
+        <img  fetchpriority="high" src="/images/banner.jpg" alt="">
+  <div id="header-outer">
+    <div id="header-title">
+          <span id="logo">
+            <h1 data-aos="slide-up">Sanakaprix 的个人小站</h1>
+          </span>
+        <h2 id="subtitle-wrap" data-aos="slide-down">
+              <span id="subtitle">欢迎光临哈～！看看这里有你需要的东西嘛？</span>
+        </h2>
+    </div>
+  </div>
+</header>
+
+        <div id="content" aria-label="Page content"  class="sidebar-right" >
+          <aside id="sidebar" aria-label="Sidebar">
+  <div class="sidebar-wrapper-container ">
+  <div class="sidebar-wrapper">
+    <div class="sidebar-wrap" data-aos="fade-up">
+        <div class="sidebar-author">
+  <img data-src="/avatar/avatar.gif" data-sizes="auto" alt="Sanakaprix" class="lazyload">
+  <div class="sidebar-author-name">Sanakaprix</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">24</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">0</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">5</div>
+  </div>
+</div>
+<div class="sidebar-social" >
+</div>
+<div class="sidebar-menu">
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">首页</div>
+      </div>
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">归档</div>
+      </div>
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">关于</div>
+      </div>
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">友链</div>
+      </div>
+</div>
+
+    </div>
+  </div>
+  <div class="sidebar-widget">
+  </div>
+  </div>
+</aside>
+
+          <section id="main" aria-label="Main content">      <div class="post-wrapper">
+  <div class="post-wrap left" data-aos="fade-up">
+      <a class="post-link" href="/20260526/204938/" aria-label="五年期的命运" title="五年期的命运"></a>
+    <div class="post-cover left">
+          <img data-src="/images/banner.jpg" data-sizes="auto" alt="五年期的命运" class="lazyload">
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2026-05-26</span>
+        <span><span class="icon-pencil"></span>241 字</span>
+        <span><span class="icon-clock"></span>1 分钟</span>
+      </div>
+      <h2 class="post-title">五年期的命运</h2>
+      <article class="post-article">
+          我的五年计划背景我是中专毕业，七年前（11岁）就开始打基础。
+时间线第1、2年（大专阶段）学 K8s、Python、Docker、MySQL
+第三年
+准备专升本考试
+
+本科第一年，总第四年（本科三年级）
+开始找实习（专升本后就找）
+
+本科第二年，总第五年（本科四年级）
+准备毕业论文
+
+备选方案
+如果发现学的不好，能力不佳：考研
+如果专升本没考上：直接工作（放弃高薪路线，寻求生存），或通过自考&amp;#x2F;成人&amp;#x2F;国开考上非全本科，然后再考研（必须考研究生，非全本科求职没用）
+
+注意事项
+单招完（3月到9月大专开学前）准备好计划
+不要浪费太多时间在社团、竞赛、学校的活动上
+如果要走开发岗，
+      </article>
+    </div>
+  </div>
+</div>
+      <div class="post-wrapper">
+  <div class="post-wrap right" data-aos="fade-up">
+      <a class="post-link" href="/20260522/153514/" aria-label="K8s 计划学习" title="K8s 计划学习"></a>
+    <div class="post-cover right">
+        <img data-src="/photosanaka/diandian_big.png" data-sizes="auto" alt="K8s 计划学习" class="lazyload">
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2026-05-22</span>
+        <span><span class="icon-pencil"></span>833 字</span>
+        <span><span class="icon-clock"></span>3 分钟</span>
+      </div>
+      <h2 class="post-title">K8s 计划学习</h2>
+      <article class="post-article">
+          为什么需要 K8s？K8s 是一个容器编排平台，用于在集群中部署、扩展和管理容器化应用。
+
+最早的时候，没有虚拟机也没有容器，所有应用都是直接运行在物理机上；或者让一堆应用程序运行在不同目录里…不仅环境容易冲突，而且当宿主机死了，所有服务立刻中断。还得人（传统运维）来修，一修就是好久好久。
+后来 KVM 虚拟化出现了。一个服务器相当于(Node)可以运行多个虚拟机，一个虚拟机类似于(Pod，最小单元)，只运行一个应用程序实例。环境冲突的问题是解决了，但是太慢了太重了。启动一次得30s-1m甚至更久，一个Pod需要数GB，而且Pod完全有可能因为虚拟机操作系统的原因停止服务。
+最后，K8s 出现
+      </article>
+    </div>
+  </div>
+</div>
+      <div class="post-wrapper">
+  <div class="post-wrap left" data-aos="fade-up">
+      <a class="post-link" href="/20260410/072944/" aria-label="多 AI 协作、涌现分工的实验 —— 兼论 AI 对自身知识边界的认知偏差" title="多 AI 协作、涌现分工的实验 —— 兼论 AI 对自身知识边界的认知偏差"></a>
+    <div class="post-cover left">
+          <img data-src="/images/banner.jpg" data-sizes="auto" alt="多 AI 协作、涌现分工的实验 —— 兼论 AI 对自身知识边界的认知偏差" class="lazyload">
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2026-04-10</span>
+        <span><span class="icon-pencil"></span>6.8k 字</span>
+        <span><span class="icon-clock"></span>25 分钟</span>
+      </div>
+      <h2 class="post-title">多 AI 协作、涌现分工的实验 —— 兼论 AI 对自身知识边界的认知偏差</h2>
+      <article class="post-article">
+          多 AI 协作、涌现分工的实验 —— 兼论 AI 对自身知识边界的认知偏差全文总字数:3012 字生成者：豆包，实验者：Sanakaprix实验对象：Gemini &amp;amp; 豆包注：这篇论文是豆包在本次 AI 协作实验的对话过程中当场直接生成的，并非我(Sanakaprix)事后新开对话、单独提供内容让其重写的。而 Gemini 因为几乎只在辩论，几乎没有写完整文章。故生成者为豆包。
+摘要本文以 “白洋淀站 — 北京大兴机场站高铁直达性” 为实验问题,开展豆包与 Gemini 双 AI对等对抗式协作实验。通过 7+3 轮互审、事实检索、逻辑交锋与论文协作,发现:AI 在静态地理、行政归属等确
+      </article>
+    </div>
+  </div>
+</div>
+      <div class="post-wrapper">
+  <div class="post-wrap right" data-aos="fade-up">
+      <a class="post-link" href="/20260403/015931/" aria-label="逃亡Intel Mac" title="逃亡Intel Mac"></a>
+    <div class="post-cover right">
+          <img data-src="/images/banner.jpg" data-sizes="auto" alt="逃亡Intel Mac" class="lazyload">
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2026-04-03</span>
+        <span><span class="icon-pencil"></span>590 字</span>
+        <span><span class="icon-clock"></span>3 分钟</span>
+      </div>
+      <h2 class="post-title">逃亡Intel Mac</h2>
+      <article class="post-article">
+          （虚构情景）
+苏醒我一直是一个苹果粉丝。在很久很久之前，那时我还在用 iPhone 4，还不认识 Mac。第一次认识是在王自如的 iMac 开箱视频。那精致的模样，不像是当代的产物，像是未来科幻片里的模样。小时候的我幻想着抚摸着，希望有生之年，能看见一次Mac…Mac 成为了我魂牵梦萦的存在。我日夜幻想着在星巴克，展开笔记本盖子。在深邃的夜晚里，世界万物都熄灭了，只有MacBook的logo灯还在亮着，好似灯塔一般，照亮迷途的孩子们。在那些年里，Mac不是电脑，是艺术品。但我知道，那幻想的电脑，我不敢、不想、也不能。
+推行我不是12、13岁了，今年，我18岁了。我还想躺在家里休眠，但现在床硬，
+      </article>
+    </div>
+  </div>
+</div>
+      <div class="post-wrapper">
+  <div class="post-wrap left" data-aos="fade-up">
+      <a class="post-link" href="/20260227/175103/" aria-label="超级题" title="超级题"></a>
+    <div class="post-cover left">
+          <img data-src="/images/banner.jpg" data-sizes="auto" alt="超级题" class="lazyload">
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2026-02-27</span>
+        <span><span class="icon-pencil"></span>805 字</span>
+        <span><span class="icon-clock"></span>4 分钟</span>
+      </div>
+      <h2 class="post-title">超级题</h2>
+      <article class="post-article">
+          计算机系统与虚拟化技术综合测试试卷
+考生姓名：____________　　学号：____________　　班级：____________
+考试时间：90分钟　　总分：100分
+
+一、选择题（每题3分，共15分）请在答题卡上选择正确答案
+
+在OOBE或Sysprep阶段，键盘Shift+F10会打开什么窗口？（　　）
+A. Explorer　　B. OOBE　　C. CMD　　D. Powershell
+
+以下哪些进程绝对不能Kill？（　　）（多选）
+A. crses　　B. crsrs　　C. csrss　　D. csrso
+A. ntoskrel　　B. ntoskrnl　　C. nto
+      </article>
+    </div>
+  </div>
+</div>
+      <div class="post-wrapper">
+  <div class="post-wrap right" data-aos="fade-up">
+      <a class="post-link" href="/20251230/044559/" aria-label="Pier组件原理详解" title="Pier组件原理详解"></a>
+    <div class="post-cover right">
+          <img data-src="/images/banner.jpg" data-sizes="auto" alt="Pier组件原理详解" class="lazyload">
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2025-12-30</span>
+        <span><span class="icon-pencil"></span>1.5k 字</span>
+        <span><span class="icon-clock"></span>6 分钟</span>
+      </div>
+      <h2 class="post-title">Pier组件原理详解</h2>
+      <article class="post-article">
+          Pier 软件包管理器：终极技术白皮书一、 序言：为什么要有 Pier？在 Windows 的世界里，安装软件通常意味着：双击 .exe -&amp;gt; 下一步 -&amp;gt; 下一步 -&amp;gt; 忍受广告 -&amp;gt; 注册表被塞满。虽然有像 Scoop 或 Winget 这样的现代管理器，但它们往往需要复杂的运行环境（如 PowerShell 策略或 .NET）。
+Pier 的哲学是：回归原始。它诞生于一个朴素的想法——能不能只用 Windows 诞生之初就有的“老古董”技术，做一个像 Linux 那样干净、透明、自动化的包管理器？
+Pier 的核心定义：Pier 是一个基于 Batch（批处理） 
+      </article>
+    </div>
+  </div>
+</div>
+      <div class="post-wrapper">
+  <div class="post-wrap left" data-aos="fade-up">
+      <a class="post-link" href="/20251126/155720/" aria-label="C# 入门课" title="C# 入门课"></a>
+    <div class="post-cover left">
+          <img data-src="/images/banner.jpg" data-sizes="auto" alt="C# 入门课" class="lazyload">
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2025-11-26</span>
+        <span><span class="icon-pencil"></span>15.7k 字</span>
+        <span><span class="icon-clock"></span>61 分钟</span>
+      </div>
+      <h2 class="post-title">C# 入门课</h2>
+      <article class="post-article">
+          C# 入门课提醒1、查看作业代码请访问：观看作业示例作者不建议你直接照抄代码，请仔细阅读文章，做作业，并思考代码背后的逻辑。2、本文章不能完全覆盖考点和课本。只能做一个参考，作快速入门用。
+📚 C# 新手学习大纲 (第 1 课 - 第 92 课)回到顶部
+🚀 第一阶段：基础语法与流程控制 (L1 - L19)
+第 1 课：编程环境与 C# 简介
+第 2 课：Visual Studio 基础使用
+第 3 课：C# 世界的“你好”
+第 4 课：注释与代码规范-的重要性)
+第 5 课：基本数据类型 (int, string)
+第 6 课：变量 (Variables) 简介
+第 7 课：显示变量里
+      </article>
+    </div>
+  </div>
+</div>
+      <div class="post-wrapper">
+  <div class="post-wrap right" data-aos="fade-up">
+      <a class="post-link" href="/20250517/122526/" aria-label="小米HyperOS Bootloader解锁技术能力认证考试试卷" title="小米HyperOS Bootloader解锁技术能力认证考试试卷"></a>
+    <div class="post-cover right">
+          <img data-src="/images/banner.jpg" data-sizes="auto" alt="小米HyperOS Bootloader解锁技术能力认证考试试卷" class="lazyload">
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2025-05-17</span>
+        <span><span class="icon-pencil"></span>2.3k 字</span>
+        <span><span class="icon-clock"></span>9 分钟</span>
+      </div>
+      <h2 class="post-title">小米HyperOS Bootloader解锁技术能力认证考试试卷</h2>
+      <article class="post-article">
+           【绝密★启用前】 
+小米HyperOS Bootloader解锁技术能力认证考试（2026年度）
+试卷代码：BL-2026-B
+考试日期： 2026年6月30日 上午考试时间： 2小时 （09:00 - 11:00）满分： 150 分
+
+考生信息填写区域
+
+
+
+考生姓名
+____________________
+准考证号
+____________________
+
+
+
+身份证号后四位
+________
+座位号
+________
+
+
+考试地点（填写）
+____________________
+
+
+
+
+
+小米HyperOS Bootloader解锁技术能力认证考试试卷
+考生须知：
+
+本试卷分为两
+      </article>
+    </div>
+  </div>
+</div>
+      <div class="post-wrapper">
+  <div class="post-wrap left" data-aos="fade-up">
+      <a class="post-link" href="/20250115/134502/" aria-label="朝鲜故事" title="朝鲜故事"></a>
+    <div class="post-cover left">
+          <img data-src="/images/banner.jpg" data-sizes="auto" alt="朝鲜故事" class="lazyload">
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2025-01-15</span>
+        <span><span class="icon-pencil"></span>3.6k 字</span>
+        <span><span class="icon-clock"></span>13 分钟</span>
+      </div>
+      <h2 class="post-title">朝鲜故事</h2>
+      <article class="post-article">
+          金哲的一生重生与归途逃离与新生金哲（化名）是一个普通的朝鲜农民，为了逃避贫困与压迫，他在三十多年前冒着生命危险横渡鸭绿江，逃亡到中国。在那里，他假借一名已故中国人的身份生活，靠着勤奋努力和语言天赋，逐渐扎根北京。  
+他成了一名装修工人，从最初的小工到后来独自接活儿，金哲攒下了一笔钱，买了房和车，还拿到了珍贵的北京车牌。他的生活看似幸福，平静而富足，但内心却始终留有一个深深的裂痕——对家人的思念。  
+返乡的决心在某个冬日的清晨，金哲坐在家中的餐桌前，看着一张全家福的照片。他知道，家人在朝鲜的境况可能依然艰难，而自己却无法得知他们的任何消息。这种煎熬在二十年的时间里从未减弱，反而越来越深。他最
+      </article>
+    </div>
+  </div>
+</div>
+      <div class="post-wrapper">
+  <div class="post-wrap right" data-aos="fade-up">
+      <a class="post-link" href="/20250114/222842/" aria-label="让 Mac 电脑也玩上光遇！" title="让 Mac 电脑也玩上光遇！"></a>
+    <div class="post-cover right">
+          <img data-src="/images/banner.jpg" data-sizes="auto" alt="让 Mac 电脑也玩上光遇！" class="lazyload">
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2025-01-14</span>
+        <span><span class="icon-pencil"></span>544 字</span>
+        <span><span class="icon-clock"></span>2 分钟</span>
+      </div>
+      <h2 class="post-title">让 Mac 电脑也玩上光遇！</h2>
+      <article class="post-article">
+          安装光 · 遇国服by Sanakaprix  2025-01-15
+处理器是 Apple M1 及以后的设备下载 iPA在下载之前，请先在设置-“隐私与安全性”-“允许以下位置的应用程序”单选框改成 App Store 和被认可的开发者：设置完成后在浏览器打开 https://decrypt.day 这个网站：搜索“光·遇”：点击下载：点击第二个链接（OneDrive 下载）：获取下载链接后下载，等待下载完成：
+安装《光 · 遇》下载完成后，前往 playcover.io 网站，点击下载按钮：选择 Latest 版本，然后安装 PlayCover 程序：第一次打开软件应该是空空如也的状态（我
+      </article>
+    </div>
+  </div>
+</div>
+  <nav id="page-nav" aria-label="Pagination navigation" data-aos="fade-up">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">下一页 &raquo;</a>
+  </nav>
+
+</section>
+        </div>
+        <footer id="footer" aria-label="Site footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info">
+    <div>
+      <span class="icon-copyright"></span>
+        2020-2026
+        <span class="footer-info-sep rotate"></span>
+      Sanakaprix
+    </div>
+      <div>
+        基于&nbsp;<a href="https://hexo.io/" rel="noopener nofollow noreferrer" target="_blank">Hexo</a>&nbsp;
+        Theme.<a href="https://github.com/D-Sketon/hexo-theme-reimu" rel="noopener nofollow noreferrer" target="_blank">Reimu</a>
+      </div>
+      <div>
+        <span class="icon-brush"></span>
+        48.6k
+        &nbsp;|&nbsp;
+        <span class="icon-coffee"></span>
+        03:24
+      </div>
+      <div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv">总访问量&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv">总访客量&nbsp;<span id="busuanzi_value_site_uv"></span></span>
+      </div>
+  </div>
+</footer>
+
+          <div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div>
+        <div id="mask" class="hide"></div>
+      </div>
+      <nav id="mobile-nav" aria-label="Mobile navigation">
+  <div class="sidebar-wrap">
+      <div class="sidebar-author">
+  <img data-src="/avatar/avatar.gif" data-sizes="auto" alt="Sanakaprix" class="lazyload">
+  <div class="sidebar-author-name">Sanakaprix</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">24</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">0</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">5</div>
+  </div>
+</div>
+<div class="sidebar-social" >
+</div>
+<div class="sidebar-menu">
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">首页</div>
+      </div>
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">归档</div>
+      </div>
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">关于</div>
+      </div>
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+          <div class="sidebar-menu-icon icon rotate">
+              &#xe62b;
+          </div>
+        <div class="sidebar-menu-link">友链</div>
+      </div>
+</div>
+
+  </div>
+</nav>
+
+    </div>
+    
+<script src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js" integrity="sha384-3gT&#x2F;vsepWkfz&#x2F;ff7PpWNUeMzeWoH3cDhm&#x2F;A8jM7ouoAK0&#x2F;fP&#x2F;9bcHHR5kHq2nf+e" crossorigin="anonymous"></script>
+
+
+<script src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js" integrity="sha384-J08i8An&#x2F;QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+  
+<script src="/js/aos.js"></script>
+
+  <script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', aosInit);
+    } else {
+      aosInit();
+    }
+  </script>
+
+
+<script src="/js/pjax_script.js" data-pjax></script>
+
+
+
+
+  <script>
+    var setupFirework = () => {
+      if (!false || !window.matchMedia('(max-width: 768px)').matches) {
+        window.firework && window.firework(JSON.parse('{"excludeElements":["a","button"],"particles":[{"shape":"circle","move":["emit"],"easing":"easeOutExpo","colors":["var(--red-1)","var(--red-2)","var(--red-3)","var(--red-4)"],"number":20,"duration":[1200,1800],"shapeOptions":{"radius":[16,32],"alpha":[0.3,0.5]}},{"shape":"circle","move":["diffuse"],"easing":"easeOutExpo","colors":["var(--red-0)"],"number":1,"duration":[1200,1800],"shapeOptions":{"radius":20,"alpha":[0.2,0.5],"lineWidth":6}}]}'));
+      }
+    }
+  </script>
+  
+<script src="https://npm.webcache.cn/mouse-firework@0.2.0/dist/index.umd.js" integrity="sha384-qi9WggRt19tv8Vc7pCHW3ulMNLwrn515zaLEWZjl1px07vz8+pUoWX8n1rgq282T" crossorigin="anonymous" onload="setupFirework()" defer></script>
+
+
+
+
+
+
+<div id="lazy-script">
+  <div>
+  </div>
+</div>
+
+
+  <script>
+    console.log(String.raw`%c 
+ ______     ______     __     __    __     __  __    
+/\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+\ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+ \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+  \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                  
+`,'color: #ff5252;')
+    console.log('%c Theme.Reimu v' + '1.12.5' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+  </script>
+  
+
+
+  
+<script src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js" integrity="sha384-0M75wtSkhjIInv4coYlaJU83+OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id+S" crossorigin="anonymous" async></script>
+
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      for (let registration of registrations) {
+        registration.unregister();
+      }
+    });
+  }
+</script>
+
+
+
+
+  <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":false},"log":false});</script></body>
+  </html>
