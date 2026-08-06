@@ -9,7 +9,7 @@
   
   <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_ex15nbittbh';window.REIMU_CONFIG.clipboard_tips = {"success":{"zh-CN":"复制成功 (*^▽^*)"},"fail":{"zh-CN":"复制失败 (ﾟ⊿ﾟ)ﾂ"},"copyright":{"enable":false,"count":50,"license_type":"by-nc-sa"}};window.REIMU_CONFIG.clipboard_tips.copyright.content = '本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！';window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'http://example.com';window.REIMU_CONFIG.relative = '/';</script>
   <title>
-    K8s 计划学习 | Sanakaprix 的个人小站
+    疑病从无 | Sanakaprix 的个人小站
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic|Noto Serif SC:400,400italic,700,700italic&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic|Noto Serif SC:400,400italic,700,700italic&display=swap" media="print" onload="this.media='all'">
@@ -17,18 +17,14 @@
     
 <link rel="stylesheet" href="/css/loader.css">
 
-    <meta name="description" content="为什么需要 K8s？K8s 是一个容器编排平台，用于在集群中部署、扩展和管理容器化应用。  最早的时候，没有虚拟机也没有容器，所有应用都是直接运行在物理机上；或者让一堆应用程序运行在不同目录里…不仅环境容易冲突，而且当宿主机死了，所有服务立刻中断。还得人（传统运维）来修，一修就是好久好久。 后来 KVM 虚拟化出现了。一个服务器相当于(Node)可以运行多个虚拟机，一个虚拟机类似于(Pod，最小单">
-<meta property="og:type" content="article">
-<meta property="og:title" content="K8s 计划学习">
-<meta property="og:url" content="http://example.com/20260522/153514/index.html">
+    <meta property="og:type" content="article">
+<meta property="og:title" content="疑病从无">
+<meta property="og:url" content="http://example.com/20260719/051928/index.html">
 <meta property="og:site_name" content="Sanakaprix 的个人小站">
-<meta property="og:description" content="为什么需要 K8s？K8s 是一个容器编排平台，用于在集群中部署、扩展和管理容器化应用。  最早的时候，没有虚拟机也没有容器，所有应用都是直接运行在物理机上；或者让一堆应用程序运行在不同目录里…不仅环境容易冲突，而且当宿主机死了，所有服务立刻中断。还得人（传统运维）来修，一修就是好久好久。 后来 KVM 虚拟化出现了。一个服务器相当于(Node)可以运行多个虚拟机，一个虚拟机类似于(Pod，最小单">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-05-22T07:35:14.000Z">
-<meta property="article:modified_time" content="2026-05-24T05:10:57.153Z">
+<meta property="article:published_time" content="2026-07-18T21:19:28.000Z">
+<meta property="article:modified_time" content="2026-07-18T21:19:28.390Z">
 <meta property="article:author" content="Sanakaprix">
-<meta property="article:tag" content="Container">
-<meta property="article:tag" content="K8s">
 <meta name="twitter:card" content="summary">
     <link rel="alternate" href="/atom.xml" title="Sanakaprix 的个人小站" type="application/atom+xml">
     <link rel="shortcut icon" href="/images/favicon.ico">
@@ -126,12 +122,13 @@
   </nav>
 </div>
 <header id="header" aria-label="Site header">
-    <picture></picture>
-    <img  fetchpriority="high" src="/photosanaka/diandian_big.png" alt="K8s 计划学习">
+        <picture>
+        </picture>
+          <img  fetchpriority="high" src="/images/banner.jpg" alt="疑病从无">
   <div id="header-outer">
     <div id="header-title">
           <span id="logo">
-            <h1 data-aos="slide-up">K8s 计划学习</h1>
+            <h1 data-aos="slide-up">疑病从无</h1>
           </span>
         <h2 id="subtitle-wrap" data-aos="slide-down">
         </h2>
@@ -146,7 +143,7 @@
     <div class="sidebar-wrap" data-aos="fade-up">
           <div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
 <div class="sidebar-toc-wrapper toc-div-class" >
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81-K8s%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">为什么需要 K8s？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0"><span class="toc-number">2.</span> <span class="toc-text">基础学习</span></a></li></ol>
+    
 </div>
 </div>
           <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
@@ -165,7 +162,7 @@
   </div>
   <div class="sidebar-state-tag">
     <div>标签</div>
-    <div class="sidebar-state-number">5</div>
+    <div class="sidebar-state-number">3</div>
   </div>
 </div>
 <div class="sidebar-social" >
@@ -212,13 +209,13 @@
   </div>
 </aside>
 
-          <section id="main" aria-label="Main content"><article id="post-未来5年计划" class="h-entry article" itemscope itemtype="https://schema.org/BlogPosting">
+          <section id="main" aria-label="Main content"><article id="post-疑病从无" class="h-entry article" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner" data-aos="fade-up">
     <div class="article-meta">
       <div class="article-date">
   <span class="article-date-link icon-calendar" data-aos="zoom-in">
-    <time datetime="2026-05-22T07:35:14.000Z" itemprop="datePublished">2026-05-22</time>
-    <time style="display: none;" id="post-update-time">2026-05-24</time>
+    <time datetime="2026-07-18T21:19:28.000Z" itemprop="datePublished">2026-07-19</time>
+    <time style="display: none;" id="post-update-time">2026-07-19</time>
   </span>
 </div>
 
@@ -227,70 +224,20 @@
     <div class="hr-line"></div>
     
     <div class="e-content article-entry" itemprop="articleBody">
-        <h1 id="为什么需要-K8s？"><a href="#为什么需要-K8s？" class="headerlink" title="为什么需要 K8s？"></a>为什么需要 K8s？</h1><p>K8s 是一个容器编排平台，用于在集群中部署、扩展和管理容器化应用。</p>
-<ul>
-<li>最早的时候，没有虚拟机也没有容器，所有应用都是直接运行在物理机上；或者让一堆应用程序运行在不同目录里…不仅环境容易冲突，而且当宿主机死了，所有服务立刻中断。还得人（传统运维）来修，一修就是好久好久。</li>
-<li>后来 KVM 虚拟化出现了。一个服务器相当于(Node)可以运行多个虚拟机，一个虚拟机类似于(Pod，最小单元)，只运行一个应用程序实例。环境冲突的问题是解决了，但是太慢了太重了。启动一次得30s-1m甚至更久，一个Pod需要数GB，而且Pod完全有可能因为虚拟机操作系统的原因停止服务。</li>
-<li>最后，K8s 出现了，Pod 被缩小成了一个或多个容器，其虚拟机从本不应该的Pod层（最小单元层）变成了Node层。</li>
-<li>K8s 还能自愈，完全不怕一个Pod死了全链路断裂。可以快速恢复，Node死了也不怕。不需要人类定位、修复。</li>
-</ul>
-<h1 id="基础学习"><a href="#基础学习" class="headerlink" title="基础学习"></a>基础学习</h1><ul>
-<li>Pod：最小单元，是一个或多个容器。多容器一般是sidecar模式，目的可能是这么多个容器是<strong>模块化</strong>服务，耦合紧密，不能解藕。所以将多个容器组合成一个Pod。<br>多容器特点：<ul>
-<li>共享同一个网络命名空间（可以本地回环）</li>
-<li>共享存储卷</li>
-<li>生命周期一致（创建、销毁）</li>
-</ul>
-</li>
-<li>Node：节点，若干个Pods的容器运行在一台机器上，一般是一台机器属于Node，不能将多台机器拼成一个Node。</li>
-<li>Service：服务，相当于中介，在Pod销毁后，新的Pod不会继承 IP 地址等信息，Service会将请求分发给其他Pod。不至于因为Pod销毁，导致链路断裂。</li>
-<li>Cluster：集群，多个Node(节点；单机)组成一个集群，每个Node上可以运行多个Pod。当一个Node死了，其他Node上的Pod会继续运行。不会导致Pod中断。集群各个节点的生命周期都有 Control Plane(控制层) <strong>(不属于普通Node节点，运行在无业务Pod的节点上)</strong> 管理着。</li>
-<li>一个从上层到底层的架构如下：</li>
-</ul>
-<center>
-
-<pre class="mermaid">graph TD
-    A[应用程序代码] --> B[容器镜像<br>（打包好的运行环境）]
-    B --> C[Pod<br>K8s最小调度单元<br>包含一个或多个容器]
-    C --> D[Node节点<br>Pod运行的地方]
-    
-    D --> E1[物理机<br>裸金属服务器]
-    D --> E2[虚拟机<br>云主机/VPS]
-    
-    E1 --> F[服务器集群<br>多个Node组成]
-    E2 --> F
-    
-    F --> G[物理硬件<br>CPU/内存/硬盘/网卡]</pre>
-
-</center>
-
-<ul>
-<li>ConfigMap：配置映射，用于将配置数据（如环境变量、配置文件等）从代码中分离出来，这样可以方便地修改配置，而不需要重新编译应用程序。</li>
-<li>Secret：密钥，用于存储敏感信息（如密码、API密钥等），并将其加密存储在K8s集群中。</li>
-<li>Volume：存储卷，用于将主机上的目录挂载到容器中，使数据不丢失。容器都是只读无状态的。Volume使其有状态。</li>
-</ul>
-<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+        <link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     </div>
     <footer class="article-footer">
       
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/Container/" rel="tag" title="Container">Container</a></li><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/K8s/" rel="tag" title="K8s">K8s</a></li></ul>
-
+      
     </footer>
   </div>
     <nav id="article-nav" aria-label="Article navigation" data-aos="fade-up">
-      <div class="article-nav-link-wrap left">
-            <img data-src="/images/banner.jpg" data-sizes="auto" alt="五年期的命运" class="lazyload">
-        <a href="/20260526/204938/" aria-label="前一篇: 五年期的命运" title="前一篇: 五年期的命运"></a>
-        <div class="article-nav-caption">前一篇</div>
-        <h3 class="article-nav-title">
-            五年期的命运
-        </h3>
-      </div>
     <div class="article-nav-link-wrap right">
-          <img data-src="/images/banner.jpg" data-sizes="auto" alt="多 AI 协作、涌现分工的实验 —— 兼论 AI 对自身知识边界的认知偏差" class="lazyload">
-      <a href="/20260410/072944/" aria-label="后一篇: 多 AI 协作、涌现分工的实验 —— 兼论 AI 对自身知识边界的认知偏差"  title="后一篇: 多 AI 协作、涌现分工的实验 —— 兼论 AI 对自身知识边界的认知偏差"></a>
+          <img data-src="/images/banner.jpg" data-sizes="auto" alt="五年期的命运" class="lazyload">
+      <a href="/20260526/204938/" aria-label="后一篇: 五年期的命运"  title="后一篇: 五年期的命运"></a>
       <div class="article-nav-caption">后一篇</div>
       <h3 class="article-nav-title">
-          多 AI 协作、涌现分工的实验 —— 兼论 AI 对自身知识边界的认知偏差
+          五年期的命运
       </h3>
     </div>
   </nav>
@@ -317,10 +264,10 @@
       </div>
       <div>
         <span class="icon-brush"></span>
-        48.6k
+        47.8k
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
-        03:24
+        03:22
       </div>
       <div>
         <span class="icon-eye"></span>
@@ -342,7 +289,7 @@
   <div class="sidebar-wrap">
         <div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
 <div class="sidebar-toc-wrapper toc-div-class" >
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81-K8s%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">为什么需要 K8s？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0"><span class="toc-number">2.</span> <span class="toc-text">基础学习</span></a></li></ol>
+    
 </div>
 </div>
         <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
@@ -361,7 +308,7 @@
   </div>
   <div class="sidebar-state-tag">
     <div>标签</div>
-    <div class="sidebar-state-number">5</div>
+    <div class="sidebar-state-number">3</div>
   </div>
 </div>
 <div class="sidebar-social" >
@@ -464,109 +411,15 @@
       <script data-pjax>
         window.REIMU_POST = {
           author: "Sanakaprix",
-          title: "K8s 计划学习",
-          url: "http://example.com/20260522/153514/",
+          title: "疑病从无",
+          url: "http://example.com/20260719/051928/",
           excerpt: "",
           description: "",
-          stripContent: "为什么需要 K8s？K8s 是一个容器编排平台，用于在集群中部署、扩展和管理容器化应用。  最早的时候，没有虚拟机也没有容器，所有应用都是直接运行在物理机上；或者让一堆应用程序运行在不同目录里…不仅环境容易冲突，而且当宿主机死了，所有服务立刻中断。还得人（传统运维）来修，一修就是好久好久。 后来 KVM 虚拟化出现了。一个服务器相当于(Node)可以运行多个虚拟机，一个虚拟机类似于(Pod，最小单元)，只运行一个应用程序实例。环境冲突的问题是解决了，但是太慢了太重了。启动一次得30s-1m甚至更",
-          date: "Fri May 22 2026 15:35:14 GMT+0800",
-          updated: "Sun May 24 2026 13:10:57 GMT+0800",
-          cover: "/photosanaka/diandian_big.png",
+          stripContent: "",
+          date: "Sun Jul 19 2026 05:19:28 GMT+0800",
+          updated: "Sun Jul 19 2026 05:19:28 GMT+0800",
+          cover: "/images/banner.jpg",
         };
-      </script>
-      
-<script src="https://npm.webcache.cn/mermaid@11.12.0/dist/mermaid.min.js" integrity="sha384-o+g&#x2F;BxPwhi0C3RK7oQBxQuNimeafQ3GE&#x2F;ST4iT2BxVI4Wzt60SH4pq9iXVYujjaS" crossorigin="anonymous" data-pjax></script>
-
-      
-<script src="https://npm.webcache.cn/dompurify@3.2.6/dist/purify.min.js" integrity="sha384-JEyTNhjM6R1ElGoJns4U2Ln4ofPcqzSsynQkmEc&#x2F;KGy6336qAZl70tDLufbkla+3" crossorigin="anonymous"></script>
-
-      <script data-pjax>
-        if (window.mermaid) {
-          // https://github.com/mermaid-js/mermaid/issues/1945
-          const elementCode = '.mermaid'
-          const processElements = (callback) => {
-            const els = _$$(elementCode);
-            if (!els.length) return Promise.resolve();
-            
-            return new Promise((resolve, reject) => {
-              try {
-                els.forEach(callback);
-                resolve();
-              } catch (error) {
-                reject(error);
-              }
-            });
-          };
-          const saveOriginalData = () => processElements(el => {
-            if (!el.getAttribute('data-original-code')) {
-              el.setAttribute('data-original-code', el.innerHTML);
-            }
-          });
-
-          const resetProcessed = () => processElements(el => {
-            const originalCode = el.getAttribute('data-original-code');
-            if (originalCode) {
-              el.removeAttribute('data-processed');
-              el.innerHTML = DOMPurify.sanitize(originalCode);
-            }
-          });
-          const loadMermaid = async (theme) => {
-            window.mermaid.initialize({theme, startOnLoad: false})
-            await window.mermaid.run({querySelector: elementCode, suppressErrors: true})
-            if (window.svgPanZoom) {
-              window.__panZoomList?.forEach(panZoom => {try {panZoom.destroy()} catch {}});
-              window.__panZoomList = [];
-              _$$('.mermaid > svg').forEach(el => {
-                const bbox = el.getBBox();
-                el.setAttribute('height', Math.max(bbox.height, 80));
-                window.__panZoomList.push(window.svgPanZoom(el, {
-                  zoomEnabled: true,
-                  controlIconsEnabled: true,
-                  fit: true,
-                  center: true
-                }));
-              });
-              if (window.__resizeMermaidSvg) {
-                window.removeEventListener('resize', window.__resizeMermaidSvg);
-              }
-              window.__resizeMermaidSvg = () => {
-                try {
-                  window.__panZoomList.forEach(panZoom => {
-                    panZoom.resize();
-                    panZoom.fit();
-                    panZoom.center();
-                  });
-                } catch {
-                  window.removeEventListener('resize', window.__resizeMermaidSvg);
-                  window.__panZoomList = [];
-                }
-              }
-              window.addEventListener('resize', window.__resizeMermaidSvg);
-            }
-          }
-          const initMermaid = async (theme) => {
-            try {
-              await saveOriginalData();
-              await resetProcessed();
-              await loadMermaid(theme);
-            } catch (error) {
-              console.error(error);
-            }
-          };
-          
-          document.body.addEventListener('reimu:theme-set', (e) => {
-            const isDark = e.detail.isDark;
-            initMermaid(isDark ? 'dark' : 'default');
-          });
-
-          const mode = localStorage.getItem('dark_mode');
-          if (mode === 'auto') {
-            const osMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
-            initMermaid(osMode ? 'dark' : 'default');
-          } else {
-            initMermaid(mode === 'true' ? 'dark' : 'default');
-          }
-        }
       </script>
         
 <script src="/js/insert_highlight.js" data-pjax></script>

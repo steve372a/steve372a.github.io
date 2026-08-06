@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Apple A7 设备降级到 10.3.3 系统</title>
+    <url>/20220815/013515/</url>
+    <content><![CDATA[<h2 id="准备开始"><a href="#准备开始" class="headerlink" title="准备开始"></a>准备开始</h2><h3 id="设备"><a href="#设备" class="headerlink" title="设备"></a>设备</h3><p>这里我列出了 A7 设备的降级情况，你们可以参考一下。</p>
+<table>
+<thead>
+<tr>
+<th>设备</th>
+<th>是否可以降级</th>
+<th>发布年期</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>iPhone 5s</td>
+<td>可以</td>
+<td>2013年</td>
+</tr>
+<tr>
+<td>iPad mini 2</td>
+<td>可以(iPad4,6不能降级)</td>
+<td>2013年</td>
+</tr>
+<tr>
+<td>iPad Air</td>
+<td>可以</td>
+<td>2013年</td>
+</tr>
+<tr>
+<td>iPad mini 3</td>
+<td>不能降级</td>
+<td>2014年</td>
+</tr>
+</tbody></table>
+<p>部分机器是不能降级的，一定要看清楚！<br>依赖</p>
+<p>1.macOS系统，不要用虚拟机，黑苹果白苹果皆可。推荐白苹果。<br><font color=red>Windows 和 Linux 也可以降级，比较麻烦。不能使用此教程。这里我贴上项目地址，你们可以去看看：</font><a href="https://github.com/LukeZGD/iOS-OTA-Downgrader">Github 项目跳转</a><br>2.当然是你的固件啦！</p>
+<h2 id="开始咯～"><a href="#开始咯～" class="headerlink" title="开始咯～"></a>开始咯～</h2><p>首先我们需要安装 Homebrew。这里我推荐使用国内网路地址：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/bin/zsh -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure>
+<p>等待片刻，然后输入下面的命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">brew install libusb</span><br></pre></td></tr></table></figure>
+<p>然后我们下载 LeetDown 降级工具。鉴于国内复杂的网络环境，我专门准备了下载地址供你们下载，版本1.0.5：点我下载<br>安装完成后，可能会提示“意外退出”的提示，不用担心。<br><img src="https://img.gejiba.com/images/9ea7514ba09b7128226ba5231a40ba9d.png"><br>可以直接使用以下方法修复。输入命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo codesign --force --deep --sign - /Applications/LeetDown.app</span><br></pre></td></tr></table></figure>
+<p><img src="https://img.gejiba.com/images/c5e9175306a6226e49fad54cbf722bda.png"><br>上方的 xcode 开头的命令在安装 Homebrew 的时候就要求你运行了，无需再次运行。”<br>运行完成此命令后，重新启动 LeetDown 软件。<br><img src="https://img.gejiba.com/images/c74987f4b630b46df57fac969aca8ef3.png"><br>点击第一个按钮，选择你设备的固件。如果你还没下载固件，推荐你在爱思助手网站下载：<a href="https://www.i4.cn/firmware.html">点击进入下载页面</a><br><font color=red>稍等一会，然后将你的设备进入 DFU 模式。进入方法是：先是长按电源键+HOME键 15 秒，然后松开电源键(但切记一定不要松开 HOME 键)再按十秒即可。</font><br>然后点击第二个按钮即可。<br>点击后会让我们选择使用 ipwndfu 还是 pwnedDFU，我们这里选择 pwnedDFU。<br><img src="https://img.gejiba.com/images/5194621142f936b4ff57a28328d69211.png"><br>如果一切顺利的话，等待一会后设备会红屏然后绿屏然后出现 Apple Logo。<br><img src="https://img.gejiba.com/images/75fa330ca2a8541f26187dc603b894be.jpg"><br>然后一台崭新的 iOS 10.3.3 系统就安装完成啦～<br><img src="https://img.gejiba.com/images/f0df81048ef6666b6c4a3ced0e7302e4.jpg"><br>希望此教程能对你有帮助！感谢你看到这里！</p>
+<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
     <title>小米HyperOS Bootloader解锁技术能力认证考试试卷</title>
     <url>/20250517/122526/</url>
     <content><![CDATA[<p><font color=red> <strong>【绝密★启用前】</strong> </font></p>
@@ -209,48 +253,22 @@
 <link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>Apple A7 设备降级到 10.3.3 系统</title>
-    <url>/20220815/013515/</url>
-    <content><![CDATA[<h2 id="准备开始"><a href="#准备开始" class="headerlink" title="准备开始"></a>准备开始</h2><h3 id="设备"><a href="#设备" class="headerlink" title="设备"></a>设备</h3><p>这里我列出了 A7 设备的降级情况，你们可以参考一下。</p>
-<table>
-<thead>
-<tr>
-<th>设备</th>
-<th>是否可以降级</th>
-<th>发布年期</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>iPhone 5s</td>
-<td>可以</td>
-<td>2013年</td>
-</tr>
-<tr>
-<td>iPad mini 2</td>
-<td>可以(iPad4,6不能降级)</td>
-<td>2013年</td>
-</tr>
-<tr>
-<td>iPad Air</td>
-<td>可以</td>
-<td>2013年</td>
-</tr>
-<tr>
-<td>iPad mini 3</td>
-<td>不能降级</td>
-<td>2014年</td>
-</tr>
-</tbody></table>
-<p>部分机器是不能降级的，一定要看清楚！<br>依赖</p>
-<p>1.macOS系统，不要用虚拟机，黑苹果白苹果皆可。推荐白苹果。<br><font color=red>Windows 和 Linux 也可以降级，比较麻烦。不能使用此教程。这里我贴上项目地址，你们可以去看看：</font><a href="https://github.com/LukeZGD/iOS-OTA-Downgrader">Github 项目跳转</a><br>2.当然是你的固件啦！</p>
-<h2 id="开始咯～"><a href="#开始咯～" class="headerlink" title="开始咯～"></a>开始咯～</h2><p>首先我们需要安装 Homebrew。这里我推荐使用国内网路地址：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/bin/zsh -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure>
-<p>等待片刻，然后输入下面的命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">brew install libusb</span><br></pre></td></tr></table></figure>
-<p>然后我们下载 LeetDown 降级工具。鉴于国内复杂的网络环境，我专门准备了下载地址供你们下载，版本1.0.5：点我下载<br>安装完成后，可能会提示“意外退出”的提示，不用担心。<br><img src="https://img.gejiba.com/images/9ea7514ba09b7128226ba5231a40ba9d.png"><br>可以直接使用以下方法修复。输入命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo codesign --force --deep --sign - /Applications/LeetDown.app</span><br></pre></td></tr></table></figure>
-<p><img src="https://img.gejiba.com/images/c5e9175306a6226e49fad54cbf722bda.png"><br>上方的 xcode 开头的命令在安装 Homebrew 的时候就要求你运行了，无需再次运行。”<br>运行完成此命令后，重新启动 LeetDown 软件。<br><img src="https://img.gejiba.com/images/c74987f4b630b46df57fac969aca8ef3.png"><br>点击第一个按钮，选择你设备的固件。如果你还没下载固件，推荐你在爱思助手网站下载：<a href="https://www.i4.cn/firmware.html">点击进入下载页面</a><br><font color=red>稍等一会，然后将你的设备进入 DFU 模式。进入方法是：先是长按电源键+HOME键 15 秒，然后松开电源键(但切记一定不要松开 HOME 键)再按十秒即可。</font><br>然后点击第二个按钮即可。<br>点击后会让我们选择使用 ipwndfu 还是 pwnedDFU，我们这里选择 pwnedDFU。<br><img src="https://img.gejiba.com/images/5194621142f936b4ff57a28328d69211.png"><br>如果一切顺利的话，等待一会后设备会红屏然后绿屏然后出现 Apple Logo。<br><img src="https://img.gejiba.com/images/75fa330ca2a8541f26187dc603b894be.jpg"><br>然后一台崭新的 iOS 10.3.3 系统就安装完成啦～<br><img src="https://img.gejiba.com/images/f0df81048ef6666b6c4a3ced0e7302e4.jpg"><br>希望此教程能对你有帮助！感谢你看到这里！</p>
-<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <title>PlayCover 适用的《原神》iPA 文件</title>
+    <url>/20230816/114759/</url>
+    <content><![CDATA[<h1 id="《原神》"><a href="#《原神》" class="headerlink" title="《原神》"></a>《原神》</h1><h2 id="版本：4-0-0-天空岛"><a href="#版本：4-0-0-天空岛" class="headerlink" title="版本：4.0.0 (天空岛)"></a>版本：4.0.0 (天空岛)</h2><p>您可以单击下面地址下载：<br><a href="https://pan.huang1111.cn/s/vlYgSE?path=/">下载原神 iPA 到设备</a></p>
+<h1 id="更新方法"><a href="#更新方法" class="headerlink" title="更新方法"></a>更新方法</h1><p><strong>设备要求：Apple Silicon 的 Mac 电脑</strong></p>
+<p>如果您不知道您的 Mac 电脑能否安装，请您点击“”图标，找到“关于本机”。<br>如果显示的是“<em>芯片：Apple M1</em>”等，就说明您的电脑基于 Apple Silicon，<br>如果显示的是“<em>处理器：2.3 GHz 八核 Intel Core i9</em>“等，就说明您的电脑基于 Intel，不能安装 PlayCover 和原神。<br><img src="https://img.gejiba.com/images/48597f6116725b33eb76bd09ca846ec7.png"><br>请您下载好 PlayCover 软件至您的 Mac：<br><a href="https://github.com/PlayCover/PlayCover/releases">下载 PlayCover</a><br><img src="https://img.gejiba.com/images/19a67305b6f5527d59230696115bbe7c.png"><br>然后将您下载的《原神》包体，移动至 PlayCover，等待安装就可以了。<br><img src="https://img.gejiba.com/images/64a6c685500968133486ccae710afe41.png"><br>进度条消失后，启动原神即可。<br><img src="https://img.gejiba.com/images/0f8e0e0f09980925c1f85a94d9110685.png"><br><img src="https://img.gejiba.com/images/1fef0f6d03000f75c9c2d730a0ab0bba.png"></p>
+<h1 id="操作方式"><a href="#操作方式" class="headerlink" title="操作方式"></a>操作方式</h1><h2 id="键盘映射"><a href="#键盘映射" class="headerlink" title="键盘映射"></a>键盘映射</h2><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p><a href="https://github.com/PlayCover/keymaps/tree/master/keymapping/com.miHoYo.GenshinImpact">下载键盘映射</a><br>如果您不能访问 Github，点击以下链接下载:<br><a href="/download/Genshin_Impact_fixed_16by9.playmap">Genshin_Impact_fixed_16by9.playmap</a><br><a href="/download/Genshin_Impact_fixed_16by10.playmap">Genshin_Impact_fixed_16by10.playmap</a><br>一般 Mac 的屏幕分辨率比例是 16 : 10。</p>
+<h3 id="导入"><a href="#导入" class="headerlink" title="导入"></a>导入</h3><p>下载完成后，打开 PlayCover，在“原神”图标点击右键，找到“导入键盘映射布局”<br><img src="https://img.gejiba.com/images/efc6855c13376b0b0a0379b07be383e4.png"><br>然后找到您的键盘映射布局就可以了。<br><img src="https://img.gejiba.com/images/6a44f60b24115af46d5be02b446a68bf.png"></p>
+<h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><p>随后打开原神，您可以按下 Option⌥ 键，让“原神”捕获鼠标，再次按下 Option⌥ 键，可以释放鼠标。<br>您可以点击状态栏的“按键映射”-“打开&#x2F;关闭按键映射编辑模式”，编辑您的键盘映射。<br><img src="https://img.gejiba.com/images/0caf11441df218503b6006a32166dd67.png"></p>
+<h2 id="手柄连接"><a href="#手柄连接" class="headerlink" title="手柄连接"></a>手柄连接</h2><p>请您先连接手柄至 Mac。<br><img src="https://img.gejiba.com/images/cee062dae17e16cd0b9a97d6ad4651ae.png"><br>然后打开原神，打开“设置”<br><img src="https://img.gejiba.com/images/91a9e660af575671d4739c2587cc88d4.png"><br>将“触屏”改为“手柄”<br><img src="https://img.gejiba.com/images/fded33a413746b6e4a4463a0726c2afc.png"><br>然后就完成啦！<br><img src="https://img.gejiba.com/images/7f47f18a1f5d592143ab1540f8d466d2.png"></p>
+<h1 id="推荐观看"><a href="#推荐观看" class="headerlink" title="推荐观看"></a>推荐观看</h1><p>本文章没有列出一些会存在的普遍问题，推荐观看下面的视频：</p>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?bvid=BV1Xx4y1F7um&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
+</div><link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>资源分享</tag>
+      </tags>
   </entry>
   <entry>
     <title>Pier组件原理详解</title>
@@ -346,22 +364,38 @@
 <link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>PlayCover 适用的《原神》iPA 文件</title>
-    <url>/20230816/114759/</url>
-    <content><![CDATA[<h1 id="《原神》"><a href="#《原神》" class="headerlink" title="《原神》"></a>《原神》</h1><h2 id="版本：4-0-0-天空岛"><a href="#版本：4-0-0-天空岛" class="headerlink" title="版本：4.0.0 (天空岛)"></a>版本：4.0.0 (天空岛)</h2><p>您可以单击下面地址下载：<br><a href="https://pan.huang1111.cn/s/vlYgSE?path=/">下载原神 iPA 到设备</a></p>
-<h1 id="更新方法"><a href="#更新方法" class="headerlink" title="更新方法"></a>更新方法</h1><p><strong>设备要求：Apple Silicon 的 Mac 电脑</strong></p>
-<p>如果您不知道您的 Mac 电脑能否安装，请您点击“”图标，找到“关于本机”。<br>如果显示的是“<em>芯片：Apple M1</em>”等，就说明您的电脑基于 Apple Silicon，<br>如果显示的是“<em>处理器：2.3 GHz 八核 Intel Core i9</em>“等，就说明您的电脑基于 Intel，不能安装 PlayCover 和原神。<br><img src="https://img.gejiba.com/images/48597f6116725b33eb76bd09ca846ec7.png"><br>请您下载好 PlayCover 软件至您的 Mac：<br><a href="https://github.com/PlayCover/PlayCover/releases">下载 PlayCover</a><br><img src="https://img.gejiba.com/images/19a67305b6f5527d59230696115bbe7c.png"><br>然后将您下载的《原神》包体，移动至 PlayCover，等待安装就可以了。<br><img src="https://img.gejiba.com/images/64a6c685500968133486ccae710afe41.png"><br>进度条消失后，启动原神即可。<br><img src="https://img.gejiba.com/images/0f8e0e0f09980925c1f85a94d9110685.png"><br><img src="https://img.gejiba.com/images/1fef0f6d03000f75c9c2d730a0ab0bba.png"></p>
-<h1 id="操作方式"><a href="#操作方式" class="headerlink" title="操作方式"></a>操作方式</h1><h2 id="键盘映射"><a href="#键盘映射" class="headerlink" title="键盘映射"></a>键盘映射</h2><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p><a href="https://github.com/PlayCover/keymaps/tree/master/keymapping/com.miHoYo.GenshinImpact">下载键盘映射</a><br>如果您不能访问 Github，点击以下链接下载:<br><a href="/download/Genshin_Impact_fixed_16by9.playmap">Genshin_Impact_fixed_16by9.playmap</a><br><a href="/download/Genshin_Impact_fixed_16by10.playmap">Genshin_Impact_fixed_16by10.playmap</a><br>一般 Mac 的屏幕分辨率比例是 16 : 10。</p>
-<h3 id="导入"><a href="#导入" class="headerlink" title="导入"></a>导入</h3><p>下载完成后，打开 PlayCover，在“原神”图标点击右键，找到“导入键盘映射布局”<br><img src="https://img.gejiba.com/images/efc6855c13376b0b0a0379b07be383e4.png"><br>然后找到您的键盘映射布局就可以了。<br><img src="https://img.gejiba.com/images/6a44f60b24115af46d5be02b446a68bf.png"></p>
-<h3 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h3><p>随后打开原神，您可以按下 Option⌥ 键，让“原神”捕获鼠标，再次按下 Option⌥ 键，可以释放鼠标。<br>您可以点击状态栏的“按键映射”-“打开&#x2F;关闭按键映射编辑模式”，编辑您的键盘映射。<br><img src="https://img.gejiba.com/images/0caf11441df218503b6006a32166dd67.png"></p>
-<h2 id="手柄连接"><a href="#手柄连接" class="headerlink" title="手柄连接"></a>手柄连接</h2><p>请您先连接手柄至 Mac。<br><img src="https://img.gejiba.com/images/cee062dae17e16cd0b9a97d6ad4651ae.png"><br>然后打开原神，打开“设置”<br><img src="https://img.gejiba.com/images/91a9e660af575671d4739c2587cc88d4.png"><br>将“触屏”改为“手柄”<br><img src="https://img.gejiba.com/images/fded33a413746b6e4a4463a0726c2afc.png"><br>然后就完成啦！<br><img src="https://img.gejiba.com/images/7f47f18a1f5d592143ab1540f8d466d2.png"></p>
-<h1 id="推荐观看"><a href="#推荐观看" class="headerlink" title="推荐观看"></a>推荐观看</h1><p>本文章没有列出一些会存在的普遍问题，推荐观看下面的视频：</p>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?bvid=BV1Xx4y1F7um&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
-</div><link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+    <title>Reimu 主题去除东方 PROJECT 元素</title>
+    <url>/20230817/154130/</url>
+    <content><![CDATA[<p>如果你安装了 Reimu 主题后又不想要东方的元素了，可以看看这篇文章。</p>
+<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p><a href="/20230817/154130/#%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E4%BF%AE%E6%94%B9">  <strong>1. 背景图片修改</strong></a><br><a href="/20230817/154130/#%E5%A4%B4%E5%9B%BE%E4%BF%AE%E6%94%B9">      ———— 1.1 头图修改</a><br><a href="/20230817/154130/#%E7%BB%99%E5%8D%95%E7%8B%AC%E7%9A%84%E6%96%87%E7%AB%A0%E9%85%8D%E5%9B%BE">      ———— 1.2 给单独的文章配图</a><br><a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%A4%AA%E6%9E%81%E5%9B%BE%E5%9B%BE%E6%A0%87">  <strong>2. 更改太极图图标 (重点)</strong></a><br><a href="/20230817/154130/#%E8%BE%B9%E6%A0%8F%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.1 边栏图标更改</a><br><a href="/20230817/154130/#%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.2 加载界面图标更改</a><br><a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E6%96%87%E5%AD%97">  <strong>3. 更改文字</strong></a><br><a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2_%E5%B0%91%E5%A5%B3%E7%A5%88%E7%A5%B7%E4%B8%AD">      ———— 3.1 更改加载界面 “少女祈祷中”</a><br><a href="/20230817/154130/#%E6%9B%B4%E6%94%B9_404_%E7%95%8C%E9%9D%A2">      ———— 3.2 更改 “404” 界面</a></p>
+<h1 id="背景图片修改"><a href="#背景图片修改" class="headerlink" title="背景图片修改"></a>背景图片修改</h1><h2 id="头图修改"><a href="#头图修改" class="headerlink" title="头图修改"></a>头图修改</h2><p>头图的位置在</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
+<p>您找到合适的图片之后直接更换即可。<br>如果您的网站速度很慢，不适合在本地存放头图，您可以更改主题目录的 _config.yml 中的：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;/images/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
+<p>部分，将内容更改为：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;https://xxx.url.org/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
+<p><img src="https://img.gejiba.com/images/3b7b1a3e290b1db6151d0961726ce8eb.png"></p>
+<h2 id="给单独的文章配图"><a href="#给单独的文章配图" class="headerlink" title="给单独的文章配图"></a>给单独的文章配图</h2><p>只需您在文章的页眉添加</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cover: 指向图片的 URL</span><br><span class="line"></span><br><span class="line">// 示例：</span><br><span class="line">---</span><br><span class="line">title: 123456</span><br><span class="line">date: 1999-12-31 06:01:13</span><br><span class="line">tags: XX</span><br><span class="line">cover: https://xxx.url.org/bd3.png</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>就可以给文章配上图片了。</p>
+<h1 id="更改太极图图标"><a href="#更改太极图图标" class="headerlink" title="更改太极图图标"></a>更改太极图图标</h1><h2 id="边栏图标更改"><a href="#边栏图标更改" class="headerlink" title="边栏图标更改"></a>边栏图标更改</h2><p>请您进入 <strong>&#x2F;themes&#x2F;reimu&#x2F;source&#x2F;images&#x2F;</strong> 目录，使用矢量图绘画工具打开 <strong>taichi.svg</strong> 文件。<br>然后在上面进行绘画操作即可。<br><img src="https://img.gejiba.com/images/10f06ff8e388d28136b494546c99bd5b.png"><br>画完之后保存，Hexo 刷新一遍就可以了。</p>
+<h2 id="加载界面图标更改"><a href="#加载界面图标更改" class="headerlink" title="加载界面图标更改"></a>加载界面图标更改</h2><p>在执行上面的操作之后，您会发现，加载界面仍然是太极图。<br>莫慌。您先复制一份 <strong>taichi.svg</strong> 文件的副本，使用矢量图绘画工具打开它并进行绘画。绘画完成后不要删除，右键通过 <strong>Microsoft Visual Studio Code</strong> 或其他文本软件打开。<br>记住这些路径名称：<br><img src="https://img.gejiba.com/images/c5943bcc8fc6ae8beabe7d337afe9480.png"><br>如果发现 ellipse 和 path 开头的一段，请复制它们。<br>然后打开 <strong>&#x2F;themes&#x2F;reimu&#x2F;layout&#x2F;_partial&#x2F;loader.ejs</strong> 文件<br>将这一段删除：<br><img src="https://img.gejiba.com/images/a67d82f9cd84d1e7f816a547c0a175a4.png"><br>然后将您刚才复制的 SVG 代码粘贴到此处。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 示例：小星星（和本站一样）</span><br><span class="line"></span><br><span class="line">&lt;path</span><br><span class="line">    sodipodi:type=&quot;star&quot;</span><br><span class="line">    style=&quot;opacity:0.967273;fill:#ffbec0;fill-opacity:0.94581282;stroke:#000000;stroke-width:13.65542089;stroke-dasharray:none&quot;</span><br><span class="line">    id=&quot;path1&quot;</span><br><span class="line">    inkscape:flatsided=&quot;false&quot;</span><br><span class="line">    sodipodi:sides=&quot;5&quot;</span><br><span class="line">    sodipodi:cx=&quot;117.15254&quot;</span><br><span class="line">    sodipodi:cy=&quot;121.49152&quot;</span><br><span class="line">    sodipodi:r1=&quot;281.59967&quot;</span><br><span class="line">    sodipodi:r2=&quot;140.79984&quot;</span><br><span class="line">    sodipodi:arg1=&quot;0.98279372&quot;</span><br><span class="line">    sodipodi:arg2=&quot;1.6111123&quot;</span><br><span class="line">    inkscape:rounded=&quot;0&quot;</span><br><span class="line">    inkscape:randomized=&quot;0&quot;</span><br><span class="line">    d=&quot;M 273.35594,355.79661 111.4776,262.17695 -57.415336,342.45403 -18.400902,159.56852 -146.93973,23.748776 39.050851,4.3389758 128.50242,-159.87933 204.43649,11.010274 388.25943,45.337523 249.19868,170.3629 Z&quot;</span><br><span class="line">    inkscape:transform-center-x=&quot;-5.2622667&quot;</span><br><span class="line">    inkscape:transform-center-y=&quot;-35.297319&quot;</span><br><span class="line">    transform=&quot;matrix(1.5003757,0,0,1.4999156,340.69227,376.01307)&quot; /&gt;</span><br></pre></td></tr></table></figure>
+<p>效果：<br><img src="https://img.gejiba.com/images/ba4cf7aeb1cfb237289943c881beb7ea.png"></p>
+<h1 id="更改文字"><a href="#更改文字" class="headerlink" title="更改文字"></a>更改文字</h1><h2 id="更改加载界面-少女祈祷中"><a href="#更改加载界面-少女祈祷中" class="headerlink" title="更改加载界面_少女祈祷中"></a>更改加载界面_少女祈祷中</h2><p>打开主题目录的 _config.yml 文件，滑动到下面，找到 preloader 字符：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">preloader:</span><br><span class="line">  enable: true</span><br><span class="line">  text: 正在载入中...</span><br><span class="line">  # text: Loading...</span><br></pre></td></tr></table></figure>
+<h2 id="更改-404-界面"><a href="#更改-404-界面" class="headerlink" title="更改_404_界面"></a>更改_404_界面</h2><p>打开 <strong>&#x2F;themes&#x2F;reimu&#x2F;languages&#x2F;zh-CN.yml</strong> 文件，找到 not_found 字符:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">not_found:</span><br><span class="line">  title: 4 0 4 (ﾟ⊿ﾟ)ﾂ</span><br><span class="line">  subtitle: 満 身 創 痍</span><br></pre></td></tr></table></figure><link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>资源分享</tag>
+        <tag>复现</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Windows NT4.0 安装教程</title>
+    <url>/20230119/063535/</url>
+    <content><![CDATA[<h1 id="镜像链接"><a href="#镜像链接" class="headerlink" title="镜像链接"></a>镜像链接</h1><p><a href="https://pan.huang1111.cn/s/lyBgTL">Click me to download ISO image [FREE!!]</a><br><img src="https://img.gejiba.com/images/27da4e034df0231a2bb7ec09508d6137.png"></p>
+<h1 id="安装教程"><a href="#安装教程" class="headerlink" title="安装教程"></a>安装教程</h1><p>1.我们通过虚拟机成功引导系统后，可以看到下面界面：<br><img src="https://img.gejiba.com/images/13407dbc2626460c9a71238d7e9add43.jpg"><br>2.按 ENTER 继续，创建分区。<br>要记住，Windows NT 4.0 Service Pack 1 是不支持大硬盘的，所以我们这里只能给系统分 4096 MB 的分区。<br>这里我们随便选择，根据你的需求选择是否 FAT16 还是 NTFS。(不支持 FAT32)<br><img src="https://img.gejiba.com/images/eac95cb4fdc249de0e22c466a8b36c4c.png"><br>静等第一阶段安装完毕后，重启即可。<br>注意！重启一直到安装完成之前，都不可以动任何虚拟机硬件，否则开机会蓝屏。<br>就比如我在第一阶段安装完毕后，添加了一个 Cirrus 显示卡，结果开机蓝屏 0x0000007B<br>3.重启后，开始第二阶段安装<br><img src="https://img.gejiba.com/images/3ccb7f2b8cdfe50abe4ed8bcb0040c1e.png"><br>4.点击“下一步”，选择安装类型，这里我们选择典型。<br><img src="https://img.gejiba.com/images/b6ebcb7ac6c1c161fcdad7d5257f29dd.png"><br>5.输入自己的名字和组织，皆为选填。<br><img src="https://img.gejiba.com/images/7e58b624f0b674e7bb79473b752418fc.png"><br>6.输入 Windows NT 4.0 Workstation 的 [ CD-Key ]。<br><img src="https://img.gejiba.com/images/664496dbed01c7222e6cd7205191470d.jpg"><br>7.输入自己的计算机名称，随便输入。这个名称用于给您电脑命名，供别人在局域网上识别。<br><img src="https://img.gejiba.com/images/320b4cc1d869b9ae53ec921d0e9b318b.png"><br>8.设置管理员账户的密码，酌情而定，我这里不填。<br><img src="https://img.gejiba.com/images/b1aee64d28853da06f1c4f266f063bfa.png"><br>9.这里选择“否”，然后点击“下一步”。<br><img src="https://img.gejiba.com/images/df453d8f0c90b757c6568899e86e2c09.png"><br>10.根据您的需求来挑选，选完之后点击“下一步”。<br><img src="https://img.gejiba.com/images/acf185c6f2093204bc904b30b358946e.png"><br>11.如果您想稍后再设置网络，那就选择“此时不要将计算机连接到网络”。因为我要上网，所以这里会详细讲解如何设置网络。<br><img src="https://img.gejiba.com/images/9932dabfbbb1b2832fd78d83a8662cd6.png"><br>12.点击“开始搜索”，搜寻网卡，搜到了你需要的网卡之后，点击“下一步”。<br><img src="https://img.gejiba.com/images/9b6782f707f703733eec3e05466832f8.jpg"><br>13.这里我们直接“下一步”。<br><img src="https://img.gejiba.com/images/b9b1e73bd8b0ce8e3ce7e479319d00e9.jpg"><br>如果出现一个要设置“网卡 ID”的东西，直接点击“Skip”。<br>14.这里一定要选择“是”，否则系统就不会使用 DHCP，需要你自己配置网络，很麻烦。<br><img src="https://img.gejiba.com/images/632444ae356f000c14cd4ccf84340fc9.jpg"><br>15.点击“下一步”。<br><img src="https://img.gejiba.com/images/796666538ef1ffcaa4d51675da92e3b0.jpg"><br>启用网络后，就开始安装 Windows NT Workstation 了。<br>16.出现显示器设置后，我们点击“65536 色”，然后点击“测试”。<br><img src="https://img.gejiba.com/images/6ecde8d8ac3b2576ab5700a4d45429ac.jpg"><br>如果点击“测试”之后，显示器没有出现异常，那么就可以点击“确定”继续下一步安装了。<br><img src="https://img.gejiba.com/images/f33fae8c67e750c81dcd9b20bd649c7e.jpg"><br>等会系统就安装完成了。<br>后续安装：<br>因为 Windows NT4.0 Service Pack 1 和所附带的 Internet Explorer 3.0 十分古老，我推荐安装 Service Pack 6 之后再安装 Internet Explorer 5.0。<br>17.在安装盘中找到 SP6I386_CN.EXE，打开它，等待复制文件之后点击“安装”。<br><img src="https://img.gejiba.com/images/c38d244a6be2a67afa8663ab97980c16.jpg"><br>18.重启后，再次打开安装盘，找到 “Internet Explorer 5.0” 文件夹。<br>找到“IE5SETUP.EXE”，打开它。<br><img src="https://img.gejiba.com/images/c74b6d6e80737d95f4620993ee2210b5.jpg"><br>等待安装即可。</p>
+<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>QEMU 基础命令学习</title>
@@ -569,13 +603,6 @@ Windows 11      std / VMware
 </font><link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>Windows NT4.0 安装教程</title>
-    <url>/20230119/063535/</url>
-    <content><![CDATA[<h1 id="镜像链接"><a href="#镜像链接" class="headerlink" title="镜像链接"></a>镜像链接</h1><p><a href="https://pan.huang1111.cn/s/lyBgTL">Click me to download ISO image [FREE!!]</a><br><img src="https://img.gejiba.com/images/27da4e034df0231a2bb7ec09508d6137.png"></p>
-<h1 id="安装教程"><a href="#安装教程" class="headerlink" title="安装教程"></a>安装教程</h1><p>1.我们通过虚拟机成功引导系统后，可以看到下面界面：<br><img src="https://img.gejiba.com/images/13407dbc2626460c9a71238d7e9add43.jpg"><br>2.按 ENTER 继续，创建分区。<br>要记住，Windows NT 4.0 Service Pack 1 是不支持大硬盘的，所以我们这里只能给系统分 4096 MB 的分区。<br>这里我们随便选择，根据你的需求选择是否 FAT16 还是 NTFS。(不支持 FAT32)<br><img src="https://img.gejiba.com/images/eac95cb4fdc249de0e22c466a8b36c4c.png"><br>静等第一阶段安装完毕后，重启即可。<br>注意！重启一直到安装完成之前，都不可以动任何虚拟机硬件，否则开机会蓝屏。<br>就比如我在第一阶段安装完毕后，添加了一个 Cirrus 显示卡，结果开机蓝屏 0x0000007B<br>3.重启后，开始第二阶段安装<br><img src="https://img.gejiba.com/images/3ccb7f2b8cdfe50abe4ed8bcb0040c1e.png"><br>4.点击“下一步”，选择安装类型，这里我们选择典型。<br><img src="https://img.gejiba.com/images/b6ebcb7ac6c1c161fcdad7d5257f29dd.png"><br>5.输入自己的名字和组织，皆为选填。<br><img src="https://img.gejiba.com/images/7e58b624f0b674e7bb79473b752418fc.png"><br>6.输入 Windows NT 4.0 Workstation 的 [ CD-Key ]。<br><img src="https://img.gejiba.com/images/664496dbed01c7222e6cd7205191470d.jpg"><br>7.输入自己的计算机名称，随便输入。这个名称用于给您电脑命名，供别人在局域网上识别。<br><img src="https://img.gejiba.com/images/320b4cc1d869b9ae53ec921d0e9b318b.png"><br>8.设置管理员账户的密码，酌情而定，我这里不填。<br><img src="https://img.gejiba.com/images/b1aee64d28853da06f1c4f266f063bfa.png"><br>9.这里选择“否”，然后点击“下一步”。<br><img src="https://img.gejiba.com/images/df453d8f0c90b757c6568899e86e2c09.png"><br>10.根据您的需求来挑选，选完之后点击“下一步”。<br><img src="https://img.gejiba.com/images/acf185c6f2093204bc904b30b358946e.png"><br>11.如果您想稍后再设置网络，那就选择“此时不要将计算机连接到网络”。因为我要上网，所以这里会详细讲解如何设置网络。<br><img src="https://img.gejiba.com/images/9932dabfbbb1b2832fd78d83a8662cd6.png"><br>12.点击“开始搜索”，搜寻网卡，搜到了你需要的网卡之后，点击“下一步”。<br><img src="https://img.gejiba.com/images/9b6782f707f703733eec3e05466832f8.jpg"><br>13.这里我们直接“下一步”。<br><img src="https://img.gejiba.com/images/b9b1e73bd8b0ce8e3ce7e479319d00e9.jpg"><br>如果出现一个要设置“网卡 ID”的东西，直接点击“Skip”。<br>14.这里一定要选择“是”，否则系统就不会使用 DHCP，需要你自己配置网络，很麻烦。<br><img src="https://img.gejiba.com/images/632444ae356f000c14cd4ccf84340fc9.jpg"><br>15.点击“下一步”。<br><img src="https://img.gejiba.com/images/796666538ef1ffcaa4d51675da92e3b0.jpg"><br>启用网络后，就开始安装 Windows NT Workstation 了。<br>16.出现显示器设置后，我们点击“65536 色”，然后点击“测试”。<br><img src="https://img.gejiba.com/images/6ecde8d8ac3b2576ab5700a4d45429ac.jpg"><br>如果点击“测试”之后，显示器没有出现异常，那么就可以点击“确定”继续下一步安装了。<br><img src="https://img.gejiba.com/images/f33fae8c67e750c81dcd9b20bd649c7e.jpg"><br>等会系统就安装完成了。<br>后续安装：<br>因为 Windows NT4.0 Service Pack 1 和所附带的 Internet Explorer 3.0 十分古老，我推荐安装 Service Pack 6 之后再安装 Internet Explorer 5.0。<br>17.在安装盘中找到 SP6I386_CN.EXE，打开它，等待复制文件之后点击“安装”。<br><img src="https://img.gejiba.com/images/c38d244a6be2a67afa8663ab97980c16.jpg"><br>18.重启后，再次打开安装盘，找到 “Internet Explorer 5.0” 文件夹。<br>找到“IE5SETUP.EXE”，打开它。<br><img src="https://img.gejiba.com/images/c74b6d6e80737d95f4620993ee2210b5.jpg"><br>等待安装即可。</p>
-<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>iOS 的发展历史</title>
     <url>/20230818/205837/</url>
     <content><![CDATA[<p>苹果 iOS 系统已经走过了自己的第 16 个年头，各位新入局的 iOS 玩家可能对 iOS 的历史比较感兴趣，经过整理后，我撰写了这篇文章。</p>
@@ -672,31 +699,13 @@ Windows 11      std / VMware
 <link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>Reimu 主题去除东方 PROJECT 元素</title>
-    <url>/20230817/154130/</url>
-    <content><![CDATA[<p>如果你安装了 Reimu 主题后又不想要东方的元素了，可以看看这篇文章。</p>
-<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p><a href="/20230817/154130/#%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E4%BF%AE%E6%94%B9">  <strong>1. 背景图片修改</strong></a><br><a href="/20230817/154130/#%E5%A4%B4%E5%9B%BE%E4%BF%AE%E6%94%B9">      ———— 1.1 头图修改</a><br><a href="/20230817/154130/#%E7%BB%99%E5%8D%95%E7%8B%AC%E7%9A%84%E6%96%87%E7%AB%A0%E9%85%8D%E5%9B%BE">      ———— 1.2 给单独的文章配图</a><br><a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%A4%AA%E6%9E%81%E5%9B%BE%E5%9B%BE%E6%A0%87">  <strong>2. 更改太极图图标 (重点)</strong></a><br><a href="/20230817/154130/#%E8%BE%B9%E6%A0%8F%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.1 边栏图标更改</a><br><a href="/20230817/154130/#%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2%E5%9B%BE%E6%A0%87%E6%9B%B4%E6%94%B9">      ———— 2.2 加载界面图标更改</a><br><a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E6%96%87%E5%AD%97">  <strong>3. 更改文字</strong></a><br><a href="/20230817/154130/#%E6%9B%B4%E6%94%B9%E5%8A%A0%E8%BD%BD%E7%95%8C%E9%9D%A2_%E5%B0%91%E5%A5%B3%E7%A5%88%E7%A5%B7%E4%B8%AD">      ———— 3.1 更改加载界面 “少女祈祷中”</a><br><a href="/20230817/154130/#%E6%9B%B4%E6%94%B9_404_%E7%95%8C%E9%9D%A2">      ———— 3.2 更改 “404” 界面</a></p>
-<h1 id="背景图片修改"><a href="#背景图片修改" class="headerlink" title="背景图片修改"></a>背景图片修改</h1><h2 id="头图修改"><a href="#头图修改" class="headerlink" title="头图修改"></a>头图修改</h2><p>头图的位置在</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
-<p>您找到合适的图片之后直接更换即可。<br>如果您的网站速度很慢，不适合在本地存放头图，您可以更改主题目录的 _config.yml 中的：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;/images/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
-<p>部分，将内容更改为：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">banner: &quot;https://xxx.url.org/banner.jpg&quot; # themes/reimu/source/images/banner.jpg</span><br></pre></td></tr></table></figure>
-<p><img src="https://img.gejiba.com/images/3b7b1a3e290b1db6151d0961726ce8eb.png"></p>
-<h2 id="给单独的文章配图"><a href="#给单独的文章配图" class="headerlink" title="给单独的文章配图"></a>给单独的文章配图</h2><p>只需您在文章的页眉添加</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cover: 指向图片的 URL</span><br><span class="line"></span><br><span class="line">// 示例：</span><br><span class="line">---</span><br><span class="line">title: 123456</span><br><span class="line">date: 1999-12-31 06:01:13</span><br><span class="line">tags: XX</span><br><span class="line">cover: https://xxx.url.org/bd3.png</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>就可以给文章配上图片了。</p>
-<h1 id="更改太极图图标"><a href="#更改太极图图标" class="headerlink" title="更改太极图图标"></a>更改太极图图标</h1><h2 id="边栏图标更改"><a href="#边栏图标更改" class="headerlink" title="边栏图标更改"></a>边栏图标更改</h2><p>请您进入 <strong>&#x2F;themes&#x2F;reimu&#x2F;source&#x2F;images&#x2F;</strong> 目录，使用矢量图绘画工具打开 <strong>taichi.svg</strong> 文件。<br>然后在上面进行绘画操作即可。<br><img src="https://img.gejiba.com/images/10f06ff8e388d28136b494546c99bd5b.png"><br>画完之后保存，Hexo 刷新一遍就可以了。</p>
-<h2 id="加载界面图标更改"><a href="#加载界面图标更改" class="headerlink" title="加载界面图标更改"></a>加载界面图标更改</h2><p>在执行上面的操作之后，您会发现，加载界面仍然是太极图。<br>莫慌。您先复制一份 <strong>taichi.svg</strong> 文件的副本，使用矢量图绘画工具打开它并进行绘画。绘画完成后不要删除，右键通过 <strong>Microsoft Visual Studio Code</strong> 或其他文本软件打开。<br>记住这些路径名称：<br><img src="https://img.gejiba.com/images/c5943bcc8fc6ae8beabe7d337afe9480.png"><br>如果发现 ellipse 和 path 开头的一段，请复制它们。<br>然后打开 <strong>&#x2F;themes&#x2F;reimu&#x2F;layout&#x2F;_partial&#x2F;loader.ejs</strong> 文件<br>将这一段删除：<br><img src="https://img.gejiba.com/images/a67d82f9cd84d1e7f816a547c0a175a4.png"><br>然后将您刚才复制的 SVG 代码粘贴到此处。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 示例：小星星（和本站一样）</span><br><span class="line"></span><br><span class="line">&lt;path</span><br><span class="line">    sodipodi:type=&quot;star&quot;</span><br><span class="line">    style=&quot;opacity:0.967273;fill:#ffbec0;fill-opacity:0.94581282;stroke:#000000;stroke-width:13.65542089;stroke-dasharray:none&quot;</span><br><span class="line">    id=&quot;path1&quot;</span><br><span class="line">    inkscape:flatsided=&quot;false&quot;</span><br><span class="line">    sodipodi:sides=&quot;5&quot;</span><br><span class="line">    sodipodi:cx=&quot;117.15254&quot;</span><br><span class="line">    sodipodi:cy=&quot;121.49152&quot;</span><br><span class="line">    sodipodi:r1=&quot;281.59967&quot;</span><br><span class="line">    sodipodi:r2=&quot;140.79984&quot;</span><br><span class="line">    sodipodi:arg1=&quot;0.98279372&quot;</span><br><span class="line">    sodipodi:arg2=&quot;1.6111123&quot;</span><br><span class="line">    inkscape:rounded=&quot;0&quot;</span><br><span class="line">    inkscape:randomized=&quot;0&quot;</span><br><span class="line">    d=&quot;M 273.35594,355.79661 111.4776,262.17695 -57.415336,342.45403 -18.400902,159.56852 -146.93973,23.748776 39.050851,4.3389758 128.50242,-159.87933 204.43649,11.010274 388.25943,45.337523 249.19868,170.3629 Z&quot;</span><br><span class="line">    inkscape:transform-center-x=&quot;-5.2622667&quot;</span><br><span class="line">    inkscape:transform-center-y=&quot;-35.297319&quot;</span><br><span class="line">    transform=&quot;matrix(1.5003757,0,0,1.4999156,340.69227,376.01307)&quot; /&gt;</span><br></pre></td></tr></table></figure>
-<p>效果：<br><img src="https://img.gejiba.com/images/ba4cf7aeb1cfb237289943c881beb7ea.png"></p>
-<h1 id="更改文字"><a href="#更改文字" class="headerlink" title="更改文字"></a>更改文字</h1><h2 id="更改加载界面-少女祈祷中"><a href="#更改加载界面-少女祈祷中" class="headerlink" title="更改加载界面_少女祈祷中"></a>更改加载界面_少女祈祷中</h2><p>打开主题目录的 _config.yml 文件，滑动到下面，找到 preloader 字符：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">preloader:</span><br><span class="line">  enable: true</span><br><span class="line">  text: 正在载入中...</span><br><span class="line">  # text: Loading...</span><br></pre></td></tr></table></figure>
-<h2 id="更改-404-界面"><a href="#更改-404-界面" class="headerlink" title="更改_404_界面"></a>更改_404_界面</h2><p>打开 <strong>&#x2F;themes&#x2F;reimu&#x2F;languages&#x2F;zh-CN.yml</strong> 文件，找到 not_found 字符:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">not_found:</span><br><span class="line">  title: 4 0 4 (ﾟ⊿ﾟ)ﾂ</span><br><span class="line">  subtitle: 満 身 創 痍</span><br></pre></td></tr></table></figure><link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>复现</tag>
-      </tags>
+    <title>历史锁那(Sana)专辑</title>
+    <url>/20230725/221318/</url>
+    <content><![CDATA[<center>
+
+<p><img src="https://img.gejiba.com/images/167d065688a66751b4bea8bdf4bae325.jpg"></p>
+<h1 id="好きなひと。"><a href="#好きなひと。" class="headerlink" title="好きなひと。"></a>好きなひと。</h1><h2 id="鎖那-×-HoneyWorks-2014-08-17"><a href="#鎖那-×-HoneyWorks-2014-08-17" class="headerlink" title="鎖那 × HoneyWorks [2014.08.17]"></a>鎖那 × HoneyWorks [2014.08.17]</h2><p>价格：120 元（带侧封）<br><img src="https://img.gejiba.com/images/e65d8b14bf54ac8cd181d9343f9d61b0.png" alt="歌曲列表"><br><font color=red><strong>01</strong></font> 未来図<br><font color=red><strong>02</strong></font> 告白予行練習<br><font color=red><strong>03</strong></font> テレカクシ思春期<br><font color=red><strong>04</strong></font> 初恋の絵本<br><font color=red><strong>05</strong></font> 告白ライバル宣言<br><font color=red><strong>06</strong></font> ヤキモチの答え<br><font color=red><strong>07</strong></font> 病名恋ワズライ<br><font color=red><strong>08</strong></font> イノコリ先生<br><font color=red><strong>09</strong></font> ロリババアに恋をした<br><font color=red><strong>10</strong></font> ラズベリー*モンスター</p>
+</center><link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>QEMU 基础命令学习</title>
@@ -902,41 +911,6 @@ Windows 11      std / VMware
 <h4 id="无界面引导"><a href="#无界面引导" class="headerlink" title="无界面引导"></a>无界面引导</h4><p>有时候我们在模拟虚拟系统的时候需要直接将终端变成 QEMU 的控制台，那么我们加上 -nographic 命令即可。</p>
 <h2 id="QEMU-镜像下载"><a href="#QEMU-镜像下载" class="headerlink" title="QEMU 镜像下载"></a>QEMU 镜像下载</h2><p><a href="/images/">点击进入下载站</a></p>
 </font><link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>历史锁那(Sana)专辑</title>
-    <url>/20230725/221318/</url>
-    <content><![CDATA[<center>
-
-<p><img src="https://img.gejiba.com/images/167d065688a66751b4bea8bdf4bae325.jpg"></p>
-<h1 id="好きなひと。"><a href="#好きなひと。" class="headerlink" title="好きなひと。"></a>好きなひと。</h1><h2 id="鎖那-×-HoneyWorks-2014-08-17"><a href="#鎖那-×-HoneyWorks-2014-08-17" class="headerlink" title="鎖那 × HoneyWorks [2014.08.17]"></a>鎖那 × HoneyWorks [2014.08.17]</h2><p>价格：120 元（带侧封）<br><img src="https://img.gejiba.com/images/e65d8b14bf54ac8cd181d9343f9d61b0.png" alt="歌曲列表"><br><font color=red><strong>01</strong></font> 未来図<br><font color=red><strong>02</strong></font> 告白予行練習<br><font color=red><strong>03</strong></font> テレカクシ思春期<br><font color=red><strong>04</strong></font> 初恋の絵本<br><font color=red><strong>05</strong></font> 告白ライバル宣言<br><font color=red><strong>06</strong></font> ヤキモチの答え<br><font color=red><strong>07</strong></font> 病名恋ワズライ<br><font color=red><strong>08</strong></font> イノコリ先生<br><font color=red><strong>09</strong></font> ロリババアに恋をした<br><font color=red><strong>10</strong></font> ラズベリー*モンスター</p>
-</center><link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>五年期的命运</title>
-    <url>/20260526/204938/</url>
-    <content><![CDATA[<h1 id="我的五年计划"><a href="#我的五年计划" class="headerlink" title="我的五年计划"></a>我的五年计划</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>我是中专毕业，七年前（11岁）就开始打基础。</p>
-<h2 id="时间线"><a href="#时间线" class="headerlink" title="时间线"></a>时间线</h2><h3 id="第1、2年（大专阶段）"><a href="#第1、2年（大专阶段）" class="headerlink" title="第1、2年（大专阶段）"></a>第1、2年（大专阶段）</h3><p>学 K8s、Python、Docker、MySQL</p>
-<h3 id="第三年"><a href="#第三年" class="headerlink" title="第三年"></a>第三年</h3><ul>
-<li>准备专升本考试</li>
-</ul>
-<h3 id="本科第一年，总第四年（本科三年级）"><a href="#本科第一年，总第四年（本科三年级）" class="headerlink" title="本科第一年，总第四年（本科三年级）"></a>本科第一年，总第四年（本科三年级）</h3><ul>
-<li>开始找实习（专升本后就找）</li>
-</ul>
-<h3 id="本科第二年，总第五年（本科四年级）"><a href="#本科第二年，总第五年（本科四年级）" class="headerlink" title="本科第二年，总第五年（本科四年级）"></a>本科第二年，总第五年（本科四年级）</h3><ul>
-<li>准备毕业论文</li>
-</ul>
-<h2 id="备选方案"><a href="#备选方案" class="headerlink" title="备选方案"></a>备选方案</h2><ul>
-<li>如果发现学的不好，能力不佳：考研</li>
-<li>如果专升本没考上：直接工作（放弃高薪路线，寻求生存），或通过自考&#x2F;成人&#x2F;国开考上非全本科，然后再考研（必须考研究生，非全本科求职没用）</li>
-</ul>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
-<li>单招完（3月到9月大专开学前）准备好计划</li>
-<li>不要浪费太多时间在社团、竞赛、学校的活动上</li>
-<li>如果要走开发岗，实习前后还要抽空刷LeetCode</li>
-</ul>
-<h2 id="现实"><a href="#现实" class="headerlink" title="现实"></a>现实</h2><p>我要放弃青春，我想哭</p>
-<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>无需 U 盘给 MacBook 电脑安装 Arch Linux</title>
@@ -1198,92 +1172,9 @@ Windows 11      std / VMware
 <link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>珊瑚宫心海养成指南</title>
-    <url>/20220915/233651/</url>
-    <content><![CDATA[<p><font  face="宋体">献给各位抽到心海的同学们~</font><br><font  face="宋体"><br><img src="https://img.gejiba.com/images/9b0eb764a0ac82311a641c0c879ec1ec.jpg"><br><img src="https://img.gejiba.com/images/32d21d0e305c9d5a21a56fb8dc992737.gif"></p>
-<h2 id="圣遗物"><a href="#圣遗物" class="headerlink" title="圣遗物"></a>圣遗物</h2><p>建议使用<font face="宋体" color=#9393FF><strong>海</font><font  face="宋体" color=#FF60AF>染</font><font face="宋体" color=#46A3FF>四件套</strong></font>。<br>双爆<font face="宋体" color=red><strong>越少越好，不要堆双爆</strong></font>。</p>
-<h3 id="词条"><a href="#词条" class="headerlink" title="词条"></a>词条</h3><p><font  face="宋体">生之花：<font face="宋体" color=red><strong>生命值</strong></font><br><img src="https://img.gejiba.com/images/07ad11abca89d87bd1ae38612e54cbe4.jpg"><br>死之羽：<font face="宋体" color=red><strong>攻击力</strong></font><br><img src="https://img.gejiba.com/images/ea4acec0d7fd5b0ff0bb789fb965d28e.jpg"><br>理之冠：<font color=red><strong>治疗加成</strong></font>（可以使用生命）<br><img src="https://img.gejiba.com/images/6865e4d0d785f80d26c9b51409787372.jpg"><br>时之沙：<font color=red><strong>生命值</strong></font><br><img src="https://img.gejiba.com/images/d7763d67dab5e0bc3a78c0f63c197824.jpg"><br>空之杯：<font color=red><strong>水元素伤害加成</strong></font><br><img src="https://img.gejiba.com/images/989b021bb7fa09b6cfa7cf591337f2dd.jpg"><br></font></p>
-<h2 id="武器"><a href="#武器" class="headerlink" title="武器"></a>武器</h2><p>使用<font face="宋体" color=#CA8EC2><strong>试作金铂</strong></font>即可。如果追求更高可以抽取<font color=#FFD306><strong>不灭月华</strong></font>。</p>
-<h2 id="命座"><a href="#命座" class="headerlink" title="命座"></a>命座</h2><p>零命即可，一般没必要抽取命座。</p>
-<h2 id="组队"><a href="#组队" class="headerlink" title="组队"></a>组队</h2><p>可以放进<b>“神鹤万心”</b>配合打永冻流：<br><font color=#FFD306><strong>神里绫华</strong></font>、<font color=#FFD306><strong>珊瑚宫心海</strong></font>、<font color=#FFD306><strong>申鹤</strong></font>、<font color=#FFD306><strong>枫原万叶</strong></font>。</p>
-<p><font face="宋体">还有心海武装队：</font><br><font face="宋体" color=#FFD306><strong>珊瑚宫心海</strong></font>、<font face="宋体" color=#CA8EC2><strong>菲谢尔</strong></font>、<font face="宋体" color=#CA8EC2><strong>北斗</strong></font>、<font face="宋体" color=#CA8EC2><strong>行秋</strong></font>。<br><font face="宋体" color=red>心海武装队和砂糖武装队不一样的是，心海武装队可以随意搭配后三位角色。</font><br></font></p>
-<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>白洋淀公交乘坐体验</title>
-    <url>/20220821/011817/</url>
-    <content><![CDATA[<h1 id="线路走向"><a href="#线路走向" class="headerlink" title="线路走向"></a>线路走向</h1><p>2022 年 8 月 20 日，沧州市任丘市新开到白洋淀李广村<font color=red>（现归雄安新区保定市雄县管辖）</font>的公交：308 路。以下是线路走向。</p>
-<h3 id="308-路-代河枢纽站-李广村"><a href="#308-路-代河枢纽站-李广村" class="headerlink" title="308 路 代河枢纽站 - 李广村"></a>308 路 代河枢纽站 - 李广村</h3><p><font color=green>代河枢纽站-西黄垒村西-于村路口<font color=red>(106国道)</font>-杜家营村-前塔村-后塔村-鄚州镇政府-鄚州镇中心卫生院-南阁村-东七里庄-中七里庄-西七里庄-生紫码头-大口子码头-李广村南-李广村</font><br><img src="https://img.gejiba.com/images/03eb9f97595c40fdcc4b32a1dd089d9b.png"></p>
-<h1 id="乘车日志"><a href="#乘车日志" class="headerlink" title="乘车日志"></a>乘车日志</h1><p>20号下午一点半从市区乘坐202路公交（任丘市客运西站-代河枢纽站）到达北代河。<br><img src="https://img.gejiba.com/images/0b4afc34f40d79694614063114824073.jpg"><br>小歇息后。一点四十308路开始行走。车内座子还是很新的，支持刷卡和刷码。<br><img src="https://img.gejiba.com/images/caabb0a863887deefa35a70dcdfde4b2.jpg"><br>今天天空很好看啊…<br>车子运行还是很快的，最高速度大概 40 km&#x2F;h。噪音蛮大的。<br>过了于村路口就基本出了任丘界了，驶入鄚州镇。<br><img src="https://img.gejiba.com/images/4c294fd8d37c149493ac12bb8e4efb89.jpg"><br>驾驶到千里堤路的时候，就可以看到白洋淀的河流了。<br>这里有几个旅游码头，308路基本都设置了站点。<br>人还挺多的，比较热闹。<br>然后就到了李广村，本车的终点站。<br><img src="https://img.gejiba.com/images/38e1a10c805be98b163dad05b4c93ab9.jpg"><br>李广村离白洋淀河流还算是挺近的，我在这里拍了一些照片。<br><img src="https://img.gejiba.com/images/3fc817b205738ced7dd3ce1e378a5447.jpg"><br><img src="https://img.gejiba.com/images/bd0f431dfabddf5fd30d250932523d59.jpg"><br><img src="https://img.gejiba.com/images/b1b5d6fb64e809b6c4b3acc160c97807.png" alt="李广村在白洋淀的位置"><br>在近距离观察时，录了一小段视频。<font color=red></font><br><a href="https://steve372yeyeye.github.io/20220821/011817/480p.mov">点击播放 QuickTime 视频</a></p>
-<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>白洋淀环境很好，即使是在不是景区的乡村小河，也是很美丽的。<br>有一种很自然很清新的感觉。如果是清晨应该会更有感觉。</p>
-<h1 id="经过码头"><a href="#经过码头" class="headerlink" title="经过码头"></a>经过码头</h1><p>308 路在路途中会经过<font color=green>生紫码头</font>和<font color=green>大口子码头</font>。</p>
-<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>让 Mac 电脑也玩上光遇！</title>
-    <url>/20250114/222842/</url>
-    <content><![CDATA[<h1 id="安装光-·-遇国服"><a href="#安装光-·-遇国服" class="headerlink" title="安装光 · 遇国服"></a>安装光 · 遇国服</h1><p>by Sanakaprix  2025-01-15</p>
-<h2 id="处理器是-Apple-M1-及以后的设备"><a href="#处理器是-Apple-M1-及以后的设备" class="headerlink" title="处理器是 Apple M1 及以后的设备"></a>处理器是 Apple M1 及以后的设备</h2><h3 id="下载-iPA"><a href="#下载-iPA" class="headerlink" title="下载 iPA"></a>下载 iPA</h3><p>在下载之前，请先在设置-“隐私与安全性”-“允许以下位置的应用程序”单选框改成 App Store 和被认可的开发者：<br><img src="https://s1.imagehub.cc/images/2025/01/15/9d5b41323a439c1502256f7de10db681.png"><br>设置完成后在浏览器打开 <a href="https://decrypt.day/">https://decrypt.day</a> 这个网站：<br><img src="https://s1.imagehub.cc/images/2025/01/15/de2ef63f5bd4e3cdd79a3f7293c9a232.png"><br>搜索“光·遇”：<br><img src="https://s1.imagehub.cc/images/2025/01/15/abf2c34dd4763f78cedcb30a61a4485e.png"><br>点击下载：<br><img src="https://s1.imagehub.cc/images/2025/01/15/b952b53dac09245f881459db710c0ee3.jpg"><br>点击第二个链接（OneDrive 下载）：<br><img src="https://s1.imagehub.cc/images/2025/01/15/6ce7063a25f4cd3e9da30225057c14a0.png"><br>获取下载链接后下载，等待下载完成：<br><img src="https://s1.imagehub.cc/images/2025/01/15/545ebabe4d167a12de63a32c4236a733.png"></p>
-<h3 id="安装《光-·-遇》"><a href="#安装《光-·-遇》" class="headerlink" title="安装《光 · 遇》"></a>安装《光 · 遇》</h3><p>下载完成后，前往 playcover.io 网站，点击下载按钮：<br><img src="https://s1.imagehub.cc/images/2025/01/15/b1bfce3f81bbc7311ad3fb615e32c300.png"><br>选择 Latest 版本，然后安装 PlayCover 程序：<br><img src="https://s1.imagehub.cc/images/2025/01/15/94cd8e9506f3d74f90fe0195a7e92bc2.png"><br>第一次打开软件应该是空空如也的状态（我这里已经安装了）：<br><img src="https://s1.imagehub.cc/images/2025/01/15/a767dbe45b2bf5d59438e93e67953cb0.png"><br><img src="https://s1.imagehub.cc/images/2025/01/15/a2bdd984ff903a125f2dad32e328fed5.jpg"><br>右键打开光遇设置，然后一定要完全按照我这样设置，不然可能闪退：<br><img src="https://s1.imagehub.cc/images/2025/01/15/fa1e53cf02b1aeb12f4b63b8e4c68a65.jpg"><br><img src="https://s1.imagehub.cc/images/2025/01/15/172eaddd8b6fd55deeba06b1546c8fbf.png"><br><img src="https://s1.imagehub.cc/images/2025/01/15/ba86111ffa85ba0c2ae1c6e7c3c80c39.jpg"><br><img src="https://s1.imagehub.cc/images/2025/01/15/e024e949577b5e91c0c95534bcd08425.png"><br><img src="https://s1.imagehub.cc/images/2025/01/15/aba5f5da790f25394b3ab865aa460e49.jpg"><br>改好了之后，点击“好”，双击图标启动游戏试一下。<br>如果还闪退的话，可以试试以下方法：<br>按下 ⌘ Command + 空格键，输入 Terminal 打开终端：<br>输入以下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo codesign --force --deep --sign - </span><br></pre></td></tr></table></figure>
-<p>然后在 PlayCover 里右键选择“在 Finder 里查看”：<br><img src="https://s1.imagehub.cc/images/2025/01/15/82973f85fa93751e7259d00b8157c9e7.jpg"><br>然后将光遇的包体拖到终端里，就像这样：<br><img src="https://s1.imagehub.cc/images/2025/01/15/d1397b3de877b044752b45d3804733a6.jpg"><br>按下回车键执行，输入你电脑用户的密码（密码不显示盲敲就行）：<br><img src="https://s1.imagehub.cc/images/2025/01/15/d01879b77daaeb0e6b797f695f89b881.png"><br>等待执行完成后，再打开光遇试试应该就能进了。<br><img src="https://s1.imagehub.cc/images/2025/01/15/58bf5575642c95df3cd4ba66931fb091.png"><br><img src="https://s1.imagehub.cc/images/2025/01/15/0c0ea645b488ca4310724b42d55330cb.png"><br><strong>感觉用鼠标玩的话特别难受，建议用手柄玩</strong></p>
-<h2 id="处理器是-Intel-的设备"><a href="#处理器是-Intel-的设备" class="headerlink" title="处理器是 Intel 的设备"></a>处理器是 Intel 的设备</h2><p>请使用 Boot Camp 安装 Windows，安装前请先备份你的东西。<br>然后在 <a href="https://sky.163.com/index.html">光遇官网</a> <a href="https://sky.163.com/index.html">https://sky.163.com/index.html</a> 下载光遇电脑版就可以了<br><img src="https://s1.imagehub.cc/images/2025/01/15/ef2e8a6ce4ecf5d1389c3a7d359f605d.png"></p>
-<h1 id="安装光-·-遇国际服（TGC）"><a href="#安装光-·-遇国际服（TGC）" class="headerlink" title="安装光 · 遇国际服（TGC）"></a>安装光 · 遇国际服（TGC）</h1><h2 id="处理器是-Apple-M1-及以后的设备-1"><a href="#处理器是-Apple-M1-及以后的设备-1" class="headerlink" title="处理器是 Apple M1 及以后的设备"></a>处理器是 Apple M1 及以后的设备</h2><p>打开 App Store，退出登录国区账号（如果你现在登入的是外区账号请忽略）<br><img src="https://pic1.imgdb.cn/item/6787042bd0e0a243d4f45676.png"><br>登录外区账号<br><img src="https://pic1.imgdb.cn/item/6787049cd0e0a243d4f4567b.png"><br>在搜索框搜索“Sky”或光遇都可以，直接下载：<br><img src="https://pic1.imgdb.cn/item/678704e1d0e0a243d4f4567c.png"></p>
-<h2 id="处理器是-Intel-的设备-1"><a href="#处理器是-Intel-的设备-1" class="headerlink" title="处理器是 Intel 的设备"></a>处理器是 Intel 的设备</h2><p>请使用 Boot Camp 安装 Windows，安装前请先备份你的东西。<br>然后安装 Steam，在 Steam 里安装光遇（请自行查找光遇 Steam 入库教程）：<br><img src="https://pic1.imgdb.cn/item/67870581d0e0a243d4f45681.png"><br><strong>祝你在光 · 遇的世界里玩的开心！</strong></p>
-<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>光！遇！</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>K8s 计划学习</title>
-    <url>/20260522/153514/</url>
-    <content><![CDATA[<h1 id="为什么需要-K8s？"><a href="#为什么需要-K8s？" class="headerlink" title="为什么需要 K8s？"></a>为什么需要 K8s？</h1><p>K8s 是一个容器编排平台，用于在集群中部署、扩展和管理容器化应用。</p>
-<ul>
-<li>最早的时候，没有虚拟机也没有容器，所有应用都是直接运行在物理机上；或者让一堆应用程序运行在不同目录里…不仅环境容易冲突，而且当宿主机死了，所有服务立刻中断。还得人（传统运维）来修，一修就是好久好久。</li>
-<li>后来 KVM 虚拟化出现了。一个服务器相当于(Node)可以运行多个虚拟机，一个虚拟机类似于(Pod，最小单元)，只运行一个应用程序实例。环境冲突的问题是解决了，但是太慢了太重了。启动一次得30s-1m甚至更久，一个Pod需要数GB，而且Pod完全有可能因为虚拟机操作系统的原因停止服务。</li>
-<li>最后，K8s 出现了，Pod 被缩小成了一个或多个容器，其虚拟机从本不应该的Pod层（最小单元层）变成了Node层。</li>
-<li>K8s 还能自愈，完全不怕一个Pod死了全链路断裂。可以快速恢复，Node死了也不怕。不需要人类定位、修复。</li>
-</ul>
-<h1 id="基础学习"><a href="#基础学习" class="headerlink" title="基础学习"></a>基础学习</h1><ul>
-<li>Pod：最小单元，是一个或多个容器。多容器一般是sidecar模式，目的可能是这么多个容器是<strong>模块化</strong>服务，耦合紧密，不能解藕。所以将多个容器组合成一个Pod。<br>多容器特点：<ul>
-<li>共享同一个网络命名空间（可以本地回环）</li>
-<li>共享存储卷</li>
-<li>生命周期一致（创建、销毁）</li>
-</ul>
-</li>
-<li>Node：节点，若干个Pods的容器运行在一台机器上，一般是一台机器属于Node，不能将多台机器拼成一个Node。</li>
-<li>Service：服务，相当于中介，在Pod销毁后，新的Pod不会继承 IP 地址等信息，Service会将请求分发给其他Pod。不至于因为Pod销毁，导致链路断裂。</li>
-<li>Cluster：集群，多个Node(节点；单机)组成一个集群，每个Node上可以运行多个Pod。当一个Node死了，其他Node上的Pod会继续运行。不会导致Pod中断。集群各个节点的生命周期都有 Control Plane(控制层) <strong>(不属于普通Node节点，运行在无业务Pod的节点上)</strong> 管理着。</li>
-<li>一个从上层到底层的架构如下：</li>
-</ul>
-<center>
-
-<pre class="mermaid">graph TD
-    A[应用程序代码] --> B[容器镜像<br>（打包好的运行环境）]
-    B --> C[Pod<br>K8s最小调度单元<br>包含一个或多个容器]
-    C --> D[Node节点<br>Pod运行的地方]
-    
-    D --> E1[物理机<br>裸金属服务器]
-    D --> E2[虚拟机<br>云主机/VPS]
-    
-    E1 --> F[服务器集群<br>多个Node组成]
-    E2 --> F
-    
-    F --> G[物理硬件<br>CPU/内存/硬盘/网卡]</pre>
-
-</center>
-
-<ul>
-<li>ConfigMap：配置映射，用于将配置数据（如环境变量、配置文件等）从代码中分离出来，这样可以方便地修改配置，而不需要重新编译应用程序。</li>
-<li>Secret：密钥，用于存储敏感信息（如密码、API密钥等），并将其加密存储在K8s集群中。</li>
-<li>Volume：存储卷，用于将主机上的目录挂载到容器中，使数据不丢失。容器都是只读无状态的。Volume使其有状态。</li>
-</ul>
-<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>K8s</tag>
-        <tag>Container</tag>
-      </tags>
+    <title>疑病从无</title>
+    <url>/20260719/051928/</url>
+    <content><![CDATA[<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>朝鲜故事</title>
@@ -1319,6 +1210,300 @@ Windows 11      std / VMware
 <p>虽然李言成深知，这段生活只是短暂的喘息，他最终还要回到朝鲜，但他依然感恩上帝赐予的这一段希望。他珍惜每一天，努力为餐厅的客人做出最美味的菜肴。  </p>
 <p>在餐厅忙碌的厨房里，李言成时常望着窗外熙熙攘攘的街景，喃喃自语：“这三年，已经是我命运中最好的恩赐了。”他坚信，即便命运无情，但只要有一丝光亮，就值得他去追逐与珍惜。  </p>
 <p>标题：李言成的脱北之路后续<br>在韩国呆了四五年后，朝鲜方面把他的家人都逮捕了起来，并且使用各种手段想要把他绑架回朝鲜。在2013年5月5日中午，李言成感到阵阵不安。突然有个人来找他，说：你家里人被朝鲜绑架了，你不回去朝鲜他们就杀你全家。李言成哭了，他来之不易的美好生活就要结束了？他的家人那么惨。为什么自己逃脱别人要受罚。他实在受不了自己的家人被如此欺负，为了家人的安全，他辞掉了韩国的工作还是回到了朝鲜。回到朝鲜后，他的世界变成灰白色了。心情低落的接受朝鲜的采访和审判。他在朝鲜的电视里出镜了。他的精神十分空虚，他被迫说“我在韩国过得一点也不好！每天都想死的感觉”。朝鲜方面觉得他还是比较忠诚的，劳改了几个月就把它放了。李言成不知道的是，他这一回来，就再也出不去了。2019年6月7日，李言成的朋友跟他说“喂！你知道吗？中国现在买火车票得用身份证护照了。不能用票了”“什么？！！”，李言成再一次痛哭。虽然内心早就麻木了但是听见这种事还是很伤心，这下应该是再也出不去朝鲜了。他很难过。他在朝鲜的生活很痛苦，每天只有3个小时电力支持。水也是得去江边打水，而且房间也没有暖气，每年冬天都差点被冻死。他跪下了。他这么多年来一直很后悔当年为什么要回来。但是后悔也没有用了，他回不去向往的世界了。2020年，因为疫情，朝鲜封了海关。出去的希望更加渺茫。但是，就是这么巧。因为他在外面表现的很好，将军奖励他出国学习去朝鲜餐厅，他灰色的世界突然有了颜色！他开心的蹦了起来。这次，他回到了中国。在丹东的一家朝鲜餐厅里当厨师。“这么多年没去中国了，中国变化很大嘛。而我们的朝鲜。。。也算是一年比一年好了吧！起码没倒退唉”他感叹道。虽然这次他在中国的时间只有3年，但是这3年就是上帝给他的又一次希望，现在他在朝鲜餐厅里每天都快乐的活着。因为在中国，他起码饿不死了。</p>
+<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>珊瑚宫心海养成指南</title>
+    <url>/20220915/233651/</url>
+    <content><![CDATA[<p><font  face="宋体">献给各位抽到心海的同学们~</font><br><font  face="宋体"><br><img src="https://img.gejiba.com/images/9b0eb764a0ac82311a641c0c879ec1ec.jpg"><br><img src="https://img.gejiba.com/images/32d21d0e305c9d5a21a56fb8dc992737.gif"></p>
+<h2 id="圣遗物"><a href="#圣遗物" class="headerlink" title="圣遗物"></a>圣遗物</h2><p>建议使用<font face="宋体" color=#9393FF><strong>海</font><font  face="宋体" color=#FF60AF>染</font><font face="宋体" color=#46A3FF>四件套</strong></font>。<br>双爆<font face="宋体" color=red><strong>越少越好，不要堆双爆</strong></font>。</p>
+<h3 id="词条"><a href="#词条" class="headerlink" title="词条"></a>词条</h3><p><font  face="宋体">生之花：<font face="宋体" color=red><strong>生命值</strong></font><br><img src="https://img.gejiba.com/images/07ad11abca89d87bd1ae38612e54cbe4.jpg"><br>死之羽：<font face="宋体" color=red><strong>攻击力</strong></font><br><img src="https://img.gejiba.com/images/ea4acec0d7fd5b0ff0bb789fb965d28e.jpg"><br>理之冠：<font color=red><strong>治疗加成</strong></font>（可以使用生命）<br><img src="https://img.gejiba.com/images/6865e4d0d785f80d26c9b51409787372.jpg"><br>时之沙：<font color=red><strong>生命值</strong></font><br><img src="https://img.gejiba.com/images/d7763d67dab5e0bc3a78c0f63c197824.jpg"><br>空之杯：<font color=red><strong>水元素伤害加成</strong></font><br><img src="https://img.gejiba.com/images/989b021bb7fa09b6cfa7cf591337f2dd.jpg"><br></font></p>
+<h2 id="武器"><a href="#武器" class="headerlink" title="武器"></a>武器</h2><p>使用<font face="宋体" color=#CA8EC2><strong>试作金铂</strong></font>即可。如果追求更高可以抽取<font color=#FFD306><strong>不灭月华</strong></font>。</p>
+<h2 id="命座"><a href="#命座" class="headerlink" title="命座"></a>命座</h2><p>零命即可，一般没必要抽取命座。</p>
+<h2 id="组队"><a href="#组队" class="headerlink" title="组队"></a>组队</h2><p>可以放进<b>“神鹤万心”</b>配合打永冻流：<br><font color=#FFD306><strong>神里绫华</strong></font>、<font color=#FFD306><strong>珊瑚宫心海</strong></font>、<font color=#FFD306><strong>申鹤</strong></font>、<font color=#FFD306><strong>枫原万叶</strong></font>。</p>
+<p><font face="宋体">还有心海武装队：</font><br><font face="宋体" color=#FFD306><strong>珊瑚宫心海</strong></font>、<font face="宋体" color=#CA8EC2><strong>菲谢尔</strong></font>、<font face="宋体" color=#CA8EC2><strong>北斗</strong></font>、<font face="宋体" color=#CA8EC2><strong>行秋</strong></font>。<br><font face="宋体" color=red>心海武装队和砂糖武装队不一样的是，心海武装队可以随意搭配后三位角色。</font><br></font></p>
+<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>白洋淀公交乘坐体验</title>
+    <url>/20220821/011817/</url>
+    <content><![CDATA[<h1 id="线路走向"><a href="#线路走向" class="headerlink" title="线路走向"></a>线路走向</h1><p>2022 年 8 月 20 日，沧州市任丘市新开到白洋淀李广村<font color=red>（现归雄安新区保定市雄县管辖）</font>的公交：308 路。以下是线路走向。</p>
+<h3 id="308-路-代河枢纽站-李广村"><a href="#308-路-代河枢纽站-李广村" class="headerlink" title="308 路 代河枢纽站 - 李广村"></a>308 路 代河枢纽站 - 李广村</h3><p><font color=green>代河枢纽站-西黄垒村西-于村路口<font color=red>(106国道)</font>-杜家营村-前塔村-后塔村-鄚州镇政府-鄚州镇中心卫生院-南阁村-东七里庄-中七里庄-西七里庄-生紫码头-大口子码头-李广村南-李广村</font><br><img src="https://img.gejiba.com/images/03eb9f97595c40fdcc4b32a1dd089d9b.png"></p>
+<h1 id="乘车日志"><a href="#乘车日志" class="headerlink" title="乘车日志"></a>乘车日志</h1><p>20号下午一点半从市区乘坐202路公交（任丘市客运西站-代河枢纽站）到达北代河。<br><img src="https://img.gejiba.com/images/0b4afc34f40d79694614063114824073.jpg"><br>小歇息后。一点四十308路开始行走。车内座子还是很新的，支持刷卡和刷码。<br><img src="https://img.gejiba.com/images/caabb0a863887deefa35a70dcdfde4b2.jpg"><br>今天天空很好看啊…<br>车子运行还是很快的，最高速度大概 40 km&#x2F;h。噪音蛮大的。<br>过了于村路口就基本出了任丘界了，驶入鄚州镇。<br><img src="https://img.gejiba.com/images/4c294fd8d37c149493ac12bb8e4efb89.jpg"><br>驾驶到千里堤路的时候，就可以看到白洋淀的河流了。<br>这里有几个旅游码头，308路基本都设置了站点。<br>人还挺多的，比较热闹。<br>然后就到了李广村，本车的终点站。<br><img src="https://img.gejiba.com/images/38e1a10c805be98b163dad05b4c93ab9.jpg"><br>李广村离白洋淀河流还算是挺近的，我在这里拍了一些照片。<br><img src="https://img.gejiba.com/images/3fc817b205738ced7dd3ce1e378a5447.jpg"><br><img src="https://img.gejiba.com/images/bd0f431dfabddf5fd30d250932523d59.jpg"><br><img src="https://img.gejiba.com/images/b1b5d6fb64e809b6c4b3acc160c97807.png" alt="李广村在白洋淀的位置"><br>在近距离观察时，录了一小段视频。<font color=red></font><br><a href="https://steve372yeyeye.github.io/20220821/011817/480p.mov">点击播放 QuickTime 视频</a></p>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>白洋淀环境很好，即使是在不是景区的乡村小河，也是很美丽的。<br>有一种很自然很清新的感觉。如果是清晨应该会更有感觉。</p>
+<h1 id="经过码头"><a href="#经过码头" class="headerlink" title="经过码头"></a>经过码头</h1><p>308 路在路途中会经过<font color=green>生紫码头</font>和<font color=green>大口子码头</font>。</p>
+<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>计算机基础操作</title>
+    <url>/20220910/083627/</url>
+    <content><![CDATA[<p>为了让各位用户都能会用 Windows，特此写下该教程。<br>Windows 是微软公司于 1985 年发布的电脑操作系统，最新版是 Windows 11(2021 年发布)。<br>这里我们都以<font color=#66CCF> Windows 8.1 With Update</font> 版本为例子。<br><font face="宋体"></p>
+<h1 id="认识界面"><a href="#认识界面" class="headerlink" title="认识界面"></a>认识界面</h1><p>Windows 8.1 的主界面长这样：<br><img src="https://img.gejiba.com/images/1652f5ddeefb13492b6f1f4ed881a635.png"><br>点击“开始按钮”后，出现以下界面：<br><img src="https://img.gejiba.com/images/2caaee3f09a6e7e296efa2521203587e.png"><br>可以看到很多功能。这就是 Windows 8 新增的磁贴界面。<br>我们点击网络图标，可以列出电脑下的所有网络。<br><img src="https://img.gejiba.com/images/70c8e2328d4c6b79ed980dd38b6fe285.png"><br>台式机我们都用有线网络，也就是插上网线后使用网络。如果需要连接 Wi-Fi，请加装无线网卡。然后点击网络图标，输入您家网络密码即可。<br>点击声音图标，可以调节计算机的声音。<br><img src="https://img.gejiba.com/images/c1d3edde8d66572bd8e3119b58d2885e.png"><br>也可以识别到计算机使用什么输出的声音。我这里是有线耳机所以识别到耳机。<br>打开“这台电脑”可以查阅到电脑的所有文件夹。<br><img src="https://img.gejiba.com/images/ea386a6e79ccfdcf2e6904ded66596b7.png"><br>如果要添加 FTP 或者 SAMBA 连接，请右键点击“添加一个网络位置”。<br><img src="https://img.gejiba.com/images/e5e354b6eb7d798c69375f878a0c0ad8.png"><br>您也可以通过“这台电脑”为磁盘加密、格式化、和复制整块盘。<br><img src="https://img.gejiba.com/images/f2b3507bb9fdad1a945c9b7ff7cf5292.png"><br>如果是移动硬盘、U 盘等设备，也可以手动打开“自动播放”，如图：<br><img src="https://img.gejiba.com/images/5d5310518f51aa984ea5a1bc74a9f487.png"><br><img src="https://img.gejiba.com/images/ef3f92b34135e76276dea95e5416d3a6.png"></p>
+<h1 id="鼠标操作"><a href="#鼠标操作" class="headerlink" title="鼠标操作"></a>鼠标操作</h1><p>鼠标分为左键、中键和右键。您需要根据软件的操作控制鼠标。<br><img src="https://img.gejiba.com/images/24ae58dad5ca57dd325db98300f18090.png"></p>
+<h1 id="键盘操作"><a href="#键盘操作" class="headerlink" title="键盘操作"></a>键盘操作</h1><h2 id="普通-PC"><a href="#普通-PC" class="headerlink" title="普通 PC"></a>普通 PC</h2><p>Windows 也十分依赖键盘。键盘长这样：<br><img src="https://img.gejiba.com/images/e94205463ae97810d7fdaf409a93fd61.png"></p>
+<h3 id="Ctrl-键"><a href="#Ctrl-键" class="headerlink" title="Ctrl 键"></a>Ctrl 键</h3><p>Ctrl 键就是控制键(Control)，用于控制 Windows 及程序的各种操作。</p>
+<h3 id="Alt-键"><a href="#Alt-键" class="headerlink" title="Alt 键"></a>Alt 键</h3><p>Alt 键是更换(Alternate)的意思，点击 Alt + Tab 键后可以在打开的项目之间切换。</p>
+<h3 id="Shift-键"><a href="#Shift-键" class="headerlink" title="Shift 键"></a>Shift 键</h3><p>而 Shift 键是上档转换键。常用于输入法中英文转换。</p>
+<h3 id="Enter-键"><a href="#Enter-键" class="headerlink" title="Enter 键"></a>Enter 键</h3><p>Enter 键是回车键。在各个软件的功能都不一样，例如，在 Microsoft Word 中会换行，而在腾讯 QQ 中会发送消息。</p>
+<h3 id="Windows-键"><a href="#Windows-键" class="headerlink" title="Windows 键"></a>Windows 键</h3><p>那个 Windows 徽标按键就是 Windows 键。在 Windows Vista 之前的系统（例如 Windows XP）中，Windows 键的功能不多。直到 Windows Vista 之后才开始增加新的内容。比如</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Windows+数字1、2、3、4、5、6、7、8、9、0 分别打开你的任务栏上面的快捷启动栏上面的第一个到第十个图标所对应的快捷方式。</span><br><span class="line">Windows+D 最小化所有窗口，再按一次恢复所有窗口</span><br><span class="line">Windows+E 开启资源管理器(频繁按会资源占尽而死机)</span><br><span class="line">Windows+F 打开搜索窗口</span><br><span class="line">Windows+G 多次按下就会依次切换侧边栏上面的小工具(Gadgets)</span><br><span class="line">Windows+L 锁定当前计算机用户</span><br><span class="line">Windows+R 开启运行对话框 (非常常用)</span><br><span class="line">Windows+T 激活当前任务栏上面的窗口，多次按下会依次定位到下一个窗体</span><br><span class="line">Windows+T Shift 反方向定位</span><br><span class="line">Windows+U 开启辅助工具管理器</span><br><span class="line">Windows+X 开启Windows移动中心</span><br><span class="line">Windows+TAB 开启 Flip 3D窗口切换</span><br><span class="line">Windows+TAB Ctrl 用键盘控制 Flip 3D窗口切换</span><br><span class="line">Windows+Break(就是Pause——Break键) 开启Windows Vista系统属性窗口</span><br></pre></td></tr></table></figure>
+<h3 id="Backspace-键"><a href="#Backspace-键" class="headerlink" title="Backspace 键"></a>Backspace 键</h3><p>Backspace 键即退格键，相当于您手机的这个按钮：<br><img src="https://img.gejiba.com/images/c8f0d055e9dfc465b17d0ce2ee45bc36.png"></p>
+<h2 id="苹果电脑（Mac）"><a href="#苹果电脑（Mac）" class="headerlink" title="苹果电脑（Mac）"></a>苹果电脑（Mac）</h2><p>因为 Mac 机生来就是为了 macOS 服务，所以键位略有不同。<br><img src="https://img.gejiba.com/images/740924cf74818fe307c4021b64d92673.png"><br>以下是 Mac 键盘映射到 Windows 的位置。</p>
+<h3 id="Option-键"><a href="#Option-键" class="headerlink" title="Option 键"></a>Option 键</h3><p>映射在 Windows 下的 Alt 键</p>
+<h3 id="Control-键"><a href="#Control-键" class="headerlink" title="Control 键"></a>Control 键</h3><p>映射在 Windows 下的 Ctrl 键</p>
+<h3 id="Command-键"><a href="#Command-键" class="headerlink" title="Command 键"></a>Command 键</h3><p>映射在 Windows 下的 Windows 键</p>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>因为 Mac 部分操作由 Command 键来完成，如果你用 macOS 习惯了，重装 Windows 后会很不适应。</p>
+<h1 id="上网"><a href="#上网" class="headerlink" title="上网"></a>上网</h1><h2 id="连接到网络。"><a href="#连接到网络。" class="headerlink" title="连接到网络。"></a>连接到网络。</h2><p>由上面的消息可得知，我们点击“网络”图标即可查看电脑是否联网。<br>但是，我们如果没有安装 Wi-Fi 网卡，那么该如何上网？</p>
+<h3 id="有线上网方法"><a href="#有线上网方法" class="headerlink" title="有线上网方法"></a>有线上网方法</h3><p>首先，请自备一个<font color=#66CCF>网线</font>，将网线的一个端插入电脑设备。然后打开电脑控制面板。打开“网络与共享中心”<br><img src="https://img.gejiba.com/images/61f075931cb8ac26067cbfd567ad7f85.png"><br>然后点击“设置新的连接或网络”<br><img src="https://img.gejiba.com/images/a61d6294782fe99c3738d669ac0877ca.png"><br>然后在新弹出的网络窗口中，直接下一步。<br><img src="https://img.gejiba.com/images/67ea71e690e2aae356299499cacc4733.png"><br>这里因为我连接上 互联网 了，所以提示这个，请点击设置新连接。<br><img src="https://img.gejiba.com/images/fe1bda33d3929b53bbf7952a0c981385.png"><br>然后点击宽带上网(PPPoE)<br><img src="https://img.gejiba.com/images/23bb454358d7a97eb544ca86fa3165c3.png"><br>然后输入你<font color=#66CCF> ISP </font>提供给你的用户名和密码，点击“连接”。<br><img src="https://img.gejiba.com/images/70131c1f06e051214b7959d817184584.png"><br>待等连接完成即可。<br>也可以稍后输入用户名和密码。<br><img src="https://img.gejiba.com/images/8fc4e5f052bbe3a16fdd76b144b2685c.png"><br><font color=red>注意：如果是新安装的 Windows 8.1 或 Windows 7 ，他一般不会配备某些设备的以太网卡，所以有线网也无法使用。这时需要安装驱动软件。</font><br>如果需要查看您设备是否存在以太网卡，请查阅任务管理器。<br><img src="https://img.gejiba.com/images/04429d53596fb0e3743180f48887993d.png"></p>
+<h3 id="连接无线网。"><a href="#连接无线网。" class="headerlink" title="连接无线网。"></a>连接无线网。</h3><p>如果您电脑已经有无线网卡了，请确保安装好驱动软件，然后直接点击网络按钮，找到您家 Wi-Fi 网络即可。<br><img src="https://img.gejiba.com/images/9f62ae7d15014e89b9e38146d2e332f9.png"></p>
+<h2 id="上网浏览器更换"><a href="#上网浏览器更换" class="headerlink" title="上网浏览器更换"></a>上网浏览器更换</h2><p>Windows 10 之前的系统只自带一个上网浏览器，名叫 Internet Explorer，这个浏览器已经淘汰了，需要更换。<br>请确保连接好网络后，打开 Internet Explorer，输入 Firefox，来更换浏览器。当然您更换其他浏览器也是可以的，我推荐换成 Edge。<br><img src="https://img.gejiba.com/images/9fc535345f9c88ded9db35eb3ab9f122.png"><br><img src="https://img.gejiba.com/images/57c44802582c9ffdfa7a3b363eba1fef.png"><br>点击下载 Firefox 来安装 Firefox。<br><img src="https://img.gejiba.com/images/363e5121033dbfc948671cd6c01697c0.png"></p>
+<h1 id="安装软件"><a href="#安装软件" class="headerlink" title="安装软件"></a>安装软件</h1><h2 id="上网查找软件"><a href="#上网查找软件" class="headerlink" title="上网查找软件"></a>上网查找软件</h2><p>直接使用上网浏览器搜索你要安装的软件即可。<br><img src="https://img.gejiba.com/images/43f8eeb19effa9d2f91add83168c7c86.png"><br><font color=red>注意！在网上下载的软件鱼龙混杂，非常容易被捆绑，中病毒。</font><br>如果要下载微软 Office 软件，建议使用 MSDN I Tell You 网站。<a href="https://msdn.itellyou.cn">点击进入网站</a><br><img src="https://img.gejiba.com/images/a6ed168084e06062d4a263d87a7b39ab.png"><br><img src="https://img.gejiba.com/images/06a5200304903229bb2b38a2c96ee140.png"><br><img src="https://img.gejiba.com/images/e83b3760a52fd32e20896c4808c0bb03.png"></p>
+<h2 id="软件管家安装软件"><a href="#软件管家安装软件" class="headerlink" title="软件管家安装软件"></a>软件管家安装软件</h2><p>使用上网浏览器先安装<font color=#66CCF> 360 软件管家</font>，然后在软件管家搜索你要安装的软件。</p>
+<h1 id="管理您计算机上的文件"><a href="#管理您计算机上的文件" class="headerlink" title="管理您计算机上的文件"></a>管理您计算机上的文件</h1><p>如果需要管理器您计算机上的软件，请点击“这台电脑”。随便点进一个盘。<br><img src="https://img.gejiba.com/images/ad0a02ed187c07c21ea51d40eb14b5fc.png"><br>这里列出了这盘上面的所有内容。<br>如果要复制一个文件，请在要复制的文件旁点击鼠标右键，然后点击“复制(C)”。<br><img src="https://img.gejiba.com/images/4f205db2d4061a45f27c59dd28a4027c.png"><br>然后前往要复制到的文件夹，然后右键点击“粘贴(P)”。<br><img src="https://img.gejiba.com/images/ea444b06cac589002a3da8bebde66591.png"><br>这样，文件就复制好了。<br>我们只需要移动文件的时候点击“剪切(T)”即可。</p>
+<h1 id="卸载软件"><a href="#卸载软件" class="headerlink" title="卸载软件"></a>卸载软件</h1><p>有时候我们不想要一些软件，这时可以卸载软件。<br>打开 控制面板，然后找到 <font color=#66CCF>程序与功能</font><br><img src="https://img.gejiba.com/images/403509da174a2c1c63628db60d205ad3.png"><br>然后，双击要卸载的软件，跟着软件走即可。<br><img src="https://img.gejiba.com/images/2f06c1f1ee32d3752ed1876222740794.png"><br><img src="https://img.gejiba.com/images/20196f123882172b4f12a00d39411252.png"></p>
+<h1 id="命令提示符"><a href="#命令提示符" class="headerlink" title="命令提示符"></a>命令提示符</h1><p><font color=red>注意！专业人士使用。</font><br>Windows 中的终端叫做命令提示符，我们可以利用终端做很多事情。请先按下 Windows+R 键然后输入 cmd。<br><img src="https://img.gejiba.com/images/8ec9d0d197ae975dc233a799032b0a5a.png"><br>然后会打开一个黑色命令窗口，我们在此输入命令即可。比如我要查看系统版本，输入：<br><img src="https://img.gejiba.com/images/19587c4ac59a01e5359fb3584f29e211.png"><br>就可以查看了。要清屏可以输入 cls。<br></font></p>
+<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>让 Mac 电脑也玩上光遇！</title>
+    <url>/20250114/222842/</url>
+    <content><![CDATA[<h1 id="安装光-·-遇国服"><a href="#安装光-·-遇国服" class="headerlink" title="安装光 · 遇国服"></a>安装光 · 遇国服</h1><p>by Sanakaprix  2025-01-15</p>
+<h2 id="处理器是-Apple-M1-及以后的设备"><a href="#处理器是-Apple-M1-及以后的设备" class="headerlink" title="处理器是 Apple M1 及以后的设备"></a>处理器是 Apple M1 及以后的设备</h2><h3 id="下载-iPA"><a href="#下载-iPA" class="headerlink" title="下载 iPA"></a>下载 iPA</h3><p>在下载之前，请先在设置-“隐私与安全性”-“允许以下位置的应用程序”单选框改成 App Store 和被认可的开发者：<br><img src="https://s1.imagehub.cc/images/2025/01/15/9d5b41323a439c1502256f7de10db681.png"><br>设置完成后在浏览器打开 <a href="https://decrypt.day/">https://decrypt.day</a> 这个网站：<br><img src="https://s1.imagehub.cc/images/2025/01/15/de2ef63f5bd4e3cdd79a3f7293c9a232.png"><br>搜索“光·遇”：<br><img src="https://s1.imagehub.cc/images/2025/01/15/abf2c34dd4763f78cedcb30a61a4485e.png"><br>点击下载：<br><img src="https://s1.imagehub.cc/images/2025/01/15/b952b53dac09245f881459db710c0ee3.jpg"><br>点击第二个链接（OneDrive 下载）：<br><img src="https://s1.imagehub.cc/images/2025/01/15/6ce7063a25f4cd3e9da30225057c14a0.png"><br>获取下载链接后下载，等待下载完成：<br><img src="https://s1.imagehub.cc/images/2025/01/15/545ebabe4d167a12de63a32c4236a733.png"></p>
+<h3 id="安装《光-·-遇》"><a href="#安装《光-·-遇》" class="headerlink" title="安装《光 · 遇》"></a>安装《光 · 遇》</h3><p>下载完成后，前往 playcover.io 网站，点击下载按钮：<br><img src="https://s1.imagehub.cc/images/2025/01/15/b1bfce3f81bbc7311ad3fb615e32c300.png"><br>选择 Latest 版本，然后安装 PlayCover 程序：<br><img src="https://s1.imagehub.cc/images/2025/01/15/94cd8e9506f3d74f90fe0195a7e92bc2.png"><br>第一次打开软件应该是空空如也的状态（我这里已经安装了）：<br><img src="https://s1.imagehub.cc/images/2025/01/15/a767dbe45b2bf5d59438e93e67953cb0.png"><br><img src="https://s1.imagehub.cc/images/2025/01/15/a2bdd984ff903a125f2dad32e328fed5.jpg"><br>右键打开光遇设置，然后一定要完全按照我这样设置，不然可能闪退：<br><img src="https://s1.imagehub.cc/images/2025/01/15/fa1e53cf02b1aeb12f4b63b8e4c68a65.jpg"><br><img src="https://s1.imagehub.cc/images/2025/01/15/172eaddd8b6fd55deeba06b1546c8fbf.png"><br><img src="https://s1.imagehub.cc/images/2025/01/15/ba86111ffa85ba0c2ae1c6e7c3c80c39.jpg"><br><img src="https://s1.imagehub.cc/images/2025/01/15/e024e949577b5e91c0c95534bcd08425.png"><br><img src="https://s1.imagehub.cc/images/2025/01/15/aba5f5da790f25394b3ab865aa460e49.jpg"><br>改好了之后，点击“好”，双击图标启动游戏试一下。<br>如果还闪退的话，可以试试以下方法：<br>按下 ⌘ Command + 空格键，输入 Terminal 打开终端：<br>输入以下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo codesign --force --deep --sign - </span><br></pre></td></tr></table></figure>
+<p>然后在 PlayCover 里右键选择“在 Finder 里查看”：<br><img src="https://s1.imagehub.cc/images/2025/01/15/82973f85fa93751e7259d00b8157c9e7.jpg"><br>然后将光遇的包体拖到终端里，就像这样：<br><img src="https://s1.imagehub.cc/images/2025/01/15/d1397b3de877b044752b45d3804733a6.jpg"><br>按下回车键执行，输入你电脑用户的密码（密码不显示盲敲就行）：<br><img src="https://s1.imagehub.cc/images/2025/01/15/d01879b77daaeb0e6b797f695f89b881.png"><br>等待执行完成后，再打开光遇试试应该就能进了。<br><img src="https://s1.imagehub.cc/images/2025/01/15/58bf5575642c95df3cd4ba66931fb091.png"><br><img src="https://s1.imagehub.cc/images/2025/01/15/0c0ea645b488ca4310724b42d55330cb.png"><br><strong>感觉用鼠标玩的话特别难受，建议用手柄玩</strong></p>
+<h2 id="处理器是-Intel-的设备"><a href="#处理器是-Intel-的设备" class="headerlink" title="处理器是 Intel 的设备"></a>处理器是 Intel 的设备</h2><p>请使用 Boot Camp 安装 Windows，安装前请先备份你的东西。<br>然后在 <a href="https://sky.163.com/index.html">光遇官网</a> <a href="https://sky.163.com/index.html">https://sky.163.com/index.html</a> 下载光遇电脑版就可以了<br><img src="https://s1.imagehub.cc/images/2025/01/15/ef2e8a6ce4ecf5d1389c3a7d359f605d.png"></p>
+<h1 id="安装光-·-遇国际服（TGC）"><a href="#安装光-·-遇国际服（TGC）" class="headerlink" title="安装光 · 遇国际服（TGC）"></a>安装光 · 遇国际服（TGC）</h1><h2 id="处理器是-Apple-M1-及以后的设备-1"><a href="#处理器是-Apple-M1-及以后的设备-1" class="headerlink" title="处理器是 Apple M1 及以后的设备"></a>处理器是 Apple M1 及以后的设备</h2><p>打开 App Store，退出登录国区账号（如果你现在登入的是外区账号请忽略）<br><img src="https://pic1.imgdb.cn/item/6787042bd0e0a243d4f45676.png"><br>登录外区账号<br><img src="https://pic1.imgdb.cn/item/6787049cd0e0a243d4f4567b.png"><br>在搜索框搜索“Sky”或光遇都可以，直接下载：<br><img src="https://pic1.imgdb.cn/item/678704e1d0e0a243d4f4567c.png"></p>
+<h2 id="处理器是-Intel-的设备-1"><a href="#处理器是-Intel-的设备-1" class="headerlink" title="处理器是 Intel 的设备"></a>处理器是 Intel 的设备</h2><p>请使用 Boot Camp 安装 Windows，安装前请先备份你的东西。<br>然后安装 Steam，在 Steam 里安装光遇（请自行查找光遇 Steam 入库教程）：<br><img src="https://pic1.imgdb.cn/item/67870581d0e0a243d4f45681.png"><br><strong>祝你在光 · 遇的世界里玩的开心！</strong></p>
+<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>光！遇！</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>逃亡Intel Mac</title>
+    <url>/20260403/015931/</url>
+    <content><![CDATA[<p>（虚构情景）</p>
+<h1 id="苏醒"><a href="#苏醒" class="headerlink" title="苏醒"></a>苏醒</h1><p>我一直是一个苹果粉丝。在很久很久之前，那时我还在用 iPhone 4，还不认识 Mac。第一次认识是在王自如的 iMac 开箱视频。那精致的模样，不像是当代的产物，像是未来科幻片里的模样。小时候的我幻想着抚摸着，希望有生之年，能看见一次Mac…Mac 成为了我魂牵梦萦的存在。<br>我日夜幻想着在星巴克，展开笔记本盖子。在深邃的夜晚里，世界万物都熄灭了，只有MacBook的logo灯还在亮着，好似灯塔一般，照亮迷途的孩子们。<br>在那些年里，Mac不是电脑，是艺术品。<br>但我知道，那幻想的电脑，我不敢、不想、也不能。</p>
+<h1 id="推行"><a href="#推行" class="headerlink" title="推行"></a>推行</h1><p>我不是12、13岁了，今年，我18岁了。我还想躺在家里休眠，但现在床硬，躺的颈椎疼，全身疼…总是听到脑边传来“你还没起呢？上班去昂“；“还不上班？该养家糊口了！”，每次听到”上班“我都难过。每次听到心都会被人拉紧，旋转，拧成麻花，系蝴蝶结…</p>
+<h1 id="捕捉"><a href="#捕捉" class="headerlink" title="捕捉"></a>捕捉</h1><p>在我心里那是一个缺口。<br>我还在用 2011 年的老古董货色，那是一个厚的放不下我书包的笔记本电脑，它不喜欢顺从人，它叛逆，它傲慢，它逆反心理太严重。我好想好想给他看病，但直觉告诉我，他该躺下去了。<br>当在用他的时候，我总觉得他不像是电脑，像是一个电热棒。他的2G内存是魔鬼才会使用的，500G机械硬盘使劲喘气了1分钟也没能打开我的文档。我终于无能为力了，他的生命就应该结束了。所以，在某一天的结束后，我亲手埋葬了他。他还开心的迎接第二天，我关上他的盖子，放到我床头柜的上面抽屉里，他期待着第二天，却永远等不到第二天的光明了。<br>刷了刷手机，空想了些许片刻。我又打开手机，打开了微信，支付宝，花呗…，微信有2703，支付宝有814，花呗还可以用1750，总共是…5267。我说服自己————换一台吧，换一台吧，已经善终了。</p>
+<h1 id="钟转"><a href="#钟转" class="headerlink" title="钟转"></a>钟转</h1><link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>黑翼猫 Extended Kernel Project 中国网络环境下载</title>
+    <url>/20220818/010924/</url>
+    <content><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>众所周知，因为<font color=green>国内网络环境的特殊</font>，好多网站不能访问。黑翼猫大佬的博客也是如此，在国内访问会提示连接被重置。所以我翻墙后下载了黑翼猫 Windows 2000 Extended Kernel Project 和依赖的补丁集。(包括 wlupdate)</p>
+<h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><p>关于黑翼猫的 Windows 2000 拓展补丁安装，可以参考这个文章…<a href="https://zhuanlan.zhihu.com/p/484014315">传送点！</a></p>
+<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>下载链接：<a href="https://pan.huang1111.cn/s/4d34hg">点我下载</a></p>
+<h2 id="产品密钥"><a href="#产品密钥" class="headerlink" title="产品密钥"></a>产品密钥</h2><p><font color=red>PQHKR-G4JFW-VTY3P-G4WQ2-88CTW</font><br><img src="https://img.gejiba.com/images/179c2f93582f6652f270c41e07636539.png"></p>
+<h2 id="安装中…"><a href="#安装中…" class="headerlink" title="安装中…"></a>安装中…</h2><p><img src="https://img.gejiba.com/images/20975efcd5f8834d9a0f81dc7047c5e8.png"><br><img src="https://img.gejiba.com/images/eb69053f5eab4d6b2cd8000e2c985296.png"><br><img src="https://img.gejiba.com/images/ea1fa06f63547b60ecc660645cc5240e.png"><br><img src="https://img.gejiba.com/images/1ecefcd2e46809e7174800d584b53e20.png"></p>
+<h2 id="伪装系统版本用的软件"><a href="#伪装系统版本用的软件" class="headerlink" title="伪装系统版本用的软件"></a>伪装系统版本用的软件</h2><p><img src="https://img.gejiba.com/images/b269d479dbb9aab60c0bfcbac371d2ed.png"></p>
+<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>Sanapri bilibili 新视频</title>
+    <url>/20220823/164646/</url>
+    <content><![CDATA[<p>鎖那小天使终于发新视频啦，这里给你们看看～</p>
+<pre><code>Kyu-kurarin (cover) / sana 
+original: きゅうくらりん / いよわ feat.可不 
+vocal: 鎖那  mix: n.k 
+▷https://space.bilibili.com/543245410
+</code></pre>
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+    <iframe src="//player.bilibili.com/player.html?bvid=BV1M14y1t7LK&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
+</div><link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>五年期的命运</title>
+    <url>/20260526/204938/</url>
+    <content><![CDATA[<h1 id="我的五年计划"><a href="#我的五年计划" class="headerlink" title="我的五年计划"></a>我的五年计划</h1><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>我是中专毕业，七年前（11岁）就开始打基础。</p>
+<h2 id="时间线"><a href="#时间线" class="headerlink" title="时间线"></a>时间线</h2><h3 id="第1、2年（大专阶段）"><a href="#第1、2年（大专阶段）" class="headerlink" title="第1、2年（大专阶段）"></a>第1、2年（大专阶段）</h3><p>学 K8s、Python、Docker、MySQL</p>
+<h3 id="第三年"><a href="#第三年" class="headerlink" title="第三年"></a>第三年</h3><ul>
+<li>准备专升本考试</li>
+</ul>
+<h3 id="本科第一年，总第四年（本科三年级）"><a href="#本科第一年，总第四年（本科三年级）" class="headerlink" title="本科第一年，总第四年（本科三年级）"></a>本科第一年，总第四年（本科三年级）</h3><ul>
+<li>开始找实习（专升本后就找）</li>
+</ul>
+<h3 id="本科第二年，总第五年（本科四年级）"><a href="#本科第二年，总第五年（本科四年级）" class="headerlink" title="本科第二年，总第五年（本科四年级）"></a>本科第二年，总第五年（本科四年级）</h3><ul>
+<li>准备毕业论文</li>
+</ul>
+<h2 id="备选方案"><a href="#备选方案" class="headerlink" title="备选方案"></a>备选方案</h2><ul>
+<li>如果发现学的不好，能力不佳：考研</li>
+<li>如果专升本没考上：直接工作（放弃高薪路线，寻求生存），或通过自考&#x2F;成人&#x2F;国开考上非全本科，然后再考研（必须考研究生，非全本科求职没用）</li>
+</ul>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
+<li>单招完（3月到9月大专开学前）准备好计划</li>
+<li>不要浪费太多时间在社团、竞赛、学校的活动上</li>
+<li>如果要走开发岗，实习前后还要抽空刷LeetCode</li>
+</ul>
+<h2 id="现实"><a href="#现实" class="headerlink" title="现实"></a>现实</h2><p>我要放弃青春，我想哭</p>
+<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>超级题</title>
+    <url>/20260227/175103/</url>
+    <content><![CDATA[<h1 id="计算机系统与虚拟化技术综合测试试卷"><a href="#计算机系统与虚拟化技术综合测试试卷" class="headerlink" title="计算机系统与虚拟化技术综合测试试卷"></a>计算机系统与虚拟化技术综合测试试卷</h1><hr>
+<p><strong>考生姓名：____________　　学号：____________　　班级：____________</strong></p>
+<p><strong>考试时间：90分钟　　总分：100分</strong></p>
+<hr>
+<h2 id="一、选择题（每题3分，共15分）"><a href="#一、选择题（每题3分，共15分）" class="headerlink" title="一、选择题（每题3分，共15分）"></a>一、选择题（每题3分，共15分）</h2><p><strong>请在答题卡上选择正确答案</strong></p>
+<ol>
+<li><p>在OOBE或Sysprep阶段，键盘Shift+F10会打开什么窗口？（　　）</p>
+<p>A. Explorer　　B. OOBE　　C. CMD　　D. Powershell</p>
+</li>
+<li><p>以下哪些进程绝对不能Kill？（　　）（多选）</p>
+<p>A. crses　　B. crsrs　　C. csrss　　D. csrso</p>
+<p>A. ntoskrel　　B. ntoskrnl　　C. ntosknrl　　D. ntsokrol</p>
+</li>
+<li><p>移动文件到别处可使用什么手段？（　　）（多选）</p>
+<p>A. move　　B. Option+Command+V　　C. mv　　D. Command+V之后，把原件删除</p>
+</li>
+<li><p>在启动Mac时，加载顺序是？（　　）（多选顺序题）</p>
+<p>A. iboot　　B. SEP　　C. UEFI　　D. macOS　　E. Darwin kernel</p>
+</li>
+<li><p>承载macOS图形界面的进程是：（　　）</p>
+<p>A. WindowsServer　　B. Winlogon　　C. WindowServer　　D. kernel</p>
+</li>
+</ol>
+<hr>
+<h2 id="二、填空题（每空2分，共20分）"><a href="#二、填空题（每空2分，共20分）" class="headerlink" title="二、填空题（每空2分，共20分）"></a>二、填空题（每空2分，共20分）</h2><p><strong>请将答案填写在横线上</strong></p>
+<ol start="6">
+<li><p>判断Windows软件内存泄漏的依据：________________________</p>
+</li>
+<li><p>删除WinSXS会如何？________________________</p>
+</li>
+<li><p>macOS中快速查看文件内容按__________键。</p>
+</li>
+<li><p>TouchBar有个小太阳键，按下后可调整__________。</p>
+</li>
+<li><p>Darwin内核版本号其实可以窥探时间，请问Darwin 23.2.0是__________年的？</p>
+</li>
+<li><p>在opensource.apple.com里，你可以看到：________________________</p>
+</li>
+<li><p>GPTK开放源代码吗？基于__________。</p>
+</li>
+<li><p>要将DirectX实时翻译成Metal，Apple推荐__________。</p>
+</li>
+<li><p>威士忌和CrossOver之区别：________________________</p>
+</li>
+<li><p>Mac Hypervisor.framework如何被调用？________________________</p>
+</li>
+</ol>
+<hr>
+<h2 id="三、简答题（每题5分，共35分）"><a href="#三、简答题（每题5分，共35分）" class="headerlink" title="三、简答题（每题5分，共35分）"></a>三、简答题（每题5分，共35分）</h2><p><strong>请简要回答下列问题</strong></p>
+<ol start="16">
+<li>在Mac抛弃X86之时，苹果同步发布了Rosetta 2，为什么是2？第一代是什么架构转移到什么架构的？为什么要发布Rosetta？过渡期多少年？</li>
+</ol>
+<hr>
+<hr>
+<hr>
+<ol start="17">
+<li>macOS Tahoe是Intel Mac的最后一代操作系统，为什么苹果不到五年就完成抛弃intel？</li>
+</ol>
+<hr>
+<hr>
+<hr>
+<ol start="18">
+<li>Linux遵循一切皆文件，一个mount磁盘是文件吗？</li>
+</ol>
+<hr>
+<hr>
+<ol start="19">
+<li>.&#x2F;configure一般用于什么？</li>
+</ol>
+<hr>
+<hr>
+<ol start="20">
+<li>Ubuntu Snap是什么？</li>
+</ol>
+<hr>
+<hr>
+<ol start="21">
+<li>APT install 是干什么？</li>
+</ol>
+<hr>
+<hr>
+<ol start="22">
+<li>补齐依赖此前是非常痛苦的，现在，靠什么软件补依赖？</li>
+</ol>
+<hr>
+<hr>
+<hr>
+<h2 id="四、应用题（每题5分，共30分）"><a href="#四、应用题（每题5分，共30分）" class="headerlink" title="四、应用题（每题5分，共30分）"></a>四、应用题（每题5分，共30分）</h2><p><strong>请按要求回答下列问题</strong></p>
+<ol start="23">
+<li>要赋权限755、+x至一个文件，用什么命令？</li>
+</ol>
+<hr>
+<ol start="24">
+<li>权限777是？</li>
+</ol>
+<hr>
+<ol start="25">
+<li>Linux的标准软件遵循POSIX标准吗？</li>
+</ol>
+<hr>
+<ol start="26">
+<li>若要将Linux软件直接复制到macOS，能运行吗？</li>
+</ol>
+<hr>
+<ol start="27">
+<li>要将1.iso光盘镜像插入，最简单的命令是：</li>
+</ol>
+<hr>
+<ol start="28">
+<li>-m的单位是？-usb是什么？</li>
+</ol>
+<hr>
+<hr>
+<h2 id="五、综合分析题（每题5分，共10分）"><a href="#五、综合分析题（每题5分，共10分）" class="headerlink" title="五、综合分析题（每题5分，共10分）"></a>五、综合分析题（每题5分，共10分）</h2><p><strong>iPhone 14 Pro在16.0-16.3.1系统仍可以调用Hypervisor.framework(HVF)，在UTM-HV中，可获得虚拟机性能提升。</strong></p>
+<ol start="29">
+<li>(1) Hypervisor.framework运行Windows 11中，流畅不流畅？</li>
+</ol>
+<hr>
+<p>   (2) 使用Hypervisor.framework运行win10arm会遇到断言（断言是什么）错误，能否解决？</p>
+<hr>
+<ol start="30">
+<li>QEMU高级配置题：</li>
+</ol>
+<p>   (1) 要安装UEFI系统，使用pflash，应添加什么？</p>
+<hr>
+<p>   (2) 要增加cpu指令集，需要输入什么命令？</p>
+<hr>
+<p>   (3) mttcg and tcg区别，mttcg怎么调用？</p>
+<hr>
+<p>   (4) 怎么查看电脑支持的加速？</p>
+<hr>
+<hr>
+<h2 id="答题卡"><a href="#答题卡" class="headerlink" title="答题卡"></a>答题卡</h2><p><strong>选择题答案：</strong></p>
+<ol>
+<li>______　　2. ______　　3. ______　　4. ______　　5. ______</li>
+</ol>
+<hr>
+<p><strong>得分统计：</strong></p>
+<table>
+<thead>
+<tr>
+<th>题型</th>
+<th>一、选择题</th>
+<th>二、填空题</th>
+<th>三、简答题</th>
+<th>四、应用题</th>
+<th>五、综合题</th>
+<th>总分</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>得分</td>
+<td>&#x2F;15</td>
+<td>&#x2F;20</td>
+<td>&#x2F;35</td>
+<td>&#x2F;30</td>
+<td>&#x2F;10</td>
+<td>&#x2F;100</td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>阅卷教师签名：____________　　阅卷日期：____________</strong></p>
 <link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -2279,236 +2464,6 @@ Windows 11      std / VMware
 </ul>
 <p>请提交您的 C# 代码！</p>
 <hr>
-<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>Sanapri bilibili 新视频</title>
-    <url>/20220823/164646/</url>
-    <content><![CDATA[<p>鎖那小天使终于发新视频啦，这里给你们看看～</p>
-<pre><code>Kyu-kurarin (cover) / sana 
-original: きゅうくらりん / いよわ feat.可不 
-vocal: 鎖那  mix: n.k 
-▷https://space.bilibili.com/543245410
-</code></pre>
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?bvid=BV1M14y1t7LK&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"></iframe>
-</div><link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>逃亡Intel Mac</title>
-    <url>/20260403/015931/</url>
-    <content><![CDATA[<p>（虚构情景）</p>
-<h1 id="苏醒"><a href="#苏醒" class="headerlink" title="苏醒"></a>苏醒</h1><p>我一直是一个苹果粉丝。在很久很久之前，那时我还在用 iPhone 4，还不认识 Mac。第一次认识是在王自如的 iMac 开箱视频。那精致的模样，不像是当代的产物，像是未来科幻片里的模样。小时候的我幻想着抚摸着，希望有生之年，能看见一次Mac…Mac 成为了我魂牵梦萦的存在。<br>我日夜幻想着在星巴克，展开笔记本盖子。在深邃的夜晚里，世界万物都熄灭了，只有MacBook的logo灯还在亮着，好似灯塔一般，照亮迷途的孩子们。<br>在那些年里，Mac不是电脑，是艺术品。<br>但我知道，那幻想的电脑，我不敢、不想、也不能。</p>
-<h1 id="推行"><a href="#推行" class="headerlink" title="推行"></a>推行</h1><p>我不是12、13岁了，今年，我18岁了。我还想躺在家里休眠，但现在床硬，躺的颈椎疼，全身疼…总是听到脑边传来“你还没起呢？上班去昂“；“还不上班？该养家糊口了！”，每次听到”上班“我都难过。每次听到心都会被人拉紧，旋转，拧成麻花，系蝴蝶结…</p>
-<h1 id="捕捉"><a href="#捕捉" class="headerlink" title="捕捉"></a>捕捉</h1><p>在我心里那是一个缺口。<br>我还在用 2011 年的老古董货色，那是一个厚的放不下我书包的笔记本电脑，它不喜欢顺从人，它叛逆，它傲慢，它逆反心理太严重。我好想好想给他看病，但直觉告诉我，他该躺下去了。<br>当在用他的时候，我总觉得他不像是电脑，像是一个电热棒。他的2G内存是魔鬼才会使用的，500G机械硬盘使劲喘气了1分钟也没能打开我的文档。我终于无能为力了，他的生命就应该结束了。所以，在某一天的结束后，我亲手埋葬了他。他还开心的迎接第二天，我关上他的盖子，放到我床头柜的上面抽屉里，他期待着第二天，却永远等不到第二天的光明了。<br>刷了刷手机，空想了些许片刻。我又打开手机，打开了微信，支付宝，花呗…，微信有2703，支付宝有814，花呗还可以用1750，总共是…5267。我说服自己————换一台吧，换一台吧，已经善终了。</p>
-<h1 id="钟转"><a href="#钟转" class="headerlink" title="钟转"></a>钟转</h1><link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>超级题</title>
-    <url>/20260227/175103/</url>
-    <content><![CDATA[<h1 id="计算机系统与虚拟化技术综合测试试卷"><a href="#计算机系统与虚拟化技术综合测试试卷" class="headerlink" title="计算机系统与虚拟化技术综合测试试卷"></a>计算机系统与虚拟化技术综合测试试卷</h1><hr>
-<p><strong>考生姓名：____________　　学号：____________　　班级：____________</strong></p>
-<p><strong>考试时间：90分钟　　总分：100分</strong></p>
-<hr>
-<h2 id="一、选择题（每题3分，共15分）"><a href="#一、选择题（每题3分，共15分）" class="headerlink" title="一、选择题（每题3分，共15分）"></a>一、选择题（每题3分，共15分）</h2><p><strong>请在答题卡上选择正确答案</strong></p>
-<ol>
-<li><p>在OOBE或Sysprep阶段，键盘Shift+F10会打开什么窗口？（　　）</p>
-<p>A. Explorer　　B. OOBE　　C. CMD　　D. Powershell</p>
-</li>
-<li><p>以下哪些进程绝对不能Kill？（　　）（多选）</p>
-<p>A. crses　　B. crsrs　　C. csrss　　D. csrso</p>
-<p>A. ntoskrel　　B. ntoskrnl　　C. ntosknrl　　D. ntsokrol</p>
-</li>
-<li><p>移动文件到别处可使用什么手段？（　　）（多选）</p>
-<p>A. move　　B. Option+Command+V　　C. mv　　D. Command+V之后，把原件删除</p>
-</li>
-<li><p>在启动Mac时，加载顺序是？（　　）（多选顺序题）</p>
-<p>A. iboot　　B. SEP　　C. UEFI　　D. macOS　　E. Darwin kernel</p>
-</li>
-<li><p>承载macOS图形界面的进程是：（　　）</p>
-<p>A. WindowsServer　　B. Winlogon　　C. WindowServer　　D. kernel</p>
-</li>
-</ol>
-<hr>
-<h2 id="二、填空题（每空2分，共20分）"><a href="#二、填空题（每空2分，共20分）" class="headerlink" title="二、填空题（每空2分，共20分）"></a>二、填空题（每空2分，共20分）</h2><p><strong>请将答案填写在横线上</strong></p>
-<ol start="6">
-<li><p>判断Windows软件内存泄漏的依据：________________________</p>
-</li>
-<li><p>删除WinSXS会如何？________________________</p>
-</li>
-<li><p>macOS中快速查看文件内容按__________键。</p>
-</li>
-<li><p>TouchBar有个小太阳键，按下后可调整__________。</p>
-</li>
-<li><p>Darwin内核版本号其实可以窥探时间，请问Darwin 23.2.0是__________年的？</p>
-</li>
-<li><p>在opensource.apple.com里，你可以看到：________________________</p>
-</li>
-<li><p>GPTK开放源代码吗？基于__________。</p>
-</li>
-<li><p>要将DirectX实时翻译成Metal，Apple推荐__________。</p>
-</li>
-<li><p>威士忌和CrossOver之区别：________________________</p>
-</li>
-<li><p>Mac Hypervisor.framework如何被调用？________________________</p>
-</li>
-</ol>
-<hr>
-<h2 id="三、简答题（每题5分，共35分）"><a href="#三、简答题（每题5分，共35分）" class="headerlink" title="三、简答题（每题5分，共35分）"></a>三、简答题（每题5分，共35分）</h2><p><strong>请简要回答下列问题</strong></p>
-<ol start="16">
-<li>在Mac抛弃X86之时，苹果同步发布了Rosetta 2，为什么是2？第一代是什么架构转移到什么架构的？为什么要发布Rosetta？过渡期多少年？</li>
-</ol>
-<hr>
-<hr>
-<hr>
-<ol start="17">
-<li>macOS Tahoe是Intel Mac的最后一代操作系统，为什么苹果不到五年就完成抛弃intel？</li>
-</ol>
-<hr>
-<hr>
-<hr>
-<ol start="18">
-<li>Linux遵循一切皆文件，一个mount磁盘是文件吗？</li>
-</ol>
-<hr>
-<hr>
-<ol start="19">
-<li>.&#x2F;configure一般用于什么？</li>
-</ol>
-<hr>
-<hr>
-<ol start="20">
-<li>Ubuntu Snap是什么？</li>
-</ol>
-<hr>
-<hr>
-<ol start="21">
-<li>APT install 是干什么？</li>
-</ol>
-<hr>
-<hr>
-<ol start="22">
-<li>补齐依赖此前是非常痛苦的，现在，靠什么软件补依赖？</li>
-</ol>
-<hr>
-<hr>
-<hr>
-<h2 id="四、应用题（每题5分，共30分）"><a href="#四、应用题（每题5分，共30分）" class="headerlink" title="四、应用题（每题5分，共30分）"></a>四、应用题（每题5分，共30分）</h2><p><strong>请按要求回答下列问题</strong></p>
-<ol start="23">
-<li>要赋权限755、+x至一个文件，用什么命令？</li>
-</ol>
-<hr>
-<ol start="24">
-<li>权限777是？</li>
-</ol>
-<hr>
-<ol start="25">
-<li>Linux的标准软件遵循POSIX标准吗？</li>
-</ol>
-<hr>
-<ol start="26">
-<li>若要将Linux软件直接复制到macOS，能运行吗？</li>
-</ol>
-<hr>
-<ol start="27">
-<li>要将1.iso光盘镜像插入，最简单的命令是：</li>
-</ol>
-<hr>
-<ol start="28">
-<li>-m的单位是？-usb是什么？</li>
-</ol>
-<hr>
-<hr>
-<h2 id="五、综合分析题（每题5分，共10分）"><a href="#五、综合分析题（每题5分，共10分）" class="headerlink" title="五、综合分析题（每题5分，共10分）"></a>五、综合分析题（每题5分，共10分）</h2><p><strong>iPhone 14 Pro在16.0-16.3.1系统仍可以调用Hypervisor.framework(HVF)，在UTM-HV中，可获得虚拟机性能提升。</strong></p>
-<ol start="29">
-<li>(1) Hypervisor.framework运行Windows 11中，流畅不流畅？</li>
-</ol>
-<hr>
-<p>   (2) 使用Hypervisor.framework运行win10arm会遇到断言（断言是什么）错误，能否解决？</p>
-<hr>
-<ol start="30">
-<li>QEMU高级配置题：</li>
-</ol>
-<p>   (1) 要安装UEFI系统，使用pflash，应添加什么？</p>
-<hr>
-<p>   (2) 要增加cpu指令集，需要输入什么命令？</p>
-<hr>
-<p>   (3) mttcg and tcg区别，mttcg怎么调用？</p>
-<hr>
-<p>   (4) 怎么查看电脑支持的加速？</p>
-<hr>
-<hr>
-<h2 id="答题卡"><a href="#答题卡" class="headerlink" title="答题卡"></a>答题卡</h2><p><strong>选择题答案：</strong></p>
-<ol>
-<li>______　　2. ______　　3. ______　　4. ______　　5. ______</li>
-</ol>
-<hr>
-<p><strong>得分统计：</strong></p>
-<table>
-<thead>
-<tr>
-<th>题型</th>
-<th>一、选择题</th>
-<th>二、填空题</th>
-<th>三、简答题</th>
-<th>四、应用题</th>
-<th>五、综合题</th>
-<th>总分</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>得分</td>
-<td>&#x2F;15</td>
-<td>&#x2F;20</td>
-<td>&#x2F;35</td>
-<td>&#x2F;30</td>
-<td>&#x2F;10</td>
-<td>&#x2F;100</td>
-</tr>
-</tbody></table>
-<hr>
-<p><strong>阅卷教师签名：____________　　阅卷日期：____________</strong></p>
-<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>黑翼猫 Extended Kernel Project 中国网络环境下载</title>
-    <url>/20220818/010924/</url>
-    <content><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>众所周知，因为<font color=green>国内网络环境的特殊</font>，好多网站不能访问。黑翼猫大佬的博客也是如此，在国内访问会提示连接被重置。所以我翻墙后下载了黑翼猫 Windows 2000 Extended Kernel Project 和依赖的补丁集。(包括 wlupdate)</p>
-<h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><p>关于黑翼猫的 Windows 2000 拓展补丁安装，可以参考这个文章…<a href="https://zhuanlan.zhihu.com/p/484014315">传送点！</a></p>
-<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>下载链接：<a href="https://pan.huang1111.cn/s/4d34hg">点我下载</a></p>
-<h2 id="产品密钥"><a href="#产品密钥" class="headerlink" title="产品密钥"></a>产品密钥</h2><p><font color=red>PQHKR-G4JFW-VTY3P-G4WQ2-88CTW</font><br><img src="https://img.gejiba.com/images/179c2f93582f6652f270c41e07636539.png"></p>
-<h2 id="安装中…"><a href="#安装中…" class="headerlink" title="安装中…"></a>安装中…</h2><p><img src="https://img.gejiba.com/images/20975efcd5f8834d9a0f81dc7047c5e8.png"><br><img src="https://img.gejiba.com/images/eb69053f5eab4d6b2cd8000e2c985296.png"><br><img src="https://img.gejiba.com/images/ea1fa06f63547b60ecc660645cc5240e.png"><br><img src="https://img.gejiba.com/images/1ecefcd2e46809e7174800d584b53e20.png"></p>
-<h2 id="伪装系统版本用的软件"><a href="#伪装系统版本用的软件" class="headerlink" title="伪装系统版本用的软件"></a>伪装系统版本用的软件</h2><p><img src="https://img.gejiba.com/images/b269d479dbb9aab60c0bfcbac371d2ed.png"></p>
-<link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>计算机基础操作</title>
-    <url>/20220910/083627/</url>
-    <content><![CDATA[<p>为了让各位用户都能会用 Windows，特此写下该教程。<br>Windows 是微软公司于 1985 年发布的电脑操作系统，最新版是 Windows 11(2021 年发布)。<br>这里我们都以<font color=#66CCF> Windows 8.1 With Update</font> 版本为例子。<br><font face="宋体"></p>
-<h1 id="认识界面"><a href="#认识界面" class="headerlink" title="认识界面"></a>认识界面</h1><p>Windows 8.1 的主界面长这样：<br><img src="https://img.gejiba.com/images/1652f5ddeefb13492b6f1f4ed881a635.png"><br>点击“开始按钮”后，出现以下界面：<br><img src="https://img.gejiba.com/images/2caaee3f09a6e7e296efa2521203587e.png"><br>可以看到很多功能。这就是 Windows 8 新增的磁贴界面。<br>我们点击网络图标，可以列出电脑下的所有网络。<br><img src="https://img.gejiba.com/images/70c8e2328d4c6b79ed980dd38b6fe285.png"><br>台式机我们都用有线网络，也就是插上网线后使用网络。如果需要连接 Wi-Fi，请加装无线网卡。然后点击网络图标，输入您家网络密码即可。<br>点击声音图标，可以调节计算机的声音。<br><img src="https://img.gejiba.com/images/c1d3edde8d66572bd8e3119b58d2885e.png"><br>也可以识别到计算机使用什么输出的声音。我这里是有线耳机所以识别到耳机。<br>打开“这台电脑”可以查阅到电脑的所有文件夹。<br><img src="https://img.gejiba.com/images/ea386a6e79ccfdcf2e6904ded66596b7.png"><br>如果要添加 FTP 或者 SAMBA 连接，请右键点击“添加一个网络位置”。<br><img src="https://img.gejiba.com/images/e5e354b6eb7d798c69375f878a0c0ad8.png"><br>您也可以通过“这台电脑”为磁盘加密、格式化、和复制整块盘。<br><img src="https://img.gejiba.com/images/f2b3507bb9fdad1a945c9b7ff7cf5292.png"><br>如果是移动硬盘、U 盘等设备，也可以手动打开“自动播放”，如图：<br><img src="https://img.gejiba.com/images/5d5310518f51aa984ea5a1bc74a9f487.png"><br><img src="https://img.gejiba.com/images/ef3f92b34135e76276dea95e5416d3a6.png"></p>
-<h1 id="鼠标操作"><a href="#鼠标操作" class="headerlink" title="鼠标操作"></a>鼠标操作</h1><p>鼠标分为左键、中键和右键。您需要根据软件的操作控制鼠标。<br><img src="https://img.gejiba.com/images/24ae58dad5ca57dd325db98300f18090.png"></p>
-<h1 id="键盘操作"><a href="#键盘操作" class="headerlink" title="键盘操作"></a>键盘操作</h1><h2 id="普通-PC"><a href="#普通-PC" class="headerlink" title="普通 PC"></a>普通 PC</h2><p>Windows 也十分依赖键盘。键盘长这样：<br><img src="https://img.gejiba.com/images/e94205463ae97810d7fdaf409a93fd61.png"></p>
-<h3 id="Ctrl-键"><a href="#Ctrl-键" class="headerlink" title="Ctrl 键"></a>Ctrl 键</h3><p>Ctrl 键就是控制键(Control)，用于控制 Windows 及程序的各种操作。</p>
-<h3 id="Alt-键"><a href="#Alt-键" class="headerlink" title="Alt 键"></a>Alt 键</h3><p>Alt 键是更换(Alternate)的意思，点击 Alt + Tab 键后可以在打开的项目之间切换。</p>
-<h3 id="Shift-键"><a href="#Shift-键" class="headerlink" title="Shift 键"></a>Shift 键</h3><p>而 Shift 键是上档转换键。常用于输入法中英文转换。</p>
-<h3 id="Enter-键"><a href="#Enter-键" class="headerlink" title="Enter 键"></a>Enter 键</h3><p>Enter 键是回车键。在各个软件的功能都不一样，例如，在 Microsoft Word 中会换行，而在腾讯 QQ 中会发送消息。</p>
-<h3 id="Windows-键"><a href="#Windows-键" class="headerlink" title="Windows 键"></a>Windows 键</h3><p>那个 Windows 徽标按键就是 Windows 键。在 Windows Vista 之前的系统（例如 Windows XP）中，Windows 键的功能不多。直到 Windows Vista 之后才开始增加新的内容。比如</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Windows+数字1、2、3、4、5、6、7、8、9、0 分别打开你的任务栏上面的快捷启动栏上面的第一个到第十个图标所对应的快捷方式。</span><br><span class="line">Windows+D 最小化所有窗口，再按一次恢复所有窗口</span><br><span class="line">Windows+E 开启资源管理器(频繁按会资源占尽而死机)</span><br><span class="line">Windows+F 打开搜索窗口</span><br><span class="line">Windows+G 多次按下就会依次切换侧边栏上面的小工具(Gadgets)</span><br><span class="line">Windows+L 锁定当前计算机用户</span><br><span class="line">Windows+R 开启运行对话框 (非常常用)</span><br><span class="line">Windows+T 激活当前任务栏上面的窗口，多次按下会依次定位到下一个窗体</span><br><span class="line">Windows+T Shift 反方向定位</span><br><span class="line">Windows+U 开启辅助工具管理器</span><br><span class="line">Windows+X 开启Windows移动中心</span><br><span class="line">Windows+TAB 开启 Flip 3D窗口切换</span><br><span class="line">Windows+TAB Ctrl 用键盘控制 Flip 3D窗口切换</span><br><span class="line">Windows+Break(就是Pause——Break键) 开启Windows Vista系统属性窗口</span><br></pre></td></tr></table></figure>
-<h3 id="Backspace-键"><a href="#Backspace-键" class="headerlink" title="Backspace 键"></a>Backspace 键</h3><p>Backspace 键即退格键，相当于您手机的这个按钮：<br><img src="https://img.gejiba.com/images/c8f0d055e9dfc465b17d0ce2ee45bc36.png"></p>
-<h2 id="苹果电脑（Mac）"><a href="#苹果电脑（Mac）" class="headerlink" title="苹果电脑（Mac）"></a>苹果电脑（Mac）</h2><p>因为 Mac 机生来就是为了 macOS 服务，所以键位略有不同。<br><img src="https://img.gejiba.com/images/740924cf74818fe307c4021b64d92673.png"><br>以下是 Mac 键盘映射到 Windows 的位置。</p>
-<h3 id="Option-键"><a href="#Option-键" class="headerlink" title="Option 键"></a>Option 键</h3><p>映射在 Windows 下的 Alt 键</p>
-<h3 id="Control-键"><a href="#Control-键" class="headerlink" title="Control 键"></a>Control 键</h3><p>映射在 Windows 下的 Ctrl 键</p>
-<h3 id="Command-键"><a href="#Command-键" class="headerlink" title="Command 键"></a>Command 键</h3><p>映射在 Windows 下的 Windows 键</p>
-<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>因为 Mac 部分操作由 Command 键来完成，如果你用 macOS 习惯了，重装 Windows 后会很不适应。</p>
-<h1 id="上网"><a href="#上网" class="headerlink" title="上网"></a>上网</h1><h2 id="连接到网络。"><a href="#连接到网络。" class="headerlink" title="连接到网络。"></a>连接到网络。</h2><p>由上面的消息可得知，我们点击“网络”图标即可查看电脑是否联网。<br>但是，我们如果没有安装 Wi-Fi 网卡，那么该如何上网？</p>
-<h3 id="有线上网方法"><a href="#有线上网方法" class="headerlink" title="有线上网方法"></a>有线上网方法</h3><p>首先，请自备一个<font color=#66CCF>网线</font>，将网线的一个端插入电脑设备。然后打开电脑控制面板。打开“网络与共享中心”<br><img src="https://img.gejiba.com/images/61f075931cb8ac26067cbfd567ad7f85.png"><br>然后点击“设置新的连接或网络”<br><img src="https://img.gejiba.com/images/a61d6294782fe99c3738d669ac0877ca.png"><br>然后在新弹出的网络窗口中，直接下一步。<br><img src="https://img.gejiba.com/images/67ea71e690e2aae356299499cacc4733.png"><br>这里因为我连接上 互联网 了，所以提示这个，请点击设置新连接。<br><img src="https://img.gejiba.com/images/fe1bda33d3929b53bbf7952a0c981385.png"><br>然后点击宽带上网(PPPoE)<br><img src="https://img.gejiba.com/images/23bb454358d7a97eb544ca86fa3165c3.png"><br>然后输入你<font color=#66CCF> ISP </font>提供给你的用户名和密码，点击“连接”。<br><img src="https://img.gejiba.com/images/70131c1f06e051214b7959d817184584.png"><br>待等连接完成即可。<br>也可以稍后输入用户名和密码。<br><img src="https://img.gejiba.com/images/8fc4e5f052bbe3a16fdd76b144b2685c.png"><br><font color=red>注意：如果是新安装的 Windows 8.1 或 Windows 7 ，他一般不会配备某些设备的以太网卡，所以有线网也无法使用。这时需要安装驱动软件。</font><br>如果需要查看您设备是否存在以太网卡，请查阅任务管理器。<br><img src="https://img.gejiba.com/images/04429d53596fb0e3743180f48887993d.png"></p>
-<h3 id="连接无线网。"><a href="#连接无线网。" class="headerlink" title="连接无线网。"></a>连接无线网。</h3><p>如果您电脑已经有无线网卡了，请确保安装好驱动软件，然后直接点击网络按钮，找到您家 Wi-Fi 网络即可。<br><img src="https://img.gejiba.com/images/9f62ae7d15014e89b9e38146d2e332f9.png"></p>
-<h2 id="上网浏览器更换"><a href="#上网浏览器更换" class="headerlink" title="上网浏览器更换"></a>上网浏览器更换</h2><p>Windows 10 之前的系统只自带一个上网浏览器，名叫 Internet Explorer，这个浏览器已经淘汰了，需要更换。<br>请确保连接好网络后，打开 Internet Explorer，输入 Firefox，来更换浏览器。当然您更换其他浏览器也是可以的，我推荐换成 Edge。<br><img src="https://img.gejiba.com/images/9fc535345f9c88ded9db35eb3ab9f122.png"><br><img src="https://img.gejiba.com/images/57c44802582c9ffdfa7a3b363eba1fef.png"><br>点击下载 Firefox 来安装 Firefox。<br><img src="https://img.gejiba.com/images/363e5121033dbfc948671cd6c01697c0.png"></p>
-<h1 id="安装软件"><a href="#安装软件" class="headerlink" title="安装软件"></a>安装软件</h1><h2 id="上网查找软件"><a href="#上网查找软件" class="headerlink" title="上网查找软件"></a>上网查找软件</h2><p>直接使用上网浏览器搜索你要安装的软件即可。<br><img src="https://img.gejiba.com/images/43f8eeb19effa9d2f91add83168c7c86.png"><br><font color=red>注意！在网上下载的软件鱼龙混杂，非常容易被捆绑，中病毒。</font><br>如果要下载微软 Office 软件，建议使用 MSDN I Tell You 网站。<a href="https://msdn.itellyou.cn">点击进入网站</a><br><img src="https://img.gejiba.com/images/a6ed168084e06062d4a263d87a7b39ab.png"><br><img src="https://img.gejiba.com/images/06a5200304903229bb2b38a2c96ee140.png"><br><img src="https://img.gejiba.com/images/e83b3760a52fd32e20896c4808c0bb03.png"></p>
-<h2 id="软件管家安装软件"><a href="#软件管家安装软件" class="headerlink" title="软件管家安装软件"></a>软件管家安装软件</h2><p>使用上网浏览器先安装<font color=#66CCF> 360 软件管家</font>，然后在软件管家搜索你要安装的软件。</p>
-<h1 id="管理您计算机上的文件"><a href="#管理您计算机上的文件" class="headerlink" title="管理您计算机上的文件"></a>管理您计算机上的文件</h1><p>如果需要管理器您计算机上的软件，请点击“这台电脑”。随便点进一个盘。<br><img src="https://img.gejiba.com/images/ad0a02ed187c07c21ea51d40eb14b5fc.png"><br>这里列出了这盘上面的所有内容。<br>如果要复制一个文件，请在要复制的文件旁点击鼠标右键，然后点击“复制(C)”。<br><img src="https://img.gejiba.com/images/4f205db2d4061a45f27c59dd28a4027c.png"><br>然后前往要复制到的文件夹，然后右键点击“粘贴(P)”。<br><img src="https://img.gejiba.com/images/ea444b06cac589002a3da8bebde66591.png"><br>这样，文件就复制好了。<br>我们只需要移动文件的时候点击“剪切(T)”即可。</p>
-<h1 id="卸载软件"><a href="#卸载软件" class="headerlink" title="卸载软件"></a>卸载软件</h1><p>有时候我们不想要一些软件，这时可以卸载软件。<br>打开 控制面板，然后找到 <font color=#66CCF>程序与功能</font><br><img src="https://img.gejiba.com/images/403509da174a2c1c63628db60d205ad3.png"><br>然后，双击要卸载的软件，跟着软件走即可。<br><img src="https://img.gejiba.com/images/2f06c1f1ee32d3752ed1876222740794.png"><br><img src="https://img.gejiba.com/images/20196f123882172b4f12a00d39411252.png"></p>
-<h1 id="命令提示符"><a href="#命令提示符" class="headerlink" title="命令提示符"></a>命令提示符</h1><p><font color=red>注意！专业人士使用。</font><br>Windows 中的终端叫做命令提示符，我们可以利用终端做很多事情。请先按下 Windows+R 键然后输入 cmd。<br><img src="https://img.gejiba.com/images/8ec9d0d197ae975dc233a799032b0a5a.png"><br>然后会打开一个黑色命令窗口，我们在此输入命令即可。比如我要查看系统版本，输入：<br><img src="https://img.gejiba.com/images/19587c4ac59a01e5359fb3584f29e211.png"><br>就可以查看了。要清屏可以输入 cls。<br></font></p>
 <link rel="stylesheet" href="/css/folder.css" type="text/css"><script src="/js/folder.js" type="text/javascript" async></script><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
 </search>
