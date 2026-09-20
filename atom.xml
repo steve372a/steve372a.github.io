@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2026-07-18T21:19:28.390Z</updated>
+  <updated>2026-09-17T07:38:22.998Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>课堂笔记</title>
+    <link href="http://example.com/20260917/153452/"/>
+    <id>http://example.com/20260917/153452/</id>
+    <published>2026-09-17T07:34:52.000Z</published>
+    <updated>2026-09-17T07:38:22.998Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/folder.css&quot; type=&quot;text/css&quot;&gt;&lt;script src=&quot;/js/folder.js&quot; type=&quot;text/javascript&quot; async&gt;&lt;/script&gt;&lt;link</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>疑病从无</title>
@@ -371,21 +392,6 @@
     
     
     <summary type="html">本文章是为了让各位更好的学习 QEMU 命令。</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Sanapri bilibili 新视频</title>
-    <link href="http://example.com/20220823/164646/"/>
-    <id>http://example.com/20220823/164646/</id>
-    <published>2022-08-23T08:46:46.000Z</published>
-    <updated>2022-08-23T08:52:50.000Z</updated>
-    
-    
-    <summary type="html">きゅうくらりん (cover) / 鎖那</summary>
     
     
     
